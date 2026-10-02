@@ -1,0 +1,7 @@
+{
+  "preset": "standard",
+  "urls": ["https://example.org", "https://example.com"],
+  "devices": ["desktop", "mobile"],
+  "capture": { "html": false, "forms": false },
+  "notes": "Side-by-side benchmark: same capture settings for every site so comparisons are fair."
+}

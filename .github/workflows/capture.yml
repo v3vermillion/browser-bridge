@@ -1,0 +1,102 @@
+# Runs a capture job and commits the results to the `results` branch.
+# Triggered by API (workflow_dispatch) - see AGENTS.md and client/bridge.py.
+name: capture
+run-name: ${{ inputs.label }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      label:
+        description: "Unique run label; also the results folder name (letters, numbers, . _ -)"
+        required: true
+        type: string
+      job:
+        description: "Job spec as a JSON string (see docs/job-spec.md). Never put secrets here: inputs are visible in the Actions UI."
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: browser-bridge-results
+  cancel-in-progress: false
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      JOB_JSON: ${{ inputs.job }}
+      RUN_LABEL: ${{ inputs.label }}
+      KEEP_DAYS: ${{ vars.BRIDGE_KEEP_DAYS || '30' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install engine
+        working-directory: engine
+        run: npm ci --no-audit --no-fund
+
+      - name: Plan browsers
+        id: plan
+        working-directory: engine
+        run: node plan.mjs
+
+      - name: Cache browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: pw-${{ hashFiles('engine/package-lock.json') }}-${{ steps.plan.outputs.browsers }}
+
+      - name: Install browsers
+        working-directory: engine
+        run: npx playwright install --with-deps ${{ steps.plan.outputs.browsers }}
+
+      - name: Capture
+        working-directory: engine
+        run: |
+          mkdir -p "$GITHUB_WORKSPACE/out"
+          set -o pipefail
+          OUT_DIR="$GITHUB_WORKSPACE/out" node capture.mjs 2>&1 | tee "$GITHUB_WORKSPACE/out/run.log"
+
+      - name: Publish results
+        if: always()
+        run: |
+          set -e
+          if ! printf '%s' "$RUN_LABEL" | grep -Eq '^[A-Za-z0-9._-]{1,80}$'; then
+            echo "Invalid label; refusing to publish."; exit 1
+          fi
+          if [ ! -f out/manifest.json ]; then
+            mkdir -p out
+            printf '{"label":"%s","status":"crashed","createdAt":"%s","note":"Engine exited before writing a manifest; see run.log"}\n' "$RUN_LABEL" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > out/manifest.json
+            printf '# Run %s\n\nThe engine crashed before writing results. See run.log in this folder.\n' "$RUN_LABEL" > out/summary.md
+          fi
+          cp engine/prune.mjs /tmp/prune.mjs
+          rm -rf /tmp/bridge-out && mv out /tmp/bridge-out
+          git config user.name "browser-bridge"
+          git config user.email "browser-bridge@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin results >/dev/null 2>&1; then
+            git fetch --depth 1 origin results
+            git checkout -B results FETCH_HEAD
+          else
+            git checkout --orphan results
+            git rm -rf --quiet . || true
+            git clean -fdxq
+            printf '# results\n\nCapture output written by the capture workflow. One folder per run label.\n' > README.md
+            git add README.md
+          fi
+          mkdir -p results
+          rm -rf "results/$RUN_LABEL"
+          cp -r /tmp/bridge-out "results/$RUN_LABEL"
+          node /tmp/prune.mjs results
+          git add -A results
+          git commit -q -m "results: $RUN_LABEL" || echo "nothing to commit"
+          for i in 1 2 3; do
+            git push origin HEAD:results && break
+            git pull --rebase origin results || true
+            sleep 3
+          done

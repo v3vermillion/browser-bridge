@@ -1,0 +1,9 @@
+{
+  "preset": "standard",
+  "targets": [
+    { "url": "https://example.org", "name": "home" },
+    { "url": "https://example.org/about", "name": "about" }
+  ],
+  "devices": ["desktop", "mobile"],
+  "notes": "Layout, imagery, typography, and content review on desktop and phone."
+}

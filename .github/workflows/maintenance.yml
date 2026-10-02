@@ -1,0 +1,29 @@
+# Housekeeping. Run manually from the Actions tab (or by API) when needed.
+name: maintenance
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "reset-results = delete the results branch (next capture recreates it). clean-sessions = delete all live-session branches (bs-*)."
+        required: true
+        type: choice
+        options: [reset-results, clean-sessions]
+
+permissions:
+  contents: write
+
+jobs:
+  maintain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reset results branch
+        if: inputs.action == 'reset-results'
+        run: git push origin --delete results || echo "results branch did not exist"
+      - name: Delete session branches
+        if: inputs.action == 'clean-sessions'
+        run: |
+          for b in $(git ls-remote --heads origin 'bs-*' | awk '{print $2}' | sed 's#refs/heads/##'); do
+            git push origin --delete "$b" || true
+          done

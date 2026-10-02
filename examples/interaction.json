@@ -1,0 +1,17 @@
+{
+  "preset": "glance",
+  "url": "https://example.org",
+  "devices": ["mobile"],
+  "steps": [
+    { "action": "click", "selector": "button[aria-label*='menu' i], .menu-button, .w-nav-button", "optional": true },
+    { "action": "screenshot", "name": "menu-open" },
+    { "action": "press", "key": "Escape", "optional": true },
+    { "action": "scroll", "selector": "form", "optional": true },
+    { "action": "fill", "selector": "form input[type=email]", "value": "not-an-email", "optional": true },
+    { "action": "click", "selector": "form [type=submit]", "optional": true },
+    { "action": "screenshot", "name": "form-validation", "selector": "form", "optional": true },
+    { "action": "scroll", "to": "top" },
+    { "action": "tabWalk", "count": 12 }
+  ],
+  "notes": "Mobile menu, form validation (nothing is sent: writes are blocked), keyboard focus order."
+}

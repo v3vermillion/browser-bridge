@@ -1,0 +1,65 @@
+# Live browser session: one browser stays open and executes commands as they arrive.
+# Started by the client (bridge.py session start). Commands and results travel through
+# the branches bs-<id>-cmd and bs-<id>-out. See docs/sessions.md.
+name: session
+run-name: ${{ inputs.id }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "Session id (letters, numbers, . _ -)"
+        required: true
+        type: string
+      config:
+        description: 'JSON: {"url","device","browser","detail","maxMinutes","idleMinutes","hide"}. No secrets: inputs are visible in the Actions UI.'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: session-${{ inputs.id }}
+  cancel-in-progress: false
+
+jobs:
+  session:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    env:
+      SESSION_ID: ${{ inputs.id }}
+      SESSION_CONFIG: ${{ inputs.config }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install engine
+        working-directory: engine
+        run: npm ci --no-audit --no-fund
+
+      - name: Pick browser
+        id: plan
+        run: |
+          B=$(node -e "try{const c=JSON.parse(process.env.SESSION_CONFIG);console.log(['chromium','webkit','firefox'].includes(c.browser)?c.browser:'chromium')}catch{console.log('chromium')}")
+          echo "browser=$B" >> "$GITHUB_OUTPUT"
+
+      - name: Cache browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: pw-${{ hashFiles('engine/package-lock.json') }}-${{ steps.plan.outputs.browser }}
+
+      - name: Install browser
+        working-directory: engine
+        run: npx playwright install --with-deps ${{ steps.plan.outputs.browser }}
+
+      - name: Run session
+        working-directory: engine
+        run: |
+          git config --global user.name "browser-bridge"
+          git config --global user.email "browser-bridge@users.noreply.github.com"
+          REPO_DIR="$GITHUB_WORKSPACE" OUT_WT=/tmp/bridge-session-out node session.mjs

@@ -1,0 +1,5 @@
+{
+  "preset": "glance",
+  "url": "https://example.org",
+  "notes": "Quick look: one screenshot, visible text, page info."
+}

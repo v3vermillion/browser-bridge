@@ -1,0 +1,8 @@
+{
+  "preset": "deep",
+  "url": "https://example.org",
+  "browsers": ["chromium", "webkit"],
+  "devices": ["desktop", "mobile"],
+  "capture": { "hide": ["#cookie-banner"] },
+  "notes": "Full audit: accessibility, performance, link health, Safari engine rendering."
+}

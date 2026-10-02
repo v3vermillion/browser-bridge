@@ -1,0 +1,954 @@
+{
+  "label": "live-deep-01",
+  "createdAt": "2026-10-02T20:42:46.653Z",
+  "engineVersion": "1.0.0",
+  "status": "ok",
+  "variants": [
+    {
+      "target": "rebuild",
+      "url": "https://caringforacauseindy.netlify.app/",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "rebuild/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-02T20:42:47.149Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.netlify.app/",
+      "loadSeconds": 5.7,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 10,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "desktop",
+        "scores": {
+          "performance": 83,
+          "accessibility": 87,
+          "best-practices": 96,
+          "seo": 100
+        },
+        "metrics": {
+          "LCP": "3.0 s",
+          "CLS": "0.006",
+          "TBT": "0 ms",
+          "FCP": "0.7 s",
+          "SpeedIndex": "1.1 s"
+        },
+        "failingAudits": [
+          {
+            "id": "uses-rel-preconnect",
+            "title": "Preconnect to required origins",
+            "score": 0,
+            "displayValue": "Est savings of 90 ms"
+          },
+          {
+            "id": "largest-contentful-paint-element",
+            "title": "Largest Contentful Paint element",
+            "score": 0,
+            "displayValue": "2,960 ms"
+          },
+          {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "frame-title",
+            "title": "`<frame>` or `<iframe>` elements do not have a title",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "html-has-lang",
+            "title": "`<html>` element does not have a `[lang]` attribute",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "render-blocking-resources",
+            "title": "Eliminate render-blocking resources",
+            "score": 0,
+            "displayValue": "Est savings of 100 ms"
+          },
+          {
+            "id": "unminified-css",
+            "title": "Minify CSS",
+            "score": 0,
+            "displayValue": "Est savings of 2 KiB"
+          },
+          {
+            "id": "modern-image-formats",
+            "title": "Serve images in next-gen formats",
+            "score": 0,
+            "displayValue": "Est savings of 1,064 KiB"
+          },
+          {
+            "id": "uses-responsive-images",
+            "title": "Properly size images",
+            "score": 0,
+            "displayValue": "Est savings of 149 KiB"
+          },
+          {
+            "id": "inspector-issues",
+            "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "font-display-insight",
+            "title": "Font display",
+            "score": 0,
+            "displayValue": "Est savings of 50 ms"
+          },
+          {
+            "id": "forced-reflow-insight",
+            "title": "Forced reflow",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "image-delivery-insight",
+            "title": "Improve image delivery",
+            "score": 0,
+            "displayValue": "Est savings of 886 KiB"
+          },
+          {
+            "id": "lcp-discovery-insight",
+            "title": "LCP request discovery",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "render-blocking-insight",
+            "title": "Render blocking requests",
+            "score": 0,
+            "displayValue": "Est savings of 100 ms"
+          },
+          {
+            "id": "largest-contentful-paint",
+            "title": "Largest Contentful Paint",
+            "score": 0.34,
+            "displayValue": "3.0 s"
+          },
+          {
+            "id": "font-display",
+            "title": "Ensure text remains visible during webfont load",
+            "score": 0.5,
+            "displayValue": null
+          },
+          {
+            "id": "third-party-facades",
+            "title": "Some third-party resources can be lazy loaded with a facade",
+            "score": 0.5,
+            "displayValue": "1 facade alternative available"
+          },
+          {
+            "id": "unsized-images",
+            "title": "Image elements do not have explicit `width` and `height`",
+            "score": 0.5,
+            "displayValue": null
+          },
+          {
+            "id": "prioritize-lcp-image",
+            "title": "Preload Largest Contentful Paint image",
+            "score": 0.5,
+            "displayValue": null
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "title": "Serve static assets with an efficient cache policy",
+            "score": 0.5,
+            "displayValue": "2 resources found"
+          },
+          {
+            "id": "total-byte-weight",
+            "title": "Avoid enormous network payloads",
+            "score": 0.5,
+            "displayValue": "Total size was 3,184 KiB"
+          },
+          {
+            "id": "uses-optimized-images",
+            "title": "Efficiently encode images",
+            "score": 0.5,
+            "displayValue": "Est savings of 132 KiB"
+          },
+          {
+            "id": "cache-insight",
+            "title": "Use efficient cache lifetimes",
+            "score": 0.5,
+            "displayValue": "Est savings of 43 KiB"
+          }
+        ]
+      },
+      "finishedAt": "2026-10-02T20:43:25.304Z",
+      "files": [
+        {
+          "path": "rebuild/chromium-desktop/full.jpg",
+          "bytes": 923595
+        },
+        {
+          "path": "rebuild/chromium-desktop/tiles/tile-01.jpg",
+          "bytes": 104665
+        },
+        {
+          "path": "rebuild/chromium-desktop/tiles/tile-02.jpg",
+          "bytes": 100353
+        },
+        {
+          "path": "rebuild/chromium-desktop/tiles/tile-03.jpg",
+          "bytes": 123725
+        },
+        {
+          "path": "rebuild/chromium-desktop/tiles/tile-04.jpg",
+          "bytes": 80744
+        },
+        {
+          "path": "rebuild/chromium-desktop/tiles/tile-05.jpg",
+          "bytes": 66972
+        },
+        {
+          "path": "rebuild/chromium-desktop/tiles/tile-06.jpg",
+          "bytes": 91239
+        },
+        {
+          "path": "rebuild/chromium-desktop/tiles/tile-07.jpg",
+          "bytes": 192379
+        },
+        {
+          "path": "rebuild/chromium-desktop/tiles/tile-08.jpg",
+          "bytes": 99325
+        },
+        {
+          "path": "rebuild/chromium-desktop/tiles/tile-09.jpg",
+          "bytes": 48477
+        },
+        {
+          "path": "rebuild/chromium-desktop/tiles/tile-10.jpg",
+          "bytes": 17226
+        },
+        {
+          "path": "rebuild/chromium-desktop/meta.json",
+          "bytes": 2240
+        },
+        {
+          "path": "rebuild/chromium-desktop/text.md",
+          "bytes": 3340
+        },
+        {
+          "path": "rebuild/chromium-desktop/page.html",
+          "bytes": 21008
+        },
+        {
+          "path": "rebuild/chromium-desktop/links.json",
+          "bytes": 6188
+        },
+        {
+          "path": "rebuild/chromium-desktop/images.json",
+          "bytes": 9652
+        },
+        {
+          "path": "rebuild/chromium-desktop/styles.json",
+          "bytes": 3224
+        },
+        {
+          "path": "rebuild/chromium-desktop/forms.json",
+          "bytes": 4788
+        },
+        {
+          "path": "rebuild/chromium-desktop/a11y.json",
+          "bytes": 8962
+        },
+        {
+          "path": "rebuild/chromium-desktop/lighthouse.json",
+          "bytes": 4266
+        },
+        {
+          "path": "rebuild/chromium-desktop/network.json",
+          "bytes": 1776
+        },
+        {
+          "path": "rebuild/chromium-desktop/summary.md",
+          "bytes": 1773
+        }
+      ]
+    },
+    {
+      "target": "rebuild",
+      "url": "https://caringforacauseindy.netlify.app/",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "rebuild/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-02T20:43:25.312Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.netlify.app/",
+      "loadSeconds": 6.4,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 21,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "mobile",
+        "scores": {
+          "performance": 51,
+          "accessibility": 88,
+          "best-practices": 96,
+          "seo": 100
+        },
+        "metrics": {
+          "LCP": "22.2 s",
+          "CLS": "0.134",
+          "TBT": "0 ms",
+          "FCP": "10.4 s",
+          "SpeedIndex": "10.4 s"
+        },
+        "failingAudits": [
+          {
+            "id": "first-contentful-paint",
+            "title": "First Contentful Paint",
+            "score": 0,
+            "displayValue": "10.4 s"
+          },
+          {
+            "id": "largest-contentful-paint",
+            "title": "Largest Contentful Paint",
+            "score": 0,
+            "displayValue": "22.2 s"
+          },
+          {
+            "id": "uses-rel-preconnect",
+            "title": "Preconnect to required origins",
+            "score": 0,
+            "displayValue": "Est savings of 320 ms"
+          },
+          {
+            "id": "largest-contentful-paint-element",
+            "title": "Largest Contentful Paint element",
+            "score": 0,
+            "displayValue": "22,160 ms"
+          },
+          {
+            "id": "layout-shifts",
+            "title": "Avoid large layout shifts",
+            "score": 0,
+            "displayValue": "1 layout shift found"
+          },
+          {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "frame-title",
+            "title": "`<frame>` or `<iframe>` elements do not have a title",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "html-has-lang",
+            "title": "`<html>` element does not have a `[lang]` attribute",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "render-blocking-resources",
+            "title": "Eliminate render-blocking resources",
+            "score": 0,
+            "displayValue": "Est savings of 4,350 ms"
+          },
+          {
+            "id": "modern-image-formats",
+            "title": "Serve images in next-gen formats",
+            "score": 0,
+            "displayValue": "Est savings of 1,506 KiB"
+          },
+          {
+            "id": "uses-optimized-images",
+            "title": "Efficiently encode images",
+            "score": 0,
+            "displayValue": "Est savings of 555 KiB"
+          },
+          {
+            "id": "inspector-issues",
+            "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "cache-insight",
+            "title": "Use efficient cache lifetimes",
+            "score": 0,
+            "displayValue": "Est savings of 20 KiB"
+          },
+          {
+            "id": "cls-culprits-insight",
+            "title": "Layout shift culprits",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "image-delivery-insight",
+            "title": "Improve image delivery",
+            "score": 0,
+            "displayValue": "Est savings of 1,384 KiB"
+          },
+          {
+            "id": "lcp-discovery-insight",
+            "title": "LCP request discovery",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "render-blocking-insight",
+            "title": "Render blocking requests",
+            "score": 0,
+            "displayValue": "Est savings of 4,370 ms"
+          },
+          {
+            "id": "interactive",
+            "title": "Time to Interactive",
+            "score": 0.01,
+            "displayValue": "22.2 s"
+          },
+          {
+            "id": "speed-index",
+            "title": "Speed Index",
+            "score": 0.08,
+            "displayValue": "10.4 s"
+          },
+          {
+            "id": "font-display",
+            "title": "Ensure text remains visible during webfont load",
+            "score": 0.5,
+            "displayValue": null
+          },
+          {
+            "id": "third-party-facades",
+            "title": "Some third-party resources can be lazy loaded with a facade",
+            "score": 0.5,
+            "displayValue": "1 facade alternative available"
+          },
+          {
+            "id": "unsized-images",
+            "title": "Image elements do not have explicit `width` and `height`",
+            "score": 0.5,
+            "displayValue": null
+          },
+          {
+            "id": "prioritize-lcp-image",
+            "title": "Preload Largest Contentful Paint image",
+            "score": 0.5,
+            "displayValue": null
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "title": "Serve static assets with an efficient cache policy",
+            "score": 0.5,
+            "displayValue": "2 resources found"
+          }
+        ]
+      },
+      "finishedAt": "2026-10-02T20:43:48.937Z",
+      "files": [
+        {
+          "path": "rebuild/chromium-mobile/full.jpg",
+          "bytes": 716382
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-01.jpg",
+          "bytes": 33960
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-02.jpg",
+          "bytes": 43326
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-03.jpg",
+          "bytes": 31524
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-04.jpg",
+          "bytes": 44491
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-05.jpg",
+          "bytes": 31103
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-06.jpg",
+          "bytes": 37029
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-07.jpg",
+          "bytes": 29695
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-08.jpg",
+          "bytes": 27412
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-09.jpg",
+          "bytes": 24547
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-10.jpg",
+          "bytes": 34556
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-11.jpg",
+          "bytes": 57492
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-12.jpg",
+          "bytes": 40419
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-13.jpg",
+          "bytes": 59396
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-14.jpg",
+          "bytes": 49842
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-15.jpg",
+          "bytes": 30507
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-16.jpg",
+          "bytes": 45906
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-17.jpg",
+          "bytes": 43950
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-18.jpg",
+          "bytes": 22125
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-19.jpg",
+          "bytes": 19957
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-20.jpg",
+          "bytes": 17147
+        },
+        {
+          "path": "rebuild/chromium-mobile/tiles/tile-21.jpg",
+          "bytes": 5830
+        },
+        {
+          "path": "rebuild/chromium-mobile/meta.json",
+          "bytes": 2241
+        },
+        {
+          "path": "rebuild/chromium-mobile/text.md",
+          "bytes": 3308
+        },
+        {
+          "path": "rebuild/chromium-mobile/page.html",
+          "bytes": 21020
+        },
+        {
+          "path": "rebuild/chromium-mobile/links.json",
+          "bytes": 6192
+        },
+        {
+          "path": "rebuild/chromium-mobile/images.json",
+          "bytes": 9677
+        },
+        {
+          "path": "rebuild/chromium-mobile/styles.json",
+          "bytes": 3686
+        },
+        {
+          "path": "rebuild/chromium-mobile/forms.json",
+          "bytes": 4788
+        },
+        {
+          "path": "rebuild/chromium-mobile/a11y.json",
+          "bytes": 8672
+        },
+        {
+          "path": "rebuild/chromium-mobile/lighthouse.json",
+          "bytes": 4220
+        },
+        {
+          "path": "rebuild/chromium-mobile/network.json",
+          "bytes": 1234
+        },
+        {
+          "path": "rebuild/chromium-mobile/summary.md",
+          "bytes": 1979
+        }
+      ]
+    },
+    {
+      "target": "rebuild",
+      "url": "https://caringforacauseindy.netlify.app/",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "rebuild/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-02T20:43:50.282Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.netlify.app/",
+      "loadSeconds": 5.1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 10,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-02T20:44:02.784Z",
+      "files": [
+        {
+          "path": "rebuild/webkit-desktop/full.jpg",
+          "bytes": 948599
+        },
+        {
+          "path": "rebuild/webkit-desktop/tiles/tile-01.jpg",
+          "bytes": 105202
+        },
+        {
+          "path": "rebuild/webkit-desktop/tiles/tile-02.jpg",
+          "bytes": 98760
+        },
+        {
+          "path": "rebuild/webkit-desktop/tiles/tile-03.jpg",
+          "bytes": 122659
+        },
+        {
+          "path": "rebuild/webkit-desktop/tiles/tile-04.jpg",
+          "bytes": 80263
+        },
+        {
+          "path": "rebuild/webkit-desktop/tiles/tile-05.jpg",
+          "bytes": 66592
+        },
+        {
+          "path": "rebuild/webkit-desktop/tiles/tile-06.jpg",
+          "bytes": 121600
+        },
+        {
+          "path": "rebuild/webkit-desktop/tiles/tile-07.jpg",
+          "bytes": 192324
+        },
+        {
+          "path": "rebuild/webkit-desktop/tiles/tile-08.jpg",
+          "bytes": 99074
+        },
+        {
+          "path": "rebuild/webkit-desktop/tiles/tile-09.jpg",
+          "bytes": 47403
+        },
+        {
+          "path": "rebuild/webkit-desktop/tiles/tile-10.jpg",
+          "bytes": 16895
+        },
+        {
+          "path": "rebuild/webkit-desktop/meta.json",
+          "bytes": 2240
+        },
+        {
+          "path": "rebuild/webkit-desktop/text.md",
+          "bytes": 3342
+        },
+        {
+          "path": "rebuild/webkit-desktop/page.html",
+          "bytes": 21008
+        },
+        {
+          "path": "rebuild/webkit-desktop/links.json",
+          "bytes": 6188
+        },
+        {
+          "path": "rebuild/webkit-desktop/images.json",
+          "bytes": 9652
+        },
+        {
+          "path": "rebuild/webkit-desktop/styles.json",
+          "bytes": 3220
+        },
+        {
+          "path": "rebuild/webkit-desktop/forms.json",
+          "bytes": 4788
+        },
+        {
+          "path": "rebuild/webkit-desktop/a11y.json",
+          "bytes": 8962
+        },
+        {
+          "path": "rebuild/webkit-desktop/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "rebuild/webkit-desktop/network.json",
+          "bytes": 965
+        },
+        {
+          "path": "rebuild/webkit-desktop/summary.md",
+          "bytes": 1703
+        }
+      ]
+    },
+    {
+      "target": "rebuild",
+      "url": "https://caringforacauseindy.netlify.app/",
+      "browser": "webkit",
+      "device": "mobile",
+      "dir": "rebuild/webkit-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-02T20:44:02.785Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.netlify.app/",
+      "loadSeconds": 5.8,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 21,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-02T20:44:10.677Z",
+      "files": [
+        {
+          "path": "rebuild/webkit-mobile/full.jpg",
+          "bytes": 726374
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-01.jpg",
+          "bytes": 34456
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-02.jpg",
+          "bytes": 42388
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-03.jpg",
+          "bytes": 31102
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-04.jpg",
+          "bytes": 43501
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-05.jpg",
+          "bytes": 30406
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-06.jpg",
+          "bytes": 38583
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-07.jpg",
+          "bytes": 26855
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-08.jpg",
+          "bytes": 28503
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-09.jpg",
+          "bytes": 27422
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-10.jpg",
+          "bytes": 47753
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-11.jpg",
+          "bytes": 55730
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-12.jpg",
+          "bytes": 42233
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-13.jpg",
+          "bytes": 59057
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-14.jpg",
+          "bytes": 49514
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-15.jpg",
+          "bytes": 31153
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-16.jpg",
+          "bytes": 46388
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-17.jpg",
+          "bytes": 41136
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-18.jpg",
+          "bytes": 19354
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-19.jpg",
+          "bytes": 22247
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-20.jpg",
+          "bytes": 14210
+        },
+        {
+          "path": "rebuild/webkit-mobile/tiles/tile-21.jpg",
+          "bytes": 5890
+        },
+        {
+          "path": "rebuild/webkit-mobile/meta.json",
+          "bytes": 2241
+        },
+        {
+          "path": "rebuild/webkit-mobile/text.md",
+          "bytes": 3310
+        },
+        {
+          "path": "rebuild/webkit-mobile/page.html",
+          "bytes": 21020
+        },
+        {
+          "path": "rebuild/webkit-mobile/links.json",
+          "bytes": 6192
+        },
+        {
+          "path": "rebuild/webkit-mobile/images.json",
+          "bytes": 9677
+        },
+        {
+          "path": "rebuild/webkit-mobile/styles.json",
+          "bytes": 3378
+        },
+        {
+          "path": "rebuild/webkit-mobile/forms.json",
+          "bytes": 4788
+        },
+        {
+          "path": "rebuild/webkit-mobile/a11y.json",
+          "bytes": 8672
+        },
+        {
+          "path": "rebuild/webkit-mobile/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "rebuild/webkit-mobile/network.json",
+          "bytes": 1108
+        },
+        {
+          "path": "rebuild/webkit-mobile/summary.md",
+          "bytes": 1911
+        }
+      ]
+    }
+  ],
+  "job": {
+    "preset": "standard",
+    "targets": [
+      {
+        "url": "https://caringforacauseindy.netlify.app/",
+        "name": "rebuild"
+      }
+    ],
+    "browsers": [
+      "chromium",
+      "webkit"
+    ],
+    "devices": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "mobile",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+        "viewport": {
+          "width": 393,
+          "height": 659
+        },
+        "screen": {
+          "width": 393,
+          "height": 852
+        },
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true,
+        "defaultBrowserType": "webkit"
+      }
+    ],
+    "capture": {
+      "screenshot": "full",
+      "tiles": true,
+      "tileHeight": null,
+      "maxTiles": 25,
+      "format": "jpeg",
+      "quality": 80,
+      "detail": 1,
+      "animations": "disabled",
+      "waitMs": 800,
+      "timeoutMs": 45000,
+      "revealLazyContent": true,
+      "hide": [],
+      "blockWrites": true,
+      "text": true,
+      "meta": true,
+      "html": true,
+      "links": true,
+      "checkLinks": false,
+      "images": true,
+      "styles": true,
+      "forms": true,
+      "a11y": true,
+      "aria": false,
+      "lighthouse": true
+    },
+    "steps": [],
+    "notes": "Live test 3: WebKit + Lighthouse + accessibility on GitHub runners | No brief: system test of WebKit and Lighthouse",
+    "brief": null
+  },
+  "finishedAt": "2026-10-02T20:44:10.780Z"
+}

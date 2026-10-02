@@ -1,0 +1,39 @@
+{
+  "failedRequests": [],
+  "httpErrors": [],
+  "blockedWrites": [
+    {
+      "method": "POST",
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json"
+    },
+    {
+      "method": "POST",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+    },
+    {
+      "method": "POST",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+    },
+    {
+      "method": "POST",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+    },
+    {
+      "method": "POST",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+    },
+    {
+      "method": "POST",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json"
+    }
+  ],
+  "consoleErrors": [
+    "Unable to post message to https://caringforacauseindy.netlify.app. Recipient has origin https://www.youtube.com.\n"
+  ],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 0
+}

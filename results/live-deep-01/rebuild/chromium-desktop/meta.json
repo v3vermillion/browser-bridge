@@ -1,0 +1,105 @@
+{
+  "url": "https://caringforacauseindy.netlify.app/",
+  "title": "Caring For A Cause- Together We Can",
+  "lang": null,
+  "description": "Giving back through life-changing experiences.",
+  "viewport": "width=device-width, initial-scale=1",
+  "robots": null,
+  "generator": "Webflow",
+  "canonical": null,
+  "favicon": "https://caringforacauseindy.netlify.app/images/favicon.png",
+  "og": {
+    "title": "Caring For A Cause- Together We Can",
+    "description": "Giving back through life-changing experiences.",
+    "image": "https://uploads-ssl.webflow.com/611401ec4d776fddd870a5e6/6137f83b071d3951b0e68edb_69829958_1378157709001360_3477064265662201856_n.jpg",
+    "url": null,
+    "type": "website",
+    "site_name": null
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "h1Count": 7,
+  "headings": [
+    {
+      "level": 1,
+      "text": "TOGETHER WE CAN.",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "OUTREACH PROGRAMS",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "DIAPER DRIVE INITIATIVE PROGRAM",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "HOLIDAY ASSISTANCE OUTREACH PROGRAMS",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "FREE HAIR CUT & STYLES",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "OPERATION CARE PACKAGE",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "ABOUT US",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "HISTORY",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "MISSION",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "OUR TEAM",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "IMAGES & GALLERY",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "•ENROLL •DONATE• VOLUNTEER",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "NAVIGATION",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "CONTACT US",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "MEDIA",
+      "visible": true
+    }
+  ],
+  "structuredData": [],
+  "pageHeight": 8441
+}

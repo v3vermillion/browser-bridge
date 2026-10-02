@@ -1,0 +1,235 @@
+{
+  "links": [
+    {
+      "text": "",
+      "name": "home",
+      "href": "/",
+      "resolved": "https://caringforacauseindy.netlify.app/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Home",
+      "name": "Home",
+      "href": "#",
+      "resolved": "https://caringforacauseindy.netlify.app/#",
+      "kind": "empty",
+      "target": null,
+      "visible": true,
+      "flags": [
+        "goes-nowhere"
+      ]
+    },
+    {
+      "text": "Programs",
+      "name": "Programs",
+      "href": "#program-section",
+      "resolved": "https://caringforacauseindy.netlify.app/#program-section",
+      "kind": "anchor",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "About us",
+      "name": "About us",
+      "href": "#about-us",
+      "resolved": "https://caringforacauseindy.netlify.app/#about-us",
+      "kind": "anchor",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Gallery",
+      "name": "Gallery",
+      "href": "#image-and-gallery",
+      "resolved": "https://caringforacauseindy.netlify.app/#image-and-gallery",
+      "kind": "anchor",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Join us",
+      "name": "Join us",
+      "href": "#Contact-form",
+      "resolved": "https://caringforacauseindy.netlify.app/#Contact-form",
+      "kind": "anchor",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Apply now",
+      "name": "Apply now",
+      "href": "#Contact-form",
+      "resolved": "https://caringforacauseindy.netlify.app/#Contact-form",
+      "kind": "anchor",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Apply now",
+      "name": "Apply now",
+      "href": "#Contact-form",
+      "resolved": "https://caringforacauseindy.netlify.app/#Contact-form",
+      "kind": "anchor",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Apply now",
+      "name": "Apply now",
+      "href": "#Contact-form",
+      "resolved": "https://caringforacauseindy.netlify.app/#Contact-form",
+      "kind": "anchor",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Apply now",
+      "name": "Apply now",
+      "href": "#Contact-form",
+      "resolved": "https://caringforacauseindy.netlify.app/#Contact-form",
+      "kind": "anchor",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "use this link",
+      "name": "use this link",
+      "href": "https://smile.amazon.com/ch/47-4917287",
+      "resolved": "https://smile.amazon.com/ch/47-4917287",
+      "kind": "external",
+      "target": "_blank",
+      "visible": true,
+      "flags": [
+        "generic-text"
+      ]
+    },
+    {
+      "text": "Home",
+      "name": "Home",
+      "href": "https://webflow.com/design/caring-for-a-cause",
+      "resolved": "https://webflow.com/design/caring-for-a-cause",
+      "kind": "external",
+      "target": "_blank",
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Programs",
+      "name": "Programs",
+      "href": "https://webflow.com/design/caring-for-a-cause",
+      "resolved": "https://webflow.com/design/caring-for-a-cause",
+      "kind": "external",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "About us",
+      "name": "About us",
+      "href": "https://webflow.com/design/caring-for-a-cause",
+      "resolved": "https://webflow.com/design/caring-for-a-cause",
+      "kind": "external",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Gallery",
+      "name": "Gallery",
+      "href": "#",
+      "resolved": "https://caringforacauseindy.netlify.app/#",
+      "kind": "empty",
+      "target": null,
+      "visible": true,
+      "flags": [
+        "goes-nowhere"
+      ]
+    },
+    {
+      "text": "How to donate",
+      "name": "How to donate",
+      "href": "https://webflow.com/design/caring-for-a-cause",
+      "resolved": "https://webflow.com/design/caring-for-a-cause",
+      "kind": "external",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Email",
+      "name": "Email",
+      "href": "mailto:Caringforacause2015@gmail.com?subject=You%20have%20got%20mail.",
+      "resolved": "mailto:Caringforacause2015@gmail.com?subject=You%20have%20got%20mail.",
+      "kind": "mailto",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "317-886-0724",
+      "name": "317-886-0724",
+      "href": "#",
+      "resolved": "https://caringforacauseindy.netlify.app/#",
+      "kind": "empty",
+      "target": null,
+      "visible": true,
+      "flags": [
+        "goes-nowhere"
+      ]
+    },
+    {
+      "text": "2424 North Meridian street, Suite B Indianapolis, IN",
+      "name": "2424 North Meridian street, Suite B Indianapolis, IN",
+      "href": "#",
+      "resolved": "https://caringforacauseindy.netlify.app/#",
+      "kind": "empty",
+      "target": null,
+      "visible": true,
+      "flags": [
+        "goes-nowhere"
+      ]
+    },
+    {
+      "text": "",
+      "name": "",
+      "href": "https://www.facebook.com/caringforacausesupportiveservices/about/?ref=page_internal",
+      "resolved": "https://www.facebook.com/caringforacausesupportiveservices/about/?ref=page_internal",
+      "kind": "external",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "",
+      "name": "",
+      "href": "https://www.youtube.com/channel/UCgGR2vXOZ4SQ9dBitTx_PDQ",
+      "resolved": "https://www.youtube.com/channel/UCgGR2vXOZ4SQ9dBitTx_PDQ",
+      "kind": "external",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "",
+      "name": "",
+      "href": "https://twitter.com/CauseCaring",
+      "resolved": "https://twitter.com/CauseCaring",
+      "kind": "external",
+      "target": null,
+      "visible": true,
+      "flags": []
+    }
+  ],
+  "statuses": "not checked (set capture.checkLinks: true)"
+}

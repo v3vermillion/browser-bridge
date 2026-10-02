@@ -1,0 +1,19 @@
+## rebuild - chromium / mobile
+- URL: https://caringforacauseindy.netlify.app/
+- Status: ok, HTTP 200, ready in 6.4s
+- Viewport: 393x659 at 1x detail
+- Title: Caring For A Cause- Together We Can
+- Meta description: Giving back through life-changing experiences.
+- H1 count: 7; headings total: 15; page height: 13334px
+- Structured data blocks: 0; lang: (none); og:image: yes
+- Images: 15 <img> + 6 large backgrounds; missing alt: 0, empty alt on large: 15, broken: 0, upscaled/blurry: 0, below retina: 20
+- Links: 22; go nowhere: 4, no accessible name: 0, generic text: 1, missing anchor targets: 0
+- Primary font families (by text volume): Cabin, Lato, Arial, Font awesome 5 free solid 900, Font awesome 5 brands 400
+- Text colors in use: 11; font sizes in use: 16; uppercase share of text: 8%
+- Forms: 1; fields: 12; without programmatic label: 2; labels pointing at missing ids: 4
+  - form 1: POST -> https://api.sheetmonkey.io/form/j7SVMrhS2BJvkLgi2YDHyW
+- Accessibility (axe): 5 rule violations {"serious":3,"moderate":2}; 3 need manual review
+- Lighthouse (mobile): performance 51, accessibility 88, best-practices 96, seo 100
+- Network: 0 HTTP errors, 0 failed requests, 0 JS errors from the site (+9 caused by write-blocking, ignored)
+- Write requests blocked (nothing was sent): jnn-pa.googleapis.com x7, www.youtube.com x2. Analytics/embed calls here are normal; form destinations are listed under Forms when forms are captured.
+- Files: full.jpg, tiles/tile-01.jpg, tiles/tile-02.jpg, tiles/tile-03.jpg, tiles/tile-04.jpg, tiles/tile-05.jpg, tiles/tile-06.jpg, tiles/tile-07.jpg, tiles/tile-08.jpg, tiles/tile-09.jpg, tiles/tile-10.jpg, tiles/tile-11.jpg, tiles/tile-12.jpg, tiles/tile-13.jpg, tiles/tile-14.jpg, tiles/tile-15.jpg, tiles/tile-16.jpg, tiles/tile-17.jpg, tiles/tile-18.jpg, tiles/tile-19.jpg, tiles/tile-20.jpg, tiles/tile-21.jpg, meta.json, text.md, page.html, links.json, images.json, styles.json, forms.json, a11y.json, lighthouse.json, network.json

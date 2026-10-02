@@ -1,0 +1,158 @@
+{
+  "note": "Automated scans catch only part of accessibility problems; absence of a violation is not proof of compliance.",
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axeAPI",
+      "count": 13,
+      "examples": [
+        {
+          "target": ".button-2",
+          "html": "<a href=\"#Contact-form\" class=\"button-2 w-button\">Join us</a>",
+          "why": "Fix any of the following:\n  Element has insufficient color contrast of 3.44 (foreground color: #ffffff, background color: #1a9b89, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": "#program-section > .container > .flex-box.potrait > .content-colum.third > .button-3.w-button[href$=\"#Contact-form\"]",
+          "html": "<a href=\"#Contact-form\" class=\"button-3 w-button\">Apply now</a>",
+          "why": "Fix any of the following:\n  Element has insufficient color contrast of 3.44 (foreground color: #ffffff, background color: #1a9b89, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".section.wf-section:nth-child(3) > .container > .flex-box.potrait.reversed > .content-colum > .button-3.w-button[href$=\"#Contact-form\"]",
+          "html": "<a href=\"#Contact-form\" class=\"button-3 w-button\">Apply now</a>",
+          "why": "Fix any of the following:\n  Element has insufficient color contrast of 3.44 (foreground color: #ffffff, background color: #1a9b89, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".section.third.wf-section:nth-child(4) > .container > .flex-box.potrait > .content-colum.third > .button-3.w-button[href$=\"#Contact-form\"]",
+          "html": "<a href=\"#Contact-form\" class=\"button-3 w-button\">Apply now</a>",
+          "why": "Fix any of the following:\n  Element has insufficient color contrast of 3.44 (foreground color: #ffffff, background color: #1a9b89, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".last.section.wf-section > .container > .flex-box.potrait.reversed > .content-colum > .button-3.w-button[href$=\"#Contact-form\"]",
+          "html": "<a href=\"#Contact-form\" class=\"button-3 w-button\">Apply now</a>",
+          "why": "Fix any of the following:\n  Element has insufficient color contrast of 3.44 (foreground color: #ffffff, background color: #1a9b89, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".first > .text-block-7",
+          "html": "<div class=\"text-block-7\">Seeing a need for energetic, nonprofit work in this area, we formed our organization to provide sensible solutions. We've consistently grown since then, all thanks to the hel",
+          "why": "Fix any of the following:\n  Element has insufficient color contrast of 4.23 (foreground color: #6d7d8b, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".icons-info-colum:nth-child(2) > .text-block-7",
+          "html": "<div class=\"text-block-7\">We are dedicated to creating and managing programs that tangibly support and enhance, the physical and emotional well being of financially disadvantaged families in Central I",
+          "why": "Fix any of the following:\n  Element has insufficient color contrast of 4.23 (foreground color: #6d7d8b, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": ".last.icons-info-colum > .text-block-7",
+          "html": "<div class=\"text-block-7\">We have amazing part-time volunteers that are committed to helping others. We are always looking for more help. Think you would be a good fit? Get in touch for more informati",
+          "why": "Fix any of the following:\n  Element has insufficient color contrast of 4.23 (foreground color: #6d7d8b, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/frame-title?application=axeAPI",
+      "count": 1,
+      "examples": [
+        {
+          "target": "iframe",
+          "html": "<iframe src=\"https://www.youtube.com/embed/Z5USx1xFF58?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0\" frameborder=\"0\" style=\"position:absolute;left:0;top:0;width:100%;height:100%;pointer-",
+          "why": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or r"
+        }
+      ]
+    },
+    {
+      "id": "html-has-lang",
+      "impact": "serious",
+      "help": "<html> element must have a lang attribute",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/html-has-lang?application=axeAPI",
+      "count": 1,
+      "examples": [
+        {
+          "target": "html",
+          "html": "<html data-wf-page=\"613ea969dd7726ad4892...\" data-wf-site=\"611401ec4d776fddd870...\" class=\"w-mod-js wf-lato-n3-...\">",
+          "why": "Fix any of the following:\n  The <html> element does not have a lang attribute"
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=axeAPI",
+      "count": 1,
+      "examples": [
+        {
+          "target": "html",
+          "html": "<html data-wf-page=\"613ea969dd7726ad4892...\" data-wf-site=\"611401ec4d776fddd870...\" class=\"w-mod-js wf-lato-n3-...\">",
+          "why": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=axeAPI",
+      "count": 28,
+      "examples": [
+        {
+          "target": ".w-clearfix",
+          "html": "<div class=\"container w-clearfix\">\n      <div class=\"hero-contents\">\n        <h1 class=\"heading\">TOGETHER WE CAN.</h1>\n        <p class=\"paragraph\">Giving back through life-changing experiences</p>\n  ",
+          "why": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "target": "#program-section",
+          "html": "<section id=\"program-section\" class=\"section third wf-section\">",
+          "why": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "target": ".section.wf-section:nth-child(3)",
+          "html": "<div class=\"section wf-section\">",
+          "why": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "target": ".section.third.wf-section:nth-child(4)",
+          "html": "<div class=\"section third wf-section\">",
+          "why": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "target": ".last.section.wf-section",
+          "html": "<div class=\"section last wf-section\">",
+          "why": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "target": "#about-us",
+          "html": "<div id=\"about-us\" class=\"sections wf-section\">",
+          "why": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "target": ".heading-13",
+          "html": "<h1 class=\"heading-13\">IMAGES &amp; GALLERY</h1>",
+          "why": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "target": ".forms",
+          "html": "<h2 class=\"heading-9 forms\">•ENROLL •DONATE• VOLUNTEER</h2>",
+          "why": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ],
+  "incompleteNeedsReview": [
+    {
+      "id": "color-contrast",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "count": 12
+    },
+    {
+      "id": "frame-tested",
+      "help": "Frames should be tested with axe-core",
+      "count": 1
+    }
+  ],
+  "passesCount": 33
+}

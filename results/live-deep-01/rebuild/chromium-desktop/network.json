@@ -1,0 +1,66 @@
+{
+  "failedRequests": [
+    {
+      "url": "https://www.youtube.com/generate_204",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.youtube.com/generate_204",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "httpErrors": [],
+  "blockedWrites": [
+    {
+      "method": "POST",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+    },
+    {
+      "method": "POST",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+    },
+    {
+      "method": "POST",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+    },
+    {
+      "method": "POST",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json"
+    },
+    {
+      "method": "POST",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json"
+    },
+    {
+      "method": "POST",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+    },
+    {
+      "method": "POST",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+    },
+    {
+      "method": "POST",
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 12
+}

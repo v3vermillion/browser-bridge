@@ -1,0 +1,168 @@
+{
+  "formFactor": "mobile",
+  "scores": {
+    "performance": 51,
+    "accessibility": 88,
+    "best-practices": 96,
+    "seo": 100
+  },
+  "metrics": {
+    "LCP": "22.2 s",
+    "CLS": "0.134",
+    "TBT": "0 ms",
+    "FCP": "10.4 s",
+    "SpeedIndex": "10.4 s"
+  },
+  "failingAudits": [
+    {
+      "id": "first-contentful-paint",
+      "title": "First Contentful Paint",
+      "score": 0,
+      "displayValue": "10.4 s"
+    },
+    {
+      "id": "largest-contentful-paint",
+      "title": "Largest Contentful Paint",
+      "score": 0,
+      "displayValue": "22.2 s"
+    },
+    {
+      "id": "uses-rel-preconnect",
+      "title": "Preconnect to required origins",
+      "score": 0,
+      "displayValue": "Est savings of 320 ms"
+    },
+    {
+      "id": "largest-contentful-paint-element",
+      "title": "Largest Contentful Paint element",
+      "score": 0,
+      "displayValue": "22,160 ms"
+    },
+    {
+      "id": "layout-shifts",
+      "title": "Avoid large layout shifts",
+      "score": 0,
+      "displayValue": "1 layout shift found"
+    },
+    {
+      "id": "color-contrast",
+      "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "frame-title",
+      "title": "`<frame>` or `<iframe>` elements do not have a title",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "html-has-lang",
+      "title": "`<html>` element does not have a `[lang]` attribute",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "render-blocking-resources",
+      "title": "Eliminate render-blocking resources",
+      "score": 0,
+      "displayValue": "Est savings of 4,350 ms"
+    },
+    {
+      "id": "modern-image-formats",
+      "title": "Serve images in next-gen formats",
+      "score": 0,
+      "displayValue": "Est savings of 1,506 KiB"
+    },
+    {
+      "id": "uses-optimized-images",
+      "title": "Efficiently encode images",
+      "score": 0,
+      "displayValue": "Est savings of 555 KiB"
+    },
+    {
+      "id": "inspector-issues",
+      "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "cache-insight",
+      "title": "Use efficient cache lifetimes",
+      "score": 0,
+      "displayValue": "Est savings of 20 KiB"
+    },
+    {
+      "id": "cls-culprits-insight",
+      "title": "Layout shift culprits",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "image-delivery-insight",
+      "title": "Improve image delivery",
+      "score": 0,
+      "displayValue": "Est savings of 1,384 KiB"
+    },
+    {
+      "id": "lcp-discovery-insight",
+      "title": "LCP request discovery",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "render-blocking-insight",
+      "title": "Render blocking requests",
+      "score": 0,
+      "displayValue": "Est savings of 4,370 ms"
+    },
+    {
+      "id": "interactive",
+      "title": "Time to Interactive",
+      "score": 0.01,
+      "displayValue": "22.2 s"
+    },
+    {
+      "id": "speed-index",
+      "title": "Speed Index",
+      "score": 0.08,
+      "displayValue": "10.4 s"
+    },
+    {
+      "id": "font-display",
+      "title": "Ensure text remains visible during webfont load",
+      "score": 0.5,
+      "displayValue": null
+    },
+    {
+      "id": "third-party-facades",
+      "title": "Some third-party resources can be lazy loaded with a facade",
+      "score": 0.5,
+      "displayValue": "1 facade alternative available"
+    },
+    {
+      "id": "unsized-images",
+      "title": "Image elements do not have explicit `width` and `height`",
+      "score": 0.5,
+      "displayValue": null
+    },
+    {
+      "id": "prioritize-lcp-image",
+      "title": "Preload Largest Contentful Paint image",
+      "score": 0.5,
+      "displayValue": null
+    },
+    {
+      "id": "uses-long-cache-ttl",
+      "title": "Serve static assets with an efficient cache policy",
+      "score": 0.5,
+      "displayValue": "2 resources found"
+    }
+  ]
+}

@@ -276,6 +276,8 @@ async function execute(c, dir = outDirFor(c.seq)) {
         const loc = locatorFor(c);
         if (!loc) throw new Error('inspect needs ref, selector, or text');
         res.inspect = await loc.evaluate(inspectElement);
+        // Picture from the same instant: styles can change with scroll position, hover, or "current" states.
+        try { await loc.screenshot({ path: path.join(dir, 'element.jpg'), type: 'jpeg', quality: 90, scale: 'device', animations: 'disabled' }); res.files.push('element.jpg'); } catch {}
         autoShot = false; break;
       }
       case 'fullpage': res.files.push(await shot(dir, 'full.jpg', { fullPage: true })); autoShot = false; break;

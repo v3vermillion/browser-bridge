@@ -1,8 +1,8 @@
 # Live sessions
 
 A live session keeps one browser open (desktop, phone, or tablet) so you can look, decide, and act in
-seconds: the same loop a person uses. Typical cost: about a minute to start, then a few seconds per
-action. Each session uses GitHub Actions minutes while open (closes after `--idle` minutes, max 60).
+seconds: the same loop a person uses. Measured on GitHub-hosted runners: about 70 seconds to start, then
+about 5-6 seconds per round trip. Each session uses GitHub Actions minutes while open (closes after `--idle` minutes, max 60).
 
 ```bash
 python3 bridge.py session start --url https://example.org --device mobile --brief brief.md   # first look arrives with "ready"
@@ -44,7 +44,7 @@ Full control: `session do --json '{"action":"swipe","direction":"left","ref":4,"
 
 ## Several actions per round trip
 
-Each round trip costs a few seconds, so when you already know the next steps, send them together:
+Each round trip costs about 5-6 seconds, so when you already know the next steps, send them together:
 `session do "tap 3" "swipe up" "zoom 8"` (or `session do tap 3 ; swipe up ; zoom 8`). They run in order and
 each returns its own result and screenshot. The batch stops at the first failure (later steps usually
 depend on earlier ones); with `--json`, add `"continueOnError": true` to change that. Element numbers in a

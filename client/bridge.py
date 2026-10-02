@@ -13,10 +13,11 @@ Configuration (flags override env):
 Commands:
   check                         verify token, repo access, and workflow
   run JOB|--url URL [...]       dispatch a capture, wait, download summary
+                                (needs --brief FILE or --no-brief "reason")
   status LABEL                  show the run's state
   fetch LABEL [--include GLOB]  download result files (default: summaries only)
   list                          list result labels on the results branch
-  session start --url URL       open a live browser (see docs/sessions.md)
+  session start --url URL       open a live browser (see docs/sessions.md; same brief rule)
   session do ACTION [ARGS]      act in the live browser and get a screenshot back
                                 several at once: session do "tap 4" "swipe left" "zoom 7"
   session end                   close the live browser
@@ -386,6 +387,7 @@ def print_result(res, saved):
         t = ins["tapTarget"]
         print(f"  tap target {t['w']}x{t['h']}px -> WCAG 2.2 24px minimum {'met' if t['meetsWcag22Min24px'] else 'NOT met'}")
         print(f"  spacing: padding {ins['spacing']['padding']}, margin {ins['spacing']['margin']}; radius {ins['shape']['borderRadius']}")
+        print("  (element.jpg shows this element at the same moment; styles can change with scroll, hover, or active states)")
     if "value" in res:
         print(f"  value: {json.dumps(res['value'])[:500]}")
     els = res.get("elements")

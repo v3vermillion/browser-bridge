@@ -528,7 +528,16 @@ async function captureVariant({ target, browserName, device, job, outDir, browse
     if (network.failedRequests.length < 100) network.failedRequests.push({ url, error: r.failure()?.errorText || '' });
   });
   page.on('response', (r) => { if (r.status() >= 400 && network.httpErrors.length < 100) network.httpErrors.push({ status: r.status(), url: r.url().slice(0, 300) }); });
-  page.on('console', (m) => { if (m.type() === 'error' && network.consoleErrors.length < 50) network.consoleErrors.push(m.text().slice(0, 300)); });
+  network.errorsCausedByBlocking = 0;
+  page.on('console', (m) => {
+    if (m.type() !== 'error') return;
+    const loc = (m.location()?.url || '').slice(0, 300);
+    // Our own write-blocking makes the browser log "Failed to load resource"; those aren't site bugs.
+    if (network.blockedWrites.some((b) => b.url === loc) || (network.blockedWrites.length && /^Failed to load resource: net::ERR_FAILED/.test(m.text()))) {
+      network.errorsCausedByBlocking++; return;
+    }
+    if (network.consoleErrors.length < 50) network.consoleErrors.push(m.text().slice(0, 300));
+  });
   page.on('pageerror', (e) => { if (network.pageErrors.length < 50) network.pageErrors.push(String(e.message || e).slice(0, 300)); });
 
   const ext = cap.format === 'png' ? 'png' : 'jpg';
@@ -685,8 +694,12 @@ function variantSummary(f, cap) {
   }
   if (f.steps) L.push(`- Steps: ${f.steps.length} run, ${f.steps.filter((s) => !s.ok).length} failed`);
   const n = f.network;
-  L.push(`- Network: ${n.httpErrors.length} HTTP errors, ${n.failedRequests.length} failed requests, ${n.consoleErrors.length + n.pageErrors.length} JS errors, ${n.blockedWrites.length} write requests blocked`);
-  for (const b of n.blockedWrites.slice(0, 5)) L.push(`  - blocked ${b.method} ${b.url}`);
+  L.push(`- Network: ${n.httpErrors.length} HTTP errors, ${n.failedRequests.length} failed requests, ${n.consoleErrors.length + n.pageErrors.length} JS errors from the site${n.errorsCausedByBlocking ? ` (+${n.errorsCausedByBlocking} caused by write-blocking, ignored)` : ''}`);
+  if (n.blockedWrites.length) {
+    const byHost = {};
+    for (const b of n.blockedWrites) { let h = 'other'; try { h = new URL(b.url).host; } catch {} byHost[h] = (byHost[h] || 0) + 1; }
+    L.push(`- Write requests blocked (nothing was sent): ${Object.entries(byHost).map(([h, c]) => `${h} x${c}`).join(', ')}. Analytics/embed calls here are normal; form destinations are listed under Forms when forms are captured.`);
+  }
   L.push(`- Files: ${f.files.map((x) => x.path.split('/').slice(2).join('/')).join(', ')}`);
   return L.join('\n') + '\n';
 }

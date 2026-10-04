@@ -1,0 +1,228 @@
+{
+  "url": "https://www.feedingamerica.org/",
+  "title": "U.S. Hunger Relief Organization | Feeding America",
+  "lang": "en",
+  "description": "Feeding America is a nonprofit network of 200 food banks leading the fight against hunger in the United States. Learn how you can help end hunger in America.",
+  "viewport": "width=device-width, initial-scale=1.0",
+  "robots": "max-snippet:-1, max-video-preview:-1, max-image-preview:standard",
+  "generator": null,
+  "canonical": "https://www.feedingamerica.org/",
+  "favicon": "https://www.feedingamerica.org/themes/custom/ts_feeding_america/favicon.ico",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": "https://www.feedingamerica.org/themes/custom/ts_feeding_america/images/Feeding_America_logo.svg.png",
+    "url": null,
+    "type": null,
+    "site_name": "Feeding America"
+  },
+  "twitter": {
+    "card": null,
+    "title": null,
+    "description": null,
+    "image": "https://www.feedingamerica.org/themes/custom/ts_feeding_america/images/Feeding_America_logo.svg.png"
+  },
+  "h1Count": 2,
+  "headings": [
+    {
+      "level": 2,
+      "text": "FA Main Menu",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "Together, Let's End Hunger",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Find Food and Resources",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Find Food Near You",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Find Food Near You",
+      "visible": false
+    },
+    {
+      "level": 3,
+      "text": "Get SNAP Assistance",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Explore More Meal Programs",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Make a Difference",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Donate",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Advocate",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Fundraise",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Volunteer",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Hunger in America is a crisis.",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Find Local Opportunities to End Hunger",
+      "visible": false
+    },
+    {
+      "level": 3,
+      "text": "Make A Difference Near You",
+      "visible": false
+    },
+    {
+      "level": 2,
+      "text": "We unite communities to end hunger.",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Research For Solutions",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Local Roots, National Impact",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Nationwide Distribution",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Nutrition for Every Plate",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Our resolve to end hunger is stronger than ever.",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "5.7 Billion Meals",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "4.3 Billion Pounds",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "59,647+ Programs",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "199+ Food Banks",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "We Can End Hunger When We Work Together",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "$1 = 10 Meals",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Join Us to End Hunger in America",
+      "visible": true
+    }
+  ],
+  "structuredData": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "additionalType": "NGO",
+          "@id": "",
+          "name": "Feeding America",
+          "sameAs": [
+            "https://twitter.com/feedingamerica",
+            "https://twitter.com/hunger",
+            "https://www.facebook.com/FeedingAmerica/",
+            "https://www.instagram.com/feedingamerica/",
+            "https://www.tiktok.com/@feeding_america",
+            "https://www.youtube.com/channel/UCsroi4rRBMwrs9CIpJP4jiw",
+            "https://www.linkedin.com/company/feeding-america/",
+            "https://en.wikipedia.org/wiki/Feeding_America"
+          ],
+          "url": "https://www.feedingamerica.org",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-800-771-2303",
+            "availableLanguage": "en",
+            "contactType": "customer service",
+            "areaServed": {
+              "@type": "Country",
+              "name": "US"
+            }
+          },
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.feedingamerica.org/themes/custom/ts_feeding_america/images/svgs/logo-2020.svg",
+            "width": "675",
+            "height": "346"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "name": "Feeding America",
+          "url": "https://www.feedingamerica.org/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "query": "https://www.feedingamerica.org/search/node?q={search_term_string}",
+            "query-input": "required name=search_term_string",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.feedingamerica.org/search/node?q={search_term_string}"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "pageHeight": 10613
+}

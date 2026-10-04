@@ -1,0 +1,244 @@
+{
+  "failedRequests": [
+    {
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=269734067.1791073105&gtm=45Fe69u2h1v72045118za204zd72045118xeaxf3xg4&fmt=3",
+      "error": "net::ERR_BLOCKED_BY_ORB"
+    },
+    {
+      "url": "https://2174a85c7aad.w.hcaptcha.com/logo.png",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "httpErrors": [],
+  "blockedWrites": [
+    {
+      "method": "POST",
+      "url": "https://t.co/i/adsctp"
+    },
+    {
+      "method": "POST",
+      "url": "https://analytics.twitter.com/i/adsctp"
+    },
+    {
+      "method": "POST",
+      "url": "https://charitywater.sjv.io/xur/16318"
+    },
+    {
+      "method": "POST",
+      "url": "https://d.impct.site/d"
+    },
+    {
+      "method": "POST",
+      "url": "https://charitywater.sjv.io/cur/16318"
+    },
+    {
+      "method": "POST",
+      "url": "https://analytics-ipv6.tiktokw.us/ipv6/enrich_ipv6"
+    },
+    {
+      "method": "POST",
+      "url": "https://analytics.tiktok.com/api/v2/pixel"
+    },
+    {
+      "method": "POST",
+      "url": "https://analytics.tiktok.com/api/v2/pixel"
+    },
+    {
+      "method": "POST",
+      "url": "https://logx.optimizely.com/v1/events"
+    },
+    {
+      "method": "POST",
+      "url": "https://analytics.tiktok.com/api/v2/pixel/act"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.google.com/ccm/collect?rcb=2&frm=0&apvc=1&ae=g&auid=269734067.1791073105&dt=charity%3A%20water%20%7C%20Help%20Bring%20Clean%20and%20Safe%20Water%20to%20Communities&en=page_view&dl=https%3A%2F%2Fwww.charitywater.org%2F&scrsrc=stream.charitywater.org&rnd=1855582134.1791073105&navt=n&npa=0&"
+    },
+    {
+      "method": "POST",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=269734067.1791073105&gtm=45Fe69u2h1v72045118za204zd72045118xeaxf3xg4&fmt=8"
+    },
+    {
+      "method": "POST",
+      "url": "https://events.mapbox.com/events/v2?access_token=pk.eyJ1IjoiY2hhcml0eXdhdGVyIiwiYSI6ImNrNzJlNjc5ZTAxYnUzZHI5Y3U2dm83OTkifQ.lh8rcwTAj6tJlSpn5n9lgQ"
+    },
+    {
+      "method": "POST",
+      "url": "https://events.mapbox.com/events/v2?access_token=pk.eyJ1IjoiY2hhcml0eXdhdGVyIiwiYSI6ImNrNzJlNjc5ZTAxYnUzZHI5Y3U2dm83OTkifQ.lh8rcwTAj6tJlSpn5n9lgQ"
+    },
+    {
+      "method": "POST",
+      "url": "https://logx.optimizely.com/v1/events"
+    },
+    {
+      "method": "POST",
+      "url": "https://events.mapbox.com/events/v2?access_token=pk.eyJ1IjoiY2hhcml0eXdhdGVyIiwiYSI6ImNrNzJlNjc5ZTAxYnUzZHI5Y3U2dm83OTkifQ.lh8rcwTAj6tJlSpn5n9lgQ"
+    },
+    {
+      "method": "POST",
+      "url": "https://events.mapbox.com/events/v2?access_token=pk.eyJ1IjoiY2hhcml0eXdhdGVyIiwiYSI6ImNrNzJlNjc5ZTAxYnUzZHI5Y3U2dm83OTkifQ.lh8rcwTAj6tJlSpn5n9lgQ"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://m.stripe.com/6"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.hcaptcha.com/checksiteconfig?v=05219f0822161da4c4a6f3aed6bf6d6fae1ba8e1&host=b.stripecdn.com&sitekey=463b917e-e264-403f-ad34-34af0ee10294&sc=1&swa=1&spst=1"
+    },
+    {
+      "method": "POST",
+      "url": "https://api2.hcaptcha.com/checksiteconfig?v=05219f0822161da4c4a6f3aed6bf6d6fae1ba8e1&host=b.stripecdn.com&sitekey=463b917e-e264-403f-ad34-34af0ee10294&sc=1&swa=1&spst=1&r=1"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.hcaptcha.com/checksiteconfig?v=05219f0822161da4c4a6f3aed6bf6d6fae1ba8e1&host=b.stripecdn.com&sitekey=463b917e-e264-403f-ad34-34af0ee10294&sc=1&swa=1&spst=1&r=2"
+    },
+    {
+      "method": "POST",
+      "url": "https://api2.hcaptcha.com/checksiteconfig?v=05219f0822161da4c4a6f3aed6bf6d6fae1ba8e1&host=b.stripecdn.com&sitekey=463b917e-e264-403f-ad34-34af0ee10294&sc=1&swa=1&spst=1&r=3"
+    },
+    {
+      "method": "POST",
+      "url": "https://hcaptcha.com/checksiteconfig?v=05219f0822161da4c4a6f3aed6bf6d6fae1ba8e1&host=b.stripecdn.com&sitekey=463b917e-e264-403f-ad34-34af0ee10294&sc=1&swa=1&spst=1&r=4"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.hcaptcha.com/authenticate"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.hcaptcha.com/getcaptcha/463b917e-e264-403f-ad34-34af0ee10294"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.hcaptcha.com/getcaptcha/463b917e-e264-403f-ad34-34af0ee10294"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.hcaptcha.com/getcaptcha/463b917e-e264-403f-ad34-34af0ee10294"
+    },
+    {
+      "method": "POST",
+      "url": "https://api2.hcaptcha.com/getcaptcha/463b917e-e264-403f-ad34-34af0ee10294"
+    },
+    {
+      "method": "POST",
+      "url": "https://hcaptcha.com/getcaptcha/463b917e-e264-403f-ad34-34af0ee10294"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    },
+    {
+      "method": "POST",
+      "url": "https://r.stripe.com/b"
+    }
+  ],
+  "consoleErrors": [
+    "[hCaptcha] Rate limited or network error. Please retry."
+  ],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 116
+}

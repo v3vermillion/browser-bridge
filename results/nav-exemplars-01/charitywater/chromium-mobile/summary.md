@@ -1,0 +1,11 @@
+## charitywater - chromium / mobile
+- URL: https://www.charitywater.org/
+- Status: ok, HTTP 200, ready in 9.1s
+- Viewport: 393x659 at 1x detail
+- Title: charity: water | Help Bring Clean and Safe Water to Communities
+- Meta description: charity: water is a global nonprofit organization on a mission to end the water crisis by bringing clean and safe water to communities in need.
+- H1 count: 8; headings total: 34; page height: 5605px
+- Structured data blocks: 0; lang: en; og:image: yes
+- Network: 0 HTTP errors, 2 failed requests, 1 JS errors from the site (+116 caused by write-blocking, ignored)
+- Write requests blocked (nothing was sent): t.co x1, analytics.twitter.com x1, charitywater.sjv.io x2, d.impct.site x1, analytics-ipv6.tiktokw.us x1, analytics.tiktok.com x3, logx.optimizely.com x2, www.google.com x1, ad.doubleclick.net x1, events.mapbox.com x4, r.stripe.com x27, m.stripe.com x1, api.hcaptcha.com x6, api2.hcaptcha.com x3, hcaptcha.com x2. Analytics/embed calls here are normal; form destinations are listed under Forms when forms are captured.
+- Files: viewport.jpg, meta.json, text.md, network.json

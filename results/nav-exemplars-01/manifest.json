@@ -1,0 +1,193 @@
+{
+  "label": "nav-exemplars-01",
+  "createdAt": "2026-10-04T00:18:22.916Z",
+  "engineVersion": "1.0.0",
+  "status": "ok",
+  "variants": [
+    {
+      "target": "charitywater",
+      "url": "https://www.charitywater.org/",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "charitywater/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-04T00:18:23.169Z",
+      "httpStatus": 200,
+      "finalUrl": "https://www.charitywater.org/",
+      "loadSeconds": 9.1,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "finishedAt": "2026-10-04T00:18:32.434Z",
+      "files": [
+        {
+          "path": "charitywater/chromium-mobile/viewport.jpg",
+          "bytes": 38261
+        },
+        {
+          "path": "charitywater/chromium-mobile/meta.json",
+          "bytes": 4667
+        },
+        {
+          "path": "charitywater/chromium-mobile/text.md",
+          "bytes": 4571
+        },
+        {
+          "path": "charitywater/chromium-mobile/network.json",
+          "bytes": 6746
+        },
+        {
+          "path": "charitywater/chromium-mobile/summary.md",
+          "bytes": 1121
+        }
+      ]
+    },
+    {
+      "target": "feedingamerica",
+      "url": "https://www.feedingamerica.org/",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "feedingamerica/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-04T00:18:32.442Z",
+      "httpStatus": 200,
+      "finalUrl": "https://www.feedingamerica.org/",
+      "loadSeconds": 13,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "finishedAt": "2026-10-04T00:18:45.617Z",
+      "files": [
+        {
+          "path": "feedingamerica/chromium-mobile/viewport.jpg",
+          "bytes": 38239
+        },
+        {
+          "path": "feedingamerica/chromium-mobile/meta.json",
+          "bytes": 5669
+        },
+        {
+          "path": "feedingamerica/chromium-mobile/text.md",
+          "bytes": 3700
+        },
+        {
+          "path": "feedingamerica/chromium-mobile/network.json",
+          "bytes": 9393
+        },
+        {
+          "path": "feedingamerica/chromium-mobile/summary.md",
+          "bytes": 1361
+        }
+      ]
+    },
+    {
+      "target": "stjude",
+      "url": "https://www.stjude.org/",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "stjude/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-04T00:18:45.620Z",
+      "httpStatus": 200,
+      "finalUrl": "https://www.stjude.org/",
+      "loadSeconds": 19.4,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "finishedAt": "2026-10-04T00:19:05.090Z",
+      "files": [
+        {
+          "path": "stjude/chromium-mobile/viewport.jpg",
+          "bytes": 38151
+        },
+        {
+          "path": "stjude/chromium-mobile/meta.json",
+          "bytes": 7669
+        },
+        {
+          "path": "stjude/chromium-mobile/text.md",
+          "bytes": 3838
+        },
+        {
+          "path": "stjude/chromium-mobile/network.json",
+          "bytes": 3317
+        },
+        {
+          "path": "stjude/chromium-mobile/summary.md",
+          "bytes": 1043
+        }
+      ]
+    }
+  ],
+  "job": {
+    "preset": "glance",
+    "targets": [
+      {
+        "url": "https://www.charitywater.org/",
+        "name": "charitywater"
+      },
+      {
+        "url": "https://www.feedingamerica.org/",
+        "name": "feedingamerica"
+      },
+      {
+        "url": "https://www.stjude.org/",
+        "name": "stjude"
+      }
+    ],
+    "browsers": [
+      "chromium"
+    ],
+    "devices": [
+      {
+        "name": "mobile",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+        "viewport": {
+          "width": 393,
+          "height": 659
+        },
+        "screen": {
+          "width": 393,
+          "height": 852
+        },
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true,
+        "defaultBrowserType": "webkit"
+      }
+    ],
+    "capture": {
+      "screenshot": "viewport",
+      "tiles": false,
+      "tileHeight": null,
+      "maxTiles": 25,
+      "format": "jpeg",
+      "quality": 80,
+      "detail": 1,
+      "animations": "disabled",
+      "waitMs": 800,
+      "timeoutMs": 45000,
+      "revealLazyContent": true,
+      "hide": [],
+      "blockWrites": true,
+      "text": true,
+      "meta": true,
+      "html": false,
+      "links": false,
+      "checkLinks": false,
+      "images": false,
+      "styles": false,
+      "forms": false,
+      "a11y": false,
+      "aria": false,
+      "lighthouse": false
+    },
+    "steps": [],
+    "notes": "Ceiling exemplars: how established nonprofits handle the mobile header/nav (first screen) | No brief: exemplar capture feeding the navigation brief",
+    "brief": null
+  },
+  "finishedAt": "2026-10-04T00:19:05.133Z"
+}

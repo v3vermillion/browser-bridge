@@ -1,0 +1,11 @@
+## stjude - chromium / mobile
+- URL: https://www.stjude.org/
+- Status: ok, HTTP 200, ready in 19.4s
+- Viewport: 393x659 at 1x detail
+- Title: St. Jude Children's Research Hospital
+- Meta description: A leading children’s hospital, St. Jude treats the toughest childhood cancers and pediatric diseases. Learn about patient referrals, and donate so families never receive a bill for treatment, travel, housing or food.
+- H1 count: 1; headings total: 28; page height: 8183px
+- Structured data blocks: 1; lang: en; og:image: yes
+- Network: 0 HTTP errors, 0 failed requests, 0 JS errors from the site (+29 caused by write-blocking, ignored)
+- Write requests blocked (nothing was sent): www.stjude.org x4, apps.rokt-api.com x1, o1429225.ingest.us.sentry.io x3, frontdoor.knotch.it x12, pixels.spotify.com x1, tr.snapchat.com x2, r.clarity.ms x4, tr6.snapchat.com x1, alb.reddit.com x1. Analytics/embed calls here are normal; form destinations are listed under Forms when forms are captured.
+- Files: viewport.jpg, meta.json, text.md, network.json

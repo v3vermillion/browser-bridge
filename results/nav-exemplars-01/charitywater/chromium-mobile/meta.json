@@ -1,0 +1,200 @@
+{
+  "url": "https://www.charitywater.org/",
+  "title": "charity: water | Help Bring Clean and Safe Water to Communities",
+  "lang": "en",
+  "description": "charity: water is a global nonprofit organization on a mission to end the water crisis by bringing clean and safe water to communities in need.",
+  "viewport": "width=device-width, initial-scale=1.0",
+  "robots": "all",
+  "generator": null,
+  "canonical": "https://www.charitywater.org/",
+  "favicon": "https://www.charitywater.org/vite/assets/favicon-196-CwCuw5WV.png",
+  "og": {
+    "title": "charity: water | Help Bring Clean and Safe Water to Communities",
+    "description": "charity: water is a global nonprofit organization on a mission to end the water crisis by bringing clean and safe water to communities in need.",
+    "image": "https://cdn.builder.io/api/v1/image/assets%2F2fe4147bb8c843bb8ebba475c8973899%2Fc13d7304d64d4615bb6d7e74922ad9cb",
+    "url": "https://www.charitywater.org/",
+    "type": "website",
+    "site_name": "charity: water"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "charity: water | Help Bring Clean and Safe Water to Communities",
+    "description": "charity: water is a global nonprofit organization on a mission to end the water crisis by bringing clean and safe water to communities in need.",
+    "image": "https://cdn.builder.io/api/v1/image/assets%2F2fe4147bb8c843bb8ebba475c8973899%2Fc13d7304d64d4615bb6d7e74922ad9cb"
+  },
+  "h1Count": 8,
+  "headings": [
+    {
+      "level": 1,
+      "text": "Bring clean and safe water to every person on the planet",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Other Ways to Give",
+      "visible": false
+    },
+    {
+      "level": 5,
+      "text": "Donate by Check",
+      "visible": false
+    },
+    {
+      "level": 5,
+      "text": "International Giving",
+      "visible": false
+    },
+    {
+      "level": 5,
+      "text": "Donate Stock",
+      "visible": false
+    },
+    {
+      "level": 6,
+      "text": "people served",
+      "visible": false
+    },
+    {
+      "level": 6,
+      "text": "water projects funded",
+      "visible": false
+    },
+    {
+      "level": 6,
+      "text": "countries",
+      "visible": false
+    },
+    {
+      "level": 6,
+      "text": "WHY WATER?",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Because clean water changes everything",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "696 million people lack basic access to clean and safe drinking water",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Know that your donation is making a difference",
+      "visible": false
+    },
+    {
+      "level": 1,
+      "text": "charity: water",
+      "visible": false
+    },
+    {
+      "level": 1,
+      "text": "21.6m21,641,908",
+      "visible": false
+    },
+    {
+      "level": 1,
+      "text": "209.2k209,241",
+      "visible": false
+    },
+    {
+      "level": 1,
+      "text": "29",
+      "visible": false
+    },
+    {
+      "level": 6,
+      "text": "CHARITY: WATER'S IMPACT TO DATE",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "209,241",
+      "visible": true
+    },
+    {
+      "level": 6,
+      "text": "WATER PROJECTS FUNDED",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "29",
+      "visible": true
+    },
+    {
+      "level": 6,
+      "text": "COUNTRIES",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "21,641,908",
+      "visible": true
+    },
+    {
+      "level": 6,
+      "text": "PEOPLE WILL BE SERVED",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Ready to take action?",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Give clean water every month",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Sponsor a water project",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Start a fundraiser",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Give to a fundraiser",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Plan for legacy giving",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Become a brand partner",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Honor someone special",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Join Tiny Heroes",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Add Impact To Your Inbox",
+      "visible": true
+    },
+    {
+      "level": 6,
+      "text": "Add Impact To Your Inbox",
+      "visible": false
+    }
+  ],
+  "structuredData": [],
+  "pageHeight": 5605
+}

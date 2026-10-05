@@ -379,7 +379,7 @@ def print_result(res, saved):
     if ins:
         f = ins["font"]
         print(f"  element: <{ins['tag']}> {ins['text'][:60]!r} box {ins['box']['w']}x{ins['box']['h']} at y={ins['box']['y']}")
-        print(f"  type: {f['family'].split(',')[0]} {f['size']} weight {f['weight']}, line-height {f['lineHeight']}, letter-spacing {f['letterSpacing']}, {f['transform']}")
+        print(f"  type: {f['family'].split(',')[0]} {f['size']} weight {f['weight']}, line-height {f['lineHeight']}, letter-spacing {f['letterSpacing']}, {f['transform']} (measured on {ins.get('typographyMeasuredOn', 'the element')})")
         print(f"  color {ins['color']} on {ins['background']}")
         c = ins.get("contrast")
         if c:
@@ -388,6 +388,16 @@ def print_result(res, saved):
         print(f"  tap target {t['w']}x{t['h']}px -> WCAG 2.2 24px minimum {'met' if t['meetsWcag22Min24px'] else 'NOT met'}")
         print(f"  spacing: padding {ins['spacing']['padding']}, margin {ins['spacing']['margin']}; radius {ins['shape']['borderRadius']}")
         print("  (element.jpg shows this element at the same moment; styles can change with scroll, hover, or active states)")
+    mo = res.get("motion")
+    if mo:
+        ft = mo.get("frameTiming") or {}
+        print(f"  motion ({mo['mode']}{', fresh reload' if res.get('fresh') else ''}): y {mo['from']} -> {mo['to']} (reached {mo['reachedY']}); frames {mo['frames']['streamed']} streamed, {mo['frames']['saved']} saved")
+        if not res.get("fresh"):
+            print("  note: not a fresh reload; one-time scroll effects may already have fired. Add fresh=1 to record a first visit.")
+        if ft:
+            print(f"  frame timing: median {ft['medianMs']}ms, p95 {ft['p95Ms']}ms, worst {ft['worstMs']}ms, {ft['over50ms']} frames over 50ms")
+        print(f"  layout shifts during scroll: {mo['layoutShifts']['count']} (total {mo['layoutShifts']['total']}); scroll reversals: {mo['scrollReversals']}; long tasks: {mo['longTasks']}")
+        print("  details: motion.json; frames: add --frames to download, then perceive.py motion <dir>")
     if "value" in res:
         print(f"  value: {json.dumps(res['value'])[:500]}")
     els = res.get("elements")
@@ -402,7 +412,7 @@ def print_result(res, saved):
         print(f"  file: {p}")
 
 
-def wait_result(token, repo, st, seq, timeout_s=120):
+def wait_result(token, repo, st, seq, timeout_s=120, want_frames=False):
     out_branch = f"bs-{st['id']}-out"
     seq_dir = f"out/{seq:04d}"
     deadline = time.time() + timeout_s
@@ -418,9 +428,13 @@ def wait_result(token, repo, st, seq, timeout_s=120):
                 os.makedirs(local, exist_ok=True)
                 saved = []
                 wanted = res.get("files", [])
+                if want_frames:
+                    wanted += res.get("frameFiles", [])
                 for sub in res.get("results", []):
                     k = str(sub["seq"]).split(".")[-1]
                     wanted += [f"{k}/{f}" for f in sub.get("files", [])]
+                    if want_frames:
+                        wanted += [f"{k}/{f}" for f in sub.get("frameFiles", [])]
                 for f in wanted:
                     data = get_raw(token, repo, f"{seq_dir}/{f}", sha)
                     if data is not None:
@@ -458,7 +472,14 @@ def parse_action(tokens, args):
         cmd["value"] = " ".join(rest[1:])
         cmd["submit"] = bool(args.submit)
     elif a == "scroll" and rest:
-        cmd.update({"to": rest[0]} if rest[0] in ("top", "bottom") else ({"dy": int(rest[0])} if rest[0].lstrip("-").isdigit() else target(" ".join(rest))))
+        if rest[0] == "to" and len(rest) > 1:      # scroll to 1316 | scroll to top
+            cmd["to"] = int(rest[1]) if rest[1].isdigit() else rest[1]
+        elif rest[0] in ("top", "bottom"):
+            cmd["to"] = rest[0]
+        elif rest[0].lstrip("-").isdigit():         # scroll 600 = scroll BY 600px (wheel)
+            cmd["dy"] = int(rest[0])
+        else:
+            cmd.update(target(" ".join(rest)))
     elif a == "swipe":
         cmd["direction"] = rest[0] if rest else "up"
         if len(rest) > 1:
@@ -473,8 +494,22 @@ def parse_action(tokens, args):
         cmd["count"] = int(rest[0])
     elif a == "wait" and rest:
         cmd["ms"] = int(rest[0])
+    elif a == "livescroll":
+        for i, tok in enumerate(rest):
+            if "=" in tok:
+                continue
+            if tok == "to" and i + 1 < len(rest):
+                cmd["to"] = int(rest[i + 1]) if rest[i + 1].isdigit() else rest[i + 1]
+            elif tok in ("top", "bottom"):
+                cmd["to"] = tok
+            elif tok.isdigit() and "to" not in cmd and (i == 0 or rest[i - 1] != "to"):
+                cmd["distance"] = int(tok)
     elif a == "analyze":
         cmd["what"] = rest[0].split(",") if rest else ["meta", "styles", "images"]
+    for tok in rest:  # key=value extras, e.g. livescroll bottom speed=1500 mode=wheel
+        if "=" in tok and not tok.startswith("http"):
+            k, v = tok.split("=", 1)
+            cmd[k] = int(v) if v.lstrip("-").isdigit() else v
     if a == "inject" and args.css_file:
         cmd["css"] = open(args.css_file).read()
     if a == "inject" and args.css:
@@ -500,7 +535,7 @@ def cmd_session(token, repo, args):
         if brief:
             put_file(token, repo, "brief.md", brief.encode(), cmd_branch, "session brief")
         config = {"url": args.url, "device": args.device, "browser": args.browser, "detail": args.detail,
-                  "maxMinutes": args.minutes, "idleMinutes": args.idle}
+                  "maxMinutes": args.minutes, "idleMinutes": args.idle, "prescroll": not args.no_prescroll}
         if args.hide:
             config["hide"] = args.hide
         request(token, "POST", f"/repos/{repo}/actions/workflows/{SESSION_WORKFLOW}/dispatches",
@@ -556,18 +591,22 @@ def cmd_session(token, repo, args):
                         groups.append(cur)
                     cur = []
                 else:
-                    cur.append(t)
+                    cur.extend(t.split())  # allow "scroll 600" ; inject ... mixed styles
         else:              # do "tap 4" "swipe left"
             groups = [t.split() for t in tokens]
         cmd = {"actions": [parse_action(g, args) for g in groups]}
         cmd["action"] = "batch"
     else:
         cmd = parse_action(tokens, args)
+        if isinstance(cmd.get("actions"), list):  # a batch given via --json
+            cmd.setdefault("action", "batch")
+        if "action" not in cmd:
+            raise BridgeError('Each command needs "action" (or "actions": [...] for a batch).')
     st["seq"] += 1
     seq = st["seq"]
     save_session(st)
     put_file(token, repo, f"cmd/{seq:04d}.json", json.dumps(cmd).encode(), f"bs-{st['id']}-cmd", f"cmd {seq}: {cmd['action']}")
-    res, saved = wait_result(token, repo, st, seq, timeout_s=args.timeout)
+    res, saved = wait_result(token, repo, st, seq, timeout_s=args.timeout, want_frames=getattr(args, "frames", False))
     print_result(res, saved)
     if args.session_cmd == "end":
         if args.cleanup:
@@ -662,6 +701,8 @@ def main():
     st.add_argument("--minutes", type=int, default=30, help="max session length (cap 60)")
     st.add_argument("--idle", type=int, default=10, help="auto-close after this many idle minutes")
     st.add_argument("--hide", action="append", help="CSS selector to hide (cookie banners...)")
+    st.add_argument("--no-prescroll", action="store_true",
+                    help="don't pre-scroll the page at load (keeps one-time scroll effects for the first real scroll)")
     st.add_argument("--id")
     st.add_argument("--ref")
     st.add_argument("--timeout", type=int, default=300)
@@ -679,6 +720,7 @@ def main():
         p_.add_argument("--no-shot", action="store_true")
         p_.add_argument("--cleanup", action="store_true", help="(end) delete the session branches afterwards")
         p_.add_argument("--timeout", type=int, default=120)
+        p_.add_argument("--frames", action="store_true", help="(livescroll) also download every saved frame")
 
     pb = sub.add_parser("playbook", help="shared expert briefs")
     pbs = pb.add_subparsers(dest="pb_cmd", required=True)

@@ -343,12 +343,12 @@ async function preparePage(page, cap) {
     await page.evaluate(async () => {
       const step = Math.max(200, Math.floor(window.innerHeight * 0.8));
       for (let y = 0; y < document.documentElement.scrollHeight; y += step) {
-        window.scrollTo(0, y);
+        window.scrollTo({ top: y, behavior: 'instant' });
         await new Promise((r) => setTimeout(r, 120));
       }
-      window.scrollTo(0, document.documentElement.scrollHeight);
+      window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'instant' });
       await new Promise((r) => setTimeout(r, 300));
-      window.scrollTo(0, 0);
+      window.scrollTo({ top: 0, behavior: 'instant' });
     });
     try { await page.waitForLoadState('networkidle', { timeout: 5000 }); } catch {}
   }
@@ -385,7 +385,7 @@ async function runSteps(page, steps, cap, dir, files) {
         case 'press': if (s.selector) await loc(s).press(s.key); else await page.keyboard.press(s.key); await sleep(s.waitMs ?? 200); break;
         case 'scroll':
           if (s.selector || s.text) await loc(s).scrollIntoViewIfNeeded();
-          else await page.evaluate((to) => window.scrollTo(0, to === 'bottom' ? document.documentElement.scrollHeight : to === 'top' ? 0 : Number(to)), s.to ?? 'bottom');
+          else await page.evaluate((to) => window.scrollTo({ top: to === 'bottom' ? document.documentElement.scrollHeight : to === 'top' ? 0 : Number(to), behavior: 'instant' }), s.to ?? 'bottom');
           await sleep(s.waitMs ?? 400); break;
         case 'wait': if (s.selector) await page.waitForSelector(s.selector, { timeout: s.ms || to }); else await sleep(s.ms || 1000); break;
         case 'setViewport': await page.setViewportSize({ width: s.width, height: s.height }); await sleep(300); break;

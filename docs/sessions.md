@@ -26,7 +26,8 @@ local paths of the screenshots it downloaded. Open them with your image tool.
 | `hover N` | Hover (menus, hover states). |
 | `type N some text [--submit]` | Fill a field (writes are blocked: nothing is actually sent). |
 | `press Enter` | Keyboard key. |
-| `scroll [px\|top\|bottom\|N]` | Mouse-wheel scroll, jump, or scroll an element into view. |
+| `scroll [px\|top\|bottom\|N]` / `scroll to 1316` | `scroll 600` scrolls *by* 600px with the wheel; `scroll to 1316`, `scroll top`, `scroll bottom` jump to an exact position (instantly, even on smooth-scrolling sites); `scroll N` brings element N into view. |
+| `livescroll [bottom\|to Y\|distance] [fresh=1] [mode=touch\|wheel] [speed=900]` | Continuous scroll with real input while recording every painted frame (Chromium) plus motion metrics: frame timing, elements jumping on their own (layout shifts), scroll position snapping back, long tasks. Returns `sheet.jpg` (contact sheet) and `motion.json`; add `--frames` to download all frames. See "Motion" below. |
 | `swipe up\|down\|left\|right [N]` | Finger swipe (real touch events in Chromium; wheel approximation in WebKit/Firefox). "Up" moves the finger up, so content scrolls down. Start on element N to swipe a carousel. |
 | `zoom N` | Sharp, device-pixel crop of one element: typography, spacing, image quality. |
 | `inspect N` | Exact facts for one element: font family/size/weight/line height, color on background with WCAG contrast ratio (AA/AAA), tap-target size vs the WCAG 2.2 24px minimum, padding/margin, radius, shadow. |
@@ -41,6 +42,38 @@ local paths of the screenshots it downloaded. Open them with your image tool.
 | `end` | Close the session. |
 
 Full control: `session do --json '{"action":"swipe","direction":"left","ref":4,"distance":300}'`.
+
+## Motion (live scroll)
+
+Some problems exist only while things move: flicker, sections blanking out, animations misfiring,
+headers jittering, elements popping in or jumping, the page snapping back mid-scroll. Still screenshots
+can't show these.
+
+```bash
+python3 bridge.py session do livescroll bottom fresh=1 --frames      # first-visit scroll, top to bottom
+python3 perceive.py motion bridge-sessions/<id>/<seq> --gif scroll.gif
+```
+
+- **`fresh=1`** reloads the page without the tool's lazy-load pre-scroll first. Use it when hunting
+  motion bugs: many effects (reveal animations, one-time banners, sticky headers activating) fire only on
+  the first scroll, and the pre-scroll would otherwise use them up before recording. To keep a whole
+  session first-visit-faithful, start it with `--no-prescroll`.
+- **`mode`**: `touch` (default on phones: repeated finger flicks with momentum) or `wheel` (steady mouse
+  wheel; also the WebKit/Firefox path). Momentum flicks can override a page's own scroll scripts, so if a
+  scroll-related bug is suspected, try both.
+- **Reading results**: `motion.json` has frame timing (rAF intervals; ~16.7ms = 60fps), layout shifts
+  with the elements that moved, scroll reversals (position going backward while scrolling forward), and
+  long tasks. `perceive.py motion` compares consecutive frames after cancelling the scroll movement, so
+  what's left is content changing on its own; it lists spikes and blank frames with the frame files to
+  view, and can write a GIF a person can watch.
+- **Verify by looking**: open each flagged frame next to the one before it. Reveal animations are
+  expected change; flicker, blanking, and pop-in at odd moments are bugs.
+
+**Limits:** Chromium records every painted frame and reports layout shifts; WebKit and Firefox fall back to
+screenshots between scroll steps (fewer frames, no layout-shift data). Chromium's scroll anchoring hides
+some content jumps from users (and from the metrics); Safari has historically handled scroll anchoring
+differently, so a jump that's invisible in Chromium may still affect iPhone users. Headless frame timing
+is indicative, not a device benchmark.
 
 ## Several actions per round trip
 

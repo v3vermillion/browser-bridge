@@ -18,6 +18,7 @@ quiet. Use them to ground and check judgment, never to replace it.
 Usage:
   python3 perceive.py analyze IMAGE [--json]
   python3 perceive.py compare BEFORE AFTER -o side_by_side.jpg [--labels "Before" "After"]
+  python3 perceive.py motion LIVESCROLL_FOLDER [--gif scroll.gif]
 
 Requires numpy and Pillow (pip install numpy pillow).
 """
@@ -259,6 +260,77 @@ def compare(before, after, out, labels=("Before", "After")):
     return out, delta
 
 
+
+# ---------------------------------------------------------------------------- motion (live scroll)
+def motion(run_dir, gif_out=None, gif_width=320):
+    """Analyze a livescroll result folder (motion.json + frames/).
+
+    Consecutive frames are compared after shifting by the scroll distance between them, so ordinary
+    scrolling cancels out and what remains is content changing on its own: reveal animations, flicker,
+    flashes, blank frames, elements popping in or jumping. Spikes are listed with frame files to view.
+    """
+    import os
+    meta = json.load(open(os.path.join(run_dir, "motion.json")))
+    fm = meta.get("frameMeta") or []
+    if len(fm) < 2:
+        return {"note": "fewer than 2 frames; nothing to compare"}, None
+    frames = []
+    for f in fm:
+        im = Image.open(os.path.join(run_dir, f["file"])).convert("L")
+        frames.append((f, np.asarray(im, dtype=float)))
+    h, w = frames[0][1].shape
+    css_w = (meta.get("viewport") or {}).get("width")
+    scale = (w / css_w) if css_w else float(meta.get("scale") or 1)   # actual frame pixels per CSS pixel
+    k = max(1, w // 160)                      # downsample for speed
+    events, series, blanks = [], [], []
+    for i, (f, a) in enumerate(frames):
+        if a[::k, ::k].std() < 4:
+            blanks.append({"frame": f["file"], "t": f["t"], "y": f["y"]})
+        if i == 0:
+            continue
+        pf, pa = frames[i - 1]
+        dy = int(round((f["y"] - pf["y"]) * scale))
+        if abs(dy) >= h - 10:
+            series.append(None)
+            continue
+        A = pa[dy:, :] if dy >= 0 else pa[:h + dy, :]
+        B = a[:h - dy, :] if dy >= 0 else a[-dy:, :]
+        rows = np.abs(A[::k, ::k] - B[::k, ::k]).mean(axis=1)
+        # Rows that didn't move on screen (sticky headers, fixed buttons) can't be compared after shifting; ignore them.
+        static = np.abs(pa[::k, ::k] - a[::k, ::k]).mean(axis=1) < 2.0
+        static_b = static[(-dy if dy < 0 else 0) // k:][: len(rows)] if dy < 0 else static[: len(rows)]
+        if dy != 0 and len(static_b) == len(rows):
+            rows = np.where(static_b, 0.0, rows)
+        series.append(float(np.median(rows)))
+        top = float(np.percentile(rows, 90))
+        events.append({"frame": f["file"], "prev": pf["file"], "t": f["t"], "y": f["y"], "dy_css": f["y"] - pf["y"],
+                       "median_change": round(series[-1], 2), "p90_change": round(top, 2),
+                       "band_y": int(np.argmax(rows) * k / scale)})
+    vals = [v for v in series if v is not None]
+    base = float(np.median(vals)) if vals else 0
+    spikes = [e for e in events if e["p90_change"] > max(12, 4 * (base + 1))]
+    spikes.sort(key=lambda e: -e["p90_change"])
+    out = {
+        "frames": len(frames), "baseline_change": round(base, 2),
+        "spikes": spikes[:12],
+        "blank_frames": blanks[:12],
+        "note": "change is measured after cancelling scroll movement; spikes = content changing on its own "
+                "(animation, pop-in, flicker). Fixed/sticky elements also register as change while scrolling. "
+                "View the listed frame and its previous frame to judge.",
+    }
+    gif_path = None
+    if gif_out:
+        imgs = []
+        for f, _ in frames:
+            im = Image.open(os.path.join(run_dir, f["file"])).convert("RGB")
+            r = gif_width / im.width
+            imgs.append(im.resize((gif_width, int(im.height * r))))
+        durs = [max(40, (frames[i + 1][0]["t"] - frames[i][0]["t"])) if i + 1 < len(frames) else 800 for i in range(len(frames))]
+        imgs[0].save(gif_out, save_all=True, append_images=imgs[1:], duration=durs, loop=0, optimize=True)
+        gif_path = gif_out
+    return out, gif_path
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -270,7 +342,16 @@ def main():
     c.add_argument("after")
     c.add_argument("-o", "--out", default="compare.jpg")
     c.add_argument("--labels", nargs=2, default=["Before", "After"])
+    mo = sub.add_parser("motion", help="analyze a livescroll result folder (motion.json + frames/)")
+    mo.add_argument("folder")
+    mo.add_argument("--gif", help="also write an animated GIF of the frames")
     args = ap.parse_args()
+    if args.cmd == "motion":
+        out, gif = motion(args.folder, args.gif)
+        print(json.dumps(out, indent=2))
+        if gif:
+            print(f"saved {gif}")
+        return
     if args.cmd == "analyze":
         r = analyze(args.image)
         print(json.dumps(r, indent=2) if args.json else readout(r))

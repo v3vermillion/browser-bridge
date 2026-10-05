@@ -37,7 +37,7 @@ const POLL_MS = Number(process.env.POLL_MS || 1000);
 const CMD_BRANCH = `bs-${ID}-cmd`;
 const OUT_BRANCH = `bs-${ID}-out`;
 
-const cfg = { device: 'desktop', browser: 'chromium', detail: 2, idleMinutes: 10, maxMinutes: 30, hide: [], blockWrites: true, ...JSON.parse(process.env.SESSION_CONFIG || '{}') };
+const cfg = { device: 'desktop', browser: 'chromium', detail: 2, idleMinutes: 10, maxMinutes: 30, hide: [], blockWrites: true, prescroll: true, ...JSON.parse(process.env.SESSION_CONFIG || '{}') };
 cfg.maxMinutes = Math.min(Number(cfg.maxMinutes) || 30, 60);
 cfg.idleMinutes = Math.min(Number(cfg.idleMinutes) || 10, cfg.maxMinutes);
 
@@ -75,7 +75,7 @@ async function openContext(deviceName, url) {
   cfg.device = deviceName;
   if (url) {
     await page.goto(url, { waitUntil: 'load', timeout: 45000 });
-    await preparePage(page, { hide: cfg.hide, revealLazyContent: true, waitMs: 600 });
+    await preparePage(page, { hide: cfg.hide, revealLazyContent: cfg.prescroll !== false, waitMs: 600 });
   }
 }
 
@@ -108,7 +108,7 @@ const mapElements = (maxCount) => {
 const drawMarks = (els) => {
   const box = document.createElement('div');
   box.id = '__bridge_marks';
-  box.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:2147483647';
+  box.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;margin:0;padding:0;border:0;background:transparent;overflow:visible;pointer-events:none;z-index:2147483647';
   for (const e of els) {
     const [x, y, w, h] = e.box;
     const b = document.createElement('div');
@@ -119,11 +119,28 @@ const drawMarks = (els) => {
     box.append(b, t);
   }
   document.documentElement.appendChild(box);
+  // Menus and dialogs opened as modals/popovers live in the browser's top layer, above any z-index.
+  // Promoting the overlay to the top layer (shown last) puts the numbers above them too.
+  if (typeof box.showPopover === 'function') {
+    box.setAttribute('popover', 'manual');
+    try { box.showPopover(); } catch {}
+  }
 };
-const clearMarks = () => document.getElementById('__bridge_marks')?.remove();
+const clearMarks = () => { const b = document.getElementById('__bridge_marks'); if (!b) return; try { b.hidePopover?.(); } catch {} b.remove(); };
 
 
-const inspectElement = (el) => {
+const inspectElement = (target) => {
+  // Size/tap target come from the interactive element; typography and color from the descendant that
+  // renders most of its visible text (links and buttons often wrap the label in a styled span).
+  const ownText = (n) => [...n.childNodes].filter((c) => c.nodeType === 3).map((c) => c.textContent).join('').trim().length;
+  let el = target, best = ownText(target);
+  for (const d of target.querySelectorAll('*')) {
+    const r = d.getBoundingClientRect();
+    if (!r.width || !r.height) continue;
+    const n = ownText(d);
+    if (n > best) { best = n; el = d; }
+  }
+  const describe = (n) => n.tagName.toLowerCase() + (n.className && typeof n.className === 'string' && n.className.trim() ? '.' + n.className.trim().split(/\s+/).slice(0, 2).join('.') : '');
   const cs = getComputedStyle(el);
   const parse = (c) => { const m = c.match(/rgba?\(([^)]+)\)/); if (!m) return null; const [r, g, b, a = 1] = m[1].split(',').map((v) => parseFloat(v)); return { r, g, b, a }; };
   const lum = ({ r, g, b }) => { const f = (v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; }; return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b); };
@@ -140,9 +157,10 @@ const inspectElement = (el) => {
   const large = size >= 24 || (size >= 18.66 && weight >= 700);
   let contrast = null;
   if (fg && bg) { const [a, b] = [lum(fg), lum(bg)].sort((x, y) => y - x); contrast = +((a + 0.05) / (b + 0.05)).toFixed(2); }
-  const r = el.getBoundingClientRect();
+  const r = target.getBoundingClientRect();
   return {
-    tag: el.tagName.toLowerCase(), text: (el.innerText || '').trim().replace(/\s+/g, ' ').slice(0, 80),
+    tag: target.tagName.toLowerCase(), text: (target.innerText || '').trim().replace(/\s+/g, ' ').slice(0, 80),
+    typographyMeasuredOn: el === target ? 'the element itself' : `inner ${describe(el)}`,
     box: { x: Math.round(r.left), y: Math.round(r.top + scrollY), w: Math.round(r.width), h: Math.round(r.height) },
     font: { family: cs.fontFamily, size: cs.fontSize, weight: cs.fontWeight, lineHeight: cs.lineHeight, letterSpacing: cs.letterSpacing, transform: cs.textTransform },
     color: cs.color,
@@ -203,6 +221,157 @@ async function swipe(c) {
   return 'wheel-fallback';
 }
 
+
+// ---------------------------------------------------------------------------- live scroll (motion)
+// Scrolls continuously with real input while recording frames and motion metrics, so problems that only
+// exist in motion (flicker, jank, elements jumping, scroll snapping back, reveal animations misfiring)
+// become visible. Chromium records a true frame stream (screencast); WebKit/Firefox fall back to
+// screenshots between scroll steps (fewer frames, no layout-shift API).
+async function liveScroll(c, dir, res) {
+  if (c.fresh) {
+    // Reload without the tool's lazy-load pre-scroll, so one-time scroll effects (reveals, banners,
+    // sticky activations) happen during the recording, as they would for a first-time visitor.
+    await page.reload({ waitUntil: 'load', timeout: 45000 });
+    await preparePage(page, { hide: cfg.hide, revealLazyContent: false, waitMs: 800 });
+    await page.evaluate(() => scrollTo({ top: 0, behavior: 'instant' }));
+    res.fresh = true;
+  }
+  const vp = page.viewportSize();
+  const { y0, maxY } = await page.evaluate(() => ({ y0: Math.round(scrollY), maxY: document.documentElement.scrollHeight - innerHeight }));
+  let target;
+  if (c.to === 'bottom') target = maxY;
+  else if (c.to === 'top') target = 0;
+  else if (c.to !== undefined) target = Number(c.to);
+  else target = y0 + (Number(c.distance) || vp.height * 3);
+  target = Math.max(0, Math.min(maxY, target));
+  const speed = Math.max(100, Math.min(Number(c.speed) || 900, 6000));           // px per second
+  const durationMs = Math.min(Math.abs(target - y0) / speed * 1000, 20000);
+  const mode = c.mode || (touchEnabled && cdp ? 'touch' : 'wheel');
+  const maxFrames = Math.min(Number(c.maxFrames) || 80, 200);
+
+  await page.evaluate(() => {
+    const m = (window.__bridgeMotion = { trace: [], shifts: [], longTasks: [], t0: performance.now(), stop: false });
+    let last = performance.now();
+    const loop = (t) => { m.trace.push([Math.round(t - m.t0), Math.round(t - last), Math.round(scrollY)]); last = t; if (!m.stop) requestAnimationFrame(loop); };
+    requestAnimationFrame(loop);
+    const desc = (n) => (n && n.nodeName ? n.nodeName.toLowerCase() + (n.id ? '#' + n.id : '') + (n.className && typeof n.className === 'string' && n.className.trim() ? '.' + n.className.trim().split(/\s+/).slice(0, 2).join('.') : '') : null);
+    try {
+      new PerformanceObserver((list) => {
+        for (const e of list.getEntries()) {
+          if (m.stop) return;
+          m.shifts.push({ t: Math.round(e.startTime - m.t0), value: +e.value.toFixed(4), sources: (e.sources || []).slice(0, 4).map((x) => ({ element: desc(x.node), fromY: x.previousRect ? Math.round(x.previousRect.y) : null, toY: x.currentRect ? Math.round(x.currentRect.y) : null, fromH: x.previousRect ? Math.round(x.previousRect.height) : null, toH: x.currentRect ? Math.round(x.currentRect.height) : null })) });
+        }
+      }).observe({ type: 'layout-shift', buffered: false });
+    } catch {}
+    try { new PerformanceObserver((list) => { for (const e of list.getEntries()) if (!m.stop) m.longTasks.push({ t: Math.round(e.startTime - m.t0), ms: Math.round(e.duration) }); }).observe({ type: 'longtask', buffered: false }); } catch {}
+  });
+
+  const frames = [];
+  const tStart = Date.now();
+  let onFrame = null;
+  if (cdp) {
+    onFrame = async ({ data, metadata, sessionId }) => {
+      frames.push({ data, t: Date.now() - tStart, y: Math.round(metadata.scrollOffsetY || 0) });
+      try { await cdp.send('Page.screencastFrameAck', { sessionId }); } catch {}
+    };
+    cdp.on('Page.screencastFrame', onFrame);
+    await cdp.send('Page.startScreencast', { format: 'jpeg', quality: 65, maxWidth: vp.width * (cfg.detail || 1), maxHeight: vp.height * (cfg.detail || 1), everyNthFrame: 1 });
+  }
+  const grab = async () => {
+    if (cdp) return;
+    const buf = await page.screenshot({ type: 'jpeg', quality: 65, scale: 'css', animations: 'allow' });
+    frames.push({ data: buf.toString('base64'), t: Date.now() - tStart, y: await page.evaluate(() => Math.round(scrollY)) });
+  };
+
+  const dir1 = target >= y0 ? 1 : -1;
+  if (mode === 'touch' && cdp) {
+    // Repeated finger drags; each releases with momentum, like a person flicking through a page.
+    const strokes = Math.max(1, Math.ceil(Math.abs(target - y0) / (vp.height * 0.55)));
+    const strokeMs = Math.max(120, Math.min(600, (vp.height * 0.55) / speed * 1000));
+    for (let k = 0; k < strokes; k++) {
+      const x = vp.width / 2, ya = dir1 > 0 ? vp.height * 0.78 : vp.height * 0.22, yb = dir1 > 0 ? vp.height * 0.23 : vp.height * 0.77;
+      const steps = 10;
+      await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x, y: ya }] });
+      for (let i = 1; i <= steps; i++) {
+        await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x, y: ya + (yb - ya) * i / steps }] });
+        await sleep(strokeMs / steps);
+      }
+      await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+      await sleep(Number(c.pauseMs) || 150);
+      if (Date.now() - tStart > 25000) break;
+    }
+  } else {
+    // Mouse-wheel ticks at a steady rate (also the WebKit/Firefox path).
+    const tick = cdp ? 16 : 120;
+    const steps = Math.max(1, Math.round(durationMs / tick));
+    const per = (target - y0) / steps;
+    await page.mouse.move(vp.width / 2, vp.height / 2);
+    for (let i = 0; i < steps; i++) {
+      await page.mouse.wheel(0, per);
+      if (!cdp) await grab(); else await sleep(tick);
+    }
+  }
+  const settle = Number(c.settleMs) || 1200;
+  const settleEnd = Date.now() + settle;
+  while (Date.now() < settleEnd) { if (!cdp) await grab(); await sleep(cdp ? 50 : 250); }
+  if (cdp) {
+    await cdp.send('Page.stopScreencast').catch(() => {});
+    cdp.off('Page.screencastFrame', onFrame);
+  }
+  const m = await page.evaluate(() => { const x = window.__bridgeMotion; x.stop = true; return { trace: x.trace, shifts: x.shifts, longTasks: x.longTasks }; });
+
+  // Keep an even sample if the stream is long (first and last always kept).
+  let kept = frames;
+  if (frames.length > maxFrames) kept = Array.from({ length: maxFrames }, (_, i) => frames[Math.round(i * (frames.length - 1) / (maxFrames - 1))]);
+  await fs.mkdir(path.join(dir, 'frames'), { recursive: true });
+  res.frameFiles = [];
+  for (const [i, f] of kept.entries()) {
+    const name = path.join('frames', `${String(i + 1).padStart(3, '0')}_${String(f.t).padStart(5, '0')}ms_y${f.y}.jpg`);
+    await fs.writeFile(path.join(dir, name), Buffer.from(f.data, 'base64'));
+    res.frameFiles.push(name);
+  }
+
+  // Motion metrics from the in-page trace.
+  const gaps = m.trace.slice(1).map((r) => r[1]).sort((a, b) => a - b);
+  const pct = (p) => (gaps.length ? gaps[Math.min(gaps.length - 1, Math.floor(p * gaps.length))] : null);
+  const reversals = [];
+  for (let i = 1; i < m.trace.length; i++) {
+    const d = m.trace[i][2] - m.trace[i - 1][2];
+    if (d * dir1 < -30) reversals.push({ t: m.trace[i][0], fromY: m.trace[i - 1][2], toY: m.trace[i][2] });
+  }
+  const motion = {
+    mode, from: y0, to: target, reachedY: m.trace.length ? m.trace[m.trace.length - 1][2] : null,
+    durationMs: Date.now() - tStart,
+    frames: { streamed: frames.length, saved: kept.length, source: cdp ? 'screencast (every painted frame)' : 'screenshots between steps' },
+    frameTiming: gaps.length ? { count: gaps.length, medianMs: pct(0.5), p95Ms: pct(0.95), worstMs: gaps[gaps.length - 1], over50ms: gaps.filter((g) => g > 50).length, note: 'requestAnimationFrame intervals; ~16.7ms = 60fps. Headless timing is indicative, not a device benchmark.' } : null,
+    layoutShifts: { count: m.shifts.length, total: +m.shifts.reduce((a, b) => a + b.value, 0).toFixed(4), entries: m.shifts.slice(0, 30), note: cdp ? 'elements that moved on their own during the scroll (not the scroll itself)' : 'not available in this browser' },
+    scrollReversals: reversals.slice(0, 20),
+    longTasks: m.longTasks.slice(0, 20),
+  };
+  motion.scale = cfg.detail || 1;
+  motion.viewport = vp;
+  motion.frameMeta = kept.map((f, i) => ({ file: res.frameFiles[i], t: f.t, y: f.y }));
+  await writeJson(path.join(dir, 'motion.json'), motion);
+  res.files.push('motion.json');
+  res.motion = { frames: motion.frames, frameTiming: motion.frameTiming, layoutShifts: { count: motion.layoutShifts.count, total: motion.layoutShifts.total }, scrollReversals: reversals.length, longTasks: m.longTasks.length, from: y0, to: target, reachedY: motion.reachedY, mode };
+
+  // Contact sheet: up to 24 evenly spaced frames on one image, rendered by the browser itself.
+  const n = Math.min(24, kept.length);
+  if (n) {
+    const pick = Array.from({ length: n }, (_, i) => kept[Math.round(i * (kept.length - 1) / Math.max(1, n - 1))]);
+    const cols = vp.width < 600 ? 6 : 4;
+    const w = Math.floor(1400 / cols) - 8;
+    const html = `<html><body style="margin:0;background:#111;font:12px sans-serif;color:#eee"><div style="display:grid;grid-template-columns:repeat(${cols},${w}px);gap:8px;padding:8px">` +
+      pick.map((f) => `<figure style="margin:0"><img style="width:${w}px;display:block" src="data:image/jpeg;base64,${f.data}"><figcaption>${f.t} ms · y ${f.y}</figcaption></figure>`).join('') + '</div></body></html>';
+    const sheetPage = await context.newPage();
+    await sheetPage.setViewportSize({ width: 1400, height: 800 });
+    await sheetPage.setContent(html, { waitUntil: 'load' });
+    await sheetPage.screenshot({ path: path.join(dir, 'sheet.jpg'), type: 'jpeg', quality: 82, fullPage: true });
+    await sheetPage.close();
+    res.files.push('sheet.jpg');
+  }
+}
+
 // ---------------------------------------------------------------------------- results
 let outDirFor;
 const shot = async (dir, name, opts = {}) => {
@@ -233,7 +402,12 @@ async function execute(c, dir = outDirFor(c.seq)) {
       }
       case 'goto': await page.goto(c.url, { waitUntil: 'load', timeout: 45000 }); await preparePage(page, { hide: cfg.hide, revealLazyContent: true, waitMs: 600 }); break;
       case 'back': await page.goBack({ waitUntil: 'load', timeout: 30000 }); break;
-      case 'reset': await page.reload({ waitUntil: 'load', timeout: 45000 }); await preparePage(page, { hide: cfg.hide, revealLazyContent: true, waitMs: 600 }); break;
+      case 'reset': {
+        // prescroll=false reloads exactly as a first-time visitor sees it (one-time scroll effects not yet fired).
+        await page.reload({ waitUntil: 'load', timeout: 45000 });
+        await preparePage(page, { hide: cfg.hide, revealLazyContent: c.prescroll !== false && c.prescroll !== 0, waitMs: 600 });
+        break;
+      }
       case 'click': {
         const loc = locatorFor(c);
         if (loc) await loc.click({ timeout: Number(c.timeoutMs) || 8000 });
@@ -257,7 +431,8 @@ async function execute(c, dir = outDirFor(c.seq)) {
       }
       case 'press': await page.keyboard.press(String(c.key || 'Enter')); await sleep(Number(c.waitMs) || 300); break;
       case 'scroll': {
-        if (c.to === 'top' || c.to === 'bottom') await page.evaluate((to) => scrollTo(0, to === 'top' ? 0 : document.documentElement.scrollHeight), c.to);
+        // Absolute positions ("top", "bottom", or a pixel offset) jump instantly, ignoring CSS smooth scrolling.
+        if (c.to !== undefined && c.to !== null) await page.evaluate((to) => scrollTo({ top: to === 'top' ? 0 : to === 'bottom' ? document.documentElement.scrollHeight : Number(to), behavior: 'instant' }), c.to);
         else if (c.ref !== undefined || c.selector || c.text) await locatorFor(c).scrollIntoViewIfNeeded({ timeout: 5000 });
         else { const vp = page.viewportSize(); await page.mouse.move(vp.width / 2, vp.height / 2); await page.mouse.wheel(0, Number(c.dy) || Math.round(vp.height * 0.8)); }
         await sleep(Number(c.waitMs) || 600); break;
@@ -280,6 +455,7 @@ async function execute(c, dir = outDirFor(c.seq)) {
         try { await loc.screenshot({ path: path.join(dir, 'element.jpg'), type: 'jpeg', quality: 90, scale: 'device', animations: 'disabled' }); res.files.push('element.jpg'); } catch {}
         autoShot = false; break;
       }
+      case 'livescroll': await liveScroll(c, dir, res); autoShot = true; break;
       case 'fullpage': res.files.push(await shot(dir, 'full.jpg', { fullPage: true })); autoShot = false; break;
       case 'frames': {
         const count = Math.min(Number(c.count) || 6, 20);

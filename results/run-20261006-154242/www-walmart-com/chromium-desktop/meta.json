@@ -1,0 +1,65 @@
+{
+  "url": "https://www.walmart.com/",
+  "title": "Walmart | Save Money. Live better.",
+  "lang": "en-US",
+  "description": "Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no order minimum. Start your free 30-day trial now!",
+  "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1, interactive-widget=resizes-content",
+  "robots": "INDEX,FOLLOW",
+  "generator": null,
+  "canonical": "https://www.walmart.com/",
+  "favicon": null,
+  "og": {
+    "title": "Walmart | Save Money. Live better.",
+    "description": "Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no order minimum. Start your free 30-day trial now!",
+    "image": "https://i5.walmartimages.com/dfw/63fd9f59-49ff/k2-_52fee322-2e60-452a-bccc-1e847f452a13.v1.png",
+    "url": "https://www.walmart.com/",
+    "type": "Website",
+    "site_name": "Walmart.com"
+  },
+  "twitter": {
+    "card": null,
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "h1Count": 1,
+  "headings": [
+    {
+      "level": 1,
+      "text": "Walmart | Save Money. Live better.",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Robot or human?",
+      "visible": true
+    }
+  ],
+  "structuredData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Walmart",
+      "url": "https://www.walmart.com/",
+      "logo": "https://i5.walmartimages.com/dfw/63fd9f59-b3e1/7a569e53-f29a-4c3d-bfaf-6f7a158bfadd/v1/walmartLogo.svg"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Walmart",
+      "url": "https://www.walmart.com/",
+      "logo": "https://i5.walmartimages.com/dfw/63fd9f59-b3e1/7a569e53-f29a-4c3d-bfaf-6f7a158bfadd/v1/walmartLogo.svg",
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.walmart.com/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ]
+    }
+  ],
+  "pageHeight": 4538
+}

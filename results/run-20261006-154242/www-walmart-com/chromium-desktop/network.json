@@ -1,0 +1,146 @@
+{
+  "failedRequests": [
+    {
+      "url": "https://collector-pxu6b0qd2s.px-client.net/assets/js/bundle",
+      "error": "csp"
+    },
+    {
+      "url": "https://collector-pxu6b0qd2s.px-client.net/res/uc",
+      "error": "csp"
+    }
+  ],
+  "httpErrors": [
+    {
+      "status": 412,
+      "url": "https://www.walmart.com/orchestra/home/graphql/Location/26e4ca8c866334908ce825a5749f6aa13f772b98a527b0d0b7fe457818c5b349?variables=%7B%7D"
+    },
+    {
+      "status": 412,
+      "url": "https://www.walmart.com/orchestra/home/graphql/Location/26e4ca8c866334908ce825a5749f6aa13f772b98a527b0d0b7fe457818c5b349?variables=%7B%7D"
+    }
+  ],
+  "blockedWrites": [
+    {
+      "method": "POST",
+      "url": "https://collector-pxu6b0qd2s.px-cloud.net/api/v2/collector"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxu6b0qd2s.px-cloud.net/b/s"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.walmart.com/px/PXu6b0qd2S/xhr/api/v2/collector"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.walmart.com/px/PXu6b0qd2S/xhr/b/s"
+    },
+    {
+      "method": "POST",
+      "url": "https://b.www.walmart.com/log.gif"
+    },
+    {
+      "method": "POST",
+      "url": "https://b.www.walmart.com/rum.gif"
+    },
+    {
+      "method": "POST",
+      "url": "https://b.www.walmart.com/log.gif"
+    },
+    {
+      "method": "POST",
+      "url": "https://b.www.walmart.com/log.gif"
+    },
+    {
+      "method": "POST",
+      "url": "https://b.www.walmart.com/rum.gif"
+    },
+    {
+      "method": "POST",
+      "url": "https://b.www.walmart.com/rum.gif"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxu6b0qd2s.px-cdn.net/api/v2/collector"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxu6b0qd2s.px-cdn.net/b/s"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxu6b0qd2s.pxchk.net/api/v2/collector"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxu6b0qd2s.pxchk.net/b/s"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxu6b0qd2s.px-cloud.net/assets/js/bundle"
+    },
+    {
+      "method": "POST",
+      "url": "https://b.www.walmart.com/log.gif"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxu6b0qd2s.px-cloud.net/res/uc"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.walmart.com/si/elh9ie/obs"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.walmart.com/px/PXu6b0qd2S/xhr/assets/js/bundle"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.walmart.com/px/PXu6b0qd2S/xhr/res/uc"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxu6b0qd2s.px-cdn.net/assets/js/bundle"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxu6b0qd2s.px-cdn.net/res/uc"
+    },
+    {
+      "method": "POST",
+      "url": "https://b.www.walmart.com/rum.gif"
+    },
+    {
+      "method": "POST",
+      "url": "https://b.www.walmart.com/log.gif"
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 412 ()",
+    "Failed to load resource: the server responded with a status of 412 ()",
+    "Connecting to 'https://collector-pxu6b0qd2s.px-client.net/assets/js/bundle' violates the following Content Security Policy directive: \"connect-src 'self' *.1worldsync.com *.accenture.com *.akamaihd.net *.babylist.com *.buywith.com *.cloudinary.com *.cnetcontent.com *.digital-cloud.medallia.com *.dou",
+    "Connecting to 'https://collector-pxu6b0qd2s.px-client.net/res/uc' violates the following Content Security Policy directive: \"connect-src 'self' *.1worldsync.com *.accenture.com *.akamaihd.net *.babylist.com *.buywith.com *.cloudinary.com *.cnetcontent.com *.digital-cloud.medallia.com *.doubleclick.n"
+  ],
+  "pageErrors": [
+    "Minified React error #425; visit https://reactjs.org/docs/error-decoder.html?invariant=425 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "undefined is not iterable (cannot read property Symbol(Symbol.iterator))"
+  ],
+  "errorsCausedByBlocking": 23
+}

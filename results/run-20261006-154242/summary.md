@@ -1,0 +1,17 @@
+# Run run-20261006-154242
+
+Status: ok (1/1 variants ok). Preset: glance. Created 2026-10-06T15:43:24.294Z.
+
+Notes: No brief: quick look
+
+## www-walmart-com - chromium / desktop
+- URL: https://www.walmart.com -> https://www.walmart.com/
+- Status: ok, HTTP 200, ready in 19.2s
+- Viewport: 1440x900 at 1x detail
+- Title: Walmart | Save Money. Live better.
+- Meta description: Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no order minimum. Start your free 30-day trial now!
+- H1 count: 1; headings total: 2; page height: 4538px
+- Structured data blocks: 2; lang: en-US; og:image: yes
+- Network: 2 HTTP errors, 2 failed requests, 21 JS errors from the site (+23 caused by write-blocking, ignored)
+- Write requests blocked (nothing was sent): collector-pxu6b0qd2s.px-cloud.net x4, www.walmart.com x5, b.www.walmart.com x9, collector-pxu6b0qd2s.px-cdn.net x4, collector-pxu6b0qd2s.pxchk.net x2. Analytics/embed calls here are normal; form destinations are listed under Forms when forms are captured.
+- Files: viewport.jpg, meta.json, text.md, network.json

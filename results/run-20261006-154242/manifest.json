@@ -1,0 +1,98 @@
+{
+  "label": "run-20261006-154242",
+  "createdAt": "2026-10-06T15:43:24.294Z",
+  "engineVersion": "1.0.0",
+  "status": "ok",
+  "variants": [
+    {
+      "target": "www-walmart-com",
+      "url": "https://www.walmart.com",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "www-walmart-com/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-06T15:43:24.849Z",
+      "httpStatus": 200,
+      "finalUrl": "https://www.walmart.com/",
+      "loadSeconds": 19.2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "finishedAt": "2026-10-06T15:43:44.195Z",
+      "files": [
+        {
+          "path": "www-walmart-com/chromium-desktop/viewport.jpg",
+          "bytes": 111869
+        },
+        {
+          "path": "www-walmart-com/chromium-desktop/meta.json",
+          "bytes": 2210
+        },
+        {
+          "path": "www-walmart-com/chromium-desktop/text.md",
+          "bytes": 1316
+        },
+        {
+          "path": "www-walmart-com/chromium-desktop/network.json",
+          "bytes": 7240
+        },
+        {
+          "path": "www-walmart-com/chromium-desktop/summary.md",
+          "bytes": 995
+        }
+      ]
+    }
+  ],
+  "job": {
+    "preset": "glance",
+    "targets": [
+      {
+        "url": "https://www.walmart.com",
+        "name": "www-walmart-com"
+      }
+    ],
+    "browsers": [
+      "chromium"
+    ],
+    "devices": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      }
+    ],
+    "capture": {
+      "screenshot": "viewport",
+      "tiles": false,
+      "tileHeight": null,
+      "maxTiles": 25,
+      "format": "jpeg",
+      "quality": 80,
+      "detail": 1,
+      "animations": "disabled",
+      "waitMs": 800,
+      "timeoutMs": 45000,
+      "revealLazyContent": true,
+      "hide": [],
+      "blockWrites": true,
+      "text": true,
+      "meta": true,
+      "html": false,
+      "links": false,
+      "checkLinks": false,
+      "images": false,
+      "styles": false,
+      "forms": false,
+      "a11y": false,
+      "aria": false,
+      "lighthouse": false
+    },
+    "steps": [],
+    "notes": "No brief: quick look",
+    "brief": null
+  },
+  "finishedAt": "2026-10-06T15:43:44.227Z"
+}

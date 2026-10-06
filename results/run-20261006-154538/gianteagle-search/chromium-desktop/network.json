@@ -1,0 +1,382 @@
+{
+  "failedRequests": [
+    {
+      "url": "https://mp.shop.gianteagle.com/tags/JS/v2/us1-2fd7028efbdcec41b6c96deea07784ff/mparticle.js",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "httpErrors": [
+    {
+      "status": 404,
+      "url": "https://mp.shop.gianteagle.com/tags/JS/v2/us1-2fd7028efbdcec41b6c96deea07784ff/mparticle.js"
+    }
+  ],
+  "blockedWrites": [
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://graphql.datocms.com/"
+    },
+    {
+      "method": "POST",
+      "url": "https://graphql.datocms.com/"
+    },
+    {
+      "method": "POST",
+      "url": "https://graphql.datocms.com/"
+    },
+    {
+      "method": "POST",
+      "url": "https://graphql.datocms.com/"
+    },
+    {
+      "method": "POST",
+      "url": "https://graphql.datocms.com/"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://o396373.ingest.sentry.io/api/5250870/envelope/?sentry_version=7&sentry_key=7c32121483444479908b2c8b947e69ea&sentry_client=sentry.javascript.react%2F8.55.0"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://sdk.iad-03.braze.com/api/v3/data/"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/replay?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=b"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Afetch%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=br"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://browser-intake-datadoghq.com/api/v2/rum?ddsource=browser&ddtags=sdk_version%3A5.28.1%2Capi%3Axhr%2Cenv%3Aprod%2Cservice%3Agrocery-web-production%2Cversion%3Aacc4875a97a30c54f08c4ccb11a5c1ac191f9709&dd-api-key=pub3172e7769a006c7e243e80ea79bd62f9&dd-evp-origin-version=5.28.1&dd-evp-origin=brow"
+    },
+    {
+      "method": "POST",
+      "url": "https://core.shop.gianteagle.com/api/v2"
+    }
+  ],
+  "consoleErrors": [
+    "Fetch API cannot load chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/icons/shopping-icon16.png. URL scheme \"chrome-extension\" is not supported.",
+    "Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 90
+}

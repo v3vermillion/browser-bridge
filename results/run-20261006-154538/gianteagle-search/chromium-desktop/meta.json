@@ -1,0 +1,60 @@
+{
+  "url": "https://www.gianteagle.com/grocery/search?q=peanut%20butter",
+  "title": "Giant Eagle | Because It Matters | Grocery Store & Pharmacy",
+  "lang": "en",
+  "description": "Shop for fresh groceries online at Giant Eagle! Whether you're filling a prescription with our pharmacy, looking for a tasty dinner recipe or you are looking to order groceries online, be sure to shop Giant Eagle.",
+  "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+  "robots": null,
+  "generator": null,
+  "canonical": null,
+  "favicon": "https://www.gianteagle.com/favicon.ico",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "url": null,
+    "type": null,
+    "site_name": null
+  },
+  "twitter": {
+    "card": null,
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "h1Count": 1,
+  "headings": [
+    {
+      "level": 2,
+      "text": "Quick Links",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "About Us",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Customer Service",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Work With Us",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Sign up for our newsletter",
+      "visible": true
+    },
+    {
+      "level": 1,
+      "text": "Oops!",
+      "visible": true
+    }
+  ],
+  "structuredData": [],
+  "pageHeight": 900
+}

@@ -1,0 +1,256 @@
+{
+  "label": "run-20261006-154538",
+  "createdAt": "2026-10-06T15:46:12.410Z",
+  "engineVersion": "1.0.0",
+  "status": "partial",
+  "variants": [
+    {
+      "target": "meijer-home",
+      "url": "https://www.meijer.com/",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "meijer-home/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-06T15:46:12.670Z",
+      "httpStatus": 403,
+      "finalUrl": "https://www.meijer.com/",
+      "loadSeconds": 2.1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "finishedAt": "2026-10-06T15:46:14.828Z",
+      "files": [
+        {
+          "path": "meijer-home/chromium-desktop/viewport.jpg",
+          "bytes": 23828
+        },
+        {
+          "path": "meijer-home/chromium-desktop/meta.json",
+          "bytes": 604
+        },
+        {
+          "path": "meijer-home/chromium-desktop/text.md",
+          "bytes": 267
+        },
+        {
+          "path": "meijer-home/chromium-desktop/network.json",
+          "bytes": 297
+        },
+        {
+          "path": "meijer-home/chromium-desktop/summary.md",
+          "bytes": 425
+        }
+      ]
+    },
+    {
+      "target": "target-search",
+      "url": "https://www.target.com/s?searchTerm=peanut+butter",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "target-search/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-06T15:46:14.829Z",
+      "httpStatus": 200,
+      "finalUrl": "https://www.target.com/s?searchTerm=peanut+butter",
+      "loadSeconds": 19.6,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "finishedAt": "2026-10-06T15:46:34.548Z",
+      "files": [
+        {
+          "path": "target-search/chromium-desktop/viewport.jpg",
+          "bytes": 23547
+        },
+        {
+          "path": "target-search/chromium-desktop/meta.json",
+          "bytes": 1675
+        },
+        {
+          "path": "target-search/chromium-desktop/text.md",
+          "bytes": 2041
+        },
+        {
+          "path": "target-search/chromium-desktop/network.json",
+          "bytes": 12703
+        },
+        {
+          "path": "target-search/chromium-desktop/summary.md",
+          "bytes": 1094
+        }
+      ]
+    },
+    {
+      "target": "aldi-search",
+      "url": "https://www.aldi.us/results?q=peanut%20butter",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "aldi-search/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-06T15:46:34.551Z",
+      "httpStatus": 404,
+      "finalUrl": "https://www.aldi.us/results?q=peanut%20butter",
+      "loadSeconds": 2.1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "finishedAt": "2026-10-06T15:46:36.701Z",
+      "files": [
+        {
+          "path": "aldi-search/chromium-desktop/viewport.jpg",
+          "bytes": 21912
+        },
+        {
+          "path": "aldi-search/chromium-desktop/meta.json",
+          "bytes": 800
+        },
+        {
+          "path": "aldi-search/chromium-desktop/text.md",
+          "bytes": 177
+        },
+        {
+          "path": "aldi-search/chromium-desktop/network.json",
+          "bytes": 319
+        },
+        {
+          "path": "aldi-search/chromium-desktop/summary.md",
+          "bytes": 444
+        }
+      ]
+    },
+    {
+      "target": "gianteagle-search",
+      "url": "https://www.gianteagle.com/grocery/search?q=peanut%20butter",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "gianteagle-search/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-06T15:46:36.702Z",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gianteagle.com/grocery/search?q=peanut%20butter",
+      "loadSeconds": 5.5,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "finishedAt": "2026-10-06T15:46:42.289Z",
+      "files": [
+        {
+          "path": "gianteagle-search/chromium-desktop/viewport.jpg",
+          "bytes": 53364
+        },
+        {
+          "path": "gianteagle-search/chromium-desktop/meta.json",
+          "bytes": 1404
+        },
+        {
+          "path": "gianteagle-search/chromium-desktop/text.md",
+          "bytes": 916
+        },
+        {
+          "path": "gianteagle-search/chromium-desktop/network.json",
+          "bytes": 20524
+        },
+        {
+          "path": "gianteagle-search/chromium-desktop/summary.md",
+          "bytes": 1048
+        }
+      ]
+    },
+    {
+      "target": "kroger-search",
+      "url": "https://www.kroger.com/search?query=peanut%20butter",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "kroger-search/chromium-desktop",
+      "status": "error",
+      "startedAt": "2026-10-06T15:46:42.293Z",
+      "error": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.kroger.com/search?query=peanut%20butter",
+      "finishedAt": "2026-10-06T15:46:42.492Z",
+      "files": [
+        {
+          "path": "kroger-search/chromium-desktop/error-state.jpg",
+          "bytes": 8453
+        },
+        {
+          "path": "kroger-search/chromium-desktop/network.json",
+          "bytes": 273
+        },
+        {
+          "path": "kroger-search/chromium-desktop/summary.md",
+          "bytes": 321
+        }
+      ]
+    }
+  ],
+  "job": {
+    "preset": "glance",
+    "targets": [
+      {
+        "url": "https://www.meijer.com/",
+        "name": "meijer-home"
+      },
+      {
+        "url": "https://www.target.com/s?searchTerm=peanut+butter",
+        "name": "target-search"
+      },
+      {
+        "url": "https://www.aldi.us/results?q=peanut%20butter",
+        "name": "aldi-search"
+      },
+      {
+        "url": "https://www.gianteagle.com/grocery/search?q=peanut%20butter",
+        "name": "gianteagle-search"
+      },
+      {
+        "url": "https://www.kroger.com/search?query=peanut%20butter",
+        "name": "kroger-search"
+      }
+    ],
+    "browsers": [
+      "chromium"
+    ],
+    "devices": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      }
+    ],
+    "capture": {
+      "screenshot": "viewport",
+      "tiles": false,
+      "tileHeight": null,
+      "maxTiles": 25,
+      "format": "jpeg",
+      "quality": 80,
+      "detail": 1,
+      "animations": "disabled",
+      "waitMs": 800,
+      "timeoutMs": 45000,
+      "revealLazyContent": true,
+      "hide": [],
+      "blockWrites": true,
+      "text": true,
+      "meta": true,
+      "html": false,
+      "links": false,
+      "checkLinks": false,
+      "images": false,
+      "styles": false,
+      "forms": false,
+      "a11y": false,
+      "aria": false,
+      "lighthouse": false
+    },
+    "steps": [],
+    "notes": "No brief: price lookup probe",
+    "brief": null
+  },
+  "finishedAt": "2026-10-06T15:46:42.522Z"
+}

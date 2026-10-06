@@ -1,0 +1,11 @@
+## gianteagle-search - chromium / desktop
+- URL: https://www.gianteagle.com/grocery/search?q=peanut%20butter
+- Status: ok, HTTP 200, ready in 5.5s
+- Viewport: 1440x900 at 1x detail
+- Title: Giant Eagle | Because It Matters | Grocery Store & Pharmacy
+- Meta description: Shop for fresh groceries online at Giant Eagle! Whether you're filling a prescription with our pharmacy, looking for a tasty dinner recipe or you are looking to order groceries online, be sure to shop Giant Eagle.
+- H1 count: 1; headings total: 6; page height: 900px
+- Structured data blocks: 0; lang: en; og:image: no
+- Network: 1 HTTP errors, 1 failed requests, 2 JS errors from the site (+90 caused by write-blocking, ignored)
+- Write requests blocked (nothing was sent): core.shop.gianteagle.com x39, graphql.datocms.com x5, o396373.ingest.sentry.io x1, browser-intake-datadoghq.com x44, sdk.iad-03.braze.com x1. Analytics/embed calls here are normal; form destinations are listed under Forms when forms are captured.
+- Files: viewport.jpg, meta.json, text.md, network.json

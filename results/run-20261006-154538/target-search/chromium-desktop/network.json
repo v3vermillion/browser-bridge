@@ -1,0 +1,285 @@
+{
+  "failedRequests": [
+    {
+      "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsvR2dmQ5Oac4_8PkPzwXFFes29_kdL3T9Rgcs7tJV8596HfY9MUI6QRM9jsA3gFD6WkkVnheHYe160vAoDHUC5IV36qzlHv58uSel--qRCNoCO4OxaFIsoeKZx9Y1S417T3vt0XMdT6_JeoiL96lSBJfgo9IxQJJW4BbjrAVry3SDYzXju2A2uQnMEBpWwRPyulHAEoNfz-fITvo0xgTzyEKBXwRmFU-pape1MIreTveVBhklCp",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWgD",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=fle-fetch-start2",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=colleague-executed&name=4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=av-js&type=reach&proto=CAlgAWgD",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsv7rsLc3qvOi-G6ZO3NGFFumIAdn0HKCrySFTxzsfOmo5pKYGsfRxP-ZzY5J3rgXiUO6X3Fmhy9pMIujbrgRjboj0P26YBAyiM7ICzwpdgmEZjoujhL1kEwz4BqaLkoEiMKSmFbZV6SD2HeoDiIOmmQjxQXV9oxeD23ticqbFLzmVxxIEpYSifrk2jqb_w8fWKzO44v0DElOEgIUF8DAkagZiEq9VHi0_rkd73zzW9OeOP-lB5w",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjssV4WAT3AyjApfNO1kr79adXi4eOdYSFleEft3cTAkSj0TPdNtWZ2-9xHmFyLRbXuU0pb6zJz6ChIbsYHozGm9C1fEgQrX49vo68DXMh7Ig1C3xJNscJJ7PYDt80qhNOcp18Vvmr1wmXelpsojeFRNq7lRJ9qsNVpGBdZdvIRcVxKuPfM8AaKYqT7VYu7yVaAS4iYTo-1WpyKIPIWZ49h6Hyh_L3OwUZeiqEpQiaqxz1tgNR25_",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsusCE0sQ0zkR3YsB-0PVodmj3B6AuOPASv_fZ95y2JevtCCLhMBOS3MI4IRoAImepQ77qvc5ambAv6yceGHiVgUVyMOjmEEx94S9vaGWdg3hfkCH7eS7k13yRPlBqFPq9_GPUR9YwNvp9fENaZmwaAreDAp6mTfTqZXFxuqkPy4wYagAPWnm0knZOl7H7k3TKSHkZKlky6vFBt-D2lv7NU81jNtpGHHUZ1wkjxdv820VBgfRX8G",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "httpErrors": [
+    {
+      "status": 435,
+      "url": "https://redsky.target.com/redsky_aggregations/v1/web/nearby_stores_v1?limit=5&within=100&place=27587&key=9f36aeafbe60771e321a7cc95a78140772ab3e96&visitor_id=01A111E4E1470200B0220441BB767FF2&channel=WEB&page=%2Fs%2Fpeanut+butter"
+    },
+    {
+      "status": 435,
+      "url": "https://redsky.target.com/redsky_aggregations/v1/web/store_location_v1?store_id=1504&key=9f36aeafbe60771e321a7cc95a78140772ab3e96&visitor_id=01A111E4E1470200B0220441BB767FF2&channel=WEB&page=%2Fs%2Fpeanut+butter"
+    },
+    {
+      "status": 435,
+      "url": "https://cdui-orchestrations.target.com/cdui_orchestrations/v1/pages/slp?key=9f36aeafbe60771e321a7cc95a78140772ab3e96&platform=WEB&privacy_do_not_sell=false&targeted_advertising_opt_out=false&device_type=DESKTOP&sapphire_channel=WEB&sapphire_page=%2Fs%2Fpeanut+butter&channel=WEB&page=%2Fs%2Fpeanut+bu"
+    },
+    {
+      "status": 435,
+      "url": "https://cdui-orchestrations.target.com/cdui_orchestrations/v1/pages/slp?key=9f36aeafbe60771e321a7cc95a78140772ab3e96&platform=WEB&privacy_do_not_sell=false&targeted_advertising_opt_out=false&device_type=DESKTOP&sapphire_channel=WEB&sapphire_page=%2Fs%2Fpeanut+butter&channel=WEB&page=%2Fs%2Fpeanut+bu"
+    },
+    {
+      "status": 435,
+      "url": "https://cdui-orchestrations.target.com/cdui_orchestrations/v1/pages/slp?key=9f36aeafbe60771e321a7cc95a78140772ab3e96&platform=WEB&privacy_do_not_sell=false&targeted_advertising_opt_out=false&device_type=DESKTOP&sapphire_channel=WEB&sapphire_page=%2Fs%2Fpeanut+butter&channel=WEB&page=%2Fs%2Fpeanut+bu"
+    },
+    {
+      "status": 435,
+      "url": "https://redsky.target.com/redsky_aggregations/v1/web/general_recommendations_placement_v1?channel=WEB&include_sponsored_recommendations=true&key=9f36aeafbe60771e321a7cc95a78140772ab3e96&keyword=peanut+butter&page=%2Fs%2Fpeanut+butter&placement_id=slp&pricing_store_id=1504&purchasable_store_ids=1504&"
+    },
+    {
+      "status": 435,
+      "url": "https://redsky.target.com/redsky_aggregations/v1/web/plp_search_v2?count=24&default_purchasability_filter=true&include_sponsored=true&include_review_summarization=true&keyword=peanut+butter&new_search=true&offset=0&page=%2Fs%2Fpeanut+butter&platform=desktop&pricing_store_id=1504&spellcheck=true&stor"
+    }
+  ],
+  "blockedWrites": [
+    {
+      "method": "POST",
+      "url": "https://collector-pxgwpp4wus.px-cloud.net/api/v2/collector"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxgwpp4wus.px-cloud.net/b/s"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/firefly_events/v1/events/traffic_source"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/firefly_events/v1/events/page_view"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/firefly_events/v1/events/traffic_source"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxgwpp4wus.px-cdn.net/api/v2/collector"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxgwpp4wus.px-cdn.net/b/s"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/firefly_events/v1/events/page_view"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxgwpp4wus.pxchk.net/api/v2/collector"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxgwpp4wus.px-cloud.net/assets/js/bundle"
+    },
+    {
+      "method": "POST",
+      "url": "https://vtrk.dv.tech/?ec=dvtag&ea=ad-request&ctx=21728514&cmp=DV1026531&cd111=success&cm106=0&cm107=44&cd112=modern&cd115=&cm116=0&cm108=89&cm109=22&cm110=17&cm115=6&cm117=11&cm111=30&cm112=11&cm113=25140&cd102=c30fa41&cd103=&cd107=a04db17f-0890-4e72-a3d0-7e5fe4fb2bea&cd109=modern&cd200=com&cd108=&c"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxgwpp4wus.pxchk.net/b/s"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxgwpp4wus.px-cloud.net/res/uc"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/firefly_events/v1/events/served_display_ads_impression"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/firefly_events/v1/events/served_display_ads_impression"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxgwpp4wus.px-client.net/assets/js/bundle"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/firefly_events/v1/events/tags_page_view"
+    },
+    {
+      "method": "POST",
+      "url": "https://events.attentivemobile.com/ct-ev"
+    },
+    {
+      "method": "POST",
+      "url": "https://rs.fullstory.com/rec/page"
+    },
+    {
+      "method": "POST",
+      "url": "https://target-us.attn.tv/unrenderedCreative?v=2026.09.3&r=&id=715320259dda4faa867f44e530339828&pv=1&l=https%3A%2F%2Fwww.target.com%2Fs%3FsearchTerm%3Dpeanut%2Bbutter&w=1440&h=900&ss_ref=ORGANIC&ses=212b25474ec74583806b6bb637e04467&f=3"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxgwpp4wus.px-client.net/res/uc"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/firefly_events/v1/events/viewed_impression"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxgwpp4wus.px-cdn.net/assets/js/bundle"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxgwpp4wus.px-cdn.net/res/uc"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/firefly_events/v1/events/traffic_source"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://tpsc-ue1.doubleverify.com/event.png?impid=fcc5fcef20754c1bb7a26a645ac88a22&flavor=1&gdpr=&gdpr_consent=&ee_dp_omvk=doubleverify.com-omid&ee_dp_isom=1&ee_dp_btreg=4a44c8eb-7849-4304-a2f0-5989a0b22495&ee_dp_btadsrv=4a44c8eb-7849-4304-a2f0-5989a0b22495&iskpm=1&ismmm=1&isocm=1&ee_dp_isioms=1&ee_"
+    },
+    {
+      "method": "POST",
+      "url": "https://tpsc-ue1.doubleverify.com/event.png?impid=c4ef04a606eb4727be1b9a5ca3bd9fcd&flavor=1&gdpr=&gdpr_consent=&ee_dp_omvk=doubleverify.com-omid&ee_dp_isom=1&ee_dp_btreg=3d66f208-c15b-44f0-bf8e-142bdc8c70fb&ee_dp_btadsrv=3d66f208-c15b-44f0-bf8e-142bdc8c70fb&dvp_gdpr_Error=3&dvp_gdv2_Error=3&ee_dp_cm"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://tpsc-ue1.doubleverify.com/event.png?impid=c4ef04a606eb4727be1b9a5ca3bd9fcd&flavor=1&gdpr=&gdpr_consent=&isbxdms=6524&b11=5889&iabv5=5523&lftb=6189&sftb=6189&m50invms=5989&ee_dp_m50invnprms=5989&eoid=32&b5=100&b8=100&ivsos=12&engscrlms=6524&engscrlmsv2=6524&engscrlmsv3=6524"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://api.target.com/telemetry_data/v1/traces?key=5622b71fe94d55e17b492fa9e2b07dbc69f68c4f"
+    },
+    {
+      "method": "POST",
+      "url": "https://tpsc-ue1.doubleverify.com/event.png?impid=fcc5fcef20754c1bb7a26a645ac88a22&flavor=1&gdpr=&gdpr_consent=&nvr=4&isbxdms=10595&b0=10582&b9=100&ivsos=5&lftb=10682&sftb=10682&m50invms=100&ee_dp_m50invnprms=100&eoid=27"
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 435 ()",
+    "Failed to load resource: the server responded with a status of 435 ()",
+    "Failed to load resource: the server responded with a status of 435 ()",
+    "Failed to load resource: the server responded with a status of 435 ()",
+    "Failed to load resource: the server responded with a status of 435 ()",
+    "Failed to load resource: the server responded with a status of 435 ()",
+    "Failed to load resource: the server responded with a status of 435 ()"
+  ],
+  "pageErrors": [
+    "Array(1)"
+  ],
+  "errorsCausedByBlocking": 49
+}

@@ -1,0 +1,35 @@
+{
+  "url": "https://www.meijer.com/",
+  "title": "Access Denied",
+  "lang": null,
+  "description": null,
+  "viewport": null,
+  "robots": null,
+  "generator": null,
+  "canonical": null,
+  "favicon": null,
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "url": null,
+    "type": null,
+    "site_name": null
+  },
+  "twitter": {
+    "card": null,
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "h1Count": 1,
+  "headings": [
+    {
+      "level": 1,
+      "text": "Access Denied",
+      "visible": true
+    }
+  ],
+  "structuredData": [],
+  "pageHeight": 900
+}

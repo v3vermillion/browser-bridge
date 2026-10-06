@@ -1,0 +1,15 @@
+{
+  "failedRequests": [],
+  "httpErrors": [
+    {
+      "status": 404,
+      "url": "https://www.aldi.us/results?q=peanut%20butter"
+    }
+  ],
+  "blockedWrites": [],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 0
+}

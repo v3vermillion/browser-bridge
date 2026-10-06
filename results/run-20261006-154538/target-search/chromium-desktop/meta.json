@@ -1,0 +1,75 @@
+{
+  "url": "https://www.target.com/s?searchTerm=peanut+butter",
+  "title": "\"peanut butter\" : Target",
+  "lang": "en-US",
+  "description": "Shop Target for peanut butter you will love at great low prices. Choose from Same Day Delivery, Drive Up or Order Pickup plus free shipping on orders $35+.",
+  "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, interactive-widget=resizes-content",
+  "robots": "noindex, follow",
+  "generator": null,
+  "canonical": "https://www.target.com/s/peanut+butter",
+  "favicon": "https://assets.targetimg1.com/static/images/favicon.ico",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "url": null,
+    "type": null,
+    "site_name": null
+  },
+  "twitter": {
+    "card": null,
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "h1Count": 0,
+  "headings": [
+    {
+      "level": 2,
+      "text": "“”",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Featured categories",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Get top deals, latest trends, and more.",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Footer",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "About Us",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Help",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Stores",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Services",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Health Data Consent",
+      "visible": true
+    }
+  ],
+  "structuredData": [],
+  "pageHeight": 2816
+}

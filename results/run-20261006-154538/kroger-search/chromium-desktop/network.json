@@ -1,0 +1,13 @@
+{
+  "failedRequests": [
+    {
+      "url": "https://www.kroger.com/search?query=peanut%20butter",
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    }
+  ],
+  "httpErrors": [],
+  "blockedWrites": [],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 0
+}

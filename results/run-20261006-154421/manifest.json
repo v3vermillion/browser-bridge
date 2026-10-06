@@ -1,0 +1,141 @@
+{
+  "label": "run-20261006-154421",
+  "createdAt": "2026-10-06T15:45:01.264Z",
+  "engineVersion": "1.0.0",
+  "status": "ok",
+  "variants": [
+    {
+      "target": "walmart-search",
+      "url": "https://www.walmart.com/search?q=peanut+butter",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "walmart-search/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-06T15:45:01.517Z",
+      "httpStatus": 200,
+      "finalUrl": "https://www.walmart.com/blocked?url=L3NlYXJjaD9xPXBlYW51dCtidXR0ZXI=&uuid=e4804a4c-c19c-11f1-9c66-6d93f0ea3da5&vid=&g=b",
+      "loadSeconds": 3.2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "finishedAt": "2026-10-06T15:45:04.836Z",
+      "files": [
+        {
+          "path": "walmart-search/chromium-desktop/viewport.jpg",
+          "bytes": 24231
+        },
+        {
+          "path": "walmart-search/chromium-desktop/meta.json",
+          "bytes": 720
+        },
+        {
+          "path": "walmart-search/chromium-desktop/text.md",
+          "bytes": 308
+        },
+        {
+          "path": "walmart-search/chromium-desktop/network.json",
+          "bytes": 771
+        },
+        {
+          "path": "walmart-search/chromium-desktop/summary.md",
+          "bytes": 858
+        }
+      ]
+    },
+    {
+      "target": "meijer-search",
+      "url": "https://www.meijer.com/shopping/search.html?text=peanut%20butter",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "meijer-search/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-06T15:45:04.838Z",
+      "httpStatus": 403,
+      "finalUrl": "https://www.meijer.com/shopping/search.html?text=peanut%20butter",
+      "loadSeconds": 2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "finishedAt": "2026-10-06T15:45:06.870Z",
+      "files": [
+        {
+          "path": "meijer-search/chromium-desktop/viewport.jpg",
+          "bytes": 25174
+        },
+        {
+          "path": "meijer-search/chromium-desktop/meta.json",
+          "bytes": 645
+        },
+        {
+          "path": "meijer-search/chromium-desktop/text.md",
+          "bytes": 329
+        },
+        {
+          "path": "meijer-search/chromium-desktop/network.json",
+          "bytes": 338
+        },
+        {
+          "path": "meijer-search/chromium-desktop/summary.md",
+          "bytes": 466
+        }
+      ]
+    }
+  ],
+  "job": {
+    "preset": "glance",
+    "targets": [
+      {
+        "url": "https://www.walmart.com/search?q=peanut+butter",
+        "name": "walmart-search"
+      },
+      {
+        "url": "https://www.meijer.com/shopping/search.html?text=peanut%20butter",
+        "name": "meijer-search"
+      }
+    ],
+    "browsers": [
+      "chromium"
+    ],
+    "devices": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      }
+    ],
+    "capture": {
+      "screenshot": "viewport",
+      "tiles": false,
+      "tileHeight": null,
+      "maxTiles": 25,
+      "format": "jpeg",
+      "quality": 80,
+      "detail": 1,
+      "animations": "disabled",
+      "waitMs": 800,
+      "timeoutMs": 45000,
+      "revealLazyContent": true,
+      "hide": [],
+      "blockWrites": true,
+      "text": true,
+      "meta": true,
+      "html": false,
+      "links": false,
+      "checkLinks": false,
+      "images": false,
+      "styles": false,
+      "forms": false,
+      "a11y": false,
+      "aria": false,
+      "lighthouse": false
+    },
+    "steps": [],
+    "notes": "No brief: price lookup probe",
+    "brief": null
+  },
+  "finishedAt": "2026-10-06T15:45:06.904Z"
+}

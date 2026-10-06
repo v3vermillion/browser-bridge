@@ -1,0 +1,33 @@
+{
+  "failedRequests": [],
+  "httpErrors": [],
+  "blockedWrites": [
+    {
+      "method": "POST",
+      "url": "https://collector-pxu6b0qd2s.px-cloud.net/assets/js/bundle"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxu6b0qd2s.px-cloud.net/res/uc"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.walmart.com/si/elh9ie/obs"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.walmart.com/px/PXu6b0qd2S/xhr/assets/js/bundle"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.walmart.com/px/PXu6b0qd2S/xhr/res/uc"
+    },
+    {
+      "method": "POST",
+      "url": "https://collector-pxu6b0qd2s.px-client.net/assets/js/bundle"
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 6
+}

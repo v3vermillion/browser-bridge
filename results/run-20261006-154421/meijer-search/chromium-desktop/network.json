@@ -1,0 +1,15 @@
+{
+  "failedRequests": [],
+  "httpErrors": [
+    {
+      "status": 403,
+      "url": "https://www.meijer.com/shopping/search.html?text=peanut%20butter"
+    }
+  ],
+  "blockedWrites": [],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 403 ()"
+  ],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 0
+}

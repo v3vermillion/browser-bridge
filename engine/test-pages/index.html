@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion fixture</title>
+<style>
+  body { margin: 0; font: 16px/1.5 system-ui, sans-serif; color: #111; background: #fff; }
+  @keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  #title { font-size: 40px; margin: 40px 32px 16px; animation: rise 600ms ease-out 200ms both; }
+  #cta { margin: 32px; padding: 14px 28px; font-size: 18px; border: 0; border-radius: 8px; background: #2353ff; color: #fff;
+         transition: transform 250ms ease, background-color 250ms ease; }
+  #cta:hover { transform: translateY(-6px); background: #c1121f; }
+  #late { display: block; margin: 24px 32px; width: 300px; height: 150px; background: #eee; }
+  section { height: 900px; margin: 0; padding: 32px; }
+  @media (prefers-reduced-motion: reduce) { #title { animation: none; } }
+</style>
+</head>
+<body>
+  <h1 id="title">Motion fixture</h1>
+  <button id="cta">Donate now</button>
+  <img id="late" src="/slow.svg" alt="An image that arrives late">
+  <section style="background: #f3f0ff">Section A</section>
+  <section style="background: #e8fff3">Section B</section>
+  <section style="background: #fff4e8">Section C</section>
+</body>
+</html>

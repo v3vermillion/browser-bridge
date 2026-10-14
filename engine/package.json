@@ -3,7 +3,10 @@
   "private": true,
   "type": "module",
   "description": "Capture engine for browser-bridge (runs in GitHub Actions).",
-  "scripts": { "capture": "node capture.mjs" },
+  "scripts": {
+    "capture": "node capture.mjs",
+    "selftest": "node selftest.mjs"
+  },
   "dependencies": {
     "axe-core": "^4.13.0",
     "playwright": "1.63.0"

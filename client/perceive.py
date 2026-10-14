@@ -18,7 +18,7 @@ quiet. Use them to ground and check judgment, never to replace it.
 Usage:
   python3 perceive.py analyze IMAGE [--json]
   python3 perceive.py compare BEFORE AFTER -o side_by_side.jpg [--labels "Before" "After"]
-  python3 perceive.py motion LIVESCROLL_FOLDER [--gif scroll.gif]
+  python3 perceive.py motion LIVESCROLL_OR_WATCH_FOLDER [--gif motion.gif]
 
 Requires numpy and Pillow (pip install numpy pillow).
 """
@@ -263,15 +263,16 @@ def compare(before, after, out, labels=("Before", "After")):
 
 # ---------------------------------------------------------------------------- motion (live scroll)
 def motion(run_dir, gif_out=None, gif_width=320):
-    """Analyze a livescroll result folder (motion.json + frames/).
+    """Analyze a livescroll result folder (motion.json + frames/) or a watch folder (watch.json + frames/).
 
     Consecutive frames are compared after shifting by the scroll distance between them, so ordinary
     scrolling cancels out and what remains is content changing on its own: reveal animations, flicker,
     flashes, blank frames, elements popping in or jumping. Spikes are listed with frame files to view.
     """
     import os
-    meta = json.load(open(os.path.join(run_dir, "motion.json")))
-    fm = meta.get("frameMeta") or []
+    name = "motion.json" if os.path.exists(os.path.join(run_dir, "motion.json")) else "watch.json"
+    meta = json.load(open(os.path.join(run_dir, name)))
+    fm = [f for f in meta.get("frameMeta") or [] if f.get("file")]
     if len(fm) < 2:
         return {"note": "fewer than 2 frames; nothing to compare"}, None
     frames = []
@@ -342,9 +343,9 @@ def main():
     c.add_argument("after")
     c.add_argument("-o", "--out", default="compare.jpg")
     c.add_argument("--labels", nargs=2, default=["Before", "After"])
-    mo = sub.add_parser("motion", help="analyze a livescroll result folder (motion.json + frames/)")
+    mo = sub.add_parser("motion", help="analyze a livescroll or watch result folder (motion.json or watch.json + frames/)")
     mo.add_argument("folder")
-    mo.add_argument("--gif", help="also write an animated GIF of the frames")
+    mo.add_argument("--gif", help="also write an animated GIF of the frames (for people: an AI sees only its first frame)")
     args = ap.parse_args()
     if args.cmd == "motion":
         out, gif = motion(args.folder, args.gif)

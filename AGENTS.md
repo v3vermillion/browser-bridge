@@ -15,7 +15,7 @@ It describes judgment, not a checklist. Adapt to what the user actually needs.
 |---|---|---|
 | Quick look: `run --url URL --preset glance --no-brief "quick look"` | What a page says / roughly looks like | ~75 s measured |
 | Batch capture: `run job.json --brief brief.md` | Broad coverage: many pages x devices x browsers, plus measurements | a few minutes, more with WebKit/Firefox/Lighthouse |
-| Live session: `session start --brief brief.md` / `session do ...` | Exploring and interacting like a person: swipe, tap, open menus, zoom, inspect exact styles, record live scrolling for motion bugs, try design changes live | ~70 s to start, ~5-6 s per round trip (measured); batch several actions into one round trip |
+| Live session: `session start --brief brief.md` / `session do ...` | Exploring and interacting like a person: swipe, tap, open menus, zoom, inspect exact styles, watch animations (on load, on hover, on tap) and live scrolling, try design changes live | ~70 s to start, ~5-6 s per round trip (measured); batch several actions into one round trip |
 
 **Measurements**, as much as the request needs (quick looks include text and page metadata; `standard`
 and `deep` batch presets add the rest): headings, SEO/meta, structured data, links and where they go,
@@ -88,6 +88,9 @@ If `check` fails, its message says why. Tell the user plainly what to fix.
   (`'*/tiles/*'` for readable detail, `'*/forms.json'`, `'*/a11y.json'`, `'*/styles.json'`, ...).
 - Sessions: each action returns a screenshot (and `observe` returns a numbered element map). Look at
   the images before making visual claims.
+- Motion: describe animations from the animation list (`watch`), which is exact, and confirm them on the
+  filmstrip. When the result says most visible change is "elsewhere" or in media, the motion is script-,
+  canvas-, or video-driven: the frames are the only evidence, so say so.
 - Styles can change with scroll position, hover, and "current section" states. Compare an inspection with
   its `element.jpg`, not with a screenshot taken at a different moment.
 - "JS errors" caused by the write-blocking itself are filtered out and counted separately; the blocked
@@ -125,7 +128,8 @@ If `check` fails, its message says why. Tell the user plainly what to fix.
 | "Element N is not in the current map" | The page changed; `observe` again and use the new numbers. |
 | Variant `status: error` in a batch run | Read `summary.md`; `error-state.jpg` shows what the browser saw. |
 | Page looks half-empty | Content appears on scroll or after a delay: `scroll`/`frames` in a session, or raise `waitMs`. |
-| Suspected motion bug (flicker, jumping, snap-back) | `session do livescroll bottom fresh=1 --frames`, then `perceive.py motion <folder>`; view flagged frames beside their predecessors. See docs/sessions.md "Motion". |
+| Need to see an animation (on load, hover, menu, carousel) | `session do watch load`, `watch hover N`, `watch tap N`, or `watch 5s`; look at `filmstrip.jpg` and read the animation list. Screenshots from other actions finish animations instantly, so they never show one in progress. See docs/sessions.md "Motion". |
+| Suspected motion bug while scrolling (flicker, jumping, snap-back) | `session do livescroll bottom fresh=1 --frames`, then `perceive.py motion <folder>`; view flagged frames beside their predecessors. |
 | Bot protection / CAPTCHA | Datacenter IPs are sometimes blocked. Report it; don't try to evade it. |
 
 ## Reference

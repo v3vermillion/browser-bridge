@@ -20,6 +20,7 @@ Commands:
   session start --url URL       open a live browser (see docs/sessions.md; same brief rule)
   session do ACTION [ARGS]      act in the live browser and get a screenshot back
                                 several at once: session do "tap 4" "swipe left" "zoom 7"
+                                motion: session do watch load | watch hover 7 | watch 3s
   session end                   close the live browser
   playbook list|get|put         shared expert briefs (see docs/expert-brief.md)
 
@@ -32,6 +33,7 @@ Examples:
   python3 bridge.py session start --url https://example.org --device mobile --brief brief.md
   python3 bridge.py session do swipe up
   python3 bridge.py session do tap 7
+  python3 bridge.py session do watch hover 7 slowmo=0.25
 """
 import argparse
 import base64
@@ -356,6 +358,69 @@ def save_session(st):
     json.dump(st, open(SESSION_FILE, "w"), indent=2)
 
 
+def _secs(t):
+    return "?" if t is None else f"{'-' if t < 0 else '+'}{abs(t) / 1000:.2f}s"
+
+
+def describe_animation(a):
+    """One line per animation the browser reported: what, where, timing, and what it changes."""
+    kind = {"CSSTransition": "transition", "CSSAnimation": "animation", "Animation": "Web Animation (script)"}.get(a.get("type"), a.get("type"))
+    where = a.get("target") or "?"
+    if a.get("text"):
+        where += f' "{a["text"][:30]}"'
+    ms = lambda v: f"{v:g}ms" if isinstance(v, (int, float)) else str(v)
+    timing = f"{ms(a.get('duration'))} {a.get('easing') or ''}".rstrip()
+    if a.get("delay"):
+        timing += f", delay {ms(a['delay'])}"
+    it = a.get("iterations")
+    if it == "infinite":
+        timing += ", loops"
+    elif it not in (None, 1):
+        timing += f", x{it:g}" if isinstance(it, (int, float)) else f", x{it}"
+    if a.get("direction") not in (None, "normal"):
+        timing += f", {a['direction']}"
+    if a.get("startedAt") is not None:
+        timing += f", starts {_secs(a['startedAt'])}"
+    if a.get("timeline") not in (None, "DocumentTimeline"):
+        timing += f", driven by {a['timeline']}"
+    changes = "; ".join(f"{c['property']} {' -> '.join(c.get('values') or [c['from'], c['to']])}" for c in a.get("changes") or [])
+    return f"{kind} {a.get('name') or ''} on {where}: {timing}" + (f" | {changes}" if changes else "")
+
+
+def print_watch(w):
+    fr = w.get("frames") or {}
+    cond = f" ({', '.join(w['conditions'])})" if w.get("conditions") else ""
+    print(f"  watch: {w['what']}{cond}, {w['realMs'] / 1000:.1f}s real time, t=0 at {w['zero']}")
+    print(f"  frames: {fr.get('inWindow')} recorded ({fr.get('source')}); {fr.get('picked')} picked for filmstrip.jpg")
+    mo = w.get("motion")
+    if mo:
+        print(f"  motion: starts {_secs(mo['startsAt'])}, last change {_secs(mo['endsAt'])}"
+              f"{' (still moving at the end)' if mo.get('stillMovingAtEnd') else ''}; biggest change {_secs(mo['biggestChangeAt'])}")
+    else:
+        print("  motion: nothing on screen changed")
+    r = w.get("region")
+    if r:
+        print(f"  filmstrip is cropped to the area that moved: x{r['x']} y{r['y']} {r['w']}x{r['h']}")
+    ex = w.get("explained")
+    if ex:
+        print(f"  visible change: {ex['animatedElements']}% on elements in the animation list, {ex['media']}% in video/canvas/iframes/GIFs, "
+              f"{ex['elsewhere']}% elsewhere (script-driven styles, loading, layout)")
+    anims = w.get("animations") or []
+    print(f"  animations the browser reported: {w.get('animationCount', len(anims))}" + (" (none: any motion here was made by scripts or media)" if not anims else ""))
+    for a in anims[:12]:
+        print(f"    {describe_animation(a)}")
+    if w.get("animationCount", 0) > 12:
+        print(f"    ... {w['animationCount'] - 12} more in watch.json")
+    ld = w.get("load")
+    if ld:
+        lcp = ld.get("largestContentfulPaint") or {}
+        print(f"  load: first contentful paint {_secs(ld.get('firstContentfulPaint'))}, largest contentful paint {_secs(lcp.get('t'))}"
+              f"{' (' + lcp['element'] + ')' if lcp.get('element') else ''}, load event {_secs(ld.get('loadEvent') or None)}")
+    print(f"  layout shifts: {w.get('layoutShifts', 0)} (total {w.get('layoutShiftTotal', 0)}); long tasks: {w.get('longTasks', 0)}")
+    for n in w.get("notes") or []:
+        print(f"  note: {n}")
+
+
 def print_result(res, saved):
     if res.get("action") == "batch":
         print(f"[{res['seq']}] batch: {res['steps']} of {res['of']} steps run, {'all ok' if res['ok'] else 'stopped at a failure'}")
@@ -398,6 +463,9 @@ def print_result(res, saved):
             print(f"  frame timing: median {ft['medianMs']}ms, p95 {ft['p95Ms']}ms, worst {ft['worstMs']}ms, {ft['over50ms']} frames over 50ms")
         print(f"  layout shifts during scroll: {mo['layoutShifts']['count']} (total {mo['layoutShifts']['total']}); scroll reversals: {mo['scrollReversals']}; long tasks: {mo['longTasks']}")
         print("  details: motion.json; frames: add --frames to download, then perceive.py motion <dir>")
+    if res.get("watch"):
+        print_watch(res["watch"])
+        print("  look at filmstrip.jpg; details in watch.json; add --frames for the full-size picked frames")
     if "value" in res:
         print(f"  value: {json.dumps(res['value'])[:500]}")
     els = res.get("elements")
@@ -450,6 +518,12 @@ def wait_result(token, repo, st, seq, timeout_s=120, want_frames=False):
                 raise BridgeError(f"Session is {s['state']} ({s.get('reason') or s.get('error')}). Start a new one.")
         time.sleep(1.2)
     raise BridgeError(f"No result for step {seq} within {timeout_s}s. Check: session status")
+
+
+ACTIONS = {"observe", "tap", "click", "hover", "type", "fill", "press", "scroll", "livescroll", "watch", "swipe", "zoom",
+           "inspect", "fullpage", "frames", "inject", "render", "reset", "analyze", "device", "goto", "back", "wait",
+           "evaluate", "end"}
+WATCH_TRIGGERS = {"hover", "tap", "click", "press", "focus", "swipe", "scroll"}
 
 
 def parse_action(tokens, args):
@@ -506,6 +580,25 @@ def parse_action(tokens, args):
                 cmd["distance"] = int(tok)
     elif a == "analyze":
         cmd["what"] = rest[0].split(",") if rest else ["meta", "styles", "images"]
+    elif a == "watch":
+        # watch [load] [3s|800ms|3] [ACTION ARGS] [key=value...], e.g. watch load 4s, watch hover 7, watch tap "Menu" 2s
+        trig = []
+        for tok in rest:
+            if "=" in tok and not tok.startswith("http"):
+                continue  # options (fresh=1 slowmo=0.25 reduced=1 network=4g cpu=4 max=16 crop=0), read below
+            unit = re.fullmatch(r"(\d+(?:\.\d+)?)(ms|s)", tok)
+            if unit:
+                cmd["ms"] = int(float(unit.group(1)) * (1 if unit.group(2) == "ms" else 1000))
+            elif not trig and tok == "load":
+                cmd["fresh"] = 1
+            elif not trig and re.fullmatch(r"\d+(?:\.\d+)?", tok):
+                cmd["ms"] = int(float(tok) * 1000)  # a bare number before any action: seconds
+            else:
+                trig.append(tok)
+        if trig:
+            if trig[0] not in WATCH_TRIGGERS:
+                raise BridgeError(f"watch can record one of: {', '.join(sorted(WATCH_TRIGGERS))} (e.g. watch hover 7); got '{trig[0]}'")
+            cmd["after"] = parse_action(trig, argparse.Namespace(json=None, submit=args.submit, css_file=None, css=None, html_file=None, no_shot=False))
     for tok in rest:  # key=value extras, e.g. livescroll bottom speed=1500 mode=wheel
         if "=" in tok and not tok.startswith("http"):
             k, v = tok.split("=", 1)
@@ -518,6 +611,34 @@ def parse_action(tokens, args):
         cmd["html"] = open(args.html_file).read()
     if args.no_shot:
         cmd["shot"] = False
+    return cmd
+
+
+def build_command(tokens, args):
+    """One action, or a batch: `do tap 4 ; swipe left` or `do "tap 4" "swipe left"`.
+
+    Quoted groups make a batch only when every group starts with an action name, so a quoted text target
+    (`do tap "Donate now"`, `do watch tap "Open menu"`) stays one action.
+    """
+    quoted_batch = len(tokens) > 1 and any(" " in t for t in tokens) and all(t.split()[:1] and t.split()[0] in ACTIONS for t in tokens)
+    if not args.json and (";" in tokens or quoted_batch):
+        groups, cur = [], []
+        if ";" in tokens:  # do tap 4 ; swipe left
+            for t in tokens + [";"]:
+                if t == ";":
+                    if cur:
+                        groups.append(cur)
+                    cur = []
+                else:
+                    cur.extend(t.split())  # allow "scroll 600" ; inject ... mixed styles
+        else:              # do "tap 4" "swipe left"
+            groups = [t.split() for t in tokens]
+        return {"action": "batch", "actions": [parse_action(g, args) for g in groups]}
+    cmd = parse_action(tokens, args)
+    if isinstance(cmd.get("actions"), list):  # a batch given via --json
+        cmd.setdefault("action", "batch")
+    if "action" not in cmd:
+        raise BridgeError('Each command needs "action" (or "actions": [...] for a batch).')
     return cmd
 
 
@@ -582,26 +703,7 @@ def cmd_session(token, repo, args):
     if args.session_cmd == "end":
         args.tokens, args.json = ["end"], None
     tokens = args.tokens if args.session_cmd == "do" else ["end"]
-    if args.session_cmd == "do" and not args.json and (";" in tokens or any(" " in t for t in tokens)):
-        groups, cur = [], []
-        if ";" in tokens:  # do tap 4 ; swipe left
-            for t in tokens + [";"]:
-                if t == ";":
-                    if cur:
-                        groups.append(cur)
-                    cur = []
-                else:
-                    cur.extend(t.split())  # allow "scroll 600" ; inject ... mixed styles
-        else:              # do "tap 4" "swipe left"
-            groups = [t.split() for t in tokens]
-        cmd = {"actions": [parse_action(g, args) for g in groups]}
-        cmd["action"] = "batch"
-    else:
-        cmd = parse_action(tokens, args)
-        if isinstance(cmd.get("actions"), list):  # a batch given via --json
-            cmd.setdefault("action", "batch")
-        if "action" not in cmd:
-            raise BridgeError('Each command needs "action" (or "actions": [...] for a batch).')
+    cmd = build_command(tokens, args) if args.session_cmd == "do" else parse_action(tokens, args)
     st["seq"] += 1
     seq = st["seq"]
     save_session(st)
@@ -720,7 +822,7 @@ def main():
         p_.add_argument("--no-shot", action="store_true")
         p_.add_argument("--cleanup", action="store_true", help="(end) delete the session branches afterwards")
         p_.add_argument("--timeout", type=int, default=120)
-        p_.add_argument("--frames", action="store_true", help="(livescroll) also download every saved frame")
+        p_.add_argument("--frames", action="store_true", help="(livescroll, watch) also download every saved frame")
 
     pb = sub.add_parser("playbook", help="shared expert briefs")
     pbs = pb.add_subparsers(dest="pb_cmd", required=True)

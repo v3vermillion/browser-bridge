@@ -1,7 +1,28 @@
 # Chronoscope: teaching browser-bridge to watch
 
-Status: proposal (design only, nothing here is implemented yet). Written October 2026 after a full read of
-the repo. It describes the system as if it existed, then how to build it.
+Status: proposal, written October 2026 after a full read of the repo. It describes the system as if it
+existed, then how to build it.
+
+**Implemented so far** (the first slice of phases 0-1, as the session action `watch`; see `docs/sessions.md`,
+"Motion"):
+- recording a page load, the page holding still, or one action (hover, tap, click, press, focus, swipe,
+  scroll), on one clock
+- the browser's own animation list (element, properties with keyframe values, duration, delay, easing,
+  repeats, start time)
+- frames picked by per-cell change detection, cropped to what moved, on one timestamped filmstrip
+- how much of the visible change the animation list explains, and which libraries, canvases, and videos
+  can't be described by it
+- slow motion for CSS and Web Animations, reduced-motion emulation, network and CPU throttling
+- load paint metrics
+- livescroll frames moved onto the same clock as page events, with coverage reported
+- a self-test against pages with known motion, run in CI on Chromium, Firefox, and WebKit (the start of the
+  "eye chart" in section 6)
+
+**Not yet:** deterministic BeginFrame capture, freeze/step/replay with injection, the between-turns sentinel,
+transport tiers, media and audio analysis, and the human-perception layer.
+
+**Deliberately not done:** stepping JavaScript timers with Playwright's clock. It fakes `performance.now()`,
+which the recorder's own timing depends on, and it has to be installed before the page's scripts run.
 
 ## In one paragraph
 

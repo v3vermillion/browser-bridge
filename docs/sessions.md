@@ -130,6 +130,11 @@ metrics); Safari has historically handled scroll anchoring differently, so a jum
 Chromium may still affect iPhone users. Headless frame timing is indicative, not a device benchmark. Canvas
 and WebGL effects can be judged only from frames.
 
+**Videos:** Playwright's Chromium can't play H.264/AAC (MP4) video, which most sites use, so a hero video can
+sit on its poster image. `watch` says so when it happens. To watch videos, start the session with
+`--browser chrome` (Google Chrome, preinstalled on GitHub's runners: same tools as Chromium, plus the codecs)
+or `--browser webkit`.
+
 ## Several actions per round trip
 
 Each round trip costs about 5-6 seconds, so when you already know the next steps, send them together:

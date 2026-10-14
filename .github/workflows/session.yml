@@ -12,7 +12,7 @@ on:
         required: true
         type: string
       config:
-        description: 'JSON: {"url","device","browser","detail","maxMinutes","idleMinutes","hide"}. No secrets: inputs are visible in the Actions UI.'
+        description: 'JSON: {"url","device","browser" (chromium|chrome|webkit|firefox),"detail","maxMinutes","idleMinutes","hide"}. No secrets: inputs are visible in the Actions UI.'
         required: true
         type: string
 
@@ -44,7 +44,7 @@ jobs:
       - name: Pick browser
         id: plan
         run: |
-          B=$(node -e "try{const c=JSON.parse(process.env.SESSION_CONFIG);console.log(['chromium','webkit','firefox'].includes(c.browser)?c.browser:'chromium')}catch{console.log('chromium')}")
+          B=$(node -e "try{const c=JSON.parse(process.env.SESSION_CONFIG);console.log(['chromium','chrome','webkit','firefox'].includes(c.browser)?c.browser:'chromium')}catch{console.log('chromium')}")
           echo "browser=$B" >> "$GITHUB_OUTPUT"
 
       - name: Cache browsers
@@ -55,7 +55,13 @@ jobs:
 
       - name: Install browser
         working-directory: engine
-        run: npx playwright install --with-deps ${{ steps.plan.outputs.browser }}
+        run: |
+          # chrome = the Google Chrome preinstalled on GitHub's Ubuntu runners (plays H.264/MP4 video)
+          if [ "${{ steps.plan.outputs.browser }}" = chrome ]; then
+            google-chrome --version || npx playwright install chrome
+          else
+            npx playwright install --with-deps ${{ steps.plan.outputs.browser }}
+          fi
 
       - name: Run session
         working-directory: engine

@@ -57,6 +57,7 @@ try {
   check('watch load runs', r.ok);
   check('load: entrance animation found with its real settings', rise && rise.duration === 600 && rise.delay === 200 && rise.easing === 'ease-out', JSON.stringify(rise));
   check('load: animation lists what changes (opacity 0 -> 1)', rise && rise.changes.some((x) => x.property === 'opacity' && x.from === '0' && x.to === '1'));
+  check('load: element text excludes script/noscript source', rise && rise.text === 'Motion fixture', JSON.stringify(rise?.text));
   check('load: animation start is on the recording clock', rise && rise.startedAt >= 0 && rise.startedAt < 1500, `startedAt ${rise?.startedAt}`);
   check('load: first contentful paint measured', typeof r.watch?.load?.firstContentfulPaint === 'number', JSON.stringify(r.watch?.load));
   if (streaming) {   // screenshot-loop browsers can't picture the first moments of a load (they wait for the page)
@@ -77,6 +78,9 @@ try {
   check('hover: properties use CSS names', !!anim(r, 'background-color')?.changes.some((x) => x.property === 'background-color'), JSON.stringify(anim(r, 'background-color')?.changes));
   check('hover: transition starts at the hover, not before', tr && tr.firstSeen >= -20 && tr.firstSeen < 300, `firstSeen ${tr?.firstSeen}`);
   check('hover: animation that finished before the recording is left out', !anim(r, 'rise'));
+  const below = anim(r, 'spin');
+  check('hover: animation running below the fold is marked off screen', below && below.visible === false && (r.watch?.notes || []).some((n) => /off screen/.test(n)), JSON.stringify({ visible: below?.visible, notes: r.watch?.notes }));
+  check('hover: on-screen animations listed first', r.watch?.animations?.[0]?.visible === true);
   check('hover: motion settles within ~0.5s', r.watch?.motion && r.watch.motion.endsAt < 700 && !r.watch.motion.stillMovingAtEnd, JSON.stringify(r.watch?.motion));
   const reg = r.watch?.region, [bx, by, bw, bh] = cta2?.box || [];
   check('hover: filmstrip cropped to the area around the button', reg && bx + bw / 2 > reg.x && bx + bw / 2 < reg.x + reg.w && by + bh / 2 > reg.y && by + bh / 2 < reg.y + reg.h, JSON.stringify({ reg, box: cta2?.box }));

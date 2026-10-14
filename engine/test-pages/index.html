@@ -13,15 +13,17 @@
   #cta:hover { transform: translateY(-6px); background: #c1121f; }
   #late { display: block; margin: 24px 32px; width: 300px; height: 150px; background: #eee; }
   section { height: 900px; margin: 0; padding: 32px; }
-  @media (prefers-reduced-motion: reduce) { #title { animation: none; } }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  #below { width: 80px; height: 80px; background: #f4a261; animation: spin 2000ms linear infinite; }
+  @media (prefers-reduced-motion: reduce) { #title, #below { animation: none; } }
 </style>
 </head>
 <body>
-  <h1 id="title">Motion fixture</h1>
+  <h1 id="title">Motion fixture<noscript>&lt;img src="hidden.png"&gt;</noscript></h1>
   <button id="cta">Donate now</button>
   <img id="late" src="/slow.svg" alt="An image that arrives late">
   <section style="background: #f3f0ff">Section A</section>
   <section style="background: #e8fff3">Section B</section>
-  <section style="background: #fff4e8">Section C</section>
+  <section style="background: #fff4e8">Section C <div id="below"></div></section>
 </body>
 </html>

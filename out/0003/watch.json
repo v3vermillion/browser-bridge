@@ -1,0 +1,353 @@
+{
+  "what": "holding still",
+  "zero": "recording start",
+  "realMs": 4000,
+  "pageMs": 4000,
+  "slowmo": 1,
+  "conditions": [],
+  "url": "https://www.brightplan.com/",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "scale": 2,
+  "clock": "ms relative to t = 0 on the page clock; frames use the compositor swap time",
+  "frames": {
+    "source": "screencast (frames as Chromium paints them)",
+    "received": 1,
+    "inWindow": 1,
+    "picked": 1,
+    "pageFrames": 240,
+    "note": "a screencast sends a frame only when something repaints, so a still page sends few"
+  },
+  "motion": null,
+  "region": null,
+  "explained": null,
+  "animations": [
+    {
+      "id": 1,
+      "type": "CSSAnimation",
+      "name": "clockwiseSpin",
+      "target": "div.absolute.inset-0",
+      "text": "<img src=\"https://www.brightplan.com/wp-",
+      "startedAt": -1063,
+      "firstSeen": 11,
+      "activeUntil": 3988,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        96,
+        4220,
+        405,
+        405
+      ],
+      "boxEnd": [
+        96,
+        4220,
+        405,
+        405
+      ],
+      "playState": "running"
+    },
+    {
+      "id": 2,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": "<img src=\"https://www.brightplan.com/wp-",
+      "startedAt": -1063,
+      "firstSeen": 11,
+      "activeUntil": 3988,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        162,
+        4237,
+        42,
+        42
+      ],
+      "boxEnd": [
+        162,
+        4237,
+        42,
+        42
+      ],
+      "playState": "running"
+    },
+    {
+      "id": 3,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": "<img src=\"https://www.brightplan.com/wp-",
+      "startedAt": -1063,
+      "firstSeen": 11,
+      "activeUntil": 3988,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        393,
+        4237,
+        42,
+        42
+      ],
+      "boxEnd": [
+        393,
+        4237,
+        42,
+        42
+      ],
+      "playState": "running"
+    },
+    {
+      "id": 4,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": "<img src=\"https://www.brightplan.com/wp-",
+      "startedAt": -1063,
+      "firstSeen": 11,
+      "activeUntil": 3988,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        478,
+        4423,
+        42,
+        42
+      ],
+      "boxEnd": [
+        478,
+        4423,
+        42,
+        42
+      ],
+      "playState": "running"
+    },
+    {
+      "id": 5,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": "<img src=\"https://www.brightplan.com/wp-",
+      "startedAt": -1063,
+      "firstSeen": 11,
+      "activeUntil": 3988,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        393,
+        4566,
+        42,
+        42
+      ],
+      "boxEnd": [
+        393,
+        4566,
+        42,
+        42
+      ],
+      "playState": "running"
+    },
+    {
+      "id": 6,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": "<img src=\"https://www.brightplan.com/wp-",
+      "startedAt": -1063,
+      "firstSeen": 11,
+      "activeUntil": 3988,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        162,
+        4566,
+        42,
+        42
+      ],
+      "boxEnd": [
+        162,
+        4566,
+        42,
+        42
+      ],
+      "playState": "running"
+    },
+    {
+      "id": 7,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": "<img src=\"https://www.brightplan.com/wp-",
+      "startedAt": -1063,
+      "firstSeen": 11,
+      "activeUntil": 3988,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        77,
+        4423,
+        42,
+        42
+      ],
+      "boxEnd": [
+        77,
+        4423,
+        42,
+        42
+      ],
+      "playState": "running"
+    }
+  ],
+  "animationsNotRunning": 0,
+  "layoutShifts": [],
+  "longTasks": [],
+  "load": null,
+  "media": {
+    "libraries": [],
+    "videos": [
+      {
+        "element": "video.hero-video-el.lg:absolute",
+        "box": [
+          632,
+          75,
+          1000,
+          778
+        ],
+        "paused": true,
+        "muted": true,
+        "loop": true,
+        "autoplay": false,
+        "controls": false,
+        "currentTime": 0,
+        "duration": null,
+        "readyState": 0,
+        "poster": true,
+        "resolution": [
+          0,
+          0
+        ],
+        "textTracks": 0
+      }
+    ],
+    "canvases": [],
+    "iframes": [],
+    "gifs": []
+  },
+  "notes": [
+    "motion the animation list can't describe may come from: 1 video(s); frames are the evidence for those"
+  ],
+  "frameMeta": [
+    {
+      "file": "frames/001_00009ms.jpg",
+      "t": 9,
+      "y": 0,
+      "why": "first · last"
+    }
+  ],
+  "changeSeries": [
+    [
+      9,
+      0
+    ]
+  ]
+}

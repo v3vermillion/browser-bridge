@@ -1,0 +1,537 @@
+{
+  "seq": 2,
+  "action": "observe",
+  "ok": true,
+  "files": [
+    "shot.jpg",
+    "marks.jpg"
+  ],
+  "elements": [
+    {
+      "ref": 1,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Apple",
+      "href": "/",
+      "box": [
+        222,
+        0,
+        30,
+        44
+      ],
+      "covered": false
+    },
+    {
+      "ref": 2,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Store",
+      "href": "/us/shop/goto/store",
+      "box": [
+        274,
+        0,
+        46,
+        44
+      ],
+      "covered": false
+    },
+    {
+      "ref": 3,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "Store menu",
+      "href": null,
+      "box": [
+        305,
+        0,
+        22,
+        44
+      ],
+      "covered": true
+    },
+    {
+      "ref": 4,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Mac",
+      "href": "/mac/",
+      "box": [
+        341,
+        0,
+        39,
+        44
+      ],
+      "covered": false
+    },
+    {
+      "ref": 5,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "Mac menu",
+      "href": null,
+      "box": [
+        365,
+        0,
+        22,
+        44
+      ],
+      "covered": true
+    },
+    {
+      "ref": 6,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "iPad",
+      "href": "/ipad/",
+      "box": [
+        402,
+        0,
+        40,
+        44
+      ],
+      "covered": false
+    },
+    {
+      "ref": 7,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "iPad menu",
+      "href": null,
+      "box": [
+        427,
+        0,
+        22,
+        44
+      ],
+      "covered": true
+    },
+    {
+      "ref": 8,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "iPhone",
+      "href": "/iphone/",
+      "box": [
+        463,
+        0,
+        54,
+        44
+      ],
+      "covered": false
+    },
+    {
+      "ref": 9,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "iPhone menu",
+      "href": null,
+      "box": [
+        502,
+        0,
+        22,
+        44
+      ],
+      "covered": true
+    },
+    {
+      "ref": 10,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Watch",
+      "href": "/watch/",
+      "box": [
+        539,
+        0,
+        51,
+        44
+      ],
+      "covered": false
+    },
+    {
+      "ref": 11,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "Watch menu",
+      "href": null,
+      "box": [
+        575,
+        0,
+        22,
+        44
+      ],
+      "covered": true
+    },
+    {
+      "ref": 12,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Vision",
+      "href": "/apple-vision-pro/",
+      "box": [
+        612,
+        0,
+        50,
+        44
+      ],
+      "covered": false
+    },
+    {
+      "ref": 13,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "Vision menu",
+      "href": null,
+      "box": [
+        647,
+        0,
+        22,
+        44
+      ],
+      "covered": true
+    },
+    {
+      "ref": 14,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "AirPods",
+      "href": "/airpods/",
+      "box": [
+        683,
+        0,
+        59,
+        44
+      ],
+      "covered": false
+    },
+    {
+      "ref": 15,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "AirPods menu",
+      "href": null,
+      "box": [
+        727,
+        0,
+        22,
+        44
+      ],
+      "covered": true
+    },
+    {
+      "ref": 16,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Home",
+      "href": "/home/",
+      "box": [
+        764,
+        0,
+        49,
+        44
+      ],
+      "covered": false
+    },
+    {
+      "ref": 17,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "Home menu",
+      "href": null,
+      "box": [
+        798,
+        0,
+        22,
+        44
+      ],
+      "covered": true
+    },
+    {
+      "ref": 18,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Entertainment",
+      "href": "/entertainment/",
+      "box": [
+        835,
+        0,
+        93,
+        44
+      ],
+      "covered": false
+    },
+    {
+      "ref": 19,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "Entertainment menu",
+      "href": null,
+      "box": [
+        913,
+        0,
+        22,
+        44
+      ],
+      "covered": true
+    },
+    {
+      "ref": 20,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Accessories",
+      "href": "/us/shop/goto/buy_accessories",
+      "box": [
+        949,
+        0,
+        83,
+        44
+      ],
+      "covered": false
+    },
+    {
+      "ref": 21,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "Accessories menu",
+      "href": null,
+      "box": [
+        1017,
+        0,
+        22,
+        44
+      ],
+      "covered": true
+    },
+    {
+      "ref": 22,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Support",
+      "href": "https://support.apple.com/?cid=gn-ols-home-hp-tab",
+      "box": [
+        1054,
+        0,
+        60,
+        44
+      ],
+      "covered": false
+    },
+    {
+      "ref": 23,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "Support menu",
+      "href": null,
+      "box": [
+        1099,
+        0,
+        22,
+        44
+      ],
+      "covered": true
+    },
+    {
+      "ref": 24,
+      "tag": "a",
+      "role": "button",
+      "type": null,
+      "name": "Search apple.com",
+      "href": "/us/search",
+      "box": [
+        1135,
+        0,
+        31,
+        44
+      ],
+      "covered": false
+    },
+    {
+      "ref": 25,
+      "tag": "a",
+      "role": "button",
+      "type": null,
+      "name": "Shopping Bag",
+      "href": "/us/shop/goto/bag",
+      "box": [
+        1188,
+        0,
+        30,
+        44
+      ],
+      "covered": false
+    },
+    {
+      "ref": 26,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "AirPods Pro 3",
+      "href": "/airpods-pro/",
+      "box": [
+        230,
+        6,
+        128,
+        24
+      ],
+      "covered": true
+    },
+    {
+      "ref": 27,
+      "tag": "span",
+      "role": "link",
+      "type": null,
+      "name": "Overview",
+      "href": null,
+      "box": [
+        820,
+        7,
+        52,
+        22
+      ],
+      "covered": true
+    },
+    {
+      "ref": 28,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Hearing Health",
+      "href": "/airpods-pro/hearing-health/",
+      "box": [
+        896,
+        7,
+        83,
+        22
+      ],
+      "covered": true
+    },
+    {
+      "ref": 29,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Tech Specs",
+      "href": "/airpods-pro/specs/",
+      "box": [
+        1002,
+        7,
+        64,
+        22
+      ],
+      "covered": true
+    },
+    {
+      "ref": 30,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Compare",
+      "href": "/airpods-pro/compare/",
+      "box": [
+        1091,
+        7,
+        50,
+        22
+      ],
+      "covered": true
+    },
+    {
+      "ref": 31,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Buy AirPods Pro 3",
+      "href": "/us/shop/goto/buy_airpods/airpods_pro_3",
+      "box": [
+        1165,
+        6,
+        45,
+        24
+      ],
+      "covered": true
+    },
+    {
+      "ref": 32,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Footnote 1",
+      "href": "#footnote-3",
+      "box": [
+        360,
+        828,
+        5,
+        20
+      ],
+      "covered": false
+    },
+    {
+      "ref": 33,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Buy, AirPods Pro 3",
+      "href": "/us/shop/goto/buy_airpods/airpods_pro_3",
+      "box": [
+        1279,
+        768,
+        61,
+        39
+      ],
+      "covered": false
+    },
+    {
+      "ref": 34,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "Pause animation of a dancer wearing AirPods Pro 3",
+      "href": null,
+      "box": [
+        1384,
+        64,
+        36,
+        36
+      ],
+      "covered": false
+    }
+  ],
+  "url": "https://www.apple.com/airpods-pro/",
+  "title": "AirPods Pro 3 - Apple",
+  "scrollY": 0,
+  "scrollX": 0,
+  "pageHeight": 28918,
+  "pageWidth": 1440,
+  "layoutViewport": [
+    1440,
+    900
+  ],
+  "viewport": [
+    1440,
+    900
+  ],
+  "device": "desktop",
+  "ms": 201
+}

@@ -1,0 +1,1272 @@
+{
+  "what": "hover \"Solutions\"",
+  "zero": "the hover",
+  "realMs": 1500,
+  "pageMs": 1500,
+  "slowmo": 1,
+  "conditions": [],
+  "url": "https://www.brightplan.com/",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "scale": 2,
+  "clock": "ms relative to t = 0 on the page clock; frames use the compositor swap time",
+  "frames": {
+    "source": "screencast (frames as Chromium paints them)",
+    "received": 80,
+    "inWindow": 80,
+    "picked": 11,
+    "pageFrames": 108,
+    "note": "a screencast sends a frame only when something repaints, so a still page sends few"
+  },
+  "motion": {
+    "startsAt": -261,
+    "endsAt": 1469,
+    "stillMovingAtEnd": true,
+    "biggestChangeAt": 568
+  },
+  "region": {
+    "x": 394,
+    "y": 66,
+    "w": 1046,
+    "h": 588
+  },
+  "explained": {
+    "animatedElements": 11,
+    "media": 89,
+    "elsewhere": 0
+  },
+  "animations": [
+    {
+      "id": 1,
+      "type": "CSSTransition",
+      "name": "transform",
+      "target": "div.slick-track",
+      "text": null,
+      "startedAt": -393,
+      "firstSeen": -292,
+      "activeUntil": 408,
+      "duration": 800,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "translate3d(-148px, 0px, 0px)",
+          "to": "translate3d(-412px, 0px, 0px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        -156,
+        890,
+        40000,
+        59
+      ],
+      "boxEnd": [
+        -384,
+        890,
+        40000,
+        59
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 9,
+      "type": "CSSTransition",
+      "name": "color",
+      "target": "a#menu-item-dropdown-6456.nav-link",
+      "text": "Solutions",
+      "startedAt": 24,
+      "firstSeen": 27,
+      "activeUntil": 177,
+      "duration": 150,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "color",
+          "from": "rgb(102, 102, 102)",
+          "to": "rgb(57, 115, 160)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        512,
+        72,
+        89,
+        26
+      ],
+      "boxEnd": [
+        512,
+        72,
+        89,
+        26
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 10,
+      "type": "CSSTransition",
+      "name": "color",
+      "target": "i.caret.icon-chevron-down",
+      "text": null,
+      "startedAt": null,
+      "firstSeen": 27,
+      "activeUntil": 27,
+      "duration": 5,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "color",
+          "from": "rgb(120, 113, 108)",
+          "to": "rgb(57, 115, 160)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        589,
+        77,
+        12,
+        12
+      ],
+      "boxEnd": null,
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 11,
+      "type": "CSSTransition",
+      "name": "opacity",
+      "target": "ul.dropdown-menu",
+      "text": "AI Coach Digital Platform Financial Advi",
+      "startedAt": 24,
+      "firstSeen": 27,
+      "activeUntil": 525,
+      "duration": 500,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "0",
+          "to": "1",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        496,
+        98,
+        220,
+        275
+      ],
+      "boxEnd": [
+        496,
+        98,
+        220,
+        275
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 12,
+      "type": "CSSTransition",
+      "name": "visibility",
+      "target": "a.dropdown-item",
+      "text": "AI Coach",
+      "startedAt": 24,
+      "firstSeen": 27,
+      "activeUntil": 177,
+      "duration": 150,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "visibility",
+          "from": "hidden",
+          "to": "visible",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        496,
+        98,
+        220,
+        46
+      ],
+      "boxEnd": [
+        496,
+        98,
+        220,
+        46
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 13,
+      "type": "CSSTransition",
+      "name": "visibility",
+      "target": "a.dropdown-item",
+      "text": "Digital Platform",
+      "startedAt": 24,
+      "firstSeen": 27,
+      "activeUntil": 177,
+      "duration": 150,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "visibility",
+          "from": "hidden",
+          "to": "visible",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        496,
+        144,
+        220,
+        46
+      ],
+      "boxEnd": [
+        496,
+        144,
+        220,
+        46
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 14,
+      "type": "CSSTransition",
+      "name": "visibility",
+      "target": "a.dropdown-item",
+      "text": "Financial Advisors",
+      "startedAt": 24,
+      "firstSeen": 27,
+      "activeUntil": 177,
+      "duration": 150,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "visibility",
+          "from": "hidden",
+          "to": "visible",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        496,
+        190,
+        220,
+        46
+      ],
+      "boxEnd": [
+        496,
+        190,
+        220,
+        46
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 15,
+      "type": "CSSTransition",
+      "name": "visibility",
+      "target": "a.dropdown-item",
+      "text": "Employee Engagement",
+      "startedAt": 24,
+      "firstSeen": 27,
+      "activeUntil": 177,
+      "duration": 150,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "visibility",
+          "from": "hidden",
+          "to": "visible",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        496,
+        236,
+        220,
+        46
+      ],
+      "boxEnd": [
+        496,
+        236,
+        220,
+        46
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 16,
+      "type": "CSSTransition",
+      "name": "visibility",
+      "target": "a.dropdown-item",
+      "text": "Security & Compliance",
+      "startedAt": 24,
+      "firstSeen": 27,
+      "activeUntil": 177,
+      "duration": 150,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "visibility",
+          "from": "hidden",
+          "to": "visible",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        496,
+        282,
+        220,
+        46
+      ],
+      "boxEnd": [
+        496,
+        282,
+        220,
+        46
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 17,
+      "type": "CSSTransition",
+      "name": "visibility",
+      "target": "a.dropdown-item",
+      "text": "Employee Programs",
+      "startedAt": 24,
+      "firstSeen": 27,
+      "activeUntil": 177,
+      "duration": 150,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "visibility",
+          "from": "hidden",
+          "to": "visible",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        496,
+        328,
+        220,
+        45
+      ],
+      "boxEnd": [
+        496,
+        328,
+        220,
+        45
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "type": "CSSAnimation",
+      "name": "clockwiseSpin",
+      "target": "div.absolute.inset-0",
+      "text": null,
+      "startedAt": -2126,
+      "firstSeen": -292,
+      "activeUntil": 1491,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        18,
+        3855,
+        560,
+        560
+      ],
+      "boxEnd": [
+        30,
+        3867,
+        538,
+        538
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 3,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": -2126,
+      "firstSeen": -292,
+      "activeUntil": 1491,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        270,
+        3914,
+        42,
+        42
+      ],
+      "boxEnd": [
+        378,
+        3941,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 4,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": -2126,
+      "firstSeen": -292,
+      "activeUntil": 1491,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        464,
+        4040,
+        42,
+        42
+      ],
+      "boxEnd": [
+        475,
+        4150,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 5,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": -2126,
+      "firstSeen": -291,
+      "activeUntil": 1491,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        434,
+        4241,
+        42,
+        42
+      ],
+      "boxEnd": [
+        343,
+        4305,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 6,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": -2126,
+      "firstSeen": -291,
+      "activeUntil": 1491,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        285,
+        4315,
+        42,
+        42
+      ],
+      "boxEnd": [
+        177,
+        4289,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 7,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": -2126,
+      "firstSeen": -291,
+      "activeUntil": 1491,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        91,
+        4190,
+        42,
+        42
+      ],
+      "boxEnd": [
+        80,
+        4079,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 8,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": -2126,
+      "firstSeen": -291,
+      "activeUntil": 1491,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        98,
+        4023,
+        42,
+        42
+      ],
+      "boxEnd": [
+        174,
+        3942,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 18,
+      "type": "CSSTransition",
+      "name": "transform",
+      "target": "div.slick-track",
+      "text": null,
+      "startedAt": 423,
+      "firstSeen": 427,
+      "activeUntil": 1208,
+      "duration": 800,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "translate3d(-1309px, 0px, 0px)",
+          "to": "translate3d(-1496px, 0px, 0px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        -1243,
+        6418,
+        6171,
+        157
+      ],
+      "boxEnd": [
+        -1430,
+        6418,
+        6171,
+        157
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 19,
+      "type": "CSSTransition",
+      "name": "background-color",
+      "target": "button#slick-slide-control00",
+      "text": "1",
+      "startedAt": 423,
+      "firstSeen": 427,
+      "activeUntil": 708,
+      "duration": 300,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "background-color",
+          "from": "rgb(14, 165, 233)",
+          "to": "rgba(115, 191, 235, 0.6)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        607,
+        6615,
+        10,
+        10
+      ],
+      "boxEnd": [
+        607,
+        6615,
+        10,
+        10
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 20,
+      "type": "CSSTransition",
+      "name": "background-color",
+      "target": "button#slick-slide-control01",
+      "text": "2",
+      "startedAt": 423,
+      "firstSeen": 427,
+      "activeUntil": 708,
+      "duration": 300,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "background-color",
+          "from": "rgba(115, 191, 235, 0.6)",
+          "to": "rgb(14, 165, 233)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        625,
+        6615,
+        10,
+        10
+      ],
+      "boxEnd": [
+        625,
+        6615,
+        10,
+        10
+      ],
+      "playState": "running",
+      "visible": false
+    }
+  ],
+  "webFontsLoaded": [],
+  "animationsNotRunning": 0,
+  "layoutShifts": [],
+  "longTasks": [],
+  "load": null,
+  "media": {
+    "libraries": [
+      "Slick"
+    ],
+    "videos": [
+      {
+        "element": "video.hero-video-el.lg:absolute",
+        "box": [
+          632,
+          127,
+          1000,
+          778
+        ],
+        "paused": false,
+        "muted": true,
+        "loop": true,
+        "autoplay": true,
+        "controls": false,
+        "currentTime": 6.25,
+        "duration": 39.04,
+        "readyState": 4,
+        "poster": true,
+        "resolution": [
+          1440,
+          1120
+        ],
+        "textTracks": 0,
+        "src": "www.brightplan.com/wp-content/uploads/globle-hero-1440.av1.mp4",
+        "type": "video/mp4; codecs=av01.0.08M.08"
+      }
+    ],
+    "canvases": [],
+    "iframes": [],
+    "gifs": []
+  },
+  "notes": [
+    "still moving at the end: looping animation(s)",
+    "10 of 20 animation(s) ran off screen, where nobody sees them (clockwiseSpin, counterSpin, transform, background-color)",
+    "motion the animation list can't describe may come from: Slick, 1 video(s); frames are the evidence for those"
+  ],
+  "frameMeta": [
+    {
+      "file": "frames/001_m00279ms.jpg",
+      "t": -279,
+      "y": 0,
+      "why": "first · before motion"
+    },
+    {
+      "file": "frames/002_m00261ms.jpg",
+      "t": -261,
+      "y": 0,
+      "why": "motion starts"
+    },
+    {
+      "file": "frames/022_00082ms.jpg",
+      "t": 82,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/033_00261ms.jpg",
+      "t": 261,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/044_00435ms.jpg",
+      "t": 435,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/051_00553ms.jpg",
+      "t": 553,
+      "y": 0,
+      "why": "just before biggest change"
+    },
+    {
+      "file": "frames/052_00568ms.jpg",
+      "t": 568,
+      "y": 0,
+      "why": "biggest change"
+    },
+    {
+      "file": "frames/054_00601ms.jpg",
+      "t": 601,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/063_00901ms.jpg",
+      "t": 901,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/072_01201ms.jpg",
+      "t": 1201,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/080_01469ms.jpg",
+      "t": 1469,
+      "y": 0,
+      "why": "still moving · last"
+    }
+  ],
+  "changeSeries": [
+    [
+      -279,
+      0
+    ],
+    [
+      -261,
+      0.0136
+    ],
+    [
+      -249,
+      0
+    ],
+    [
+      -231,
+      0.0964
+    ],
+    [
+      -216,
+      0
+    ],
+    [
+      -198,
+      0.041
+    ],
+    [
+      -183,
+      0
+    ],
+    [
+      -165,
+      0.1087
+    ],
+    [
+      -148,
+      0
+    ],
+    [
+      -130,
+      0.0638
+    ],
+    [
+      -115,
+      0
+    ],
+    [
+      -97,
+      0.143
+    ],
+    [
+      -82,
+      0
+    ],
+    [
+      -64,
+      0.0894
+    ],
+    [
+      -49,
+      0
+    ],
+    [
+      -30,
+      0.0699
+    ],
+    [
+      -15,
+      0
+    ],
+    [
+      3,
+      0.086
+    ],
+    [
+      22,
+      0
+    ],
+    [
+      48,
+      0.0994
+    ],
+    [
+      66,
+      0
+    ],
+    [
+      82,
+      0.0809
+    ],
+    [
+      97,
+      0
+    ],
+    [
+      111,
+      0.0905
+    ],
+    [
+      124,
+      0
+    ],
+    [
+      147,
+      0.1374
+    ],
+    [
+      162,
+      0
+    ],
+    [
+      175,
+      0.2073
+    ],
+    [
+      196,
+      0.1078
+    ],
+    [
+      217,
+      0.1467
+    ],
+    [
+      233,
+      0.1004
+    ],
+    [
+      246,
+      0.1093
+    ],
+    [
+      261,
+      0.1199
+    ],
+    [
+      274,
+      0.1967
+    ],
+    [
+      287,
+      0.0471
+    ],
+    [
+      303,
+      0.0707
+    ],
+    [
+      320,
+      0.0383
+    ],
+    [
+      336,
+      0.1763
+    ],
+    [
+      353,
+      0
+    ],
+    [
+      370,
+      0.2017
+    ],
+    [
+      387,
+      0.0243
+    ],
+    [
+      404,
+      0.1285
+    ],
+    [
+      420,
+      0
+    ],
+    [
+      435,
+      0.1573
+    ],
+    [
+      454,
+      0.0234
+    ],
+    [
+      470,
+      0.2355
+    ],
+    [
+      486,
+      0
+    ],
+    [
+      503,
+      0.3697
+    ],
+    [
+      519,
+      0
+    ],
+    [
+      536,
+      0.5624
+    ],
+    [
+      553,
+      0
+    ],
+    [
+      568,
+      0.7741
+    ],
+    [
+      585,
+      0
+    ],
+    [
+      601,
+      0.1297
+    ],
+    [
+      635,
+      0.1138
+    ],
+    [
+      668,
+      0.1018
+    ],
+    [
+      701,
+      0.0995
+    ],
+    [
+      734,
+      0.1415
+    ],
+    [
+      768,
+      0.1377
+    ],
+    [
+      801,
+      0.1184
+    ],
+    [
+      834,
+      0.0942
+    ],
+    [
+      868,
+      0.0663
+    ],
+    [
+      901,
+      0.0867
+    ],
+    [
+      935,
+      0.1337
+    ],
+    [
+      967,
+      0.1256
+    ],
+    [
+      1001,
+      0.1057
+    ],
+    [
+      1035,
+      0.1118
+    ],
+    [
+      1068,
+      0.0944
+    ],
+    [
+      1101,
+      0.1048
+    ],
+    [
+      1134,
+      0.098
+    ],
+    [
+      1168,
+      0.0961
+    ],
+    [
+      1201,
+      0.1973
+    ],
+    [
+      1238,
+      0.0954
+    ],
+    [
+      1268,
+      0.0765
+    ],
+    [
+      1302,
+      0.1017
+    ],
+    [
+      1335,
+      0.1351
+    ],
+    [
+      1368,
+      0.0892
+    ],
+    [
+      1403,
+      0.1043
+    ],
+    [
+      1435,
+      0.1098
+    ],
+    [
+      1469,
+      0.1199
+    ]
+  ]
+}

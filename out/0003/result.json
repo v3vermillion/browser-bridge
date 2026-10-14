@@ -1,0 +1,514 @@
+{
+  "seq": 3,
+  "action": "watch",
+  "ok": true,
+  "files": [
+    "filmstrip.jpg",
+    "watch.json"
+  ],
+  "frameFiles": [
+    "frames/001_m00279ms.jpg",
+    "frames/002_m00261ms.jpg",
+    "frames/022_00082ms.jpg",
+    "frames/033_00261ms.jpg",
+    "frames/044_00435ms.jpg",
+    "frames/051_00553ms.jpg",
+    "frames/052_00568ms.jpg",
+    "frames/054_00601ms.jpg",
+    "frames/063_00901ms.jpg",
+    "frames/072_01201ms.jpg",
+    "frames/080_01469ms.jpg"
+  ],
+  "watch": {
+    "what": "hover \"Solutions\"",
+    "zero": "the hover",
+    "realMs": 1500,
+    "slowmo": 1,
+    "conditions": [],
+    "frames": {
+      "source": "screencast (frames as Chromium paints them)",
+      "received": 80,
+      "inWindow": 80,
+      "picked": 11,
+      "pageFrames": 108,
+      "note": "a screencast sends a frame only when something repaints, so a still page sends few"
+    },
+    "motion": {
+      "startsAt": -261,
+      "endsAt": 1469,
+      "stillMovingAtEnd": true,
+      "biggestChangeAt": 568
+    },
+    "region": {
+      "x": 394,
+      "y": 66,
+      "w": 1046,
+      "h": 588
+    },
+    "explained": {
+      "animatedElements": 11,
+      "media": 89,
+      "elsewhere": 0
+    },
+    "animations": [
+      {
+        "id": 1,
+        "type": "CSSTransition",
+        "name": "transform",
+        "target": "div.slick-track",
+        "text": null,
+        "startedAt": -393,
+        "firstSeen": -292,
+        "activeUntil": 408,
+        "duration": 800,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "ease",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "translate3d(-148px, 0px, 0px)",
+            "to": "translate3d(-412px, 0px, 0px)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 9,
+        "type": "CSSTransition",
+        "name": "color",
+        "target": "a#menu-item-dropdown-6456.nav-link",
+        "text": "Solutions",
+        "startedAt": 24,
+        "firstSeen": 27,
+        "activeUntil": 177,
+        "duration": 150,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "color",
+            "from": "rgb(102, 102, 102)",
+            "to": "rgb(57, 115, 160)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 10,
+        "type": "CSSTransition",
+        "name": "color",
+        "target": "i.caret.icon-chevron-down",
+        "text": null,
+        "startedAt": null,
+        "firstSeen": 27,
+        "activeUntil": 27,
+        "duration": 5,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "color",
+            "from": "rgb(120, 113, 108)",
+            "to": "rgb(57, 115, 160)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 11,
+        "type": "CSSTransition",
+        "name": "opacity",
+        "target": "ul.dropdown-menu",
+        "text": "AI Coach Digital Platform Financial Advi",
+        "startedAt": 24,
+        "firstSeen": 27,
+        "activeUntil": 525,
+        "duration": 500,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "opacity",
+            "from": "0",
+            "to": "1",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 12,
+        "type": "CSSTransition",
+        "name": "visibility",
+        "target": "a.dropdown-item",
+        "text": "AI Coach",
+        "startedAt": 24,
+        "firstSeen": 27,
+        "activeUntil": 177,
+        "duration": 150,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "visibility",
+            "from": "hidden",
+            "to": "visible",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 13,
+        "type": "CSSTransition",
+        "name": "visibility",
+        "target": "a.dropdown-item",
+        "text": "Digital Platform",
+        "startedAt": 24,
+        "firstSeen": 27,
+        "activeUntil": 177,
+        "duration": 150,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "visibility",
+            "from": "hidden",
+            "to": "visible",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 14,
+        "type": "CSSTransition",
+        "name": "visibility",
+        "target": "a.dropdown-item",
+        "text": "Financial Advisors",
+        "startedAt": 24,
+        "firstSeen": 27,
+        "activeUntil": 177,
+        "duration": 150,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "visibility",
+            "from": "hidden",
+            "to": "visible",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 15,
+        "type": "CSSTransition",
+        "name": "visibility",
+        "target": "a.dropdown-item",
+        "text": "Employee Engagement",
+        "startedAt": 24,
+        "firstSeen": 27,
+        "activeUntil": 177,
+        "duration": 150,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "visibility",
+            "from": "hidden",
+            "to": "visible",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 16,
+        "type": "CSSTransition",
+        "name": "visibility",
+        "target": "a.dropdown-item",
+        "text": "Security & Compliance",
+        "startedAt": 24,
+        "firstSeen": 27,
+        "activeUntil": 177,
+        "duration": 150,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "visibility",
+            "from": "hidden",
+            "to": "visible",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 17,
+        "type": "CSSTransition",
+        "name": "visibility",
+        "target": "a.dropdown-item",
+        "text": "Employee Programs",
+        "startedAt": 24,
+        "firstSeen": 27,
+        "activeUntil": 177,
+        "duration": 150,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "visibility",
+            "from": "hidden",
+            "to": "visible",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 2,
+        "type": "CSSAnimation",
+        "name": "clockwiseSpin",
+        "target": "div.absolute.inset-0",
+        "text": null,
+        "startedAt": -2126,
+        "firstSeen": -292,
+        "activeUntil": 1491,
+        "duration": 20000,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": "infinite",
+        "direction": "normal",
+        "fill": "none",
+        "easing": "linear",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "rotate(0deg)",
+            "to": "rotate(360deg)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      },
+      {
+        "id": 3,
+        "type": "CSSAnimation",
+        "name": "counterSpin",
+        "target": "figure.mb-0.grid",
+        "text": null,
+        "startedAt": -2126,
+        "firstSeen": -292,
+        "activeUntil": 1491,
+        "duration": 20000,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": "infinite",
+        "direction": "normal",
+        "fill": "none",
+        "easing": "linear",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "rotate(0deg)",
+            "to": "rotate(-360deg)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      },
+      {
+        "id": 4,
+        "type": "CSSAnimation",
+        "name": "counterSpin",
+        "target": "figure.mb-0.grid",
+        "text": null,
+        "startedAt": -2126,
+        "firstSeen": -292,
+        "activeUntil": 1491,
+        "duration": 20000,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": "infinite",
+        "direction": "normal",
+        "fill": "none",
+        "easing": "linear",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "rotate(0deg)",
+            "to": "rotate(-360deg)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      },
+      {
+        "id": 5,
+        "type": "CSSAnimation",
+        "name": "counterSpin",
+        "target": "figure.mb-0.grid",
+        "text": null,
+        "startedAt": -2126,
+        "firstSeen": -291,
+        "activeUntil": 1491,
+        "duration": 20000,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": "infinite",
+        "direction": "normal",
+        "fill": "none",
+        "easing": "linear",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "rotate(0deg)",
+            "to": "rotate(-360deg)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      },
+      {
+        "id": 6,
+        "type": "CSSAnimation",
+        "name": "counterSpin",
+        "target": "figure.mb-0.grid",
+        "text": null,
+        "startedAt": -2126,
+        "firstSeen": -291,
+        "activeUntil": 1491,
+        "duration": 20000,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": "infinite",
+        "direction": "normal",
+        "fill": "none",
+        "easing": "linear",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "rotate(0deg)",
+            "to": "rotate(-360deg)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      }
+    ],
+    "animationCount": 20,
+    "onScreen": 10,
+    "webFontsLoaded": [],
+    "layoutShifts": 0,
+    "layoutShiftTotal": 0,
+    "longTasks": 0,
+    "load": null,
+    "media": {
+      "libraries": [
+        "Slick"
+      ],
+      "videos": 1,
+      "canvases": 0,
+      "iframes": [],
+      "gifs": 0
+    },
+    "notes": [
+      "still moving at the end: looping animation(s)",
+      "10 of 20 animation(s) ran off screen, where nobody sees them (clockwiseSpin, counterSpin, transform, background-color)",
+      "motion the animation list can't describe may come from: Slick, 1 video(s); frames are the evidence for those"
+    ]
+  },
+  "url": "https://www.brightplan.com/",
+  "title": "Home - BrightPlan",
+  "scrollY": 0,
+  "scrollX": 0,
+  "pageHeight": 7455,
+  "pageWidth": 1440,
+  "layoutViewport": [
+    1440,
+    900
+  ],
+  "viewport": [
+    1440,
+    900
+  ],
+  "blockedWrites": 12,
+  "device": "desktop",
+  "ms": 4210
+}

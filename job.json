@@ -1,0 +1,36 @@
+{
+  "id": "see-1s0jl-405ba911",
+  "target": "https://www.apple.com/airpods-pro/",
+  "opts": {
+    "device": "desktop",
+    "browser": "chrome",
+    "network": null,
+    "reduced": false,
+    "fresh": false,
+    "steps": [
+      "load",
+      "still",
+      "scroll"
+    ],
+    "triggers": []
+  },
+  "createdAt": "2026-10-14T21:37:43.816Z",
+  "plan": [
+    {
+      "seq": 1,
+      "label": "Page load, first visit"
+    },
+    {
+      "seq": 2,
+      "label": "What is on screen (numbered)"
+    },
+    {
+      "seq": 3,
+      "label": "Holding still for 4 seconds"
+    },
+    {
+      "seq": 4,
+      "label": "Scrolling from top to bottom"
+    }
+  ]
+}

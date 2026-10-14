@@ -1,6 +1,6 @@
 {
   "id": "see-1s0jl-405ba911",
-  "state": "ready",
+  "state": "ended",
   "config": {
     "device": "desktop",
     "browser": "chrome",
@@ -15,6 +15,7 @@
   "startedAt": "2026-10-14T21:37:59.509Z",
   "endsAt": "2026-10-14T21:57:59.509Z",
   "lastSeq": 4,
-  "updatedAt": "2026-10-14T21:39:20.151Z",
-  "url": "https://www.apple.com/airpods-pro/"
+  "updatedAt": "2026-10-14T21:43:26.600Z",
+  "url": "https://www.apple.com/airpods-pro/",
+  "reason": "idle timeout"
 }

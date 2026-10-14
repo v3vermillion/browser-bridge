@@ -1,0 +1,11 @@
+# Cloudflare Worker config for "see" (browser-bridge behind one link). Deploy: npx wrangler deploy
+# Secrets (set once, never committed): npx wrangler secret put ACCESS_KEY ; npx wrangler secret put GH_TOKEN
+name = "see"
+main = "see.js"
+compatibility_date = "2025-09-01"
+workers_dev = true
+
+[vars]
+REPO = "v3vermillion/browser-bridge"
+REF = "main"
+HOLD_MS = "4000"

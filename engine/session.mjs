@@ -305,14 +305,18 @@ async function liveScroll(c, dir, res) {
       if (Date.now() - tStart > 25000) break;
     }
   } else {
-    // Mouse-wheel ticks at a steady rate (also the WebKit/Firefox path).
+    // Mouse-wheel ticks at a steady speed (also the WebKit/Firefox path). Time-based: each tick scrolls to where
+    // the page should be by now, so the speed holds however long each wheel event takes to round-trip.
     const tick = cdp ? 16 : 120;
-    const steps = Math.max(1, Math.round(durationMs / tick));
-    const per = (target - y0) / steps;
+    const total = target - y0;
+    let done = 0;
     await page.mouse.move(vp.width / 2, vp.height / 2);
-    for (let i = 0; i < steps; i++) {
-      await page.mouse.wheel(0, per);
+    for (;;) {
+      const elapsed = Date.now() - tStart;
+      const dy = Math.round(Math.min(1, elapsed / Math.max(durationMs, 1)) * total) - done;
+      if (dy) { await page.mouse.wheel(0, dy); done += dy; }
       if (!cdp) await grab(); else await sleep(tick);
+      if (elapsed >= durationMs) break;
     }
   }
   const settle = Number(c.settleMs) || 1200;
@@ -421,7 +425,10 @@ const watchCollector = (opts) => {
   };
   // Whether an element was on screen; off-screen animations run but nobody sees them.
   const onScreen = (b) => !!b && b[2] > 0 && b[3] > 0 && b[0] < innerWidth && b[1] < innerHeight && b[0] + b[2] > 0 && b[1] + b[3] > 0;
-  W.desc = desc; W.box = box; W.rate = rate; W.onScreen = onScreen;
+  // ...and not hidden (visibility:hidden or display:none on it or an ancestor, e.g. a closed menu). Opacity isn't
+  // checked: fading in from opacity 0 is what many animations do.
+  const shown = (el) => { try { return el.checkVisibility ? el.checkVisibility({ visibilityProperty: true }) : true; } catch { return true; } };
+  W.desc = desc; W.box = box; W.rate = rate; W.onScreen = (b, el) => onScreen(b) && (!el || shown(el));
   const record = (a) => {
     let rec = seen.get(a);
     if (!rec) {
@@ -458,7 +465,7 @@ const watchCollector = (opts) => {
         })),
         boxStart: tgt ? box(tgt) : null, boxEnd: null, playState: a.playState,
       };
-      rec.visible = onScreen(rec.boxStart);
+      rec.visible = onScreen(rec.boxStart) && !!tgt && shown(tgt);
       seen.set(a, rec);
       W.anims.push(rec);
       if (rate !== 1 && !opts.rateByProtocol) {
@@ -475,7 +482,7 @@ const watchCollector = (opts) => {
     if (performance.now() - W.t0 > (Number(opts.maxMs) || 30000)) { W.stopped = true; return; }   // safety: never outlive the recording
     W.ticks++;
     try { for (const a of document.getAnimations()) record(a); } catch {}
-    if (W.ticks % 6 === 0) for (const [a, r] of seen) if (a.playState === 'running' && a.effect && a.effect.target) { r.boxEnd = box(a.effect.target); if (onScreen(r.boxEnd)) r.visible = true; }
+    if (W.ticks % 6 === 0) for (const [a, r] of seen) if (a.playState === 'running' && a.effect && a.effect.target) { r.boxEnd = box(a.effect.target); if (onScreen(r.boxEnd) && shown(a.effect.target)) r.visible = true; }
     requestAnimationFrame(tick);
   };
   requestAnimationFrame(tick);
@@ -506,7 +513,7 @@ const watchCollect = () => {
   if (!W) return null;
   W.stopped = true;
   for (const [a, r] of W.seen) {
-    if (a.effect && a.effect.target && a.playState === 'running') { r.boxEnd = W.box(a.effect.target); if (W.onScreen(r.boxEnd)) r.visible = true; }
+    if (a.effect && a.effect.target && a.playState === 'running') { r.boxEnd = W.box(a.effect.target); if (W.onScreen(r.boxEnd, a.effect.target)) r.visible = true; }
     if (r.slowed) { try { a.updatePlaybackRate(a.playbackRate / W.rate); } catch { try { a.playbackRate /= W.rate; } catch {} } }
   }
   const vw = innerWidth, vh = innerHeight;

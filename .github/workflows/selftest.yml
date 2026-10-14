@@ -1,13 +1,14 @@
-# Engine and client self-test: the live session engine's motion tools against local pages with known motion
-# (engine/test-pages/), in each browser, plus the client's parsing tests. No secrets, no external sites.
+# Engine, client, and Worker self-test: the live session engine's motion tools against local pages with known
+# motion (engine/test-pages/), in each browser, plus the client's parsing tests and the "see" Worker's tests.
+# No secrets, no external sites.
 name: selftest
 
 on:
   pull_request:
-    paths: ["engine/**", "client/**", ".github/workflows/selftest.yml"]
+    paths: ["engine/**", "client/**", "worker/**", ".github/workflows/selftest.yml"]
   push:
     branches: [main]
-    paths: ["engine/**", "client/**", ".github/workflows/selftest.yml"]
+    paths: ["engine/**", "client/**", "worker/**", ".github/workflows/selftest.yml"]
   workflow_dispatch:
 
 permissions:
@@ -60,7 +61,12 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - name: Client tests
         run: |
           python3 -m py_compile client/bridge.py client/perceive.py
           python3 -m unittest client/test_bridge.py -v
+      - name: Worker tests ("see" link front door, against a fake GitHub API)
+        run: node worker/test.mjs

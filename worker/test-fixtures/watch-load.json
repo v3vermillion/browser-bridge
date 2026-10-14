@@ -1,0 +1,158 @@
+{
+  "seq": 2,
+  "action": "watch",
+  "ok": true,
+  "files": [
+    "filmstrip.jpg",
+    "watch.json"
+  ],
+  "cacheCleared": true,
+  "frameFiles": [
+    "frames/001_00058ms.jpg",
+    "frames/002_00254ms.jpg",
+    "frames/003_00270ms.jpg",
+    "frames/008_00362ms.jpg",
+    "frames/013_00440ms.jpg",
+    "frames/018_00522ms.jpg",
+    "frames/023_00612ms.jpg",
+    "frames/028_00698ms.jpg",
+    "frames/032_00769ms.jpg",
+    "frames/037_00858ms.jpg",
+    "frames/038_00875ms.jpg"
+  ],
+  "watch": {
+    "what": "page load",
+    "zero": "navigation start",
+    "realMs": 2500,
+    "slowmo": 1,
+    "conditions": [],
+    "frames": {
+      "source": "screencast (frames as Chromium paints them)",
+      "received": 39,
+      "inWindow": 38,
+      "picked": 11,
+      "pageFrames": 149,
+      "note": "a screencast sends a frame only when something repaints, so a still page sends few"
+    },
+    "motion": {
+      "startsAt": 270,
+      "endsAt": 875,
+      "stillMovingAtEnd": false,
+      "biggestChangeAt": 875
+    },
+    "region": null,
+    "explained": {
+      "animatedElements": 24,
+      "media": 0,
+      "elsewhere": 76
+    },
+    "animations": [
+      {
+        "id": 1,
+        "type": "CSSAnimation",
+        "name": "rise",
+        "target": "h1#title",
+        "text": "Motion fixture",
+        "startedAt": 24,
+        "firstSeen": 27,
+        "activeUntil": 825,
+        "duration": 600,
+        "delay": 200,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "both",
+        "easing": "ease-out",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "opacity",
+            "from": "0",
+            "to": "1",
+            "keyframes": 2
+          },
+          {
+            "property": "transform",
+            "from": "translateY(24px)",
+            "to": "none",
+            "keyframes": 2
+          }
+        ],
+        "playState": "finished",
+        "visible": true
+      },
+      {
+        "id": 2,
+        "type": "CSSAnimation",
+        "name": "spin",
+        "target": "div#below",
+        "text": null,
+        "startedAt": 24,
+        "firstSeen": 28,
+        "activeUntil": 2491,
+        "duration": 2000,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": "infinite",
+        "direction": "normal",
+        "fill": "none",
+        "easing": "linear",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "none",
+            "to": "rotate(360deg)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      }
+    ],
+    "animationCount": 2,
+    "onScreen": 1,
+    "webFontsLoaded": [],
+    "layoutShifts": 0,
+    "layoutShiftTotal": 0,
+    "longTasks": 0,
+    "load": {
+      "firstPaint": 60,
+      "firstContentfulPaint": 60,
+      "largestContentfulPaint": {
+        "t": 60,
+        "element": "button#cta"
+      },
+      "domContentLoaded": 18,
+      "loadEvent": 840,
+      "webFontsLoaded": [],
+      "note": "ms since navigation start; 0 / null = not reached within the recording"
+    },
+    "media": {
+      "libraries": [],
+      "videos": 0,
+      "canvases": 0,
+      "iframes": [],
+      "gifs": 0
+    },
+    "notes": [
+      "1 of 2 animation(s) ran off screen, where nobody sees them (spin)"
+    ]
+  },
+  "url": "http://127.0.0.1:37403/",
+  "title": "Motion fixture",
+  "scrollY": 0,
+  "scrollX": 0,
+  "pageHeight": 3319,
+  "pageWidth": 1440,
+  "layoutViewport": [
+    1440,
+    900
+  ],
+  "viewport": [
+    1440,
+    900
+  ],
+  "device": "desktop",
+  "ms": 3549
+}

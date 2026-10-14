@@ -1,6 +1,6 @@
 {
   "id": "bp1",
-  "state": "ready",
+  "state": "ended",
   "config": {
     "device": "desktop",
     "browser": "chromium",
@@ -15,6 +15,7 @@
   "startedAt": "2026-10-14T20:11:37.905Z",
   "endsAt": "2026-10-14T20:26:37.905Z",
   "lastSeq": 3,
-  "updatedAt": "2026-10-14T20:12:00.133Z",
-  "url": "https://www.brightplan.com/"
+  "updatedAt": "2026-10-14T20:15:56.534Z",
+  "url": "https://www.brightplan.com/",
+  "reason": "idle timeout"
 }

@@ -1,0 +1,572 @@
+{
+  "seq": 1,
+  "action": "watch",
+  "ok": true,
+  "files": [
+    "filmstrip.jpg",
+    "watch.json"
+  ],
+  "cacheCleared": true,
+  "frameFiles": [
+    "frames/001_00144ms.jpg",
+    "frames/002_00175ms.jpg",
+    "frames/003_00320ms.jpg",
+    "frames/046_02367ms.jpg",
+    "frames/074_03302ms.jpg",
+    "frames/093_03941ms.jpg",
+    "frames/100_04175ms.jpg",
+    "frames/101_04211ms.jpg",
+    "frames/119_04878ms.jpg",
+    "frames/134_05376ms.jpg",
+    "frames/152_05968ms.jpg"
+  ],
+  "watch": {
+    "what": "page load",
+    "zero": "navigation start",
+    "realMs": 6000,
+    "slowmo": 1,
+    "conditions": [],
+    "frames": {
+      "source": "screencast (frames as Chromium paints them)",
+      "received": 153,
+      "inWindow": 152,
+      "picked": 11,
+      "pageFrames": 251,
+      "note": "a screencast sends a frame only when something repaints, so a still page sends few"
+    },
+    "motion": {
+      "startsAt": 320,
+      "endsAt": 5968,
+      "stillMovingAtEnd": true,
+      "biggestChangeAt": 4211
+    },
+    "region": null,
+    "explained": {
+      "animatedElements": 34,
+      "media": 66,
+      "elsewhere": 0
+    },
+    "animations": [
+      {
+        "id": 5,
+        "type": "CSSAnimation",
+        "name": "globalnav-search-fade-and-slide",
+        "target": "h2.globalnav-searchresults-header",
+        "text": "Quick Links",
+        "startedAt": 253,
+        "firstSeen": 310,
+        "activeUntil": 770,
+        "duration": 320,
+        "delay": 200,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "both",
+        "easing": "cubic-bezier(0.4, 0, 0.6, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "opacity",
+            "from": "0",
+            "to": "1",
+            "keyframes": 2
+          },
+          {
+            "property": "transform",
+            "from": "translateY(-4px)",
+            "to": "translateY(0px)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "finished",
+        "visible": true
+      },
+      {
+        "id": 6,
+        "type": "CSSAnimation",
+        "name": "globalnav-search-fade-and-slide",
+        "target": "li.globalnav-searchresults-list-item",
+        "text": null,
+        "startedAt": 253,
+        "firstSeen": 310,
+        "activeUntil": 787,
+        "duration": 320,
+        "delay": 220,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "both",
+        "easing": "cubic-bezier(0.4, 0, 0.6, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "opacity",
+            "from": "0",
+            "to": "1",
+            "keyframes": 2
+          },
+          {
+            "property": "transform",
+            "from": "translateY(-4px)",
+            "to": "translateY(0px)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "finished",
+        "visible": true
+      },
+      {
+        "id": 7,
+        "type": "CSSAnimation",
+        "name": "globalnav-search-fade-and-slide",
+        "target": "li.globalnav-searchresults-list-item",
+        "text": null,
+        "startedAt": 253,
+        "firstSeen": 310,
+        "activeUntil": 804,
+        "duration": 320,
+        "delay": 240,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "both",
+        "easing": "cubic-bezier(0.4, 0, 0.6, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "opacity",
+            "from": "0",
+            "to": "1",
+            "keyframes": 2
+          },
+          {
+            "property": "transform",
+            "from": "translateY(-4px)",
+            "to": "translateY(0px)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "finished",
+        "visible": true
+      },
+      {
+        "id": 8,
+        "type": "CSSAnimation",
+        "name": "globalnav-search-fade-and-slide",
+        "target": "li.globalnav-searchresults-list-item",
+        "text": null,
+        "startedAt": 253,
+        "firstSeen": 310,
+        "activeUntil": 820,
+        "duration": 320,
+        "delay": 260,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "both",
+        "easing": "cubic-bezier(0.4, 0, 0.6, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "opacity",
+            "from": "0",
+            "to": "1",
+            "keyframes": 2
+          },
+          {
+            "property": "transform",
+            "from": "translateY(-4px)",
+            "to": "translateY(0px)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "finished",
+        "visible": true
+      },
+      {
+        "id": 9,
+        "type": "CSSAnimation",
+        "name": "globalnav-search-fade-and-slide",
+        "target": "li.globalnav-searchresults-list-item",
+        "text": null,
+        "startedAt": 253,
+        "firstSeen": 310,
+        "activeUntil": 837,
+        "duration": 320,
+        "delay": 280,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "both",
+        "easing": "cubic-bezier(0.4, 0, 0.6, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "opacity",
+            "from": "0",
+            "to": "1",
+            "keyframes": 2
+          },
+          {
+            "property": "transform",
+            "from": "translateY(-4px)",
+            "to": "translateY(0px)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "finished",
+        "visible": true
+      },
+      {
+        "id": 10,
+        "type": "CSSAnimation",
+        "name": "globalnav-search-fade-and-slide",
+        "target": "li.globalnav-searchresults-list-item",
+        "text": null,
+        "startedAt": 253,
+        "firstSeen": 310,
+        "activeUntil": 870,
+        "duration": 320,
+        "delay": 300,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "both",
+        "easing": "cubic-bezier(0.4, 0, 0.6, 1)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "opacity",
+            "from": "0",
+            "to": "1",
+            "keyframes": 2
+          },
+          {
+            "property": "transform",
+            "from": "translateY(-4px)",
+            "to": "translateY(0px)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "finished",
+        "visible": true
+      },
+      {
+        "id": 26,
+        "type": "CSSTransition",
+        "name": "opacity",
+        "target": "button.play-pause-button",
+        "text": null,
+        "startedAt": 1036,
+        "firstSeen": 1022,
+        "activeUntil": 1143,
+        "duration": 100,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "linear",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "opacity",
+            "from": "0",
+            "to": "1",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 27,
+        "type": "CSSAnimation",
+        "name": "inline-media-spin",
+        "target": "button.play-pause-button::after",
+        "text": null,
+        "startedAt": null,
+        "firstSeen": 1023,
+        "activeUntil": 1023,
+        "duration": 850,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": "infinite",
+        "direction": "normal",
+        "fill": "none",
+        "easing": "steps(8)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "rotate(0deg)",
+            "to": "rotate(360deg)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 2,
+        "type": "CSSAnimation",
+        "name": "inline-media-spin",
+        "target": "button.play-pause-button::after",
+        "text": null,
+        "startedAt": 153,
+        "firstSeen": 217,
+        "activeUntil": 5970,
+        "duration": 850,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": "infinite",
+        "direction": "normal",
+        "fill": "none",
+        "easing": "steps(8)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "rotate(0deg)",
+            "to": "rotate(360deg)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      },
+      {
+        "id": 3,
+        "type": "CSSAnimation",
+        "name": "inline-media-spin",
+        "target": "button.play-pause-button::after",
+        "text": null,
+        "startedAt": 153,
+        "firstSeen": 217,
+        "activeUntil": 5970,
+        "duration": 850,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": "infinite",
+        "direction": "normal",
+        "fill": "none",
+        "easing": "steps(8)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "rotate(0deg)",
+            "to": "rotate(360deg)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      },
+      {
+        "id": 4,
+        "type": "CSSAnimation",
+        "name": "inline-media-spin",
+        "target": "button.play-pause-button::after",
+        "text": null,
+        "startedAt": 153,
+        "firstSeen": 217,
+        "activeUntil": 5970,
+        "duration": 850,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": "infinite",
+        "direction": "normal",
+        "fill": "none",
+        "easing": "steps(8)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "rotate(0deg)",
+            "to": "rotate(360deg)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      },
+      {
+        "id": 11,
+        "type": "CSSTransition",
+        "name": "transform",
+        "target": "div.control-item-content-inner",
+        "text": "Sound quality. A new multiport acoustic ",
+        "startedAt": 403,
+        "firstSeen": 425,
+        "activeUntil": 787,
+        "duration": 400,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "ease-in-out",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "none",
+            "to": "translateY(28px)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      },
+      {
+        "id": 12,
+        "type": "CSSTransition",
+        "name": "visibility",
+        "target": "div.control-item-content-inner",
+        "text": "Sound quality. A new multiport acoustic ",
+        "startedAt": 403,
+        "firstSeen": 425,
+        "activeUntil": 704,
+        "duration": 300,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "ease-in-out",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "visibility",
+            "from": "visible",
+            "to": "hidden",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      },
+      {
+        "id": 13,
+        "type": "CSSTransition",
+        "name": "transform",
+        "target": "div.control-item-content-inner",
+        "text": "Fit and feel. The ear tips are now rotat",
+        "startedAt": 403,
+        "firstSeen": 425,
+        "activeUntil": 787,
+        "duration": 400,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "ease-in-out",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "none",
+            "to": "translateY(28px)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      },
+      {
+        "id": 14,
+        "type": "CSSTransition",
+        "name": "visibility",
+        "target": "div.control-item-content-inner",
+        "text": "Fit and feel. The ear tips are now rotat",
+        "startedAt": 403,
+        "firstSeen": 425,
+        "activeUntil": 704,
+        "duration": 300,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "ease-in-out",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "visibility",
+            "from": "visible",
+            "to": "hidden",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      }
+    ],
+    "animationCount": 35,
+    "onScreen": 8,
+    "webFontsLoaded": [
+      {
+        "t": 286,
+        "families": [
+          "SF Pro Text",
+          "SF Pro Display",
+          "SF Pro Icons"
+        ]
+      }
+    ],
+    "layoutShifts": 1,
+    "layoutShiftTotal": 0.0002,
+    "longTasks": 1,
+    "load": {
+      "firstPaint": 144,
+      "firstContentfulPaint": 144,
+      "largestContentfulPaint": {
+        "t": 320,
+        "element": "img"
+      },
+      "domContentLoaded": 307,
+      "loadEvent": 389,
+      "webFontsLoaded": [
+        {
+          "t": 286,
+          "families": [
+            "SF Pro Text",
+            "SF Pro Display",
+            "SF Pro Icons"
+          ]
+        }
+      ],
+      "note": "ms since navigation start; 0 / null = not reached within the recording"
+    },
+    "media": {
+      "libraries": [],
+      "videos": 1,
+      "canvases": 0,
+      "iframes": [],
+      "gifs": 0
+    },
+    "notes": [
+      "still moving at the end: looping animation(s)",
+      "27 of 35 animation(s) ran off screen, where nobody sees them (inline-media-spin, transform, visibility, background-color, opacity)",
+      "motion the animation list can't describe may come from: 1 video(s); frames are the evidence for those"
+    ]
+  },
+  "url": "https://www.apple.com/airpods-pro/",
+  "title": "AirPods Pro 3 - Apple",
+  "scrollY": 0,
+  "scrollX": 0,
+  "pageHeight": 28918,
+  "pageWidth": 1440,
+  "layoutViewport": [
+    1440,
+    900
+  ],
+  "viewport": [
+    1440,
+    900
+  ],
+  "device": "desktop",
+  "ms": 8684
+}

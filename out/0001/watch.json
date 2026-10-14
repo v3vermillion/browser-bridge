@@ -1,0 +1,2231 @@
+{
+  "what": "page load",
+  "zero": "navigation start",
+  "realMs": 6000,
+  "pageMs": 6000,
+  "slowmo": 1,
+  "conditions": [],
+  "url": "https://www.apple.com/airpods-pro/",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "scale": 2,
+  "clock": "ms relative to t = 0 on the page clock; frames use the compositor swap time",
+  "frames": {
+    "source": "screencast (frames as Chromium paints them)",
+    "received": 153,
+    "inWindow": 152,
+    "picked": 11,
+    "pageFrames": 251,
+    "note": "a screencast sends a frame only when something repaints, so a still page sends few"
+  },
+  "motion": {
+    "startsAt": 320,
+    "endsAt": 5968,
+    "stillMovingAtEnd": true,
+    "biggestChangeAt": 4211
+  },
+  "region": null,
+  "explained": {
+    "animatedElements": 34,
+    "media": 66,
+    "elsewhere": 0
+  },
+  "animations": [
+    {
+      "id": 5,
+      "type": "CSSAnimation",
+      "name": "globalnav-search-fade-and-slide",
+      "target": "h2.globalnav-searchresults-header",
+      "text": "Quick Links",
+      "startedAt": 253,
+      "firstSeen": 310,
+      "activeUntil": 770,
+      "duration": 320,
+      "delay": 200,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "both",
+      "easing": "cubic-bezier(0.4, 0, 0.6, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "0",
+          "to": "1",
+          "keyframes": 2
+        },
+        {
+          "property": "transform",
+          "from": "translateY(-4px)",
+          "to": "translateY(0px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        230,
+        144,
+        980,
+        16
+      ],
+      "boxEnd": [
+        230,
+        148,
+        980,
+        16
+      ],
+      "playState": "finished",
+      "visible": true
+    },
+    {
+      "id": 6,
+      "type": "CSSAnimation",
+      "name": "globalnav-search-fade-and-slide",
+      "target": "li.globalnav-searchresults-list-item",
+      "text": null,
+      "startedAt": 253,
+      "firstSeen": 310,
+      "activeUntil": 787,
+      "duration": 320,
+      "delay": 220,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "both",
+      "easing": "cubic-bezier(0.4, 0, 0.6, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "0",
+          "to": "1",
+          "keyframes": 2
+        },
+        {
+          "property": "transform",
+          "from": "translateY(-4px)",
+          "to": "translateY(0px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        222,
+        168,
+        996,
+        24
+      ],
+      "boxEnd": [
+        222,
+        171,
+        996,
+        24
+      ],
+      "playState": "finished",
+      "visible": true
+    },
+    {
+      "id": 7,
+      "type": "CSSAnimation",
+      "name": "globalnav-search-fade-and-slide",
+      "target": "li.globalnav-searchresults-list-item",
+      "text": null,
+      "startedAt": 253,
+      "firstSeen": 310,
+      "activeUntil": 804,
+      "duration": 320,
+      "delay": 240,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "both",
+      "easing": "cubic-bezier(0.4, 0, 0.6, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "0",
+          "to": "1",
+          "keyframes": 2
+        },
+        {
+          "property": "transform",
+          "from": "translateY(-4px)",
+          "to": "translateY(0px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        222,
+        196,
+        996,
+        24
+      ],
+      "boxEnd": [
+        222,
+        200,
+        996,
+        24
+      ],
+      "playState": "finished",
+      "visible": true
+    },
+    {
+      "id": 8,
+      "type": "CSSAnimation",
+      "name": "globalnav-search-fade-and-slide",
+      "target": "li.globalnav-searchresults-list-item",
+      "text": null,
+      "startedAt": 253,
+      "firstSeen": 310,
+      "activeUntil": 820,
+      "duration": 320,
+      "delay": 260,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "both",
+      "easing": "cubic-bezier(0.4, 0, 0.6, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "0",
+          "to": "1",
+          "keyframes": 2
+        },
+        {
+          "property": "transform",
+          "from": "translateY(-4px)",
+          "to": "translateY(0px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        222,
+        224,
+        996,
+        24
+      ],
+      "boxEnd": [
+        222,
+        228,
+        996,
+        24
+      ],
+      "playState": "finished",
+      "visible": true
+    },
+    {
+      "id": 9,
+      "type": "CSSAnimation",
+      "name": "globalnav-search-fade-and-slide",
+      "target": "li.globalnav-searchresults-list-item",
+      "text": null,
+      "startedAt": 253,
+      "firstSeen": 310,
+      "activeUntil": 837,
+      "duration": 320,
+      "delay": 280,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "both",
+      "easing": "cubic-bezier(0.4, 0, 0.6, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "0",
+          "to": "1",
+          "keyframes": 2
+        },
+        {
+          "property": "transform",
+          "from": "translateY(-4px)",
+          "to": "translateY(0px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        222,
+        252,
+        996,
+        24
+      ],
+      "boxEnd": [
+        222,
+        256,
+        996,
+        24
+      ],
+      "playState": "finished",
+      "visible": true
+    },
+    {
+      "id": 10,
+      "type": "CSSAnimation",
+      "name": "globalnav-search-fade-and-slide",
+      "target": "li.globalnav-searchresults-list-item",
+      "text": null,
+      "startedAt": 253,
+      "firstSeen": 310,
+      "activeUntil": 870,
+      "duration": 320,
+      "delay": 300,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "both",
+      "easing": "cubic-bezier(0.4, 0, 0.6, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "0",
+          "to": "1",
+          "keyframes": 2
+        },
+        {
+          "property": "transform",
+          "from": "translateY(-4px)",
+          "to": "translateY(0px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        222,
+        280,
+        996,
+        24
+      ],
+      "boxEnd": [
+        222,
+        284,
+        996,
+        24
+      ],
+      "playState": "finished",
+      "visible": true
+    },
+    {
+      "id": 26,
+      "type": "CSSTransition",
+      "name": "opacity",
+      "target": "button.play-pause-button",
+      "text": null,
+      "startedAt": 1036,
+      "firstSeen": 1022,
+      "activeUntil": 1143,
+      "duration": 100,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "0",
+          "to": "1",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        1384,
+        64,
+        36,
+        36
+      ],
+      "boxEnd": null,
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 27,
+      "type": "CSSAnimation",
+      "name": "inline-media-spin",
+      "target": "button.play-pause-button::after",
+      "text": null,
+      "startedAt": null,
+      "firstSeen": 1023,
+      "activeUntil": 1023,
+      "duration": 850,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "steps(8)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        1384,
+        64,
+        36,
+        36
+      ],
+      "boxEnd": null,
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "type": "CSSAnimation",
+      "name": "inline-media-spin",
+      "target": "button.play-pause-button::after",
+      "text": null,
+      "startedAt": 153,
+      "firstSeen": 217,
+      "activeUntil": 5970,
+      "duration": 850,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "steps(8)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        406,
+        17206,
+        36,
+        36
+      ],
+      "boxEnd": [
+        406,
+        16670,
+        36,
+        36
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 3,
+      "type": "CSSAnimation",
+      "name": "inline-media-spin",
+      "target": "button.play-pause-button::after",
+      "text": null,
+      "startedAt": 153,
+      "firstSeen": 217,
+      "activeUntil": 5970,
+      "duration": 850,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "steps(8)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        1582,
+        17206,
+        36,
+        36
+      ],
+      "boxEnd": [
+        1582,
+        16670,
+        36,
+        36
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 4,
+      "type": "CSSAnimation",
+      "name": "inline-media-spin",
+      "target": "button.play-pause-button::after",
+      "text": null,
+      "startedAt": 153,
+      "firstSeen": 217,
+      "activeUntil": 5970,
+      "duration": 850,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "steps(8)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        1294,
+        18713,
+        36,
+        36
+      ],
+      "boxEnd": [
+        1294,
+        18147,
+        36,
+        36
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 11,
+      "type": "CSSTransition",
+      "name": "transform",
+      "target": "div.control-item-content-inner",
+      "text": "Sound quality. A new multiport acoustic ",
+      "startedAt": 403,
+      "firstSeen": 425,
+      "activeUntil": 787,
+      "duration": 400,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease-in-out",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "none",
+          "to": "translateY(28px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        90,
+        2448,
+        423,
+        156
+      ],
+      "boxEnd": [
+        90,
+        2472,
+        423,
+        156
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 12,
+      "type": "CSSTransition",
+      "name": "visibility",
+      "target": "div.control-item-content-inner",
+      "text": "Sound quality. A new multiport acoustic ",
+      "startedAt": 403,
+      "firstSeen": 425,
+      "activeUntil": 704,
+      "duration": 300,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease-in-out",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "visibility",
+          "from": "visible",
+          "to": "hidden",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        90,
+        2448,
+        423,
+        156
+      ],
+      "boxEnd": [
+        90,
+        2472,
+        423,
+        156
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 13,
+      "type": "CSSTransition",
+      "name": "transform",
+      "target": "div.control-item-content-inner",
+      "text": "Fit and feel. The ear tips are now rotat",
+      "startedAt": 403,
+      "firstSeen": 425,
+      "activeUntil": 787,
+      "duration": 400,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease-in-out",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "none",
+          "to": "translateY(28px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        90,
+        2516,
+        423,
+        156
+      ],
+      "boxEnd": [
+        90,
+        2540,
+        423,
+        156
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 14,
+      "type": "CSSTransition",
+      "name": "visibility",
+      "target": "div.control-item-content-inner",
+      "text": "Fit and feel. The ear tips are now rotat",
+      "startedAt": 403,
+      "firstSeen": 425,
+      "activeUntil": 704,
+      "duration": 300,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease-in-out",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "visibility",
+          "from": "visible",
+          "to": "hidden",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        90,
+        2516,
+        423,
+        156
+      ],
+      "boxEnd": [
+        90,
+        2540,
+        423,
+        156
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 15,
+      "type": "CSSTransition",
+      "name": "transform",
+      "target": "div.control-item-content-inner",
+      "text": "Heart rate sensing. Our smallest heart r",
+      "startedAt": 403,
+      "firstSeen": 425,
+      "activeUntil": 787,
+      "duration": 400,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease-in-out",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "none",
+          "to": "translateY(28px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        90,
+        2584,
+        423,
+        156
+      ],
+      "boxEnd": [
+        90,
+        2608,
+        423,
+        156
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 16,
+      "type": "CSSTransition",
+      "name": "visibility",
+      "target": "div.control-item-content-inner",
+      "text": "Heart rate sensing. Our smallest heart r",
+      "startedAt": 403,
+      "firstSeen": 425,
+      "activeUntil": 704,
+      "duration": 300,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease-in-out",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "visibility",
+          "from": "visible",
+          "to": "hidden",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        90,
+        2584,
+        423,
+        156
+      ],
+      "boxEnd": [
+        90,
+        2608,
+        423,
+        156
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 17,
+      "type": "CSSTransition",
+      "name": "transform",
+      "target": "div.control-item-content-inner",
+      "text": "Dust, sweat, and water resistance. The f",
+      "startedAt": 403,
+      "firstSeen": 425,
+      "activeUntil": 787,
+      "duration": 400,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease-in-out",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "none",
+          "to": "translateY(28px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        90,
+        2652,
+        423,
+        156
+      ],
+      "boxEnd": [
+        90,
+        2676,
+        423,
+        156
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 18,
+      "type": "CSSTransition",
+      "name": "visibility",
+      "target": "div.control-item-content-inner",
+      "text": "Dust, sweat, and water resistance. The f",
+      "startedAt": 403,
+      "firstSeen": 425,
+      "activeUntil": 704,
+      "duration": 300,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease-in-out",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "visibility",
+          "from": "visible",
+          "to": "hidden",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        90,
+        2652,
+        423,
+        156
+      ],
+      "boxEnd": [
+        90,
+        2676,
+        423,
+        156
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 19,
+      "type": "CSSTransition",
+      "name": "transform",
+      "target": "div.control-item-content-inner",
+      "text": "Force sensor with volume swipe. Use simp",
+      "startedAt": 403,
+      "firstSeen": 425,
+      "activeUntil": 787,
+      "duration": 400,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease-in-out",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "none",
+          "to": "translateY(28px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        90,
+        2720,
+        423,
+        156
+      ],
+      "boxEnd": [
+        90,
+        2744,
+        423,
+        156
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 20,
+      "type": "CSSTransition",
+      "name": "visibility",
+      "target": "div.control-item-content-inner",
+      "text": "Force sensor with volume swipe. Use simp",
+      "startedAt": 403,
+      "firstSeen": 425,
+      "activeUntil": 704,
+      "duration": 300,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease-in-out",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "visibility",
+          "from": "visible",
+          "to": "hidden",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        90,
+        2720,
+        423,
+        156
+      ],
+      "boxEnd": [
+        90,
+        2744,
+        423,
+        156
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 21,
+      "type": "CSSTransition",
+      "name": "transform",
+      "target": "div.control-item-content-inner",
+      "text": "Charging case. Next-generation Ultra Wid",
+      "startedAt": 403,
+      "firstSeen": 425,
+      "activeUntil": 787,
+      "duration": 400,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease-in-out",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "none",
+          "to": "translateY(28px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        90,
+        2788,
+        423,
+        156
+      ],
+      "boxEnd": [
+        90,
+        2812,
+        423,
+        156
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 22,
+      "type": "CSSTransition",
+      "name": "visibility",
+      "target": "div.control-item-content-inner",
+      "text": "Charging case. Next-generation Ultra Wid",
+      "startedAt": 403,
+      "firstSeen": 425,
+      "activeUntil": 704,
+      "duration": 300,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease-in-out",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "visibility",
+          "from": "visible",
+          "to": "hidden",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        90,
+        2788,
+        423,
+        156
+      ],
+      "boxEnd": [
+        90,
+        2812,
+        423,
+        156
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 23,
+      "type": "CSSTransition",
+      "name": "background-color",
+      "target": "span.close-icon",
+      "text": null,
+      "startedAt": 403,
+      "firstSeen": 425,
+      "activeUntil": 637,
+      "duration": 250,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "background-color",
+          "from": "rgba(0, 0, 0, 0)",
+          "to": "rgba(232, 232, 237, 0.72)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        1402,
+        2304,
+        0,
+        0
+      ],
+      "boxEnd": [
+        1402,
+        2304,
+        0,
+        0
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 24,
+      "type": "CSSTransition",
+      "name": "visibility",
+      "target": "button.tabnav-paddle.tabnav-paddle-left",
+      "text": null,
+      "startedAt": 870,
+      "firstSeen": 942,
+      "activeUntil": 942,
+      "duration": 80,
+      "delay": 40,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "steps(1, start)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "visibility",
+          "from": "visible",
+          "to": "hidden",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        464,
+        18261,
+        50,
+        44
+      ],
+      "boxEnd": null,
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 25,
+      "type": "CSSTransition",
+      "name": "visibility",
+      "target": "button.tabnav-paddle.tabnav-paddle-right",
+      "text": null,
+      "startedAt": 870,
+      "firstSeen": 942,
+      "activeUntil": 942,
+      "duration": 80,
+      "delay": 40,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "steps(1, start)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "visibility",
+          "from": "visible",
+          "to": "hidden",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        926,
+        18261,
+        50,
+        44
+      ],
+      "boxEnd": null,
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 28,
+      "type": "CSSTransition",
+      "name": "opacity",
+      "target": "div.scroll-gallery-paddlenav.paddlenav",
+      "text": null,
+      "startedAt": 1303,
+      "firstSeen": 1283,
+      "activeUntil": 1480,
+      "duration": 200,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease-out",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "0",
+          "to": "1",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        90,
+        6102,
+        1260,
+        84
+      ],
+      "boxEnd": [
+        90,
+        6102,
+        1260,
+        84
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 29,
+      "type": "CSSTransition",
+      "name": "opacity",
+      "target": "button.paddlenav-arrow.paddlenav-arrow-previous",
+      "text": null,
+      "startedAt": 1303,
+      "firstSeen": 1283,
+      "activeUntil": 1412,
+      "duration": 100,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "1",
+          "to": "0.42",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        1260,
+        6150,
+        36,
+        36
+      ],
+      "boxEnd": [
+        1260,
+        6150,
+        36,
+        36
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 30,
+      "type": "CSSTransition",
+      "name": "opacity",
+      "target": "div.scroll-gallery-paddlenav.paddlenav",
+      "text": null,
+      "startedAt": 1303,
+      "firstSeen": 1283,
+      "activeUntil": 1480,
+      "duration": 200,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease-out",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "0",
+          "to": "1",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        90,
+        16943,
+        1260,
+        84
+      ],
+      "boxEnd": [
+        90,
+        16943,
+        1260,
+        84
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 31,
+      "type": "CSSTransition",
+      "name": "opacity",
+      "target": "button.paddlenav-arrow.paddlenav-arrow-previous",
+      "text": null,
+      "startedAt": 1303,
+      "firstSeen": 1283,
+      "activeUntil": 1412,
+      "duration": 100,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "1",
+          "to": "0.42",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        1260,
+        16991,
+        36,
+        36
+      ],
+      "boxEnd": [
+        1260,
+        16991,
+        36,
+        36
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 32,
+      "type": "CSSTransition",
+      "name": "opacity",
+      "target": "button.paddlenav-arrow.paddlenav-arrow-previous",
+      "text": null,
+      "startedAt": 1303,
+      "firstSeen": 1283,
+      "activeUntil": 1412,
+      "duration": 100,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "1",
+          "to": "0.42",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        1260,
+        21839,
+        36,
+        36
+      ],
+      "boxEnd": [
+        1260,
+        21839,
+        36,
+        36
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 33,
+      "type": "CSSTransition",
+      "name": "opacity",
+      "target": "button.paddlenav-arrow.paddlenav-arrow-previous",
+      "text": null,
+      "startedAt": 1303,
+      "firstSeen": 1283,
+      "activeUntil": 1412,
+      "duration": 100,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "1",
+          "to": "0.42",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        1260,
+        25110,
+        36,
+        36
+      ],
+      "boxEnd": [
+        1260,
+        25110,
+        36,
+        36
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 34,
+      "type": "CSSTransition",
+      "name": "opacity",
+      "target": "button.paddlenav-arrow.paddlenav-arrow-next",
+      "text": null,
+      "startedAt": 1303,
+      "firstSeen": 1283,
+      "activeUntil": 1412,
+      "duration": 100,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "1",
+          "to": "0.42",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        1314,
+        25110,
+        36,
+        36
+      ],
+      "boxEnd": [
+        1314,
+        25110,
+        36,
+        36
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 35,
+      "type": "CSSTransition",
+      "name": "opacity",
+      "target": "button.paddlenav-arrow.paddlenav-arrow-previous",
+      "text": null,
+      "startedAt": 1303,
+      "firstSeen": 1283,
+      "activeUntil": 1412,
+      "duration": 100,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "1",
+          "to": "0.42",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        1260,
+        25748,
+        36,
+        36
+      ],
+      "boxEnd": [
+        1260,
+        25748,
+        36,
+        36
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 36,
+      "type": "CSSTransition",
+      "name": "opacity",
+      "target": "button.paddlenav-arrow.paddlenav-arrow-next",
+      "text": null,
+      "startedAt": 1303,
+      "firstSeen": 1283,
+      "activeUntil": 1412,
+      "duration": 100,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "opacity",
+          "from": "1",
+          "to": "0.42",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        1314,
+        25748,
+        36,
+        36
+      ],
+      "boxEnd": [
+        1314,
+        25748,
+        36,
+        36
+      ],
+      "playState": "running",
+      "visible": false
+    }
+  ],
+  "webFontsLoaded": [
+    {
+      "t": 286,
+      "families": [
+        "SF Pro Text",
+        "SF Pro Display",
+        "SF Pro Icons"
+      ]
+    }
+  ],
+  "animationsNotRunning": 1,
+  "layoutShifts": [
+    {
+      "t": 372,
+      "value": 0.0002,
+      "afterInput": false,
+      "sources": [
+        {
+          "element": "::before",
+          "fromY": 758,
+          "toY": 758,
+          "fromH": 59,
+          "toH": 59
+        },
+        {
+          "element": "div.marquee-detail.typography-marquee-detail",
+          "fromY": 758,
+          "toY": 758,
+          "fromH": 59,
+          "toH": 59
+        }
+      ]
+    }
+  ],
+  "longTasks": [
+    {
+      "t": 870,
+      "ms": 71
+    }
+  ],
+  "load": {
+    "firstPaint": 144,
+    "firstContentfulPaint": 144,
+    "largestContentfulPaint": {
+      "t": 320,
+      "element": "img"
+    },
+    "domContentLoaded": 307,
+    "loadEvent": 389,
+    "webFontsLoaded": [
+      {
+        "t": 286,
+        "families": [
+          "SF Pro Text",
+          "SF Pro Display",
+          "SF Pro Icons"
+        ]
+      }
+    ],
+    "note": "ms since navigation start; 0 / null = not reached within the recording"
+  },
+  "media": {
+    "libraries": [],
+    "videos": [
+      {
+        "element": "video#welcome-hero-airpods.play-initiated",
+        "box": [
+          0,
+          1,
+          1440,
+          900
+        ],
+        "paused": false,
+        "muted": true,
+        "loop": true,
+        "autoplay": false,
+        "controls": false,
+        "currentTime": 4.93,
+        "duration": 7.5,
+        "readyState": 4,
+        "poster": false,
+        "resolution": [
+          3600,
+          2100
+        ],
+        "textTracks": 0,
+        "src": "www.apple.com/105/media/us/airpods-pro/2025/7acffb13-4adb-40b1-9393-8f1c99bc6c90/anim/hero/large_2x.mp4",
+        "type": null
+      }
+    ],
+    "canvases": [],
+    "iframes": [],
+    "gifs": []
+  },
+  "notes": [
+    "still moving at the end: looping animation(s)",
+    "27 of 35 animation(s) ran off screen, where nobody sees them (inline-media-spin, transform, visibility, background-color, opacity)",
+    "motion the animation list can't describe may come from: 1 video(s); frames are the evidence for those"
+  ],
+  "motionMeasuredIn": "the whole screen",
+  "frameMeta": [
+    {
+      "file": "frames/001_00144ms.jpg",
+      "t": 144,
+      "y": 0,
+      "why": "first"
+    },
+    {
+      "file": "frames/002_00175ms.jpg",
+      "t": 175,
+      "y": 0,
+      "why": "before motion"
+    },
+    {
+      "file": "frames/003_00320ms.jpg",
+      "t": 320,
+      "y": 0,
+      "why": "motion starts"
+    },
+    {
+      "file": "frames/046_02367ms.jpg",
+      "t": 2367,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/074_03302ms.jpg",
+      "t": 3302,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/093_03941ms.jpg",
+      "t": 3941,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/100_04175ms.jpg",
+      "t": 4175,
+      "y": 0,
+      "why": "just before biggest change"
+    },
+    {
+      "file": "frames/101_04211ms.jpg",
+      "t": 4211,
+      "y": 0,
+      "why": "biggest change"
+    },
+    {
+      "file": "frames/119_04878ms.jpg",
+      "t": 4878,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/134_05376ms.jpg",
+      "t": 5376,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/152_05968ms.jpg",
+      "t": 5968,
+      "y": 0,
+      "why": "still moving · last"
+    }
+  ],
+  "changeSeries": [
+    [
+      144,
+      0
+    ],
+    [
+      175,
+      0
+    ],
+    [
+      320,
+      18.9907
+    ],
+    [
+      346,
+      0
+    ],
+    [
+      403,
+      0.0661
+    ],
+    [
+      677,
+      0
+    ],
+    [
+      999,
+      0
+    ],
+    [
+      1045,
+      0
+    ],
+    [
+      1124,
+      0.8357
+    ],
+    [
+      1176,
+      0
+    ],
+    [
+      1211,
+      0.1524
+    ],
+    [
+      1244,
+      0.7466
+    ],
+    [
+      1276,
+      0.5659
+    ],
+    [
+      1311,
+      0.3743
+    ],
+    [
+      1344,
+      0.902
+    ],
+    [
+      1378,
+      1.193
+    ],
+    [
+      1411,
+      0.4706
+    ],
+    [
+      1444,
+      1.4203
+    ],
+    [
+      1479,
+      0.6597
+    ],
+    [
+      1513,
+      1.6331
+    ],
+    [
+      1544,
+      1.7074
+    ],
+    [
+      1576,
+      0.8151
+    ],
+    [
+      1608,
+      1.9759
+    ],
+    [
+      1642,
+      1.8938
+    ],
+    [
+      1672,
+      0.9693
+    ],
+    [
+      1704,
+      2.3507
+    ],
+    [
+      1736,
+      1.3032
+    ],
+    [
+      1769,
+      2.9569
+    ],
+    [
+      1802,
+      3.1835
+    ],
+    [
+      1835,
+      1.8956
+    ],
+    [
+      1870,
+      3.6033
+    ],
+    [
+      1904,
+      3.6673
+    ],
+    [
+      1935,
+      2.3279
+    ],
+    [
+      1968,
+      3.6241
+    ],
+    [
+      2001,
+      2.2863
+    ],
+    [
+      2034,
+      3.2534
+    ],
+    [
+      2066,
+      3.6288
+    ],
+    [
+      2101,
+      2.5933
+    ],
+    [
+      2136,
+      3.9498
+    ],
+    [
+      2169,
+      4.1125
+    ],
+    [
+      2202,
+      2.4459
+    ],
+    [
+      2234,
+      3.5175
+    ],
+    [
+      2267,
+      1.5226
+    ],
+    [
+      2302,
+      2.3892
+    ],
+    [
+      2335,
+      2.2198
+    ],
+    [
+      2367,
+      1.5888
+    ],
+    [
+      2401,
+      4.1798
+    ],
+    [
+      2433,
+      4.5066
+    ],
+    [
+      2467,
+      3.1908
+    ],
+    [
+      2500,
+      4.5409
+    ],
+    [
+      2535,
+      3.0793
+    ],
+    [
+      2570,
+      4.6792
+    ],
+    [
+      2603,
+      4.8002
+    ],
+    [
+      2635,
+      3.4008
+    ],
+    [
+      2669,
+      5.5121
+    ],
+    [
+      2700,
+      4.5427
+    ],
+    [
+      2735,
+      3.2358
+    ],
+    [
+      2768,
+      5.8042
+    ],
+    [
+      2805,
+      3.6855
+    ],
+    [
+      2840,
+      5.7608
+    ],
+    [
+      2873,
+      6.3956
+    ],
+    [
+      2904,
+      3.5591
+    ],
+    [
+      2936,
+      5.2413
+    ],
+    [
+      2969,
+      4.7976
+    ],
+    [
+      3002,
+      35.2669
+    ],
+    [
+      3035,
+      7.9576
+    ],
+    [
+      3070,
+      8.4499
+    ],
+    [
+      3103,
+      8.1092
+    ],
+    [
+      3135,
+      7.2534
+    ],
+    [
+      3169,
+      6.3756
+    ],
+    [
+      3200,
+      5.9727
+    ],
+    [
+      3235,
+      5.3684
+    ],
+    [
+      3266,
+      5.4322
+    ],
+    [
+      3302,
+      6.1468
+    ],
+    [
+      3338,
+      7.3412
+    ],
+    [
+      3369,
+      8.522
+    ],
+    [
+      3400,
+      8.8134
+    ],
+    [
+      3440,
+      9.0543
+    ],
+    [
+      3471,
+      9.1896
+    ],
+    [
+      3503,
+      9.387
+    ],
+    [
+      3536,
+      10.0908
+    ],
+    [
+      3569,
+      11.2101
+    ],
+    [
+      3602,
+      16.3658
+    ],
+    [
+      3638,
+      12.8544
+    ],
+    [
+      3669,
+      11.5199
+    ],
+    [
+      3701,
+      14.1817
+    ],
+    [
+      3734,
+      12.5117
+    ],
+    [
+      3770,
+      12.7582
+    ],
+    [
+      3802,
+      16.438
+    ],
+    [
+      3837,
+      13.7396
+    ],
+    [
+      3872,
+      15.7956
+    ],
+    [
+      3907,
+      11.9817
+    ],
+    [
+      3941,
+      13.7347
+    ],
+    [
+      3973,
+      11.2275
+    ],
+    [
+      4007,
+      11.3774
+    ],
+    [
+      4042,
+      8.9693
+    ],
+    [
+      4076,
+      8.1933
+    ],
+    [
+      4109,
+      8.4955
+    ],
+    [
+      4139,
+      5.6936
+    ],
+    [
+      4175,
+      6.0795
+    ],
+    [
+      4211,
+      74.8136
+    ],
+    [
+      4264,
+      0.1531
+    ],
+    [
+      4332,
+      0.5657
+    ],
+    [
+      4371,
+      2.7873
+    ],
+    [
+      4402,
+      4.6003
+    ],
+    [
+      4439,
+      9.5696
+    ],
+    [
+      4471,
+      8.8296
+    ],
+    [
+      4504,
+      5.6736
+    ],
+    [
+      4535,
+      3.597
+    ],
+    [
+      4567,
+      3.5376
+    ],
+    [
+      4601,
+      3.0758
+    ],
+    [
+      4634,
+      2.2113
+    ],
+    [
+      4669,
+      4.3406
+    ],
+    [
+      4705,
+      8.1826
+    ],
+    [
+      4739,
+      8.7508
+    ],
+    [
+      4775,
+      6.7557
+    ],
+    [
+      4808,
+      6.9341
+    ],
+    [
+      4843,
+      7.2434
+    ],
+    [
+      4878,
+      9.5931
+    ],
+    [
+      4908,
+      11.0177
+    ],
+    [
+      4938,
+      12.7239
+    ],
+    [
+      4969,
+      13.1594
+    ],
+    [
+      4999,
+      12.4354
+    ],
+    [
+      5037,
+      13.3691
+    ],
+    [
+      5068,
+      17.0745
+    ],
+    [
+      5105,
+      27.8225
+    ],
+    [
+      5136,
+      29.1401
+    ],
+    [
+      5168,
+      31.9713
+    ],
+    [
+      5200,
+      30.0104
+    ],
+    [
+      5233,
+      29.8339
+    ],
+    [
+      5269,
+      31.1246
+    ],
+    [
+      5306,
+      32.2607
+    ],
+    [
+      5343,
+      32.1844
+    ],
+    [
+      5376,
+      27.8975
+    ],
+    [
+      5409,
+      25.638
+    ],
+    [
+      5442,
+      21.7626
+    ],
+    [
+      5475,
+      18.2972
+    ],
+    [
+      5509,
+      15.8163
+    ],
+    [
+      5539,
+      13.4828
+    ],
+    [
+      5572,
+      11.1216
+    ],
+    [
+      5607,
+      9.9771
+    ],
+    [
+      5640,
+      10.4401
+    ],
+    [
+      5672,
+      10.1943
+    ],
+    [
+      5704,
+      10.0017
+    ],
+    [
+      5743,
+      9.8964
+    ],
+    [
+      5776,
+      9.6317
+    ],
+    [
+      5812,
+      8.7085
+    ],
+    [
+      5843,
+      7.4634
+    ],
+    [
+      5873,
+      7.187
+    ],
+    [
+      5904,
+      8.2282
+    ],
+    [
+      5936,
+      9.602
+    ],
+    [
+      5968,
+      8.5488
+    ]
+  ]
+}

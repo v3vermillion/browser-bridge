@@ -1,0 +1,705 @@
+{
+  "what": "holding still",
+  "zero": "recording start",
+  "realMs": 4000,
+  "pageMs": 4000,
+  "slowmo": 1,
+  "conditions": [],
+  "url": "https://www.apple.com/airpods-pro/",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "scale": 2,
+  "clock": "ms relative to t = 0 on the page clock; frames use the compositor swap time",
+  "frames": {
+    "source": "screencast (frames as Chromium paints them)",
+    "received": 107,
+    "inWindow": 107,
+    "picked": 12,
+    "pageFrames": 121,
+    "note": "a screencast sends a frame only when something repaints, so a still page sends few"
+  },
+  "motion": {
+    "startsAt": 74,
+    "endsAt": 3882,
+    "stillMovingAtEnd": true,
+    "biggestChangeAt": 315
+  },
+  "region": null,
+  "explained": {
+    "animatedElements": 0,
+    "media": 100,
+    "elsewhere": 0
+  },
+  "animations": [
+    {
+      "id": 8,
+      "type": "CSSAnimation",
+      "name": "inline-media-spin",
+      "target": "button.play-pause-button::after",
+      "text": null,
+      "startedAt": -1231,
+      "firstSeen": 34,
+      "activeUntil": 3985,
+      "duration": 850,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "steps(8)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        406,
+        16670,
+        36,
+        36
+      ],
+      "boxEnd": [
+        406,
+        16670,
+        36,
+        36
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 9,
+      "type": "CSSAnimation",
+      "name": "inline-media-spin",
+      "target": "button.play-pause-button::after",
+      "text": null,
+      "startedAt": -1231,
+      "firstSeen": 34,
+      "activeUntil": 3985,
+      "duration": 850,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "steps(8)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        1582,
+        16670,
+        36,
+        36
+      ],
+      "boxEnd": [
+        1582,
+        16670,
+        36,
+        36
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 10,
+      "type": "CSSAnimation",
+      "name": "inline-media-spin",
+      "target": "button.play-pause-button::after",
+      "text": null,
+      "startedAt": -1231,
+      "firstSeen": 34,
+      "activeUntil": 3985,
+      "duration": 850,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "steps(8)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        1294,
+        18147,
+        36,
+        36
+      ],
+      "boxEnd": [
+        1294,
+        18147,
+        36,
+        36
+      ],
+      "playState": "running",
+      "visible": false
+    }
+  ],
+  "webFontsLoaded": [],
+  "animationsNotRunning": 7,
+  "layoutShifts": [],
+  "longTasks": [],
+  "load": null,
+  "media": {
+    "libraries": [],
+    "videos": [
+      {
+        "element": "video#welcome-hero-airpods.play-initiated",
+        "box": [
+          0,
+          1,
+          1440,
+          900
+        ],
+        "paused": false,
+        "muted": true,
+        "loop": true,
+        "autoplay": false,
+        "controls": false,
+        "currentTime": 6.86,
+        "duration": 7.5,
+        "readyState": 4,
+        "poster": false,
+        "resolution": [
+          3600,
+          2100
+        ],
+        "textTracks": 0,
+        "src": "www.apple.com/105/media/us/airpods-pro/2025/7acffb13-4adb-40b1-9393-8f1c99bc6c90/anim/hero/large_2x.mp4",
+        "type": null
+      }
+    ],
+    "canvases": [],
+    "iframes": [],
+    "gifs": []
+  },
+  "notes": [
+    "still moving at the end: looping animation(s)",
+    "3 of 3 animation(s) ran off screen, where nobody sees them (inline-media-spin)",
+    "motion the animation list can't describe may come from: 1 video(s); frames are the evidence for those"
+  ],
+  "motionMeasuredIn": "the whole screen",
+  "frameMeta": [
+    {
+      "file": "frames/001_00031ms.jpg",
+      "t": 31,
+      "y": 0,
+      "why": "first · before motion"
+    },
+    {
+      "file": "frames/002_00074ms.jpg",
+      "t": 74,
+      "y": 0,
+      "why": "motion starts"
+    },
+    {
+      "file": "frames/007_00273ms.jpg",
+      "t": 273,
+      "y": 0,
+      "why": "just before biggest change"
+    },
+    {
+      "file": "frames/008_00315ms.jpg",
+      "t": 315,
+      "y": 0,
+      "why": "biggest change"
+    },
+    {
+      "file": "frames/014_00540ms.jpg",
+      "t": 540,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/026_00983ms.jpg",
+      "t": 983,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/035_01379ms.jpg",
+      "t": 1379,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/043_01688ms.jpg",
+      "t": 1688,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/053_02072ms.jpg",
+      "t": 2072,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/070_02697ms.jpg",
+      "t": 2697,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/104_03882ms.jpg",
+      "t": 3882,
+      "y": 0,
+      "why": "still moving"
+    },
+    {
+      "file": "frames/107_03983ms.jpg",
+      "t": 3983,
+      "y": 0,
+      "why": "last"
+    }
+  ],
+  "changeSeries": [
+    [
+      31,
+      0
+    ],
+    [
+      74,
+      19.8988
+    ],
+    [
+      108,
+      8.8026
+    ],
+    [
+      145,
+      8.1789
+    ],
+    [
+      188,
+      8.5939
+    ],
+    [
+      232,
+      5.6474
+    ],
+    [
+      273,
+      6.0645
+    ],
+    [
+      315,
+      74.825
+    ],
+    [
+      358,
+      0.1531
+    ],
+    [
+      391,
+      1.9096
+    ],
+    [
+      427,
+      2.3581
+    ],
+    [
+      465,
+      4.5846
+    ],
+    [
+      502,
+      9.5329
+    ],
+    [
+      540,
+      8.8191
+    ],
+    [
+      579,
+      5.6623
+    ],
+    [
+      617,
+      3.5722
+    ],
+    [
+      656,
+      3.5359
+    ],
+    [
+      689,
+      3.0758
+    ],
+    [
+      722,
+      2.2122
+    ],
+    [
+      759,
+      4.354
+    ],
+    [
+      796,
+      8.1714
+    ],
+    [
+      833,
+      8.7499
+    ],
+    [
+      875,
+      6.7669
+    ],
+    [
+      911,
+      6.9533
+    ],
+    [
+      946,
+      7.2299
+    ],
+    [
+      983,
+      9.5695
+    ],
+    [
+      1023,
+      11.019
+    ],
+    [
+      1062,
+      12.3092
+    ],
+    [
+      1105,
+      13.2512
+    ],
+    [
+      1141,
+      17.0528
+    ],
+    [
+      1180,
+      27.801
+    ],
+    [
+      1227,
+      29.1469
+    ],
+    [
+      1283,
+      31.9685
+    ],
+    [
+      1335,
+      30.013
+    ],
+    [
+      1379,
+      33.365
+    ],
+    [
+      1420,
+      32.2017
+    ],
+    [
+      1453,
+      27.8628
+    ],
+    [
+      1494,
+      25.6258
+    ],
+    [
+      1530,
+      21.7631
+    ],
+    [
+      1572,
+      18.3095
+    ],
+    [
+      1612,
+      15.8276
+    ],
+    [
+      1648,
+      13.4828
+    ],
+    [
+      1688,
+      11.1216
+    ],
+    [
+      1731,
+      16.0874
+    ],
+    [
+      1774,
+      9.8568
+    ],
+    [
+      1816,
+      9.8992
+    ],
+    [
+      1855,
+      9.6381
+    ],
+    [
+      1888,
+      8.6933
+    ],
+    [
+      1922,
+      7.4589
+    ],
+    [
+      1961,
+      7.1595
+    ],
+    [
+      2002,
+      8.2236
+    ],
+    [
+      2039,
+      9.5914
+    ],
+    [
+      2072,
+      8.5789
+    ],
+    [
+      2111,
+      8.9831
+    ],
+    [
+      2148,
+      9.9005
+    ],
+    [
+      2188,
+      28.9469
+    ],
+    [
+      2221,
+      4.4035
+    ],
+    [
+      2259,
+      2.2317
+    ],
+    [
+      2296,
+      2.3699
+    ],
+    [
+      2334,
+      2.1964
+    ],
+    [
+      2371,
+      2.2058
+    ],
+    [
+      2409,
+      2.1281
+    ],
+    [
+      2444,
+      2.0445
+    ],
+    [
+      2481,
+      1.9035
+    ],
+    [
+      2515,
+      1.8738
+    ],
+    [
+      2553,
+      1.6918
+    ],
+    [
+      2587,
+      1.5382
+    ],
+    [
+      2624,
+      1.4986
+    ],
+    [
+      2661,
+      1.2721
+    ],
+    [
+      2697,
+      1.2057
+    ],
+    [
+      2733,
+      1.0247
+    ],
+    [
+      2770,
+      0.99
+    ],
+    [
+      2809,
+      0.8712
+    ],
+    [
+      2842,
+      0.8476
+    ],
+    [
+      2880,
+      0.7177
+    ],
+    [
+      2924,
+      0.6242
+    ],
+    [
+      2965,
+      1.7853
+    ],
+    [
+      2997,
+      0.5337
+    ],
+    [
+      3031,
+      0.5141
+    ],
+    [
+      3064,
+      0.4369
+    ],
+    [
+      3099,
+      0.3676
+    ],
+    [
+      3134,
+      0.449
+    ],
+    [
+      3169,
+      0.3506
+    ],
+    [
+      3204,
+      0.3178
+    ],
+    [
+      3236,
+      0.2754
+    ],
+    [
+      3270,
+      0.2556
+    ],
+    [
+      3303,
+      0.3004
+    ],
+    [
+      3339,
+      0.2177
+    ],
+    [
+      3376,
+      0.2066
+    ],
+    [
+      3412,
+      0.1679
+    ],
+    [
+      3443,
+      0.1893
+    ],
+    [
+      3475,
+      0.1057
+    ],
+    [
+      3509,
+      0.1058
+    ],
+    [
+      3541,
+      0.092
+    ],
+    [
+      3573,
+      0.1089
+    ],
+    [
+      3608,
+      0.1067
+    ],
+    [
+      3642,
+      0.0361
+    ],
+    [
+      3675,
+      0.0115
+    ],
+    [
+      3707,
+      0
+    ],
+    [
+      3741,
+      0
+    ],
+    [
+      3776,
+      0.0114
+    ],
+    [
+      3812,
+      0
+    ],
+    [
+      3848,
+      0
+    ],
+    [
+      3882,
+      0.0113
+    ],
+    [
+      3919,
+      0
+    ],
+    [
+      3951,
+      0
+    ],
+    [
+      3983,
+      0
+    ]
+  ]
+}

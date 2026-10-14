@@ -1,0 +1,171 @@
+{
+  "seq": 3,
+  "action": "watch",
+  "ok": true,
+  "files": [
+    "filmstrip.jpg",
+    "watch.json"
+  ],
+  "frameFiles": [
+    "frames/001_00031ms.jpg",
+    "frames/002_00074ms.jpg",
+    "frames/007_00273ms.jpg",
+    "frames/008_00315ms.jpg",
+    "frames/014_00540ms.jpg",
+    "frames/026_00983ms.jpg",
+    "frames/035_01379ms.jpg",
+    "frames/043_01688ms.jpg",
+    "frames/053_02072ms.jpg",
+    "frames/070_02697ms.jpg",
+    "frames/104_03882ms.jpg",
+    "frames/107_03983ms.jpg"
+  ],
+  "watch": {
+    "what": "holding still",
+    "zero": "recording start",
+    "realMs": 4000,
+    "slowmo": 1,
+    "conditions": [],
+    "frames": {
+      "source": "screencast (frames as Chromium paints them)",
+      "received": 107,
+      "inWindow": 107,
+      "picked": 12,
+      "pageFrames": 121,
+      "note": "a screencast sends a frame only when something repaints, so a still page sends few"
+    },
+    "motion": {
+      "startsAt": 74,
+      "endsAt": 3882,
+      "stillMovingAtEnd": true,
+      "biggestChangeAt": 315
+    },
+    "region": null,
+    "explained": {
+      "animatedElements": 0,
+      "media": 100,
+      "elsewhere": 0
+    },
+    "animations": [
+      {
+        "id": 8,
+        "type": "CSSAnimation",
+        "name": "inline-media-spin",
+        "target": "button.play-pause-button::after",
+        "text": null,
+        "startedAt": -1231,
+        "firstSeen": 34,
+        "activeUntil": 3985,
+        "duration": 850,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": "infinite",
+        "direction": "normal",
+        "fill": "none",
+        "easing": "steps(8)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "rotate(0deg)",
+            "to": "rotate(360deg)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      },
+      {
+        "id": 9,
+        "type": "CSSAnimation",
+        "name": "inline-media-spin",
+        "target": "button.play-pause-button::after",
+        "text": null,
+        "startedAt": -1231,
+        "firstSeen": 34,
+        "activeUntil": 3985,
+        "duration": 850,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": "infinite",
+        "direction": "normal",
+        "fill": "none",
+        "easing": "steps(8)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "rotate(0deg)",
+            "to": "rotate(360deg)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      },
+      {
+        "id": 10,
+        "type": "CSSAnimation",
+        "name": "inline-media-spin",
+        "target": "button.play-pause-button::after",
+        "text": null,
+        "startedAt": -1231,
+        "firstSeen": 34,
+        "activeUntil": 3985,
+        "duration": 850,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": "infinite",
+        "direction": "normal",
+        "fill": "none",
+        "easing": "steps(8)",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "rotate(0deg)",
+            "to": "rotate(360deg)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": false
+      }
+    ],
+    "animationCount": 3,
+    "onScreen": 0,
+    "webFontsLoaded": [],
+    "layoutShifts": 0,
+    "layoutShiftTotal": 0,
+    "longTasks": 0,
+    "load": null,
+    "media": {
+      "libraries": [],
+      "videos": 1,
+      "canvases": 0,
+      "iframes": [],
+      "gifs": 0
+    },
+    "notes": [
+      "still moving at the end: looping animation(s)",
+      "3 of 3 animation(s) ran off screen, where nobody sees them (inline-media-spin)",
+      "motion the animation list can't describe may come from: 1 video(s); frames are the evidence for those"
+    ]
+  },
+  "url": "https://www.apple.com/airpods-pro/",
+  "title": "AirPods Pro 3 - Apple",
+  "scrollY": 0,
+  "scrollX": 0,
+  "pageHeight": 28918,
+  "pageWidth": 1440,
+  "layoutViewport": [
+    1440,
+    900
+  ],
+  "viewport": [
+    1440,
+    900
+  ],
+  "device": "desktop",
+  "ms": 5933
+}

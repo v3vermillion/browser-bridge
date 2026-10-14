@@ -1,0 +1,124 @@
+{
+  "seq": 1,
+  "action": "watch",
+  "ok": true,
+  "files": [
+    "filmstrip.jpg",
+    "watch.json"
+  ],
+  "cacheCleared": true,
+  "frameFiles": [
+    "frames/001_00995ms.jpg",
+    "frames/002_01008ms.jpg",
+    "frames/004_01573ms.jpg",
+    "frames/005_02075ms.jpg",
+    "frames/006_03656ms.jpg",
+    "frames/010_04748ms.jpg",
+    "frames/012_04782ms.jpg",
+    "frames/015_04832ms.jpg",
+    "frames/018_04882ms.jpg",
+    "frames/021_04933ms.jpg",
+    "frames/024_04983ms.jpg"
+  ],
+  "watch": {
+    "what": "page load",
+    "zero": "navigation start",
+    "realMs": 5000,
+    "slowmo": 1,
+    "conditions": [
+      "network 4g"
+    ],
+    "frames": {
+      "source": "screencast (frames as Chromium paints them)",
+      "received": 25,
+      "inWindow": 24,
+      "picked": 11,
+      "pageFrames": 243,
+      "note": "a screencast sends a frame only when something repaints, so a still page sends few"
+    },
+    "motion": {
+      "startsAt": 1008,
+      "endsAt": 4983,
+      "stillMovingAtEnd": true,
+      "biggestChangeAt": 2075
+    },
+    "region": null,
+    "explained": {
+      "animatedElements": 89,
+      "media": 7,
+      "elsewhere": 4
+    },
+    "animations": [
+      {
+        "id": 1,
+        "type": "CSSTransition",
+        "name": "transform",
+        "target": "div#CybotCookiebotDialog.CybotEdge.CybotMultilevel",
+        "text": "ConsentDetails[#IABV2SETTINGS#]AboutThis",
+        "startedAt": 4608,
+        "firstSeen": 4609,
+        "activeUntil": 4992,
+        "duration": 500,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "ease",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "transform",
+            "from": "translate(-50%, 50%)",
+            "to": "translate(-50%, -100%)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running"
+      }
+    ],
+    "animationCount": 1,
+    "layoutShifts": 2,
+    "layoutShiftTotal": 0.0395,
+    "longTasks": 0,
+    "load": {
+      "firstPaint": 1000,
+      "firstContentfulPaint": 1000,
+      "largestContentfulPaint": {
+        "t": 1000,
+        "element": "video.hero-video-el.lg:absolute"
+      },
+      "domContentLoaded": 1011,
+      "loadEvent": null,
+      "note": "ms since navigation start; 0 / null = not reached within the recording"
+    },
+    "media": {
+      "libraries": [],
+      "videos": 1,
+      "canvases": 0,
+      "iframes": [],
+      "gifs": 0
+    },
+    "notes": [
+      "still moving at the end: record longer to see where it settles",
+      "motion the animation list can't describe may come from: 1 video(s); frames are the evidence for those"
+    ]
+  },
+  "url": "https://www.brightplan.com/",
+  "title": "Home - BrightPlan",
+  "scrollY": 0,
+  "scrollX": 0,
+  "pageHeight": 5351,
+  "pageWidth": 1440,
+  "layoutViewport": [
+    1440,
+    900
+  ],
+  "viewport": [
+    1440,
+    900
+  ],
+  "blockedWrites": 8,
+  "device": "desktop",
+  "ms": 5887
+}

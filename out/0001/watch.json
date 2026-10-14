@@ -1,0 +1,343 @@
+{
+  "what": "page load",
+  "zero": "navigation start",
+  "realMs": 5000,
+  "pageMs": 5000,
+  "slowmo": 1,
+  "conditions": [
+    "network 4g"
+  ],
+  "url": "https://www.brightplan.com/",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "scale": 2,
+  "clock": "ms relative to t = 0 on the page clock; frames use the compositor swap time",
+  "frames": {
+    "source": "screencast (frames as Chromium paints them)",
+    "received": 25,
+    "inWindow": 24,
+    "picked": 11,
+    "pageFrames": 243,
+    "note": "a screencast sends a frame only when something repaints, so a still page sends few"
+  },
+  "motion": {
+    "startsAt": 1008,
+    "endsAt": 4983,
+    "stillMovingAtEnd": true,
+    "biggestChangeAt": 2075
+  },
+  "region": null,
+  "explained": {
+    "animatedElements": 89,
+    "media": 7,
+    "elsewhere": 4
+  },
+  "animations": [
+    {
+      "id": 1,
+      "type": "CSSTransition",
+      "name": "transform",
+      "target": "div#CybotCookiebotDialog.CybotEdge.CybotMultilevel",
+      "text": "ConsentDetails[#IABV2SETTINGS#]AboutThis",
+      "startedAt": 4608,
+      "firstSeen": 4609,
+      "activeUntil": 4992,
+      "duration": 500,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "translate(-50%, 50%)",
+          "to": "translate(-50%, -100%)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        0,
+        1058,
+        1440,
+        315
+      ],
+      "boxEnd": [
+        0,
+        601,
+        1440,
+        315
+      ],
+      "playState": "running"
+    }
+  ],
+  "animationsNotRunning": 0,
+  "layoutShifts": [
+    {
+      "t": 2063,
+      "value": 0.0389,
+      "afterInput": false,
+      "sources": [
+        {
+          "element": "video.hero-video-el.lg:absolute",
+          "fromY": 181,
+          "toY": 104,
+          "fromH": 573,
+          "toH": 650
+        },
+        {
+          "element": "section.bg-primary.py-8",
+          "fromY": 831,
+          "toY": 754,
+          "fromH": 70,
+          "toH": 146
+        },
+        {
+          "element": "div",
+          "fromY": 543,
+          "toY": 466,
+          "fromH": 79,
+          "toH": 79
+        },
+        {
+          "element": "#text",
+          "fromY": 377,
+          "toY": 302,
+          "fromH": 76,
+          "toH": 76
+        }
+      ]
+    },
+    {
+      "t": 3647,
+      "value": 0.0006,
+      "afterInput": false,
+      "sources": [
+        {
+          "element": "div.navbar-collapse",
+          "fromY": 24,
+          "toY": 24,
+          "fromH": 26,
+          "toH": 26
+        }
+      ]
+    }
+  ],
+  "longTasks": [],
+  "load": {
+    "firstPaint": 1000,
+    "firstContentfulPaint": 1000,
+    "largestContentfulPaint": {
+      "t": 1000,
+      "element": "video.hero-video-el.lg:absolute"
+    },
+    "domContentLoaded": 1011,
+    "loadEvent": null,
+    "note": "ms since navigation start; 0 / null = not reached within the recording"
+  },
+  "media": {
+    "libraries": [],
+    "videos": [
+      {
+        "element": "video.hero-video-el.lg:absolute",
+        "box": [
+          632,
+          104,
+          1000,
+          778
+        ],
+        "paused": true,
+        "muted": true,
+        "loop": true,
+        "autoplay": false,
+        "controls": false,
+        "currentTime": 0,
+        "duration": null,
+        "readyState": 0,
+        "poster": true,
+        "resolution": [
+          0,
+          0
+        ],
+        "textTracks": 0
+      }
+    ],
+    "canvases": [],
+    "iframes": [],
+    "gifs": []
+  },
+  "notes": [
+    "still moving at the end: record longer to see where it settles",
+    "motion the animation list can't describe may come from: 1 video(s); frames are the evidence for those"
+  ],
+  "frameMeta": [
+    {
+      "file": "frames/001_00995ms.jpg",
+      "t": 995,
+      "y": 0,
+      "why": "first · before motion"
+    },
+    {
+      "file": "frames/002_01008ms.jpg",
+      "t": 1008,
+      "y": 0,
+      "why": "motion starts"
+    },
+    {
+      "file": "frames/004_01573ms.jpg",
+      "t": 1573,
+      "y": 0,
+      "why": "just before biggest change"
+    },
+    {
+      "file": "frames/005_02075ms.jpg",
+      "t": 2075,
+      "y": 0,
+      "why": "biggest change"
+    },
+    {
+      "file": "frames/006_03656ms.jpg",
+      "t": 3656,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/010_04748ms.jpg",
+      "t": 4748,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/012_04782ms.jpg",
+      "t": 4782,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/015_04832ms.jpg",
+      "t": 4832,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/018_04882ms.jpg",
+      "t": 4882,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/021_04933ms.jpg",
+      "t": 4933,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/024_04983ms.jpg",
+      "t": 4983,
+      "y": 0,
+      "why": "still moving · last"
+    }
+  ],
+  "changeSeries": [
+    [
+      995,
+      0
+    ],
+    [
+      1008,
+      16.0373
+    ],
+    [
+      1017,
+      0
+    ],
+    [
+      1573,
+      0
+    ],
+    [
+      2075,
+      34.5988
+    ],
+    [
+      3656,
+      0.1863
+    ],
+    [
+      4698,
+      0
+    ],
+    [
+      4714,
+      0
+    ],
+    [
+      4732,
+      4.2422
+    ],
+    [
+      4748,
+      8.6586
+    ],
+    [
+      4765,
+      8.3613
+    ],
+    [
+      4782,
+      8.9626
+    ],
+    [
+      4799,
+      9.0568
+    ],
+    [
+      4815,
+      4.5464
+    ],
+    [
+      4832,
+      4.3944
+    ],
+    [
+      4849,
+      4.8584
+    ],
+    [
+      4866,
+      5.1955
+    ],
+    [
+      4882,
+      5.0616
+    ],
+    [
+      4899,
+      5.2524
+    ],
+    [
+      4916,
+      5.0371
+    ],
+    [
+      4933,
+      4.7732
+    ],
+    [
+      4950,
+      4.9784
+    ],
+    [
+      4966,
+      4.7581
+    ],
+    [
+      4983,
+      4.435
+    ]
+  ]
+}

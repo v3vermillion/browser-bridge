@@ -1,0 +1,596 @@
+{
+  "what": "page load",
+  "zero": "navigation start",
+  "realMs": 6000,
+  "pageMs": 6000,
+  "slowmo": 1,
+  "conditions": [
+    "network 4g"
+  ],
+  "url": "https://www.brightplan.com/",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "scale": 2,
+  "clock": "ms relative to t = 0 on the page clock; frames use the compositor swap time",
+  "frames": {
+    "source": "screencast (frames as Chromium paints them)",
+    "received": 20,
+    "inWindow": 19,
+    "picked": 11,
+    "pageFrames": 256,
+    "note": "a screencast sends a frame only when something repaints, so a still page sends few"
+  },
+  "motion": {
+    "startsAt": 2805,
+    "endsAt": 5990,
+    "stillMovingAtEnd": true,
+    "biggestChangeAt": 2805
+  },
+  "region": null,
+  "explained": {
+    "animatedElements": 86,
+    "media": 9,
+    "elsewhere": 5
+  },
+  "animations": [
+    {
+      "id": 8,
+      "type": "CSSTransition",
+      "name": "transform",
+      "target": "div#CybotCookiebotDialog.CybotEdge.CybotMultilevel",
+      "text": "Consent Details [#IABV2SETTINGS#] About ",
+      "startedAt": 5679,
+      "firstSeen": 5686,
+      "activeUntil": 5996,
+      "duration": 500,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "translate(-50%, 50%)",
+          "to": "translate(-50%, -100%)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        0,
+        1058,
+        1440,
+        315
+      ],
+      "boxEnd": [
+        0,
+        629,
+        1440,
+        315
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 1,
+      "type": "CSSAnimation",
+      "name": "clockwiseSpin",
+      "target": "div.absolute.inset-0",
+      "text": null,
+      "startedAt": 1762,
+      "firstSeen": 1737,
+      "activeUntil": 5996,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        96,
+        4035,
+        405,
+        405
+      ],
+      "boxEnd": [
+        54,
+        3891,
+        490,
+        490
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 2,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": 1762,
+      "firstSeen": 1749,
+      "activeUntil": 5996,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        162,
+        4052,
+        42,
+        42
+      ],
+      "boxEnd": [
+        410,
+        3963,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 3,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": 1762,
+      "firstSeen": 1750,
+      "activeUntil": 5996,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        393,
+        4052,
+        42,
+        42
+      ],
+      "boxEnd": [
+        465,
+        4187,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 4,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": 1762,
+      "firstSeen": 1750,
+      "activeUntil": 5996,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        478,
+        4237,
+        42,
+        42
+      ],
+      "boxEnd": [
+        305,
+        4314,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 5,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": 1762,
+      "firstSeen": 1750,
+      "activeUntil": 5996,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        393,
+        4381,
+        42,
+        42
+      ],
+      "boxEnd": [
+        145,
+        4266,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 6,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": 1762,
+      "firstSeen": 1750,
+      "activeUntil": 5996,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        162,
+        4381,
+        42,
+        42
+      ],
+      "boxEnd": [
+        90,
+        4042,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 7,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": 1762,
+      "firstSeen": 1750,
+      "activeUntil": 5996,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        77,
+        4237,
+        42,
+        42
+      ],
+      "boxEnd": [
+        209,
+        3925,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    }
+  ],
+  "webFontsLoaded": [],
+  "animationsNotRunning": 0,
+  "layoutShifts": [
+    {
+      "t": 2787,
+      "value": 0.0389,
+      "afterInput": false,
+      "sources": [
+        {
+          "element": "video.hero-video-el.lg:absolute",
+          "fromY": 181,
+          "toY": 104,
+          "fromH": 573,
+          "toH": 650
+        },
+        {
+          "element": "section.bg-primary.py-8",
+          "fromY": 831,
+          "toY": 754,
+          "fromH": 70,
+          "toH": 146
+        },
+        {
+          "element": "div",
+          "fromY": 543,
+          "toY": 466,
+          "fromH": 79,
+          "toH": 79
+        },
+        {
+          "element": "#text",
+          "fromY": 377,
+          "toY": 302,
+          "fromH": 76,
+          "toH": 76
+        }
+      ]
+    }
+  ],
+  "longTasks": [],
+  "load": {
+    "firstPaint": 1792,
+    "firstContentfulPaint": 1792,
+    "largestContentfulPaint": {
+      "t": 1792,
+      "element": "video.hero-video-el.lg:absolute"
+    },
+    "domContentLoaded": 1784,
+    "loadEvent": null,
+    "webFontsLoaded": [],
+    "note": "ms since navigation start; 0 / null = not reached within the recording"
+  },
+  "media": {
+    "libraries": [],
+    "videos": [
+      {
+        "element": "video.hero-video-el.lg:absolute",
+        "box": [
+          632,
+          104,
+          1000,
+          778
+        ],
+        "paused": true,
+        "muted": true,
+        "loop": true,
+        "autoplay": false,
+        "controls": false,
+        "currentTime": 0,
+        "duration": null,
+        "readyState": 0,
+        "poster": true,
+        "resolution": [
+          0,
+          0
+        ],
+        "textTracks": 0,
+        "src": null,
+        "type": null
+      }
+    ],
+    "canvases": [],
+    "iframes": [],
+    "gifs": []
+  },
+  "notes": [
+    "still moving at the end: looping animation(s)",
+    "7 of 8 animation(s) ran off screen, where nobody sees them (clockwiseSpin, counterSpin)",
+    "video video.hero-video-el.lg:absolute isn't playing (paused, no data loaded; its poster image is what shows).",
+    "motion the animation list can't describe may come from: 1 video(s); frames are the evidence for those"
+  ],
+  "frameMeta": [
+    {
+      "file": "frames/001_01791ms.jpg",
+      "t": 1791,
+      "y": 0,
+      "why": "first"
+    },
+    {
+      "file": "frames/003_02353ms.jpg",
+      "t": 2353,
+      "y": 0,
+      "why": "before motion · just before biggest change"
+    },
+    {
+      "file": "frames/004_02805ms.jpg",
+      "t": 2805,
+      "y": 0,
+      "why": "motion starts · biggest change"
+    },
+    {
+      "file": "frames/008_05804ms.jpg",
+      "t": 5804,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/009_05823ms.jpg",
+      "t": 5823,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/011_05856ms.jpg",
+      "t": 5856,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/012_05874ms.jpg",
+      "t": 5874,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/014_05908ms.jpg",
+      "t": 5908,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/016_05939ms.jpg",
+      "t": 5939,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/018_05975ms.jpg",
+      "t": 5975,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/019_05990ms.jpg",
+      "t": 5990,
+      "y": 0,
+      "why": "still moving · last"
+    }
+  ],
+  "changeSeries": [
+    [
+      1791,
+      0
+    ],
+    [
+      1805,
+      0
+    ],
+    [
+      2353,
+      0
+    ],
+    [
+      2805,
+      34.5707
+    ],
+    [
+      5698,
+      0
+    ],
+    [
+      5768,
+      0
+    ],
+    [
+      5785,
+      0
+    ],
+    [
+      5804,
+      4.2422
+    ],
+    [
+      5823,
+      8.6586
+    ],
+    [
+      5840,
+      8.3675
+    ],
+    [
+      5856,
+      8.9903
+    ],
+    [
+      5874,
+      9.0568
+    ],
+    [
+      5891,
+      4.5464
+    ],
+    [
+      5908,
+      4.3943
+    ],
+    [
+      5922,
+      4.8585
+    ],
+    [
+      5939,
+      5.1956
+    ],
+    [
+      5958,
+      5.0616
+    ],
+    [
+      5975,
+      5.2621
+    ],
+    [
+      5990,
+      5.0486
+    ]
+  ]
+}

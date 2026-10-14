@@ -1,0 +1,19 @@
+{
+  "id": "bp2",
+  "state": "starting",
+  "config": {
+    "device": "desktop",
+    "browser": "chrome",
+    "detail": 2,
+    "idleMinutes": 2,
+    "maxMinutes": 10,
+    "hide": [],
+    "blockWrites": true,
+    "prescroll": true,
+    "url": "https://www.brightplan.com/"
+  },
+  "startedAt": "2026-10-14T20:17:03.451Z",
+  "endsAt": "2026-10-14T20:27:03.451Z",
+  "lastSeq": -1,
+  "updatedAt": "2026-10-14T20:17:03.942Z"
+}

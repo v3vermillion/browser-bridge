@@ -72,7 +72,7 @@ async function openContext(deviceName, url) {
   }
   page = await context.newPage();
   // cfg.cdp === false makes Chromium behave like WebKit/Firefox (no protocol access); used to test those paths.
-  cdp = cfg.browser === 'chromium' && cfg.cdp !== false ? await context.newCDPSession(page) : null;
+  cdp = (cfg.browser === 'chromium' || cfg.browser === 'chrome') && cfg.cdp !== false ? await context.newCDPSession(page) : null;
   cfg.device = deviceName;
   if (url) {
     await page.goto(url, { waitUntil: 'load', timeout: 45000 });
@@ -409,7 +409,19 @@ const watchCollector = (opts) => {
   const num = (v) => (typeof v === 'number' ? (Number.isFinite(v) ? Math.round(v * 10) / 10 : String(v)) : v == null ? null : String(v));
   const box = (el) => { try { const r = el.getBoundingClientRect(); return [Math.round(r.left), Math.round(r.top), Math.round(r.width), Math.round(r.height)]; } catch { return null; } };
   const rel = () => Math.round(performance.now() - W.t0);
-  W.desc = desc; W.box = box; W.rate = rate;
+  // The element's first words, from its text nodes (not innerText, which forces a layout on every big animated
+  // wrapper; not textContent, which includes script/noscript source).
+  const textOf = (el) => {
+    let out = '';
+    try {
+      const walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, { acceptNode: (n) => (/^(SCRIPT|STYLE|NOSCRIPT|TEMPLATE)$/.test(n.parentNode?.nodeName || '') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT) });
+      for (let n = walk.nextNode(); n && out.length < 60; n = walk.nextNode()) out += ' ' + n.nodeValue;
+    } catch {}
+    return out.trim().replace(/\s+/g, ' ').slice(0, 40) || null;
+  };
+  // Whether an element was on screen; off-screen animations run but nobody sees them.
+  const onScreen = (b) => !!b && b[2] > 0 && b[3] > 0 && b[0] < innerWidth && b[1] < innerHeight && b[0] + b[2] > 0 && b[1] + b[3] > 0;
+  W.desc = desc; W.box = box; W.rate = rate; W.onScreen = onScreen;
   const record = (a) => {
     let rec = seen.get(a);
     if (!rec) {
@@ -429,8 +441,7 @@ const watchCollector = (opts) => {
         type: (a.constructor && a.constructor.name) || 'Animation',
         name: a.animationName || a.transitionProperty || a.id || null,
         target: (desc(tgt) || '?') + (e && e.pseudoElement ? e.pseudoElement : ''),
-        // textContent, not innerText: innerText forces a layout, which adds up on big animated wrappers.
-        text: tgt && tgt.textContent ? tgt.textContent.slice(0, 200).trim().replace(/\s+/g, ' ').slice(0, 40) || null : null,
+        text: tgt ? textOf(tgt) : null,
         startedAt: started(a),
         firstSeen: rel(), activeUntil: rel(),
         duration: num(timing.duration), delay: num(timing.delay), endDelay: num(timing.endDelay) || 0,
@@ -447,6 +458,7 @@ const watchCollector = (opts) => {
         })),
         boxStart: tgt ? box(tgt) : null, boxEnd: null, playState: a.playState,
       };
+      rec.visible = onScreen(rec.boxStart);
       seen.set(a, rec);
       W.anims.push(rec);
       if (rate !== 1 && !opts.rateByProtocol) {
@@ -463,7 +475,7 @@ const watchCollector = (opts) => {
     if (performance.now() - W.t0 > (Number(opts.maxMs) || 30000)) { W.stopped = true; return; }   // safety: never outlive the recording
     W.ticks++;
     try { for (const a of document.getAnimations()) record(a); } catch {}
-    if (W.ticks % 6 === 0) for (const [a, r] of seen) if (a.playState === 'running' && a.effect && a.effect.target) r.boxEnd = box(a.effect.target);
+    if (W.ticks % 6 === 0) for (const [a, r] of seen) if (a.playState === 'running' && a.effect && a.effect.target) { r.boxEnd = box(a.effect.target); if (onScreen(r.boxEnd)) r.visible = true; }
     requestAnimationFrame(tick);
   };
   requestAnimationFrame(tick);
@@ -475,6 +487,12 @@ const watchCollector = (opts) => {
     W.shifts.push({ t: Math.round(e.startTime - W.t0), value: +e.value.toFixed(4), afterInput: e.hadRecentInput, sources: (e.sources || []).slice(0, 4).map((x) => ({ element: desc(x.node), fromY: x.previousRect ? Math.round(x.previousRect.y) : null, toY: x.currentRect ? Math.round(x.currentRect.y) : null, fromH: x.previousRect ? Math.round(x.previousRect.height) : null, toH: x.currentRect ? Math.round(x.currentRect.height) : null })) });
   });
   observe('longtask', (e) => { if (e.startTime >= W.t0 && W.longTasks.length < 40) W.longTasks.push({ t: Math.round(e.startTime - W.t0), ms: Math.round(e.duration) }); });
+  W.fonts = [];
+  try {
+    document.fonts.addEventListener('loadingdone', (e) => {
+      if (!W.stopped && W.fonts.length < 20) W.fonts.push({ t: rel(), families: [...new Set((e.fontfaces || []).map((f) => f.family.replace(/["']/g, '')))].slice(0, 6) });
+    });
+  } catch {}
   if (opts.load) {
     observe('paint', (e) => { W.paints[e.name] = Math.round(e.startTime); });
     observe('largest-contentful-paint', (e) => { W.lcp = { t: Math.round(e.startTime), element: desc(e.element), size: e.size }; });
@@ -488,7 +506,7 @@ const watchCollect = () => {
   if (!W) return null;
   W.stopped = true;
   for (const [a, r] of W.seen) {
-    if (a.effect && a.effect.target && a.playState === 'running') r.boxEnd = W.box(a.effect.target);
+    if (a.effect && a.effect.target && a.playState === 'running') { r.boxEnd = W.box(a.effect.target); if (W.onScreen(r.boxEnd)) r.visible = true; }
     if (r.slowed) { try { a.updatePlaybackRate(a.playbackRate / W.rate); } catch { try { a.playbackRate /= W.rate; } catch {} } }
   }
   const vw = innerWidth, vh = innerHeight;
@@ -513,14 +531,18 @@ const watchCollect = () => {
     element: W.desc(v), box: vis(v), paused: v.paused, muted: v.muted, loop: v.loop, autoplay: v.autoplay, controls: v.controls,
     currentTime: +v.currentTime.toFixed(2), duration: Number.isFinite(v.duration) ? +v.duration.toFixed(2) : null,
     readyState: v.readyState, poster: !!v.poster, resolution: [v.videoWidth, v.videoHeight], textTracks: v.textTracks ? v.textTracks.length : 0,
+    src: (v.currentSrc || v.querySelector('source')?.src || '').replace(/^https?:\/\//, '').slice(0, 120) || null,
+    type: v.querySelector('source')?.type || null,
   })).filter((v) => v.box).slice(0, 10);
   const canvases = [...document.querySelectorAll('canvas')].map((cv) => ({ element: W.desc(cv), box: vis(cv) })).filter((x) => x.box).slice(0, 10);
   const iframes = [...document.querySelectorAll('iframe')].map((f) => { let host = null; try { host = new URL(f.src, location.href).host; } catch {} return { host, box: vis(f) }; }).filter((x) => x.box).slice(0, 10);
   const gifs = [...document.querySelectorAll('img')].filter((i) => /\.gif(\?|#|$)/i.test(i.currentSrc || i.src || '') && vis(i)).map((i) => ({ element: W.desc(i), box: vis(i) })).slice(0, 10);
   // Animations that had already finished (and only hold their end state) or never ran aren't motion in this recording.
-  const ran = W.anims.filter((r) => r.ran);
+  const ran = W.anims.filter((r) => r.ran).sort((a, b) => (b.visible ? 1 : 0) - (a.visible ? 1 : 0));
   return {
     origin: W.origin, t0: W.t0, ticks: W.ticks,
+    fonts: W.fonts,
+    canPlayH264: (() => { try { return document.createElement('video').canPlayType('video/mp4; codecs="avc1.42E01E"') !== ''; } catch { return null; } })(),
     animations: ran.map(({ ran: _r, slowed: _s, ...r }) => r), notRunning: W.anims.length - ran.length, shifts: W.shifts, longTasks: W.longTasks, paints: W.paints, lcp: W.lcp,
     load: performance.getEntriesByType('navigation').map((n) => ({ domContentLoaded: Math.round(n.domContentLoadedEventEnd), loadEvent: Math.round(n.loadEventEnd) }))[0] || null,
     media: { libraries, videos, canvases, iframes, gifs },
@@ -911,7 +933,14 @@ async function watch(c, dir, res) {
   if (scrolled) notes.push('the page scrolled during the recording, so frames are not cropped');
   if (rate !== 1) notes.push(`slow motion ${rate}x applies to CSS and Web Animations; script-driven motion (GSAP, canvas, video) ran at normal speed`);
   const explained = scrolled ? null : explainChange(dims, energy, vp, collected ? { ...collected, animations } : null);
+  const offScreen = animations.filter((a) => !a.visible);
+  if (offScreen.length) notes.push(`${offScreen.length} of ${animations.length} animation(s) ran off screen, where nobody sees them (${[...new Set(offScreen.map((a) => a.name).filter(Boolean))].slice(0, 5).join(', ')})`);
   const m = collected?.media;
+  for (const v of m?.videos || []) {
+    if (!v.paused || v.readyState > 1) continue;
+    const codec = collected.canPlayH264 === false ? ` This browser can't play H.264 (MP4) video, which most sites use; a video that plays in Chrome or Safari may not play here. Start the session with --browser chrome (or webkit) to watch it.` : '';
+    notes.push(`video ${v.element} isn't playing (paused, ${v.readyState === 0 ? 'no data loaded' : 'only metadata loaded'}${v.poster ? '; its poster image is what shows' : ''}).${codec}`);
+  }
   if (m && (m.libraries.length || m.canvases.length || m.videos.length || m.gifs.length)) {
     const parts = [...m.libraries, m.videos.length && `${m.videos.length} video(s)`, m.canvases.length && `${m.canvases.length} canvas(es)`, m.gifs.length && `${m.gifs.length} GIF(s)`].filter(Boolean);
     notes.push(`motion the animation list can't describe may come from: ${parts.join(', ')}; frames are the evidence for those`);
@@ -942,10 +971,12 @@ async function watch(c, dir, res) {
     res.files.push('filmstrip.jpg');
   }
 
+  const fonts = (collected?.fonts || []).map((f) => ({ ...f, t: fromCollector(f.t) }));
   const load = fresh && collected ? {
     firstPaint: collected.paints['first-paint'] ?? null, firstContentfulPaint: collected.paints['first-contentful-paint'] ?? null,
     largestContentfulPaint: collected.lcp ? { t: collected.lcp.t, element: collected.lcp.element } : null,
     domContentLoaded: collected.load?.domContentLoaded || null, loadEvent: collected.load?.loadEvent || null,
+    webFontsLoaded: fonts,
     note: 'ms since navigation start; 0 / null = not reached within the recording',
   } : null;
   if (load) for (const k of ['firstPaint', 'firstContentfulPaint']) if (load[k] !== null) load[k] = fromOrigin(load[k]);
@@ -955,14 +986,15 @@ async function watch(c, dir, res) {
     what, zero: zeroIs, realMs, pageMs: Math.round(realMs * rate), slowmo: rate, conditions, url: page.url(), viewport: vp, scale: cfg.detail || 1,
     clock: 'ms relative to t = 0 on the page clock; frames use the compositor swap time',
     frames: { source, received: rec.received, inWindow: frames.length, picked: order.length, pageFrames: collected?.ticks ?? null, note: 'a screencast sends a frame only when something repaints, so a still page sends few' },
-    motion, region, explained, animations, animationsNotRunning: collected?.notRunning ?? null, layoutShifts: shifts, longTasks, load, media: m || null, notes,
+    motion, region, explained, animations, webFontsLoaded: fonts, animationsNotRunning: collected?.notRunning ?? null, layoutShifts: shifts, longTasks, load, media: m || null, notes,
     frameMeta, changeSeries: frames.map((f, i) => [f.t, series[i] ? series[i].e : 0]),
   };
   await writeJson(path.join(dir, 'watch.json'), full);
   res.files.push('watch.json');
   res.watch = {
     what, zero: zeroIs, realMs, slowmo: rate, conditions, frames: full.frames, motion, region, explained,
-    animations: animations.slice(0, 15).map(({ boxStart, boxEnd, ...a }) => a), animationCount: animations.length,
+    animations: animations.slice(0, 15).map(({ boxStart, boxEnd, ...a }) => a), animationCount: animations.length, onScreen: animations.filter((a) => a.visible).length,
+    webFontsLoaded: fonts,
     layoutShifts: shifts.length, layoutShiftTotal: +shifts.reduce((a, s) => a + s.value, 0).toFixed(4), longTasks: longTasks.length,
     load, media: m ? { libraries: m.libraries, videos: m.videos.length, canvases: m.canvases.length, iframes: m.iframes.map((f) => f.host), gifs: m.gifs.length } : null, notes,
   };
@@ -1185,8 +1217,7 @@ async function main() {
   await publish('session starting', status);
 
   try {
-    if (!ENGINES[cfg.browser]) throw new Error(`Unknown browser "${cfg.browser}"`);
-    browser = await ENGINES[cfg.browser].launch(launchOptions());
+    browser = await launchBrowser();
     await openContext(cfg.device, cfg.url);
   } catch (e) {
     await publish('session failed', { ...status, state: 'failed', error: String(e.message || e).split('\n')[0], updatedAt: nowIso() });
@@ -1235,14 +1266,20 @@ async function main() {
   console.log(`session ${ID} ended: ${reason}`);
 }
 
-const launchOptions = () => (cfg.browser === 'chromium' && process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH, args: ['--no-sandbox'] } : {});
+// 'chrome' is Google Chrome (preinstalled on GitHub's Ubuntu runners): the same engine as Chromium, plus the
+// proprietary codecs (H.264/AAC) most site videos use, which Playwright's own Chromium build doesn't have.
+async function launchBrowser() {
+  if (cfg.browser === 'chrome') return ENGINES.chromium.launch({ channel: 'chrome' });
+  if (!ENGINES[cfg.browser]) throw new Error(`Unknown browser "${cfg.browser}" (chromium | chrome | webkit | firefox)`);
+  return ENGINES[cfg.browser].launch(cfg.browser === 'chromium' && process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH, args: ['--no-sandbox'] } : {});
+}
 
 // Local driver for tests and development: the same engine without the git channel.
 // Results go to <outDir>/<seq>/ exactly as they would on the session's results branch.
 export async function startLocal({ url, outDir, ...overrides }) {
   Object.assign(cfg, overrides);
   outDirFor = (seq) => path.join(outDir, String(seq).padStart(4, '0'));
-  browser = await ENGINES[cfg.browser].launch(launchOptions());
+  browser = await launchBrowser();
   await openContext(cfg.device, url);
   return { execute: (c) => (Array.isArray(c.actions) ? executeBatch(c) : execute(c)), page: () => page, close: () => browser.close() };
 }

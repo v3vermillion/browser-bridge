@@ -406,16 +406,24 @@ def print_watch(w):
         print(f"  visible change: {ex['animatedElements']}% on elements in the animation list, {ex['media']}% in video/canvas/iframes/GIFs, "
               f"{ex['elsewhere']}% elsewhere (script-driven styles, loading, layout)")
     anims = w.get("animations") or []
-    print(f"  animations the browser reported: {w.get('animationCount', len(anims))}" + (" (none: any motion here was made by scripts or media)" if not anims else ""))
-    for a in anims[:12]:
+    shown = [a for a in anims if a.get("visible", True)]
+    n = w.get("animationCount", len(anims))
+    print(f"  animations the browser reported: {n}" + (f", {w['onScreen']} on screen" if "onScreen" in w and w["onScreen"] != n else "")
+          + (" (none: any motion here was made by scripts or media)" if not anims else ""))
+    for a in shown[:12]:
         print(f"    {describe_animation(a)}")
+    if len(shown) < len(anims):
+        print(f"    ... plus {n - len(shown)} off screen (listed in watch.json)")
     if w.get("animationCount", 0) > 12:
         print(f"    ... {w['animationCount'] - 12} more in watch.json")
     ld = w.get("load")
     if ld:
         lcp = ld.get("largestContentfulPaint") or {}
-        print(f"  load: first contentful paint {_secs(ld.get('firstContentfulPaint'))}, largest contentful paint {_secs(lcp.get('t'))}"
-              f"{' (' + lcp['element'] + ')' if lcp.get('element') else ''}, load event {_secs(ld.get('loadEvent') or None)}")
+        done = lambda t: _secs(t) if t else "not reached during the recording"
+        print(f"  load: first contentful paint {done(ld.get('firstContentfulPaint'))}, largest contentful paint {done(lcp.get('t'))}"
+              f"{' (' + lcp['element'] + ')' if lcp.get('element') else ''}, load event {done(ld.get('loadEvent'))}")
+    for f in w.get("webFontsLoaded") or []:
+        print(f"  web fonts finished loading {_secs(f.get('t'))}: {', '.join(f.get('families') or [])} (text set in them may reflow then)")
     print(f"  layout shifts: {w.get('layoutShifts', 0)} (total {w.get('layoutShiftTotal', 0)}); long tasks: {w.get('longTasks', 0)}")
     for n in w.get("notes") or []:
         print(f"  note: {n}")
@@ -798,7 +806,8 @@ def main():
     st = ss.add_parser("start")
     st.add_argument("--url", required=True)
     st.add_argument("--device", default="desktop", help="desktop | laptop | tablet | mobile | android | Playwright device name")
-    st.add_argument("--browser", default="chromium", choices=["chromium", "webkit", "firefox"])
+    st.add_argument("--browser", default="chromium", choices=["chromium", "chrome", "webkit", "firefox"],
+                    help="chrome = Google Chrome: plays H.264/MP4 video, which Playwright's chromium can't")
     st.add_argument("--detail", type=int, default=2, help="pixel ratio for zoom crops (default 2)")
     st.add_argument("--minutes", type=int, default=30, help="max session length (cap 60)")
     st.add_argument("--idle", type=int, default=10, help="auto-close after this many idle minutes")

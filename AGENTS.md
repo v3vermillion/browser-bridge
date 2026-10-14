@@ -129,6 +129,7 @@ If `check` fails, its message says why. Tell the user plainly what to fix.
 | Variant `status: error` in a batch run | Read `summary.md`; `error-state.jpg` shows what the browser saw. |
 | Page looks half-empty | Content appears on scroll or after a delay: `scroll`/`frames` in a session, or raise `waitMs`. |
 | Need to see an animation (on load, hover, menu, carousel) | `session do watch load`, `watch hover N`, `watch tap N`, or `watch 5s`; look at `filmstrip.jpg` and read the animation list. Screenshots from other actions finish animations instantly, so they never show one in progress. See docs/sessions.md "Motion". |
+| A video shows only its poster / doesn't play | Playwright's Chromium lacks H.264/MP4 codecs. Start the session with `--browser chrome` (or `webkit`). |
 | Suspected motion bug while scrolling (flicker, jumping, snap-back) | `session do livescroll bottom fresh=1 --frames`, then `perceive.py motion <folder>`; view flagged frames beside their predecessors. |
 | Bot protection / CAPTCHA | Datacenter IPs are sometimes blocked. Report it; don't try to evade it. |
 

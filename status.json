@@ -1,6 +1,6 @@
 {
   "id": "bp2",
-  "state": "starting",
+  "state": "ready",
   "config": {
     "device": "desktop",
     "browser": "chrome",
@@ -14,6 +14,7 @@
   },
   "startedAt": "2026-10-14T20:17:03.451Z",
   "endsAt": "2026-10-14T20:27:03.451Z",
-  "lastSeq": -1,
-  "updatedAt": "2026-10-14T20:17:03.942Z"
+  "lastSeq": 0,
+  "updatedAt": "2026-10-14T20:17:21.614Z",
+  "url": "https://www.brightplan.com/"
 }

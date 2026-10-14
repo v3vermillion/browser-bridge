@@ -1,0 +1,997 @@
+{
+  "what": "holding still",
+  "zero": "recording start",
+  "realMs": 3000,
+  "pageMs": 3000,
+  "slowmo": 1,
+  "conditions": [],
+  "url": "https://www.brightplan.com/",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "scale": 2,
+  "clock": "ms relative to t = 0 on the page clock; frames use the compositor swap time",
+  "frames": {
+    "source": "screencast (frames as Chromium paints them)",
+    "received": 100,
+    "inWindow": 100,
+    "picked": 11,
+    "pageFrames": 180,
+    "note": "a screencast sends a frame only when something repaints, so a still page sends few"
+  },
+  "motion": {
+    "startsAt": 75,
+    "endsAt": 2974,
+    "stillMovingAtEnd": true,
+    "biggestChangeAt": 2275
+  },
+  "region": {
+    "x": 694,
+    "y": 186,
+    "w": 746,
+    "h": 468
+  },
+  "explained": {
+    "animatedElements": 0,
+    "media": 100,
+    "elsewhere": 0
+  },
+  "animations": [
+    {
+      "id": 8,
+      "type": "CSSTransition",
+      "name": "transform",
+      "target": "div.slick-track",
+      "text": null,
+      "startedAt": 2030,
+      "firstSeen": 2032,
+      "activeUntil": 2814,
+      "duration": 800,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "translate3d(-676px, 0px, 0px)",
+          "to": "translate3d(-940px, 0px, 0px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        -648,
+        890,
+        40000,
+        59
+      ],
+      "boxEnd": [
+        -912,
+        890,
+        40000,
+        59
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 1,
+      "type": "CSSAnimation",
+      "name": "clockwiseSpin",
+      "target": "div.absolute.inset-0",
+      "text": null,
+      "startedAt": -7303,
+      "firstSeen": 14,
+      "activeUntil": 2997,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        13,
+        3850,
+        572,
+        572
+      ],
+      "boxEnd": [
+        78,
+        3915,
+        441,
+        441
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 2,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": -7303,
+      "firstSeen": 15,
+      "activeUntil": 2997,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        477,
+        4138,
+        42,
+        42
+      ],
+      "boxEnd": [
+        377,
+        4289,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 3,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": -7303,
+      "firstSeen": 15,
+      "activeUntil": 2997,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        324,
+        4310,
+        42,
+        42
+      ],
+      "boxEnd": [
+        147,
+        4268,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 4,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": -7303,
+      "firstSeen": 15,
+      "activeUntil": 2997,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        128,
+        4250,
+        42,
+        42
+      ],
+      "boxEnd": [
+        80,
+        4075,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 5,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": -7303,
+      "firstSeen": 15,
+      "activeUntil": 2997,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        78,
+        4091,
+        42,
+        42
+      ],
+      "boxEnd": [
+        178,
+        3940,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 6,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": -7303,
+      "firstSeen": 15,
+      "activeUntil": 2997,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        231,
+        3919,
+        42,
+        42
+      ],
+      "boxEnd": [
+        408,
+        3962,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 7,
+      "type": "CSSAnimation",
+      "name": "counterSpin",
+      "target": "figure.mb-0.grid",
+      "text": null,
+      "startedAt": -7303,
+      "firstSeen": 15,
+      "activeUntil": 2997,
+      "duration": 20000,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": "infinite",
+      "direction": "normal",
+      "fill": "none",
+      "easing": "linear",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "rotate(0deg)",
+          "to": "rotate(-360deg)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        395,
+        3951,
+        42,
+        42
+      ],
+      "boxEnd": [
+        479,
+        4113,
+        42,
+        42
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 9,
+      "type": "CSSTransition",
+      "name": "transform",
+      "target": "div.slick-track",
+      "text": null,
+      "startedAt": 2847,
+      "firstSeen": 2849,
+      "activeUntil": 2997,
+      "duration": 800,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "transform",
+          "from": "translate3d(-1683px, 0px, 0px)",
+          "to": "translate3d(-1870px, 0px, 0px)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        -1617,
+        6418,
+        6171,
+        157
+      ],
+      "boxEnd": [
+        -1667,
+        6418,
+        6171,
+        157
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 10,
+      "type": "CSSTransition",
+      "name": "background-color",
+      "target": "button#slick-slide-control02",
+      "text": "3",
+      "startedAt": 2847,
+      "firstSeen": 2849,
+      "activeUntil": 2997,
+      "duration": 300,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "background-color",
+          "from": "rgb(14, 165, 233)",
+          "to": "rgba(115, 191, 235, 0.6)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        643,
+        6615,
+        10,
+        10
+      ],
+      "boxEnd": [
+        643,
+        6615,
+        10,
+        10
+      ],
+      "playState": "running",
+      "visible": false
+    },
+    {
+      "id": 11,
+      "type": "CSSTransition",
+      "name": "background-color",
+      "target": "button#slick-slide-control03",
+      "text": "4",
+      "startedAt": 2847,
+      "firstSeen": 2849,
+      "activeUntil": 2997,
+      "duration": 300,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "background-color",
+          "from": "rgba(115, 191, 235, 0.6)",
+          "to": "rgb(14, 165, 233)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        661,
+        6615,
+        10,
+        10
+      ],
+      "boxEnd": [
+        661,
+        6615,
+        10,
+        10
+      ],
+      "playState": "running",
+      "visible": false
+    }
+  ],
+  "webFontsLoaded": [],
+  "animationsNotRunning": 0,
+  "layoutShifts": [],
+  "longTasks": [],
+  "load": null,
+  "media": {
+    "libraries": [
+      "Slick"
+    ],
+    "videos": [
+      {
+        "element": "video.hero-video-el.lg:absolute",
+        "box": [
+          632,
+          127,
+          1000,
+          778
+        ],
+        "paused": false,
+        "muted": true,
+        "loop": true,
+        "autoplay": true,
+        "controls": false,
+        "currentTime": 12.93,
+        "duration": 39.04,
+        "readyState": 4,
+        "poster": true,
+        "resolution": [
+          1440,
+          1120
+        ],
+        "textTracks": 0,
+        "src": "www.brightplan.com/wp-content/uploads/globle-hero-1440.av1.mp4",
+        "type": "video/mp4; codecs=av01.0.08M.08"
+      }
+    ],
+    "canvases": [],
+    "iframes": [],
+    "gifs": []
+  },
+  "notes": [
+    "still moving at the end: looping animation(s)",
+    "10 of 11 animation(s) ran off screen, where nobody sees them (clockwiseSpin, counterSpin, transform, background-color)",
+    "motion the animation list can't describe may come from: Slick, 1 video(s); frames are the evidence for those"
+  ],
+  "frameMeta": [
+    {
+      "file": "frames/001_00011ms.jpg",
+      "t": 11,
+      "y": 0,
+      "why": "first"
+    },
+    {
+      "file": "frames/002_00044ms.jpg",
+      "t": 44,
+      "y": 0,
+      "why": "before motion"
+    },
+    {
+      "file": "frames/003_00075ms.jpg",
+      "t": 75,
+      "y": 0,
+      "why": "motion starts"
+    },
+    {
+      "file": "frames/018_00574ms.jpg",
+      "t": 574,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/032_01041ms.jpg",
+      "t": 1041,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/045_01475ms.jpg",
+      "t": 1475,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/056_01841ms.jpg",
+      "t": 1841,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/061_02008ms.jpg",
+      "t": 2008,
+      "y": 0,
+      "why": "just before biggest change"
+    },
+    {
+      "file": "frames/062_02275ms.jpg",
+      "t": 2275,
+      "y": 0,
+      "why": "biggest change"
+    },
+    {
+      "file": "frames/076_02509ms.jpg",
+      "t": 2509,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/100_02974ms.jpg",
+      "t": 2974,
+      "y": 0,
+      "why": "still moving · last"
+    }
+  ],
+  "changeSeries": [
+    [
+      11,
+      0
+    ],
+    [
+      44,
+      0
+    ],
+    [
+      75,
+      0.0529
+    ],
+    [
+      108,
+      0.0267
+    ],
+    [
+      141,
+      0.0722
+    ],
+    [
+      175,
+      0.0134
+    ],
+    [
+      208,
+      0.1465
+    ],
+    [
+      241,
+      0.0356
+    ],
+    [
+      275,
+      0.0958
+    ],
+    [
+      308,
+      0.0491
+    ],
+    [
+      341,
+      0.066
+    ],
+    [
+      375,
+      0.0243
+    ],
+    [
+      416,
+      0.0773
+    ],
+    [
+      441,
+      0.0646
+    ],
+    [
+      474,
+      0.0897
+    ],
+    [
+      508,
+      0.0376
+    ],
+    [
+      544,
+      0.0684
+    ],
+    [
+      574,
+      0.0485
+    ],
+    [
+      608,
+      0.1058
+    ],
+    [
+      641,
+      0.0372
+    ],
+    [
+      675,
+      0.0907
+    ],
+    [
+      708,
+      0.0857
+    ],
+    [
+      741,
+      0.0663
+    ],
+    [
+      775,
+      0.0613
+    ],
+    [
+      808,
+      0.0566
+    ],
+    [
+      841,
+      0.0806
+    ],
+    [
+      874,
+      0.0797
+    ],
+    [
+      908,
+      0.0251
+    ],
+    [
+      941,
+      0.1177
+    ],
+    [
+      975,
+      0.0372
+    ],
+    [
+      1008,
+      0.0636
+    ],
+    [
+      1041,
+      0.0911
+    ],
+    [
+      1075,
+      0.077
+    ],
+    [
+      1108,
+      0.0122
+    ],
+    [
+      1142,
+      0.1265
+    ],
+    [
+      1175,
+      0.0724
+    ],
+    [
+      1208,
+      0.055
+    ],
+    [
+      1243,
+      0.0523
+    ],
+    [
+      1275,
+      0.1352
+    ],
+    [
+      1308,
+      0.0658
+    ],
+    [
+      1341,
+      0.0917
+    ],
+    [
+      1375,
+      0.1145
+    ],
+    [
+      1408,
+      0.0658
+    ],
+    [
+      1442,
+      0.0688
+    ],
+    [
+      1475,
+      0.1173
+    ],
+    [
+      1514,
+      0.0437
+    ],
+    [
+      1542,
+      0.0872
+    ],
+    [
+      1575,
+      0.1042
+    ],
+    [
+      1608,
+      0.0796
+    ],
+    [
+      1641,
+      0.0405
+    ],
+    [
+      1675,
+      0.1197
+    ],
+    [
+      1708,
+      0.0837
+    ],
+    [
+      1741,
+      0.2074
+    ],
+    [
+      1775,
+      0.2508
+    ],
+    [
+      1808,
+      0.3316
+    ],
+    [
+      1841,
+      0.145
+    ],
+    [
+      1874,
+      0.1069
+    ],
+    [
+      1908,
+      0.055
+    ],
+    [
+      1941,
+      0.0696
+    ],
+    [
+      1975,
+      0.057
+    ],
+    [
+      2008,
+      0.0967
+    ],
+    [
+      2275,
+      0.5369
+    ],
+    [
+      2291,
+      0
+    ],
+    [
+      2309,
+      0.0114
+    ],
+    [
+      2324,
+      0
+    ],
+    [
+      2343,
+      0.0554
+    ],
+    [
+      2358,
+      0
+    ],
+    [
+      2376,
+      0.0498
+    ],
+    [
+      2391,
+      0
+    ],
+    [
+      2409,
+      0.1063
+    ],
+    [
+      2424,
+      0
+    ],
+    [
+      2443,
+      0.0496
+    ],
+    [
+      2458,
+      0
+    ],
+    [
+      2476,
+      0.0787
+    ],
+    [
+      2491,
+      0
+    ],
+    [
+      2509,
+      0.0853
+    ],
+    [
+      2525,
+      0
+    ],
+    [
+      2550,
+      0.0924
+    ],
+    [
+      2567,
+      0
+    ],
+    [
+      2580,
+      0.0378
+    ],
+    [
+      2590,
+      0
+    ],
+    [
+      2609,
+      0.108
+    ],
+    [
+      2625,
+      0
+    ],
+    [
+      2643,
+      0.0353
+    ],
+    [
+      2657,
+      0
+    ],
+    [
+      2676,
+      0.0762
+    ],
+    [
+      2691,
+      0
+    ],
+    [
+      2710,
+      0.0396
+    ],
+    [
+      2723,
+      0
+    ],
+    [
+      2743,
+      0.1211
+    ],
+    [
+      2759,
+      0
+    ],
+    [
+      2777,
+      0.0389
+    ],
+    [
+      2794,
+      0
+    ],
+    [
+      2811,
+      0.1027
+    ],
+    [
+      2826,
+      0
+    ],
+    [
+      2843,
+      0.0399
+    ],
+    [
+      2875,
+      0.0738
+    ],
+    [
+      2908,
+      0.0481
+    ],
+    [
+      2941,
+      0.1274
+    ],
+    [
+      2974,
+      0.0423
+    ]
+  ]
+}

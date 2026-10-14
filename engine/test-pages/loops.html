@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Loop fixture</title>
+<style>
+  body { margin: 0; font: 16px/1.5 system-ui, sans-serif; }
+  @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.4); } }
+  .dot { width: 60px; height: 60px; margin: 40px; border-radius: 50%; background: #e33; animation: pulse 1200ms ease-in-out infinite; }
+  #spin { display: block; margin: 40px; }
+</style>
+</head>
+<body>
+  <div class="dot"></div>
+  <canvas id="spin" width="200" height="200"></canvas>
+  <script>
+    window.gsap = { version: 'fixture stub' };   // stands in for a script animation library
+    const ctx = document.getElementById('spin').getContext('2d');
+    const draw = (t) => {
+      ctx.clearRect(0, 0, 200, 200); ctx.save(); ctx.translate(100, 100); ctx.rotate(t / 300);
+      ctx.fillStyle = '#0a8'; ctx.fillRect(-60, -60, 120, 120); ctx.restore();
+      requestAnimationFrame(draw);
+    };
+    requestAnimationFrame(draw);
+  </script>
+</body>
+</html>

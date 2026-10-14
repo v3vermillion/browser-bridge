@@ -1,0 +1,66 @@
+# Engine and client self-test: the live session engine's motion tools against local pages with known motion
+# (engine/test-pages/), in each browser, plus the client's parsing tests. No secrets, no external sites.
+name: selftest
+
+on:
+  pull_request:
+    paths: ["engine/**", "client/**", ".github/workflows/selftest.yml"]
+  push:
+    branches: [main]
+    paths: ["engine/**", "client/**", ".github/workflows/selftest.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  engine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install engine
+        working-directory: engine
+        run: npm ci --no-audit --no-fund
+
+      - name: Cache browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: pw-${{ hashFiles('engine/package-lock.json') }}-${{ matrix.browser }}
+
+      - name: Install browser
+        working-directory: engine
+        run: npx playwright install --with-deps ${{ matrix.browser }}
+
+      - name: Self-test
+        working-directory: engine
+        env:
+          BROWSER: ${{ matrix.browser }}
+        run: node selftest.mjs
+
+      - name: Self-test without the Chromium protocol (the WebKit/Firefox code path)
+        if: matrix.browser == 'chromium'
+        working-directory: engine
+        env:
+          NO_CDP: "1"
+        run: node selftest.mjs
+
+  client:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Client tests
+        run: |
+          python3 -m py_compile client/bridge.py client/perceive.py
+          python3 -m unittest client/test_bridge.py -v

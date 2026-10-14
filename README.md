@@ -35,7 +35,7 @@ and addresses the fourth with a working method (the expert brief) built into how
 |---|---|
 | **Quick look** | One screenshot plus page text and metadata. Measured: ~75 seconds end to end. |
 | **Batch capture** | Many pages × desktop/tablet/phone × Chromium/WebKit (Safari engine)/Firefox in one run: full pages, readable tiles, and measurements (headings, SEO tags, structured data, links, image sharpness and alt text, rendered fonts/colors/sizes, form label wiring, axe-core accessibility scan, accessibility tree, optional link checks and Lighthouse). |
-| **Live session** | A browser stays open and the AI acts in it: tap, swipe (real touch events in Chromium), scroll, type, hover, zoom, inspect an element's exact typography/contrast/tap-target size, record scroll frames, and record a live scroll (every painted frame plus motion metrics: dropped frames, elements jumping, scroll snapping back) to catch bugs that only exist in motion, and inject CSS or HTML to preview proposed changes on the real page. Each response includes a screenshot and a numbered map of what's tappable on screen. Measured: ~70 s to start, ~5-6 s per round trip; several actions can share one round trip. |
+| **Live session** | A browser stays open and the AI acts in it: tap, swipe (real touch events in Chromium), scroll, type, hover, zoom, inspect an element's exact typography/contrast/tap-target size, watch motion (page loads, hover effects, menus opening, carousels: a filmstrip of the frames that changed, plus each animation's real settings read from the browser, with optional slow motion and reduced-motion emulation), record a live scroll (frames plus motion metrics: dropped frames, elements jumping, scroll snapping back) to catch bugs that only exist in motion, and inject CSS or HTML to preview proposed changes on the real page. Each response includes a screenshot and a numbered map of what's tappable on screen. Measured: ~70 s to start, ~5-6 s per round trip; several actions can share one round trip. |
 | **Perception** | `perceive.py` measures on the pixels what people describe in words ("bland," "doesn't blend," "cluttered"): palette, hue relationships, colorfulness (Hasler & Süsstrunk 2003 scale), tonal range, abrupt section seams vs smooth fades, visual density. Also builds before/after composites. |
 | **Expert brief** | Before critiquing, the AI captures the user's direction, profiles the site's genre, assembles the expert panel that genre calls for, gathers current standards, research, and live exemplars, and writes criteria. Every finding must cite a criterion, a source, and what was seen; anything else is labeled opinion. Every run requires `--brief FILE` or an explicit `--no-brief "reason"`. |
 | **Safe by default** | Form submissions and other write requests are blocked and logged, so forms can be tested without sending anything to the site owner. |
@@ -140,8 +140,10 @@ for proposed changes.
 - Phone captures emulate devices (size, touch, user agent): close to, not identical with, real hardware.
   Real touch swipes work in Chromium; WebKit and Firefox approximate swipes with scrolling.
 - Live sessions are fast, not instant: seconds per round trip, not milliseconds.
-- Motion recording is richest in Chromium (every painted frame, layout-shift data); WebKit/Firefox capture
-  fewer frames and no layout-shift data. Headless frame timing is indicative, not a device benchmark.
+- Motion recording is richest in Chromium (a frame stream, layout-shift data, slow motion for every animation,
+  throttling); WebKit/Firefox capture fewer frames and no layout-shift data. Animation data (what animates,
+  how, for how long) works in all three, but script-driven motion (GSAP, canvas, WebGL, video) can be judged
+  only from frames. Headless frame timing is indicative, not a device benchmark.
 - Styles can change with scroll position, hover, and "current section" states; inspections include a
   same-moment image of the element so values and pictures match.
 - Some sites block datacenter traffic or show CAPTCHAs to automated browsers.
@@ -163,6 +165,7 @@ client/bridge.py                 dependency-free client: check, run, fetch, sess
 client/perceive.py               visual measurements and before/after composites (numpy, Pillow)
 engine/capture.mjs               batch capture engine (Node, Playwright, axe-core)
 engine/session.mjs               live session runner
+engine/selftest.mjs              engine self-test against local pages with known motion (engine/test-pages/)
 engine/plan.mjs, prune.mjs       browser install planning, result pruning
 .github/workflows/capture.yml    batch runs -> `results` branch
 .github/workflows/session.yml    live sessions -> `bs-<id>-cmd` / `bs-<id>-out` branches

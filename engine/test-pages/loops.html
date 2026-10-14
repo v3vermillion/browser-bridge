@@ -8,11 +8,16 @@
   @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.4); } }
   .dot { width: 60px; height: 60px; margin: 40px; border-radius: 50%; background: #e33; animation: pulse 1200ms ease-in-out infinite; }
   #spin { display: block; margin: 40px; }
+  #tipbtn { position: absolute; right: 80px; top: 60px; padding: 10px 18px; font-size: 16px; }
+  #tip { position: absolute; right: 60px; top: 110px; width: 160px; padding: 8px; background: #222; color: #fff; opacity: 0; transform: translateY(8px);
+         transition: opacity 300ms ease-out, transform 300ms ease-out; }
+  #tipbtn:hover + #tip { opacity: 1; transform: none; }
 </style>
 </head>
 <body>
   <div class="dot"></div>
   <canvas id="spin" width="200" height="200"></canvas>
+  <button id="tipbtn">Help</button><div id="tip">A tooltip that fades in</div>
   <script>
     window.gsap = { version: 'fixture stub' };   // stands in for a script animation library
     const ctx = document.getElementById('spin').getContext('2d');

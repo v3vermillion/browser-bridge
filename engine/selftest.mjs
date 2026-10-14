@@ -126,6 +126,14 @@ try {
   check('loops: still moving at the end', r.watch?.motion?.stillMovingAtEnd === true);
   check('loops: change split between animated elements and canvas', r.watch?.explained && r.watch.explained.animatedElements > 0 && r.watch.explained.media > 0, JSON.stringify(r.watch?.explained));
 
+  // 7b. An action next to background motion: the crop follows what the action set moving, not the canvas.
+  r = await run({ action: 'watch', ms: 1000, after: { action: 'hover', selector: '#tipbtn' } });
+  const fade = anim(r, 'opacity');
+  const rg = r.watch?.region;
+  check('hover beside a canvas: tooltip transition found', fade && fade.duration === 300 && fade.easing === 'ease-out', JSON.stringify(fade));
+  check('hover beside a canvas: crop is the tooltip, not the canvas', rg && rg.x > 700 && rg.y < 300, JSON.stringify(rg));
+  check('hover beside a canvas: motion timed inside the crop (starts after the hover, settles)', r.watch?.motion && r.watch.motion.startsAt >= 0 && !r.watch.motion.stillMovingAtEnd, JSON.stringify(r.watch?.motion));
+
   // 8. Batch: watch inside a batch, then observe.
   r = await run({ actions: [{ action: 'watch', ms: 400 }, { action: 'observe' }] });
   check('batch with watch runs', r.ok && r.results.length === 2);

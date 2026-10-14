@@ -412,10 +412,12 @@ def print_watch(w):
           + (" (none: any motion here was made by scripts or media)" if not anims else ""))
     for a in shown[:12]:
         print(f"    {describe_animation(a)}")
-    if len(shown) < len(anims):
-        print(f"    ... plus {n - len(shown)} off screen (listed in watch.json)")
-    if w.get("animationCount", 0) > 12:
-        print(f"    ... {w['animationCount'] - 12} more in watch.json")
+    if len(shown) > 12:
+        print(f"    ... {len(shown) - 12} more on screen")
+    if n > len(shown):
+        print(f"    ... {n - len(shown)} off screen")
+    if n > 12 or n > len(shown):
+        print("    (all of them in watch.json)")
     ld = w.get("load")
     if ld:
         lcp = ld.get("largestContentfulPaint") or {}

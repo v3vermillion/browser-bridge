@@ -574,20 +574,21 @@ const diffChunk = async ({ frames, tw, cell, thr, reset }) => {
     const px = S.ctx.getImageData(0, 0, w, h).data;
     const g = new Float32Array(w * h);
     for (let i = 0; i < w * h; i++) g[i] = 0.299 * px[i * 4] + 0.587 * px[i * 4 + 1] + 0.114 * px[i * 4 + 2];
-    if (!S.ref) { S.ref = g; out.push({ e: 0, cells: 0, box: null }); continue; }
+    if (!S.ref) { S.ref = g; out.push({ e: 0, cells: 0, box: null, hits: [] }); continue; }
     let e = 0, n = 0, c0 = cols, r0 = rows, c1 = -1, r1 = -1;
+    const hits = [];   // [cell index, change] for each cell that changed, so callers can count one area only
     for (let r = 0; r < rows; r++) {
       for (let c = 0; c < cols; c++) {
         let sum = 0;
         for (let y = r * cell; y < (r + 1) * cell; y++) for (let x = c * cell; x < (c + 1) * cell; x++) sum += Math.abs(g[y * w + x] - S.ref[y * w + x]);
         const d = sum / (cell * cell);
         if (d <= thr) continue;
-        e += d; n++; S.energy[r * cols + c] += d;
+        e += d; n++; S.energy[r * cols + c] += d; hits.push(r * cols + c, Math.round(d));
         for (let y = r * cell; y < (r + 1) * cell; y++) for (let x = c * cell; x < (c + 1) * cell; x++) S.ref[y * w + x] = g[y * w + x];
         if (c < c0) c0 = c; if (c > c1) c1 = c; if (r < r0) r0 = r; if (r > r1) r1 = r;
       }
     }
-    out.push({ e: +(e / (cols * rows)).toFixed(4), cells: n, box: n ? [c0, r0, c1 + 1, r1 + 1] : null });
+    out.push({ e: +(e / (cols * rows)).toFixed(4), cells: n, box: n ? [c0, r0, c1 + 1, r1 + 1] : null, hits });
   }
   return out;
 };
@@ -712,6 +713,40 @@ function motionRegion(dims, energy, vp) {
   if ((x1 - x) * (y1 - y) > vp.width * vp.height * 0.5) return null;
   return { x: Math.round(x), y: Math.round(y), w: Math.round(x1 - x), h: Math.round(y1 - y) };
 }
+
+// The change series counted inside one area only (CSS px), e.g. the crop, so background motion elsewhere (a video,
+// a carousel) doesn't decide which frames are picked or when motion "ends".
+function seriesWithin(series, dims, region, vp) {
+  if (!region || !dims) return series;
+  const sx = (dims.cell * vp.width) / dims.w, sy = (dims.cell * vp.height) / dims.h;
+  const inside = (k) => {
+    const x = (k % dims.cols) * sx, y = Math.floor(k / dims.cols) * sy;
+    return x + sx > region.x && x < region.x + region.w && y + sy > region.y && y < region.y + region.h;
+  };
+  return series.map((s) => {
+    let e = 0, cells = 0;
+    for (let i = 0; i < (s.hits || []).length; i += 2) if (inside(s.hits[i])) { e += s.hits[i + 1]; cells++; }
+    return { e: +(e / (dims.cols * dims.rows)).toFixed(4), cells };
+  });
+}
+
+// The area around a set of element boxes (CSS px), clipped to the screen, or null when that's most of the screen.
+function boxesRegion(boxes, vp) {
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  for (const b of boxes) {
+    if (!b) continue;
+    const [x, y, w, h] = b;
+    if (w <= 0 || h <= 0 || x >= vp.width || y >= vp.height || x + w <= 0 || y + h <= 0) continue;
+    x0 = Math.min(x0, Math.max(0, x)); y0 = Math.min(y0, Math.max(0, y));
+    x1 = Math.max(x1, Math.min(vp.width, x + w)); y1 = Math.max(y1, Math.min(vp.height, y + h));
+  }
+  if (!(x1 > x0 && y1 > y0)) return null;
+  const mx = Math.max(24, vp.width * 0.06), my = Math.max(24, vp.height * 0.06);
+  const x = Math.max(0, x0 - mx), y = Math.max(0, y0 - my), xe = Math.min(vp.width, x1 + mx), ye = Math.min(vp.height, y1 + my);
+  if ((xe - x) * (ye - y) > vp.width * vp.height * 0.5) return null;
+  return { x: Math.round(x), y: Math.round(y), w: Math.round(xe - x), h: Math.round(ye - y) };
+}
+const regionBox = (r) => (r ? [r.x, r.y, r.w, r.h] : null);
 
 // How much of the visible change happened on elements the animation list knows about, inside media
 // (video/canvas/iframes/GIFs), or elsewhere (script-driven styles, loading content, layout).
@@ -904,7 +939,6 @@ async function watch(c, dir, res) {
   if (!frames.length && rec.frames.length) frames = [{ ...rec.frames[rec.frames.length - 1], t: 0 }];   // static page: the screen as it was
   const { series, dims, energy } = await analyzeFrames(frames);
   const scrolled = frames.some((f) => f.y !== frames[0].y);
-  const region = on(c.crop ?? 1) && !scrolled ? motionRegion(dims, energy, vp) : null;
 
   // Times from the collector (its own start) and the page (navigation start) onto the recording clock.
   const fromCollector = (t) => (t === null || t === undefined || !collected ? null : Math.round(collected.origin + collected.t0 + t - zero));
@@ -914,15 +948,26 @@ async function watch(c, dir, res) {
   const longTasks = (collected?.longTasks || []).map((l) => ({ ...l, t: fromCollector(l.t) }));
 
   const sec = (t) => `${t < 0 ? '-' : '+'}${(Math.abs(t) / 1000).toFixed(2)}s`;
-  const active = series.map((s, i) => (s.cells ? i : -1)).filter((i) => i >= 0);
+  // What the filmstrip shows. After an action: the elements the action set moving (background motion such as a
+  // video or carousel is left out of the crop). Otherwise: everything that moved, on screen.
+  let region = null;
+  if (on(c.crop ?? 1) && !scrolled) {
+    const pixel = motionRegion(dims, energy, vp);
+    const caused = animations.filter((a) => a.visible && (a.startedAt ?? a.firstSeen) >= -50);
+    if (trigger && caused.length) region = boxesRegion(caused.flatMap((a) => [a.boxStart, a.boxEnd]), vp);
+    else if (pixel) region = boxesRegion([regionBox(pixel), ...animations.filter((a) => a.visible).flatMap((a) => [a.boxStart, a.boxEnd])], vp);
+    if (trigger && caused.length && region) notes.push('the filmstrip is cropped to what the action set moving; other motion on the page is outside it (see "visible change")');
+  }
+  const seen = seriesWithin(series, dims, region, vp);   // what the filmstrip shows
+  const active = seen.map((s, i) => (s.cells ? i : -1)).filter((i) => i >= 0);
   let peak = active[0];
-  for (const i of active) if (series[i].e > series[peak].e) peak = i;
+  for (const i of active) if (seen[i].e > seen[peak].e) peak = i;
   const motion = active.length ? {
     startsAt: frames[active[0]].t, endsAt: frames[active[active.length - 1]].t,
     stillMovingAtEnd: frames[active[active.length - 1]].t > realMs - 300,
     biggestChangeAt: frames[peak].t,
   } : null;
-  const picked = pickFrames(series, budget, { stillMoving: !!motion?.stillMovingAtEnd });
+  const picked = pickFrames(seen, budget, { stillMoving: !!motion?.stillMovingAtEnd });
   if (motion?.stillMovingAtEnd) notes.push(animations.some((a) => a.iterations === 'infinite') ? 'still moving at the end: looping animation(s)' : 'still moving at the end: record longer to see where it settles');
   if (!cdp && frames.length) {   // screenshot loops can stall (while a page loads, for fonts); say where the pictures are missing
     let gap = { from: fresh ? 0 : frames[0].t, to: frames[0].t };
@@ -939,7 +984,8 @@ async function watch(c, dir, res) {
   for (const v of m?.videos || []) {
     if (!v.paused || v.readyState > 1) continue;
     const codec = collected.canPlayH264 === false ? ` This browser can't play H.264 (MP4) video, which most sites use; a video that plays in Chrome or Safari may not play here. Start the session with --browser chrome (or webkit) to watch it.` : '';
-    notes.push(`video ${v.element} isn't playing (paused, ${v.readyState === 0 ? 'no data loaded' : 'only metadata loaded'}${v.poster ? '; its poster image is what shows' : ''}).${codec}`);
+    const why = !v.src ? 'it has no source yet; the page may set one later' : v.readyState === 0 ? 'no data loaded' : 'only metadata loaded';
+    notes.push(`video ${v.element} isn't playing (paused; ${why}${v.poster ? '; its poster image is what shows' : ''}).${v.src ? codec : ''}`);
   }
   if (m && (m.libraries.length || m.canvases.length || m.videos.length || m.gifs.length)) {
     const parts = [...m.libraries, m.videos.length && `${m.videos.length} video(s)`, m.canvases.length && `${m.canvases.length} canvas(es)`, m.gifs.length && `${m.gifs.length} GIF(s)`].filter(Boolean);
@@ -987,7 +1033,8 @@ async function watch(c, dir, res) {
     clock: 'ms relative to t = 0 on the page clock; frames use the compositor swap time',
     frames: { source, received: rec.received, inWindow: frames.length, picked: order.length, pageFrames: collected?.ticks ?? null, note: 'a screencast sends a frame only when something repaints, so a still page sends few' },
     motion, region, explained, animations, webFontsLoaded: fonts, animationsNotRunning: collected?.notRunning ?? null, layoutShifts: shifts, longTasks, load, media: m || null, notes,
-    frameMeta, changeSeries: frames.map((f, i) => [f.t, series[i] ? series[i].e : 0]),
+    motionMeasuredIn: region ? 'the cropped area' : 'the whole screen',
+    frameMeta, changeSeries: frames.map((f, i) => [f.t, seen[i] ? seen[i].e : 0]),
   };
   await writeJson(path.join(dir, 'watch.json'), full);
   res.files.push('watch.json');

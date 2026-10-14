@@ -1,0 +1,298 @@
+{
+  "seq": 0,
+  "action": "observe",
+  "ok": true,
+  "files": [
+    "shot.jpg",
+    "marks.jpg"
+  ],
+  "elements": [
+    {
+      "ref": 1,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Cookiebot by Usercentrics - opens in a new window",
+      "href": "https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2",
+      "box": [
+        42,
+        846,
+        175,
+        30
+      ],
+      "covered": false
+    },
+    {
+      "ref": 2,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Privacy Notice",
+      "href": "https://www.brightplan.com/privacy-notice",
+      "box": [
+        842,
+        697,
+        110,
+        17
+      ],
+      "covered": false
+    },
+    {
+      "ref": 3,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Terms of Service",
+      "href": "https://www.brightplan.com/terms-of-service",
+      "box": [
+        262,
+        697,
+        798,
+        41
+      ],
+      "covered": false
+    },
+    {
+      "ref": 4,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Show details",
+      "href": "#",
+      "box": [
+        1044,
+        846,
+        116,
+        30
+      ],
+      "covered": false
+    },
+    {
+      "ref": 5,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "Allow all",
+      "href": null,
+      "box": [
+        1130,
+        609,
+        286,
+        58
+      ],
+      "covered": false
+    },
+    {
+      "ref": 6,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "Allow selection",
+      "href": null,
+      "box": [
+        1130,
+        675,
+        286,
+        58
+      ],
+      "covered": false
+    },
+    {
+      "ref": 7,
+      "tag": "button",
+      "role": null,
+      "type": null,
+      "name": "Deny",
+      "href": null,
+      "box": [
+        1130,
+        740,
+        286,
+        58
+      ],
+      "covered": false
+    },
+    {
+      "ref": 8,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Read the Report",
+      "href": "https://www.brightplan.com/bellwether-report-2026/",
+      "box": [
+        944,
+        6,
+        100,
+        20
+      ],
+      "covered": false
+    },
+    {
+      "ref": 9,
+      "tag": "button",
+      "role": null,
+      "type": "button",
+      "name": "Dismiss announcement",
+      "href": null,
+      "box": [
+        1406,
+        2,
+        26,
+        28
+      ],
+      "covered": false
+    },
+    {
+      "ref": 10,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "BrightPlan Logo",
+      "href": "/",
+      "box": [
+        28,
+        12,
+        212,
+        58
+      ],
+      "covered": false
+    },
+    {
+      "ref": 11,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Home",
+      "href": "https://www.brightplan.com/",
+      "box": [
+        433,
+        28,
+        46,
+        26
+      ],
+      "covered": false
+    },
+    {
+      "ref": 12,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Solutions",
+      "href": "https://www.brightplan.com/solutions/",
+      "box": [
+        513,
+        28,
+        88,
+        26
+      ],
+      "covered": false
+    },
+    {
+      "ref": 13,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Partners",
+      "href": "https://www.brightplan.com/partners/",
+      "box": [
+        635,
+        28,
+        82,
+        26
+      ],
+      "covered": false
+    },
+    {
+      "ref": 14,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Resources",
+      "href": "https://www.brightplan.com/resources/",
+      "box": [
+        751,
+        28,
+        96,
+        26
+      ],
+      "covered": false
+    },
+    {
+      "ref": 15,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "About",
+      "href": "https://www.brightplan.com/about/",
+      "box": [
+        882,
+        28,
+        64,
+        26
+      ],
+      "covered": false
+    },
+    {
+      "ref": 16,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Get A Demo",
+      "href": "/get-a-demo/",
+      "box": [
+        1138,
+        16,
+        130,
+        51
+      ],
+      "covered": false
+    },
+    {
+      "ref": 17,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "User Login",
+      "href": "https://my.brightplan.com/app/login?__hstc=109989914.4e22e00a5a584ba423d4da5842f24ce5.1741282989692.1751466586944.1753730112258.13&__hssc=109989914.3.1753730112258&__hsfp=3863828579&hsutk=4e22e00a5a584ba423d4da5842f24ce5&contentType=standard-page",
+      "box": [
+        1292,
+        16,
+        120,
+        51
+      ],
+      "covered": false
+    },
+    {
+      "ref": 18,
+      "tag": "a",
+      "role": null,
+      "type": null,
+      "name": "Get a demo",
+      "href": "/get-a-demo/",
+      "box": [
+        80,
+        494,
+        149,
+        51
+      ],
+      "covered": false
+    }
+  ],
+  "url": "https://www.brightplan.com/",
+  "title": "Home - BrightPlan",
+  "scrollY": 0,
+  "scrollX": 0,
+  "pageHeight": 9217,
+  "pageWidth": 1440,
+  "layoutViewport": [
+    1440,
+    900
+  ],
+  "viewport": [
+    1440,
+    900
+  ],
+  "blockedWrites": 4,
+  "device": "desktop",
+  "ms": 88
+}

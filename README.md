@@ -107,7 +107,18 @@ or offer it as a commercial service built on Actions.
 
 ## Using it in a chat
 
-Start the conversation with something like:
+**Easiest: one link, no setup in the chat.** Deploy the small Cloudflare Worker in `worker/` once (see
+`worker/README.md`). Then paste a link like this into any AI chat that can open links:
+
+> Open this and follow it to the results, then tell me how the page loads and animates:
+> `https://see.<you>.workers.dev/<key>/https://www.apple.com/airpods-pro/`
+
+The link starts a live session on GitHub Actions and answers at once. Its pages link to each next check while
+the browser works, and then to the results: readable text (animation settings, load timings, layout shifts)
+plus filmstrip and screenshot images the AI can open. Follow-up actions (hover, tap, inspect, watch longer) are
+links too. No token, Python, or downloads are needed in the chat.
+
+**Full control: the Python client.** Start the conversation with something like:
 
 > I have a browser-bridge repo at `OWNER/REPO`. Read its `AGENTS.md` first (via the GitHub API or
 > raw.githubusercontent.com), then use `client/bridge.py`. For any critique, follow `docs/expert-brief.md`.
@@ -163,6 +174,7 @@ playbooks/                       shared, reusable expert knowledge, written duri
 examples/                        ready-to-edit batch jobs
 client/bridge.py                 dependency-free client: check, run, fetch, session, playbook
 client/perceive.py               visual measurements and before/after composites (numpy, Pillow)
+worker/                          "see": browser-bridge behind one link, for chats with no code sandbox (Cloudflare Worker)
 engine/capture.mjs               batch capture engine (Node, Playwright, axe-core)
 engine/session.mjs               live session runner
 engine/selftest.mjs              engine self-test against local pages with known motion (engine/test-pages/)

@@ -15,12 +15,16 @@
   section { height: 900px; margin: 0; padding: 32px; }
   @keyframes spin { to { transform: rotate(360deg); } }
   #below { width: 80px; height: 80px; background: #f4a261; animation: spin 2000ms linear infinite; }
+  #menu { visibility: hidden; position: absolute; top: 10px; right: 10px; }
+  @keyframes menuin { from { opacity: 0; } to { opacity: 1; } }
+  #menu li { animation: menuin 400ms ease-out both; }
   @media (prefers-reduced-motion: reduce) { #title, #below { animation: none; } }
 </style>
 </head>
 <body>
   <h1 id="title">Motion fixture<noscript>&lt;img src="hidden.png"&gt;</noscript></h1>
   <button id="cta">Donate now</button>
+  <ul id="menu"><li>Hidden menu item</li></ul>
   <img id="late" src="/slow.svg" alt="An image that arrives late">
   <section style="background: #f3f0ff">Section A</section>
   <section style="background: #e8fff3">Section B</section>

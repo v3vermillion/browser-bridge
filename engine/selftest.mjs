@@ -58,6 +58,9 @@ try {
   check('load: entrance animation found with its real settings', rise && rise.duration === 600 && rise.delay === 200 && rise.easing === 'ease-out', JSON.stringify(rise));
   check('load: animation lists what changes (opacity 0 -> 1)', rise && rise.changes.some((x) => x.property === 'opacity' && x.from === '0' && x.to === '1'));
   check('load: element text excludes script/noscript source', rise && rise.text === 'Motion fixture', JSON.stringify(rise?.text));
+  const hidden = (r.watch?.animations || []).find((a) => a.target === 'li');
+  check('load: animation inside a hidden menu is not counted as on screen', hidden && hidden.visible === false, JSON.stringify(hidden && { target: hidden.target, visible: hidden.visible }));
+  check('load: the visible entrance animation is on screen', rise && rise.visible === true);
   check('load: animation start is on the recording clock', rise && rise.startedAt >= 0 && rise.startedAt < 1500, `startedAt ${rise?.startedAt}`);
   check('load: first contentful paint measured', typeof r.watch?.load?.firstContentfulPaint === 'number', JSON.stringify(r.watch?.load));
   if (streaming) {   // screenshot-loop browsers can't picture the first moments of a load (they wait for the page)
@@ -114,6 +117,8 @@ try {
   const ts = mj.frameMeta.map((f) => f.t);
   check('livescroll: frames saved', ts.length >= 3, `frames ${ts.length}`);
   check('livescroll: frame times ascend from ~0', ts.every((t, i) => i === 0 || t >= ts[i - 1]) && ts[0] > -500 && ts[0] < 3000, ts.slice(0, 5).join(','));
+  const expected = Math.min((mj.to - mj.from) / 1800 * 1000, 20000);
+  check('livescroll: keeps its speed (duration close to distance / speed)', mj.durationMs < expected + 2500, `took ${mj.durationMs}ms for ${mj.to - mj.from}px at 1800px/s`);
 
   // 7. Loops: an infinite CSS animation plus a canvas spinner drawn by script.
   await run({ action: 'goto', url: `${base}/loops.html` });

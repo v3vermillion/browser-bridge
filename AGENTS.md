@@ -45,6 +45,13 @@ would sign.
 - The user's own words about what they see ("bland", "doesn't blend", "cluttered") are direction:
   record them, translate them into professional terms and checks, and test them (expert-brief.md, step 1).
 
+## If you were given a "see" link
+
+If the user gave you a link like `https://see.<name>.workers.dev/<key>/https://site.com/`, you don't need any of
+the setup below: open the link, follow its "next check" links until the results appear, and open the image
+links to look at the frames. Its pages explain themselves. Follow-up actions (hover, tap, inspect, watch
+longer, reduced motion, 4G load) are links on the results page.
+
 ## Setup in your sandbox
 
 You need the user's token and repo name (`owner/name`). Never print the token back, never save it to

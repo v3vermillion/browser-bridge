@@ -1,0 +1,13 @@
+## notfound - chromium / desktop
+- URL: https://caring-for-a-cause.forgetraining.workers.dev/nope
+- Status: ok, HTTP 404, ready in 2.7s
+- Viewport: 1440x900 at 2x detail
+- Title: Page not found | Caring for a Cause
+- Meta description: Caring for a Cause helps families in Central Indiana with holiday meals and gifts, monthly diapers, and school supplies.
+- H1 count: 1; headings total: 3; page height: 1124px
+- Structured data blocks: 1; lang: en; og:image: yes
+- Images: 0 <img> + 0 large backgrounds; missing alt: 0, empty alt on large: 0, broken: 0, upscaled/blurry: 0, below retina: 0
+- Primary font families (by text volume): Site Serif, Footer Sans, Atkinson Hyperlegible Next, Bricolage Grotesque Variable
+- Text colors in use: 10; font sizes in use: 12; uppercase share of text: 3%
+- Network: 1 HTTP errors, 0 failed requests, 1 JS errors from the site
+- Files: full.jpg, tiles/tile-01.jpg, tiles/tile-02.jpg, meta.json, images.json, styles.json, network.json

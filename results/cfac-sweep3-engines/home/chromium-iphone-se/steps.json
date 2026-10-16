@@ -1,0 +1,29 @@
+[
+  {
+    "index": 0,
+    "action": "click",
+    "ok": true
+  },
+  {
+    "index": 1,
+    "action": "screenshot",
+    "ok": true,
+    "file": "01-menu.jpg"
+  },
+  {
+    "index": 2,
+    "action": "press",
+    "ok": true
+  },
+  {
+    "index": 3,
+    "action": "scroll",
+    "ok": true
+  },
+  {
+    "index": 4,
+    "action": "screenshot",
+    "ok": true,
+    "file": "02-involved.jpg"
+  }
+]

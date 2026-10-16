@@ -1,0 +1,13 @@
+{
+  "failedRequests": [],
+  "httpErrors": [
+    {
+      "status": 404,
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope"
+    }
+  ],
+  "blockedWrites": [],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 0
+}

@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/holiday-gift-bags.BW_V1vNm_1sq1Gc.avif",
+      "alt": "Children holding holiday gift bags beside a volunteer in a Santa hat",
+      "natural": {
+        "w": 352,
+        "h": 470
+      },
+      "displayed": {
+        "w": 396,
+        "h": 317
+      },
+      "naturalToDisplayedRatio": 0.89,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    }
+  ],
+  "backgrounds": []
+}

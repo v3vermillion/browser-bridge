@@ -1,0 +1,223 @@
+{
+  "note": "weight = number of text characters rendered with that value",
+  "primaryFontFamilies": [
+    {
+      "value": "Atkinson Hyperlegible Next",
+      "weight": 491
+    },
+    {
+      "value": "Bricolage Grotesque Variable",
+      "weight": 187
+    },
+    {
+      "value": "Site Serif",
+      "weight": 187
+    },
+    {
+      "value": "Footer Sans",
+      "weight": 103
+    }
+  ],
+  "fontStacks": [
+    {
+      "value": "\"Atkinson Hyperlegible Next\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "weight": 491
+    },
+    {
+      "value": "\"Bricolage Grotesque Variable\", \"Arial Rounded MT Bold\", system-ui, sans-serif",
+      "weight": 187
+    },
+    {
+      "value": "\"Site Serif\", Georgia, \"Times New Roman\", serif",
+      "weight": 187
+    },
+    {
+      "value": "\"Footer Sans\", \"Source Sans 3\", \"Segoe UI\", system-ui, sans-serif",
+      "weight": 103
+    }
+  ],
+  "fontSizes": [
+    {
+      "value": "20.25px",
+      "weight": 288
+    },
+    {
+      "value": "16.2px",
+      "weight": 209
+    },
+    {
+      "value": "25.308px",
+      "weight": 121
+    },
+    {
+      "value": "24.606px",
+      "weight": 103
+    },
+    {
+      "value": "18.72px",
+      "weight": 90
+    },
+    {
+      "value": "18px",
+      "weight": 32
+    },
+    {
+      "value": "49.5px",
+      "weight": 30
+    },
+    {
+      "value": "33.678px",
+      "weight": 22
+    },
+    {
+      "value": "13.5px",
+      "weight": 18
+    },
+    {
+      "value": "42.075px",
+      "weight": 15
+    },
+    {
+      "value": "19.8px",
+      "weight": 14
+    },
+    {
+      "value": "34.2px",
+      "weight": 9
+    },
+    {
+      "value": "18.3375px",
+      "weight": 6
+    },
+    {
+      "value": "24.3px",
+      "weight": 6
+    },
+    {
+      "value": "14.4px",
+      "weight": 4
+    },
+    {
+      "value": "28.08px",
+      "weight": 1
+    }
+  ],
+  "fontWeights": [
+    {
+      "value": "400",
+      "weight": 673
+    },
+    {
+      "value": "700",
+      "weight": 289
+    },
+    {
+      "value": "800",
+      "weight": 6
+    }
+  ],
+  "textColors": [
+    {
+      "value": "rgb(201, 182, 242)",
+      "weight": 364
+    },
+    {
+      "value": "rgb(34, 23, 46)",
+      "weight": 115
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "weight": 108
+    },
+    {
+      "value": "rgb(91, 78, 104)",
+      "weight": 108
+    },
+    {
+      "value": "rgb(248, 247, 254)",
+      "weight": 103
+    },
+    {
+      "value": "rgb(234, 230, 251)",
+      "weight": 43
+    },
+    {
+      "value": "rgba(255, 255, 255, 0.86)",
+      "weight": 32
+    },
+    {
+      "value": "rgb(215, 205, 243)",
+      "weight": 23
+    },
+    {
+      "value": "rgb(251, 250, 254)",
+      "weight": 22
+    },
+    {
+      "value": "rgb(207, 189, 237)",
+      "weight": 20
+    },
+    {
+      "value": "rgb(231, 225, 250)",
+      "weight": 14
+    },
+    {
+      "value": "rgb(96, 8, 215)",
+      "weight": 11
+    },
+    {
+      "value": "rgb(220, 212, 241)",
+      "weight": 5
+    }
+  ],
+  "backgroundColors": [
+    {
+      "value": "rgb(250, 247, 253)",
+      "weight": 6
+    },
+    {
+      "value": "rgb(96, 8, 215)",
+      "weight": 4
+    },
+    {
+      "value": "rgb(221, 208, 238)",
+      "weight": 3
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "weight": 3
+    },
+    {
+      "value": "rgb(27, 15, 46)",
+      "weight": 2
+    },
+    {
+      "value": "rgb(239, 230, 250)",
+      "weight": 1
+    },
+    {
+      "value": "rgba(255, 255, 255, 0.1)",
+      "weight": 1
+    },
+    {
+      "value": "rgb(6, 1, 42)",
+      "weight": 1
+    },
+    {
+      "value": "rgb(2, 0, 24)",
+      "weight": 1
+    },
+    {
+      "value": "rgb(138, 114, 196)",
+      "weight": 1
+    }
+  ],
+  "loadedWebFonts": [
+    "Bricolage Grotesque Variable 200 800 normal",
+    "Atkinson Hyperlegible Next 400 normal",
+    "Atkinson Hyperlegible Next 700 normal",
+    "Site Serif 300 700 normal",
+    "Footer Sans 400 normal"
+  ],
+  "uppercaseShare": 0.02
+}

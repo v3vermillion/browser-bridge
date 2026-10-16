@@ -1,0 +1,13 @@
+[
+  {
+    "index": 0,
+    "action": "click",
+    "ok": true
+  },
+  {
+    "index": 1,
+    "action": "screenshot",
+    "ok": true,
+    "file": "01-monthly.jpg"
+  }
+]

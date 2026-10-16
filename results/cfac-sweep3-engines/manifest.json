@@ -1,0 +1,4466 @@
+{
+  "label": "cfac-sweep3-engines",
+  "createdAt": "2026-10-16T23:35:45.702Z",
+  "engineVersion": "1.0.0",
+  "status": "ok",
+  "variants": [
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "webkit",
+      "device": "iphone-15",
+      "dir": "home/webkit-iphone-15",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:35:46.210Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 7.5,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 12,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:36:01.593Z",
+      "files": [
+        {
+          "path": "home/webkit-iphone-15/full.jpg",
+          "bytes": 912470
+        },
+        {
+          "path": "home/webkit-iphone-15/tiles/tile-01.jpg",
+          "bytes": 117698
+        },
+        {
+          "path": "home/webkit-iphone-15/tiles/tile-02.jpg",
+          "bytes": 107594
+        },
+        {
+          "path": "home/webkit-iphone-15/tiles/tile-03.jpg",
+          "bytes": 53775
+        },
+        {
+          "path": "home/webkit-iphone-15/tiles/tile-04.jpg",
+          "bytes": 97863
+        },
+        {
+          "path": "home/webkit-iphone-15/tiles/tile-05.jpg",
+          "bytes": 58698
+        },
+        {
+          "path": "home/webkit-iphone-15/tiles/tile-06.jpg",
+          "bytes": 71479
+        },
+        {
+          "path": "home/webkit-iphone-15/tiles/tile-07.jpg",
+          "bytes": 74843
+        },
+        {
+          "path": "home/webkit-iphone-15/tiles/tile-08.jpg",
+          "bytes": 51921
+        },
+        {
+          "path": "home/webkit-iphone-15/tiles/tile-09.jpg",
+          "bytes": 72670
+        },
+        {
+          "path": "home/webkit-iphone-15/tiles/tile-10.jpg",
+          "bytes": 52521
+        },
+        {
+          "path": "home/webkit-iphone-15/tiles/tile-11.jpg",
+          "bytes": 88576
+        },
+        {
+          "path": "home/webkit-iphone-15/tiles/tile-12.jpg",
+          "bytes": 64463
+        },
+        {
+          "path": "home/webkit-iphone-15/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/webkit-iphone-15/images.json",
+          "bytes": 7434
+        },
+        {
+          "path": "home/webkit-iphone-15/styles.json",
+          "bytes": 4791
+        },
+        {
+          "path": "home/webkit-iphone-15/steps/01-menu.jpg",
+          "bytes": 73061
+        },
+        {
+          "path": "home/webkit-iphone-15/steps/02-involved.jpg",
+          "bytes": 119175
+        },
+        {
+          "path": "home/webkit-iphone-15/steps.json",
+          "bytes": 386
+        },
+        {
+          "path": "home/webkit-iphone-15/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/webkit-iphone-15/summary.md",
+          "bytes": 1270
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "webkit",
+      "device": "iphone-se",
+      "dir": "home/webkit-iphone-se",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:36:01.598Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 6.1,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "tiles": {
+        "count": 12,
+        "tileHeight": 568,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:36:13.747Z",
+      "files": [
+        {
+          "path": "home/webkit-iphone-se/full.jpg",
+          "bytes": 924016
+        },
+        {
+          "path": "home/webkit-iphone-se/tiles/tile-01.jpg",
+          "bytes": 93898
+        },
+        {
+          "path": "home/webkit-iphone-se/tiles/tile-02.jpg",
+          "bytes": 89288
+        },
+        {
+          "path": "home/webkit-iphone-se/tiles/tile-03.jpg",
+          "bytes": 88791
+        },
+        {
+          "path": "home/webkit-iphone-se/tiles/tile-04.jpg",
+          "bytes": 88460
+        },
+        {
+          "path": "home/webkit-iphone-se/tiles/tile-05.jpg",
+          "bytes": 81114
+        },
+        {
+          "path": "home/webkit-iphone-se/tiles/tile-06.jpg",
+          "bytes": 85446
+        },
+        {
+          "path": "home/webkit-iphone-se/tiles/tile-07.jpg",
+          "bytes": 68926
+        },
+        {
+          "path": "home/webkit-iphone-se/tiles/tile-08.jpg",
+          "bytes": 104394
+        },
+        {
+          "path": "home/webkit-iphone-se/tiles/tile-09.jpg",
+          "bytes": 67651
+        },
+        {
+          "path": "home/webkit-iphone-se/tiles/tile-10.jpg",
+          "bytes": 78116
+        },
+        {
+          "path": "home/webkit-iphone-se/tiles/tile-11.jpg",
+          "bytes": 51920
+        },
+        {
+          "path": "home/webkit-iphone-se/tiles/tile-12.jpg",
+          "bytes": 31797
+        },
+        {
+          "path": "home/webkit-iphone-se/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/webkit-iphone-se/images.json",
+          "bytes": 7658
+        },
+        {
+          "path": "home/webkit-iphone-se/styles.json",
+          "bytes": 4871
+        },
+        {
+          "path": "home/webkit-iphone-se/steps/01-menu.jpg",
+          "bytes": 54608
+        },
+        {
+          "path": "home/webkit-iphone-se/steps/02-involved.jpg",
+          "bytes": 95007
+        },
+        {
+          "path": "home/webkit-iphone-se/steps.json",
+          "bytes": 386
+        },
+        {
+          "path": "home/webkit-iphone-se/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/webkit-iphone-se/summary.md",
+          "bytes": 1270
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "webkit",
+      "device": "ipad-mini",
+      "dir": "home/webkit-ipad-mini",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:36:13.750Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 4.6,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "tiles": {
+        "count": 7,
+        "tileHeight": 1024,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:36:26.826Z",
+      "files": [
+        {
+          "path": "home/webkit-ipad-mini/full.jpg",
+          "bytes": 1510885
+        },
+        {
+          "path": "home/webkit-ipad-mini/tiles/tile-01.jpg",
+          "bytes": 174765
+        },
+        {
+          "path": "home/webkit-ipad-mini/tiles/tile-02.jpg",
+          "bytes": 231821
+        },
+        {
+          "path": "home/webkit-ipad-mini/tiles/tile-03.jpg",
+          "bytes": 245924
+        },
+        {
+          "path": "home/webkit-ipad-mini/tiles/tile-04.jpg",
+          "bytes": 260844
+        },
+        {
+          "path": "home/webkit-ipad-mini/tiles/tile-05.jpg",
+          "bytes": 265929
+        },
+        {
+          "path": "home/webkit-ipad-mini/tiles/tile-06.jpg",
+          "bytes": 197415
+        },
+        {
+          "path": "home/webkit-ipad-mini/tiles/tile-07.jpg",
+          "bytes": 132275
+        },
+        {
+          "path": "home/webkit-ipad-mini/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/webkit-ipad-mini/images.json",
+          "bytes": 7679
+        },
+        {
+          "path": "home/webkit-ipad-mini/styles.json",
+          "bytes": 4875
+        },
+        {
+          "path": "home/webkit-ipad-mini/steps/01-menu.jpg",
+          "bytes": 119493
+        },
+        {
+          "path": "home/webkit-ipad-mini/steps/02-involved.jpg",
+          "bytes": 176212
+        },
+        {
+          "path": "home/webkit-ipad-mini/steps.json",
+          "bytes": 386
+        },
+        {
+          "path": "home/webkit-ipad-mini/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/webkit-ipad-mini/summary.md",
+          "bytes": 1176
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "webkit",
+      "device": "laptop",
+      "dir": "home/webkit-laptop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:36:26.828Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 4.5,
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "tiles": {
+        "count": 8,
+        "tileHeight": 800,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:36:43.485Z",
+      "files": [
+        {
+          "path": "home/webkit-laptop/full.jpg",
+          "bytes": 1726599
+        },
+        {
+          "path": "home/webkit-laptop/tiles/tile-01.jpg",
+          "bytes": 213298
+        },
+        {
+          "path": "home/webkit-laptop/tiles/tile-02.jpg",
+          "bytes": 250413
+        },
+        {
+          "path": "home/webkit-laptop/tiles/tile-03.jpg",
+          "bytes": 265673
+        },
+        {
+          "path": "home/webkit-laptop/tiles/tile-04.jpg",
+          "bytes": 157631
+        },
+        {
+          "path": "home/webkit-laptop/tiles/tile-05.jpg",
+          "bytes": 191735
+        },
+        {
+          "path": "home/webkit-laptop/tiles/tile-06.jpg",
+          "bytes": 262411
+        },
+        {
+          "path": "home/webkit-laptop/tiles/tile-07.jpg",
+          "bytes": 223626
+        },
+        {
+          "path": "home/webkit-laptop/tiles/tile-08.jpg",
+          "bytes": 161981
+        },
+        {
+          "path": "home/webkit-laptop/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/webkit-laptop/images.json",
+          "bytes": 7616
+        },
+        {
+          "path": "home/webkit-laptop/styles.json",
+          "bytes": 4724
+        },
+        {
+          "path": "home/webkit-laptop/steps/01-menu.jpg",
+          "bytes": 213331
+        },
+        {
+          "path": "home/webkit-laptop/steps/02-involved.jpg",
+          "bytes": 213331
+        },
+        {
+          "path": "home/webkit-laptop/steps.json",
+          "bytes": 481
+        },
+        {
+          "path": "home/webkit-laptop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/webkit-laptop/summary.md",
+          "bytes": 1174
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "home/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:36:43.488Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 4.5,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 8,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:37:01.803Z",
+      "files": [
+        {
+          "path": "home/webkit-desktop/full.jpg",
+          "bytes": 2179081
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-01.jpg",
+          "bytes": 248832
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-02.jpg",
+          "bytes": 295655
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-03.jpg",
+          "bytes": 314050
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-04.jpg",
+          "bytes": 317120
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-05.jpg",
+          "bytes": 242535
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-06.jpg",
+          "bytes": 304967
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-07.jpg",
+          "bytes": 264832
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-08.jpg",
+          "bytes": 192045
+        },
+        {
+          "path": "home/webkit-desktop/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/webkit-desktop/images.json",
+          "bytes": 7663
+        },
+        {
+          "path": "home/webkit-desktop/styles.json",
+          "bytes": 4768
+        },
+        {
+          "path": "home/webkit-desktop/steps/01-menu.jpg",
+          "bytes": 248889
+        },
+        {
+          "path": "home/webkit-desktop/steps/02-involved.jpg",
+          "bytes": 248889
+        },
+        {
+          "path": "home/webkit-desktop/steps.json",
+          "bytes": 481
+        },
+        {
+          "path": "home/webkit-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/webkit-desktop/summary.md",
+          "bytes": 1176
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "webkit",
+      "device": "iphone-15",
+      "dir": "apply/webkit-iphone-15",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:37:01.808Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 3.5,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:37:06.884Z",
+      "files": [
+        {
+          "path": "apply/webkit-iphone-15/full.jpg",
+          "bytes": 335192
+        },
+        {
+          "path": "apply/webkit-iphone-15/tiles/tile-01.jpg",
+          "bytes": 100805
+        },
+        {
+          "path": "apply/webkit-iphone-15/tiles/tile-02.jpg",
+          "bytes": 61144
+        },
+        {
+          "path": "apply/webkit-iphone-15/tiles/tile-03.jpg",
+          "bytes": 78127
+        },
+        {
+          "path": "apply/webkit-iphone-15/tiles/tile-04.jpg",
+          "bytes": 73261
+        },
+        {
+          "path": "apply/webkit-iphone-15/tiles/tile-05.jpg",
+          "bytes": 20316
+        },
+        {
+          "path": "apply/webkit-iphone-15/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/webkit-iphone-15/images.json",
+          "bytes": 481
+        },
+        {
+          "path": "apply/webkit-iphone-15/styles.json",
+          "bytes": 3811
+        },
+        {
+          "path": "apply/webkit-iphone-15/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/webkit-iphone-15/summary.md",
+          "bytes": 1067
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "webkit",
+      "device": "iphone-se",
+      "dir": "apply/webkit-iphone-se",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:37:06.885Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 3.6,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 568,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:37:11.785Z",
+      "files": [
+        {
+          "path": "apply/webkit-iphone-se/full.jpg",
+          "bytes": 254176
+        },
+        {
+          "path": "apply/webkit-iphone-se/tiles/tile-01.jpg",
+          "bytes": 79402
+        },
+        {
+          "path": "apply/webkit-iphone-se/tiles/tile-02.jpg",
+          "bytes": 51743
+        },
+        {
+          "path": "apply/webkit-iphone-se/tiles/tile-03.jpg",
+          "bytes": 66662
+        },
+        {
+          "path": "apply/webkit-iphone-se/tiles/tile-04.jpg",
+          "bytes": 43110
+        },
+        {
+          "path": "apply/webkit-iphone-se/tiles/tile-05.jpg",
+          "bytes": 14932
+        },
+        {
+          "path": "apply/webkit-iphone-se/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/webkit-iphone-se/images.json",
+          "bytes": 481
+        },
+        {
+          "path": "apply/webkit-iphone-se/styles.json",
+          "bytes": 3863
+        },
+        {
+          "path": "apply/webkit-iphone-se/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/webkit-iphone-se/summary.md",
+          "bytes": 1067
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "webkit",
+      "device": "ipad-mini",
+      "dir": "apply/webkit-ipad-mini",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:37:11.791Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 3.2,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 1024,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:37:16.952Z",
+      "files": [
+        {
+          "path": "apply/webkit-ipad-mini/full.jpg",
+          "bytes": 414827
+        },
+        {
+          "path": "apply/webkit-ipad-mini/tiles/tile-01.jpg",
+          "bytes": 186697
+        },
+        {
+          "path": "apply/webkit-ipad-mini/tiles/tile-02.jpg",
+          "bytes": 166879
+        },
+        {
+          "path": "apply/webkit-ipad-mini/tiles/tile-03.jpg",
+          "bytes": 61775
+        },
+        {
+          "path": "apply/webkit-ipad-mini/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/webkit-ipad-mini/images.json",
+          "bytes": 481
+        },
+        {
+          "path": "apply/webkit-ipad-mini/styles.json",
+          "bytes": 3827
+        },
+        {
+          "path": "apply/webkit-ipad-mini/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/webkit-ipad-mini/summary.md",
+          "bytes": 1030
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "webkit",
+      "device": "laptop",
+      "dir": "apply/webkit-laptop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:37:16.955Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 3.3,
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 800,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:37:22.682Z",
+      "files": [
+        {
+          "path": "apply/webkit-laptop/full.jpg",
+          "bytes": 532595
+        },
+        {
+          "path": "apply/webkit-laptop/tiles/tile-01.jpg",
+          "bytes": 273092
+        },
+        {
+          "path": "apply/webkit-laptop/tiles/tile-02.jpg",
+          "bytes": 194462
+        },
+        {
+          "path": "apply/webkit-laptop/tiles/tile-03.jpg",
+          "bytes": 65093
+        },
+        {
+          "path": "apply/webkit-laptop/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/webkit-laptop/images.json",
+          "bytes": 524
+        },
+        {
+          "path": "apply/webkit-laptop/styles.json",
+          "bytes": 3888
+        },
+        {
+          "path": "apply/webkit-laptop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/webkit-laptop/summary.md",
+          "bytes": 1009
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "apply/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:37:22.686Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 3.4,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:37:28.914Z",
+      "files": [
+        {
+          "path": "apply/webkit-desktop/full.jpg",
+          "bytes": 627648
+        },
+        {
+          "path": "apply/webkit-desktop/tiles/tile-01.jpg",
+          "bytes": 322056
+        },
+        {
+          "path": "apply/webkit-desktop/tiles/tile-02.jpg",
+          "bytes": 225835
+        },
+        {
+          "path": "apply/webkit-desktop/tiles/tile-03.jpg",
+          "bytes": 79707
+        },
+        {
+          "path": "apply/webkit-desktop/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/webkit-desktop/images.json",
+          "bytes": 520
+        },
+        {
+          "path": "apply/webkit-desktop/styles.json",
+          "bytes": 3919
+        },
+        {
+          "path": "apply/webkit-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/webkit-desktop/summary.md",
+          "bytes": 1010
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "webkit",
+      "device": "iphone-15",
+      "dir": "donate/webkit-iphone-15",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:37:28.915Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 3.7,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:37:35.133Z",
+      "files": [
+        {
+          "path": "donate/webkit-iphone-15/full.jpg",
+          "bytes": 350231
+        },
+        {
+          "path": "donate/webkit-iphone-15/tiles/tile-01.jpg",
+          "bytes": 92107
+        },
+        {
+          "path": "donate/webkit-iphone-15/tiles/tile-02.jpg",
+          "bytes": 104662
+        },
+        {
+          "path": "donate/webkit-iphone-15/tiles/tile-03.jpg",
+          "bytes": 89907
+        },
+        {
+          "path": "donate/webkit-iphone-15/tiles/tile-04.jpg",
+          "bytes": 64380
+        },
+        {
+          "path": "donate/webkit-iphone-15/tiles/tile-05.jpg",
+          "bytes": 1539
+        },
+        {
+          "path": "donate/webkit-iphone-15/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/webkit-iphone-15/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/webkit-iphone-15/styles.json",
+          "bytes": 3483
+        },
+        {
+          "path": "donate/webkit-iphone-15/steps/01-monthly.jpg",
+          "bytes": 92572
+        },
+        {
+          "path": "donate/webkit-iphone-15/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/webkit-iphone-15/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/webkit-iphone-15/summary.md",
+          "bytes": 1130
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "webkit",
+      "device": "iphone-se",
+      "dir": "donate/webkit-iphone-se",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:37:35.135Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 3.4,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "tiles": {
+        "count": 4,
+        "tileHeight": 568,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:37:40.706Z",
+      "files": [
+        {
+          "path": "donate/webkit-iphone-se/full.jpg",
+          "bytes": 259714
+        },
+        {
+          "path": "donate/webkit-iphone-se/tiles/tile-01.jpg",
+          "bytes": 70605
+        },
+        {
+          "path": "donate/webkit-iphone-se/tiles/tile-02.jpg",
+          "bytes": 80755
+        },
+        {
+          "path": "donate/webkit-iphone-se/tiles/tile-03.jpg",
+          "bytes": 66567
+        },
+        {
+          "path": "donate/webkit-iphone-se/tiles/tile-04.jpg",
+          "bytes": 43606
+        },
+        {
+          "path": "donate/webkit-iphone-se/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/webkit-iphone-se/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/webkit-iphone-se/styles.json",
+          "bytes": 3530
+        },
+        {
+          "path": "donate/webkit-iphone-se/steps/01-monthly.jpg",
+          "bytes": 70760
+        },
+        {
+          "path": "donate/webkit-iphone-se/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/webkit-iphone-se/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/webkit-iphone-se/summary.md",
+          "bytes": 1111
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "webkit",
+      "device": "ipad-mini",
+      "dir": "donate/webkit-ipad-mini",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:37:40.709Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 3.1,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 1024,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:37:47.553Z",
+      "files": [
+        {
+          "path": "donate/webkit-ipad-mini/full.jpg",
+          "bytes": 420575
+        },
+        {
+          "path": "donate/webkit-ipad-mini/tiles/tile-01.jpg",
+          "bytes": 201337
+        },
+        {
+          "path": "donate/webkit-ipad-mini/tiles/tile-02.jpg",
+          "bytes": 172202
+        },
+        {
+          "path": "donate/webkit-ipad-mini/tiles/tile-03.jpg",
+          "bytes": 47745
+        },
+        {
+          "path": "donate/webkit-ipad-mini/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/webkit-ipad-mini/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/webkit-ipad-mini/styles.json",
+          "bytes": 3499
+        },
+        {
+          "path": "donate/webkit-ipad-mini/steps/01-monthly.jpg",
+          "bytes": 204609
+        },
+        {
+          "path": "donate/webkit-ipad-mini/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/webkit-ipad-mini/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/webkit-ipad-mini/summary.md",
+          "bytes": 1093
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "webkit",
+      "device": "laptop",
+      "dir": "donate/webkit-laptop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:37:47.555Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 3.4,
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 800,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:37:54.649Z",
+      "files": [
+        {
+          "path": "donate/webkit-laptop/full.jpg",
+          "bytes": 471365
+        },
+        {
+          "path": "donate/webkit-laptop/tiles/tile-01.jpg",
+          "bytes": 272428
+        },
+        {
+          "path": "donate/webkit-laptop/tiles/tile-02.jpg",
+          "bytes": 198869
+        },
+        {
+          "path": "donate/webkit-laptop/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/webkit-laptop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/webkit-laptop/styles.json",
+          "bytes": 3492
+        },
+        {
+          "path": "donate/webkit-laptop/steps/01-monthly.jpg",
+          "bytes": 275795
+        },
+        {
+          "path": "donate/webkit-laptop/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/webkit-laptop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/webkit-laptop/summary.md",
+          "bytes": 1053
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "donate/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:37:54.654Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 3.4,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:38:02.535Z",
+      "files": [
+        {
+          "path": "donate/webkit-desktop/full.jpg",
+          "bytes": 550246
+        },
+        {
+          "path": "donate/webkit-desktop/tiles/tile-01.jpg",
+          "bytes": 318398
+        },
+        {
+          "path": "donate/webkit-desktop/tiles/tile-02.jpg",
+          "bytes": 233059
+        },
+        {
+          "path": "donate/webkit-desktop/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/webkit-desktop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/webkit-desktop/styles.json",
+          "bytes": 3523
+        },
+        {
+          "path": "donate/webkit-desktop/steps/01-monthly.jpg",
+          "bytes": 322511
+        },
+        {
+          "path": "donate/webkit-desktop/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/webkit-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/webkit-desktop/summary.md",
+          "bytes": 1054
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "webkit",
+      "device": "iphone-15",
+      "dir": "notfound/webkit-iphone-15",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:38:02.537Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 3,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:38:06.453Z",
+      "files": [
+        {
+          "path": "notfound/webkit-iphone-15/full.jpg",
+          "bytes": 174592
+        },
+        {
+          "path": "notfound/webkit-iphone-15/tiles/tile-01.jpg",
+          "bytes": 91074
+        },
+        {
+          "path": "notfound/webkit-iphone-15/tiles/tile-02.jpg",
+          "bytes": 65247
+        },
+        {
+          "path": "notfound/webkit-iphone-15/tiles/tile-03.jpg",
+          "bytes": 19766
+        },
+        {
+          "path": "notfound/webkit-iphone-15/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/webkit-iphone-15/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/webkit-iphone-15/styles.json",
+          "bytes": 3234
+        },
+        {
+          "path": "notfound/webkit-iphone-15/network.json",
+          "bytes": 340
+        },
+        {
+          "path": "notfound/webkit-iphone-15/summary.md",
+          "bytes": 1002
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "webkit",
+      "device": "iphone-se",
+      "dir": "notfound/webkit-iphone-se",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:38:06.454Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 3,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 568,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:38:10.186Z",
+      "files": [
+        {
+          "path": "notfound/webkit-iphone-se/full.jpg",
+          "bytes": 131847
+        },
+        {
+          "path": "notfound/webkit-iphone-se/tiles/tile-01.jpg",
+          "bytes": 73792
+        },
+        {
+          "path": "notfound/webkit-iphone-se/tiles/tile-02.jpg",
+          "bytes": 44113
+        },
+        {
+          "path": "notfound/webkit-iphone-se/tiles/tile-03.jpg",
+          "bytes": 15105
+        },
+        {
+          "path": "notfound/webkit-iphone-se/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/webkit-iphone-se/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/webkit-iphone-se/styles.json",
+          "bytes": 3272
+        },
+        {
+          "path": "notfound/webkit-iphone-se/network.json",
+          "bytes": 340
+        },
+        {
+          "path": "notfound/webkit-iphone-se/summary.md",
+          "bytes": 1002
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "webkit",
+      "device": "ipad-mini",
+      "dir": "notfound/webkit-ipad-mini",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:38:10.190Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 2.8,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 1024,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:38:13.933Z",
+      "files": [
+        {
+          "path": "notfound/webkit-ipad-mini/full.jpg",
+          "bytes": 218749
+        },
+        {
+          "path": "notfound/webkit-ipad-mini/tiles/tile-01.jpg",
+          "bytes": 180852
+        },
+        {
+          "path": "notfound/webkit-ipad-mini/tiles/tile-02.jpg",
+          "bytes": 38187
+        },
+        {
+          "path": "notfound/webkit-ipad-mini/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/webkit-ipad-mini/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/webkit-ipad-mini/styles.json",
+          "bytes": 3245
+        },
+        {
+          "path": "notfound/webkit-ipad-mini/network.json",
+          "bytes": 340
+        },
+        {
+          "path": "notfound/webkit-ipad-mini/summary.md",
+          "bytes": 986
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "webkit",
+      "device": "laptop",
+      "dir": "notfound/webkit-laptop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:38:13.936Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 2.9,
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 800,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:38:17.720Z",
+      "files": [
+        {
+          "path": "notfound/webkit-laptop/full.jpg",
+          "bytes": 272007
+        },
+        {
+          "path": "notfound/webkit-laptop/tiles/tile-01.jpg",
+          "bytes": 205510
+        },
+        {
+          "path": "notfound/webkit-laptop/tiles/tile-02.jpg",
+          "bytes": 66379
+        },
+        {
+          "path": "notfound/webkit-laptop/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/webkit-laptop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/webkit-laptop/styles.json",
+          "bytes": 3175
+        },
+        {
+          "path": "notfound/webkit-laptop/network.json",
+          "bytes": 340
+        },
+        {
+          "path": "notfound/webkit-laptop/summary.md",
+          "bytes": 966
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "notfound/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:38:17.721Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 2.9,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:38:21.629Z",
+      "files": [
+        {
+          "path": "notfound/webkit-desktop/full.jpg",
+          "bytes": 312712
+        },
+        {
+          "path": "notfound/webkit-desktop/tiles/tile-01.jpg",
+          "bytes": 237430
+        },
+        {
+          "path": "notfound/webkit-desktop/tiles/tile-02.jpg",
+          "bytes": 75694
+        },
+        {
+          "path": "notfound/webkit-desktop/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/webkit-desktop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/webkit-desktop/styles.json",
+          "bytes": 3196
+        },
+        {
+          "path": "notfound/webkit-desktop/network.json",
+          "bytes": 340
+        },
+        {
+          "path": "notfound/webkit-desktop/summary.md",
+          "bytes": 967
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "firefox",
+      "device": "iphone-15",
+      "dir": "home/firefox-iphone-15",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:38:22.221Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 4.8,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 12,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:38:31.538Z",
+      "files": [
+        {
+          "path": "home/firefox-iphone-15/full.jpg",
+          "bytes": 1292866
+        },
+        {
+          "path": "home/firefox-iphone-15/tiles/tile-01.jpg",
+          "bytes": 122520
+        },
+        {
+          "path": "home/firefox-iphone-15/tiles/tile-02.jpg",
+          "bytes": 116695
+        },
+        {
+          "path": "home/firefox-iphone-15/tiles/tile-03.jpg",
+          "bytes": 128726
+        },
+        {
+          "path": "home/firefox-iphone-15/tiles/tile-04.jpg",
+          "bytes": 109124
+        },
+        {
+          "path": "home/firefox-iphone-15/tiles/tile-05.jpg",
+          "bytes": 98722
+        },
+        {
+          "path": "home/firefox-iphone-15/tiles/tile-06.jpg",
+          "bytes": 137071
+        },
+        {
+          "path": "home/firefox-iphone-15/tiles/tile-07.jpg",
+          "bytes": 109718
+        },
+        {
+          "path": "home/firefox-iphone-15/tiles/tile-08.jpg",
+          "bytes": 114292
+        },
+        {
+          "path": "home/firefox-iphone-15/tiles/tile-09.jpg",
+          "bytes": 98421
+        },
+        {
+          "path": "home/firefox-iphone-15/tiles/tile-10.jpg",
+          "bytes": 106717
+        },
+        {
+          "path": "home/firefox-iphone-15/tiles/tile-11.jpg",
+          "bytes": 89914
+        },
+        {
+          "path": "home/firefox-iphone-15/tiles/tile-12.jpg",
+          "bytes": 69850
+        },
+        {
+          "path": "home/firefox-iphone-15/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/firefox-iphone-15/images.json",
+          "bytes": 7666
+        },
+        {
+          "path": "home/firefox-iphone-15/styles.json",
+          "bytes": 4857
+        },
+        {
+          "path": "home/firefox-iphone-15/steps/01-menu.jpg",
+          "bytes": 75221
+        },
+        {
+          "path": "home/firefox-iphone-15/steps/02-involved.jpg",
+          "bytes": 122559
+        },
+        {
+          "path": "home/firefox-iphone-15/steps.json",
+          "bytes": 386
+        },
+        {
+          "path": "home/firefox-iphone-15/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/firefox-iphone-15/summary.md",
+          "bytes": 1265
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "firefox",
+      "device": "iphone-se",
+      "dir": "home/firefox-iphone-se",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:38:31.540Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 4.4,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "tiles": {
+        "count": 12,
+        "tileHeight": 568,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:38:39.438Z",
+      "files": [
+        {
+          "path": "home/firefox-iphone-se/full.jpg",
+          "bytes": 962965
+        },
+        {
+          "path": "home/firefox-iphone-se/tiles/tile-01.jpg",
+          "bytes": 95381
+        },
+        {
+          "path": "home/firefox-iphone-se/tiles/tile-02.jpg",
+          "bytes": 95599
+        },
+        {
+          "path": "home/firefox-iphone-se/tiles/tile-03.jpg",
+          "bytes": 91728
+        },
+        {
+          "path": "home/firefox-iphone-se/tiles/tile-04.jpg",
+          "bytes": 93113
+        },
+        {
+          "path": "home/firefox-iphone-se/tiles/tile-05.jpg",
+          "bytes": 87014
+        },
+        {
+          "path": "home/firefox-iphone-se/tiles/tile-06.jpg",
+          "bytes": 90445
+        },
+        {
+          "path": "home/firefox-iphone-se/tiles/tile-07.jpg",
+          "bytes": 73729
+        },
+        {
+          "path": "home/firefox-iphone-se/tiles/tile-08.jpg",
+          "bytes": 107069
+        },
+        {
+          "path": "home/firefox-iphone-se/tiles/tile-09.jpg",
+          "bytes": 70246
+        },
+        {
+          "path": "home/firefox-iphone-se/tiles/tile-10.jpg",
+          "bytes": 80897
+        },
+        {
+          "path": "home/firefox-iphone-se/tiles/tile-11.jpg",
+          "bytes": 55493
+        },
+        {
+          "path": "home/firefox-iphone-se/tiles/tile-12.jpg",
+          "bytes": 28655
+        },
+        {
+          "path": "home/firefox-iphone-se/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/firefox-iphone-se/images.json",
+          "bytes": 7650
+        },
+        {
+          "path": "home/firefox-iphone-se/styles.json",
+          "bytes": 4924
+        },
+        {
+          "path": "home/firefox-iphone-se/steps/01-menu.jpg",
+          "bytes": 56256
+        },
+        {
+          "path": "home/firefox-iphone-se/steps/02-involved.jpg",
+          "bytes": 95481
+        },
+        {
+          "path": "home/firefox-iphone-se/steps.json",
+          "bytes": 386
+        },
+        {
+          "path": "home/firefox-iphone-se/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/firefox-iphone-se/summary.md",
+          "bytes": 1265
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "firefox",
+      "device": "ipad-mini",
+      "dir": "home/firefox-ipad-mini",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:38:39.440Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 3.7,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "tiles": {
+        "count": 7,
+        "tileHeight": 1024,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:38:47.666Z",
+      "files": [
+        {
+          "path": "home/firefox-ipad-mini/full.jpg",
+          "bytes": 1608130
+        },
+        {
+          "path": "home/firefox-ipad-mini/tiles/tile-01.jpg",
+          "bytes": 191328
+        },
+        {
+          "path": "home/firefox-ipad-mini/tiles/tile-02.jpg",
+          "bytes": 251085
+        },
+        {
+          "path": "home/firefox-ipad-mini/tiles/tile-03.jpg",
+          "bytes": 260078
+        },
+        {
+          "path": "home/firefox-ipad-mini/tiles/tile-04.jpg",
+          "bytes": 278527
+        },
+        {
+          "path": "home/firefox-ipad-mini/tiles/tile-05.jpg",
+          "bytes": 274321
+        },
+        {
+          "path": "home/firefox-ipad-mini/tiles/tile-06.jpg",
+          "bytes": 214091
+        },
+        {
+          "path": "home/firefox-ipad-mini/tiles/tile-07.jpg",
+          "bytes": 141911
+        },
+        {
+          "path": "home/firefox-ipad-mini/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/firefox-ipad-mini/images.json",
+          "bytes": 7672
+        },
+        {
+          "path": "home/firefox-ipad-mini/styles.json",
+          "bytes": 4920
+        },
+        {
+          "path": "home/firefox-ipad-mini/steps/01-menu.jpg",
+          "bytes": 143033
+        },
+        {
+          "path": "home/firefox-ipad-mini/steps/02-involved.jpg",
+          "bytes": 191431
+        },
+        {
+          "path": "home/firefox-ipad-mini/steps.json",
+          "bytes": 386
+        },
+        {
+          "path": "home/firefox-ipad-mini/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/firefox-ipad-mini/summary.md",
+          "bytes": 1171
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "firefox",
+      "device": "laptop",
+      "dir": "home/firefox-laptop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:38:47.668Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 3.8,
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "tiles": {
+        "count": 8,
+        "tileHeight": 800,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:38:59.021Z",
+      "files": [
+        {
+          "path": "home/firefox-laptop/full.jpg",
+          "bytes": 2081551
+        },
+        {
+          "path": "home/firefox-laptop/tiles/tile-01.jpg",
+          "bytes": 237364
+        },
+        {
+          "path": "home/firefox-laptop/tiles/tile-02.jpg",
+          "bytes": 280648
+        },
+        {
+          "path": "home/firefox-laptop/tiles/tile-03.jpg",
+          "bytes": 301524
+        },
+        {
+          "path": "home/firefox-laptop/tiles/tile-04.jpg",
+          "bytes": 332895
+        },
+        {
+          "path": "home/firefox-laptop/tiles/tile-05.jpg",
+          "bytes": 226745
+        },
+        {
+          "path": "home/firefox-laptop/tiles/tile-06.jpg",
+          "bytes": 281084
+        },
+        {
+          "path": "home/firefox-laptop/tiles/tile-07.jpg",
+          "bytes": 247696
+        },
+        {
+          "path": "home/firefox-laptop/tiles/tile-08.jpg",
+          "bytes": 177392
+        },
+        {
+          "path": "home/firefox-laptop/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/firefox-laptop/images.json",
+          "bytes": 7698
+        },
+        {
+          "path": "home/firefox-laptop/styles.json",
+          "bytes": 4750
+        },
+        {
+          "path": "home/firefox-laptop/steps/01-menu.jpg",
+          "bytes": 237364
+        },
+        {
+          "path": "home/firefox-laptop/steps/02-involved.jpg",
+          "bytes": 237364
+        },
+        {
+          "path": "home/firefox-laptop/steps.json",
+          "bytes": 481
+        },
+        {
+          "path": "home/firefox-laptop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/firefox-laptop/summary.md",
+          "bytes": 1175
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "firefox",
+      "device": "desktop",
+      "dir": "home/firefox-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:38:59.023Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 3.8,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 8,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:39:11.028Z",
+      "files": [
+        {
+          "path": "home/firefox-desktop/full.jpg",
+          "bytes": 2469886
+        },
+        {
+          "path": "home/firefox-desktop/tiles/tile-01.jpg",
+          "bytes": 279518
+        },
+        {
+          "path": "home/firefox-desktop/tiles/tile-02.jpg",
+          "bytes": 332391
+        },
+        {
+          "path": "home/firefox-desktop/tiles/tile-03.jpg",
+          "bytes": 356227
+        },
+        {
+          "path": "home/firefox-desktop/tiles/tile-04.jpg",
+          "bytes": 394264
+        },
+        {
+          "path": "home/firefox-desktop/tiles/tile-05.jpg",
+          "bytes": 273304
+        },
+        {
+          "path": "home/firefox-desktop/tiles/tile-06.jpg",
+          "bytes": 334221
+        },
+        {
+          "path": "home/firefox-desktop/tiles/tile-07.jpg",
+          "bytes": 294476
+        },
+        {
+          "path": "home/firefox-desktop/tiles/tile-08.jpg",
+          "bytes": 213015
+        },
+        {
+          "path": "home/firefox-desktop/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/firefox-desktop/images.json",
+          "bytes": 7694
+        },
+        {
+          "path": "home/firefox-desktop/styles.json",
+          "bytes": 4795
+        },
+        {
+          "path": "home/firefox-desktop/steps/01-menu.jpg",
+          "bytes": 279518
+        },
+        {
+          "path": "home/firefox-desktop/steps/02-involved.jpg",
+          "bytes": 279518
+        },
+        {
+          "path": "home/firefox-desktop/steps.json",
+          "bytes": 481
+        },
+        {
+          "path": "home/firefox-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/firefox-desktop/summary.md",
+          "bytes": 1177
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "firefox",
+      "device": "iphone-15",
+      "dir": "apply/firefox-iphone-15",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:39:11.031Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 3.3,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:39:15.147Z",
+      "files": [
+        {
+          "path": "apply/firefox-iphone-15/full.jpg",
+          "bytes": 361065
+        },
+        {
+          "path": "apply/firefox-iphone-15/tiles/tile-01.jpg",
+          "bytes": 103403
+        },
+        {
+          "path": "apply/firefox-iphone-15/tiles/tile-02.jpg",
+          "bytes": 71928
+        },
+        {
+          "path": "apply/firefox-iphone-15/tiles/tile-03.jpg",
+          "bytes": 87059
+        },
+        {
+          "path": "apply/firefox-iphone-15/tiles/tile-04.jpg",
+          "bytes": 78677
+        },
+        {
+          "path": "apply/firefox-iphone-15/tiles/tile-05.jpg",
+          "bytes": 22675
+        },
+        {
+          "path": "apply/firefox-iphone-15/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/firefox-iphone-15/images.json",
+          "bytes": 478
+        },
+        {
+          "path": "apply/firefox-iphone-15/styles.json",
+          "bytes": 3860
+        },
+        {
+          "path": "apply/firefox-iphone-15/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/firefox-iphone-15/summary.md",
+          "bytes": 1062
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "firefox",
+      "device": "iphone-se",
+      "dir": "apply/firefox-iphone-se",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:39:15.149Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 3.3,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 568,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:39:19.094Z",
+      "files": [
+        {
+          "path": "apply/firefox-iphone-se/full.jpg",
+          "bytes": 269741
+        },
+        {
+          "path": "apply/firefox-iphone-se/tiles/tile-01.jpg",
+          "bytes": 81938
+        },
+        {
+          "path": "apply/firefox-iphone-se/tiles/tile-02.jpg",
+          "bytes": 56476
+        },
+        {
+          "path": "apply/firefox-iphone-se/tiles/tile-03.jpg",
+          "bytes": 70318
+        },
+        {
+          "path": "apply/firefox-iphone-se/tiles/tile-04.jpg",
+          "bytes": 54316
+        },
+        {
+          "path": "apply/firefox-iphone-se/tiles/tile-05.jpg",
+          "bytes": 9292
+        },
+        {
+          "path": "apply/firefox-iphone-se/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/firefox-iphone-se/images.json",
+          "bytes": 478
+        },
+        {
+          "path": "apply/firefox-iphone-se/styles.json",
+          "bytes": 3863
+        },
+        {
+          "path": "apply/firefox-iphone-se/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/firefox-iphone-se/summary.md",
+          "bytes": 1062
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "firefox",
+      "device": "ipad-mini",
+      "dir": "apply/firefox-ipad-mini",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:39:19.096Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 3,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 1024,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:39:23.123Z",
+      "files": [
+        {
+          "path": "apply/firefox-ipad-mini/full.jpg",
+          "bytes": 462968
+        },
+        {
+          "path": "apply/firefox-ipad-mini/tiles/tile-01.jpg",
+          "bytes": 205802
+        },
+        {
+          "path": "apply/firefox-ipad-mini/tiles/tile-02.jpg",
+          "bytes": 178155
+        },
+        {
+          "path": "apply/firefox-ipad-mini/tiles/tile-03.jpg",
+          "bytes": 80433
+        },
+        {
+          "path": "apply/firefox-ipad-mini/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/firefox-ipad-mini/images.json",
+          "bytes": 478
+        },
+        {
+          "path": "apply/firefox-ipad-mini/styles.json",
+          "bytes": 3914
+        },
+        {
+          "path": "apply/firefox-ipad-mini/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/firefox-ipad-mini/summary.md",
+          "bytes": 1023
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "firefox",
+      "device": "laptop",
+      "dir": "apply/firefox-laptop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:39:23.124Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 2.9,
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 800,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:39:27.191Z",
+      "files": [
+        {
+          "path": "apply/firefox-laptop/full.jpg",
+          "bytes": 595152
+        },
+        {
+          "path": "apply/firefox-laptop/tiles/tile-01.jpg",
+          "bytes": 291159
+        },
+        {
+          "path": "apply/firefox-laptop/tiles/tile-02.jpg",
+          "bytes": 211193
+        },
+        {
+          "path": "apply/firefox-laptop/tiles/tile-03.jpg",
+          "bytes": 94064
+        },
+        {
+          "path": "apply/firefox-laptop/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/firefox-laptop/images.json",
+          "bytes": 524
+        },
+        {
+          "path": "apply/firefox-laptop/styles.json",
+          "bytes": 3921
+        },
+        {
+          "path": "apply/firefox-laptop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/firefox-laptop/summary.md",
+          "bytes": 1010
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "firefox",
+      "device": "desktop",
+      "dir": "apply/firefox-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:39:27.192Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 2.9,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:39:32.332Z",
+      "files": [
+        {
+          "path": "apply/firefox-desktop/full.jpg",
+          "bytes": 702078
+        },
+        {
+          "path": "apply/firefox-desktop/tiles/tile-01.jpg",
+          "bytes": 345871
+        },
+        {
+          "path": "apply/firefox-desktop/tiles/tile-02.jpg",
+          "bytes": 246209
+        },
+        {
+          "path": "apply/firefox-desktop/tiles/tile-03.jpg",
+          "bytes": 111668
+        },
+        {
+          "path": "apply/firefox-desktop/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/firefox-desktop/images.json",
+          "bytes": 520
+        },
+        {
+          "path": "apply/firefox-desktop/styles.json",
+          "bytes": 3934
+        },
+        {
+          "path": "apply/firefox-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/firefox-desktop/summary.md",
+          "bytes": 1011
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "firefox",
+      "device": "iphone-15",
+      "dir": "donate/firefox-iphone-15",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:39:32.333Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 3.5,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:39:37.240Z",
+      "files": [
+        {
+          "path": "donate/firefox-iphone-15/full.jpg",
+          "bytes": 372346
+        },
+        {
+          "path": "donate/firefox-iphone-15/tiles/tile-01.jpg",
+          "bytes": 96790
+        },
+        {
+          "path": "donate/firefox-iphone-15/tiles/tile-02.jpg",
+          "bytes": 111130
+        },
+        {
+          "path": "donate/firefox-iphone-15/tiles/tile-03.jpg",
+          "bytes": 94338
+        },
+        {
+          "path": "donate/firefox-iphone-15/tiles/tile-04.jpg",
+          "bytes": 71693
+        },
+        {
+          "path": "donate/firefox-iphone-15/tiles/tile-05.jpg",
+          "bytes": 1819
+        },
+        {
+          "path": "donate/firefox-iphone-15/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/firefox-iphone-15/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/firefox-iphone-15/styles.json",
+          "bytes": 3531
+        },
+        {
+          "path": "donate/firefox-iphone-15/steps/01-monthly.jpg",
+          "bytes": 94338
+        },
+        {
+          "path": "donate/firefox-iphone-15/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/firefox-iphone-15/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/firefox-iphone-15/summary.md",
+          "bytes": 1125
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "firefox",
+      "device": "iphone-se",
+      "dir": "donate/firefox-iphone-se",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:39:37.242Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 3.2,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "tiles": {
+        "count": 4,
+        "tileHeight": 568,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:39:41.639Z",
+      "files": [
+        {
+          "path": "donate/firefox-iphone-se/full.jpg",
+          "bytes": 273039
+        },
+        {
+          "path": "donate/firefox-iphone-se/tiles/tile-01.jpg",
+          "bytes": 74280
+        },
+        {
+          "path": "donate/firefox-iphone-se/tiles/tile-02.jpg",
+          "bytes": 86068
+        },
+        {
+          "path": "donate/firefox-iphone-se/tiles/tile-03.jpg",
+          "bytes": 65604
+        },
+        {
+          "path": "donate/firefox-iphone-se/tiles/tile-04.jpg",
+          "bytes": 48909
+        },
+        {
+          "path": "donate/firefox-iphone-se/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/firefox-iphone-se/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/firefox-iphone-se/styles.json",
+          "bytes": 3534
+        },
+        {
+          "path": "donate/firefox-iphone-se/steps/01-monthly.jpg",
+          "bytes": 74388
+        },
+        {
+          "path": "donate/firefox-iphone-se/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/firefox-iphone-se/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/firefox-iphone-se/summary.md",
+          "bytes": 1106
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "firefox",
+      "device": "ipad-mini",
+      "dir": "donate/firefox-ipad-mini",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:39:41.641Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 2.9,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 1024,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:39:46.148Z",
+      "files": [
+        {
+          "path": "donate/firefox-ipad-mini/full.jpg",
+          "bytes": 460806
+        },
+        {
+          "path": "donate/firefox-ipad-mini/tiles/tile-01.jpg",
+          "bytes": 218934
+        },
+        {
+          "path": "donate/firefox-ipad-mini/tiles/tile-02.jpg",
+          "bytes": 190645
+        },
+        {
+          "path": "donate/firefox-ipad-mini/tiles/tile-03.jpg",
+          "bytes": 52522
+        },
+        {
+          "path": "donate/firefox-ipad-mini/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/firefox-ipad-mini/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/firefox-ipad-mini/styles.json",
+          "bytes": 3585
+        },
+        {
+          "path": "donate/firefox-ipad-mini/steps/01-monthly.jpg",
+          "bytes": 222258
+        },
+        {
+          "path": "donate/firefox-ipad-mini/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/firefox-ipad-mini/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/firefox-ipad-mini/summary.md",
+          "bytes": 1088
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "firefox",
+      "device": "laptop",
+      "dir": "donate/firefox-laptop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:39:46.149Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 2.9,
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 800,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:39:50.778Z",
+      "files": [
+        {
+          "path": "donate/firefox-laptop/full.jpg",
+          "bytes": 521043
+        },
+        {
+          "path": "donate/firefox-laptop/tiles/tile-01.jpg",
+          "bytes": 297496
+        },
+        {
+          "path": "donate/firefox-laptop/tiles/tile-02.jpg",
+          "bytes": 224255
+        },
+        {
+          "path": "donate/firefox-laptop/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/firefox-laptop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/firefox-laptop/styles.json",
+          "bytes": 3525
+        },
+        {
+          "path": "donate/firefox-laptop/steps/01-monthly.jpg",
+          "bytes": 300700
+        },
+        {
+          "path": "donate/firefox-laptop/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/firefox-laptop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/firefox-laptop/summary.md",
+          "bytes": 1054
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "firefox",
+      "device": "desktop",
+      "dir": "donate/firefox-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:39:50.779Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 2.9,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:39:55.599Z",
+      "files": [
+        {
+          "path": "donate/firefox-desktop/full.jpg",
+          "bytes": 612845
+        },
+        {
+          "path": "donate/firefox-desktop/tiles/tile-01.jpg",
+          "bytes": 351983
+        },
+        {
+          "path": "donate/firefox-desktop/tiles/tile-02.jpg",
+          "bytes": 262600
+        },
+        {
+          "path": "donate/firefox-desktop/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/firefox-desktop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/firefox-desktop/styles.json",
+          "bytes": 3537
+        },
+        {
+          "path": "donate/firefox-desktop/steps/01-monthly.jpg",
+          "bytes": 356356
+        },
+        {
+          "path": "donate/firefox-desktop/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/firefox-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/firefox-desktop/summary.md",
+          "bytes": 1055
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "firefox",
+      "device": "iphone-15",
+      "dir": "notfound/firefox-iphone-15",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:39:55.600Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 2.9,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:39:58.947Z",
+      "files": [
+        {
+          "path": "notfound/firefox-iphone-15/full.jpg",
+          "bytes": 184754
+        },
+        {
+          "path": "notfound/firefox-iphone-15/tiles/tile-01.jpg",
+          "bytes": 93470
+        },
+        {
+          "path": "notfound/firefox-iphone-15/tiles/tile-02.jpg",
+          "bytes": 70621
+        },
+        {
+          "path": "notfound/firefox-iphone-15/tiles/tile-03.jpg",
+          "bytes": 20978
+        },
+        {
+          "path": "notfound/firefox-iphone-15/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/firefox-iphone-15/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/firefox-iphone-15/styles.json",
+          "bytes": 3276
+        },
+        {
+          "path": "notfound/firefox-iphone-15/network.json",
+          "bytes": 252
+        },
+        {
+          "path": "notfound/firefox-iphone-15/summary.md",
+          "bytes": 999
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "firefox",
+      "device": "iphone-se",
+      "dir": "notfound/firefox-iphone-se",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:39:58.949Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 2.9,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 568,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:40:02.214Z",
+      "files": [
+        {
+          "path": "notfound/firefox-iphone-se/full.jpg",
+          "bytes": 135601
+        },
+        {
+          "path": "notfound/firefox-iphone-se/tiles/tile-01.jpg",
+          "bytes": 74178
+        },
+        {
+          "path": "notfound/firefox-iphone-se/tiles/tile-02.jpg",
+          "bytes": 54044
+        },
+        {
+          "path": "notfound/firefox-iphone-se/tiles/tile-03.jpg",
+          "bytes": 8673
+        },
+        {
+          "path": "notfound/firefox-iphone-se/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/firefox-iphone-se/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/firefox-iphone-se/styles.json",
+          "bytes": 3279
+        },
+        {
+          "path": "notfound/firefox-iphone-se/network.json",
+          "bytes": 252
+        },
+        {
+          "path": "notfound/firefox-iphone-se/summary.md",
+          "bytes": 999
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "firefox",
+      "device": "ipad-mini",
+      "dir": "notfound/firefox-ipad-mini",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:40:02.215Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 2.8,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 1024,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:40:05.459Z",
+      "files": [
+        {
+          "path": "notfound/firefox-ipad-mini/full.jpg",
+          "bytes": 235706
+        },
+        {
+          "path": "notfound/firefox-ipad-mini/tiles/tile-01.jpg",
+          "bytes": 194936
+        },
+        {
+          "path": "notfound/firefox-ipad-mini/tiles/tile-02.jpg",
+          "bytes": 41426
+        },
+        {
+          "path": "notfound/firefox-ipad-mini/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/firefox-ipad-mini/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/firefox-ipad-mini/styles.json",
+          "bytes": 3335
+        },
+        {
+          "path": "notfound/firefox-ipad-mini/network.json",
+          "bytes": 252
+        },
+        {
+          "path": "notfound/firefox-ipad-mini/summary.md",
+          "bytes": 981
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "firefox",
+      "device": "laptop",
+      "dir": "notfound/firefox-laptop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:40:05.461Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 2.8,
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 800,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:40:08.760Z",
+      "files": [
+        {
+          "path": "notfound/firefox-laptop/full.jpg",
+          "bytes": 302969
+        },
+        {
+          "path": "notfound/firefox-laptop/tiles/tile-01.jpg",
+          "bytes": 228091
+        },
+        {
+          "path": "notfound/firefox-laptop/tiles/tile-02.jpg",
+          "bytes": 75664
+        },
+        {
+          "path": "notfound/firefox-laptop/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/firefox-laptop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/firefox-laptop/styles.json",
+          "bytes": 3202
+        },
+        {
+          "path": "notfound/firefox-laptop/network.json",
+          "bytes": 252
+        },
+        {
+          "path": "notfound/firefox-laptop/summary.md",
+          "bytes": 967
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "firefox",
+      "device": "desktop",
+      "dir": "notfound/firefox-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:40:08.761Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 2.9,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:40:13.307Z",
+      "files": [
+        {
+          "path": "notfound/firefox-desktop/full.jpg",
+          "bytes": 355672
+        },
+        {
+          "path": "notfound/firefox-desktop/tiles/tile-01.jpg",
+          "bytes": 266763
+        },
+        {
+          "path": "notfound/firefox-desktop/tiles/tile-02.jpg",
+          "bytes": 90359
+        },
+        {
+          "path": "notfound/firefox-desktop/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/firefox-desktop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/firefox-desktop/styles.json",
+          "bytes": 3214
+        },
+        {
+          "path": "notfound/firefox-desktop/network.json",
+          "bytes": 252
+        },
+        {
+          "path": "notfound/firefox-desktop/summary.md",
+          "bytes": 968
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "chromium",
+      "device": "iphone-15",
+      "dir": "home/chromium-iphone-15",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:40:13.765Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 4.5,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 12,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:40:22.378Z",
+      "files": [
+        {
+          "path": "home/chromium-iphone-15/full.jpg",
+          "bytes": 1217198
+        },
+        {
+          "path": "home/chromium-iphone-15/tiles/tile-01.jpg",
+          "bytes": 120388
+        },
+        {
+          "path": "home/chromium-iphone-15/tiles/tile-02.jpg",
+          "bytes": 101621
+        },
+        {
+          "path": "home/chromium-iphone-15/tiles/tile-03.jpg",
+          "bytes": 121005
+        },
+        {
+          "path": "home/chromium-iphone-15/tiles/tile-04.jpg",
+          "bytes": 100885
+        },
+        {
+          "path": "home/chromium-iphone-15/tiles/tile-05.jpg",
+          "bytes": 92865
+        },
+        {
+          "path": "home/chromium-iphone-15/tiles/tile-06.jpg",
+          "bytes": 121982
+        },
+        {
+          "path": "home/chromium-iphone-15/tiles/tile-07.jpg",
+          "bytes": 108267
+        },
+        {
+          "path": "home/chromium-iphone-15/tiles/tile-08.jpg",
+          "bytes": 98606
+        },
+        {
+          "path": "home/chromium-iphone-15/tiles/tile-09.jpg",
+          "bytes": 94455
+        },
+        {
+          "path": "home/chromium-iphone-15/tiles/tile-10.jpg",
+          "bytes": 104602
+        },
+        {
+          "path": "home/chromium-iphone-15/tiles/tile-11.jpg",
+          "bytes": 89302
+        },
+        {
+          "path": "home/chromium-iphone-15/tiles/tile-12.jpg",
+          "bytes": 64073
+        },
+        {
+          "path": "home/chromium-iphone-15/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/chromium-iphone-15/images.json",
+          "bytes": 7672
+        },
+        {
+          "path": "home/chromium-iphone-15/styles.json",
+          "bytes": 4788
+        },
+        {
+          "path": "home/chromium-iphone-15/steps/01-menu.jpg",
+          "bytes": 69722
+        },
+        {
+          "path": "home/chromium-iphone-15/steps/02-involved.jpg",
+          "bytes": 121778
+        },
+        {
+          "path": "home/chromium-iphone-15/steps.json",
+          "bytes": 386
+        },
+        {
+          "path": "home/chromium-iphone-15/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/chromium-iphone-15/summary.md",
+          "bytes": 1261
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "chromium",
+      "device": "iphone-se",
+      "dir": "home/chromium-iphone-se",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:40:22.379Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 4.3,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "tiles": {
+        "count": 12,
+        "tileHeight": 568,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:40:30.715Z",
+      "files": [
+        {
+          "path": "home/chromium-iphone-se/full.jpg",
+          "bytes": 924765
+        },
+        {
+          "path": "home/chromium-iphone-se/tiles/tile-01.jpg",
+          "bytes": 93446
+        },
+        {
+          "path": "home/chromium-iphone-se/tiles/tile-02.jpg",
+          "bytes": 86229
+        },
+        {
+          "path": "home/chromium-iphone-se/tiles/tile-03.jpg",
+          "bytes": 90054
+        },
+        {
+          "path": "home/chromium-iphone-se/tiles/tile-04.jpg",
+          "bytes": 86974
+        },
+        {
+          "path": "home/chromium-iphone-se/tiles/tile-05.jpg",
+          "bytes": 80091
+        },
+        {
+          "path": "home/chromium-iphone-se/tiles/tile-06.jpg",
+          "bytes": 85345
+        },
+        {
+          "path": "home/chromium-iphone-se/tiles/tile-07.jpg",
+          "bytes": 74137
+        },
+        {
+          "path": "home/chromium-iphone-se/tiles/tile-08.jpg",
+          "bytes": 102290
+        },
+        {
+          "path": "home/chromium-iphone-se/tiles/tile-09.jpg",
+          "bytes": 66161
+        },
+        {
+          "path": "home/chromium-iphone-se/tiles/tile-10.jpg",
+          "bytes": 78099
+        },
+        {
+          "path": "home/chromium-iphone-se/tiles/tile-11.jpg",
+          "bytes": 57801
+        },
+        {
+          "path": "home/chromium-iphone-se/tiles/tile-12.jpg",
+          "bytes": 29500
+        },
+        {
+          "path": "home/chromium-iphone-se/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/chromium-iphone-se/images.json",
+          "bytes": 7656
+        },
+        {
+          "path": "home/chromium-iphone-se/styles.json",
+          "bytes": 4851
+        },
+        {
+          "path": "home/chromium-iphone-se/steps/01-menu.jpg",
+          "bytes": 54157
+        },
+        {
+          "path": "home/chromium-iphone-se/steps/02-involved.jpg",
+          "bytes": 94657
+        },
+        {
+          "path": "home/chromium-iphone-se/steps.json",
+          "bytes": 386
+        },
+        {
+          "path": "home/chromium-iphone-se/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/chromium-iphone-se/summary.md",
+          "bytes": 1261
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "chromium",
+      "device": "ipad-mini",
+      "dir": "home/chromium-ipad-mini",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:40:30.717Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 3.6,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "tiles": {
+        "count": 7,
+        "tileHeight": 1024,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:40:39.237Z",
+      "files": [
+        {
+          "path": "home/chromium-ipad-mini/full.jpg",
+          "bytes": 1509104
+        },
+        {
+          "path": "home/chromium-ipad-mini/tiles/tile-01.jpg",
+          "bytes": 173392
+        },
+        {
+          "path": "home/chromium-ipad-mini/tiles/tile-02.jpg",
+          "bytes": 215714
+        },
+        {
+          "path": "home/chromium-ipad-mini/tiles/tile-03.jpg",
+          "bytes": 256499
+        },
+        {
+          "path": "home/chromium-ipad-mini/tiles/tile-04.jpg",
+          "bytes": 261920
+        },
+        {
+          "path": "home/chromium-ipad-mini/tiles/tile-05.jpg",
+          "bytes": 254819
+        },
+        {
+          "path": "home/chromium-ipad-mini/tiles/tile-06.jpg",
+          "bytes": 205424
+        },
+        {
+          "path": "home/chromium-ipad-mini/tiles/tile-07.jpg",
+          "bytes": 139462
+        },
+        {
+          "path": "home/chromium-ipad-mini/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/chromium-ipad-mini/images.json",
+          "bytes": 7678
+        },
+        {
+          "path": "home/chromium-ipad-mini/styles.json",
+          "bytes": 4859
+        },
+        {
+          "path": "home/chromium-ipad-mini/steps/01-menu.jpg",
+          "bytes": 119233
+        },
+        {
+          "path": "home/chromium-ipad-mini/steps/02-involved.jpg",
+          "bytes": 175280
+        },
+        {
+          "path": "home/chromium-ipad-mini/steps.json",
+          "bytes": 386
+        },
+        {
+          "path": "home/chromium-ipad-mini/network.json",
+          "bytes": 939
+        },
+        {
+          "path": "home/chromium-ipad-mini/summary.md",
+          "bytes": 1167
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "chromium",
+      "device": "laptop",
+      "dir": "home/chromium-laptop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:40:39.240Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 3.7,
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "tiles": {
+        "count": 8,
+        "tileHeight": 800,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:40:50.958Z",
+      "files": [
+        {
+          "path": "home/chromium-laptop/full.jpg",
+          "bytes": 1901886
+        },
+        {
+          "path": "home/chromium-laptop/tiles/tile-01.jpg",
+          "bytes": 210255
+        },
+        {
+          "path": "home/chromium-laptop/tiles/tile-02.jpg",
+          "bytes": 246930
+        },
+        {
+          "path": "home/chromium-laptop/tiles/tile-03.jpg",
+          "bytes": 277410
+        },
+        {
+          "path": "home/chromium-laptop/tiles/tile-04.jpg",
+          "bytes": 311489
+        },
+        {
+          "path": "home/chromium-laptop/tiles/tile-05.jpg",
+          "bytes": 216059
+        },
+        {
+          "path": "home/chromium-laptop/tiles/tile-06.jpg",
+          "bytes": 246947
+        },
+        {
+          "path": "home/chromium-laptop/tiles/tile-07.jpg",
+          "bytes": 218747
+        },
+        {
+          "path": "home/chromium-laptop/tiles/tile-08.jpg",
+          "bytes": 173503
+        },
+        {
+          "path": "home/chromium-laptop/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/chromium-laptop/images.json",
+          "bytes": 7704
+        },
+        {
+          "path": "home/chromium-laptop/styles.json",
+          "bytes": 4739
+        },
+        {
+          "path": "home/chromium-laptop/steps/01-menu.jpg",
+          "bytes": 210255
+        },
+        {
+          "path": "home/chromium-laptop/steps/02-involved.jpg",
+          "bytes": 210255
+        },
+        {
+          "path": "home/chromium-laptop/steps.json",
+          "bytes": 481
+        },
+        {
+          "path": "home/chromium-laptop/network.json",
+          "bytes": 617
+        },
+        {
+          "path": "home/chromium-laptop/summary.md",
+          "bytes": 1176
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "home/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:40:50.960Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 3.8,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 8,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:03.921Z",
+      "files": [
+        {
+          "path": "home/chromium-desktop/full.jpg",
+          "bytes": 2246339
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-01.jpg",
+          "bytes": 244982
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-02.jpg",
+          "bytes": 297764
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-03.jpg",
+          "bytes": 335643
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-04.jpg",
+          "bytes": 372233
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-05.jpg",
+          "bytes": 238534
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-06.jpg",
+          "bytes": 302104
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-07.jpg",
+          "bytes": 263689
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-08.jpg",
+          "bytes": 191968
+        },
+        {
+          "path": "home/chromium-desktop/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/chromium-desktop/images.json",
+          "bytes": 7700
+        },
+        {
+          "path": "home/chromium-desktop/styles.json",
+          "bytes": 4774
+        },
+        {
+          "path": "home/chromium-desktop/steps/01-menu.jpg",
+          "bytes": 244982
+        },
+        {
+          "path": "home/chromium-desktop/steps/02-involved.jpg",
+          "bytes": 244982
+        },
+        {
+          "path": "home/chromium-desktop/steps.json",
+          "bytes": 481
+        },
+        {
+          "path": "home/chromium-desktop/network.json",
+          "bytes": 301
+        },
+        {
+          "path": "home/chromium-desktop/summary.md",
+          "bytes": 1178
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "chromium",
+      "device": "iphone-15",
+      "dir": "apply/chromium-iphone-15",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:03.925Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 3.1,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:07.860Z",
+      "files": [
+        {
+          "path": "apply/chromium-iphone-15/full.jpg",
+          "bytes": 332675
+        },
+        {
+          "path": "apply/chromium-iphone-15/tiles/tile-01.jpg",
+          "bytes": 98274
+        },
+        {
+          "path": "apply/chromium-iphone-15/tiles/tile-02.jpg",
+          "bytes": 59101
+        },
+        {
+          "path": "apply/chromium-iphone-15/tiles/tile-03.jpg",
+          "bytes": 74779
+        },
+        {
+          "path": "apply/chromium-iphone-15/tiles/tile-04.jpg",
+          "bytes": 77523
+        },
+        {
+          "path": "apply/chromium-iphone-15/tiles/tile-05.jpg",
+          "bytes": 22995
+        },
+        {
+          "path": "apply/chromium-iphone-15/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/chromium-iphone-15/images.json",
+          "bytes": 478
+        },
+        {
+          "path": "apply/chromium-iphone-15/styles.json",
+          "bytes": 3808
+        },
+        {
+          "path": "apply/chromium-iphone-15/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/chromium-iphone-15/summary.md",
+          "bytes": 1058
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "chromium",
+      "device": "iphone-se",
+      "dir": "apply/chromium-iphone-se",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:07.861Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 3.2,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 568,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:11.704Z",
+      "files": [
+        {
+          "path": "apply/chromium-iphone-se/full.jpg",
+          "bytes": 252300
+        },
+        {
+          "path": "apply/chromium-iphone-se/tiles/tile-01.jpg",
+          "bytes": 77418
+        },
+        {
+          "path": "apply/chromium-iphone-se/tiles/tile-02.jpg",
+          "bytes": 46728
+        },
+        {
+          "path": "apply/chromium-iphone-se/tiles/tile-03.jpg",
+          "bytes": 68506
+        },
+        {
+          "path": "apply/chromium-iphone-se/tiles/tile-04.jpg",
+          "bytes": 52006
+        },
+        {
+          "path": "apply/chromium-iphone-se/tiles/tile-05.jpg",
+          "bytes": 8061
+        },
+        {
+          "path": "apply/chromium-iphone-se/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/chromium-iphone-se/images.json",
+          "bytes": 478
+        },
+        {
+          "path": "apply/chromium-iphone-se/styles.json",
+          "bytes": 3850
+        },
+        {
+          "path": "apply/chromium-iphone-se/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/chromium-iphone-se/summary.md",
+          "bytes": 1058
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "chromium",
+      "device": "ipad-mini",
+      "dir": "apply/chromium-ipad-mini",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:11.705Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 2.8,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 1024,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:15.265Z",
+      "files": [
+        {
+          "path": "apply/chromium-ipad-mini/full.jpg",
+          "bytes": 411222
+        },
+        {
+          "path": "apply/chromium-ipad-mini/tiles/tile-01.jpg",
+          "bytes": 182935
+        },
+        {
+          "path": "apply/chromium-ipad-mini/tiles/tile-02.jpg",
+          "bytes": 159596
+        },
+        {
+          "path": "apply/chromium-ipad-mini/tiles/tile-03.jpg",
+          "bytes": 69130
+        },
+        {
+          "path": "apply/chromium-ipad-mini/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/chromium-ipad-mini/images.json",
+          "bytes": 478
+        },
+        {
+          "path": "apply/chromium-ipad-mini/styles.json",
+          "bytes": 3867
+        },
+        {
+          "path": "apply/chromium-ipad-mini/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/chromium-ipad-mini/summary.md",
+          "bytes": 1021
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "chromium",
+      "device": "laptop",
+      "dir": "apply/chromium-laptop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:15.267Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 2.9,
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 800,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:19.219Z",
+      "files": [
+        {
+          "path": "apply/chromium-laptop/full.jpg",
+          "bytes": 525320
+        },
+        {
+          "path": "apply/chromium-laptop/tiles/tile-01.jpg",
+          "bytes": 269721
+        },
+        {
+          "path": "apply/chromium-laptop/tiles/tile-02.jpg",
+          "bytes": 172257
+        },
+        {
+          "path": "apply/chromium-laptop/tiles/tile-03.jpg",
+          "bytes": 83476
+        },
+        {
+          "path": "apply/chromium-laptop/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/chromium-laptop/images.json",
+          "bytes": 524
+        },
+        {
+          "path": "apply/chromium-laptop/styles.json",
+          "bytes": 3899
+        },
+        {
+          "path": "apply/chromium-laptop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/chromium-laptop/summary.md",
+          "bytes": 1011
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "apply/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:19.221Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 2.9,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:23.567Z",
+      "files": [
+        {
+          "path": "apply/chromium-desktop/full.jpg",
+          "bytes": 617963
+        },
+        {
+          "path": "apply/chromium-desktop/tiles/tile-01.jpg",
+          "bytes": 314394
+        },
+        {
+          "path": "apply/chromium-desktop/tiles/tile-02.jpg",
+          "bytes": 205704
+        },
+        {
+          "path": "apply/chromium-desktop/tiles/tile-03.jpg",
+          "bytes": 97801
+        },
+        {
+          "path": "apply/chromium-desktop/meta.json",
+          "bytes": 3077
+        },
+        {
+          "path": "apply/chromium-desktop/images.json",
+          "bytes": 520
+        },
+        {
+          "path": "apply/chromium-desktop/styles.json",
+          "bytes": 3911
+        },
+        {
+          "path": "apply/chromium-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/chromium-desktop/summary.md",
+          "bytes": 1012
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "chromium",
+      "device": "iphone-15",
+      "dir": "donate/chromium-iphone-15",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:23.570Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 3.2,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:27.789Z",
+      "files": [
+        {
+          "path": "donate/chromium-iphone-15/full.jpg",
+          "bytes": 347000
+        },
+        {
+          "path": "donate/chromium-iphone-15/tiles/tile-01.jpg",
+          "bytes": 90675
+        },
+        {
+          "path": "donate/chromium-iphone-15/tiles/tile-02.jpg",
+          "bytes": 102690
+        },
+        {
+          "path": "donate/chromium-iphone-15/tiles/tile-03.jpg",
+          "bytes": 89220
+        },
+        {
+          "path": "donate/chromium-iphone-15/tiles/tile-04.jpg",
+          "bytes": 65112
+        },
+        {
+          "path": "donate/chromium-iphone-15/tiles/tile-05.jpg",
+          "bytes": 1001
+        },
+        {
+          "path": "donate/chromium-iphone-15/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/chromium-iphone-15/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/chromium-iphone-15/styles.json",
+          "bytes": 3484
+        },
+        {
+          "path": "donate/chromium-iphone-15/steps/01-monthly.jpg",
+          "bytes": 89945
+        },
+        {
+          "path": "donate/chromium-iphone-15/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/chromium-iphone-15/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/chromium-iphone-15/summary.md",
+          "bytes": 1121
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "chromium",
+      "device": "iphone-se",
+      "dir": "donate/chromium-iphone-se",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:27.791Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 3,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "tiles": {
+        "count": 4,
+        "tileHeight": 568,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:31.834Z",
+      "files": [
+        {
+          "path": "donate/chromium-iphone-se/full.jpg",
+          "bytes": 258791
+        },
+        {
+          "path": "donate/chromium-iphone-se/tiles/tile-01.jpg",
+          "bytes": 68747
+        },
+        {
+          "path": "donate/chromium-iphone-se/tiles/tile-02.jpg",
+          "bytes": 81108
+        },
+        {
+          "path": "donate/chromium-iphone-se/tiles/tile-03.jpg",
+          "bytes": 66228
+        },
+        {
+          "path": "donate/chromium-iphone-se/tiles/tile-04.jpg",
+          "bytes": 44072
+        },
+        {
+          "path": "donate/chromium-iphone-se/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/chromium-iphone-se/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/chromium-iphone-se/styles.json",
+          "bytes": 3522
+        },
+        {
+          "path": "donate/chromium-iphone-se/steps/01-monthly.jpg",
+          "bytes": 68890
+        },
+        {
+          "path": "donate/chromium-iphone-se/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/chromium-iphone-se/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/chromium-iphone-se/summary.md",
+          "bytes": 1100
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "chromium",
+      "device": "ipad-mini",
+      "dir": "donate/chromium-ipad-mini",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:31.836Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 2.8,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 1024,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:35.878Z",
+      "files": [
+        {
+          "path": "donate/chromium-ipad-mini/full.jpg",
+          "bytes": 421053
+        },
+        {
+          "path": "donate/chromium-ipad-mini/tiles/tile-01.jpg",
+          "bytes": 201428
+        },
+        {
+          "path": "donate/chromium-ipad-mini/tiles/tile-02.jpg",
+          "bytes": 172903
+        },
+        {
+          "path": "donate/chromium-ipad-mini/tiles/tile-03.jpg",
+          "bytes": 47354
+        },
+        {
+          "path": "donate/chromium-ipad-mini/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/chromium-ipad-mini/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/chromium-ipad-mini/styles.json",
+          "bytes": 3542
+        },
+        {
+          "path": "donate/chromium-ipad-mini/steps/01-monthly.jpg",
+          "bytes": 204832
+        },
+        {
+          "path": "donate/chromium-ipad-mini/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/chromium-ipad-mini/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/chromium-ipad-mini/summary.md",
+          "bytes": 1084
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "chromium",
+      "device": "laptop",
+      "dir": "donate/chromium-laptop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:35.879Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 2.8,
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 800,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:40.140Z",
+      "files": [
+        {
+          "path": "donate/chromium-laptop/full.jpg",
+          "bytes": 461777
+        },
+        {
+          "path": "donate/chromium-laptop/tiles/tile-01.jpg",
+          "bytes": 265589
+        },
+        {
+          "path": "donate/chromium-laptop/tiles/tile-02.jpg",
+          "bytes": 196456
+        },
+        {
+          "path": "donate/chromium-laptop/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/chromium-laptop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/chromium-laptop/styles.json",
+          "bytes": 3508
+        },
+        {
+          "path": "donate/chromium-laptop/steps/01-monthly.jpg",
+          "bytes": 268754
+        },
+        {
+          "path": "donate/chromium-laptop/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/chromium-laptop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/chromium-laptop/summary.md",
+          "bytes": 1055
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "donate/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:40.142Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 2.8,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:44.792Z",
+      "files": [
+        {
+          "path": "donate/chromium-desktop/full.jpg",
+          "bytes": 542145
+        },
+        {
+          "path": "donate/chromium-desktop/tiles/tile-01.jpg",
+          "bytes": 312577
+        },
+        {
+          "path": "donate/chromium-desktop/tiles/tile-02.jpg",
+          "bytes": 229712
+        },
+        {
+          "path": "donate/chromium-desktop/meta.json",
+          "bytes": 3038
+        },
+        {
+          "path": "donate/chromium-desktop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/chromium-desktop/styles.json",
+          "bytes": 3518
+        },
+        {
+          "path": "donate/chromium-desktop/steps/01-monthly.jpg",
+          "bytes": 315965
+        },
+        {
+          "path": "donate/chromium-desktop/steps.json",
+          "bytes": 163
+        },
+        {
+          "path": "donate/chromium-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/chromium-desktop/summary.md",
+          "bytes": 1056
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "chromium",
+      "device": "iphone-15",
+      "dir": "notfound/chromium-iphone-15",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:44.794Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 2.8,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:47.935Z",
+      "files": [
+        {
+          "path": "notfound/chromium-iphone-15/full.jpg",
+          "bytes": 178759
+        },
+        {
+          "path": "notfound/chromium-iphone-15/tiles/tile-01.jpg",
+          "bytes": 91856
+        },
+        {
+          "path": "notfound/chromium-iphone-15/tiles/tile-02.jpg",
+          "bytes": 67894
+        },
+        {
+          "path": "notfound/chromium-iphone-15/tiles/tile-03.jpg",
+          "bytes": 20065
+        },
+        {
+          "path": "notfound/chromium-iphone-15/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/chromium-iphone-15/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/chromium-iphone-15/styles.json",
+          "bytes": 3235
+        },
+        {
+          "path": "notfound/chromium-iphone-15/network.json",
+          "bytes": 331
+        },
+        {
+          "path": "notfound/chromium-iphone-15/summary.md",
+          "bytes": 995
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "chromium",
+      "device": "iphone-se",
+      "dir": "notfound/chromium-iphone-se",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:47.937Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 2.8,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 568,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:51.212Z",
+      "files": [
+        {
+          "path": "notfound/chromium-iphone-se/full.jpg",
+          "bytes": 135176
+        },
+        {
+          "path": "notfound/chromium-iphone-se/tiles/tile-01.jpg",
+          "bytes": 73141
+        },
+        {
+          "path": "notfound/chromium-iphone-se/tiles/tile-02.jpg",
+          "bytes": 53017
+        },
+        {
+          "path": "notfound/chromium-iphone-se/tiles/tile-03.jpg",
+          "bytes": 9516
+        },
+        {
+          "path": "notfound/chromium-iphone-se/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/chromium-iphone-se/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/chromium-iphone-se/styles.json",
+          "bytes": 3267
+        },
+        {
+          "path": "notfound/chromium-iphone-se/network.json",
+          "bytes": 331
+        },
+        {
+          "path": "notfound/chromium-iphone-se/summary.md",
+          "bytes": 995
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "chromium",
+      "device": "ipad-mini",
+      "dir": "notfound/chromium-ipad-mini",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:51.213Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 2.6,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 1024,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:54.296Z",
+      "files": [
+        {
+          "path": "notfound/chromium-ipad-mini/full.jpg",
+          "bytes": 219144
+        },
+        {
+          "path": "notfound/chromium-ipad-mini/tiles/tile-01.jpg",
+          "bytes": 181727
+        },
+        {
+          "path": "notfound/chromium-ipad-mini/tiles/tile-02.jpg",
+          "bytes": 37817
+        },
+        {
+          "path": "notfound/chromium-ipad-mini/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/chromium-ipad-mini/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/chromium-ipad-mini/styles.json",
+          "bytes": 3291
+        },
+        {
+          "path": "notfound/chromium-ipad-mini/network.json",
+          "bytes": 331
+        },
+        {
+          "path": "notfound/chromium-ipad-mini/summary.md",
+          "bytes": 977
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "chromium",
+      "device": "laptop",
+      "dir": "notfound/chromium-laptop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:54.297Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 2.7,
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 800,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:41:57.824Z",
+      "files": [
+        {
+          "path": "notfound/chromium-laptop/full.jpg",
+          "bytes": 269394
+        },
+        {
+          "path": "notfound/chromium-laptop/tiles/tile-01.jpg",
+          "bytes": 202974
+        },
+        {
+          "path": "notfound/chromium-laptop/tiles/tile-02.jpg",
+          "bytes": 66227
+        },
+        {
+          "path": "notfound/chromium-laptop/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/chromium-laptop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/chromium-laptop/styles.json",
+          "bytes": 3191
+        },
+        {
+          "path": "notfound/chromium-laptop/network.json",
+          "bytes": 331
+        },
+        {
+          "path": "notfound/chromium-laptop/summary.md",
+          "bytes": 968
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "notfound/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-16T23:41:57.825Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+      "loadSeconds": 2.7,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "finishedAt": "2026-10-16T23:42:01.504Z",
+      "files": [
+        {
+          "path": "notfound/chromium-desktop/full.jpg",
+          "bytes": 307747
+        },
+        {
+          "path": "notfound/chromium-desktop/tiles/tile-01.jpg",
+          "bytes": 233660
+        },
+        {
+          "path": "notfound/chromium-desktop/tiles/tile-02.jpg",
+          "bytes": 74854
+        },
+        {
+          "path": "notfound/chromium-desktop/meta.json",
+          "bytes": 2637
+        },
+        {
+          "path": "notfound/chromium-desktop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/chromium-desktop/styles.json",
+          "bytes": 3201
+        },
+        {
+          "path": "notfound/chromium-desktop/network.json",
+          "bytes": 331
+        },
+        {
+          "path": "notfound/chromium-desktop/summary.md",
+          "bytes": 969
+        }
+      ]
+    }
+  ],
+  "job": {
+    "preset": "standard",
+    "targets": [
+      {
+        "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+        "name": "home",
+        "steps": [
+          {
+            "action": "click",
+            "selector": "[data-menu-open]",
+            "optional": true,
+            "waitMs": 800
+          },
+          {
+            "action": "screenshot",
+            "name": "menu"
+          },
+          {
+            "action": "press",
+            "key": "Escape",
+            "waitMs": 500
+          },
+          {
+            "action": "scroll",
+            "to": "#get-involved",
+            "waitMs": 500
+          },
+          {
+            "action": "screenshot",
+            "name": "involved"
+          }
+        ]
+      },
+      {
+        "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+        "name": "apply"
+      },
+      {
+        "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+        "name": "donate",
+        "steps": [
+          {
+            "action": "click",
+            "text": "Monthly",
+            "optional": true,
+            "waitMs": 300
+          },
+          {
+            "action": "screenshot",
+            "name": "monthly"
+          }
+        ]
+      },
+      {
+        "url": "https://caring-for-a-cause.forgetraining.workers.dev/nope",
+        "name": "notfound"
+      }
+    ],
+    "browsers": [
+      "webkit",
+      "firefox",
+      "chromium"
+    ],
+    "devices": [
+      {
+        "name": "iphone-15",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+        "viewport": {
+          "width": 393,
+          "height": 659
+        },
+        "screen": {
+          "width": 393,
+          "height": 852
+        },
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true,
+        "defaultBrowserType": "webkit"
+      },
+      {
+        "name": "iphone-se",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/26.6 Mobile/14E304 Safari/602.1",
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "deviceScaleFactor": 2,
+        "isMobile": true,
+        "hasTouch": true,
+        "defaultBrowserType": "webkit"
+      },
+      {
+        "name": "ipad-mini",
+        "userAgent": "Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "deviceScaleFactor": 2,
+        "isMobile": true,
+        "hasTouch": true,
+        "defaultBrowserType": "webkit"
+      },
+      {
+        "name": "laptop",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        }
+      },
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      }
+    ],
+    "capture": {
+      "screenshot": "full",
+      "tiles": true,
+      "tileHeight": null,
+      "maxTiles": 25,
+      "format": "jpeg",
+      "quality": 80,
+      "detail": 2,
+      "animations": "disabled",
+      "waitMs": 1500,
+      "timeoutMs": 45000,
+      "revealLazyContent": true,
+      "hide": [],
+      "blockWrites": true,
+      "text": false,
+      "meta": true,
+      "html": false,
+      "links": false,
+      "checkLinks": false,
+      "images": true,
+      "styles": true,
+      "forms": false,
+      "a11y": false,
+      "aria": false,
+      "lighthouse": false
+    },
+    "steps": [],
+    "notes": "Sweep 3: real WebKit and Firefox rendering of the Caring for a Cause preview, compared against Chromium.",
+    "brief": null
+  },
+  "finishedAt": "2026-10-16T23:42:01.531Z"
+}

@@ -1,0 +1,21 @@
+{
+  "failedRequests": [
+    {
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/diaper-drive.DQOaEkt9_KLRbp.avif",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/care-basket.dUg-bsTE_Z240xO2.avif",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/stylist-haircut.DdAwisTG_5vyve.avif",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "httpErrors": [],
+  "blockedWrites": [],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 0
+}

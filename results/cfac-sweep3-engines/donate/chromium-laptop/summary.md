@@ -1,0 +1,14 @@
+## donate - chromium / laptop
+- URL: https://caring-for-a-cause.forgetraining.workers.dev/donate/
+- Status: ok, HTTP 200, ready in 2.8s
+- Viewport: 1280x800 at 2x detail
+- Title: Donate | Caring for a Cause
+- Meta description: Give once or monthly to Caring for a Cause, a 501(c)(3) nonprofit. Your gift helps put holiday meals, gifts, diapers, and school supplies into local homes.
+- H1 count: 1; headings total: 5; page height: 1528px
+- Structured data blocks: 1; lang: en; og:image: yes
+- Images: 0 <img> + 0 large backgrounds; missing alt: 0, empty alt on large: 0, broken: 0, upscaled/blurry: 0, below retina: 0
+- Primary font families (by text volume): Atkinson Hyperlegible Next, Site Serif, Bricolage Grotesque Variable, Footer Sans
+- Text colors in use: 12; font sizes in use: 14; uppercase share of text: 1%
+- Steps: 2 run, 0 failed
+- Network: 0 HTTP errors, 0 failed requests, 0 JS errors from the site
+- Files: full.jpg, tiles/tile-01.jpg, tiles/tile-02.jpg, meta.json, images.json, styles.json, steps/01-monthly.jpg, steps.json, network.json

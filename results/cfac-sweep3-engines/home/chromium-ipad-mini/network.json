@@ -1,0 +1,29 @@
+{
+  "failedRequests": [
+    {
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/holiday-gift-bags.BW_V1vNm_11g5aa.avif",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/diaper-drive.DQOaEkt9_KLRbp.avif",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/care-basket.dUg-bsTE_Z240xO2.avif",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/stylist-haircut.DdAwisTG_5vyve.avif",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/tamara-portrait.B5ksF5Q2_ZdaaNv.avif",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "httpErrors": [],
+  "blockedWrites": [],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 0
+}

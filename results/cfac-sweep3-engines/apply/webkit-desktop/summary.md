@@ -1,0 +1,13 @@
+## apply - webkit / desktop
+- URL: https://caring-for-a-cause.forgetraining.workers.dev/apply/
+- Status: ok, HTTP 200, ready in 3.4s
+- Viewport: 1440x900 at 2x detail
+- Title: Apply for help | Caring for a Cause
+- Meta description: Apply for holiday meals and gifts, monthly diapers, school supplies, or a free haircut in Central Indiana. Anyone struggling right now can apply.
+- H1 count: 1; headings total: 6; page height: 2052px
+- Structured data blocks: 1; lang: en; og:image: yes
+- Images: 1 <img> + 0 large backgrounds; missing alt: 0, empty alt on large: 0, broken: 0, upscaled/blurry: 1, below retina: 0
+- Primary font families (by text volume): Atkinson Hyperlegible Next, Bricolage Grotesque Variable, Site Serif, Footer Sans
+- Text colors in use: 13; font sizes in use: 16; uppercase share of text: 2%
+- Network: 0 HTTP errors, 0 failed requests, 0 JS errors from the site
+- Files: full.jpg, tiles/tile-01.jpg, tiles/tile-02.jpg, tiles/tile-03.jpg, meta.json, images.json, styles.json, network.json

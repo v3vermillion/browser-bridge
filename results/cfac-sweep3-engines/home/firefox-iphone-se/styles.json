@@ -1,0 +1,284 @@
+{
+  "note": "weight = number of text characters rendered with that value",
+  "primaryFontFamilies": [
+    {
+      "value": "Atkinson Hyperlegible Next",
+      "weight": 2162
+    },
+    {
+      "value": "Bricolage Grotesque Variable",
+      "weight": 623
+    },
+    {
+      "value": "Site Serif",
+      "weight": 425
+    },
+    {
+      "value": "Footer Sans",
+      "weight": 103
+    },
+    {
+      "value": "sans-serif",
+      "weight": 9
+    }
+  ],
+  "fontStacks": [
+    {
+      "value": "\"Atkinson Hyperlegible Next\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "weight": 2162
+    },
+    {
+      "value": "\"Bricolage Grotesque Variable\", \"Arial Rounded MT Bold\", system-ui, sans-serif",
+      "weight": 623
+    },
+    {
+      "value": "\"Site Serif\", Georgia, \"Times New Roman\", serif",
+      "weight": 425
+    },
+    {
+      "value": "\"Footer Sans\", \"Source Sans 3\", \"Segoe UI\", system-ui, sans-serif",
+      "weight": 103
+    },
+    {
+      "value": "sans-serif",
+      "weight": 9
+    }
+  ],
+  "fontSizes": [
+    {
+      "value": "14.6406px",
+      "weight": 1119
+    },
+    {
+      "value": "16.2813px",
+      "weight": 772
+    },
+    {
+      "value": "11.7188px",
+      "weight": 535
+    },
+    {
+      "value": "9.76563px",
+      "weight": 133
+    },
+    {
+      "value": "23.2188px",
+      "weight": 121
+    },
+    {
+      "value": "14.5781px",
+      "weight": 109
+    },
+    {
+      "value": "10.1719px",
+      "weight": 90
+    },
+    {
+      "value": "11.1875px",
+      "weight": 90
+    },
+    {
+      "value": "14.6563px",
+      "weight": 66
+    },
+    {
+      "value": "26.875px",
+      "weight": 62
+    },
+    {
+      "value": "27.3438px",
+      "weight": 61
+    },
+    {
+      "value": "8.95313px",
+      "weight": 48
+    },
+    {
+      "value": "13.8281px",
+      "weight": 40
+    },
+    {
+      "value": "19.5313px",
+      "weight": 22
+    },
+    {
+      "value": "10.5781px",
+      "weight": 16
+    },
+    {
+      "value": "11.9688px",
+      "weight": 14
+    },
+    {
+      "value": "13.3281px",
+      "weight": 9
+    },
+    {
+      "value": "39.0625px",
+      "weight": 8
+    },
+    {
+      "value": "13.2656px",
+      "weight": 6
+    },
+    {
+      "value": "16.7813px",
+      "weight": 1
+    }
+  ],
+  "fontWeights": [
+    {
+      "value": "400",
+      "weight": 2364
+    },
+    {
+      "value": "700",
+      "weight": 753
+    },
+    {
+      "value": "500",
+      "weight": 90
+    },
+    {
+      "value": "750",
+      "weight": 80
+    },
+    {
+      "value": "800",
+      "weight": 19
+    },
+    {
+      "value": "600",
+      "weight": 16
+    }
+  ],
+  "textColors": [
+    {
+      "value": "rgb(34, 23, 46)",
+      "weight": 1601
+    },
+    {
+      "value": "rgb(91, 78, 104)",
+      "weight": 328
+    },
+    {
+      "value": "rgb(96, 8, 215)",
+      "weight": 276
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "weight": 251
+    },
+    {
+      "value": "rgb(227, 218, 246)",
+      "weight": 250
+    },
+    {
+      "value": "rgb(201, 182, 242)",
+      "weight": 190
+    },
+    {
+      "value": "rgb(248, 247, 254)",
+      "weight": 103
+    },
+    {
+      "value": "rgba(201, 182, 242, 0.85)",
+      "weight": 90
+    },
+    {
+      "value": "rgb(236, 228, 251)",
+      "weight": 53
+    },
+    {
+      "value": "rgb(234, 230, 251)",
+      "weight": 43
+    },
+    {
+      "value": "rgb(201, 176, 255)",
+      "weight": 29
+    },
+    {
+      "value": "rgb(215, 205, 243)",
+      "weight": 23
+    },
+    {
+      "value": "rgb(251, 250, 254)",
+      "weight": 22
+    },
+    {
+      "value": "rgb(207, 189, 237)",
+      "weight": 20
+    },
+    {
+      "value": "rgb(212, 198, 248)",
+      "weight": 16
+    }
+  ],
+  "backgroundColors": [
+    {
+      "value": "rgb(239, 230, 250)",
+      "weight": 11
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "weight": 8
+    },
+    {
+      "value": "rgb(27, 15, 46)",
+      "weight": 5
+    },
+    {
+      "value": "rgb(96, 8, 215)",
+      "weight": 3
+    },
+    {
+      "value": "rgba(255, 255, 255, 0.1)",
+      "weight": 2
+    },
+    {
+      "value": "rgb(2, 0, 24)",
+      "weight": 2
+    },
+    {
+      "value": "rgb(42, 22, 64)",
+      "weight": 1
+    },
+    {
+      "value": "rgb(122, 58, 224)",
+      "weight": 1
+    },
+    {
+      "value": "rgba(255, 255, 255, 0.06)",
+      "weight": 1
+    },
+    {
+      "value": "rgb(21, 11, 38)",
+      "weight": 1
+    },
+    {
+      "value": "rgb(186, 1, 12)",
+      "weight": 1
+    },
+    {
+      "value": "rgba(255, 255, 255, 0.72)",
+      "weight": 1
+    },
+    {
+      "value": "rgb(6, 1, 42)",
+      "weight": 1
+    },
+    {
+      "value": "rgb(138, 114, 196)",
+      "weight": 1
+    }
+  ],
+  "loadedWebFonts": [
+    "Bricolage Grotesque Variable 200 800 normal",
+    "Atkinson Hyperlegible Next 400 normal",
+    "Atkinson Hyperlegible Next 700 normal",
+    "Site Serif 300 700 normal",
+    "Site Serif 700 italic",
+    "Footer Sans 400 normal"
+  ],
+  "uppercaseShare": 0.06
+}

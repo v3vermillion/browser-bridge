@@ -1,0 +1,223 @@
+{
+  "note": "weight = number of text characters rendered with that value",
+  "primaryFontFamilies": [
+    {
+      "value": "Atkinson Hyperlegible Next",
+      "weight": 491
+    },
+    {
+      "value": "Bricolage Grotesque Variable",
+      "weight": 187
+    },
+    {
+      "value": "Site Serif",
+      "weight": 187
+    },
+    {
+      "value": "Footer Sans",
+      "weight": 103
+    }
+  ],
+  "fontStacks": [
+    {
+      "value": "Atkinson Hyperlegible Next, system-ui, -apple-system, Segoe UI, sans-serif",
+      "weight": 491
+    },
+    {
+      "value": "Bricolage Grotesque Variable, Arial Rounded MT Bold, system-ui, sans-serif",
+      "weight": 187
+    },
+    {
+      "value": "Site Serif, Georgia, Times New Roman, serif",
+      "weight": 187
+    },
+    {
+      "value": "Footer Sans, \"Source Sans 3\", Segoe UI, system-ui, sans-serif",
+      "weight": 103
+    }
+  ],
+  "fontSizes": [
+    {
+      "value": "18px",
+      "weight": 288
+    },
+    {
+      "value": "14.4px",
+      "weight": 209
+    },
+    {
+      "value": "22.496px",
+      "weight": 121
+    },
+    {
+      "value": "21.872px",
+      "weight": 103
+    },
+    {
+      "value": "16.639999px",
+      "weight": 90
+    },
+    {
+      "value": "16px",
+      "weight": 32
+    },
+    {
+      "value": "44px",
+      "weight": 30
+    },
+    {
+      "value": "29.936001px",
+      "weight": 22
+    },
+    {
+      "value": "12px",
+      "weight": 18
+    },
+    {
+      "value": "37.400002px",
+      "weight": 15
+    },
+    {
+      "value": "17.6px",
+      "weight": 14
+    },
+    {
+      "value": "30.4px",
+      "weight": 9
+    },
+    {
+      "value": "16.299999px",
+      "weight": 6
+    },
+    {
+      "value": "21.6px",
+      "weight": 6
+    },
+    {
+      "value": "12.8px",
+      "weight": 4
+    },
+    {
+      "value": "24.959999px",
+      "weight": 1
+    }
+  ],
+  "fontWeights": [
+    {
+      "value": "400",
+      "weight": 673
+    },
+    {
+      "value": "700",
+      "weight": 289
+    },
+    {
+      "value": "800",
+      "weight": 6
+    }
+  ],
+  "textColors": [
+    {
+      "value": "rgb(201, 182, 242)",
+      "weight": 364
+    },
+    {
+      "value": "rgb(34, 23, 46)",
+      "weight": 115
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "weight": 108
+    },
+    {
+      "value": "rgb(91, 78, 104)",
+      "weight": 108
+    },
+    {
+      "value": "rgb(248, 247, 254)",
+      "weight": 103
+    },
+    {
+      "value": "rgb(234, 230, 251)",
+      "weight": 43
+    },
+    {
+      "value": "rgba(255, 255, 255, 0.86)",
+      "weight": 32
+    },
+    {
+      "value": "rgb(215, 205, 243)",
+      "weight": 23
+    },
+    {
+      "value": "rgb(251, 250, 254)",
+      "weight": 22
+    },
+    {
+      "value": "rgb(207, 189, 237)",
+      "weight": 20
+    },
+    {
+      "value": "rgb(231, 225, 250)",
+      "weight": 14
+    },
+    {
+      "value": "rgb(96, 8, 215)",
+      "weight": 11
+    },
+    {
+      "value": "rgb(220, 212, 241)",
+      "weight": 5
+    }
+  ],
+  "backgroundColors": [
+    {
+      "value": "rgb(250, 247, 253)",
+      "weight": 6
+    },
+    {
+      "value": "rgb(96, 8, 215)",
+      "weight": 4
+    },
+    {
+      "value": "rgb(221, 208, 238)",
+      "weight": 3
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "weight": 3
+    },
+    {
+      "value": "rgb(27, 15, 46)",
+      "weight": 2
+    },
+    {
+      "value": "rgb(239, 230, 250)",
+      "weight": 1
+    },
+    {
+      "value": "rgba(255, 255, 255, 0.1)",
+      "weight": 1
+    },
+    {
+      "value": "rgb(6, 1, 42)",
+      "weight": 1
+    },
+    {
+      "value": "rgb(2, 0, 24)",
+      "weight": 1
+    },
+    {
+      "value": "rgb(138, 114, 196)",
+      "weight": 1
+    }
+  ],
+  "loadedWebFonts": [
+    "Bricolage Grotesque Variable 200 800 normal",
+    "Atkinson Hyperlegible Next 400 normal",
+    "Atkinson Hyperlegible Next 700 normal",
+    "Site Serif 300 700 normal",
+    "Footer Sans 400 normal"
+  ],
+  "uppercaseShare": 0.02
+}

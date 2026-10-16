@@ -1,0 +1,144 @@
+{
+  "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+  "title": "Caring for a Cause Supportive Services | Central Indiana",
+  "lang": "en",
+  "description": "Caring for a Cause helps families in Central Indiana with holiday meals and gifts, monthly diapers, and school supplies.",
+  "viewport": "width=device-width, initial-scale=1",
+  "robots": "noindex, nofollow",
+  "generator": null,
+  "canonical": "https://caring-for-a-cause.forgetraining.workers.dev/",
+  "favicon": "https://caring-for-a-cause.forgetraining.workers.dev/favicon-32.png",
+  "og": {
+    "title": "Caring for a Cause Supportive Services | Central Indiana",
+    "description": "Caring for a Cause helps families in Central Indiana with holiday meals and gifts, monthly diapers, and school supplies.",
+    "image": "https://caring-for-a-cause.forgetraining.workers.dev/og-image.jpg",
+    "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+    "type": "website",
+    "site_name": "Caring for a Cause Supportive Services"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Caring for a Cause Supportive Services | Central Indiana",
+    "description": "Caring for a Cause helps families in Central Indiana with holiday meals and gifts, monthly diapers, and school supplies.",
+    "image": "https://caring-for-a-cause.forgetraining.workers.dev/og-image.jpg"
+  },
+  "h1Count": 1,
+  "headings": [
+    {
+      "level": 1,
+      "text": "Holiday meals, gifts, and diapers for Central Indiana families.",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "What we do, all year",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Get help",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Holiday Assistance",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Diaper Drive",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Back-to-School Care Packages",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "Hygiene",
+      "visible": true
+    },
+    {
+      "level": 4,
+      "text": "School supplies",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Free Haircuts & Styles",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Four ways to help",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Sponsor a family for the holidays",
+      "visible": true
+    },
+    {
+      "level": 3,
+      "text": "Donate money or items",
+      "visible": false
+    },
+    {
+      "level": 3,
+      "text": "Volunteer your time",
+      "visible": false
+    },
+    {
+      "level": 3,
+      "text": "Partner with us",
+      "visible": false
+    },
+    {
+      "level": 2,
+      "text": "Meet Tamara Long-Ajimati",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Explore",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Connect with us",
+      "visible": true
+    }
+  ],
+  "structuredData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "Caring for a Cause Supportive Services Inc.",
+      "alternateName": "Caring for a Cause",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "logo": "https://caring-for-a-cause.forgetraining.workers.dev/icon-512.png",
+      "description": "We create and manage programs that support the physical and emotional well-being of families in Central Indiana who are facing financial hardship.",
+      "foundingDate": "2015",
+      "founder": {
+        "@type": "Person",
+        "name": "Tamara Long-Ajimati"
+      },
+      "taxID": "47-4917287",
+      "nonprofitStatus": "Nonprofit501c3",
+      "areaServed": "Central Indiana",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Noblesville",
+        "addressRegion": "IN",
+        "addressCountry": "US"
+      },
+      "telephone": "+13178860724",
+      "email": "caringforacause2015@gmail.com",
+      "sameAs": [
+        "https://www.facebook.com/caringforacausesupportiveservices"
+      ]
+    }
+  ],
+  "pageHeight": 7906
+}

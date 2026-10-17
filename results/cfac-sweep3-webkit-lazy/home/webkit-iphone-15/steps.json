@@ -1,0 +1,38 @@
+[
+  {
+    "index": 0,
+    "action": "evaluate",
+    "ok": false,
+    "error": "page.evaluate: SyntaxError: Return statements are only valid inside functions.",
+    "note": "Step failed; later steps still attempted."
+  },
+  {
+    "index": 1,
+    "action": "scroll",
+    "ok": true
+  },
+  {
+    "index": 2,
+    "action": "screenshot",
+    "ok": true,
+    "file": "01-holiday-row.jpg"
+  },
+  {
+    "index": 3,
+    "action": "scroll",
+    "ok": true
+  },
+  {
+    "index": 4,
+    "action": "screenshot",
+    "ok": true,
+    "file": "02-about.jpg"
+  },
+  {
+    "index": 5,
+    "action": "evaluate",
+    "ok": false,
+    "error": "page.evaluate: SyntaxError: Return statements are only valid inside functions.",
+    "note": "Step failed; later steps still attempted."
+  }
+]

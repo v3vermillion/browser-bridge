@@ -1,0 +1,229 @@
+{
+  "label": "cfac-sweep3-webkit-lazy",
+  "createdAt": "2026-10-17T00:00:34.037Z",
+  "engineVersion": "1.0.0",
+  "status": "ok",
+  "variants": [
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "webkit",
+      "device": "iphone-15",
+      "dir": "home/webkit-iphone-15",
+      "status": "ok",
+      "startedAt": "2026-10-17T00:00:34.796Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 5.1,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "finishedAt": "2026-10-17T00:00:49.371Z",
+      "files": [
+        {
+          "path": "home/webkit-iphone-15/viewport.jpg",
+          "bytes": 117695
+        },
+        {
+          "path": "home/webkit-iphone-15/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/webkit-iphone-15/page.html",
+          "bytes": 373379
+        },
+        {
+          "path": "home/webkit-iphone-15/links.json",
+          "bytes": 12817
+        },
+        {
+          "path": "home/webkit-iphone-15/images.json",
+          "bytes": 7341
+        },
+        {
+          "path": "home/webkit-iphone-15/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "home/webkit-iphone-15/steps/01-holiday-row.jpg",
+          "bytes": 117695
+        },
+        {
+          "path": "home/webkit-iphone-15/steps/02-about.jpg",
+          "bytes": 117701
+        },
+        {
+          "path": "home/webkit-iphone-15/steps.json",
+          "bytes": 766
+        },
+        {
+          "path": "home/webkit-iphone-15/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/webkit-iphone-15/summary.md",
+          "bytes": 1035
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "home/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-17T00:00:49.381Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 3.3,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "finishedAt": "2026-10-17T00:01:00.667Z",
+      "files": [
+        {
+          "path": "home/webkit-desktop/viewport.jpg",
+          "bytes": 248820
+        },
+        {
+          "path": "home/webkit-desktop/meta.json",
+          "bytes": 4094
+        },
+        {
+          "path": "home/webkit-desktop/page.html",
+          "bytes": 373387
+        },
+        {
+          "path": "home/webkit-desktop/links.json",
+          "bytes": 12813
+        },
+        {
+          "path": "home/webkit-desktop/images.json",
+          "bytes": 7486
+        },
+        {
+          "path": "home/webkit-desktop/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "home/webkit-desktop/steps/01-holiday-row.jpg",
+          "bytes": 248889
+        },
+        {
+          "path": "home/webkit-desktop/steps/02-about.jpg",
+          "bytes": 248889
+        },
+        {
+          "path": "home/webkit-desktop/steps.json",
+          "bytes": 766
+        },
+        {
+          "path": "home/webkit-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/webkit-desktop/summary.md",
+          "bytes": 1034
+        }
+      ]
+    }
+  ],
+  "job": {
+    "preset": "standard",
+    "targets": [
+      {
+        "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+        "name": "home",
+        "steps": [
+          {
+            "action": "evaluate",
+            "script": "return new Promise(async r=>{const out=[];for(let y=0;y<document.documentElement.scrollHeight;y+=200){window.scrollTo(0,y);await new Promise(s=>setTimeout(s,250));}await new Promise(s=>setTimeout(s,3000));document.querySelectorAll('#programs img, #about img, #get-involved img').forEach(i=>{const b=i.getBoundingClientRect();out.push([i.currentSrc.split('/').pop(),i.complete,i.naturalWidth,Math.round(b.width)])});r(out)})"
+          },
+          {
+            "action": "scroll",
+            "to": "#holiday-assistance",
+            "waitMs": 2500
+          },
+          {
+            "action": "screenshot",
+            "name": "holiday-row"
+          },
+          {
+            "action": "scroll",
+            "to": "#about",
+            "waitMs": 2500
+          },
+          {
+            "action": "screenshot",
+            "name": "about"
+          },
+          {
+            "action": "evaluate",
+            "script": "return [...document.querySelectorAll('#programs img, #about img')].map(i=>[i.currentSrc.split('/').pop(),i.complete,i.naturalWidth])"
+          }
+        ]
+      }
+    ],
+    "browsers": [
+      "webkit"
+    ],
+    "devices": [
+      {
+        "name": "iphone-15",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+        "viewport": {
+          "width": 393,
+          "height": 659
+        },
+        "screen": {
+          "width": 393,
+          "height": 852
+        },
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true,
+        "defaultBrowserType": "webkit"
+      },
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      }
+    ],
+    "capture": {
+      "screenshot": "viewport",
+      "tiles": false,
+      "tileHeight": null,
+      "maxTiles": 25,
+      "format": "jpeg",
+      "quality": 80,
+      "detail": 2,
+      "animations": "disabled",
+      "waitMs": 1500,
+      "timeoutMs": 45000,
+      "revealLazyContent": false,
+      "hide": [],
+      "blockWrites": true,
+      "text": false,
+      "meta": true,
+      "html": true,
+      "links": true,
+      "checkLinks": false,
+      "images": true,
+      "styles": false,
+      "forms": true,
+      "a11y": false,
+      "aria": false,
+      "lighthouse": false
+    },
+    "steps": [],
+    "notes": "Does WebKit load the lazy program photos when a person scrolls slowly? Distinguish site bug from capture artifact.",
+    "brief": null
+  },
+  "finishedAt": "2026-10-17T00:01:00.999Z"
+}

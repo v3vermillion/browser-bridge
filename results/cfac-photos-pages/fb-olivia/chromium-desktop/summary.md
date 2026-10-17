@@ -1,0 +1,13 @@
+## fb-olivia - chromium / desktop
+- URL: https://www.facebook.com/100075872096063 -> https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F100075872096063
+- Status: ok, HTTP 200, ready in 4.9s
+- Viewport: 1440x900 at 1x detail
+- Title: Facebook
+- Meta description: (none)
+- H1 count: 0; headings total: 0; page height: 1000px
+- Structured data blocks: 0; lang: en; og:image: no
+- Images: 1 <img> + 0 large backgrounds; missing alt: 0, empty alt on large: 1, broken: 0, upscaled/blurry: 0, below retina: 1
+- Steps: 1 run, 0 failed
+- Network: 0 HTTP errors, 0 failed requests, 1 JS errors from the site (+3 caused by write-blocking, ignored)
+- Write requests blocked (nothing was sent): www.facebook.com x3. Analytics/embed calls here are normal; form destinations are listed under Forms when forms are captured.
+- Files: full.jpg, tiles/tile-01.jpg, tiles/tile-02.jpg, meta.json, text.md, images.json, steps.json, network.json

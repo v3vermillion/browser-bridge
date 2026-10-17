@@ -1,0 +1,59 @@
+{
+  "images": [
+    {
+      "src": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/474168718_3013899572093824_5689130393801883697_n.jpg?stp=dst-jpg_fb50_s320x320_tt6&_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=GdrRxdt4GbkQ7kNvwFuWsuI&_nc_oc=AdoicMwCZ7fzdV4KhWhAv-r6h_DgHyOJl2R0VblTCxC7uc4S-AvmwvnncurvhVcfXtw&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=aJ_RGoaa4k8yuhFL6fXp8A&_nc_ss=7f20f&oh=00_AQM4N1eSiDpqqoxoS_Mg_uLrWp5bsFx-PdQyi1m9214t3w&oe=6AD88EA1",
+      "alt": "",
+      "natural": {
+        "w": 320,
+        "h": 296
+      },
+      "displayed": {
+        "w": 1440,
+        "h": 1331
+      },
+      "naturalToDisplayedRatio": 0.22,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "empty-alt-on-large-image",
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/474168718_3013899572093824_5689130393801883697_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x998&ctp=s960x960&_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=GdrRxdt4GbkQ7kNvwFuWsuI&_nc_oc=AdoicMwCZ7fzdV4KhWhAv-r6h_DgHyOJl2R0VblTCxC7uc4S-AvmwvnncurvhVcfXtw&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=aJ_RGoaa4k8yuhFL6fXp8A&_nc_ss=7f20f&oh=00_AQMlcHkDl7HkJlyAjB28b-CfqjD3tSNtbgjnVT-Ge0aVfg&oe=6AD88EA1",
+      "alt": "",
+      "natural": {
+        "w": 960,
+        "h": 887
+      },
+      "displayed": {
+        "w": 940,
+        "h": 869
+      },
+      "naturalToDisplayedRatio": 1.02,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://www.facebook.com/images/icons/FBLogo_Blueprint.png",
+      "alt": "",
+      "natural": {
+        "w": 360,
+        "h": 360
+      },
+      "displayed": {
+        "w": 46,
+        "h": 46
+      },
+      "naturalToDisplayedRatio": 7.83,
+      "visible": true,
+      "loading": null,
+      "flags": []
+    }
+  ],
+  "backgrounds": []
+}

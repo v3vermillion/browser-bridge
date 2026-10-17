@@ -1,0 +1,24 @@
+{
+  "images": [
+    {
+      "src": "https://static.xx.fbcdn.net/rsrc.php/yb/r/HpEiFYDux5j.webp",
+      "alt": "",
+      "natural": {
+        "w": 1240,
+        "h": 1240
+      },
+      "displayed": {
+        "w": 630,
+        "h": 830
+      },
+      "naturalToDisplayedRatio": 1.97,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    }
+  ],
+  "backgrounds": []
+}

@@ -1,0 +1,59 @@
+{
+  "failedRequests": [],
+  "httpErrors": [],
+  "blockedWrites": [
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/qm/?__a=1&__user=0&__comet_req=15&jazoest=22369"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bulk-route-definitions/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bz?__a=1&__aaid=0&__ccg=EXCELLENT&__comet_req=15&__crn=comet.fbweb.CometProfilePhotosTabRoute&__hs=20743.HYP%3Acomet_loggedout_pkg.2.1...0&__hsi=7697440965162581729&__req=2&__rev=1050672349&__s=o1c9l1%3A70vp4o%3A22drw0&__spin_b=trunk&__spin_r=1050672349&__spin_t=1792200"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bz?__a=1&__aaid=0&__ccg=EXCELLENT&__comet_req=15&__crn=comet.fbweb.CometProfilePhotosTabRoute&__hs=20743.HYP%3Acomet_loggedout_pkg.2.1...0&__hsi=7697440965162581729&__req=3&__rev=1050672349&__s=o1c9l1%3A70vp4o%3A22drw0&__spin_b=trunk&__spin_r=1050672349&__spin_t=1792200"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bz?__a=1&__aaid=0&__ccg=EXCELLENT&__comet_req=15&__crn=comet.fbweb.CometProfilePhotosTabRoute&__hs=20743.HYP%3Acomet_loggedout_pkg.2.1...0&__hsi=7697440965162581729&__req=4&__rev=1050672349&__s=o1c9l1%3A70vp4o%3A22drw0&__spin_b=trunk&__spin_r=1050672349&__spin_t=1792200"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bulk-route-definitions/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bulk-route-definitions/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bz?__a=1&__aaid=0&__ccg=EXCELLENT&__comet_req=15&__crn=comet.fbweb.CometProfilePhotosTabRoute&__hs=20743.HYP%3Acomet_loggedout_pkg.2.1...0&__hsi=7697440965162581729&__req=7&__rev=1050672349&__s=o1c9l1%3A70vp4o%3A22drw0&__spin_b=trunk&__spin_r=1050672349&__spin_t=1792200"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bz?__a=1&__aaid=0&__ccg=EXCELLENT&__comet_req=15&__crn=comet.fbweb.CometProfilePhotosTabRoute&__hs=20743.HYP%3Acomet_loggedout_pkg.2.1...0&__hsi=7697440965162581729&__req=8&__rev=1050672349&__s=o1c9l1%3A70vp4o%3A22drw0&__spin_b=trunk&__spin_r=1050672349&__spin_t=1792200"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bulk-route-definitions/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bulk-route-definitions/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bulk-route-definitions/"
+    }
+  ],
+  "consoleErrors": [
+    "ErrorUtils caught an error:\n\nAction bar is null on Comet\n\nSubsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. {column: 17896, clientTime: 1792200134, extra: Object, guardList: Array(1), hash: e2klhh}"
+  ],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 12
+}

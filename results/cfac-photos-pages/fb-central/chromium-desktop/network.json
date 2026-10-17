@@ -1,0 +1,79 @@
+{
+  "failedRequests": [],
+  "httpErrors": [],
+  "blockedWrites": [
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/qm/?__a=1&__user=0&__comet_req=15&jazoest=22266"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bz?__a=1&__aaid=0&__ccg=EXCELLENT&__comet_req=15&__crn=comet.fbweb.CometProfilePlusLoggedOutRoute&__hs=20743.HYP%3Acomet_loggedout_pkg.2.1...0&__hsi=7697441007382936219&__req=1&__rev=1050672349&__s=cl48c5%3Abl49qc%3A00jkya&__spin_b=trunk&__spin_r=1050672349&__spin_t=179"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bz?__a=1&__aaid=0&__ccg=EXCELLENT&__comet_req=15&__crn=comet.fbweb.CometProfilePlusLoggedOutRoute&__hs=20743.HYP%3Acomet_loggedout_pkg.2.1...0&__hsi=7697441007382936219&__req=2&__rev=1050672349&__s=cl48c5%3Abl49qc%3A00jkya&__spin_b=trunk&__spin_r=1050672349&__spin_t=179"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bz?__a=1&__aaid=0&__ccg=EXCELLENT&__comet_req=15&__crn=comet.fbweb.CometProfilePlusLoggedOutRoute&__hs=20743.HYP%3Acomet_loggedout_pkg.2.1...0&__hsi=7697441007382936219&__req=3&__rev=1050672349&__s=cl48c5%3Abl49qc%3A00jkya&__spin_b=trunk&__spin_r=1050672349&__spin_t=179"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/api/graphql/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bulk-route-definitions/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bulk-route-definitions/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bulk-route-definitions/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bulk-route-definitions/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bz?__a=1&__aaid=0&__ccg=EXCELLENT&__comet_req=15&__crn=comet.fbweb.CometProfilePlusLoggedOutRoute&__hs=20743.HYP%3Acomet_loggedout_pkg.2.1...0&__hsi=7697441007382936219&__req=a&__rev=1050672349&__s=cl48c5%3Abl49qc%3A00jkya&__spin_b=trunk&__spin_r=1050672349&__spin_t=179"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bz?__a=1&__aaid=0&__ccg=EXCELLENT&__comet_req=15&__crn=comet.fbweb.CometProfilePlusLoggedOutRoute&__hs=20743.HYP%3Acomet_loggedout_pkg.2.1...0&__hsi=7697441007382936219&__req=b&__rev=1050672349&__s=cl48c5%3Abl49qc%3A00jkya&__spin_b=trunk&__spin_r=1050672349&__spin_t=179"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/api/graphql/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bulk-route-definitions/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bulk-route-definitions/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bulk-route-definitions/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bulk-route-definitions/"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/api/graphql/"
+    }
+  ],
+  "consoleErrors": [
+    "ErrorUtils caught an error:\n\nAction bar is null on Comet\n\nSubsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. {column: 17896, clientTime: 1792200145, extra: Object, guardList: Array(1), hash: 5oecxi}"
+  ],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 17
+}

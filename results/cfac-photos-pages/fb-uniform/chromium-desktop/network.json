@@ -1,0 +1,23 @@
+{
+  "failedRequests": [],
+  "httpErrors": [],
+  "blockedWrites": [
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/qm/?__a=1&__user=0&__comet_req=15&jazoest=22275"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bz?__a=1&__aaid=0&__ccg=EXCELLENT&__comet_req=15&__hs=20743.HYP%3Acomet_loggedout_pkg.2.1...0&__hsi=7697441054024722773&__req=1&__rev=1050672349&__s=c3hn77%3Ayyampu%3Aoyod33&__spin_b=trunk&__spin_r=1050672349&__spin_t=1792200155&__user=0&dpr=1&jazoest=22275&lsd=AdSmmZFO"
+    },
+    {
+      "method": "POST",
+      "url": "https://www.facebook.com/ajax/bz?__a=1&__aaid=0&__ccg=EXCELLENT&__comet_req=15&__hs=20743.HYP%3Acomet_loggedout_pkg.2.1...0&__hsi=7697441054024722773&__req=2&__rev=1050672349&__s=c3hn77%3Ayyampu%3Aoyod33&__spin_b=trunk&__spin_r=1050672349&__spin_t=1792200155&__user=0&dpr=1&jazoest=22275&lsd=AdSmmZFO"
+    }
+  ],
+  "consoleErrors": [
+    "ErrorUtils caught an error:\n\nError connecting to Credential Management service.\n\nSubsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. {column: 180, clientTime: 1792200156, extra: Object, guardList: Array(0), hash: tp1uat}"
+  ],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 3
+}

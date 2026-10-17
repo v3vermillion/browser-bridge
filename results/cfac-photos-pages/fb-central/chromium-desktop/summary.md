@@ -1,0 +1,13 @@
+## fb-central - chromium / desktop
+- URL: https://www.facebook.com/p/Caring-4-a-Cause-Supportive-Services-Central-Indiana-61585581940818/
+- Status: ok, HTTP 200, ready in 6.2s
+- Viewport: 1440x900 at 1x detail
+- Title: Caring 4 a Cause Supportive Services Central Indiana | Indianapolis IN | Facebook
+- Meta description: Caring 4 a Cause Supportive Services Central Indiana , Indianapolis. 3 followers. Community focused nonprofit dedicated to supporting families
+- H1 count: 1; headings total: 4; page height: 900px
+- Structured data blocks: 0; lang: en; og:image: yes
+- Images: 21 <img> + 0 large backgrounds; missing alt: 0, empty alt on large: 11, broken: 0, upscaled/blurry: 1, below retina: 11
+- Steps: 1 run, 0 failed
+- Network: 0 HTTP errors, 0 failed requests, 1 JS errors from the site (+17 caused by write-blocking, ignored)
+- Write requests blocked (nothing was sent): www.facebook.com x17. Analytics/embed calls here are normal; form destinations are listed under Forms when forms are captured.
+- Files: full.jpg, tiles/tile-01.jpg, meta.json, text.md, images.json, steps.json, network.json

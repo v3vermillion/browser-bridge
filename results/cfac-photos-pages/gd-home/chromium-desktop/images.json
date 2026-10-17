@@ -1,0 +1,634 @@
+{
+  "images": [
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/17498783_780695968747540_6917213219797792923_n.jpg/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100/qt=q:95",
+      "alt": "Caring\nfor A\nCause\nSupportive \nServices",
+      "natural": {
+        "w": 100,
+        "h": 100
+      },
+      "displayed": {
+        "w": 100,
+        "h": 100
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/17498783_780695968747540_6917213219797792923_n.jpg/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100/qt=q:95",
+      "alt": "Caring\nfor A\nCause\nSupportive \nServices",
+      "natural": {
+        "w": 100,
+        "h": 100
+      },
+      "displayed": {
+        "w": 0,
+        "h": 0
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": false,
+      "loading": null,
+      "flags": []
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/Untitled-design-2-mini.jpg/:/cr=t:0%25,l:23.83%25,w:52.33%25,h:100%25/rs=w:400,h:400,cg:true",
+      "alt": null,
+      "natural": {
+        "w": 399,
+        "h": 400
+      },
+      "displayed": {
+        "w": 325,
+        "h": 325
+      },
+      "naturalToDisplayedRatio": 1.23,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "missing-alt",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/5-tips-to-travel-size-toiletries-for-minimalis.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:400,cg:true",
+      "alt": null,
+      "natural": {
+        "w": 400,
+        "h": 400
+      },
+      "displayed": {
+        "w": 325,
+        "h": 325
+      },
+      "naturalToDisplayedRatio": 1.23,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "missing-alt",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/stock/5499/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1160,h:773",
+      "alt": "//img1.wsimg.com/isteam/stock/5499/:/rs=w:1300,h:800",
+      "natural": {
+        "w": 1160,
+        "h": 773
+      },
+      "displayed": {
+        "w": 900,
+        "h": 600
+      },
+      "naturalToDisplayedRatio": 1.29,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/375752784_10160513124775860_230493326476239349.jpg/:/rs=w:984,h:738",
+      "alt": "//img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/375752784_10160513124775860_230493326476239349.jpg/:/rs=w:1300,h:800",
+      "natural": {
+        "w": 984,
+        "h": 738
+      },
+      "displayed": {
+        "w": 800,
+        "h": 600
+      },
+      "naturalToDisplayedRatio": 1.23,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/blob-0d76b6e.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:984,h:1749",
+      "alt": "//img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/blob-0d76b6e.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800",
+      "natural": {
+        "w": 984,
+        "h": 1749
+      },
+      "displayed": {
+        "w": 338,
+        "h": 600
+      },
+      "naturalToDisplayedRatio": 2.92,
+      "visible": true,
+      "loading": null,
+      "flags": []
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/th-44a834f.jfif/:/cr=t:0%25,l:0%25,w:100%25,h:100%25",
+      "alt": "//img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/th-44a834f.jfif/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800",
+      "natural": {
+        "w": 360,
+        "h": 270
+      },
+      "displayed": {
+        "w": 800,
+        "h": 600
+      },
+      "naturalToDisplayedRatio": 0.45,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/blob-0003.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:984,h:738",
+      "alt": "//img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/blob-0003.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800",
+      "natural": {
+        "w": 984,
+        "h": 738
+      },
+      "displayed": {
+        "w": 800,
+        "h": 600
+      },
+      "naturalToDisplayedRatio": 1.23,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/stock/5499/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1160,h:773",
+      "alt": "//img1.wsimg.com/isteam/stock/5499/:/rs=w:1300,h:800",
+      "natural": {
+        "w": 1160,
+        "h": 773
+      },
+      "displayed": {
+        "w": 900,
+        "h": 600
+      },
+      "naturalToDisplayedRatio": 1.29,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/375752784_10160513124775860_230493326476239349.jpg/:/rs=w:984,h:738",
+      "alt": "//img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/375752784_10160513124775860_230493326476239349.jpg/:/rs=w:1300,h:800",
+      "natural": {
+        "w": 984,
+        "h": 738
+      },
+      "displayed": {
+        "w": 800,
+        "h": 600
+      },
+      "naturalToDisplayedRatio": 1.23,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/blob-0d76b6e.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:984,h:1749",
+      "alt": "//img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/blob-0d76b6e.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800",
+      "natural": {
+        "w": 984,
+        "h": 1749
+      },
+      "displayed": {
+        "w": 338,
+        "h": 600
+      },
+      "naturalToDisplayedRatio": 2.92,
+      "visible": true,
+      "loading": null,
+      "flags": []
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/th-44a834f.jfif/:/cr=t:0%25,l:0%25,w:100%25,h:100%25",
+      "alt": "//img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/th-44a834f.jfif/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800",
+      "natural": {
+        "w": 360,
+        "h": 270
+      },
+      "displayed": {
+        "w": 800,
+        "h": 600
+      },
+      "naturalToDisplayedRatio": 0.45,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/blob-0d76b6e.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "alt": "image0",
+      "natural": {
+        "w": 70,
+        "h": 70
+      },
+      "displayed": {
+        "w": 70,
+        "h": 70
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": []
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/th-44a834f.jfif/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "alt": "image1",
+      "natural": {
+        "w": 70,
+        "h": 70
+      },
+      "displayed": {
+        "w": 70,
+        "h": 70
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": []
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/blob-0003.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "alt": "image2",
+      "natural": {
+        "w": 70,
+        "h": 70
+      },
+      "displayed": {
+        "w": 70,
+        "h": 70
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": []
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/Copy%20of%20online%20greeting%20card%20-%20Made%20wi-79a19e5.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "alt": "image3",
+      "natural": {
+        "w": 70,
+        "h": 70
+      },
+      "displayed": {
+        "w": 70,
+        "h": 70
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": []
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/Copy%20of%20online%20greeting%20card%20-%20Made%20with%20Poste.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "alt": "image4",
+      "natural": {
+        "w": 70,
+        "h": 70
+      },
+      "displayed": {
+        "w": 70,
+        "h": 70
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": []
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/Volunteers%20Needed.jpg/:/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "alt": "image5",
+      "natural": {
+        "w": 70,
+        "h": 70
+      },
+      "displayed": {
+        "w": 70,
+        "h": 70
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": []
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/stock/10929/:/cr=t:0.51%25,l:0%25,w:98.99%25,h:98.99%25/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "alt": "image6",
+      "natural": {
+        "w": 70,
+        "h": 70
+      },
+      "displayed": {
+        "w": 70,
+        "h": 70
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": []
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/VOLUNTEERS%20NEEDED2.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "alt": "image7",
+      "natural": {
+        "w": 70,
+        "h": 70
+      },
+      "displayed": {
+        "w": 70,
+        "h": 70
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": []
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/stock/4ZnQ4dz/:/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "alt": "image8",
+      "natural": {
+        "w": 70,
+        "h": 70
+      },
+      "displayed": {
+        "w": 70,
+        "h": 70
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": []
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/stock/5499/:/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "alt": "image9",
+      "natural": {
+        "w": 70,
+        "h": 70
+      },
+      "displayed": {
+        "w": 70,
+        "h": 70
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": []
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/375752784_10160513124775860_230493326476239349.jpg/:/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "alt": "image10",
+      "natural": {
+        "w": 70,
+        "h": 70
+      },
+      "displayed": {
+        "w": 70,
+        "h": 70
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": []
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/23a414a5-5c20-4369-949d-2cc1e8321540/priscilla-du-preez-234138-unsplash.jpg/:/rs=w:370,cg:true,m",
+      "alt": null,
+      "natural": {
+        "w": 370,
+        "h": 247
+      },
+      "displayed": {
+        "w": 352,
+        "h": 235
+      },
+      "naturalToDisplayedRatio": 1.05,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "missing-alt",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/stock/Zzzk4N2/:/rs=w:370,cg:true,m",
+      "alt": null,
+      "natural": {
+        "w": 370,
+        "h": 197
+      },
+      "displayed": {
+        "w": 352,
+        "h": 188
+      },
+      "naturalToDisplayedRatio": 1.05,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "missing-alt",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/23a414a5-5c20-4369-949d-2cc1e8321540/b8911b5d0f2888943c0f46dee3aed945-xlarge.jpg/:/rs=w:370,cg:true,m",
+      "alt": null,
+      "natural": {
+        "w": 370,
+        "h": 247
+      },
+      "displayed": {
+        "w": 352,
+        "h": 235
+      },
+      "naturalToDisplayedRatio": 1.05,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "missing-alt",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/23a414a5-5c20-4369-949d-2cc1e8321540/nina-strehl-140734-unsplash-0001.jpg/:/rs=w:370,cg:true,m",
+      "alt": null,
+      "natural": {
+        "w": 370,
+        "h": 247
+      },
+      "displayed": {
+        "w": 352,
+        "h": 235
+      },
+      "naturalToDisplayedRatio": 1.05,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "missing-alt",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/23a414a5-5c20-4369-949d-2cc1e8321540/pixie-02.jpg/:/rs=w:370,cg:true,m",
+      "alt": null,
+      "natural": {
+        "w": 370,
+        "h": 247
+      },
+      "displayed": {
+        "w": 352,
+        "h": 235
+      },
+      "naturalToDisplayedRatio": 1.05,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "missing-alt",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/23a414a5-5c20-4369-949d-2cc1e8321540/cynthia-magana-138943-unsplash.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:370,cg:true",
+      "alt": null,
+      "natural": {
+        "w": 370,
+        "h": 247
+      },
+      "displayed": {
+        "w": 352,
+        "h": 235
+      },
+      "naturalToDisplayedRatio": 1.05,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "missing-alt",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/23a414a5-5c20-4369-949d-2cc1e8321540/action-active-activity-2202685.jpg/:/rs=w:370,cg:true,m",
+      "alt": null,
+      "natural": {
+        "w": 370,
+        "h": 247
+      },
+      "displayed": {
+        "w": 352,
+        "h": 235
+      },
+      "naturalToDisplayedRatio": 1.05,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "missing-alt",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/23a414a5-5c20-4369-949d-2cc1e8321540/pixie-03.jpg/:/rs=w:370,cg:true,m",
+      "alt": null,
+      "natural": {
+        "w": 370,
+        "h": 247
+      },
+      "displayed": {
+        "w": 352,
+        "h": 235
+      },
+      "naturalToDisplayedRatio": 1.05,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "missing-alt",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/23a414a5-5c20-4369-949d-2cc1e8321540/4a9ffc7c38af9e402794ab0495cbec8e-xlarge.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:370,cg:true",
+      "alt": null,
+      "natural": {
+        "w": 370,
+        "h": 247
+      },
+      "displayed": {
+        "w": 352,
+        "h": 235
+      },
+      "naturalToDisplayedRatio": 1.05,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "missing-alt",
+        "below-retina-sharpness"
+      ]
+    }
+  ],
+  "backgrounds": [
+    {
+      "src": "https://img1.wsimg.com/isteam/ip/7e88dc05-4d57-4be7-9e4c-76e500715a4b/familycartoonpic4.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1535,m",
+      "element": "div.x-el.x-el-div.c1-1.c1-2.c1-3o.c1-n.c1-s.c1-3p.c1-4.c1-3q.c1-3r.c1-3s.c1-3t.c1-b.c1-c.c1-3u.c1-3v.c1-3w.c1-3x.c1-3y.c1-3z.c1-40.c1-41.c1-42.c1-43.c1-44.c1-45.c1-46.c1-47.c1-48.c1-49.c1-4a.c1-4b.c1-4c.c1-4d.c1-4e.c1-4f.c1-d.c1-4g.c1-4h.c1-4i.c1-e.c1-h.c1-i",
+      "natural": {
+        "w": 893,
+        "h": 580
+      },
+      "displayed": {
+        "w": 1120,
+        "h": 900
+      },
+      "naturalToDisplayedRatio": 0.8,
+      "backgroundSize": "auto, cover",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/stock/10929/:/cr=t:0%25,l:0%25,w:14.29%25,h:14.29%25/rs=w:1535,m",
+      "element": "div.x-el.x-el-div.c1-1.c1-2.c1-3t.c1-n.c1-t.c1-9s.c1-9u.c1-3q.c1-3r.c1-3s.c1-b.c1-c.c1-9t.c1-9v.c1-9w.c1-9x.c1-9y.c1-9z.c1-a0.c1-a1.c1-a2.c1-a3.c1-a4.c1-a5.c1-a6.c1-a7.c1-a8.c1-a9.c1-aa.c1-ab.c1-ac.c1-ad.c1-ae.c1-af.c1-d.c1-e.c1-h.c1-i",
+      "natural": {
+        "w": 307,
+        "h": 205
+      },
+      "displayed": {
+        "w": 560,
+        "h": 1000
+      },
+      "naturalToDisplayedRatio": 0.55,
+      "backgroundSize": "auto, cover",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://img1.wsimg.com/isteam/stock/84943/:/rs=w:1535,m",
+      "element": "div.x-el.x-el-div.c1-1.c1-2.c1-ch.c1-b.c1-c.c1-d.c1-e.c1-h.c1-i.c1-ci.c1-3q.c1-3r.c1-3s.c1-3t.c1-cj.c1-ck.c1-cl.c1-cm.c1-cn.c1-co.c1-cp.c1-cq.c1-cr.c1-cs.c1-ct.c1-cu.c1-cv.c1-cw.c1-cx.c1-cy.c1-cz.c1-d0.c1-d1.c1-d2.c1-d3",
+      "natural": {
+        "w": 1535,
+        "h": 1020
+      },
+      "displayed": {
+        "w": 1120,
+        "h": 337
+      },
+      "naturalToDisplayedRatio": 1.37,
+      "backgroundSize": "auto, cover",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    }
+  ]
+}

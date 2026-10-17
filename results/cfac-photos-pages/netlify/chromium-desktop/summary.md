@@ -1,0 +1,13 @@
+## netlify - chromium / desktop
+- URL: https://caringforacauseindy.netlify.app/
+- Status: ok, HTTP 200, ready in 7.3s
+- Viewport: 1440x900 at 1x detail
+- Title: Caring For A Cause- Together We Can
+- Meta description: Giving back through life-changing experiences.
+- H1 count: 7; headings total: 15; page height: 8441px
+- Structured data blocks: 0; lang: (none); og:image: yes
+- Images: 15 <img> + 6 large backgrounds; missing alt: 0, empty alt on large: 15, broken: 0, upscaled/blurry: 1, below retina: 19
+- Steps: 1 run, 0 failed
+- Network: 0 HTTP errors, 2 failed requests, 0 JS errors from the site (+10 caused by write-blocking, ignored)
+- Write requests blocked (nothing was sent): jnn-pa.googleapis.com x6, www.youtube.com x4. Analytics/embed calls here are normal; form destinations are listed under Forms when forms are captured.
+- Files: full.jpg, tiles/tile-01.jpg, tiles/tile-02.jpg, tiles/tile-03.jpg, tiles/tile-04.jpg, tiles/tile-05.jpg, tiles/tile-06.jpg, tiles/tile-07.jpg, tiles/tile-08.jpg, tiles/tile-09.jpg, tiles/tile-10.jpg, meta.json, text.md, images.json, steps.json, network.json

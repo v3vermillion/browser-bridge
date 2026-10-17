@@ -1,0 +1,13 @@
+## gd-home - chromium / desktop
+- URL: https://caring4acausesupportiveservices.com/
+- Status: ok, HTTP 200, ready in 21.9s
+- Viewport: 1440x900 at 1x detail
+- Title: Caring4acausesupportiveservices
+- Meta description: (none)
+- H1 count: 2; headings total: 20; page height: 10427px
+- Structured data blocks: 0; lang: en-US; og:image: yes
+- Images: 33 <img> + 3 large backgrounds; missing alt: 11, empty alt on large: 0, broken: 0, upscaled/blurry: 4, below retina: 18
+- Steps: 1 run, 0 failed
+- Network: 1 HTTP errors, 1 failed requests, 1 JS errors from the site (+44 caused by write-blocking, ignored)
+- Write requests blocked (nothing was sent): jnn-pa.googleapis.com x29, csp.secureserver.net x6, www.youtube.com x9. Analytics/embed calls here are normal; form destinations are listed under Forms when forms are captured.
+- Files: full.jpg, tiles/tile-01.jpg, tiles/tile-02.jpg, tiles/tile-03.jpg, tiles/tile-04.jpg, tiles/tile-05.jpg, tiles/tile-06.jpg, tiles/tile-07.jpg, tiles/tile-08.jpg, tiles/tile-09.jpg, tiles/tile-10.jpg, tiles/tile-11.jpg, tiles/tile-12.jpg, meta.json, text.md, images.json, steps.json, network.json

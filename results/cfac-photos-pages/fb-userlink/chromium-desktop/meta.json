@@ -1,0 +1,29 @@
+{
+  "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F100068526346774%2F",
+  "title": "Facebook",
+  "lang": "en",
+  "description": null,
+  "viewport": null,
+  "robots": null,
+  "generator": null,
+  "canonical": "https://www.facebook.com/login",
+  "favicon": "https://static.xx.fbcdn.net/rsrc.php/y1/r/ay1hV6OlegS.ico",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "url": null,
+    "type": null,
+    "site_name": null
+  },
+  "twitter": {
+    "card": null,
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "h1Count": 0,
+  "headings": [],
+  "structuredData": [],
+  "pageHeight": 1000
+}

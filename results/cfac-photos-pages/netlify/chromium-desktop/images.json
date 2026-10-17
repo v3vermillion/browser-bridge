@@ -1,0 +1,391 @@
+{
+  "images": [
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/4be06f7a4bf53bec3edb172287ce380c711ffda8/405d0/images/caring-for-a-cause-logo.svg",
+      "alt": "",
+      "natural": {
+        "w": 108,
+        "h": 47
+      },
+      "displayed": {
+        "w": 108,
+        "h": 47
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/76890768c501b40dcebb27d5764cd086f2c628fb/9aaa0/images/diaper-figma-1-p-500.jpeg",
+      "alt": "",
+      "natural": {
+        "w": 446,
+        "h": 426
+      },
+      "displayed": {
+        "w": 446,
+        "h": 427
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/58d757e971af0b3079f10ba4d30f3d68c3440709/6d990/images/figma-holiday-photo-p-500.jpeg",
+      "alt": "",
+      "natural": {
+        "w": 446,
+        "h": 426
+      },
+      "displayed": {
+        "w": 446,
+        "h": 427
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/c84966187f560566377670cb68ea7b6dab74b514/fe4bf/images/babershop-figma-updated-p-500.png",
+      "alt": "",
+      "natural": {
+        "w": 446,
+        "h": 426
+      },
+      "displayed": {
+        "w": 446,
+        "h": 427
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/f8fe165451432dd00e90e2206d48db5139e0e51a/64fad/images/care-package-figma.png",
+      "alt": "",
+      "natural": {
+        "w": 512,
+        "h": 489
+      },
+      "displayed": {
+        "w": 512,
+        "h": 489
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": null,
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/36eac249a997a25b9f23e8d0a13863f178075dfd/7d910/images/69829958_1378157709001360_3477064265662201856_n.jpg",
+      "alt": "",
+      "natural": {
+        "w": 720,
+        "h": 960
+      },
+      "displayed": {
+        "w": 373,
+        "h": 498
+      },
+      "naturalToDisplayedRatio": 1.93,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/49d7a22f5017b38303bdbee70ebd6c230ba7acfd/4d060/images/79628138_1468170623333401_2133581354258923520_n.jpg",
+      "alt": "",
+      "natural": {
+        "w": 720,
+        "h": 960
+      },
+      "displayed": {
+        "w": 373,
+        "h": 498
+      },
+      "naturalToDisplayedRatio": 1.93,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/ff2d2492d6ded91070188c2a10cbb565db3035f0/4b7dd/images/61899112_1297742310376234_4409564329196650496_n.jpg",
+      "alt": "",
+      "natural": {
+        "w": 720,
+        "h": 960
+      },
+      "displayed": {
+        "w": 373,
+        "h": 498
+      },
+      "naturalToDisplayedRatio": 1.93,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/9fdff2a4f00c851859914f250e51391327d0159e/96f93/images/79845656_1467392480077882_4836122562431811584_n.jpg",
+      "alt": "",
+      "natural": {
+        "w": 720,
+        "h": 960
+      },
+      "displayed": {
+        "w": 373,
+        "h": 498
+      },
+      "naturalToDisplayedRatio": 1.93,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/1c7521bb15d5b0671d87ef2600c15cf0b247185d/4c43c/images/75356809_1419729694844161_2046523810278014976_n.jpg",
+      "alt": "",
+      "natural": {
+        "w": 720,
+        "h": 960
+      },
+      "displayed": {
+        "w": 373,
+        "h": 498
+      },
+      "naturalToDisplayedRatio": 1.93,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/11806d69705be4d36309231d481e6aa1e133c24f/8c08b/images/65735108_1314307525386379_7517878083102179328_n.jpg",
+      "alt": "",
+      "natural": {
+        "w": 720,
+        "h": 960
+      },
+      "displayed": {
+        "w": 373,
+        "h": 498
+      },
+      "naturalToDisplayedRatio": 1.93,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/0651fc0a8ac83db3115b05e03a3af27f747c4356/dcf9c/images/70833514_1378157559001375_106081530387890176_n.jpg",
+      "alt": "",
+      "natural": {
+        "w": 640,
+        "h": 852
+      },
+      "displayed": {
+        "w": 373,
+        "h": 497
+      },
+      "naturalToDisplayedRatio": 1.71,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/1a8f359cbeb4186706670d7d2def6e6bb1759242/d67e0/images/62364015_1297742220376243_2725271841550630912_n.jpg",
+      "alt": "",
+      "natural": {
+        "w": 720,
+        "h": 960
+      },
+      "displayed": {
+        "w": 373,
+        "h": 498
+      },
+      "naturalToDisplayedRatio": 1.93,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/deba816c351c006e7222d79fca5bd9947a56ea25/8d6dc/images/73134351_1419732108177253_2430513540310761472_n.jpg",
+      "alt": "",
+      "natural": {
+        "w": 720,
+        "h": 960
+      },
+      "displayed": {
+        "w": 373,
+        "h": 498
+      },
+      "naturalToDisplayedRatio": 1.93,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d33wubrfki0l68.cloudfront.net/4be06f7a4bf53bec3edb172287ce380c711ffda8/405d0/images/caring-for-a-cause-logo.svg",
+      "alt": "",
+      "natural": {
+        "w": 108,
+        "h": 47
+      },
+      "displayed": {
+        "w": 108,
+        "h": 47
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    }
+  ],
+  "backgrounds": [
+    {
+      "src": "https://caringforacauseindy.netlify.app/images/hero-image-update-min.jpg",
+      "element": "div#home.hero",
+      "natural": {
+        "w": 2880,
+        "h": 1678
+      },
+      "displayed": {
+        "w": 1440,
+        "h": 800
+      },
+      "naturalToDisplayedRatio": 2,
+      "backgroundSize": "cover",
+      "flags": []
+    },
+    {
+      "src": "https://caringforacauseindy.netlify.app/images/Image-figma-1.jpg",
+      "element": "img.image-5",
+      "natural": {
+        "w": 512,
+        "h": 489
+      },
+      "displayed": {
+        "w": 446,
+        "h": 427
+      },
+      "naturalToDisplayedRatio": 1.15,
+      "backgroundSize": "auto",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.netlify.app/images/Image-figma-1.jpg",
+      "element": "img.image-5",
+      "natural": {
+        "w": 512,
+        "h": 489
+      },
+      "displayed": {
+        "w": 446,
+        "h": 427
+      },
+      "naturalToDisplayedRatio": 1.15,
+      "backgroundSize": "auto",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.netlify.app/images/Image-figma-1.jpg",
+      "element": "img.image-5",
+      "natural": {
+        "w": 512,
+        "h": 489
+      },
+      "displayed": {
+        "w": 446,
+        "h": 427
+      },
+      "naturalToDisplayedRatio": 1.15,
+      "backgroundSize": "auto",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.netlify.app/images/Image-figma-1.jpg",
+      "element": "img.image-5",
+      "natural": {
+        "w": 512,
+        "h": 489
+      },
+      "displayed": {
+        "w": 512,
+        "h": 489
+      },
+      "naturalToDisplayedRatio": 1,
+      "backgroundSize": "auto",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg",
+      "element": "div.w-embed-youtubevideo.youtube-2",
+      "natural": {
+        "w": 560,
+        "h": 315
+      },
+      "displayed": {
+        "w": 700,
+        "h": 393
+      },
+      "naturalToDisplayedRatio": 0.8,
+      "backgroundSize": "cover",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    }
+  ]
+}

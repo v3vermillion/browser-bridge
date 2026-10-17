@@ -1,0 +1,111 @@
+[
+  {
+    "index": 0,
+    "action": "evaluate",
+    "ok": true,
+    "result": [
+      [
+        "holiday-gift-bags.BW_V1vNm_ECcjk.avif",
+        true,
+        72,
+        71
+      ],
+      [
+        "diaper-drive.DQOaEkt9_TsxoY.avif",
+        true,
+        72,
+        81
+      ],
+      [
+        "care-basket.dUg-bsTE_2eHChh.avif",
+        true,
+        72,
+        57
+      ],
+      [
+        "haircut-boy.Bkh-8wdm_1XPax5.avif",
+        true,
+        72,
+        73
+      ],
+      [
+        "holiday-gift-bags.BW_V1vNm_4tVDD.avif",
+        true,
+        480,
+        495
+      ],
+      [
+        "diaper-drive.DQOaEkt9_jcqwQ.avif",
+        true,
+        480,
+        495
+      ],
+      [
+        "care-basket.dUg-bsTE_Z1pThxP.avif",
+        true,
+        480,
+        495
+      ],
+      [
+        "stylist-haircut.DdAwisTG_Z1fcUnG.avif",
+        true,
+        620,
+        693
+      ],
+      [
+        "holiday-shopping.DGi0cLBx_g3aso.avif",
+        true,
+        560,
+        626
+      ],
+      [
+        "face-paint-closeup.hH_HTKJs_Z1RKWOp.avif",
+        false,
+        0,
+        0
+      ],
+      [
+        "volunteer-face-painting.Ds_sDRGR_Z1TQjly.avif",
+        false,
+        0,
+        0
+      ],
+      [
+        "stylist-haircut.DdAwisTG_Z1fcUnG.avif",
+        false,
+        0,
+        0
+      ],
+      [
+        "tamara-portrait.B5ksF5Q2_Z2ds21w.avif",
+        true,
+        419,
+        468
+      ]
+    ]
+  },
+  {
+    "index": 1,
+    "action": "evaluate",
+    "ok": true,
+    "result": 1758
+  },
+  {
+    "index": 2,
+    "action": "screenshot",
+    "ok": true,
+    "file": "01-holiday-row.jpg"
+  },
+  {
+    "index": 3,
+    "action": "evaluate",
+    "ok": true,
+    "result": 5358
+  },
+  {
+    "index": 4,
+    "action": "screenshot",
+    "ok": true,
+    "file": "02-about.jpg"
+  }
+]

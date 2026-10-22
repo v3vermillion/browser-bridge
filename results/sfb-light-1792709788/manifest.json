@@ -1,0 +1,153 @@
+{
+  "label": "sfb-light-1792709788",
+  "createdAt": "2026-10-22T22:56:58.211Z",
+  "engineVersion": "1.0.0",
+  "status": "ok",
+  "variants": [
+    {
+      "target": "sfb-value-forgetraining-workers-dev",
+      "url": "https://sfb-value.forgetraining.workers.dev/",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "sfb-value-forgetraining-workers-dev/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-22T22:56:58.400Z",
+      "httpStatus": 200,
+      "finalUrl": "https://sfb-value.forgetraining.workers.dev/",
+      "loadSeconds": 3.9,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "finishedAt": "2026-10-22T22:57:02.388Z",
+      "files": [
+        {
+          "path": "sfb-value-forgetraining-workers-dev/chromium-desktop/viewport.jpg",
+          "bytes": 45626
+        },
+        {
+          "path": "sfb-value-forgetraining-workers-dev/chromium-desktop/meta.json",
+          "bytes": 1209
+        },
+        {
+          "path": "sfb-value-forgetraining-workers-dev/chromium-desktop/text.md",
+          "bytes": 497
+        },
+        {
+          "path": "sfb-value-forgetraining-workers-dev/chromium-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "sfb-value-forgetraining-workers-dev/chromium-desktop/summary.md",
+          "bytes": 574
+        }
+      ]
+    },
+    {
+      "target": "sfb-value-forgetraining-workers-dev",
+      "url": "https://sfb-value.forgetraining.workers.dev/",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "sfb-value-forgetraining-workers-dev/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-22T22:57:02.392Z",
+      "httpStatus": 200,
+      "finalUrl": "https://sfb-value.forgetraining.workers.dev/",
+      "loadSeconds": 4.2,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "finishedAt": "2026-10-22T22:57:06.689Z",
+      "files": [
+        {
+          "path": "sfb-value-forgetraining-workers-dev/chromium-mobile/viewport.jpg",
+          "bytes": 31035
+        },
+        {
+          "path": "sfb-value-forgetraining-workers-dev/chromium-mobile/meta.json",
+          "bytes": 1209
+        },
+        {
+          "path": "sfb-value-forgetraining-workers-dev/chromium-mobile/text.md",
+          "bytes": 642
+        },
+        {
+          "path": "sfb-value-forgetraining-workers-dev/chromium-mobile/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "sfb-value-forgetraining-workers-dev/chromium-mobile/summary.md",
+          "bytes": 572
+        }
+      ]
+    }
+  ],
+  "job": {
+    "preset": "glance",
+    "targets": [
+      {
+        "url": "https://sfb-value.forgetraining.workers.dev/",
+        "name": "sfb-value-forgetraining-workers-dev"
+      }
+    ],
+    "browsers": [
+      "chromium"
+    ],
+    "devices": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "mobile",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+        "viewport": {
+          "width": 393,
+          "height": 659
+        },
+        "screen": {
+          "width": 393,
+          "height": 852
+        },
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true,
+        "defaultBrowserType": "webkit"
+      }
+    ],
+    "capture": {
+      "screenshot": "viewport",
+      "tiles": false,
+      "tileHeight": null,
+      "maxTiles": 25,
+      "format": "jpeg",
+      "quality": 80,
+      "detail": 1,
+      "animations": "disabled",
+      "waitMs": 800,
+      "timeoutMs": 45000,
+      "revealLazyContent": true,
+      "hide": [],
+      "blockWrites": true,
+      "text": true,
+      "meta": true,
+      "html": false,
+      "links": false,
+      "checkLinks": false,
+      "images": false,
+      "styles": false,
+      "forms": false,
+      "a11y": false,
+      "aria": false,
+      "lighthouse": false
+    },
+    "steps": [],
+    "notes": "No brief: visual look in light mode",
+    "brief": null
+  },
+  "finishedAt": "2026-10-22T22:57:06.718Z"
+}

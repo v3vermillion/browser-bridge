@@ -1,0 +1,50 @@
+{
+  "url": "https://sfb-value.forgetraining.workers.dev/",
+  "title": "SFB Value",
+  "lang": "en",
+  "description": "Strongsville Emergency Food Bank. Scan or type a donated item to see its Walmart price. Prices are saved on the phone.",
+  "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content",
+  "robots": null,
+  "generator": null,
+  "canonical": null,
+  "favicon": "https://sfb-value.forgetraining.workers.dev/icons/favicon-32.png",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "url": null,
+    "type": null,
+    "site_name": null
+  },
+  "twitter": {
+    "card": null,
+    "title": null,
+    "description": null,
+    "image": null
+  },
+  "h1Count": 1,
+  "headings": [
+    {
+      "level": 1,
+      "text": "SFB Value, Strongsville Emergency Food Bank",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Recent",
+      "visible": false
+    },
+    {
+      "level": 2,
+      "text": "Scan a barcode to begin",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Find the item",
+      "visible": true
+    }
+  ],
+  "structuredData": [],
+  "pageHeight": 900
+}

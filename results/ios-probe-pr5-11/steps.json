@@ -1,0 +1,874 @@
+[
+  {
+    "action": "screenshot",
+    "name": "loaded",
+    "state": {
+      "innerWidth": 390,
+      "safeArea": {
+        "bottom": 0,
+        "top": 0,
+        "right": 0,
+        "left": 0
+      },
+      "dpr": 3,
+      "scrollY": 0,
+      "outerHeight": 844,
+      "innerHeight": 663,
+      "screen": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "http://localhost:8765/keyboard.html",
+      "visualViewport": {
+        "offsetTop": 0,
+        "width": 390,
+        "height": 663,
+        "scale": 1
+      },
+      "docHeight": 2251,
+      "title": "Keyboard fixture",
+      "focused": null,
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "fixedElements": [
+        {
+          "bottom": 47,
+          "position": "sticky",
+          "id": null,
+          "coveredBelowVisualViewport": 0,
+          "tag": "header",
+          "text": "Price check",
+          "top": 0,
+          "visibleInVisualViewport": true
+        },
+        {
+          "bottom": 663,
+          "position": "fixed",
+          "id": "bar",
+          "coveredBelowVisualViewport": 0,
+          "tag": "div",
+          "text": "Total: $0.00",
+          "top": 616,
+          "visibleInVisualViewport": true
+        }
+      ]
+    },
+    "keyboardOpen": false,
+    "shot": "shots/01-loaded.jpg",
+    "elapsedMs": 14450
+  },
+  {
+    "action": "keyboard",
+    "name": "keyboard-number",
+    "selector": "#price",
+    "attempts": [
+      {
+        "strategy": "webdriver-tap",
+        "focused": null,
+        "visualViewportBefore": 663,
+        "visualViewportAfter": 663,
+        "innerHeightBefore": 663,
+        "innerHeightAfter": 663,
+        "keyboardOpen": false,
+        "pageLog": [],
+        "motion": {
+          "frames": 100,
+          "fps": 30,
+          "motionStartMs": 950,
+          "motionEndMs": 1883,
+          "motionMs": 933,
+          "filmstrip": "keyboard-02-1/filmstrip.jpg",
+          "picked": [
+            -583,
+            917,
+            950,
+            1717,
+            1750,
+            1783,
+            1817,
+            1850,
+            1883,
+            2717
+          ]
+        },
+        "video": "keyboard-02-1/keyboard.mp4",
+        "shot": "shots/02-keyboard-webdriver-tap.jpg",
+        "fixedElements": [
+          {
+            "bottom": 47,
+            "position": "sticky",
+            "id": null,
+            "coveredBelowVisualViewport": 0,
+            "tag": "header",
+            "text": "Price check",
+            "top": 0,
+            "visibleInVisualViewport": true
+          },
+          {
+            "bottom": 663,
+            "position": "fixed",
+            "id": "bar",
+            "coveredBelowVisualViewport": 0,
+            "tag": "div",
+            "text": "Total: $0.00",
+            "top": 616,
+            "visibleInVisualViewport": true
+          }
+        ]
+      },
+      {
+        "strategy": "send-keys",
+        "focused": {
+          "id": "price",
+          "inputmode": "decimal",
+          "type": "number",
+          "tag": "input"
+        },
+        "visualViewportBefore": 663,
+        "visualViewportAfter": 663,
+        "innerHeightBefore": 663,
+        "innerHeightAfter": 663,
+        "keyboardOpen": false,
+        "pageLog": [],
+        "motion": {
+          "frames": 69,
+          "fps": 30,
+          "motionStartMs": 245,
+          "motionEndMs": 245,
+          "motionMs": 0,
+          "filmstrip": "keyboard-03-2/filmstrip.jpg",
+          "picked": [
+            -555,
+            212,
+            245,
+            1712
+          ]
+        },
+        "video": "keyboard-03-2/keyboard.mp4",
+        "shot": "shots/03-keyboard-send-keys.jpg",
+        "fixedElements": [
+          {
+            "bottom": 47,
+            "position": "sticky",
+            "id": null,
+            "coveredBelowVisualViewport": 0,
+            "tag": "header",
+            "text": "Price check",
+            "top": 0,
+            "visibleInVisualViewport": true
+          },
+          {
+            "bottom": 663,
+            "position": "fixed",
+            "id": "bar",
+            "coveredBelowVisualViewport": 0,
+            "tag": "div",
+            "text": "Total: $0.00",
+            "top": 616,
+            "visibleInVisualViewport": true
+          }
+        ]
+      },
+      {
+        "strategy": "simulator-app+webdriver-tap",
+        "focused": null,
+        "visualViewportBefore": 663,
+        "visualViewportAfter": 663,
+        "innerHeightBefore": 663,
+        "innerHeightAfter": 663,
+        "keyboardOpen": false,
+        "pageLog": [],
+        "motion": {
+          "frames": 71,
+          "fps": 30,
+          "motionStartMs": 161,
+          "motionEndMs": 827,
+          "motionMs": 666,
+          "filmstrip": "keyboard-04-3/filmstrip.jpg",
+          "picked": [
+            -539,
+            127,
+            161,
+            194,
+            227,
+            627,
+            694,
+            727,
+            761,
+            827,
+            1794
+          ]
+        },
+        "video": "keyboard-04-3/keyboard.mp4",
+        "shot": "shots/04-keyboard-simulator-app-webdriver-tap.jpg",
+        "fixedElements": [
+          {
+            "bottom": 47,
+            "position": "sticky",
+            "id": null,
+            "coveredBelowVisualViewport": 0,
+            "tag": "header",
+            "text": "Price check",
+            "top": 0,
+            "visibleInVisualViewport": true
+          },
+          {
+            "bottom": 663,
+            "position": "fixed",
+            "id": "bar",
+            "coveredBelowVisualViewport": 0,
+            "tag": "div",
+            "text": "Total: $0.00",
+            "top": 616,
+            "visibleInVisualViewport": true
+          }
+        ]
+      }
+    ],
+    "keyboardOpen": false,
+    "state": {
+      "innerWidth": 390,
+      "safeArea": {
+        "bottom": 0,
+        "top": 0,
+        "right": 0,
+        "left": 0
+      },
+      "dpr": 3,
+      "scrollY": 0,
+      "outerHeight": 844,
+      "innerHeight": 663,
+      "screen": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "http://localhost:8765/keyboard.html",
+      "visualViewport": {
+        "offsetTop": 0,
+        "width": 390,
+        "height": 663,
+        "scale": 1
+      },
+      "docHeight": 2251,
+      "title": "Keyboard fixture",
+      "focused": null,
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "fixedElements": [
+        {
+          "bottom": 47,
+          "position": "sticky",
+          "id": null,
+          "coveredBelowVisualViewport": 0,
+          "tag": "header",
+          "text": "Price check",
+          "top": 0,
+          "visibleInVisualViewport": true
+        },
+        {
+          "bottom": 663,
+          "position": "fixed",
+          "id": "bar",
+          "coveredBelowVisualViewport": 0,
+          "tag": "div",
+          "text": "Total: $0.00",
+          "top": 616,
+          "visibleInVisualViewport": true
+        }
+      ]
+    },
+    "elapsedMs": 36585
+  },
+  {
+    "action": "type",
+    "name": "typed-price",
+    "selector": "#price",
+    "value": "3.49",
+    "valueAfter": "",
+    "state": {
+      "innerWidth": 390,
+      "safeArea": {
+        "bottom": 0,
+        "top": 0,
+        "right": 0,
+        "left": 0
+      },
+      "dpr": 3,
+      "scrollY": 0,
+      "outerHeight": 844,
+      "innerHeight": 663,
+      "screen": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "http://localhost:8765/keyboard.html",
+      "visualViewport": {
+        "offsetTop": 0,
+        "width": 390,
+        "height": 663,
+        "scale": 1
+      },
+      "docHeight": 2251,
+      "title": "Keyboard fixture",
+      "focused": {
+        "id": "price",
+        "inputmode": "decimal",
+        "type": "number",
+        "tag": "input"
+      },
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "fixedElements": [
+        {
+          "bottom": 47,
+          "position": "sticky",
+          "id": null,
+          "coveredBelowVisualViewport": 0,
+          "tag": "header",
+          "text": "Price check",
+          "top": 0,
+          "visibleInVisualViewport": true
+        },
+        {
+          "bottom": 663,
+          "position": "fixed",
+          "id": "bar",
+          "coveredBelowVisualViewport": 0,
+          "tag": "div",
+          "text": "Total: $0.00",
+          "top": 616,
+          "visibleInVisualViewport": true
+        }
+      ]
+    },
+    "keyboardOpen": false,
+    "shot": "shots/05-typed-price.jpg",
+    "elapsedMs": 2275
+  },
+  {
+    "action": "blur",
+    "name": "keyboard-dismissed",
+    "state": {
+      "innerWidth": 390,
+      "safeArea": {
+        "bottom": 0,
+        "top": 0,
+        "right": 0,
+        "left": 0
+      },
+      "dpr": 3,
+      "scrollY": 0,
+      "outerHeight": 844,
+      "innerHeight": 663,
+      "screen": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "http://localhost:8765/keyboard.html",
+      "visualViewport": {
+        "offsetTop": 0,
+        "width": 390,
+        "height": 663,
+        "scale": 1
+      },
+      "docHeight": 2251,
+      "title": "Keyboard fixture",
+      "focused": null,
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "fixedElements": [
+        {
+          "bottom": 47,
+          "position": "sticky",
+          "id": null,
+          "coveredBelowVisualViewport": 0,
+          "tag": "header",
+          "text": "Price check",
+          "top": 0,
+          "visibleInVisualViewport": true
+        },
+        {
+          "bottom": 663,
+          "position": "fixed",
+          "id": "bar",
+          "coveredBelowVisualViewport": 0,
+          "tag": "div",
+          "text": "Total: $0.00",
+          "top": 616,
+          "visibleInVisualViewport": true
+        }
+      ]
+    },
+    "keyboardOpen": false,
+    "shot": "shots/06-keyboard-dismissed.jpg",
+    "elapsedMs": 2729
+  },
+  {
+    "action": "keyboard",
+    "name": "keyboard-text",
+    "selector": "#name",
+    "attempts": [
+      {
+        "strategy": "webdriver-tap",
+        "focused": null,
+        "visualViewportBefore": 663,
+        "visualViewportAfter": 663,
+        "innerHeightBefore": 663,
+        "innerHeightAfter": 663,
+        "keyboardOpen": false,
+        "pageLog": [],
+        "motion": {
+          "frames": 70,
+          "fps": 30,
+          "motionStartMs": 147,
+          "motionEndMs": 980,
+          "motionMs": 833,
+          "filmstrip": "keyboard-07-1/filmstrip.jpg",
+          "picked": [
+            -553,
+            113,
+            147,
+            180,
+            213,
+            813,
+            847,
+            880,
+            913,
+            947,
+            980,
+            1747
+          ]
+        },
+        "video": "keyboard-07-1/keyboard.mp4",
+        "shot": "shots/07-keyboard-webdriver-tap.jpg",
+        "fixedElements": [
+          {
+            "bottom": 47,
+            "position": "sticky",
+            "id": null,
+            "coveredBelowVisualViewport": 0,
+            "tag": "header",
+            "text": "Price check",
+            "top": 0,
+            "visibleInVisualViewport": true
+          },
+          {
+            "bottom": 663,
+            "position": "fixed",
+            "id": "bar",
+            "coveredBelowVisualViewport": 0,
+            "tag": "div",
+            "text": "Total: $0.00",
+            "top": 616,
+            "visibleInVisualViewport": true
+          }
+        ]
+      }
+    ],
+    "keyboardOpen": false,
+    "state": {
+      "innerWidth": 390,
+      "safeArea": {
+        "bottom": 0,
+        "top": 0,
+        "right": 0,
+        "left": 0
+      },
+      "dpr": 3,
+      "scrollY": 0,
+      "outerHeight": 844,
+      "innerHeight": 663,
+      "screen": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "http://localhost:8765/keyboard.html",
+      "visualViewport": {
+        "offsetTop": 0,
+        "width": 390,
+        "height": 663,
+        "scale": 1
+      },
+      "docHeight": 2251,
+      "title": "Keyboard fixture",
+      "focused": null,
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "fixedElements": [
+        {
+          "bottom": 47,
+          "position": "sticky",
+          "id": null,
+          "coveredBelowVisualViewport": 0,
+          "tag": "header",
+          "text": "Price check",
+          "top": 0,
+          "visibleInVisualViewport": true
+        },
+        {
+          "bottom": 663,
+          "position": "fixed",
+          "id": "bar",
+          "coveredBelowVisualViewport": 0,
+          "tag": "div",
+          "text": "Total: $0.00",
+          "top": 616,
+          "visibleInVisualViewport": true
+        }
+      ]
+    },
+    "elapsedMs": 7182
+  },
+  {
+    "action": "blur",
+    "name": "dismissed-2",
+    "state": {
+      "innerWidth": 390,
+      "safeArea": {
+        "bottom": 0,
+        "top": 0,
+        "right": 0,
+        "left": 0
+      },
+      "dpr": 3,
+      "scrollY": 0,
+      "outerHeight": 844,
+      "innerHeight": 663,
+      "screen": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "http://localhost:8765/keyboard.html",
+      "visualViewport": {
+        "offsetTop": 0,
+        "width": 390,
+        "height": 663,
+        "scale": 1
+      },
+      "docHeight": 2251,
+      "title": "Keyboard fixture",
+      "focused": null,
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "fixedElements": [
+        {
+          "bottom": 47,
+          "position": "sticky",
+          "id": null,
+          "coveredBelowVisualViewport": 0,
+          "tag": "header",
+          "text": "Price check",
+          "top": 0,
+          "visibleInVisualViewport": true
+        },
+        {
+          "bottom": 663,
+          "position": "fixed",
+          "id": "bar",
+          "coveredBelowVisualViewport": 0,
+          "tag": "div",
+          "text": "Total: $0.00",
+          "top": 616,
+          "visibleInVisualViewport": true
+        }
+      ]
+    },
+    "keyboardOpen": false,
+    "shot": "shots/08-dismissed-2.jpg",
+    "elapsedMs": 3102
+  },
+  {
+    "action": "tap",
+    "name": "picker-select",
+    "selector": "#unit",
+    "error": "WebDriverError: click intercepted: ",
+    "shot": "shots/09-picker-select-error.jpg"
+  },
+  {
+    "action": "blur",
+    "name": "picker-closed",
+    "state": {
+      "innerWidth": 390,
+      "safeArea": {
+        "bottom": 0,
+        "top": 0,
+        "right": 0,
+        "left": 0
+      },
+      "dpr": 3,
+      "scrollY": 0,
+      "outerHeight": 844,
+      "innerHeight": 663,
+      "screen": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "http://localhost:8765/keyboard.html",
+      "visualViewport": {
+        "offsetTop": 0,
+        "width": 390,
+        "height": 663,
+        "scale": 1
+      },
+      "docHeight": 2251,
+      "title": "Keyboard fixture",
+      "focused": null,
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "fixedElements": [
+        {
+          "bottom": 47,
+          "position": "sticky",
+          "id": null,
+          "coveredBelowVisualViewport": 0,
+          "tag": "header",
+          "text": "Price check",
+          "top": 0,
+          "visibleInVisualViewport": true
+        },
+        {
+          "bottom": 663,
+          "position": "fixed",
+          "id": "bar",
+          "coveredBelowVisualViewport": 0,
+          "tag": "div",
+          "text": "Total: $0.00",
+          "top": 616,
+          "visibleInVisualViewport": true
+        }
+      ]
+    },
+    "keyboardOpen": false,
+    "shot": "shots/10-picker-closed.jpg",
+    "elapsedMs": 2964
+  },
+  {
+    "action": "tap",
+    "name": "picker-date",
+    "selector": "#when",
+    "method": "webdriver",
+    "state": {
+      "innerWidth": 390,
+      "safeArea": {
+        "bottom": 0,
+        "top": 0,
+        "right": 0,
+        "left": 0
+      },
+      "dpr": 3,
+      "scrollY": 384,
+      "outerHeight": 844,
+      "innerHeight": 663,
+      "screen": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "http://localhost:8765/keyboard.html",
+      "visualViewport": {
+        "offsetTop": 0,
+        "width": 390,
+        "height": 663,
+        "scale": 1
+      },
+      "docHeight": 2251,
+      "title": "Keyboard fixture",
+      "focused": null,
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "fixedElements": [
+        {
+          "bottom": 47,
+          "position": "sticky",
+          "id": null,
+          "coveredBelowVisualViewport": 0,
+          "tag": "header",
+          "text": "Price check",
+          "top": 0,
+          "visibleInVisualViewport": true
+        },
+        {
+          "bottom": 663,
+          "position": "fixed",
+          "id": "bar",
+          "coveredBelowVisualViewport": 0,
+          "tag": "div",
+          "text": "Total: $0.00",
+          "top": 616,
+          "visibleInVisualViewport": true
+        }
+      ]
+    },
+    "keyboardOpen": false,
+    "shot": "shots/11-picker-date.jpg",
+    "elapsedMs": 2607
+  },
+  {
+    "action": "blur",
+    "name": "date-closed",
+    "state": {
+      "innerWidth": 390,
+      "safeArea": {
+        "bottom": 0,
+        "top": 0,
+        "right": 0,
+        "left": 0
+      },
+      "dpr": 3,
+      "scrollY": 384,
+      "outerHeight": 844,
+      "innerHeight": 663,
+      "screen": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "http://localhost:8765/keyboard.html",
+      "visualViewport": {
+        "offsetTop": 0,
+        "width": 390,
+        "height": 663,
+        "scale": 1
+      },
+      "docHeight": 2251,
+      "title": "Keyboard fixture",
+      "focused": null,
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "fixedElements": [
+        {
+          "bottom": 47,
+          "position": "sticky",
+          "id": null,
+          "coveredBelowVisualViewport": 0,
+          "tag": "header",
+          "text": "Price check",
+          "top": 0,
+          "visibleInVisualViewport": true
+        },
+        {
+          "bottom": 663,
+          "position": "fixed",
+          "id": "bar",
+          "coveredBelowVisualViewport": 0,
+          "tag": "div",
+          "text": "Total: $0.00",
+          "top": 616,
+          "visibleInVisualViewport": true
+        }
+      ]
+    },
+    "keyboardOpen": false,
+    "shot": "shots/12-date-closed.jpg",
+    "elapsedMs": 2935
+  },
+  {
+    "action": "scroll",
+    "name": "top",
+    "to": "top",
+    "state": {
+      "innerWidth": 390,
+      "safeArea": {
+        "bottom": 0,
+        "top": 0,
+        "right": 0,
+        "left": 0
+      },
+      "dpr": 3,
+      "scrollY": 0,
+      "outerHeight": 844,
+      "innerHeight": 663,
+      "screen": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "http://localhost:8765/keyboard.html",
+      "visualViewport": {
+        "offsetTop": 0,
+        "width": 390,
+        "height": 663,
+        "scale": 1
+      },
+      "docHeight": 2251,
+      "title": "Keyboard fixture",
+      "focused": null,
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "fixedElements": [
+        {
+          "bottom": 47,
+          "position": "sticky",
+          "id": null,
+          "coveredBelowVisualViewport": 0,
+          "tag": "header",
+          "text": "Price check",
+          "top": 0,
+          "visibleInVisualViewport": true
+        },
+        {
+          "bottom": 663,
+          "position": "fixed",
+          "id": "bar",
+          "coveredBelowVisualViewport": 0,
+          "tag": "div",
+          "text": "Total: $0.00",
+          "top": 616,
+          "visibleInVisualViewport": true
+        }
+      ]
+    },
+    "keyboardOpen": false,
+    "elapsedMs": 852
+  },
+  {
+    "action": "swipe",
+    "name": "swipe-up",
+    "direction": "up",
+    "method": "webdriver-touch",
+    "innerHeightBefore": 663,
+    "innerHeightAfter": 663,
+    "addressBarCollapsed": false,
+    "scrolled": 0,
+    "state": {
+      "innerWidth": 390,
+      "safeArea": {
+        "bottom": 0,
+        "top": 0,
+        "right": 0,
+        "left": 0
+      },
+      "dpr": 3,
+      "scrollY": 0,
+      "outerHeight": 844,
+      "innerHeight": 663,
+      "screen": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "http://localhost:8765/keyboard.html",
+      "visualViewport": {
+        "offsetTop": 0,
+        "width": 390,
+        "height": 663,
+        "scale": 1
+      },
+      "docHeight": 2251,
+      "title": "Keyboard fixture",
+      "focused": null,
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "fixedElements": [
+        {
+          "bottom": 47,
+          "position": "sticky",
+          "id": null,
+          "coveredBelowVisualViewport": 0,
+          "tag": "header",
+          "text": "Price check",
+          "top": 0,
+          "visibleInVisualViewport": true
+        },
+        {
+          "bottom": 663,
+          "position": "fixed",
+          "id": "bar",
+          "coveredBelowVisualViewport": 0,
+          "tag": "div",
+          "text": "Total: $0.00",
+          "top": 616,
+          "visibleInVisualViewport": true
+        }
+      ]
+    },
+    "keyboardOpen": false,
+    "shot": "shots/13-swipe-up.jpg",
+    "elapsedMs": 4057
+  }
+]

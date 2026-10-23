@@ -89,7 +89,7 @@ class Describe(unittest.TestCase):
 
 
 def ios_args(**kw):
-    base = dict(url=None, device=None, steps=None, keyboard=None, probe=False, idb=False)
+    base = dict(url=None, device=None, ios=None, steps=None, keyboard=None, probe=False, idb=False)
     base.update(kw)
     return argparse.Namespace(**base)
 
@@ -97,6 +97,9 @@ def ios_args(**kw):
 class IOSJob(unittest.TestCase):
     def test_no_url_runs_probe(self):
         self.assertEqual(bridge.build_ios_job(ios_args()), {"probe": True})
+
+    def test_ios_version(self):
+        self.assertEqual(bridge.build_ios_job(ios_args(ios="18.6"))["ios"], "18.6")
 
     def test_keyboard_shortcut(self):
         job = bridge.build_ios_job(ios_args(url="https://example.org", keyboard="#email"))

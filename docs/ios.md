@@ -48,7 +48,7 @@ Example (`steps.json`):
   {"action": "swipe", "direction": "up"}
 ]
 ```
-Options: `--device "iPhone 16 Pro"` (any installed simulator), `"ios": "18.6"` in the job to pick the iOS version (default: the version matching the runner's Xcode, then newest),
+Options: `--device "iPhone 16 Pro"` (any installed simulator), `--ios 18.6` to pick the iOS version (default: the version matching the runner's Xcode, then newest),
 `--idb` (try to install idb for real HID touches; currently unreliable: it needs a newer Xcode than the runner's default, and runs that switched Xcode could no longer start Safari).
 
 ## Results

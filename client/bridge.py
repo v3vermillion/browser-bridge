@@ -312,6 +312,8 @@ def build_ios_job(args):
         job["url"] = args.url
     if args.device:
         job["device"] = args.device
+    if getattr(args, "ios", None):
+        job["ios"] = args.ios
     if args.steps:
         text = args.steps if args.steps.strip().startswith("[") else open(args.steps).read()
         job["steps"] = json.loads(text)
@@ -877,6 +879,7 @@ def main():
     io = sub.add_parser("ios", help="real iPhone Safari in the iOS Simulator (docs/ios.md)")
     io.add_argument("--url", help="page to open (omit to run the keyboard probe on the built-in test page)")
     io.add_argument("--device", help='simulator model, e.g. "iPhone 16 Pro" (default: a current iPhone on the newest iOS)')
+    io.add_argument("--ios", help='iOS version, e.g. 18.6 (default: the one matching the runner\'s Xcode, then newest)')
     io.add_argument("--steps", help="JSON list of steps, or a file holding one (docs/ios.md)")
     io.add_argument("--keyboard", metavar="SELECTOR", help="shortcut: tap this field and record the real keyboard opening")
     io.add_argument("--probe", action="store_true", help="run the built-in keyboard/picker/address-bar probe")

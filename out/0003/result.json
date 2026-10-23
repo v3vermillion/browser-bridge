@@ -1,0 +1,224 @@
+{
+  "seq": 3,
+  "action": "watch",
+  "ok": true,
+  "files": [
+    "filmstrip.jpg",
+    "watch.json"
+  ],
+  "frameFiles": [
+    "frames/001_m00283ms.jpg",
+    "frames/014_00083ms.jpg",
+    "frames/015_00110ms.jpg",
+    "frames/016_00138ms.jpg",
+    "frames/017_00167ms.jpg",
+    "frames/082_02009ms.jpg"
+  ],
+  "watch": {
+    "what": "tap 4",
+    "zero": "the tap",
+    "realMs": 2000,
+    "slowmo": 1,
+    "conditions": [],
+    "frames": {
+      "source": "screenshots in a loop; this browser has no frame stream",
+      "received": 82,
+      "inWindow": 82,
+      "picked": 6,
+      "pageFrames": 33,
+      "note": "a screencast sends a frame only when something repaints, so a still page sends few"
+    },
+    "motion": {
+      "startsAt": 110,
+      "endsAt": 167,
+      "stillMovingAtEnd": false,
+      "biggestChangeAt": 138
+    },
+    "region": {
+      "x": 0,
+      "y": 557,
+      "w": 315,
+      "h": 102
+    },
+    "explained": {
+      "animatedElements": 100,
+      "media": 0,
+      "elsewhere": 0
+    },
+    "animations": [
+      {
+        "id": 1,
+        "type": "CSSTransition",
+        "name": "border-bottom-color",
+        "target": "form#searchForm.search",
+        "text": null,
+        "startedAt": 40,
+        "firstSeen": 81,
+        "activeUntil": 151,
+        "duration": 150,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "ease",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "border-bottom-color",
+            "from": "oklab(0.64608 0.00394 0.011385)",
+            "to": "oklch(0.46 0.16 150)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 2,
+        "type": "CSSTransition",
+        "name": "border-left-color",
+        "target": "form#searchForm.search",
+        "text": null,
+        "startedAt": 40,
+        "firstSeen": 81,
+        "activeUntil": 151,
+        "duration": 150,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "ease",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "border-left-color",
+            "from": "oklab(0.64608 0.00394 0.011385)",
+            "to": "oklch(0.46 0.16 150)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 3,
+        "type": "CSSTransition",
+        "name": "border-right-color",
+        "target": "form#searchForm.search",
+        "text": null,
+        "startedAt": 40,
+        "firstSeen": 81,
+        "activeUntil": 151,
+        "duration": 150,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "ease",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "border-right-color",
+            "from": "oklab(0.64608 0.00394 0.011385)",
+            "to": "oklch(0.46 0.16 150)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 4,
+        "type": "CSSTransition",
+        "name": "border-top-color",
+        "target": "form#searchForm.search",
+        "text": null,
+        "startedAt": 40,
+        "firstSeen": 82,
+        "activeUntil": 151,
+        "duration": 150,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "ease",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "border-top-color",
+            "from": "oklab(0.64608 0.00394 0.011385)",
+            "to": "oklch(0.46 0.16 150)",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      },
+      {
+        "id": 5,
+        "type": "CSSTransition",
+        "name": "box-shadow",
+        "target": "form#searchForm.search",
+        "text": null,
+        "startedAt": 40,
+        "firstSeen": 82,
+        "activeUntil": 151,
+        "duration": 150,
+        "delay": 0,
+        "endDelay": 0,
+        "iterations": 1,
+        "direction": "normal",
+        "fill": "backwards",
+        "easing": "ease",
+        "timeline": "DocumentTimeline",
+        "changes": [
+          {
+            "property": "box-shadow",
+            "from": "none",
+            "to": "oklab(0.46 -0.138564 0.08 / 0.18) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px ",
+            "keyframes": 2
+          }
+        ],
+        "playState": "running",
+        "visible": true
+      }
+    ],
+    "animationCount": 5,
+    "onScreen": 5,
+    "webFontsLoaded": [],
+    "layoutShifts": 0,
+    "layoutShiftTotal": 0,
+    "longTasks": 0,
+    "load": null,
+    "media": {
+      "libraries": [],
+      "videos": 0,
+      "canvases": 0,
+      "iframes": [],
+      "gifs": 0
+    },
+    "notes": [
+      "the filmstrip is cropped to what the action set moving; other motion on the page is outside it (see \"visible change\")"
+    ]
+  },
+  "url": "https://sfb-value.forgetraining.workers.dev/",
+  "title": "SFB Value",
+  "scrollY": 0,
+  "scrollX": 0,
+  "pageHeight": 659,
+  "pageWidth": 393,
+  "layoutViewport": [
+    393,
+    659
+  ],
+  "viewport": [
+    393,
+    659
+  ],
+  "device": "iPhone 15 Pro",
+  "ms": 3883
+}

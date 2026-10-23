@@ -52,6 +52,15 @@ class Filmstrip(unittest.TestCase):
             self.assertEqual(facts["picked"], [0, round(frames[-1][0])])
 
 
+class ElementRefs(unittest.TestCase):
+    def test_w3c_and_legacy_keys(self):
+        self.assertEqual(ios.element_id({ios.ELEM: "a"}), "a")
+        self.assertEqual(ios.element_id({"ELEMENT": "b"}), "b")
+        self.assertEqual(ios.element_id({"some-other-key": "c"}), "c")
+        with self.assertRaises(ios.WebDriverError):
+            ios.element_id(None)
+
+
 class Report(unittest.TestCase):
     def test_summary_and_manifest(self):
         with tempfile.TemporaryDirectory() as d:

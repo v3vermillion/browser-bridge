@@ -27,7 +27,7 @@ minutes, so put everything you want to see in one run. Results land on the `resu
 | action | fields | does |
 |---|---|---|
 | `keyboard` | selector / text, `ms` (default 1500) | Taps the field like a finger and records the real keyboard opening: screen video, a filmstrip of the frames that changed (with ms since the tap), how much the visual viewport shrank (= keyboard height in CSS px), and where every fixed/sticky element ended up (visible above the keyboard, or hidden behind it and by how much). Tries several ways to raise the keyboard and reports which worked. |
-| `tap` | selector / text, `method: "hid"` | Taps an element (opens native pickers for `select` and date inputs). `hid` uses a real touch through idb (needs `--idb`). |
+| `tap` | selector / text, `method` | Taps an element (opens native pickers for `select` and date inputs). `touch` (default) is a quick W3C touch tap; `click` is safaridriver's element click (seen arriving as a long press on iOS 26: selection handles and loupe); `hid` is a real touch through idb (needs `--idb`). |
 | `type` | selector / text, `value` | Types into a field (focuses it first). Nothing is submitted. |
 | `blur` | | Unfocuses the field (closes the keyboard). |
 | `swipe` | `direction` up/down | Finger swipe. Real touch scrolling is what collapses Safari's address bar; the result reports the viewport height before/after. |

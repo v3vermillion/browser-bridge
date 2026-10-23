@@ -218,6 +218,17 @@ class WebDriverError(Exception):
     pass
 
 
+def element_id(ref):
+    """WebDriver element reference -> id. W3C uses a fixed key; Safari on iOS has been seen returning another."""
+    if isinstance(ref, dict):
+        for k in (ELEM, "ELEMENT"):
+            if k in ref:
+                return ref[k]
+        if len(ref) == 1:
+            return next(iter(ref.values()))
+    raise WebDriverError(f"unexpected element reference from safaridriver: {str(ref)[:120]}")
+
+
 class WD:
     def __init__(self, port=WD_PORT):
         self.base = f"http://127.0.0.1:{port}"
@@ -262,7 +273,7 @@ class WD:
               || null;""", selector, text)
         if not el:
             raise WebDriverError(f"no element matches {selector or repr(text)}")
-        return el[ELEM]
+        return element_id(el)
 
     def click(self, eid):
         self.call("POST", f"/element/{eid}/click")
@@ -270,11 +281,25 @@ class WD:
     def send_keys(self, eid, text):
         self.call("POST", f"/element/{eid}/value", {"text": text})
 
+    def touch_tap(self, x, y):
+        """A quick finger tap through W3C touch actions (no hold, so iOS doesn't read it as a long press)."""
+        self.call("POST", "/actions", {"actions": [{"type": "pointer", "id": "finger", "parameters": {"pointerType": "touch"},
+            "actions": [{"type": "pointerMove", "duration": 0, "x": int(x), "y": int(y)}, {"type": "pointerDown", "button": 0},
+                        {"type": "pointerUp", "button": 0}]}]}, timeout=30)
+        try:
+            self.call("DELETE", "/actions", timeout=15)
+        except Exception:
+            pass
+
     def touch_swipe(self, x, y1, y2, ms=300):
         self.call("POST", "/actions", {"actions": [{"type": "pointer", "id": "finger", "parameters": {"pointerType": "touch"},
             "actions": [{"type": "pointerMove", "duration": 0, "x": int(x), "y": int(y1)}, {"type": "pointerDown", "button": 0},
-                        {"type": "pointerMove", "duration": ms, "x": int(x), "y": int(y2)}, {"type": "pointerUp", "button": 0}]}]})
-        self.call("DELETE", "/actions")
+                        {"type": "pointerMove", "duration": ms, "x": int(x), "y": int(y2)}, {"type": "pointerUp", "button": 0}]}]},
+                  timeout=30)
+        try:
+            self.call("DELETE", "/actions", timeout=15)
+        except Exception:
+            pass
 
     def quit(self):
         if self.sid:
@@ -287,12 +312,14 @@ class WD:
 # Page state: everything that changes when the keyboard or Safari's bars move.
 STATE_JS = """
   const vv = window.visualViewport, a = document.activeElement;
-  const probe = document.createElement('div');
-  probe.style.cssText = 'position:fixed;top:0;left:0;width:0;height:0;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)';
-  document.documentElement.appendChild(probe);
-  const cs = getComputedStyle(probe);
-  const safe = {top: parseFloat(cs.paddingTop), bottom: parseFloat(cs.paddingBottom), left: parseFloat(cs.paddingLeft), right: parseFloat(cs.paddingRight)};
-  probe.remove();
+  const safe = {};
+  for (const side of ['top', 'bottom', 'left', 'right']) {
+    const p = document.createElement('div');
+    p.style.cssText = 'position:absolute;visibility:hidden;width:env(safe-area-inset-' + side + ', 0px);height:1px';
+    document.body.appendChild(p);
+    safe[side] = Math.round(p.getBoundingClientRect().width);
+    p.remove();
+  }
   const fixed = [];
   for (const el of document.querySelectorAll('body *')) {
     const s = getComputedStyle(el);
@@ -404,6 +431,14 @@ class IOSBridge:
     def open(self, url):
         self.wd.goto(url)
         time.sleep(float(self.job.get("waitMs", 1200)) / 1000)
+        if not getattr(self, "tips_dismissed", False):
+            # A fresh simulator's Safari shows a one-time tip bubble over the page; a tap elsewhere closes it.
+            self.tips_dismissed = True
+            try:
+                self.wd.click(element_id(self.wd.js("return document.elementFromPoint(innerWidth / 2, 4) || document.body")))
+                time.sleep(0.8)
+            except Exception as e:
+                self.notes.append(f"could not dismiss Safari's first-run tip: {str(e)[:120]}")
         self.wd.js(INSTRUMENT_JS)
         st = self.state()
         self.baseline_vv = (st.get("visualViewport") or {}).get("height") or st["innerHeight"]
@@ -453,6 +488,11 @@ class IOSBridge:
         css_to_pt = r["sw"] / r["w"]
         return (r["x"] * css_to_pt, top_pt + r["y"] * css_to_pt)
 
+    def tap_center(self, eid):
+        r = self.wd.js("arguments[0].scrollIntoView({block:'center'});const r=arguments[0].getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2}",
+                       {ELEM: eid})
+        self.wd.touch_tap(r["x"], r["y"])
+
     def hid_tap(self, eid):
         x, y = self.screen_point(eid)
         sh(["idb", "ui", "tap", "--udid", self.dev["udid"], str(round(x)), str(round(y))], timeout=60)
@@ -468,7 +508,7 @@ class IOSBridge:
         return True
 
     def blur(self):
-        self.wd.js("document.activeElement && document.activeElement.blur()")
+        self.wd.js("document.activeElement && document.activeElement.blur(); getSelection().removeAllRanges()")
         time.sleep(0.8)
 
     # ---- steps
@@ -488,15 +528,25 @@ class IOSBridge:
             pass
         elif a == "tap":
             eid = self.element(step)
-            if step.get("method") == "hid" and self.idb:
+            method = step.get("method", "touch")
+            if method == "hid" and self.idb:
                 self.hid_tap(eid)
                 res["method"] = "hid"
+            elif method == "touch":
+                try:
+                    self.tap_center(eid)
+                    res["method"] = "touch"
+                except (WebDriverError, TimeoutError, OSError) as e:
+                    self.notes.append(f"touch tap failed ({str(e)[:100]}); used WebDriver click")
+                    self.wd.click(eid)
+                    res["method"] = "webdriver"
             else:
                 self.wd.click(eid)
                 res["method"] = "webdriver"
         elif a == "type":
             eid = self.element(step)
             self.wd.send_keys(eid, step.get("value", ""))
+            res["valueAfter"] = self.wd.js("return arguments[0].value", {ELEM: eid})
         elif a == "blur":
             self.blur()
         elif a == "keyboard":
@@ -505,7 +555,8 @@ class IOSBridge:
             res.update(self.swipe(step))
         elif a == "scroll":
             to = step.get("to", "bottom")
-            y = {"top": "0", "bottom": "document.documentElement.scrollHeight"}.get(str(to), str(int(to)))
+            named = {"top": "0", "bottom": "document.documentElement.scrollHeight"}
+            y = named[str(to)] if str(to) in named else str(int(to))
             self.wd.js(f"window.scrollTo(0, {y})")
         elif a == "wait":
             time.sleep(min(float(step.get("ms", 1000)), 20000) / 1000)
@@ -543,8 +594,8 @@ class IOSBridge:
             try:
                 self.wd.touch_swipe(w / 2, y1, y2)
                 method = "webdriver-touch"
-            except WebDriverError as e:
-                self.notes.append(f"WebDriver touch actions unavailable ({e}); swipe fell back to scrollBy (does not move Safari's bars)")
+            except (WebDriverError, TimeoutError, OSError) as e:
+                self.notes.append(f"WebDriver touch actions unavailable ({str(e)[:120]}); swipe fell back to scrollBy (does not move Safari's bars)")
                 self.wd.js(f"window.scrollBy(0, {int(y1 - y2)})")
                 method = "scrollBy"
         time.sleep(1.2)
@@ -557,7 +608,7 @@ class IOSBridge:
         change, where fixed bars end up, and a device screenshot with the keyboard up. Tries several ways
         to bring the keyboard up and reports which one worked."""
         out = {"attempts": []}
-        strategies = ["webdriver-tap", "send-keys"] + (["hid-tap"] if self.idb else []) + ["simulator-app+webdriver-tap"]
+        strategies = ["touch-tap", "webdriver-tap", "send-keys"] + (["hid-tap"] if self.idb else []) + ["simulator-app+touch-tap"]
         if step.get("strategies"):
             strategies = step["strategies"]
         for strat in strategies:
@@ -582,6 +633,8 @@ class IOSBridge:
                     self.wd.send_keys(eid, "")
                 elif strat == "hid-tap":
                     self.hid_tap(eid)
+                elif strat.endswith("touch-tap"):
+                    self.tap_center(eid)
                 else:
                     self.wd.click(eid)
             except Exception as e:
@@ -639,7 +692,7 @@ PROBE_STEPS = [
     {"action": "keyboard", "selector": "#price", "name": "keyboard-number"},
     {"action": "type", "selector": "#price", "value": "3.49", "name": "typed-price"},
     {"action": "blur", "name": "keyboard-dismissed"},
-    {"action": "keyboard", "selector": "#name", "name": "keyboard-text", "strategies": ["webdriver-tap", "send-keys", "hid-tap"]},
+    {"action": "keyboard", "selector": "#name", "name": "keyboard-text", "strategies": ["touch-tap", "hid-tap"]},
     {"action": "blur", "name": "dismissed-2"},
     {"action": "tap", "selector": "#unit", "name": "picker-select", "waitMs": 1200},
     {"action": "blur", "name": "picker-closed"},
@@ -667,7 +720,7 @@ def write_report(br, job, status, error=None):
                   f"- Screen {first['screen']['width']}x{first['screen']['height']} pt at {first['dpr']}x; layout viewport "
                   f"{first['innerWidth']}x{first['innerHeight']} CSS px; visual viewport {vv.get('width')}x{vv.get('height')}.",
                   f"- Safe-area insets (notch / Dynamic Island / home indicator): {first.get('safeArea')} "
-                  "(all 0 unless the page uses `viewport-fit=cover`).",
+                  "(0 on edges Safari's own bars cover, and unless the page uses `viewport-fit=cover`).",
                   f"- JavaScript measurements: {'working' if first.get('innerWidth') else 'NOT working'}."]
     if kb:
         lines += ["", "## On-screen keyboard", ""]
@@ -691,6 +744,10 @@ def write_report(br, job, status, error=None):
     lines += ["", "## Steps", "", "| # | step | result | keyboard | shot |", "|---|---|---|---|---|"]
     for i, s in enumerate(br.steps, 1):
         extra = s.get("error") or ""
+        if s.get("action") == "type" and not extra:
+            extra = f"field value now {s.get('valueAfter')!r}"
+        if s.get("action") == "tap" and not extra:
+            extra = f"via {s.get('method')}"
         if s.get("action") == "swipe" and not extra:
             extra = f"{s.get('method')}: innerHeight {s.get('innerHeightBefore')} -> {s.get('innerHeightAfter')}, " \
                     f"address bar {'collapsed' if s.get('addressBarCollapsed') else 'unchanged'}, scrolled {s.get('scrolled')} px"
@@ -747,10 +804,14 @@ def main():
                 log("step failed:", res["error"])
             br.steps.append(res)
             log(f"step {res['name']}: {'error' if res.get('error') else 'ok'}")
-        blocked = br.wd.js("return window.__bbBlocked || []")
-        if blocked:
-            br.notes.append(f"Blocked writes (form submits / non-GET requests stopped in the page): {blocked[:10]}")
-        json.dump(br.wd.js("return window.__bbLog || []"), open(os.path.join(OUT, "page-log.json"), "w"), indent=1)
+        try:
+            blocked = br.wd.js("return window.__bbBlocked || []", timeout=20)
+            if blocked:
+                br.notes.append(f"Blocked writes (form submits / non-GET requests stopped in the page): {blocked[:10]}")
+            with open(os.path.join(OUT, "page-log.json"), "w") as fh:
+                json.dump(br.wd.js("return window.__bbLog || []", timeout=20), fh, indent=1)
+        except Exception as e:
+            br.notes.append(f"end-of-run page reads failed: {str(e)[:160]}")
         if any(s.get("error") for s in br.steps):
             status = "partial"
     except Exception as e:

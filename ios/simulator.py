@@ -61,9 +61,22 @@ def ffmpeg_exe():
 
 
 # --------------------------------------------------------------------------- simulator
-def pick_devices(want):
-    """Available iPhones, best first: newest iOS runtime first, one device per runtime (fallbacks if the newest
-    runtime won't connect). `want` matches the device name (e.g. "iPhone 16 Pro")."""
+def xcode_major():
+    m = re.search(r"Xcode (\d+)", sh(["xcodebuild", "-version"], check=False))
+    return int(m.group(1)) if m else None
+
+
+def matching_ios(xcode):
+    """The iOS major version a given Xcode was built for (Xcode 16 -> iOS 18; from 26 on they share numbers)."""
+    if not xcode:
+        return None
+    return xcode if xcode >= 26 else xcode + 2
+
+
+def pick_devices(want, ios=None):
+    """Available iPhones, best first, one device per runtime (later ones are fallbacks if a runtime won't connect).
+    `ios` ("18", "26.2") picks the runtime; by default the runtime matching the selected Xcode comes first, then
+    newest. `want` matches the device name (e.g. "iPhone 16 Pro")."""
     data = json.loads(sh(["xcrun", "simctl", "list", "-j", "devices", "available"]))
     cands = []
     for runtime, devs in data["devices"].items():
@@ -80,8 +93,14 @@ def pick_devices(want):
         exact = [c for c in cands if c[1]["name"].lower() == want.lower()]
         loose = [c for c in cands if want.lower() in c[1]["name"].lower()]
         cands = exact or loose or cands
-    # Prefer a plain current model (not SE/mini) for a typical modern screen, newest runtime first.
-    cands.sort(key=lambda c: (c[0], "SE" not in c[1]["name"], "Pro" not in c[1]["name"]), reverse=True)
+    prefer = str(ios) if ios else (str(matching_ios(xcode_major())) if xcode_major() else None)
+
+    def matches(ver):
+        return bool(prefer) and (f"{ver[0]}.{ver[1]}" == prefer or str(ver[0]) == prefer)
+    if ios and not any(matches(c[0]) for c in cands):
+        raise RuntimeError(f"No iPhone simulator with iOS {ios} on this runner.")
+    # Preferred runtime first, then newest; a plain current model (not SE/mini) for a typical modern screen.
+    cands.sort(key=lambda c: (matches(c[0]), c[0], "SE" not in c[1]["name"], "Pro" not in c[1]["name"]), reverse=True)
     out, seen = [], set()
     for ver, d, runtime in cands:
         if runtime in seen:
@@ -218,6 +237,19 @@ class WebDriverError(Exception):
     pass
 
 
+# In-page element finder: CSS selector, or visible text / label / placeholder.
+FIND_JS = """
+  const __bbFind = (sel, text) => {
+    if (sel) return document.querySelector(sel);
+    if (!text) return null;
+    const want = text.trim().toLowerCase();
+    const all = [...document.querySelectorAll('a,button,input,select,textarea,label,[role=button],summary,[onclick]')];
+    const label = e => (e.innerText || e.value || e.getAttribute('aria-label') || e.placeholder || '');
+    return all.find(e => label(e).trim().toLowerCase() === want) || all.find(e => label(e).toLowerCase().includes(want)) || null;
+  };
+"""
+
+
 def element_id(ref):
     """WebDriver element reference -> id. W3C uses a fixed key; Safari on iOS has been seen returning another."""
     if isinstance(ref, dict):
@@ -233,6 +265,12 @@ class WD:
     def __init__(self, port=WD_PORT):
         self.base = f"http://127.0.0.1:{port}"
         self.sid = None
+        self.refs = {}   # element id -> the reference exactly as safaridriver returned it
+        self.queries = {}   # element id -> (selector, text) it was found with
+
+    def ref(self, eid):
+        """Element reference to pass back into a script. Safari only recognises its own format, so reuse it."""
+        return self.refs.get(eid) or {ELEM: eid}
 
     def call(self, method, path, body=None, timeout=120):
         url = self.base + (f"/session/{self.sid}" if self.sid and not path.startswith("/session") else "") + path
@@ -263,17 +301,21 @@ class WD:
         self.call("POST", "/url", {"url": url}, timeout=120)
 
     def find(self, selector=None, text=None):
-        el = self.js("""
-          const [sel, text] = arguments;
-          if (sel) return document.querySelector(sel);
-          const want = text.trim().toLowerCase();
-          const all = [...document.querySelectorAll('a,button,input,select,textarea,label,[role=button],summary,[onclick]')];
-          return all.find(e => (e.innerText || e.value || e.getAttribute('aria-label') || e.placeholder || '').trim().toLowerCase() === want)
-              || all.find(e => (e.innerText || e.value || e.getAttribute('aria-label') || e.placeholder || '').toLowerCase().includes(want))
-              || null;""", selector, text)
+        el = self.js(FIND_JS + "return __bbFind(arguments[0], arguments[1]);", selector, text)
         if not el:
             raise WebDriverError(f"no element matches {selector or repr(text)}")
-        return element_id(el)
+        eid = element_id(el)
+        self.refs[eid] = el
+        self.queries[eid] = (selector, text)
+        return eid
+
+    def on_element(self, eid, body):
+        """Run `body` (JS using `el`) on an element. Passes Safari's reference back, and if Safari doesn't turn it
+        into the element, finds the element again with the original selector/text inside the page."""
+        sel, text = self.queries.get(eid, (None, None))
+        return self.js(FIND_JS + "const [ref, sel, text] = arguments;"
+                       "const el = (ref && ref.getBoundingClientRect) ? ref : __bbFind(sel, text);"
+                       "if (!el) throw new Error('element not found again');" + body, self.ref(eid), sel, text)
 
     def click(self, eid):
         self.call("POST", f"/element/{eid}/click")
@@ -394,7 +436,7 @@ class IOSBridge:
                 break
             except Exception:
                 time.sleep(0.2)
-        devices = pick_devices(self.job.get("device"))[:3]
+        devices = pick_devices(self.job.get("device"), self.job.get("ios"))[:3]
         log("candidates:", [f"{d['name']} iOS {d['ios']}" for d in devices])
         last = None
         for dev in devices:
@@ -404,13 +446,22 @@ class IOSBridge:
             log("booted")
             for attempt in (1, 2):
                 # Open Safari first so safaridriver finds a running, inspectable Safari instead of cold-launching it.
-                sh(["xcrun", "simctl", "launch", dev["udid"], "com.apple.mobilesafari"], check=False, timeout=120)
+                try:
+                    sh(["xcrun", "simctl", "launch", dev["udid"], "com.apple.mobilesafari"], check=False, timeout=120)
+                except subprocess.TimeoutExpired:
+                    self.notes.append(f"launching Safari on {dev['name']} iOS {dev['ios']} timed out")
                 time.sleep(8 if attempt == 1 else 15)
                 try:
                     caps = self.wd.start(dev["udid"])
                     break
                 except WebDriverError as e:
                     last = e
+                    if "Simulator.app" in str(e):
+                        # safaridriver needs Simulator.app's devices:// handler registered; opening the app registers it.
+                        dev_dir = sh(["xcode-select", "-p"], check=False).strip()
+                        sh(["open", "-g", os.path.join(dev_dir, "Applications", "Simulator.app")], check=False)
+                        self.simulator_app = True
+                        time.sleep(5)
                     self.notes.append(f"safaridriver could not connect to Safari on {dev['name']} iOS {dev['ios']} "
                                       f"(attempt {attempt}): {str(e)[:200]}")
                     log("session attempt failed:", str(e)[:200])
@@ -483,14 +534,12 @@ class IOSBridge:
     def screen_point(self, eid):
         """Element centre in device points, for real HID taps (idb)."""
         top_pt = self.calibrate()
-        r = self.wd.js("const r=arguments[0].getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2,w:innerWidth,sw:screen.width}",
-                       {ELEM: eid})
+        r = self.wd.on_element(eid, "const r=el.getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2,w:innerWidth,sw:screen.width}")
         css_to_pt = r["sw"] / r["w"]
         return (r["x"] * css_to_pt, top_pt + r["y"] * css_to_pt)
 
     def tap_center(self, eid):
-        r = self.wd.js("arguments[0].scrollIntoView({block:'center'});const r=arguments[0].getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2}",
-                       {ELEM: eid})
+        r = self.wd.on_element(eid, "el.scrollIntoView({block:'center'});const r=el.getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2}")
         self.wd.touch_tap(r["x"], r["y"])
 
     def hid_tap(self, eid):
@@ -528,7 +577,7 @@ class IOSBridge:
             pass
         elif a == "tap":
             eid = self.element(step)
-            method = step.get("method", "touch")
+            method = step.get("method", "click")
             if method == "hid" and self.idb:
                 self.hid_tap(eid)
                 res["method"] = "hid"
@@ -546,7 +595,7 @@ class IOSBridge:
         elif a == "type":
             eid = self.element(step)
             self.wd.send_keys(eid, step.get("value", ""))
-            res["valueAfter"] = self.wd.js("return arguments[0].value", {ELEM: eid})
+            res["valueAfter"] = self.wd.on_element(eid, "return el.value")
         elif a == "blur":
             self.blur()
         elif a == "keyboard":
@@ -608,7 +657,8 @@ class IOSBridge:
         change, where fixed bars end up, and a device screenshot with the keyboard up. Tries several ways
         to bring the keyboard up and reports which one worked."""
         out = {"attempts": []}
-        strategies = ["touch-tap", "webdriver-tap", "send-keys"] + (["hid-tap"] if self.idb else []) + ["simulator-app+touch-tap"]
+        # touch-tap (W3C touch actions) is opt-in: on iOS 26.2 it froze the safaridriver session for the rest of the run.
+        strategies = ["webdriver-tap", "send-keys"] + (["hid-tap"] if self.idb else []) + ["simulator-app+webdriver-tap"]
         if step.get("strategies"):
             strategies = step["strategies"]
         for strat in strategies:
@@ -692,7 +742,7 @@ PROBE_STEPS = [
     {"action": "keyboard", "selector": "#price", "name": "keyboard-number"},
     {"action": "type", "selector": "#price", "value": "3.49", "name": "typed-price"},
     {"action": "blur", "name": "keyboard-dismissed"},
-    {"action": "keyboard", "selector": "#name", "name": "keyboard-text", "strategies": ["touch-tap", "hid-tap"]},
+    {"action": "keyboard", "selector": "#name", "name": "keyboard-text", "strategies": ["webdriver-tap", "hid-tap"]},
     {"action": "blur", "name": "dismissed-2"},
     {"action": "tap", "selector": "#unit", "name": "picker-select", "waitMs": 1200},
     {"action": "blur", "name": "picker-closed"},

@@ -61,6 +61,46 @@ class ElementRefs(unittest.TestCase):
             ios.element_id(None)
 
 
+class ElementPassBack(unittest.TestCase):
+    def test_reference_reused_as_returned(self):
+        wd = ios.WD()
+        raw = {"some-safari-key": "node-7"}
+        wd.js = lambda *a, **k: raw
+        eid = wd.find(selector="#x")
+        self.assertEqual(eid, "node-7")
+        self.assertIs(wd.ref(eid), raw)
+        self.assertEqual(wd.ref("unknown"), {ios.ELEM: "unknown"})
+
+
+class DevicePick(unittest.TestCase):
+    def setUp(self):
+        self.devices = {"devices": {
+            "com.apple.CoreSimulator.SimRuntime.iOS-18-6": [{"name": "iPhone 16", "udid": "A", "state": "Shutdown"}],
+            "com.apple.CoreSimulator.SimRuntime.iOS-26-2": [{"name": "iPhone Air", "udid": "B", "state": "Shutdown"}],
+        }}
+        self.real_sh = ios.sh
+
+    def tearDown(self):
+        ios.sh = self.real_sh
+
+    def fake(self, xcode):
+        ios.sh = lambda cmd, **k: json.dumps(self.devices) if "simctl" in cmd else f"Xcode {xcode}\nBuild version X"
+
+    def test_matching_runtime_first(self):
+        self.assertEqual(ios.matching_ios(16), 18)
+        self.assertEqual(ios.matching_ios(26), 26)
+        self.fake("16.4")
+        self.assertEqual([d["ios"] for d in ios.pick_devices(None)], ["18.6", "26.2"])
+        self.fake("26.3")
+        self.assertEqual([d["ios"] for d in ios.pick_devices(None)], ["26.2", "18.6"])
+
+    def test_explicit_ios(self):
+        self.fake("16.4")
+        self.assertEqual(ios.pick_devices(None, "26")[0]["udid"], "B")
+        with self.assertRaises(RuntimeError):
+            ios.pick_devices(None, "17")
+
+
 class Report(unittest.TestCase):
     def test_summary_and_manifest(self):
         with tempfile.TemporaryDirectory() as d:

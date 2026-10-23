@@ -27,7 +27,7 @@ minutes, so put everything you want to see in one run. Results land on the `resu
 | action | fields | does |
 |---|---|---|
 | `keyboard` | selector / text, `ms` (default 1500) | Taps the field like a finger and records the real keyboard opening: screen video, a filmstrip of the frames that changed (with ms since the tap), how much the visual viewport shrank (= keyboard height in CSS px), and where every fixed/sticky element ended up (visible above the keyboard, or hidden behind it and by how much). Tries several ways to raise the keyboard and reports which worked. |
-| `tap` | selector / text, `method` | Taps an element (opens native pickers for `select` and date inputs). `touch` (default) is a quick W3C touch tap; `click` is safaridriver's element click (seen arriving as a long press on iOS 26: selection handles and loupe); `hid` is a real touch through idb (needs `--idb`). |
+| `tap` | selector / text, `method` | Taps an element (opens native pickers for `select` and date inputs). `click` (default) is safaridriver's element click (on iOS 26.2 with Xcode 16.4 it arrived as a long press: selection handles and loupe); `touch` is a quick W3C touch tap (on iOS 26.2 it froze the session, so it's opt-in); `hid` is a real touch through idb (needs `--idb`). |
 | `type` | selector / text, `value` | Types into a field (focuses it first). Nothing is submitted. |
 | `blur` | | Unfocuses the field (closes the keyboard). |
 | `swipe` | `direction` up/down | Finger swipe. Real touch scrolling is what collapses Safari's address bar; the result reports the viewport height before/after. |
@@ -48,8 +48,8 @@ Example (`steps.json`):
   {"action": "swipe", "direction": "up"}
 ]
 ```
-Options: `--device "iPhone 16 Pro"` (any installed simulator; default: a current iPhone on the newest iOS),
-`--idb` (also install idb for real HID touches: slower start; a fallback if Safari's own taps misbehave).
+Options: `--device "iPhone 16 Pro"` (any installed simulator), `--ios 18.6` to pick the iOS version (default: the version matching the runner's Xcode, then newest),
+`--idb` (try to install idb for real HID touches; currently unreliable: it needs a newer Xcode than the runner's default, and runs that switched Xcode could no longer start Safari).
 
 ## Results
 

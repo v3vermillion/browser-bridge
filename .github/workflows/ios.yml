@@ -1,0 +1,119 @@
+# Real iPhone Safari: boots an iOS Simulator on a GitHub macOS runner and drives Mobile Safari with Apple's
+# safaridriver. Screenshots are the whole device screen (keyboard, address bar, notch, native pickers).
+# Dispatched by the client (bridge.py ios); also runs its own keyboard probe on pull requests that change it.
+# See docs/ios.md. macOS runner minutes are free on public repos (they count 10x against private-repo quotas).
+name: ios
+run-name: ${{ inputs.label || format('ios-probe-pr{0}-{1}', github.event.pull_request.number, github.run_number) }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      label:
+        description: "Unique run label; also the results folder name (letters, numbers, . _ -)"
+        required: true
+        type: string
+      job:
+        description: 'iOS job JSON (docs/ios.md), e.g. {"url":"https://example.org","steps":[...]}. {} runs the keyboard probe. No secrets: inputs are visible.'
+        required: true
+        type: string
+  pull_request:
+    paths: ["ios/**", ".github/workflows/ios.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ios-${{ inputs.label || github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  ios:
+    runs-on: macos-15
+    timeout-minutes: 40
+    env:
+      JOB_JSON: ${{ inputs.job || '{"probe":true,"notes":"Automatic keyboard probe for a pull request"}' }}
+      RUN_LABEL: ${{ inputs.label || format('ios-probe-pr{0}-{1}', github.event.pull_request.number, github.run_number) }}
+      KEEP_DAYS: ${{ vars.BRIDGE_KEEP_DAYS || '30' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install image tools
+        run: pip install --quiet pillow imageio-ffmpeg
+
+      - name: Install idb (optional real-touch fallback)
+        # Used only if safaridriver's own taps don't bring up the keyboard. The run works without it.
+        if: github.event_name == 'pull_request' || contains(inputs.job, '"idb":true')
+        continue-on-error: true
+        timeout-minutes: 10
+        run: |
+          brew tap facebook/fb
+          brew install facebook/fb/idb-companion
+          pip install --quiet fb-idb
+
+      - name: Enable safaridriver
+        run: |
+          sudo safaridriver --enable
+          xcodebuild -version
+          xcrun simctl list runtimes | grep -i ios || true
+
+      - name: Run
+        env:
+          PRINT_THUMBS: ${{ github.event_name == 'pull_request' && '1' || '' }}
+        run: |
+          mkdir -p out
+          set -o pipefail
+          OUT_DIR="$PWD/out" python ios/simulator.py 2>&1 | tee out/run.log
+
+      - name: Keep frames out of published results
+        if: always()
+        run: rm -rf out/keyboard-*/frames out/_mark.jpg
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ${{ env.RUN_LABEL }}
+          path: out
+          retention-days: 14
+
+      - name: Publish results
+        # Same results branch and layout as the capture workflow, so `bridge.py fetch LABEL` works.
+        if: always() && (github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository)
+        run: |
+          set -e
+          if ! printf '%s' "$RUN_LABEL" | grep -Eq '^[A-Za-z0-9._-]{1,80}$'; then
+            echo "Invalid label; refusing to publish."; exit 1
+          fi
+          if [ ! -f out/manifest.json ]; then
+            mkdir -p out
+            printf '{"label":"%s","kind":"ios","status":"crashed","createdAt":"%s","note":"Engine exited before writing a manifest; see run.log"}\n' "$RUN_LABEL" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > out/manifest.json
+            printf '# iOS run %s\n\nThe engine crashed before writing results. See run.log in this folder.\n' "$RUN_LABEL" > out/summary.md
+          fi
+          cp engine/prune.mjs "$RUNNER_TEMP/prune.mjs"
+          rm -rf "$RUNNER_TEMP/bridge-out" && mv out "$RUNNER_TEMP/bridge-out"
+          git config user.name "browser-bridge"
+          git config user.email "browser-bridge@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin results >/dev/null 2>&1; then
+            git fetch --depth 1 origin results
+            git checkout -B results FETCH_HEAD
+          else
+            git checkout --orphan results
+            git rm -rf --quiet . || true
+            git clean -fdxq
+            printf '# results\n\nCapture output written by the capture and ios workflows. One folder per run label.\n' > README.md
+            git add README.md
+          fi
+          mkdir -p results
+          rm -rf "results/$RUN_LABEL"
+          cp -r "$RUNNER_TEMP/bridge-out" "results/$RUN_LABEL"
+          node "$RUNNER_TEMP/prune.mjs" results
+          git add -A results
+          git commit -q -m "results: $RUN_LABEL" || echo "nothing to commit"
+          for i in 1 2 3; do
+            git push origin HEAD:results && break
+            git pull --rebase origin results || true
+            sleep 3
+          done

@@ -9,13 +9,14 @@ It describes judgment, not a checklist. Adapt to what the user actually needs.
 
 ## What you get
 
-**Three ways to look** (pick the lightest that answers the question):
+**Four ways to look** (pick the lightest that answers the question):
 
 | Mode | Use it for | Speed |
 |---|---|---|
 | Quick look: `run --url URL --preset glance --no-brief "quick look"` | What a page says / roughly looks like | ~75 s measured |
 | Batch capture: `run job.json --brief brief.md` | Broad coverage: many pages x devices x browsers, plus measurements | a few minutes, more with WebKit/Firefox/Lighthouse |
 | Live session: `session start --brief brief.md` / `session do ...` | Exploring and interacting like a person: swipe, tap, open menus, zoom, inspect exact styles, watch animations (on load, on hover, on tap) and live scrolling, try design changes live | ~70 s to start, ~5-6 s per round trip (measured); batch several actions into one round trip |
+| Real iPhone Safari: `ios --url URL --keyboard SELECTOR` / `ios --url URL --steps steps.json` | What only real iOS shows: the on-screen keyboard (and what it hides), the collapsing address bar, notch/safe areas, native pickers. Whole-device screenshots + keyboard video. See docs/ios.md | a few minutes (macOS runner + simulator boot) |
 
 **Measurements**, as much as the request needs (quick looks include text and page metadata; `standard`
 and `deep` batch presets add the rest): headings, SEO/meta, structured data, links and where they go,
@@ -138,6 +139,7 @@ If `check` fails, its message says why. Tell the user plainly what to fix.
 | Need to see an animation (on load, hover, menu, carousel) | `session do watch load`, `watch hover N`, `watch tap N`, or `watch 5s`; look at `filmstrip.jpg` and read the animation list. Screenshots from other actions finish animations instantly, so they never show one in progress. See docs/sessions.md "Motion". |
 | A video shows only its poster / doesn't play | Playwright's Chromium lacks H.264/MP4 codecs. Start the session with `--browser chrome` (or `webkit`). |
 | Suspected motion bug while scrolling (flicker, jumping, snap-back) | `session do livescroll bottom fresh=1 --frames`, then `perceive.py motion <folder>`; view flagged frames beside their predecessors. |
+| Problem only on a real iPhone (keyboard covers a field or bar, layout jumps when the address bar collapses, picker looks wrong) | Phone emulation can't show iOS itself. Use `ios` (docs/ios.md) and look at the whole-device screenshots and keyboard filmstrip. |
 | Bot protection / CAPTCHA | Datacenter IPs are sometimes blocked. Report it; don't try to evade it. |
 
 ## Reference
@@ -145,5 +147,6 @@ If `check` fails, its message says why. Tell the user plainly what to fix.
 - `docs/expert-brief.md` - the expert layer (read before critiques)
 - `docs/sessions.md` - live session actions
 - `docs/job-spec.md` - batch job options and outputs
+- `docs/ios.md` - real iPhone Safari in the iOS Simulator (keyboard, address bar, notch, pickers)
 - `templates/` - brief and findings templates; `playbooks/` - shared expert knowledge
 - `examples/` - ready-to-edit batch jobs

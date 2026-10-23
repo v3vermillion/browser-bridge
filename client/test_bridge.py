@@ -88,5 +88,28 @@ class Describe(unittest.TestCase):
         self.assertEqual(line, 'animation rise on h1#title "Motion fixture": 600ms ease-out, delay 200ms, starts +0.02s | opacity 0 -> 1')
 
 
+def ios_args(**kw):
+    base = dict(url=None, device=None, steps=None, keyboard=None, probe=False, idb=False)
+    base.update(kw)
+    return argparse.Namespace(**base)
+
+
+class IOSJob(unittest.TestCase):
+    def test_no_url_runs_probe(self):
+        self.assertEqual(bridge.build_ios_job(ios_args()), {"probe": True})
+
+    def test_keyboard_shortcut(self):
+        job = bridge.build_ios_job(ios_args(url="https://example.org", keyboard="#email"))
+        self.assertEqual(job["url"], "https://example.org")
+        self.assertNotIn("probe", job)
+        self.assertEqual(job["steps"][-1], {"action": "keyboard", "selector": "#email", "name": "keyboard"})
+
+    def test_steps_validated(self):
+        ok = bridge.build_ios_job(ios_args(url="https://x.org", steps='[{"action":"swipe","direction":"up"}]'))
+        self.assertEqual(ok["steps"], [{"action": "swipe", "direction": "up"}])
+        with self.assertRaises(bridge.BridgeError):
+            bridge.build_ios_job(ios_args(url="https://x.org", steps='[{"action":"hover"}]'))
+
+
 if __name__ == "__main__":
     unittest.main()

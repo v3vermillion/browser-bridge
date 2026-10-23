@@ -1,0 +1,1 @@
+{"action": "batch", "actions": [{"action": "tap", "ref": 8}, {"action": "wait", "ms": 1000}]}

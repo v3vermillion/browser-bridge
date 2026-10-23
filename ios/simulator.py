@@ -218,6 +218,19 @@ class WebDriverError(Exception):
     pass
 
 
+# In-page element finder: CSS selector, or visible text / label / placeholder.
+FIND_JS = """
+  const __bbFind = (sel, text) => {
+    if (sel) return document.querySelector(sel);
+    if (!text) return null;
+    const want = text.trim().toLowerCase();
+    const all = [...document.querySelectorAll('a,button,input,select,textarea,label,[role=button],summary,[onclick]')];
+    const label = e => (e.innerText || e.value || e.getAttribute('aria-label') || e.placeholder || '');
+    return all.find(e => label(e).trim().toLowerCase() === want) || all.find(e => label(e).toLowerCase().includes(want)) || null;
+  };
+"""
+
+
 def element_id(ref):
     """WebDriver element reference -> id. W3C uses a fixed key; Safari on iOS has been seen returning another."""
     if isinstance(ref, dict):
@@ -234,6 +247,7 @@ class WD:
         self.base = f"http://127.0.0.1:{port}"
         self.sid = None
         self.refs = {}   # element id -> the reference exactly as safaridriver returned it
+        self.queries = {}   # element id -> (selector, text) it was found with
 
     def ref(self, eid):
         """Element reference to pass back into a script. Safari only recognises its own format, so reuse it."""
@@ -268,19 +282,21 @@ class WD:
         self.call("POST", "/url", {"url": url}, timeout=120)
 
     def find(self, selector=None, text=None):
-        el = self.js("""
-          const [sel, text] = arguments;
-          if (sel) return document.querySelector(sel);
-          const want = text.trim().toLowerCase();
-          const all = [...document.querySelectorAll('a,button,input,select,textarea,label,[role=button],summary,[onclick]')];
-          return all.find(e => (e.innerText || e.value || e.getAttribute('aria-label') || e.placeholder || '').trim().toLowerCase() === want)
-              || all.find(e => (e.innerText || e.value || e.getAttribute('aria-label') || e.placeholder || '').toLowerCase().includes(want))
-              || null;""", selector, text)
+        el = self.js(FIND_JS + "return __bbFind(arguments[0], arguments[1]);", selector, text)
         if not el:
             raise WebDriverError(f"no element matches {selector or repr(text)}")
         eid = element_id(el)
         self.refs[eid] = el
+        self.queries[eid] = (selector, text)
         return eid
+
+    def on_element(self, eid, body):
+        """Run `body` (JS using `el`) on an element. Passes Safari's reference back, and if Safari doesn't turn it
+        into the element, finds the element again with the original selector/text inside the page."""
+        sel, text = self.queries.get(eid, (None, None))
+        return self.js(FIND_JS + "const [ref, sel, text] = arguments;"
+                       "const el = (ref && ref.getBoundingClientRect) ? ref : __bbFind(sel, text);"
+                       "if (!el) throw new Error('element not found again');" + body, self.ref(eid), sel, text)
 
     def click(self, eid):
         self.call("POST", f"/element/{eid}/click")
@@ -499,14 +515,12 @@ class IOSBridge:
     def screen_point(self, eid):
         """Element centre in device points, for real HID taps (idb)."""
         top_pt = self.calibrate()
-        r = self.wd.js("const r=arguments[0].getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2,w:innerWidth,sw:screen.width}",
-                       self.wd.ref(eid))
+        r = self.wd.on_element(eid, "const r=el.getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2,w:innerWidth,sw:screen.width}")
         css_to_pt = r["sw"] / r["w"]
         return (r["x"] * css_to_pt, top_pt + r["y"] * css_to_pt)
 
     def tap_center(self, eid):
-        r = self.wd.js("arguments[0].scrollIntoView({block:'center'});const r=arguments[0].getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2}",
-                       self.wd.ref(eid))
+        r = self.wd.on_element(eid, "el.scrollIntoView({block:'center'});const r=el.getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2}")
         self.wd.touch_tap(r["x"], r["y"])
 
     def hid_tap(self, eid):
@@ -562,7 +576,7 @@ class IOSBridge:
         elif a == "type":
             eid = self.element(step)
             self.wd.send_keys(eid, step.get("value", ""))
-            res["valueAfter"] = self.wd.js("return arguments[0].value", self.wd.ref(eid))
+            res["valueAfter"] = self.wd.on_element(eid, "return el.value")
         elif a == "blur":
             self.blur()
         elif a == "keyboard":

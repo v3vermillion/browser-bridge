@@ -1,0 +1,31 @@
+{
+  "label": "ios-probe-pr3-1",
+  "kind": "ios",
+  "status": "failed",
+  "error": "WebDriverError: session not created: Could not create a session: The session timed out while connecting to a Safari instance. The following asynchronous operation timed out: Finding or launching a compatible remote Safari and waiting for its RWIApplication to appear.",
+  "device": {
+    "udid": "1CE1A334-F45C-4216-823B-EE5E6389838F",
+    "name": "iPhone Air",
+    "ios": "26.2",
+    "state": "Shutdown"
+  },
+  "safari": null,
+  "idb": false,
+  "keyboard": [],
+  "createdAt": "2026-10-23T20:59:07+00:00",
+  "seconds": 218,
+  "files": [
+    {
+      "path": "run.log",
+      "bytes": 428
+    },
+    {
+      "path": "shots/01-failure-state.jpg",
+      "bytes": 164000
+    },
+    {
+      "path": "summary.md",
+      "bytes": 715
+    }
+  ]
+}

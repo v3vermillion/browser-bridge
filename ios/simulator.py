@@ -61,9 +61,22 @@ def ffmpeg_exe():
 
 
 # --------------------------------------------------------------------------- simulator
-def pick_devices(want):
-    """Available iPhones, best first: newest iOS runtime first, one device per runtime (fallbacks if the newest
-    runtime won't connect). `want` matches the device name (e.g. "iPhone 16 Pro")."""
+def xcode_major():
+    m = re.search(r"Xcode (\d+)", sh(["xcodebuild", "-version"], check=False))
+    return int(m.group(1)) if m else None
+
+
+def matching_ios(xcode):
+    """The iOS major version a given Xcode was built for (Xcode 16 -> iOS 18; from 26 on they share numbers)."""
+    if not xcode:
+        return None
+    return xcode if xcode >= 26 else xcode + 2
+
+
+def pick_devices(want, ios=None):
+    """Available iPhones, best first, one device per runtime (later ones are fallbacks if a runtime won't connect).
+    `ios` ("18", "26.2") picks the runtime; by default the runtime matching the selected Xcode comes first, then
+    newest. `want` matches the device name (e.g. "iPhone 16 Pro")."""
     data = json.loads(sh(["xcrun", "simctl", "list", "-j", "devices", "available"]))
     cands = []
     for runtime, devs in data["devices"].items():
@@ -80,8 +93,14 @@ def pick_devices(want):
         exact = [c for c in cands if c[1]["name"].lower() == want.lower()]
         loose = [c for c in cands if want.lower() in c[1]["name"].lower()]
         cands = exact or loose or cands
-    # Prefer a plain current model (not SE/mini) for a typical modern screen, newest runtime first.
-    cands.sort(key=lambda c: (c[0], "SE" not in c[1]["name"], "Pro" not in c[1]["name"]), reverse=True)
+    prefer = str(ios) if ios else (str(matching_ios(xcode_major())) if xcode_major() else None)
+
+    def matches(ver):
+        return bool(prefer) and (f"{ver[0]}.{ver[1]}" == prefer or str(ver[0]) == prefer)
+    if ios and not any(matches(c[0]) for c in cands):
+        raise RuntimeError(f"No iPhone simulator with iOS {ios} on this runner.")
+    # Preferred runtime first, then newest; a plain current model (not SE/mini) for a typical modern screen.
+    cands.sort(key=lambda c: (matches(c[0]), c[0], "SE" not in c[1]["name"], "Pro" not in c[1]["name"]), reverse=True)
     out, seen = [], set()
     for ver, d, runtime in cands:
         if runtime in seen:
@@ -417,7 +436,7 @@ class IOSBridge:
                 break
             except Exception:
                 time.sleep(0.2)
-        devices = pick_devices(self.job.get("device"))[:3]
+        devices = pick_devices(self.job.get("device"), self.job.get("ios"))[:3]
         log("candidates:", [f"{d['name']} iOS {d['ios']}" for d in devices])
         last = None
         for dev in devices:
@@ -558,7 +577,7 @@ class IOSBridge:
             pass
         elif a == "tap":
             eid = self.element(step)
-            method = step.get("method", "touch")
+            method = step.get("method", "click")
             if method == "hid" and self.idb:
                 self.hid_tap(eid)
                 res["method"] = "hid"
@@ -638,7 +657,8 @@ class IOSBridge:
         change, where fixed bars end up, and a device screenshot with the keyboard up. Tries several ways
         to bring the keyboard up and reports which one worked."""
         out = {"attempts": []}
-        strategies = ["touch-tap", "webdriver-tap", "send-keys"] + (["hid-tap"] if self.idb else []) + ["simulator-app+touch-tap"]
+        # touch-tap (W3C touch actions) is opt-in: on iOS 26.2 it froze the safaridriver session for the rest of the run.
+        strategies = ["webdriver-tap", "send-keys"] + (["hid-tap"] if self.idb else []) + ["simulator-app+webdriver-tap"]
         if step.get("strategies"):
             strategies = step["strategies"]
         for strat in strategies:
@@ -722,7 +742,7 @@ PROBE_STEPS = [
     {"action": "keyboard", "selector": "#price", "name": "keyboard-number"},
     {"action": "type", "selector": "#price", "value": "3.49", "name": "typed-price"},
     {"action": "blur", "name": "keyboard-dismissed"},
-    {"action": "keyboard", "selector": "#name", "name": "keyboard-text", "strategies": ["touch-tap", "hid-tap"]},
+    {"action": "keyboard", "selector": "#name", "name": "keyboard-text", "strategies": ["webdriver-tap", "hid-tap"]},
     {"action": "blur", "name": "dismissed-2"},
     {"action": "tap", "selector": "#unit", "name": "picker-select", "waitMs": 1200},
     {"action": "blur", "name": "picker-closed"},

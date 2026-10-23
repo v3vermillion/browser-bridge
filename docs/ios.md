@@ -49,7 +49,7 @@ Example (`steps.json`):
 ]
 ```
 Options: `--device "iPhone 16 Pro"` (any installed simulator; default: a current iPhone on the newest iOS),
-`--idb` (also install idb for real HID touches: slower start; a fallback if Safari's own taps misbehave).
+`--idb` (try to install idb for real HID touches; currently unreliable: it needs a newer Xcode than the runner's default, and runs that switched Xcode could no longer start Safari).
 
 ## Results
 

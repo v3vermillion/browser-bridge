@@ -46,15 +46,12 @@ jobs:
 
       - name: Install idb (optional real-touch fallback)
         # Used only if safaridriver's own taps don't bring up the keyboard. The run works without it.
-        if: github.event_name == 'pull_request' || contains(inputs.job, '"idb":true')
+        # Opt-in only. Building it needs the newest Xcode, and every run that selected that Xcode (even briefly)
+        # then failed to start a Safari session ("Could not find Simulator.app"), so the default probe skips it.
+        if: contains(inputs.job, '"idb":true')
         continue-on-error: true
         timeout-minutes: 20
         run: |
-          # idb-companion needs the newest Xcode to build. Use it only for this step: with it selected,
-          # safaridriver can't find the simulator ("Could not find Simulator.app"), so switch back afterwards.
-          X=$(ls -d /Applications/Xcode_*.app 2>/dev/null | grep -v beta | sort -V | tail -1)
-          trap 'sudo xcode-select -r; xcodebuild -version' EXIT
-          if [ -n "$X" ]; then sudo xcode-select -s "$X"; fi
           brew tap facebook/fb
           brew install facebook/fb/idb-companion
           pip install --quiet fb-idb

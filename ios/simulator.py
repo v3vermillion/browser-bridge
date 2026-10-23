@@ -61,8 +61,9 @@ def ffmpeg_exe():
 
 
 # --------------------------------------------------------------------------- simulator
-def pick_device(want):
-    """Choose an available iPhone on the newest iOS runtime; `want` matches the device name (e.g. "iPhone 16 Pro")."""
+def pick_devices(want):
+    """Available iPhones, best first: newest iOS runtime first, one device per runtime (fallbacks if the newest
+    runtime won't connect). `want` matches the device name (e.g. "iPhone 16 Pro")."""
     data = json.loads(sh(["xcrun", "simctl", "list", "-j", "devices", "available"]))
     cands = []
     for runtime, devs in data["devices"].items():
@@ -81,8 +82,13 @@ def pick_device(want):
         cands = exact or loose or cands
     # Prefer a plain current model (not SE/mini) for a typical modern screen, newest runtime first.
     cands.sort(key=lambda c: (c[0], "SE" not in c[1]["name"], "Pro" not in c[1]["name"]), reverse=True)
-    ver, d, runtime = cands[0]
-    return {"udid": d["udid"], "name": d["name"], "ios": f"{ver[0]}.{ver[1]}", "state": d["state"]}
+    out, seen = [], set()
+    for ver, d, runtime in cands:
+        if runtime in seen:
+            continue
+        seen.add(runtime)
+        out.append({"udid": d["udid"], "name": d["name"], "ios": f"{ver[0]}.{ver[1]}", "state": d["state"]})
+    return out
 
 
 def prepare_keyboard_prefs(udid):
@@ -350,10 +356,10 @@ class IOSBridge:
 
     # ---- setup
     def start(self):
-        self.dev = pick_device(self.job.get("device"))
-        log("device:", self.dev)
-        boot(self.dev)
-        log("booted")
+        host = {"macOS": sh(["sw_vers", "-productVersion"], check=False).strip(),
+                "safaridriver": sh(["safaridriver", "--version"], check=False).strip()}
+        log("host:", host)
+        self.host = host
         self.driver = subprocess.Popen(["safaridriver", "-p", str(WD_PORT)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         for _ in range(50):
             try:
@@ -361,7 +367,33 @@ class IOSBridge:
                 break
             except Exception:
                 time.sleep(0.2)
-        caps = self.wd.start(self.dev["udid"])
+        devices = pick_devices(self.job.get("device"))[:3]
+        log("candidates:", [f"{d['name']} iOS {d['ios']}" for d in devices])
+        last = None
+        for dev in devices:
+            self.dev = dev
+            log("device:", dev)
+            boot(dev)
+            log("booted")
+            for attempt in (1, 2):
+                # Open Safari first so safaridriver finds a running, inspectable Safari instead of cold-launching it.
+                sh(["xcrun", "simctl", "launch", dev["udid"], "com.apple.mobilesafari"], check=False, timeout=120)
+                time.sleep(8 if attempt == 1 else 15)
+                try:
+                    caps = self.wd.start(dev["udid"])
+                    break
+                except WebDriverError as e:
+                    last = e
+                    self.notes.append(f"safaridriver could not connect to Safari on {dev['name']} iOS {dev['ios']} "
+                                      f"(attempt {attempt}): {str(e)[:200]}")
+                    log("session attempt failed:", str(e)[:200])
+                    sh(["xcrun", "simctl", "terminate", dev["udid"], "com.apple.mobilesafari"], check=False)
+            else:
+                sh(["xcrun", "simctl", "shutdown", dev["udid"]], check=False, timeout=120)
+                continue
+            break
+        else:
+            raise last or WebDriverError("no simulator could be driven")
         log("safaridriver session:", {k: v for k, v in caps.items() if k in ("browserVersion", "platformName", "safari:platformVersion")})
         self.caps = caps
         if self.idb:
@@ -675,6 +707,7 @@ def write_report(br, job, status, error=None):
             p = os.path.join(root, n)
             files.append({"path": os.path.relpath(p, OUT), "bytes": os.path.getsize(p)})
     manifest = {"label": job.get("label"), "kind": "ios", "status": status, "error": error, "device": br.dev,
+                "host": getattr(br, "host", None),
                 "safari": (getattr(br, "caps", None) or {}).get("browserVersion"), "idb": br.idb,
                 "keyboard": [{"selector": s.get("selector"), "open": s.get("keyboardOpen"), "strategy": s.get("strategy"),
                               "heightCss": s.get("keyboardHeightCss")} for s in kb],

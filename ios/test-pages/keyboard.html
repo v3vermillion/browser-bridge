@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Keyboard fixture</title>
+<style>
+  /* Mimics the case that started this: a form near the bottom of a phone screen with a fixed bar below it.
+     When the real iOS keyboard opens, the visual viewport shrinks and the fixed bar's behavior shows. */
+  body { margin: 0; font: 17px/1.4 -apple-system, system-ui, sans-serif; color: #111; background: #fafafa; }
+  header { position: sticky; top: 0; padding: 12px 16px; padding-top: max(12px, env(safe-area-inset-top));
+           background: #1d3557; color: #fff; font-weight: 600; }
+  main { padding: 16px; padding-bottom: 120px; }
+  .spacer { height: 340px; border-radius: 12px; background: linear-gradient(#e9f1ff, #fff3e6); margin-bottom: 16px; }
+  label { display: block; margin: 14px 0 6px; font-weight: 600; }
+  input, select { width: 100%; box-sizing: border-box; padding: 12px; font-size: 16px; border: 1px solid #999; border-radius: 8px; background: #fff; }
+  .tall { height: 1400px; }
+  #bar { position: fixed; left: 0; right: 0; bottom: 0; padding: 12px 16px; padding-bottom: max(12px, env(safe-area-inset-bottom));
+         background: #e63946; color: #fff; font-weight: 700; text-align: center; }
+</style>
+</head>
+<body>
+  <header>Price check</header>
+  <main>
+    <div class="spacer"></div>
+    <label for="price">Price per pound</label>
+    <input id="price" type="number" inputmode="decimal" placeholder="0.00">
+    <label for="name">Item name</label>
+    <input id="name" type="text" placeholder="e.g. rice">
+    <label for="unit">Unit</label>
+    <select id="unit"><option>pound</option><option>kilogram</option><option>each</option></select>
+    <label for="when">Date</label>
+    <input id="when" type="date">
+    <div class="tall"></div>
+  </main>
+  <div id="bar">Total: $0.00</div>
+  <!-- The iOS engine injects a timestamped log of viewport changes (window.__bbLog) after load. -->
+</body>
+</html>

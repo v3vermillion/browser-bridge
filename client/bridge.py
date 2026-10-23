@@ -17,6 +17,8 @@ Commands:
   status LABEL                  show the run's state
   fetch LABEL [--include GLOB]  download result files (default: summaries only)
   list                          list result labels on the results branch
+  ios [--url URL] [--steps F]   real iPhone Safari (iOS Simulator): real keyboard, address bar, notch,
+                                pickers; whole-device screenshots (docs/ios.md; same brief rule)
   session start --url URL       open a live browser (see docs/sessions.md; same brief rule)
   session do ACTION [ARGS]      act in the live browser and get a screenshot back
                                 several at once: session do "tap 4" "swipe left" "zoom 7"
@@ -34,6 +36,7 @@ Examples:
   python3 bridge.py session do swipe up
   python3 bridge.py session do tap 7
   python3 bridge.py session do watch hover 7 slowmo=0.25
+  python3 bridge.py ios --url https://example.org --keyboard "input[type=email]" --no-brief "keyboard check"
 """
 import argparse
 import base64
@@ -50,6 +53,7 @@ import urllib.request
 
 API = os.environ.get("BRIDGE_API", "https://api.github.com").rstrip("/")
 WORKFLOW = os.environ.get("BRIDGE_WORKFLOW", "capture.yml")
+IOS_WORKFLOW = os.environ.get("BRIDGE_IOS_WORKFLOW", "ios.yml")
 RESULTS_BRANCH = "results"
 LABEL_RE = re.compile(r"^[A-Za-z0-9._-]{1,80}$")
 
@@ -127,10 +131,10 @@ def default_branch(token, repo):
     return request(token, "GET", f"/repos/{repo}").get("default_branch", "main")
 
 
-def find_run(token, repo, label, since, wait_s=120):
+def find_run(token, repo, label, since, wait_s=120, workflow=None):
     deadline = time.time() + wait_s
     while time.time() < deadline:
-        runs = request(token, "GET", f"/repos/{repo}/actions/workflows/{WORKFLOW}/runs?event=workflow_dispatch&per_page=30")
+        runs = request(token, "GET", f"/repos/{repo}/actions/workflows/{workflow or WORKFLOW}/runs?event=workflow_dispatch&per_page=30")
         for r in runs.get("workflow_runs", []):
             created = dt.datetime.fromisoformat(r["created_at"].replace("Z", "+00:00"))
             if r.get("display_title") == label and created >= since - dt.timedelta(minutes=2):
@@ -140,10 +144,14 @@ def find_run(token, repo, label, since, wait_s=120):
 
 
 def latest_run_for_label(token, repo, label):
-    runs = request(token, "GET", f"/repos/{repo}/actions/workflows/{WORKFLOW}/runs?event=workflow_dispatch&per_page=50")
-    for r in runs.get("workflow_runs", []):
-        if r.get("display_title") == label:
-            return r
+    for wf in (WORKFLOW, IOS_WORKFLOW):
+        try:
+            runs = request(token, "GET", f"/repos/{repo}/actions/workflows/{wf}/runs?event=workflow_dispatch&per_page=50")
+        except BridgeError:
+            continue
+        for r in runs.get("workflow_runs", []):
+            if r.get("display_title") == label:
+                return r
     return None
 
 
@@ -293,6 +301,70 @@ def fetch_and_report(token, repo, label, args):
         print(f"  {p}")
     if not args.all and len(saved) < len(files):
         print("more: fetch LABEL --include '<glob>' (e.g. '*/full.jpg', '*/tiles/*', '*/forms.json') or --all")
+
+
+IOS_ACTIONS = {"screenshot", "tap", "type", "blur", "keyboard", "swipe", "scroll", "wait", "goto", "evaluate"}
+
+
+def build_ios_job(args):
+    job = {}
+    if args.url:
+        job["url"] = args.url
+    if args.device:
+        job["device"] = args.device
+    if args.steps:
+        text = args.steps if args.steps.strip().startswith("[") else open(args.steps).read()
+        job["steps"] = json.loads(text)
+        if not isinstance(job["steps"], list):
+            raise BridgeError("--steps must be a JSON list of steps (docs/ios.md).")
+        bad = [s.get("action") for s in job["steps"] if not isinstance(s, dict) or s.get("action") not in IOS_ACTIONS]
+        if bad:
+            raise BridgeError(f"Unknown iOS step action(s) {bad}; allowed: {', '.join(sorted(IOS_ACTIONS))} (docs/ios.md).")
+    if args.keyboard:
+        job.setdefault("steps", [{"action": "screenshot", "name": "loaded"}])
+        job["steps"].append({"action": "keyboard", "selector": args.keyboard, "name": "keyboard"})
+    if args.probe or not args.url:
+        job["probe"] = True
+    if args.idb:
+        job["idb"] = True
+    return job
+
+
+def cmd_ios(token, repo, args):
+    """Real iPhone Safari (iOS Simulator on a macOS runner): keyboard, address bar, notch, native pickers."""
+    job = build_ios_job(args)
+    brief = load_brief(args)
+    if brief:
+        job["brief"] = brief
+    elif args.no_brief:
+        job["notes"] = f"No brief: {args.no_brief}"
+    label = args.label or f"ios-{dt.datetime.now(dt.timezone.utc).strftime('%Y%m%d-%H%M%S')}"
+    if not LABEL_RE.match(label):
+        raise BridgeError("Label may only contain letters, numbers, dot, dash, underscore (max 80).")
+    job_json = json.dumps(job, separators=(",", ":"))
+    if len(job_json) > 60000:
+        raise BridgeError("Job JSON is too large for a workflow input.")
+    ref = args.ref or default_branch(token, repo)
+    since = dt.datetime.now(dt.timezone.utc)
+    resp = request(token, "POST", f"/repos/{repo}/actions/workflows/{IOS_WORKFLOW}/dispatches",
+                   body={"ref": ref, "inputs": {"label": label, "job": job_json}})
+    print(f"dispatched iOS run: {label} (a macOS runner boots an iPhone Simulator: expect ~4-8 minutes)")
+    run = None
+    if isinstance(resp, dict) and resp.get("workflow_run_id"):
+        run = request(token, "GET", f"/repos/{repo}/actions/runs/{resp['workflow_run_id']}")
+    if args.no_wait:
+        print(f"not waiting. Later: python3 bridge.py status {label}  /  fetch {label} --include 'shots/*'")
+        return
+    run = run or find_run(token, repo, label, since, workflow=IOS_WORKFLOW)
+    print(f"run: {run['html_url']}")
+    run = wait_for(token, repo, run, args.timeout)
+    print(f"finished: {run['conclusion']}")
+    if not args.include and not args.all:
+        args.include = ["summary.md", "manifest.json", "shots/*", "*/filmstrip.jpg"]
+    fetch_and_report(token, repo, label, args)
+    summary = os.path.join(args.out, label, "summary.md")
+    if os.path.exists(summary):
+        print("\n" + open(summary).read())
 
 
 def cmd_fetch(token, repo, args):
@@ -802,6 +874,22 @@ def main():
     f.add_argument("--all", action="store_true")
     f.add_argument("--out", default="bridge-results")
     sub.add_parser("list")
+    io = sub.add_parser("ios", help="real iPhone Safari in the iOS Simulator (docs/ios.md)")
+    io.add_argument("--url", help="page to open (omit to run the keyboard probe on the built-in test page)")
+    io.add_argument("--device", help='simulator model, e.g. "iPhone 16 Pro" (default: a current iPhone on the newest iOS)')
+    io.add_argument("--steps", help="JSON list of steps, or a file holding one (docs/ios.md)")
+    io.add_argument("--keyboard", metavar="SELECTOR", help="shortcut: tap this field and record the real keyboard opening")
+    io.add_argument("--probe", action="store_true", help="run the built-in keyboard/picker/address-bar probe")
+    io.add_argument("--idb", action="store_true", help="also install idb for real HID touches (slower start)")
+    io.add_argument("--label")
+    io.add_argument("--ref", help="branch holding the workflow (default: repo default branch)")
+    io.add_argument("--no-wait", action="store_true")
+    io.add_argument("--timeout", type=int, default=1800)
+    io.add_argument("--include", action="append")
+    io.add_argument("--all", action="store_true")
+    io.add_argument("--out", default="bridge-results")
+    io.add_argument("--brief", help="expert brief markdown file; saved with the results")
+    io.add_argument("--no-brief", metavar="REASON", help="run without a brief, stating why")
 
     se = sub.add_parser("session", help="live browser session")
     ss = se.add_subparsers(dest="session_cmd", required=True)
@@ -848,7 +936,7 @@ def main():
     try:
         token = load_token(args)
         repo = load_repo(args)
-        {"check": cmd_check, "run": cmd_run, "status": cmd_status, "fetch": cmd_fetch, "list": cmd_list,
+        {"check": cmd_check, "run": cmd_run, "ios": cmd_ios, "status": cmd_status, "fetch": cmd_fetch, "list": cmd_list,
          "session": cmd_session, "playbook": cmd_playbook}[args.cmd](token, repo, args)
     except BridgeError as e:
         print(f"error: {e}", file=sys.stderr)

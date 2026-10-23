@@ -1,0 +1,96 @@
+{
+  "label": "ios-probe-pr5-8",
+  "kind": "ios",
+  "status": "partial",
+  "error": null,
+  "device": {
+    "udid": "1CE1A334-F45C-4216-823B-EE5E6389838F",
+    "name": "iPhone Air",
+    "ios": "26.2",
+    "state": "Shutdown"
+  },
+  "host": {
+    "macOS": "15.7.9",
+    "safaridriver": "Included with Safari 26.6.1 (20624.5.1.18.3)"
+  },
+  "safari": "26.2",
+  "idb": false,
+  "keyboard": [
+    {
+      "selector": "#price",
+      "open": null,
+      "strategy": null,
+      "heightCss": null
+    },
+    {
+      "selector": "#name",
+      "open": null,
+      "strategy": null,
+      "heightCss": null
+    }
+  ],
+  "createdAt": "2026-10-23T22:59:16+00:00",
+  "seconds": 1043,
+  "files": [
+    {
+      "path": "keyboard-02-1/keyboard.mp4",
+      "bytes": 199651
+    },
+    {
+      "path": "run.log",
+      "bytes": 1587
+    },
+    {
+      "path": "shots/01-loaded.jpg",
+      "bytes": 180762
+    },
+    {
+      "path": "shots/02-keyboard-number-error.jpg",
+      "bytes": 149273
+    },
+    {
+      "path": "shots/03-typed-price-error.jpg",
+      "bytes": 149273
+    },
+    {
+      "path": "shots/04-keyboard-dismissed-error.jpg",
+      "bytes": 149273
+    },
+    {
+      "path": "shots/05-keyboard-text-error.jpg",
+      "bytes": 149273
+    },
+    {
+      "path": "shots/06-dismissed-2-error.jpg",
+      "bytes": 149273
+    },
+    {
+      "path": "shots/07-picker-select-error.jpg",
+      "bytes": 149273
+    },
+    {
+      "path": "shots/08-picker-closed-error.jpg",
+      "bytes": 149273
+    },
+    {
+      "path": "shots/09-picker-date-error.jpg",
+      "bytes": 149273
+    },
+    {
+      "path": "shots/10-date-closed-error.jpg",
+      "bytes": 149273
+    },
+    {
+      "path": "shots/11-top-error.jpg",
+      "bytes": 149273
+    },
+    {
+      "path": "shots/12-swipe-up-error.jpg",
+      "bytes": 149273
+    },
+    {
+      "path": "summary.md",
+      "bytes": 2059
+    }
+  ]
+}

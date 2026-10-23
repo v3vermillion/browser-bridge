@@ -1,0 +1,3 @@
+[   0.7s] host: {'macOS': '15.7.9', 'safaridriver': 'Included with Safari 26.6.1 (20624.5.1.18.3)'}
+[   2.2s] candidates: ['iPhone Air iOS 26.2', 'iPhone Air iOS 26.1', 'iPhone Air iOS 26.0']
+[   2.2s] device: {'udid': '1CE1A334-F45C-4216-823B-EE5E6389838F', 'name': 'iPhone Air', 'ios': '26.2', 'state': 'Shutdown'}

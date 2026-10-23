@@ -1,0 +1,35 @@
+{
+  "label": "ios-probe-pr5-6",
+  "kind": "ios",
+  "status": "failed",
+  "error": "WebDriverError: session not created: Could not create a session: Could not find Simulator.app or a devices:// URL handler.",
+  "device": {
+    "udid": "AB0FB058-2DF8-4824-A382-91FE8566B342",
+    "name": "iPhone Air",
+    "ios": "26.0",
+    "state": "Shutdown"
+  },
+  "host": {
+    "macOS": "15.7.9",
+    "safaridriver": "Included with Safari 26.6.1 (20624.5.1.18.3)"
+  },
+  "safari": null,
+  "idb": true,
+  "keyboard": [],
+  "createdAt": "2026-10-23T22:27:54+00:00",
+  "seconds": 879,
+  "files": [
+    {
+      "path": "run.log",
+      "bytes": 1605
+    },
+    {
+      "path": "shots/01-failure-state.jpg.png",
+      "bytes": 0
+    },
+    {
+      "path": "summary.md",
+      "bytes": 1697
+    }
+  ]
+}

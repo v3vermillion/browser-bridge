@@ -1,0 +1,24 @@
+{
+  "seq": "1.1",
+  "action": "wait",
+  "ok": true,
+  "files": [
+    "shot.jpg"
+  ],
+  "url": "https://sfb-value.forgetraining.workers.dev/",
+  "title": "SFB Value",
+  "scrollY": 0,
+  "scrollX": 0,
+  "pageHeight": 659,
+  "pageWidth": 393,
+  "layoutViewport": [
+    393,
+    659
+  ],
+  "viewport": [
+    393,
+    659
+  ],
+  "device": "iPhone 15 Pro",
+  "ms": 1534
+}

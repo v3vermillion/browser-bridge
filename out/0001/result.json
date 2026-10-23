@@ -1,0 +1,195 @@
+{
+  "seq": 1,
+  "action": "batch",
+  "ok": true,
+  "steps": 2,
+  "of": 2,
+  "results": [
+    {
+      "seq": "1.1",
+      "action": "wait",
+      "ok": true,
+      "files": [
+        "shot.jpg"
+      ],
+      "url": "https://sfb-value.forgetraining.workers.dev/",
+      "title": "SFB Value",
+      "scrollY": 0,
+      "scrollX": 0,
+      "pageHeight": 659,
+      "pageWidth": 393,
+      "layoutViewport": [
+        393,
+        659
+      ],
+      "viewport": [
+        393,
+        659
+      ],
+      "device": "iPhone 15 Pro",
+      "ms": 1534
+    },
+    {
+      "seq": "1.2",
+      "action": "observe",
+      "ok": true,
+      "files": [
+        "shot.jpg",
+        "marks.jpg"
+      ],
+      "elements": [
+        {
+          "ref": 1,
+          "tag": "a",
+          "role": null,
+          "type": null,
+          "name": "SFB Value home",
+          "href": "./",
+          "box": [
+            16,
+            8,
+            120,
+            44
+          ],
+          "covered": true
+        },
+        {
+          "ref": 2,
+          "tag": "button",
+          "role": null,
+          "type": "button",
+          "name": "Price list: Prices Oct 21. Opens Settings.",
+          "href": null,
+          "box": [
+            207,
+            8,
+            122,
+            44
+          ],
+          "covered": true
+        },
+        {
+          "ref": 3,
+          "tag": "button",
+          "role": null,
+          "type": "button",
+          "name": "Settings",
+          "href": null,
+          "box": [
+            337,
+            8,
+            44,
+            44
+          ],
+          "covered": true
+        },
+        {
+          "ref": 4,
+          "tag": "input",
+          "role": null,
+          "type": "search",
+          "name": "Search by item name, brand or barcode number",
+          "href": null,
+          "box": [
+            64,
+            599,
+            218,
+            48
+          ],
+          "covered": true
+        },
+        {
+          "ref": 5,
+          "tag": "button",
+          "role": null,
+          "type": "button",
+          "name": "Scan a barcode with the camera",
+          "href": null,
+          "box": [
+            301,
+            597,
+            76,
+            52
+          ],
+          "covered": true
+        },
+        {
+          "ref": 6,
+          "tag": "button",
+          "role": null,
+          "type": "button",
+          "name": "DONATION TALLY $0.00 No items added",
+          "href": null,
+          "box": [
+            16,
+            133,
+            361,
+            111
+          ],
+          "covered": true
+        },
+        {
+          "ref": 7,
+          "tag": "button",
+          "role": null,
+          "type": "button",
+          "name": "Don't show again",
+          "href": null,
+          "box": [
+            324,
+            297,
+            44,
+            44
+          ],
+          "covered": true
+        },
+        {
+          "ref": 8,
+          "tag": "button",
+          "role": null,
+          "type": "button",
+          "name": "Skip",
+          "href": null,
+          "box": [
+            34,
+            523,
+            44,
+            44
+          ],
+          "covered": false
+        },
+        {
+          "ref": 9,
+          "tag": "button",
+          "role": null,
+          "type": "button",
+          "name": "Next",
+          "href": null,
+          "box": [
+            271,
+            523,
+            88,
+            44
+          ],
+          "covered": false
+        }
+      ],
+      "url": "https://sfb-value.forgetraining.workers.dev/",
+      "title": "SFB Value",
+      "scrollY": 0,
+      "scrollX": 0,
+      "pageHeight": 659,
+      "pageWidth": 393,
+      "layoutViewport": [
+        393,
+        659
+      ],
+      "viewport": [
+        393,
+        659
+      ],
+      "device": "iPhone 15 Pro",
+      "ms": 95
+    }
+  ]
+}

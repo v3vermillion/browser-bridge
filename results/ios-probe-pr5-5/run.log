@@ -1,0 +1,34 @@
+[   0.6s] host: {'macOS': '15.7.9', 'safaridriver': 'Included with Safari 26.6.1 (20624.5.1.18.3)'}
+[   1.9s] candidates: ['iPhone Air iOS 26.2', 'iPhone Air iOS 26.1', 'iPhone Air iOS 26.0']
+[   1.9s] device: {'udid': '1CE1A334-F45C-4216-823B-EE5E6389838F', 'name': 'iPhone Air', 'ios': '26.2', 'state': 'Shutdown'}
+[ 222.7s] booted
+[ 241.8s] session attempt failed: session not created: Could not create a session: Could not find Simulator.app or a devices:// URL handler.
+[ 292.4s] session attempt failed: session not created: Could not create a session: Could not find Simulator.app or a devices:// URL handler.
+[ 302.7s] device: {'udid': '55DF797C-6847-4575-ABFA-4E2A08520774', 'name': 'iPhone Air', 'ios': '26.1', 'state': 'Shutdown'}
+[ 516.0s] booted
+[ 533.8s] session attempt failed: session not created: Could not create a session: Could not find Simulator.app or a devices:// URL handler.
+[ 570.1s] session attempt failed: session not created: Could not create a session: Could not find Simulator.app or a devices:// URL handler.
+[ 577.9s] device: {'udid': 'AB0FB058-2DF8-4824-A382-91FE8566B342', 'name': 'iPhone Air', 'ios': '26.0', 'state': 'Shutdown'}
+[1182.5s] FAILED: TimeoutExpired: Command '['xcrun', 'simctl', 'bootstatus', 'AB0FB058-2DF8-4824-A382-91FE8566B342', '-b']' timed out after 600 seconds
+# iOS Safari run ios-probe-pr5-5
+
+Device: **iPhone Air**, iOS 26.0 Simulator (real Mobile Safari). Status: **failed**.
+
+Error: `TimeoutExpired: Command '['xcrun', 'simctl', 'bootstatus', 'AB0FB058-2DF8-4824-A382-91FE8566B342', '-b']' timed out after 600 seconds`
+
+Notes: Automatic keyboard probe for a pull request
+
+## Steps
+
+| # | step | result | keyboard | shot |
+|---|---|---|---|---|
+
+## Notes
+
+- safaridriver could not connect to Safari on iPhone Air iOS 26.2 (attempt 1): session not created: Could not create a session: Could not find Simulator.app or a devices:// URL handler.
+- safaridriver could not connect to Safari on iPhone Air iOS 26.2 (attempt 2): session not created: Could not create a session: Could not find Simulator.app or a devices:// URL handler.
+- safaridriver could not connect to Safari on iPhone Air iOS 26.1 (attempt 1): session not created: Could not create a session: Could not find Simulator.app or a devices:// URL handler.
+- safaridriver could not connect to Safari on iPhone Air iOS 26.1 (attempt 2): session not created: Could not create a session: Could not find Simulator.app or a devices:// URL handler.
+
+Shots are the whole device screen (Safari's bars, keyboard, pickers included). `steps.json` has every measurement; `keyboard-*/` has the video, frames, and filmstrip of each keyboard attempt.
+

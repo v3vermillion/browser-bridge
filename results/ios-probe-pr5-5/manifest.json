@@ -1,0 +1,35 @@
+{
+  "label": "ios-probe-pr5-5",
+  "kind": "ios",
+  "status": "failed",
+  "error": "TimeoutExpired: Command '['xcrun', 'simctl', 'bootstatus', 'AB0FB058-2DF8-4824-A382-91FE8566B342', '-b']' timed out after 600 seconds",
+  "device": {
+    "udid": "AB0FB058-2DF8-4824-A382-91FE8566B342",
+    "name": "iPhone Air",
+    "ios": "26.0",
+    "state": "Shutdown"
+  },
+  "host": {
+    "macOS": "15.7.9",
+    "safaridriver": "Included with Safari 26.6.1 (20624.5.1.18.3)"
+  },
+  "safari": null,
+  "idb": true,
+  "keyboard": [],
+  "createdAt": "2026-10-23T22:11:12+00:00",
+  "seconds": 1184,
+  "files": [
+    {
+      "path": "run.log",
+      "bytes": 1317
+    },
+    {
+      "path": "shots/01-failure-state.jpg.png",
+      "bytes": 0
+    },
+    {
+      "path": "summary.md",
+      "bytes": 1336
+    }
+  ]
+}

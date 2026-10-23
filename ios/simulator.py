@@ -404,13 +404,22 @@ class IOSBridge:
             log("booted")
             for attempt in (1, 2):
                 # Open Safari first so safaridriver finds a running, inspectable Safari instead of cold-launching it.
-                sh(["xcrun", "simctl", "launch", dev["udid"], "com.apple.mobilesafari"], check=False, timeout=120)
+                try:
+                    sh(["xcrun", "simctl", "launch", dev["udid"], "com.apple.mobilesafari"], check=False, timeout=120)
+                except subprocess.TimeoutExpired:
+                    self.notes.append(f"launching Safari on {dev['name']} iOS {dev['ios']} timed out")
                 time.sleep(8 if attempt == 1 else 15)
                 try:
                     caps = self.wd.start(dev["udid"])
                     break
                 except WebDriverError as e:
                     last = e
+                    if "Simulator.app" in str(e):
+                        # safaridriver needs Simulator.app's devices:// handler registered; opening the app registers it.
+                        dev_dir = sh(["xcode-select", "-p"], check=False).strip()
+                        sh(["open", "-g", os.path.join(dev_dir, "Applications", "Simulator.app")], check=False)
+                        self.simulator_app = True
+                        time.sleep(5)
                     self.notes.append(f"safaridriver could not connect to Safari on {dev['name']} iOS {dev['ios']} "
                                       f"(attempt {attempt}): {str(e)[:200]}")
                     log("session attempt failed:", str(e)[:200])

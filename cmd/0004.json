@@ -1,0 +1,1 @@
+{"action": "evaluate", "script": "document.activeElement.blur(); scrollTo(0,0); 1", "shot": false}

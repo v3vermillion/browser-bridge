@@ -1,0 +1,35 @@
+{
+  "label": "ios-probe-pr4-4",
+  "kind": "ios",
+  "status": "failed",
+  "error": "TimeoutExpired: Command '['xcrun', 'simctl', 'launch', 'AB0FB058-2DF8-4824-A382-91FE8566B342', 'com.apple.mobilesafari']' timed out after 120 seconds",
+  "device": {
+    "udid": "AB0FB058-2DF8-4824-A382-91FE8566B342",
+    "name": "iPhone Air",
+    "ios": "26.0",
+    "state": "Shutdown"
+  },
+  "host": {
+    "macOS": "15.7.9",
+    "safaridriver": "Included with Safari 26.6.1 (20624.5.1.18.3)"
+  },
+  "safari": null,
+  "idb": true,
+  "keyboard": [],
+  "createdAt": "2026-10-23T21:45:18+00:00",
+  "seconds": 675,
+  "files": [
+    {
+      "path": "run.log",
+      "bytes": 1350
+    },
+    {
+      "path": "shots/01-failure-state.jpg",
+      "bytes": 163509
+    },
+    {
+      "path": "summary.md",
+      "bytes": 1352
+    }
+  ]
+}

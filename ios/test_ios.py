@@ -61,6 +61,17 @@ class ElementRefs(unittest.TestCase):
             ios.element_id(None)
 
 
+class ElementPassBack(unittest.TestCase):
+    def test_reference_reused_as_returned(self):
+        wd = ios.WD()
+        raw = {"some-safari-key": "node-7"}
+        wd.js = lambda *a, **k: raw
+        eid = wd.find(selector="#x")
+        self.assertEqual(eid, "node-7")
+        self.assertIs(wd.ref(eid), raw)
+        self.assertEqual(wd.ref("unknown"), {ios.ELEM: "unknown"})
+
+
 class Report(unittest.TestCase):
     def test_summary_and_manifest(self):
         with tempfile.TemporaryDirectory() as d:

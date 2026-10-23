@@ -233,6 +233,11 @@ class WD:
     def __init__(self, port=WD_PORT):
         self.base = f"http://127.0.0.1:{port}"
         self.sid = None
+        self.refs = {}   # element id -> the reference exactly as safaridriver returned it
+
+    def ref(self, eid):
+        """Element reference to pass back into a script. Safari only recognises its own format, so reuse it."""
+        return self.refs.get(eid) or {ELEM: eid}
 
     def call(self, method, path, body=None, timeout=120):
         url = self.base + (f"/session/{self.sid}" if self.sid and not path.startswith("/session") else "") + path
@@ -273,7 +278,9 @@ class WD:
               || null;""", selector, text)
         if not el:
             raise WebDriverError(f"no element matches {selector or repr(text)}")
-        return element_id(el)
+        eid = element_id(el)
+        self.refs[eid] = el
+        return eid
 
     def click(self, eid):
         self.call("POST", f"/element/{eid}/click")
@@ -493,13 +500,13 @@ class IOSBridge:
         """Element centre in device points, for real HID taps (idb)."""
         top_pt = self.calibrate()
         r = self.wd.js("const r=arguments[0].getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2,w:innerWidth,sw:screen.width}",
-                       {ELEM: eid})
+                       self.wd.ref(eid))
         css_to_pt = r["sw"] / r["w"]
         return (r["x"] * css_to_pt, top_pt + r["y"] * css_to_pt)
 
     def tap_center(self, eid):
         r = self.wd.js("arguments[0].scrollIntoView({block:'center'});const r=arguments[0].getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2}",
-                       {ELEM: eid})
+                       self.wd.ref(eid))
         self.wd.touch_tap(r["x"], r["y"])
 
     def hid_tap(self, eid):
@@ -555,7 +562,7 @@ class IOSBridge:
         elif a == "type":
             eid = self.element(step)
             self.wd.send_keys(eid, step.get("value", ""))
-            res["valueAfter"] = self.wd.js("return arguments[0].value", {ELEM: eid})
+            res["valueAfter"] = self.wd.js("return arguments[0].value", self.wd.ref(eid))
         elif a == "blur":
             self.blur()
         elif a == "keyboard":

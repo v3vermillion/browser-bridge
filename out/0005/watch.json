@@ -1,0 +1,626 @@
+{
+  "what": "tap 4",
+  "zero": "the tap",
+  "realMs": 2000,
+  "pageMs": 2000,
+  "slowmo": 1,
+  "conditions": [],
+  "url": "https://sfb-value.forgetraining.workers.dev/",
+  "viewport": {
+    "width": 393,
+    "height": 659
+  },
+  "scale": 2,
+  "clock": "ms relative to t = 0 on the page clock; frames use the compositor swap time",
+  "frames": {
+    "source": "screenshots in a loop; this browser has no frame stream",
+    "received": 82,
+    "inWindow": 82,
+    "picked": 6,
+    "pageFrames": 32,
+    "note": "a screencast sends a frame only when something repaints, so a still page sends few"
+  },
+  "motion": {
+    "startsAt": 92,
+    "endsAt": 149,
+    "stillMovingAtEnd": false,
+    "biggestChangeAt": 92
+  },
+  "region": {
+    "x": 0,
+    "y": 557,
+    "w": 315,
+    "h": 102
+  },
+  "explained": {
+    "animatedElements": 100,
+    "media": 0,
+    "elsewhere": 0
+  },
+  "animations": [
+    {
+      "id": 1,
+      "type": "CSSTransition",
+      "name": "border-bottom-color",
+      "target": "form#searchForm.search",
+      "text": null,
+      "startedAt": 1,
+      "firstSeen": 75,
+      "activeUntil": 146,
+      "duration": 150,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "border-bottom-color",
+          "from": "oklab(0.64608 0.00394 0.011385)",
+          "to": "oklch(0.46 0.16 150)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        16,
+        597,
+        275,
+        52
+      ],
+      "boxEnd": [
+        16,
+        597,
+        275,
+        52
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "type": "CSSTransition",
+      "name": "border-left-color",
+      "target": "form#searchForm.search",
+      "text": null,
+      "startedAt": 1,
+      "firstSeen": 75,
+      "activeUntil": 146,
+      "duration": 150,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "border-left-color",
+          "from": "oklab(0.64608 0.00394 0.011385)",
+          "to": "oklch(0.46 0.16 150)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        16,
+        597,
+        275,
+        52
+      ],
+      "boxEnd": [
+        16,
+        597,
+        275,
+        52
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 3,
+      "type": "CSSTransition",
+      "name": "border-right-color",
+      "target": "form#searchForm.search",
+      "text": null,
+      "startedAt": 1,
+      "firstSeen": 75,
+      "activeUntil": 146,
+      "duration": 150,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "border-right-color",
+          "from": "oklab(0.64608 0.00394 0.011385)",
+          "to": "oklch(0.46 0.16 150)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        16,
+        597,
+        275,
+        52
+      ],
+      "boxEnd": [
+        16,
+        597,
+        275,
+        52
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 4,
+      "type": "CSSTransition",
+      "name": "border-top-color",
+      "target": "form#searchForm.search",
+      "text": null,
+      "startedAt": 1,
+      "firstSeen": 75,
+      "activeUntil": 146,
+      "duration": 150,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "border-top-color",
+          "from": "oklab(0.64608 0.00394 0.011385)",
+          "to": "oklch(0.46 0.16 150)",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        16,
+        597,
+        275,
+        52
+      ],
+      "boxEnd": [
+        16,
+        597,
+        275,
+        52
+      ],
+      "playState": "running",
+      "visible": true
+    },
+    {
+      "id": 5,
+      "type": "CSSTransition",
+      "name": "box-shadow",
+      "target": "form#searchForm.search",
+      "text": null,
+      "startedAt": 1,
+      "firstSeen": 75,
+      "activeUntil": 146,
+      "duration": 150,
+      "delay": 0,
+      "endDelay": 0,
+      "iterations": 1,
+      "direction": "normal",
+      "fill": "backwards",
+      "easing": "ease",
+      "timeline": "DocumentTimeline",
+      "changes": [
+        {
+          "property": "box-shadow",
+          "from": "none",
+          "to": "oklab(0.46 -0.138564 0.08 / 0.18) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px ",
+          "keyframes": 2
+        }
+      ],
+      "boxStart": [
+        16,
+        597,
+        275,
+        52
+      ],
+      "boxEnd": [
+        16,
+        597,
+        275,
+        52
+      ],
+      "playState": "running",
+      "visible": true
+    }
+  ],
+  "webFontsLoaded": [],
+  "animationsNotRunning": 0,
+  "layoutShifts": [],
+  "longTasks": [],
+  "load": null,
+  "media": {
+    "libraries": [],
+    "videos": [],
+    "canvases": [],
+    "iframes": [],
+    "gifs": []
+  },
+  "notes": [
+    "the filmstrip is cropped to what the action set moving; other motion on the page is outside it (see \"visible change\")"
+  ],
+  "motionMeasuredIn": "the cropped area",
+  "frameMeta": [
+    {
+      "file": "frames/001_m00282ms.jpg",
+      "t": -282,
+      "y": 0,
+      "why": "first"
+    },
+    {
+      "file": "frames/013_00062ms.jpg",
+      "t": 62,
+      "y": 0,
+      "why": "before motion · just before biggest change"
+    },
+    {
+      "file": "frames/014_00092ms.jpg",
+      "t": 92,
+      "y": 0,
+      "why": "motion starts · biggest change"
+    },
+    {
+      "file": "frames/015_00121ms.jpg",
+      "t": 121,
+      "y": 0,
+      "why": null
+    },
+    {
+      "file": "frames/016_00149ms.jpg",
+      "t": 149,
+      "y": 0,
+      "why": "motion ends"
+    },
+    {
+      "file": "frames/082_02007ms.jpg",
+      "t": 2007,
+      "y": 0,
+      "why": "last"
+    }
+  ],
+  "changeSeries": [
+    [
+      -282,
+      0
+    ],
+    [
+      -251,
+      0
+    ],
+    [
+      -223,
+      0
+    ],
+    [
+      -194,
+      0
+    ],
+    [
+      -163,
+      0
+    ],
+    [
+      -138,
+      0
+    ],
+    [
+      -110,
+      0
+    ],
+    [
+      -81,
+      0
+    ],
+    [
+      -54,
+      0
+    ],
+    [
+      -23,
+      0
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      33,
+      0
+    ],
+    [
+      62,
+      0
+    ],
+    [
+      92,
+      0.4656
+    ],
+    [
+      121,
+      0.0104
+    ],
+    [
+      149,
+      0.025
+    ],
+    [
+      178,
+      0
+    ],
+    [
+      209,
+      0
+    ],
+    [
+      237,
+      0
+    ],
+    [
+      271,
+      0
+    ],
+    [
+      298,
+      0
+    ],
+    [
+      331,
+      0
+    ],
+    [
+      357,
+      0
+    ],
+    [
+      385,
+      0
+    ],
+    [
+      416,
+      0
+    ],
+    [
+      444,
+      0
+    ],
+    [
+      473,
+      0
+    ],
+    [
+      502,
+      0
+    ],
+    [
+      529,
+      0
+    ],
+    [
+      557,
+      0
+    ],
+    [
+      586,
+      0
+    ],
+    [
+      616,
+      0
+    ],
+    [
+      647,
+      0
+    ],
+    [
+      673,
+      0
+    ],
+    [
+      699,
+      0
+    ],
+    [
+      727,
+      0
+    ],
+    [
+      756,
+      0
+    ],
+    [
+      788,
+      0
+    ],
+    [
+      816,
+      0
+    ],
+    [
+      843,
+      0
+    ],
+    [
+      872,
+      0
+    ],
+    [
+      903,
+      0
+    ],
+    [
+      931,
+      0
+    ],
+    [
+      965,
+      0
+    ],
+    [
+      993,
+      0
+    ],
+    [
+      1020,
+      0
+    ],
+    [
+      1051,
+      0
+    ],
+    [
+      1077,
+      0
+    ],
+    [
+      1105,
+      0
+    ],
+    [
+      1131,
+      0
+    ],
+    [
+      1156,
+      0
+    ],
+    [
+      1186,
+      0
+    ],
+    [
+      1213,
+      0
+    ],
+    [
+      1238,
+      0
+    ],
+    [
+      1270,
+      0
+    ],
+    [
+      1298,
+      0
+    ],
+    [
+      1325,
+      0
+    ],
+    [
+      1350,
+      0
+    ],
+    [
+      1376,
+      0
+    ],
+    [
+      1398,
+      0
+    ],
+    [
+      1425,
+      0
+    ],
+    [
+      1453,
+      0
+    ],
+    [
+      1487,
+      0
+    ],
+    [
+      1515,
+      0
+    ],
+    [
+      1539,
+      0
+    ],
+    [
+      1565,
+      0
+    ],
+    [
+      1593,
+      0
+    ],
+    [
+      1622,
+      0
+    ],
+    [
+      1650,
+      0
+    ],
+    [
+      1678,
+      0
+    ],
+    [
+      1704,
+      0
+    ],
+    [
+      1733,
+      0
+    ],
+    [
+      1755,
+      0
+    ],
+    [
+      1783,
+      0
+    ],
+    [
+      1812,
+      0
+    ],
+    [
+      1838,
+      0
+    ],
+    [
+      1867,
+      0
+    ],
+    [
+      1892,
+      0
+    ],
+    [
+      1922,
+      0
+    ],
+    [
+      1951,
+      0
+    ],
+    [
+      1979,
+      0
+    ],
+    [
+      2007,
+      0
+    ]
+  ]
+}

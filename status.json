@@ -1,0 +1,19 @@
+{
+  "id": "s1023201102",
+  "state": "starting",
+  "config": {
+    "device": "iPhone 15 Pro",
+    "browser": "webkit",
+    "detail": 2,
+    "idleMinutes": 8,
+    "maxMinutes": 20,
+    "hide": [],
+    "blockWrites": true,
+    "prescroll": false,
+    "url": "https://sfb-value.forgetraining.workers.dev/"
+  },
+  "startedAt": "2026-10-23T20:11:58.182Z",
+  "endsAt": "2026-10-23T20:31:58.182Z",
+  "lastSeq": -1,
+  "updatedAt": "2026-10-23T20:11:58.569Z"
+}

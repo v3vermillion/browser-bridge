@@ -281,6 +281,16 @@ class WD:
     def send_keys(self, eid, text):
         self.call("POST", f"/element/{eid}/value", {"text": text})
 
+    def touch_tap(self, x, y):
+        """A quick finger tap through W3C touch actions (no hold, so iOS doesn't read it as a long press)."""
+        self.call("POST", "/actions", {"actions": [{"type": "pointer", "id": "finger", "parameters": {"pointerType": "touch"},
+            "actions": [{"type": "pointerMove", "duration": 0, "x": int(x), "y": int(y)}, {"type": "pointerDown", "button": 0},
+                        {"type": "pointerUp", "button": 0}]}]}, timeout=30)
+        try:
+            self.call("DELETE", "/actions", timeout=15)
+        except Exception:
+            pass
+
     def touch_swipe(self, x, y1, y2, ms=300):
         self.call("POST", "/actions", {"actions": [{"type": "pointer", "id": "finger", "parameters": {"pointerType": "touch"},
             "actions": [{"type": "pointerMove", "duration": 0, "x": int(x), "y": int(y1)}, {"type": "pointerDown", "button": 0},
@@ -478,6 +488,11 @@ class IOSBridge:
         css_to_pt = r["sw"] / r["w"]
         return (r["x"] * css_to_pt, top_pt + r["y"] * css_to_pt)
 
+    def tap_center(self, eid):
+        r = self.wd.js("arguments[0].scrollIntoView({block:'center'});const r=arguments[0].getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2}",
+                       {ELEM: eid})
+        self.wd.touch_tap(r["x"], r["y"])
+
     def hid_tap(self, eid):
         x, y = self.screen_point(eid)
         sh(["idb", "ui", "tap", "--udid", self.dev["udid"], str(round(x)), str(round(y))], timeout=60)
@@ -493,7 +508,7 @@ class IOSBridge:
         return True
 
     def blur(self):
-        self.wd.js("document.activeElement && document.activeElement.blur()")
+        self.wd.js("document.activeElement && document.activeElement.blur(); getSelection().removeAllRanges()")
         time.sleep(0.8)
 
     # ---- steps
@@ -513,15 +528,25 @@ class IOSBridge:
             pass
         elif a == "tap":
             eid = self.element(step)
-            if step.get("method") == "hid" and self.idb:
+            method = step.get("method", "touch")
+            if method == "hid" and self.idb:
                 self.hid_tap(eid)
                 res["method"] = "hid"
+            elif method == "touch":
+                try:
+                    self.tap_center(eid)
+                    res["method"] = "touch"
+                except (WebDriverError, TimeoutError, OSError) as e:
+                    self.notes.append(f"touch tap failed ({str(e)[:100]}); used WebDriver click")
+                    self.wd.click(eid)
+                    res["method"] = "webdriver"
             else:
                 self.wd.click(eid)
                 res["method"] = "webdriver"
         elif a == "type":
             eid = self.element(step)
             self.wd.send_keys(eid, step.get("value", ""))
+            res["valueAfter"] = self.wd.js("return arguments[0].value", {ELEM: eid})
         elif a == "blur":
             self.blur()
         elif a == "keyboard":
@@ -583,7 +608,7 @@ class IOSBridge:
         change, where fixed bars end up, and a device screenshot with the keyboard up. Tries several ways
         to bring the keyboard up and reports which one worked."""
         out = {"attempts": []}
-        strategies = ["webdriver-tap", "send-keys"] + (["hid-tap"] if self.idb else []) + ["simulator-app+webdriver-tap"]
+        strategies = ["touch-tap", "webdriver-tap", "send-keys"] + (["hid-tap"] if self.idb else []) + ["simulator-app+touch-tap"]
         if step.get("strategies"):
             strategies = step["strategies"]
         for strat in strategies:
@@ -608,6 +633,8 @@ class IOSBridge:
                     self.wd.send_keys(eid, "")
                 elif strat == "hid-tap":
                     self.hid_tap(eid)
+                elif strat.endswith("touch-tap"):
+                    self.tap_center(eid)
                 else:
                     self.wd.click(eid)
             except Exception as e:
@@ -665,7 +692,7 @@ PROBE_STEPS = [
     {"action": "keyboard", "selector": "#price", "name": "keyboard-number"},
     {"action": "type", "selector": "#price", "value": "3.49", "name": "typed-price"},
     {"action": "blur", "name": "keyboard-dismissed"},
-    {"action": "keyboard", "selector": "#name", "name": "keyboard-text", "strategies": ["webdriver-tap", "send-keys", "hid-tap"]},
+    {"action": "keyboard", "selector": "#name", "name": "keyboard-text", "strategies": ["touch-tap", "hid-tap"]},
     {"action": "blur", "name": "dismissed-2"},
     {"action": "tap", "selector": "#unit", "name": "picker-select", "waitMs": 1200},
     {"action": "blur", "name": "picker-closed"},
@@ -717,6 +744,10 @@ def write_report(br, job, status, error=None):
     lines += ["", "## Steps", "", "| # | step | result | keyboard | shot |", "|---|---|---|---|---|"]
     for i, s in enumerate(br.steps, 1):
         extra = s.get("error") or ""
+        if s.get("action") == "type" and not extra:
+            extra = f"field value now {s.get('valueAfter')!r}"
+        if s.get("action") == "tap" and not extra:
+            extra = f"via {s.get('method')}"
         if s.get("action") == "swipe" and not extra:
             extra = f"{s.get('method')}: innerHeight {s.get('innerHeightBefore')} -> {s.get('innerHeightAfter')}, " \
                     f"address bar {'collapsed' if s.get('addressBarCollapsed') else 'unchanged'}, scrolled {s.get('scrolled')} px"

@@ -1,0 +1,56 @@
+[
+  {
+    "index": 0,
+    "action": "scroll",
+    "ok": true
+  },
+  {
+    "index": 1,
+    "action": "click",
+    "ok": true
+  },
+  {
+    "index": 2,
+    "action": "burst",
+    "ok": true,
+    "files": [
+      "01-story-1.jpg",
+      "02-story-2.jpg",
+      "03-story-3.jpg"
+    ]
+  },
+  {
+    "index": 3,
+    "action": "evaluate",
+    "ok": true,
+    "result": [
+      {
+        "src": "https://www.youtube-nocookie.com/embed/7smWzJwY9kA?autoplay=1&rel=0",
+        "allow": "autoplay; encrypted-media; picture-in-picture; fullscreen",
+        "w": 1296,
+        "h": 729,
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "action": "scroll",
+    "ok": true
+  },
+  {
+    "index": 5,
+    "action": "click",
+    "ok": true
+  },
+  {
+    "index": 6,
+    "action": "burst",
+    "ok": true,
+    "files": [
+      "04-haircut-1.jpg",
+      "05-haircut-2.jpg",
+      "06-haircut-3.jpg"
+    ]
+  }
+]

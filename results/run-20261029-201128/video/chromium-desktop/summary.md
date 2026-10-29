@@ -1,0 +1,11 @@
+## video - chromium / desktop
+- URL: https://caring-for-a-cause.forgetraining.workers.dev/
+- Status: ok, HTTP 200, ready in 3.8s
+- Viewport: 1440x900 at 1x detail
+- Title: Caring for a Cause Supportive Services | Central Indiana
+- Meta description: Caring for a Cause helps families in Central Indiana with holiday meals and gifts, monthly diapers, and school supplies.
+- H1 count: 1; headings total: 17; page height: 6880px
+- Structured data blocks: 1; lang: en; og:image: yes
+- Steps: 7 run, 0 failed
+- Network: 0 HTTP errors, 2 failed requests, 0 JS errors from the site
+- Files: viewport.jpg, meta.json, text.md, steps/01-story-1.jpg, steps/02-story-2.jpg, steps/03-story-3.jpg, steps/04-haircut-1.jpg, steps/05-haircut-2.jpg, steps/06-haircut-3.jpg, steps.json, network.json

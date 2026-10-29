@@ -1,0 +1,379 @@
+{
+  "label": "run-20261029-201128",
+  "createdAt": "2026-10-29T20:12:29.843Z",
+  "engineVersion": "1.0.0",
+  "status": "ok",
+  "variants": [
+    {
+      "target": "video",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "video/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-29T20:12:31.834Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 3.8,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "finishedAt": "2026-10-29T20:13:00.083Z",
+      "files": [
+        {
+          "path": "video/chromium-desktop/viewport.jpg",
+          "bytes": 122024
+        },
+        {
+          "path": "video/chromium-desktop/meta.json",
+          "bytes": 4290
+        },
+        {
+          "path": "video/chromium-desktop/text.md",
+          "bytes": 3179
+        },
+        {
+          "path": "video/chromium-desktop/steps/01-story-1.jpg",
+          "bytes": 43280
+        },
+        {
+          "path": "video/chromium-desktop/steps/02-story-2.jpg",
+          "bytes": 43280
+        },
+        {
+          "path": "video/chromium-desktop/steps/03-story-3.jpg",
+          "bytes": 43280
+        },
+        {
+          "path": "video/chromium-desktop/steps/04-haircut-1.jpg",
+          "bytes": 86590
+        },
+        {
+          "path": "video/chromium-desktop/steps/05-haircut-2.jpg",
+          "bytes": 86590
+        },
+        {
+          "path": "video/chromium-desktop/steps/06-haircut-3.jpg",
+          "bytes": 86590
+        },
+        {
+          "path": "video/chromium-desktop/steps.json",
+          "bytes": 898
+        },
+        {
+          "path": "video/chromium-desktop/network.json",
+          "bytes": 873
+        },
+        {
+          "path": "video/chromium-desktop/summary.md",
+          "bytes": 780
+        }
+      ]
+    },
+    {
+      "target": "video",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "video/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-29T20:13:00.086Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 4.1,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "finishedAt": "2026-10-29T20:13:28.375Z",
+      "files": [
+        {
+          "path": "video/chromium-mobile/viewport.jpg",
+          "bytes": 49860
+        },
+        {
+          "path": "video/chromium-mobile/meta.json",
+          "bytes": 4290
+        },
+        {
+          "path": "video/chromium-mobile/text.md",
+          "bytes": 3146
+        },
+        {
+          "path": "video/chromium-mobile/steps/01-story-1.jpg",
+          "bytes": 28132
+        },
+        {
+          "path": "video/chromium-mobile/steps/02-story-2.jpg",
+          "bytes": 28132
+        },
+        {
+          "path": "video/chromium-mobile/steps/03-story-3.jpg",
+          "bytes": 28132
+        },
+        {
+          "path": "video/chromium-mobile/steps/04-haircut-1.jpg",
+          "bytes": 31505
+        },
+        {
+          "path": "video/chromium-mobile/steps/05-haircut-2.jpg",
+          "bytes": 31505
+        },
+        {
+          "path": "video/chromium-mobile/steps/06-haircut-3.jpg",
+          "bytes": 31505
+        },
+        {
+          "path": "video/chromium-mobile/steps.json",
+          "bytes": 897
+        },
+        {
+          "path": "video/chromium-mobile/network.json",
+          "bytes": 873
+        },
+        {
+          "path": "video/chromium-mobile/summary.md",
+          "bytes": 778
+        }
+      ]
+    },
+    {
+      "target": "video",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "video/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-29T20:13:29.169Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 6.2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "finishedAt": "2026-10-29T20:14:13.756Z",
+      "files": [
+        {
+          "path": "video/webkit-desktop/viewport.jpg",
+          "bytes": 121908
+        },
+        {
+          "path": "video/webkit-desktop/meta.json",
+          "bytes": 4290
+        },
+        {
+          "path": "video/webkit-desktop/text.md",
+          "bytes": 3177
+        },
+        {
+          "path": "video/webkit-desktop/steps/01-story-1.jpg",
+          "bytes": 44205
+        },
+        {
+          "path": "video/webkit-desktop/steps/02-story-2.jpg",
+          "bytes": 44205
+        },
+        {
+          "path": "video/webkit-desktop/steps/03-story-3.jpg",
+          "bytes": 44205
+        },
+        {
+          "path": "video/webkit-desktop/steps/04-haircut-1.jpg",
+          "bytes": 86276
+        },
+        {
+          "path": "video/webkit-desktop/steps/05-haircut-2.jpg",
+          "bytes": 86276
+        },
+        {
+          "path": "video/webkit-desktop/steps/06-haircut-3.jpg",
+          "bytes": 86276
+        },
+        {
+          "path": "video/webkit-desktop/steps.json",
+          "bytes": 898
+        },
+        {
+          "path": "video/webkit-desktop/network.json",
+          "bytes": 315
+        },
+        {
+          "path": "video/webkit-desktop/summary.md",
+          "bytes": 778
+        }
+      ]
+    },
+    {
+      "target": "video",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "webkit",
+      "device": "mobile",
+      "dir": "video/webkit-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-29T20:14:13.757Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 4.4,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "finishedAt": "2026-10-29T20:14:44.073Z",
+      "files": [
+        {
+          "path": "video/webkit-mobile/viewport.jpg",
+          "bytes": 49312
+        },
+        {
+          "path": "video/webkit-mobile/meta.json",
+          "bytes": 4290
+        },
+        {
+          "path": "video/webkit-mobile/text.md",
+          "bytes": 3144
+        },
+        {
+          "path": "video/webkit-mobile/steps/01-story-1.jpg",
+          "bytes": 27788
+        },
+        {
+          "path": "video/webkit-mobile/steps/02-story-2.jpg",
+          "bytes": 27788
+        },
+        {
+          "path": "video/webkit-mobile/steps/03-story-3.jpg",
+          "bytes": 27790
+        },
+        {
+          "path": "video/webkit-mobile/steps/04-haircut-1.jpg",
+          "bytes": 31134
+        },
+        {
+          "path": "video/webkit-mobile/steps/05-haircut-2.jpg",
+          "bytes": 31134
+        },
+        {
+          "path": "video/webkit-mobile/steps/06-haircut-3.jpg",
+          "bytes": 31134
+        },
+        {
+          "path": "video/webkit-mobile/steps.json",
+          "bytes": 897
+        },
+        {
+          "path": "video/webkit-mobile/network.json",
+          "bytes": 315
+        },
+        {
+          "path": "video/webkit-mobile/summary.md",
+          "bytes": 776
+        }
+      ]
+    }
+  ],
+  "job": {
+    "preset": "glance",
+    "targets": [
+      {
+        "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+        "name": "video"
+      }
+    ],
+    "browsers": [
+      "chromium",
+      "webkit"
+    ],
+    "devices": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "mobile",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+        "viewport": {
+          "width": 393,
+          "height": 659
+        },
+        "screen": {
+          "width": 393,
+          "height": 852
+        },
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true,
+        "defaultBrowserType": "webkit"
+      }
+    ],
+    "capture": {
+      "screenshot": "viewport",
+      "tiles": false,
+      "tileHeight": null,
+      "maxTiles": 25,
+      "format": "jpeg",
+      "quality": 80,
+      "detail": 1,
+      "animations": "allow",
+      "waitMs": 800,
+      "timeoutMs": 45000,
+      "revealLazyContent": true,
+      "hide": [],
+      "blockWrites": false,
+      "text": true,
+      "meta": true,
+      "html": false,
+      "links": false,
+      "checkLinks": false,
+      "images": false,
+      "styles": false,
+      "forms": false,
+      "a11y": false,
+      "aria": false,
+      "lighthouse": false
+    },
+    "steps": [
+      {
+        "action": "scroll",
+        "selector": "[data-watch]"
+      },
+      {
+        "action": "click",
+        "selector": "[data-watch]",
+        "waitMs": 7000
+      },
+      {
+        "action": "burst",
+        "name": "story",
+        "count": 3,
+        "intervalMs": 1500
+      },
+      {
+        "action": "evaluate",
+        "script": "(()=>{const f=[...document.querySelectorAll('iframe')].map(i=>({src:i.src,allow:i.allow,w:i.clientWidth,h:i.clientHeight,ref:i.referrerPolicy}));return f})()"
+      },
+      {
+        "action": "scroll",
+        "selector": ".yt-link"
+      },
+      {
+        "action": "click",
+        "selector": ".yt-link",
+        "waitMs": 7000
+      },
+      {
+        "action": "burst",
+        "name": "haircut",
+        "count": 3,
+        "intervalMs": 1500
+      }
+    ],
+    "notes": "Video playback check with network writes allowed (only YouTube calls; no forms touched) | No brief: narrow playback verification",
+    "brief": null
+  },
+  "finishedAt": "2026-10-29T20:14:44.258Z"
+}

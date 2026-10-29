@@ -1,0 +1,10 @@
+{
+  "failedRequests": [],
+  "httpErrors": [],
+  "blockedWrites": [],
+  "consoleErrors": [],
+  "pageErrors": [
+    "/caring-for-a-cause.forgetraining.workers.dev\" from accessing a frame with origin \"https://www.youtube-nocookie.com\". Protocols, domains, and ports must match."
+  ],
+  "errorsCausedByBlocking": 0
+}

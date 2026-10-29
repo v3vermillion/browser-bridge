@@ -1,0 +1,17 @@
+{
+  "failedRequests": [
+    {
+      "url": "https://www.youtube-nocookie.com/api/stats/qoe?cpn=4faU1yZ836wsVA7R&el=embedded&ns=yt&fexp=v1%2C100673025%2C1883%2C-76670264%2C27058999%2C34656%2C124674%2C117689%2C9252%2C16509%2C6256%2C16950%2C100702%2C15105%2C25059%2C4174%2C30447%2C18705%2C26008%2C13016%2C14665%2C1422%2C6621%2C2783%2C23826%2C9500%",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.youtube-nocookie.com/api/stats/qoe?cpn=8j3oOqzdmeh9w2Vi&el=embedded&ns=yt&fexp=v1%2C100673025%2C1884%2C-76670265%2C27058999%2C34656%2C124674%2C117689%2C9252%2C16509%2C6257%2C16949%2C100702%2C15105%2C25059%2C4174%2C30446%2C18706%2C26008%2C13015%2C16088%2C6621%2C2783%2C23826%2C9500%2C96677",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "httpErrors": [],
+  "blockedWrites": [],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 0
+}

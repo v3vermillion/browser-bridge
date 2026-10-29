@@ -1,0 +1,12 @@
+{
+  "note": "Automated scans catch only part of accessibility problems; absence of a violation is not proof of compliance.",
+  "violations": [],
+  "incompleteNeedsReview": [
+    {
+      "id": "color-contrast",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "count": 44
+    }
+  ],
+  "passesCount": 40
+}

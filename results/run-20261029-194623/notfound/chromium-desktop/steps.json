@@ -1,0 +1,172 @@
+[
+  {
+    "index": 0,
+    "action": "scroll",
+    "ok": true
+  },
+  {
+    "index": 1,
+    "action": "click",
+    "ok": false,
+    "error": "locator.click: Timeout 3000ms exceeded.",
+    "note": "Optional step skipped."
+  },
+  {
+    "index": 2,
+    "action": "screenshot",
+    "ok": true,
+    "file": "01-menu-open.jpg"
+  },
+  {
+    "index": 3,
+    "action": "press",
+    "ok": true
+  },
+  {
+    "index": 4,
+    "action": "tabWalk",
+    "ok": true,
+    "focus": [
+      {
+        "tag": "a",
+        "name": "Skip to content",
+        "href": "#main",
+        "focusIndicatorDetected": true,
+        "file": "02-tab-1.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "",
+        "href": "/",
+        "focusIndicatorDetected": true,
+        "file": "03-tab-2.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "About",
+        "href": "/#about",
+        "focusIndicatorDetected": true,
+        "file": "04-tab-3.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Programs",
+        "href": "/#programs",
+        "focusIndicatorDetected": true,
+        "file": "05-tab-4.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Get involved",
+        "href": "/#get-involved",
+        "focusIndicatorDetected": true,
+        "file": "06-tab-5.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Contact",
+        "href": "/#contact",
+        "focusIndicatorDetected": true,
+        "file": "07-tab-6.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Donate",
+        "href": "/donate/",
+        "focusIndicatorDetected": true,
+        "file": "08-tab-7.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "(317) 886-0724",
+        "href": "tel:+13178860724",
+        "focusIndicatorDetected": true,
+        "file": "09-tab-8.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Help me",
+        "href": "/apply/",
+        "focusIndicatorDetected": true,
+        "file": "10-tab-9.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Donate",
+        "href": "/donate/",
+        "focusIndicatorDetected": true,
+        "file": "11-tab-10.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Back to home",
+        "href": "/",
+        "focusIndicatorDetected": true,
+        "file": "12-tab-11.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Caring for a Cause Supportive Services, home",
+        "href": "/",
+        "focusIndicatorDetected": true,
+        "file": "13-tab-12.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Donate",
+        "href": "/donate/",
+        "focusIndicatorDetected": true,
+        "file": "14-tab-13.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Help me",
+        "href": "/apply/",
+        "focusIndicatorDetected": true,
+        "file": "15-tab-14.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "About",
+        "href": "/#about",
+        "focusIndicatorDetected": true,
+        "file": "16-tab-15.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Programs",
+        "href": "/#programs",
+        "focusIndicatorDetected": true,
+        "file": "17-tab-16.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Get involved",
+        "href": "/#get-involved",
+        "focusIndicatorDetected": true,
+        "file": "18-tab-17.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "(317) 886-0724",
+        "href": "tel:+13178860724",
+        "focusIndicatorDetected": true,
+        "file": "19-tab-18.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "caringforacause2015@gmail.com",
+        "href": "mailto:caringforacause2015@gmail.com",
+        "focusIndicatorDetected": true,
+        "file": "20-tab-19.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Facebook (opens in a new tab)",
+        "href": "https://www.facebook.com/caringforacausesupportiveservices",
+        "focusIndicatorDetected": true,
+        "file": "21-tab-20.jpg"
+      }
+    ]
+  }
+]

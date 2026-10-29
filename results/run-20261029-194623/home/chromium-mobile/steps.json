@@ -1,0 +1,170 @@
+[
+  {
+    "index": 0,
+    "action": "scroll",
+    "ok": true
+  },
+  {
+    "index": 1,
+    "action": "click",
+    "ok": true
+  },
+  {
+    "index": 2,
+    "action": "screenshot",
+    "ok": true,
+    "file": "01-menu-open.jpg"
+  },
+  {
+    "index": 3,
+    "action": "press",
+    "ok": true
+  },
+  {
+    "index": 4,
+    "action": "tabWalk",
+    "ok": true,
+    "focus": [
+      {
+        "tag": "a",
+        "name": "Help me",
+        "href": "/apply/",
+        "focusIndicatorDetected": true,
+        "file": "02-tab-1.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Donate",
+        "href": "/donate/",
+        "focusIndicatorDetected": true,
+        "file": "03-tab-2.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Holiday Meals",
+        "href": "/#holiday-assistance",
+        "focusIndicatorDetected": true,
+        "file": "04-tab-3.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Gifts",
+        "href": "/#holiday-assistance",
+        "focusIndicatorDetected": true,
+        "file": "05-tab-4.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Diapers",
+        "href": "/#diaper-drive",
+        "focusIndicatorDetected": true,
+        "file": "06-tab-5.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "School Supplies",
+        "href": "/#back-to-school",
+        "focusIndicatorDetected": true,
+        "file": "07-tab-6.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Holiday Assistance Thanksgiving, Christmas, Easter",
+        "href": "#holiday-assistance",
+        "focusIndicatorDetected": true,
+        "file": "08-tab-7.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Diaper Drive Diapers every month",
+        "href": "#diaper-drive",
+        "focusIndicatorDetected": true,
+        "file": "09-tab-8.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Back-to-School Care Packages Hygiene and school supplies",
+        "href": "#back-to-school",
+        "focusIndicatorDetected": true,
+        "file": "10-tab-9.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Free Haircuts & Styles Cuts, styles, face painting",
+        "href": "#haircuts",
+        "focusIndicatorDetected": true,
+        "file": "11-tab-10.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Start an application",
+        "href": "/apply/",
+        "focusIndicatorDetected": true,
+        "file": "12-tab-11.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Call (317) 886-0724",
+        "href": "tel:+13178860724",
+        "focusIndicatorDetected": true,
+        "file": "13-tab-12.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Email us",
+        "href": "mailto:caringforacause2015@gmail.com?subject=Application%20request",
+        "focusIndicatorDetected": true,
+        "file": "14-tab-13.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Sponsor a family",
+        "href": "/#sponsor",
+        "focusIndicatorDetected": true,
+        "file": "15-tab-14.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Partner on the Diaper Drive",
+        "href": "/#partner",
+        "focusIndicatorDetected": true,
+        "file": "16-tab-15.jpg"
+      },
+      {
+        "tag": "summary",
+        "name": "See what we're collecting",
+        "href": null,
+        "focusIndicatorDetected": true,
+        "file": "17-tab-16.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Volunteer at a haircut event",
+        "href": "/#partner",
+        "focusIndicatorDetected": true,
+        "file": "18-tab-17.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Play video: Free haircut and styles outreach program",
+        "href": "https://www.youtube.com/watch?v=Z5USx1xFF58",
+        "focusIndicatorDetected": true,
+        "file": "19-tab-18.jpg"
+      },
+      {
+        "tag": "button",
+        "name": "Sponsor a family",
+        "href": null,
+        "focusIndicatorDetected": true,
+        "file": "20-tab-19.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Email us to sponsor",
+        "href": "mailto:caringforacause2015@gmail.com?subject=Sponsor%20a%20family%20for%20the%20holidays",
+        "focusIndicatorDetected": true,
+        "file": "21-tab-20.jpg"
+      }
+    ]
+  }
+]

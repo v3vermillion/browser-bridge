@@ -1,0 +1,42 @@
+{
+  "formFactor": "desktop",
+  "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 69
+  },
+  "metrics": {
+    "LCP": "0.6 s",
+    "CLS": "0",
+    "TBT": "0 ms",
+    "FCP": "0.4 s",
+    "SpeedIndex": "0.4 s"
+  },
+  "failingAudits": [
+    {
+      "id": "lcp-lazy-loaded",
+      "title": "Largest Contentful Paint image was lazily loaded",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "is-crawlable",
+      "title": "Page is blocked from indexing",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "lcp-discovery-insight",
+      "title": "LCP request discovery",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree",
+      "score": 0,
+      "displayValue": null
+    }
+  ]
+}

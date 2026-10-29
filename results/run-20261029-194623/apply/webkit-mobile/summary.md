@@ -1,0 +1,19 @@
+## apply - webkit / mobile
+- URL: https://caring-for-a-cause.forgetraining.workers.dev/apply/
+- Status: ok, HTTP 200, ready in 2.9s
+- Viewport: 393x659 at 2x detail
+- Title: Apply for help | Caring for a Cause
+- Meta description: Apply for holiday meals and gifts, monthly diapers, school supplies, or a free haircut in Central Indiana. Anyone struggling right now can apply.
+- H1 count: 1; headings total: 6; page height: 2793px
+- Structured data blocks: 1; lang: en; og:image: yes
+- Images: 1 <img> + 0 large backgrounds; missing alt: 0, empty alt on large: 0, broken: 0, upscaled/blurry: 0, below retina: 0
+- Links: 28; go nowhere: 0, no accessible name: 1, generic text: 0, missing anchor targets: 0, HTTP errors: 0
+- Primary font families (by text volume): Atkinson Hyperlegible Next, Site Serif, Bricolage Grotesque Variable, Footer Sans, -webkit-standard
+- Text colors in use: 11; font sizes in use: 15; uppercase share of text: 2%
+- Forms: 1; fields: 45; without programmatic label: 0; labels pointing at missing ids: 0
+  - form 1: GET -> (none - handled by script or same page)
+- Accessibility (axe): 0 rule violations {}; 2 need manual review
+- Lighthouse: Lighthouse runs only in chromium variants.
+- Steps: 5 run, 0 failed
+- Network: 0 HTTP errors, 0 failed requests, 0 JS errors from the site
+- Files: full.jpg, tiles/tile-01.jpg, tiles/tile-02.jpg, tiles/tile-03.jpg, tiles/tile-04.jpg, tiles/tile-05.jpg, meta.json, text.md, page.html, links.json, images.json, styles.json, forms.json, a11y.json, aria.yaml, steps/01-menu-open.jpg, steps/02-tab-1.jpg, steps/03-tab-2.jpg, steps/04-tab-3.jpg, steps/05-tab-4.jpg, steps/06-tab-5.jpg, steps/07-tab-6.jpg, steps/08-tab-7.jpg, steps/09-tab-8.jpg, steps/10-tab-9.jpg, steps/11-tab-10.jpg, steps/12-tab-11.jpg, steps/13-tab-12.jpg, steps/14-tab-13.jpg, steps/15-tab-14.jpg, steps/16-tab-15.jpg, steps/17-tab-16.jpg, steps/18-tab-17.jpg, steps/19-tab-18.jpg, steps/20-tab-19.jpg, steps/21-tab-20.jpg, steps.json, lighthouse.json, network.json

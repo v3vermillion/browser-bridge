@@ -1,0 +1,66 @@
+{
+  "formFactor": "mobile",
+  "scores": {
+    "performance": 96,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 69
+  },
+  "metrics": {
+    "LCP": "2.8 s",
+    "CLS": "0",
+    "TBT": "20 ms",
+    "FCP": "1.2 s",
+    "SpeedIndex": "1.2 s"
+  },
+  "failingAudits": [
+    {
+      "id": "largest-contentful-paint-element",
+      "title": "Largest Contentful Paint element",
+      "score": 0,
+      "displayValue": "2,810 ms"
+    },
+    {
+      "id": "uses-responsive-images",
+      "title": "Properly size images",
+      "score": 0,
+      "displayValue": "Est savings of 155 KiB"
+    },
+    {
+      "id": "is-crawlable",
+      "title": "Page is blocked from indexing",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "forced-reflow-insight",
+      "title": "Forced reflow",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "image-delivery-insight",
+      "title": "Improve image delivery",
+      "score": 0,
+      "displayValue": "Est savings of 219 KiB"
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "dom-size",
+      "title": "Avoid an excessive DOM size",
+      "score": 0.5,
+      "displayValue": "878 elements"
+    },
+    {
+      "id": "largest-contentful-paint",
+      "title": "Largest Contentful Paint",
+      "score": 0.83,
+      "displayValue": "2.8 s"
+    }
+  ]
+}

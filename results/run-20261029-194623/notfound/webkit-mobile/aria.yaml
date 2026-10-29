@@ -1,0 +1,60 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "Caring for a Cause Supportive Services":
+    - /url: /
+    - img "Caring for a Cause Supportive Services"
+  - link "Donate":
+    - /url: /donate/
+  - button "Open menu"
+- main:
+  - text: Page not found
+  - heading "We can't find that page" [level=1]
+  - paragraph:
+    - text: The link may be old or mistyped. If you need help right now, call
+    - link "(317) 886-0724":
+      - /url: tel:+13178860724
+    - text: .
+  - paragraph:
+    - link "Help me":
+      - /url: /apply/
+    - link "Donate":
+      - /url: /donate/
+    - link "Back to home":
+      - /url: /
+- contentinfo:
+  - link "Caring for a Cause Supportive Services, home":
+    - /url: /
+  - link "Donate":
+    - /url: /donate/
+  - paragraph: Never give up.
+  - navigation "Explore":
+    - heading "Explore" [level=2]
+    - list:
+      - listitem:
+        - link "Help me":
+          - /url: /apply/
+      - listitem:
+        - link "About":
+          - /url: /#about
+      - listitem:
+        - link "Programs":
+          - /url: /#programs
+      - listitem:
+        - link "Get involved":
+          - /url: /#get-involved
+  - region "Connect with us":
+    - heading "Connect with us" [level=2]
+    - list:
+      - listitem:
+        - link "(317) 886-0724":
+          - /url: tel:+13178860724
+      - listitem:
+        - link "caringforacause2015@gmail.com":
+          - /url: mailto:caringforacause2015@gmail.com
+      - listitem:
+        - link "Facebook (opens in a new tab)":
+          - /url: https://www.facebook.com/caringforacausesupportiveservices
+  - paragraph: Caring for a Cause Supportive Services Inc.
+  - paragraph: Serving Central Indiana
+  - paragraph: © 2026

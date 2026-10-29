@@ -1,0 +1,102 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "Caring for a Cause Supportive Services":
+    - /url: /
+    - img "Caring for a Cause Supportive Services"
+  - navigation "Main":
+    - list:
+      - listitem:
+        - link "About":
+          - /url: /#about
+      - listitem:
+        - link "Programs":
+          - /url: /#programs
+      - listitem:
+        - link "Get involved":
+          - /url: /#get-involved
+      - listitem:
+        - link "Contact":
+          - /url: /#contact
+  - link "Donate":
+    - /url: /donate/
+- main:
+  - text: Donate
+  - heading "Give to families in Central Indiana" [level=1]
+  - paragraph: Your gift helps put holiday meals, gifts, diapers, and school supplies into local homes.
+  - region "Give once or every month":
+    - heading "Give once or every month" [level=2]
+    - group "How often":
+      - text: How often
+      - radiogroup:
+        - radio "Once" [checked]
+        - text: Once
+        - radio "Monthly"
+        - text: Monthly
+    - group "Amount":
+      - text: Amount
+      - radio "$25"
+      - text: $25
+      - radio "$50" [checked]
+      - text: $50
+      - radio "$100"
+      - text: $100
+      - radio "$250"
+      - text: $250 Other amount in dollars
+      - spinbutton "Other amount in dollars"
+    - paragraph: "Your gift: $50."
+    - link "Donate $50 by email":
+      - /url: mailto:caringforacause2015@gmail.com?subject=Donation%3A%20%2450&body=Hello%2C%0D%0A%0D%0AI'd%20like%20to%20make%20a%20one-time%20gift%20of%20%2450%20to%20Caring%20for%20a%20Cause.%20What's%20the%20best%20way%20to%20send%20it%3F%0D%0A%0D%0AThank%20you%2C%0D%0A
+    - paragraph: We don't take card payments on this site yet. This button opens an email to us with your gift written in, and we'll reply with the easiest way to send it.
+    - paragraph: Caring for a Cause Supportive Services Inc. is a 501(c)(3) nonprofit (EIN 47-4917287) helping families since 2015. Gifts are tax-deductible to the extent allowed by law.
+    - complementary "What your gift provides":
+      - heading "What your gift provides" [level=2]
+      - list:
+        - listitem:
+          - link "Holiday Meals Food boxes for local families.":
+            - /url: /#holiday-assistance
+        - listitem:
+          - link "Gifts Toys and clothes from a child's wish list.":
+            - /url: /#holiday-assistance
+        - listitem:
+          - link "Diapers A reliable supply, every month.":
+            - /url: /#diaper-drive
+        - listitem:
+          - link "School Supplies Care packages for the new school year.":
+            - /url: /#back-to-school
+- contentinfo:
+  - link "Caring for a Cause Supportive Services, home":
+    - /url: /
+  - link "Donate":
+    - /url: /donate/
+  - paragraph: Never give up.
+  - navigation "Explore":
+    - heading "Explore" [level=2]
+    - list:
+      - listitem:
+        - link "Help me":
+          - /url: /apply/
+      - listitem:
+        - link "About":
+          - /url: /#about
+      - listitem:
+        - link "Programs":
+          - /url: /#programs
+      - listitem:
+        - link "Get involved":
+          - /url: /#get-involved
+  - region "Connect with us":
+    - heading "Connect with us" [level=2]
+    - list:
+      - listitem:
+        - link "(317) 886-0724":
+          - /url: tel:+13178860724
+      - listitem:
+        - link "caringforacause2015@gmail.com":
+          - /url: mailto:caringforacause2015@gmail.com
+      - listitem:
+        - link "Facebook (opens in a new tab)":
+          - /url: https://www.facebook.com/caringforacausesupportiveservices
+  - paragraph: Caring for a Cause Supportive Services Inc.
+  - paragraph: Serving Central Indiana
+  - paragraph: © 2026

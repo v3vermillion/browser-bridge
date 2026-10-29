@@ -1,0 +1,606 @@
+{
+  "forms": [
+    {
+      "index": 0,
+      "id": null,
+      "name": null,
+      "method": "GET",
+      "action": "(none - handled by script or same page)",
+      "fields": [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "firstName",
+          "id": "firstName",
+          "required": true,
+          "placeholder": null,
+          "label": {
+            "method": "label[for]",
+            "text": "First name"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "lastName",
+          "id": "lastName",
+          "required": true,
+          "placeholder": null,
+          "label": {
+            "method": "label[for]",
+            "text": "Last name"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "tel",
+          "name": "phone",
+          "id": "phone",
+          "required": true,
+          "placeholder": null,
+          "label": {
+            "method": "label[for]",
+            "text": "Phone number"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "name": "email",
+          "id": "email",
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "label[for]",
+            "text": "Email (optional)"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "contactMethod",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Call"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "contactMethod",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Text"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "contactMethod",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Email"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "street",
+          "id": "street",
+          "required": true,
+          "placeholder": null,
+          "label": {
+            "method": "label[for]",
+            "text": "Street address"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "city",
+          "id": "city",
+          "required": true,
+          "placeholder": null,
+          "label": {
+            "method": "label[for]",
+            "text": "City"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "zip",
+          "id": "zip",
+          "required": true,
+          "placeholder": null,
+          "label": {
+            "method": "label[for]",
+            "text": "ZIP code"
+          },
+          "flags": []
+        },
+        {
+          "tag": "select",
+          "type": "select-one",
+          "name": "county",
+          "id": "county",
+          "required": true,
+          "placeholder": null,
+          "label": {
+            "method": "label[for]",
+            "text": "County"
+          },
+          "flags": []
+        },
+        {
+          "tag": "select",
+          "type": "select-one",
+          "name": "adults",
+          "id": "adults",
+          "required": true,
+          "placeholder": null,
+          "label": {
+            "method": "label[for]",
+            "text": "Adults in your household"
+          },
+          "flags": []
+        },
+        {
+          "tag": "select",
+          "type": "select-one",
+          "name": "childCount",
+          "id": "childCount",
+          "required": true,
+          "placeholder": null,
+          "label": {
+            "method": "label[for]",
+            "text": "Children in your household"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "need",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Holiday meals and giftsThanksgiving, Christmas, and Easter"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "holidays",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Thanksgiving"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "holidays",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Christmas"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "holidays",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Easter"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "need",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "DiapersA reliable monthly supply"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "diaperSizes",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Newborn"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "diaperSizes",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Size 1"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "diaperSizes",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Size 2"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "diaperSizes",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Size 3"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "diaperSizes",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Size 4"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "diaperSizes",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Size 5"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "diaperSizes",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Size 6"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "diaperSizes",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Pull-ups"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "need",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "School suppliesSupplies and hygiene items for students"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "grades",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Pre-K"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "grades",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "K"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "grades",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "1"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "grades",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "2"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "grades",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "3"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "grades",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "4"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "grades",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "5"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "grades",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "6"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "grades",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "7"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "grades",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "8"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "grades",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "9"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "grades",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "10"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "grades",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "11"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "grades",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "12"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "need",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Free haircut or styleCuts, styles, and face painting"
+          },
+          "flags": []
+        },
+        {
+          "tag": "textarea",
+          "type": "textarea",
+          "name": "notes",
+          "id": "notes",
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "label[for]",
+            "text": "Anything else we should know? (optional)"
+          },
+          "flags": []
+        },
+        {
+          "tag": "select",
+          "type": "select-one",
+          "name": "heard",
+          "id": "heard",
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "label[for]",
+            "text": "How did you hear about us? (optional)"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "consent",
+          "id": null,
+          "required": true,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "My answers are accurate, and Caring for a Cause may contact me about help."
+          },
+          "flags": []
+        }
+      ],
+      "radioGroups": [
+        {
+          "name": "contactMethod",
+          "count": 3,
+          "inFieldsetWithLegend": true
+        }
+      ]
+    }
+  ],
+  "orphanLabels": []
+}

@@ -1,0 +1,15 @@
+{
+  "failedRequests": [],
+  "httpErrors": [
+    {
+      "status": 404,
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/does-not-exist"
+    }
+  ],
+  "blockedWrites": [],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 0
+}

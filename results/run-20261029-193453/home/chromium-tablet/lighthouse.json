@@ -1,0 +1,168 @@
+{
+  "formFactor": "mobile",
+  "scores": {
+    "performance": 70,
+    "accessibility": 88,
+    "best-practices": 96,
+    "seo": 100
+  },
+  "metrics": {
+    "LCP": "19.7 s",
+    "CLS": "0.016",
+    "TBT": "30 ms",
+    "FCP": "1.9 s",
+    "SpeedIndex": "4.8 s"
+  },
+  "failingAudits": [
+    {
+      "id": "largest-contentful-paint",
+      "title": "Largest Contentful Paint",
+      "score": 0,
+      "displayValue": "19.7 s"
+    },
+    {
+      "id": "uses-rel-preconnect",
+      "title": "Preconnect to required origins",
+      "score": 0,
+      "displayValue": "Est savings of 160 ms"
+    },
+    {
+      "id": "largest-contentful-paint-element",
+      "title": "Largest Contentful Paint element",
+      "score": 0,
+      "displayValue": "19,730 ms"
+    },
+    {
+      "id": "color-contrast",
+      "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "frame-title",
+      "title": "`<frame>` or `<iframe>` elements do not have a title",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "html-has-lang",
+      "title": "`<html>` element does not have a `[lang]` attribute",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "offscreen-images",
+      "title": "Defer offscreen images",
+      "score": 0,
+      "displayValue": "Est savings of 373 KiB"
+    },
+    {
+      "id": "render-blocking-resources",
+      "title": "Eliminate render-blocking resources",
+      "score": 0,
+      "displayValue": "Est savings of 640 ms"
+    },
+    {
+      "id": "modern-image-formats",
+      "title": "Serve images in next-gen formats",
+      "score": 0,
+      "displayValue": "Est savings of 1,506 KiB"
+    },
+    {
+      "id": "uses-optimized-images",
+      "title": "Efficiently encode images",
+      "score": 0,
+      "displayValue": "Est savings of 555 KiB"
+    },
+    {
+      "id": "inspector-issues",
+      "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "font-display-insight",
+      "title": "Font display",
+      "score": 0,
+      "displayValue": "Est savings of 30 ms"
+    },
+    {
+      "id": "forced-reflow-insight",
+      "title": "Forced reflow",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "image-delivery-insight",
+      "title": "Improve image delivery",
+      "score": 0,
+      "displayValue": "Est savings of 1,384 KiB"
+    },
+    {
+      "id": "lcp-discovery-insight",
+      "title": "LCP request discovery",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "render-blocking-insight",
+      "title": "Render blocking requests",
+      "score": 0,
+      "displayValue": "Est savings of 640 ms"
+    },
+    {
+      "id": "interactive",
+      "title": "Time to Interactive",
+      "score": 0.02,
+      "displayValue": "19.9 s"
+    },
+    {
+      "id": "font-display",
+      "title": "Ensure text remains visible during webfont load",
+      "score": 0.5,
+      "displayValue": null
+    },
+    {
+      "id": "third-party-facades",
+      "title": "Some third-party resources can be lazy loaded with a facade",
+      "score": 0.5,
+      "displayValue": "1 facade alternative available"
+    },
+    {
+      "id": "unsized-images",
+      "title": "Image elements do not have explicit `width` and `height`",
+      "score": 0.5,
+      "displayValue": null
+    },
+    {
+      "id": "prioritize-lcp-image",
+      "title": "Preload Largest Contentful Paint image",
+      "score": 0.5,
+      "displayValue": null
+    },
+    {
+      "id": "uses-long-cache-ttl",
+      "title": "Serve static assets with an efficient cache policy",
+      "score": 0.5,
+      "displayValue": "2 resources found"
+    },
+    {
+      "id": "total-byte-weight",
+      "title": "Avoid enormous network payloads",
+      "score": 0.5,
+      "displayValue": "Total size was 3,603 KiB"
+    },
+    {
+      "id": "unminified-css",
+      "title": "Minify CSS",
+      "score": 0.5,
+      "displayValue": "Est savings of 2 KiB"
+    }
+  ]
+}

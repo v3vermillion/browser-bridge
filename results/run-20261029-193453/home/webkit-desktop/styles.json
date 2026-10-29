@@ -1,0 +1,197 @@
+{
+  "note": "weight = number of text characters rendered with that value",
+  "primaryFontFamilies": [
+    {
+      "value": "Cabin",
+      "weight": 2883
+    },
+    {
+      "value": "Lato",
+      "weight": 179
+    },
+    {
+      "value": "Arial",
+      "weight": 70
+    },
+    {
+      "value": "Font awesome 5 free solid 900",
+      "weight": 3
+    },
+    {
+      "value": "Font awesome 5 brands 400",
+      "weight": 3
+    }
+  ],
+  "fontStacks": [
+    {
+      "value": "Cabin, sans-serif",
+      "weight": 2883
+    },
+    {
+      "value": "Lato, sans-serif",
+      "weight": 179
+    },
+    {
+      "value": "Arial, Helvetica Neue, Helvetica, sans-serif",
+      "weight": 70
+    },
+    {
+      "value": "\"Font awesome 5 free solid 900\", sans-serif",
+      "weight": 3
+    },
+    {
+      "value": "\"Font awesome 5 brands 400\", sans-serif",
+      "weight": 3
+    }
+  ],
+  "fontSizes": [
+    {
+      "value": "18px",
+      "weight": 2354
+    },
+    {
+      "value": "14px",
+      "weight": 141
+    },
+    {
+      "value": "16px",
+      "weight": 139
+    },
+    {
+      "value": "36px",
+      "weight": 110
+    },
+    {
+      "value": "15px",
+      "weight": 88
+    },
+    {
+      "value": "13px",
+      "weight": 70
+    },
+    {
+      "value": "17px",
+      "weight": 55
+    },
+    {
+      "value": "21px",
+      "weight": 45
+    },
+    {
+      "value": "55px",
+      "weight": 41
+    },
+    {
+      "value": "51px",
+      "weight": 26
+    },
+    {
+      "value": "24px",
+      "weight": 25
+    },
+    {
+      "value": "32px",
+      "weight": 22
+    },
+    {
+      "value": "56px",
+      "weight": 16
+    },
+    {
+      "value": "57px",
+      "weight": 3
+    },
+    {
+      "value": "30px",
+      "weight": 3
+    }
+  ],
+  "fontWeights": [
+    {
+      "value": "400",
+      "weight": 2587
+    },
+    {
+      "value": "700",
+      "weight": 336
+    },
+    {
+      "value": "300",
+      "weight": 154
+    },
+    {
+      "value": "500",
+      "weight": 61
+    }
+  ],
+  "textColors": [
+    {
+      "value": "rgb(99, 103, 107)",
+      "weight": 1633
+    },
+    {
+      "value": "rgb(109, 125, 139)",
+      "weight": 668
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "weight": 380
+    },
+    {
+      "value": "rgb(45, 57, 63)",
+      "weight": 212
+    },
+    {
+      "value": "rgb(107, 107, 107)",
+      "weight": 161
+    },
+    {
+      "value": "rgb(26, 155, 137)",
+      "weight": 43
+    },
+    {
+      "value": "rgb(130, 130, 130)",
+      "weight": 22
+    },
+    {
+      "value": "rgb(51, 51, 51)",
+      "weight": 16
+    },
+    {
+      "value": "rgb(0, 84, 255)",
+      "weight": 1
+    },
+    {
+      "value": "rgb(255, 0, 0)",
+      "weight": 1
+    },
+    {
+      "value": "rgb(29, 161, 242)",
+      "weight": 1
+    }
+  ],
+  "backgroundColors": [
+    {
+      "value": "rgb(26, 155, 137)",
+      "weight": 6
+    },
+    {
+      "value": "rgb(255, 255, 255)",
+      "weight": 4
+    },
+    {
+      "value": "rgb(5, 78, 68)",
+      "weight": 1
+    }
+  ],
+  "loadedWebFonts": [
+    "Font awesome 5 brands 400 400 normal",
+    "Font awesome 5 free solid 900 400 normal",
+    "Cabin 400 normal",
+    "Cabin 500 normal",
+    "Cabin 700 normal",
+    "Lato 300 normal",
+    "Lato 700 normal"
+  ],
+  "uppercaseShare": 0.08
+}

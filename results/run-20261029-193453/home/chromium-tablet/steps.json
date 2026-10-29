@@ -1,0 +1,172 @@
+[
+  {
+    "index": 0,
+    "action": "scroll",
+    "ok": true
+  },
+  {
+    "index": 1,
+    "action": "click",
+    "ok": false,
+    "error": "locator.click: Timeout 3000ms exceeded.",
+    "note": "Optional step skipped."
+  },
+  {
+    "index": 2,
+    "action": "screenshot",
+    "ok": true,
+    "file": "01-menu-open.jpg"
+  },
+  {
+    "index": 3,
+    "action": "goto",
+    "ok": true
+  },
+  {
+    "index": 4,
+    "action": "tabWalk",
+    "ok": true,
+    "focus": [
+      {
+        "tag": "a",
+        "name": "home",
+        "href": "/",
+        "focusIndicatorDetected": true,
+        "file": "02-tab-1.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Home",
+        "href": "#",
+        "focusIndicatorDetected": true,
+        "file": "03-tab-2.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Programs",
+        "href": "#program-section",
+        "focusIndicatorDetected": true,
+        "file": "04-tab-3.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "About us",
+        "href": "#about-us",
+        "focusIndicatorDetected": true,
+        "file": "05-tab-4.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Gallery",
+        "href": "#image-and-gallery",
+        "focusIndicatorDetected": true,
+        "file": "06-tab-5.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Join us",
+        "href": "#Contact-form",
+        "focusIndicatorDetected": true,
+        "file": "07-tab-6.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Apply now",
+        "href": "#Contact-form",
+        "focusIndicatorDetected": true,
+        "file": "08-tab-7.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Apply now",
+        "href": "#Contact-form",
+        "focusIndicatorDetected": true,
+        "file": "09-tab-8.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Apply now",
+        "href": "#Contact-form",
+        "focusIndicatorDetected": true,
+        "file": "10-tab-9.jpg"
+      },
+      {
+        "tag": "a",
+        "name": "Apply now",
+        "href": "#Contact-form",
+        "focusIndicatorDetected": true,
+        "file": "11-tab-10.jpg"
+      },
+      {
+        "tag": "iframe",
+        "name": "",
+        "href": null,
+        "focusIndicatorDetected": false,
+        "file": "12-tab-11.jpg"
+      },
+      {
+        "tag": "iframe",
+        "name": "",
+        "href": null,
+        "focusIndicatorDetected": false,
+        "file": "13-tab-12.jpg"
+      },
+      {
+        "tag": "iframe",
+        "name": "",
+        "href": null,
+        "focusIndicatorDetected": false,
+        "file": "14-tab-13.jpg"
+      },
+      {
+        "tag": "iframe",
+        "name": "",
+        "href": null,
+        "focusIndicatorDetected": false,
+        "file": "15-tab-14.jpg"
+      },
+      {
+        "tag": "iframe",
+        "name": "",
+        "href": null,
+        "focusIndicatorDetected": false,
+        "file": "16-tab-15.jpg"
+      },
+      {
+        "tag": "iframe",
+        "name": "",
+        "href": null,
+        "focusIndicatorDetected": false,
+        "file": "17-tab-16.jpg"
+      },
+      {
+        "tag": "iframe",
+        "name": "",
+        "href": null,
+        "focusIndicatorDetected": false,
+        "file": "18-tab-17.jpg"
+      },
+      {
+        "tag": "input",
+        "name": "Full-Name",
+        "href": null,
+        "focusIndicatorDetected": false,
+        "file": "19-tab-18.jpg"
+      },
+      {
+        "tag": "input",
+        "name": "Email",
+        "href": null,
+        "focusIndicatorDetected": false,
+        "file": "20-tab-19.jpg"
+      },
+      {
+        "tag": "input",
+        "name": "Phone-number",
+        "href": null,
+        "focusIndicatorDetected": false,
+        "file": "21-tab-20.jpg"
+      }
+    ]
+  }
+]

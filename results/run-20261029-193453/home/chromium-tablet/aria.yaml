@@ -1,0 +1,103 @@
+- banner:
+  - link "home":
+    - /url: /
+  - navigation:
+    - link "Home":
+      - /url: "#"
+    - link "Programs":
+      - /url: "#program-section"
+    - link "About us":
+      - /url: "#about-us"
+    - link "Gallery":
+      - /url: "#image-and-gallery"
+- heading "TOGETHER WE CAN." [level=1]
+- paragraph: Giving back through life-changing experiences
+- link "Join us":
+  - /url: "#Contact-form"
+- heading "OUTREACH PROGRAMS" [level=1]
+- heading "DIAPER DRIVE INITIATIVE PROGRAM" [level=1]
+- paragraph: "Our diaper pantry program is entitled, “Diaper Drive Initiative Program.” Our Diaper Drive Initiative program is committed to connecting those in need with a reliable supply of diapers and other needed resources. We provide diapers monthly as part of our on-going services and programs. We also provide partnering organizations information as a resource for the family in need. If you would like to learn more about becoming a partner, please contact us. Email: Caringforacause2015@gmail.com"
+- link "Apply now":
+  - /url: "#Contact-form"
+- heading "HOLIDAY ASSISTANCE OUTREACH PROGRAMS" [level=1]
+- paragraph: We work yearly to gain sponsors and donations for low-income families in need. If you are interested in sponsoring families for one or all the programs, please feel free to contact us. During the holiday season, low-income families can get free toys, clothes, gift cards, meals, or present options from the families wish-list. We are in support of households with children, senior citizens, however anyone that is currently struggling can apply for assistance.
+- link "Apply now":
+  - /url: "#Contact-form"
+- heading "FREE HAIR CUT & STYLES" [level=1]
+- paragraph: Our free haircut and style program aims to reach homeless and low-income disadvantaged families in need. Our goal is to build a community of skilled hairdresser volunteers who are open and willing to give their time free of charge to give haircuts, styles, make-up and face-painting to homeless and low-income families in need. Homeless individuals and low-income families have many challenges to face, one of them often being low-self-esteem.
+- link "Apply now":
+  - /url: "#Contact-form"
+- heading "OPERATION CARE PACKAGE" [level=1]
+- paragraph: We are collecting toiletry and school items to give to girls and boys in need within the community. Please feel free to donate school supplies and hygiene products for the children and adult in need. Here is a list of supplies that we need.
+- link "Apply now":
+  - /url: "#Contact-form"
+- heading "ABOUT US" [level=2]
+- text: 
+- heading "HISTORY" [level=2]
+- text: Seeing a need for energetic, nonprofit work in this area, we formed our organization to provide sensible solutions. We've consistently grown since then, all thanks to the helping hands of this amazing community! 
+- heading "MISSION" [level=2]
+- text: We are dedicated to creating and managing programs that tangibly support and enhance, the physical and emotional well being of financially disadvantaged families in Central Indiana who are facing socioeconomic hardship. 
+- heading "OUR TEAM" [level=2]
+- text: We have amazing part-time volunteers that are committed to helping others. We are always looking for more help. Think you would be a good fit? Get in touch for more information!
+- heading "IMAGES & GALLERY" [level=1]
+- iframe
+- heading "•ENROLL •DONATE• VOLUNTEER" [level=2]
+- text: Name
+- textbox "Name":
+  - /placeholder: Enter full name
+- text: Email Address
+- textbox "Enter email"
+- text: Phone number
+- textbox "Phone number":
+  - /placeholder: Enter phone number
+- text: "I want to:"
+- radio "Enroll"
+- text: Enroll
+- radio "Donate"
+- text: Donate
+- radio "Volunteer"
+- text: "Volunteer Please choose a program:"
+- checkbox "Operation care package"
+- text: Operation care package
+- checkbox "Free Bike Program"
+- text: Free Bike Program
+- checkbox "Diaper Drive Initiative Program"
+- text: Diaper Drive Initiative Program
+- checkbox "Free Hair Cut and Styles"
+- text: Free Hair Cut and Styles
+- checkbox "Holiday Assistance Program"
+- text: Holiday Assistance Program Comments
+- textbox "Please let us know if you would like to enroll, donate or volunteer"
+- paragraph: "To Donate using Paypal :"
+- paragraph: caring4acause2015@yahoo.com
+- paragraph: To Purchase items on Amazon, use this
+- link "use this link":
+  - /url: https://smile.amazon.com/ch/47-4917287
+- button "Submit"
+- text: Supporting and Advocating for families in need!
+- heading "NAVIGATION" [level=3]
+- link "Home":
+  - /url: https://webflow.com/design/caring-for-a-cause
+- link "Programs":
+  - /url: https://webflow.com/design/caring-for-a-cause
+- link "About us":
+  - /url: https://webflow.com/design/caring-for-a-cause
+- link "Gallery":
+  - /url: "#"
+- link "How to donate":
+  - /url: https://webflow.com/design/caring-for-a-cause
+- heading "CONTACT US" [level=3]
+- link "Email":
+  - /url: mailto:Caringforacause2015@gmail.com?subject=You%20have%20got%20mail.
+- link "317-886-0724":
+  - /url: "#"
+- link "2424 North Meridian street, Suite B Indianapolis, IN":
+  - /url: "#"
+- heading "MEDIA" [level=3]
+- link "":
+  - /url: https://www.facebook.com/caringforacausesupportiveservices/about/?ref=page_internal
+- link "":
+  - /url: https://www.youtube.com/channel/UCgGR2vXOZ4SQ9dBitTx_PDQ
+- link "":
+  - /url: https://twitter.com/CauseCaring
+- text: COPYRIGHT © 2021 CARING4ACAUSE SUPPORTIVESERVICES | All rights Reserved

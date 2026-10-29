@@ -1,0 +1,1755 @@
+{
+  "label": "run-20261029-193453",
+  "createdAt": "2026-10-29T19:35:44.772Z",
+  "engineVersion": "1.0.0",
+  "status": "ok",
+  "variants": [
+    {
+      "target": "home",
+      "url": "https://caringforacauseindy.netlify.app/",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "home/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-29T19:35:45.365Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.netlify.app/",
+      "loadSeconds": 5.2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 10,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "desktop",
+        "scores": {
+          "performance": 85,
+          "accessibility": 87,
+          "best-practices": 96,
+          "seo": 100
+        },
+        "metrics": {
+          "LCP": "2.7 s",
+          "CLS": "0.006",
+          "TBT": "0 ms",
+          "FCP": "0.6 s",
+          "SpeedIndex": "0.8 s"
+        },
+        "failingAudits": [
+          {
+            "id": "uses-rel-preconnect",
+            "title": "Preconnect to required origins",
+            "score": 0,
+            "displayValue": "Est savings of 80 ms"
+          },
+          {
+            "id": "largest-contentful-paint-element",
+            "title": "Largest Contentful Paint element",
+            "score": 0,
+            "displayValue": "2,740 ms"
+          },
+          {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "frame-title",
+            "title": "`<frame>` or `<iframe>` elements do not have a title",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "html-has-lang",
+            "title": "`<html>` element does not have a `[lang]` attribute",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "modern-image-formats",
+            "title": "Serve images in next-gen formats",
+            "score": 0,
+            "displayValue": "Est savings of 1,064 KiB"
+          },
+          {
+            "id": "uses-responsive-images",
+            "title": "Properly size images",
+            "score": 0,
+            "displayValue": "Est savings of 149 KiB"
+          },
+          {
+            "id": "inspector-issues",
+            "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "font-display-insight",
+            "title": "Font display",
+            "score": 0,
+            "displayValue": "Est savings of 30 ms"
+          },
+          {
+            "id": "image-delivery-insight",
+            "title": "Improve image delivery",
+            "score": 0,
+            "displayValue": "Est savings of 886 KiB"
+          },
+          {
+            "id": "lcp-discovery-insight",
+            "title": "LCP request discovery",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "largest-contentful-paint",
+            "title": "Largest Contentful Paint",
+            "score": 0.4,
+            "displayValue": "2.7 s"
+          },
+          {
+            "id": "font-display",
+            "title": "Ensure text remains visible during webfont load",
+            "score": 0.5,
+            "displayValue": null
+          },
+          {
+            "id": "third-party-facades",
+            "title": "Some third-party resources can be lazy loaded with a facade",
+            "score": 0.5,
+            "displayValue": "1 facade alternative available"
+          },
+          {
+            "id": "unsized-images",
+            "title": "Image elements do not have explicit `width` and `height`",
+            "score": 0.5,
+            "displayValue": null
+          },
+          {
+            "id": "prioritize-lcp-image",
+            "title": "Preload Largest Contentful Paint image",
+            "score": 0.5,
+            "displayValue": null
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "title": "Serve static assets with an efficient cache policy",
+            "score": 0.5,
+            "displayValue": "2 resources found"
+          },
+          {
+            "id": "total-byte-weight",
+            "title": "Avoid enormous network payloads",
+            "score": 0.5,
+            "displayValue": "Total size was 3,181 KiB"
+          },
+          {
+            "id": "render-blocking-resources",
+            "title": "Eliminate render-blocking resources",
+            "score": 0.5,
+            "displayValue": "Est savings of 0 ms"
+          },
+          {
+            "id": "unminified-css",
+            "title": "Minify CSS",
+            "score": 0.5,
+            "displayValue": "Est savings of 2 KiB"
+          },
+          {
+            "id": "uses-optimized-images",
+            "title": "Efficiently encode images",
+            "score": 0.5,
+            "displayValue": "Est savings of 132 KiB"
+          },
+          {
+            "id": "cache-insight",
+            "title": "Use efficient cache lifetimes",
+            "score": 0.5,
+            "displayValue": "Est savings of 43 KiB"
+          },
+          {
+            "id": "render-blocking-insight",
+            "title": "Render blocking requests",
+            "score": 0.5,
+            "displayValue": null
+          },
+          {
+            "id": "interactive",
+            "title": "Time to Interactive",
+            "score": 0.85,
+            "displayValue": "2.7 s"
+          }
+        ]
+      },
+      "finishedAt": "2026-10-29T19:36:52.131Z",
+      "files": [
+        {
+          "path": "home/chromium-desktop/full.jpg",
+          "bytes": 2482992
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-01.jpg",
+          "bytes": 304707
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-02.jpg",
+          "bytes": 258594
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-03.jpg",
+          "bytes": 321908
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-04.jpg",
+          "bytes": 200644
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-05.jpg",
+          "bytes": 174710
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-06.jpg",
+          "bytes": 247215
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-07.jpg",
+          "bytes": 517589
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-08.jpg",
+          "bytes": 267831
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-09.jpg",
+          "bytes": 123051
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-10.jpg",
+          "bytes": 47806
+        },
+        {
+          "path": "home/chromium-desktop/meta.json",
+          "bytes": 2240
+        },
+        {
+          "path": "home/chromium-desktop/text.md",
+          "bytes": 3340
+        },
+        {
+          "path": "home/chromium-desktop/page.html",
+          "bytes": 21008
+        },
+        {
+          "path": "home/chromium-desktop/links.json",
+          "bytes": 7231
+        },
+        {
+          "path": "home/chromium-desktop/images.json",
+          "bytes": 9632
+        },
+        {
+          "path": "home/chromium-desktop/styles.json",
+          "bytes": 3224
+        },
+        {
+          "path": "home/chromium-desktop/forms.json",
+          "bytes": 4788
+        },
+        {
+          "path": "home/chromium-desktop/a11y.json",
+          "bytes": 8962
+        },
+        {
+          "path": "home/chromium-desktop/aria.yaml",
+          "bytes": 5430
+        },
+        {
+          "path": "home/chromium-desktop/steps/01-menu-open.jpg",
+          "bytes": 304707
+        },
+        {
+          "path": "home/chromium-desktop/steps/02-tab-1.jpg",
+          "bytes": 305959
+        },
+        {
+          "path": "home/chromium-desktop/steps/03-tab-2.jpg",
+          "bytes": 306208
+        },
+        {
+          "path": "home/chromium-desktop/steps/04-tab-3.jpg",
+          "bytes": 306262
+        },
+        {
+          "path": "home/chromium-desktop/steps/05-tab-4.jpg",
+          "bytes": 306249
+        },
+        {
+          "path": "home/chromium-desktop/steps/06-tab-5.jpg",
+          "bytes": 306087
+        },
+        {
+          "path": "home/chromium-desktop/steps/07-tab-6.jpg",
+          "bytes": 306364
+        },
+        {
+          "path": "home/chromium-desktop/steps/08-tab-7.jpg",
+          "bytes": 327680
+        },
+        {
+          "path": "home/chromium-desktop/steps/09-tab-8.jpg",
+          "bytes": 309226
+        },
+        {
+          "path": "home/chromium-desktop/steps/10-tab-9.jpg",
+          "bytes": 275202
+        },
+        {
+          "path": "home/chromium-desktop/steps/11-tab-10.jpg",
+          "bytes": 188262
+        },
+        {
+          "path": "home/chromium-desktop/steps/12-tab-11.jpg",
+          "bytes": 187719
+        },
+        {
+          "path": "home/chromium-desktop/steps/13-tab-12.jpg",
+          "bytes": 187719
+        },
+        {
+          "path": "home/chromium-desktop/steps/14-tab-13.jpg",
+          "bytes": 187719
+        },
+        {
+          "path": "home/chromium-desktop/steps/15-tab-14.jpg",
+          "bytes": 187719
+        },
+        {
+          "path": "home/chromium-desktop/steps/16-tab-15.jpg",
+          "bytes": 187719
+        },
+        {
+          "path": "home/chromium-desktop/steps/17-tab-16.jpg",
+          "bytes": 187719
+        },
+        {
+          "path": "home/chromium-desktop/steps/18-tab-17.jpg",
+          "bytes": 187719
+        },
+        {
+          "path": "home/chromium-desktop/steps/19-tab-18.jpg",
+          "bytes": 144047
+        },
+        {
+          "path": "home/chromium-desktop/steps/20-tab-19.jpg",
+          "bytes": 144087
+        },
+        {
+          "path": "home/chromium-desktop/steps/21-tab-20.jpg",
+          "bytes": 144046
+        },
+        {
+          "path": "home/chromium-desktop/steps.json",
+          "bytes": 3730
+        },
+        {
+          "path": "home/chromium-desktop/lighthouse.json",
+          "bytes": 4252
+        },
+        {
+          "path": "home/chromium-desktop/network.json",
+          "bytes": 3368
+        },
+        {
+          "path": "home/chromium-desktop/summary.md",
+          "bytes": 2271
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caringforacauseindy.netlify.app/",
+      "browser": "chromium",
+      "device": "tablet",
+      "dir": "home/chromium-tablet",
+      "status": "ok",
+      "startedAt": "2026-10-29T19:36:52.138Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.netlify.app/",
+      "loadSeconds": 3.8,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "tiles": {
+        "count": 8,
+        "tileHeight": 1024,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "mobile",
+        "scores": {
+          "performance": 70,
+          "accessibility": 88,
+          "best-practices": 96,
+          "seo": 100
+        },
+        "metrics": {
+          "LCP": "19.7 s",
+          "CLS": "0.016",
+          "TBT": "30 ms",
+          "FCP": "1.9 s",
+          "SpeedIndex": "4.8 s"
+        },
+        "failingAudits": [
+          {
+            "id": "largest-contentful-paint",
+            "title": "Largest Contentful Paint",
+            "score": 0,
+            "displayValue": "19.7 s"
+          },
+          {
+            "id": "uses-rel-preconnect",
+            "title": "Preconnect to required origins",
+            "score": 0,
+            "displayValue": "Est savings of 160 ms"
+          },
+          {
+            "id": "largest-contentful-paint-element",
+            "title": "Largest Contentful Paint element",
+            "score": 0,
+            "displayValue": "19,730 ms"
+          },
+          {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "frame-title",
+            "title": "`<frame>` or `<iframe>` elements do not have a title",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "html-has-lang",
+            "title": "`<html>` element does not have a `[lang]` attribute",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "offscreen-images",
+            "title": "Defer offscreen images",
+            "score": 0,
+            "displayValue": "Est savings of 373 KiB"
+          },
+          {
+            "id": "render-blocking-resources",
+            "title": "Eliminate render-blocking resources",
+            "score": 0,
+            "displayValue": "Est savings of 640 ms"
+          },
+          {
+            "id": "modern-image-formats",
+            "title": "Serve images in next-gen formats",
+            "score": 0,
+            "displayValue": "Est savings of 1,506 KiB"
+          },
+          {
+            "id": "uses-optimized-images",
+            "title": "Efficiently encode images",
+            "score": 0,
+            "displayValue": "Est savings of 555 KiB"
+          },
+          {
+            "id": "inspector-issues",
+            "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "font-display-insight",
+            "title": "Font display",
+            "score": 0,
+            "displayValue": "Est savings of 30 ms"
+          },
+          {
+            "id": "forced-reflow-insight",
+            "title": "Forced reflow",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "image-delivery-insight",
+            "title": "Improve image delivery",
+            "score": 0,
+            "displayValue": "Est savings of 1,384 KiB"
+          },
+          {
+            "id": "lcp-discovery-insight",
+            "title": "LCP request discovery",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "render-blocking-insight",
+            "title": "Render blocking requests",
+            "score": 0,
+            "displayValue": "Est savings of 640 ms"
+          },
+          {
+            "id": "interactive",
+            "title": "Time to Interactive",
+            "score": 0.02,
+            "displayValue": "19.9 s"
+          },
+          {
+            "id": "font-display",
+            "title": "Ensure text remains visible during webfont load",
+            "score": 0.5,
+            "displayValue": null
+          },
+          {
+            "id": "third-party-facades",
+            "title": "Some third-party resources can be lazy loaded with a facade",
+            "score": 0.5,
+            "displayValue": "1 facade alternative available"
+          },
+          {
+            "id": "unsized-images",
+            "title": "Image elements do not have explicit `width` and `height`",
+            "score": 0.5,
+            "displayValue": null
+          },
+          {
+            "id": "prioritize-lcp-image",
+            "title": "Preload Largest Contentful Paint image",
+            "score": 0.5,
+            "displayValue": null
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "title": "Serve static assets with an efficient cache policy",
+            "score": 0.5,
+            "displayValue": "2 resources found"
+          },
+          {
+            "id": "total-byte-weight",
+            "title": "Avoid enormous network payloads",
+            "score": 0.5,
+            "displayValue": "Total size was 3,603 KiB"
+          },
+          {
+            "id": "unminified-css",
+            "title": "Minify CSS",
+            "score": 0.5,
+            "displayValue": "Est savings of 2 KiB"
+          }
+        ]
+      },
+      "finishedAt": "2026-10-29T19:37:23.967Z",
+      "files": [
+        {
+          "path": "home/chromium-tablet/full.jpg",
+          "bytes": 1352343
+        },
+        {
+          "path": "home/chromium-tablet/tiles/tile-01.jpg",
+          "bytes": 209566
+        },
+        {
+          "path": "home/chromium-tablet/tiles/tile-02.jpg",
+          "bytes": 212467
+        },
+        {
+          "path": "home/chromium-tablet/tiles/tile-03.jpg",
+          "bytes": 176918
+        },
+        {
+          "path": "home/chromium-tablet/tiles/tile-04.jpg",
+          "bytes": 135901
+        },
+        {
+          "path": "home/chromium-tablet/tiles/tile-05.jpg",
+          "bytes": 232198
+        },
+        {
+          "path": "home/chromium-tablet/tiles/tile-06.jpg",
+          "bytes": 231067
+        },
+        {
+          "path": "home/chromium-tablet/tiles/tile-07.jpg",
+          "bytes": 133495
+        },
+        {
+          "path": "home/chromium-tablet/tiles/tile-08.jpg",
+          "bytes": 15007
+        },
+        {
+          "path": "home/chromium-tablet/meta.json",
+          "bytes": 2240
+        },
+        {
+          "path": "home/chromium-tablet/text.md",
+          "bytes": 3339
+        },
+        {
+          "path": "home/chromium-tablet/page.html",
+          "bytes": 21020
+        },
+        {
+          "path": "home/chromium-tablet/links.json",
+          "bytes": 7231
+        },
+        {
+          "path": "home/chromium-tablet/images.json",
+          "bytes": 9150
+        },
+        {
+          "path": "home/chromium-tablet/styles.json",
+          "bytes": 3292
+        },
+        {
+          "path": "home/chromium-tablet/forms.json",
+          "bytes": 4788
+        },
+        {
+          "path": "home/chromium-tablet/a11y.json",
+          "bytes": 8517
+        },
+        {
+          "path": "home/chromium-tablet/aria.yaml",
+          "bytes": 5430
+        },
+        {
+          "path": "home/chromium-tablet/steps/01-menu-open.jpg",
+          "bytes": 209566
+        },
+        {
+          "path": "home/chromium-tablet/steps/02-tab-1.jpg",
+          "bytes": 210532
+        },
+        {
+          "path": "home/chromium-tablet/steps/03-tab-2.jpg",
+          "bytes": 210801
+        },
+        {
+          "path": "home/chromium-tablet/steps/04-tab-3.jpg",
+          "bytes": 211139
+        },
+        {
+          "path": "home/chromium-tablet/steps/05-tab-4.jpg",
+          "bytes": 211117
+        },
+        {
+          "path": "home/chromium-tablet/steps/06-tab-5.jpg",
+          "bytes": 210785
+        },
+        {
+          "path": "home/chromium-tablet/steps/07-tab-6.jpg",
+          "bytes": 210897
+        },
+        {
+          "path": "home/chromium-tablet/steps/08-tab-7.jpg",
+          "bytes": 226062
+        },
+        {
+          "path": "home/chromium-tablet/steps/09-tab-8.jpg",
+          "bytes": 199105
+        },
+        {
+          "path": "home/chromium-tablet/steps/10-tab-9.jpg",
+          "bytes": 180082
+        },
+        {
+          "path": "home/chromium-tablet/steps/11-tab-10.jpg",
+          "bytes": 180060
+        },
+        {
+          "path": "home/chromium-tablet/steps/12-tab-11.jpg",
+          "bytes": 178765
+        },
+        {
+          "path": "home/chromium-tablet/steps/13-tab-12.jpg",
+          "bytes": 178765
+        },
+        {
+          "path": "home/chromium-tablet/steps/14-tab-13.jpg",
+          "bytes": 178765
+        },
+        {
+          "path": "home/chromium-tablet/steps/15-tab-14.jpg",
+          "bytes": 178765
+        },
+        {
+          "path": "home/chromium-tablet/steps/16-tab-15.jpg",
+          "bytes": 178765
+        },
+        {
+          "path": "home/chromium-tablet/steps/17-tab-16.jpg",
+          "bytes": 178765
+        },
+        {
+          "path": "home/chromium-tablet/steps/18-tab-17.jpg",
+          "bytes": 178765
+        },
+        {
+          "path": "home/chromium-tablet/steps/19-tab-18.jpg",
+          "bytes": 189877
+        },
+        {
+          "path": "home/chromium-tablet/steps/20-tab-19.jpg",
+          "bytes": 189846
+        },
+        {
+          "path": "home/chromium-tablet/steps/21-tab-20.jpg",
+          "bytes": 189894
+        },
+        {
+          "path": "home/chromium-tablet/steps.json",
+          "bytes": 3730
+        },
+        {
+          "path": "home/chromium-tablet/lighthouse.json",
+          "bytes": 4239
+        },
+        {
+          "path": "home/chromium-tablet/network.json",
+          "bytes": 2092
+        },
+        {
+          "path": "home/chromium-tablet/summary.md",
+          "bytes": 2229
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caringforacauseindy.netlify.app/",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "home/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-29T19:37:23.970Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.netlify.app/",
+      "loadSeconds": 6,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 21,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Already measured for mobile in another variant."
+      },
+      "finishedAt": "2026-10-29T19:37:44.006Z",
+      "files": [
+        {
+          "path": "home/chromium-mobile/full.jpg",
+          "bytes": 1908091
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-01.jpg",
+          "bytes": 92036
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-02.jpg",
+          "bytes": 109566
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-03.jpg",
+          "bytes": 77668
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-04.jpg",
+          "bytes": 113490
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-05.jpg",
+          "bytes": 78200
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-06.jpg",
+          "bytes": 94818
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-07.jpg",
+          "bytes": 73804
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-08.jpg",
+          "bytes": 74504
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-09.jpg",
+          "bytes": 53605
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-10.jpg",
+          "bytes": 90671
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-11.jpg",
+          "bytes": 156845
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-12.jpg",
+          "bytes": 106537
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-13.jpg",
+          "bytes": 160225
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-14.jpg",
+          "bytes": 130796
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-15.jpg",
+          "bytes": 85435
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-16.jpg",
+          "bytes": 121194
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-17.jpg",
+          "bytes": 127761
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-18.jpg",
+          "bytes": 51298
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-19.jpg",
+          "bytes": 51665
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-20.jpg",
+          "bytes": 42982
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-21.jpg",
+          "bytes": 15148
+        },
+        {
+          "path": "home/chromium-mobile/meta.json",
+          "bytes": 2241
+        },
+        {
+          "path": "home/chromium-mobile/text.md",
+          "bytes": 3308
+        },
+        {
+          "path": "home/chromium-mobile/page.html",
+          "bytes": 21020
+        },
+        {
+          "path": "home/chromium-mobile/links.json",
+          "bytes": 7235
+        },
+        {
+          "path": "home/chromium-mobile/images.json",
+          "bytes": 9657
+        },
+        {
+          "path": "home/chromium-mobile/styles.json",
+          "bytes": 3686
+        },
+        {
+          "path": "home/chromium-mobile/forms.json",
+          "bytes": 4788
+        },
+        {
+          "path": "home/chromium-mobile/a11y.json",
+          "bytes": 8672
+        },
+        {
+          "path": "home/chromium-mobile/aria.yaml",
+          "bytes": 5238
+        },
+        {
+          "path": "home/chromium-mobile/steps/01-menu-open.jpg",
+          "bytes": 73012
+        },
+        {
+          "path": "home/chromium-mobile/steps/02-tab-1.jpg",
+          "bytes": 93298
+        },
+        {
+          "path": "home/chromium-mobile/steps/03-tab-2.jpg",
+          "bytes": 92036
+        },
+        {
+          "path": "home/chromium-mobile/steps/04-tab-3.jpg",
+          "bytes": 93003
+        },
+        {
+          "path": "home/chromium-mobile/steps/05-tab-4.jpg",
+          "bytes": 82713
+        },
+        {
+          "path": "home/chromium-mobile/steps/06-tab-5.jpg",
+          "bytes": 91974
+        },
+        {
+          "path": "home/chromium-mobile/steps/07-tab-6.jpg",
+          "bytes": 94044
+        },
+        {
+          "path": "home/chromium-mobile/steps/08-tab-7.jpg",
+          "bytes": 62594
+        },
+        {
+          "path": "home/chromium-mobile/steps/09-tab-8.jpg",
+          "bytes": 61596
+        },
+        {
+          "path": "home/chromium-mobile/steps/10-tab-9.jpg",
+          "bytes": 61596
+        },
+        {
+          "path": "home/chromium-mobile/steps/11-tab-10.jpg",
+          "bytes": 61596
+        },
+        {
+          "path": "home/chromium-mobile/steps/12-tab-11.jpg",
+          "bytes": 61596
+        },
+        {
+          "path": "home/chromium-mobile/steps/13-tab-12.jpg",
+          "bytes": 61596
+        },
+        {
+          "path": "home/chromium-mobile/steps/14-tab-13.jpg",
+          "bytes": 61596
+        },
+        {
+          "path": "home/chromium-mobile/steps/15-tab-14.jpg",
+          "bytes": 61596
+        },
+        {
+          "path": "home/chromium-mobile/steps/16-tab-15.jpg",
+          "bytes": 37612
+        },
+        {
+          "path": "home/chromium-mobile/steps/17-tab-16.jpg",
+          "bytes": 37511
+        },
+        {
+          "path": "home/chromium-mobile/steps/18-tab-17.jpg",
+          "bytes": 37606
+        },
+        {
+          "path": "home/chromium-mobile/steps/19-tab-18.jpg",
+          "bytes": 36360
+        },
+        {
+          "path": "home/chromium-mobile/steps/20-tab-19.jpg",
+          "bytes": 52766
+        },
+        {
+          "path": "home/chromium-mobile/steps/21-tab-20.jpg",
+          "bytes": 52771
+        },
+        {
+          "path": "home/chromium-mobile/steps.json",
+          "bytes": 3601
+        },
+        {
+          "path": "home/chromium-mobile/lighthouse.json",
+          "bytes": 66
+        },
+        {
+          "path": "home/chromium-mobile/network.json",
+          "bytes": 2181
+        },
+        {
+          "path": "home/chromium-mobile/summary.md",
+          "bytes": 2453
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caringforacauseindy.netlify.app/",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "home/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-29T19:37:44.473Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.netlify.app/",
+      "loadSeconds": 4.8,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 10,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-29T19:38:06.220Z",
+      "files": [
+        {
+          "path": "home/webkit-desktop/full.jpg",
+          "bytes": 2557712
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-01.jpg",
+          "bytes": 302917
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-02.jpg",
+          "bytes": 256292
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-03.jpg",
+          "bytes": 315325
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-04.jpg",
+          "bytes": 199996
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-05.jpg",
+          "bytes": 173859
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-06.jpg",
+          "bytes": 328650
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-07.jpg",
+          "bytes": 518859
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-08.jpg",
+          "bytes": 267145
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-09.jpg",
+          "bytes": 121773
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-10.jpg",
+          "bytes": 47501
+        },
+        {
+          "path": "home/webkit-desktop/meta.json",
+          "bytes": 2240
+        },
+        {
+          "path": "home/webkit-desktop/text.md",
+          "bytes": 3342
+        },
+        {
+          "path": "home/webkit-desktop/page.html",
+          "bytes": 21008
+        },
+        {
+          "path": "home/webkit-desktop/links.json",
+          "bytes": 7231
+        },
+        {
+          "path": "home/webkit-desktop/images.json",
+          "bytes": 9632
+        },
+        {
+          "path": "home/webkit-desktop/styles.json",
+          "bytes": 3220
+        },
+        {
+          "path": "home/webkit-desktop/forms.json",
+          "bytes": 4788
+        },
+        {
+          "path": "home/webkit-desktop/a11y.json",
+          "bytes": 8962
+        },
+        {
+          "path": "home/webkit-desktop/aria.yaml",
+          "bytes": 5430
+        },
+        {
+          "path": "home/webkit-desktop/steps/01-menu-open.jpg",
+          "bytes": 302958
+        },
+        {
+          "path": "home/webkit-desktop/steps/02-tab-1.jpg",
+          "bytes": 304058
+        },
+        {
+          "path": "home/webkit-desktop/steps/03-tab-2.jpg",
+          "bytes": 304190
+        },
+        {
+          "path": "home/webkit-desktop/steps/04-tab-3.jpg",
+          "bytes": 304520
+        },
+        {
+          "path": "home/webkit-desktop/steps/05-tab-4.jpg",
+          "bytes": 304397
+        },
+        {
+          "path": "home/webkit-desktop/steps/06-tab-5.jpg",
+          "bytes": 304049
+        },
+        {
+          "path": "home/webkit-desktop/steps/07-tab-6.jpg",
+          "bytes": 302822
+        },
+        {
+          "path": "home/webkit-desktop/steps/08-tab-7.jpg",
+          "bytes": 323219
+        },
+        {
+          "path": "home/webkit-desktop/steps/09-tab-8.jpg",
+          "bytes": 301774
+        },
+        {
+          "path": "home/webkit-desktop/steps/10-tab-9.jpg",
+          "bytes": 272105
+        },
+        {
+          "path": "home/webkit-desktop/steps/11-tab-10.jpg",
+          "bytes": 187850
+        },
+        {
+          "path": "home/webkit-desktop/steps/12-tab-11.jpg",
+          "bytes": 187255
+        },
+        {
+          "path": "home/webkit-desktop/steps/13-tab-12.jpg",
+          "bytes": 187255
+        },
+        {
+          "path": "home/webkit-desktop/steps/14-tab-13.jpg",
+          "bytes": 187255
+        },
+        {
+          "path": "home/webkit-desktop/steps/15-tab-14.jpg",
+          "bytes": 187255
+        },
+        {
+          "path": "home/webkit-desktop/steps/16-tab-15.jpg",
+          "bytes": 187255
+        },
+        {
+          "path": "home/webkit-desktop/steps/17-tab-16.jpg",
+          "bytes": 187255
+        },
+        {
+          "path": "home/webkit-desktop/steps/18-tab-17.jpg",
+          "bytes": 187255
+        },
+        {
+          "path": "home/webkit-desktop/steps/19-tab-18.jpg",
+          "bytes": 347677
+        },
+        {
+          "path": "home/webkit-desktop/steps/20-tab-19.jpg",
+          "bytes": 325232
+        },
+        {
+          "path": "home/webkit-desktop/steps/21-tab-20.jpg",
+          "bytes": 281031
+        },
+        {
+          "path": "home/webkit-desktop/steps.json",
+          "bytes": 3730
+        },
+        {
+          "path": "home/webkit-desktop/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "home/webkit-desktop/network.json",
+          "bytes": 2657
+        },
+        {
+          "path": "home/webkit-desktop/summary.md",
+          "bytes": 2200
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caringforacauseindy.netlify.app/",
+      "browser": "webkit",
+      "device": "tablet",
+      "dir": "home/webkit-tablet",
+      "status": "ok",
+      "startedAt": "2026-10-29T19:38:06.222Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.netlify.app/",
+      "loadSeconds": 8.7,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "tiles": {
+        "count": 8,
+        "tileHeight": 1024,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-29T19:38:28.834Z",
+      "files": [
+        {
+          "path": "home/webkit-tablet/full.jpg",
+          "bytes": 1426801
+        },
+        {
+          "path": "home/webkit-tablet/tiles/tile-01.jpg",
+          "bytes": 208348
+        },
+        {
+          "path": "home/webkit-tablet/tiles/tile-02.jpg",
+          "bytes": 206913
+        },
+        {
+          "path": "home/webkit-tablet/tiles/tile-03.jpg",
+          "bytes": 177480
+        },
+        {
+          "path": "home/webkit-tablet/tiles/tile-04.jpg",
+          "bytes": 146196
+        },
+        {
+          "path": "home/webkit-tablet/tiles/tile-05.jpg",
+          "bytes": 327602
+        },
+        {
+          "path": "home/webkit-tablet/tiles/tile-06.jpg",
+          "bytes": 209744
+        },
+        {
+          "path": "home/webkit-tablet/tiles/tile-07.jpg",
+          "bytes": 139378
+        },
+        {
+          "path": "home/webkit-tablet/tiles/tile-08.jpg",
+          "bytes": 2936
+        },
+        {
+          "path": "home/webkit-tablet/meta.json",
+          "bytes": 2240
+        },
+        {
+          "path": "home/webkit-tablet/text.md",
+          "bytes": 3341
+        },
+        {
+          "path": "home/webkit-tablet/page.html",
+          "bytes": 21020
+        },
+        {
+          "path": "home/webkit-tablet/links.json",
+          "bytes": 7231
+        },
+        {
+          "path": "home/webkit-tablet/images.json",
+          "bytes": 9150
+        },
+        {
+          "path": "home/webkit-tablet/styles.json",
+          "bytes": 3288
+        },
+        {
+          "path": "home/webkit-tablet/forms.json",
+          "bytes": 4788
+        },
+        {
+          "path": "home/webkit-tablet/a11y.json",
+          "bytes": 8517
+        },
+        {
+          "path": "home/webkit-tablet/aria.yaml",
+          "bytes": 5430
+        },
+        {
+          "path": "home/webkit-tablet/steps/01-menu-open.jpg",
+          "bytes": 208353
+        },
+        {
+          "path": "home/webkit-tablet/steps/02-tab-1.jpg",
+          "bytes": 209215
+        },
+        {
+          "path": "home/webkit-tablet/steps/03-tab-2.jpg",
+          "bytes": 209514
+        },
+        {
+          "path": "home/webkit-tablet/steps/04-tab-3.jpg",
+          "bytes": 209652
+        },
+        {
+          "path": "home/webkit-tablet/steps/05-tab-4.jpg",
+          "bytes": 209673
+        },
+        {
+          "path": "home/webkit-tablet/steps/06-tab-5.jpg",
+          "bytes": 209625
+        },
+        {
+          "path": "home/webkit-tablet/steps/07-tab-6.jpg",
+          "bytes": 208630
+        },
+        {
+          "path": "home/webkit-tablet/steps/08-tab-7.jpg",
+          "bytes": 220466
+        },
+        {
+          "path": "home/webkit-tablet/steps/09-tab-8.jpg",
+          "bytes": 197855
+        },
+        {
+          "path": "home/webkit-tablet/steps/10-tab-9.jpg",
+          "bytes": 174339
+        },
+        {
+          "path": "home/webkit-tablet/steps/11-tab-10.jpg",
+          "bytes": 174363
+        },
+        {
+          "path": "home/webkit-tablet/steps/12-tab-11.jpg",
+          "bytes": 173389
+        },
+        {
+          "path": "home/webkit-tablet/steps/13-tab-12.jpg",
+          "bytes": 173389
+        },
+        {
+          "path": "home/webkit-tablet/steps/14-tab-13.jpg",
+          "bytes": 173389
+        },
+        {
+          "path": "home/webkit-tablet/steps/15-tab-14.jpg",
+          "bytes": 173389
+        },
+        {
+          "path": "home/webkit-tablet/steps/16-tab-15.jpg",
+          "bytes": 173389
+        },
+        {
+          "path": "home/webkit-tablet/steps/17-tab-16.jpg",
+          "bytes": 173389
+        },
+        {
+          "path": "home/webkit-tablet/steps/18-tab-17.jpg",
+          "bytes": 173389
+        },
+        {
+          "path": "home/webkit-tablet/steps/19-tab-18.jpg",
+          "bytes": 348363
+        },
+        {
+          "path": "home/webkit-tablet/steps/20-tab-19.jpg",
+          "bytes": 312087
+        },
+        {
+          "path": "home/webkit-tablet/steps/21-tab-20.jpg",
+          "bytes": 295715
+        },
+        {
+          "path": "home/webkit-tablet/steps.json",
+          "bytes": 3730
+        },
+        {
+          "path": "home/webkit-tablet/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "home/webkit-tablet/network.json",
+          "bytes": 2675
+        },
+        {
+          "path": "home/webkit-tablet/summary.md",
+          "bytes": 2160
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caringforacauseindy.netlify.app/",
+      "browser": "webkit",
+      "device": "mobile",
+      "dir": "home/webkit-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-29T19:38:28.838Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.netlify.app/",
+      "loadSeconds": 5.8,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 21,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-29T19:38:47.843Z",
+      "files": [
+        {
+          "path": "home/webkit-mobile/full.jpg",
+          "bytes": 1942421
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-01.jpg",
+          "bytes": 91572
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-02.jpg",
+          "bytes": 107499
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-03.jpg",
+          "bytes": 75231
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-04.jpg",
+          "bytes": 109047
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-05.jpg",
+          "bytes": 77911
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-06.jpg",
+          "bytes": 97695
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-07.jpg",
+          "bytes": 64562
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-08.jpg",
+          "bytes": 78191
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-09.jpg",
+          "bytes": 67005
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-10.jpg",
+          "bytes": 120640
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-11.jpg",
+          "bytes": 154046
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-12.jpg",
+          "bytes": 110927
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-13.jpg",
+          "bytes": 160656
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-14.jpg",
+          "bytes": 128270
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-15.jpg",
+          "bytes": 85050
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-16.jpg",
+          "bytes": 123297
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-17.jpg",
+          "bytes": 122089
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-18.jpg",
+          "bytes": 49247
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-19.jpg",
+          "bytes": 56596
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-20.jpg",
+          "bytes": 38636
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-21.jpg",
+          "bytes": 14224
+        },
+        {
+          "path": "home/webkit-mobile/meta.json",
+          "bytes": 2241
+        },
+        {
+          "path": "home/webkit-mobile/text.md",
+          "bytes": 3310
+        },
+        {
+          "path": "home/webkit-mobile/page.html",
+          "bytes": 21020
+        },
+        {
+          "path": "home/webkit-mobile/links.json",
+          "bytes": 7235
+        },
+        {
+          "path": "home/webkit-mobile/images.json",
+          "bytes": 9657
+        },
+        {
+          "path": "home/webkit-mobile/styles.json",
+          "bytes": 3378
+        },
+        {
+          "path": "home/webkit-mobile/forms.json",
+          "bytes": 4788
+        },
+        {
+          "path": "home/webkit-mobile/a11y.json",
+          "bytes": 8672
+        },
+        {
+          "path": "home/webkit-mobile/aria.yaml",
+          "bytes": 5238
+        },
+        {
+          "path": "home/webkit-mobile/steps/01-menu-open.jpg",
+          "bytes": 72518
+        },
+        {
+          "path": "home/webkit-mobile/steps/02-tab-1.jpg",
+          "bytes": 92669
+        },
+        {
+          "path": "home/webkit-mobile/steps/03-tab-2.jpg",
+          "bytes": 91580
+        },
+        {
+          "path": "home/webkit-mobile/steps/04-tab-3.jpg",
+          "bytes": 91724
+        },
+        {
+          "path": "home/webkit-mobile/steps/05-tab-4.jpg",
+          "bytes": 80274
+        },
+        {
+          "path": "home/webkit-mobile/steps/06-tab-5.jpg",
+          "bytes": 88404
+        },
+        {
+          "path": "home/webkit-mobile/steps/07-tab-6.jpg",
+          "bytes": 94965
+        },
+        {
+          "path": "home/webkit-mobile/steps/08-tab-7.jpg",
+          "bytes": 61343
+        },
+        {
+          "path": "home/webkit-mobile/steps/09-tab-8.jpg",
+          "bytes": 60683
+        },
+        {
+          "path": "home/webkit-mobile/steps/10-tab-9.jpg",
+          "bytes": 60683
+        },
+        {
+          "path": "home/webkit-mobile/steps/11-tab-10.jpg",
+          "bytes": 60683
+        },
+        {
+          "path": "home/webkit-mobile/steps/12-tab-11.jpg",
+          "bytes": 60683
+        },
+        {
+          "path": "home/webkit-mobile/steps/13-tab-12.jpg",
+          "bytes": 60683
+        },
+        {
+          "path": "home/webkit-mobile/steps/14-tab-13.jpg",
+          "bytes": 60683
+        },
+        {
+          "path": "home/webkit-mobile/steps/15-tab-14.jpg",
+          "bytes": 60683
+        },
+        {
+          "path": "home/webkit-mobile/steps/16-tab-15.jpg",
+          "bytes": 105036
+        },
+        {
+          "path": "home/webkit-mobile/steps/17-tab-16.jpg",
+          "bytes": 79963
+        },
+        {
+          "path": "home/webkit-mobile/steps/18-tab-17.jpg",
+          "bytes": 57309
+        },
+        {
+          "path": "home/webkit-mobile/steps/19-tab-18.jpg",
+          "bytes": 54247
+        },
+        {
+          "path": "home/webkit-mobile/steps/20-tab-19.jpg",
+          "bytes": 54202
+        },
+        {
+          "path": "home/webkit-mobile/steps/21-tab-20.jpg",
+          "bytes": 54207
+        },
+        {
+          "path": "home/webkit-mobile/steps.json",
+          "bytes": 3601
+        },
+        {
+          "path": "home/webkit-mobile/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "home/webkit-mobile/network.json",
+          "bytes": 2657
+        },
+        {
+          "path": "home/webkit-mobile/summary.md",
+          "bytes": 2408
+        }
+      ]
+    }
+  ],
+  "job": {
+    "preset": "deep",
+    "targets": [
+      {
+        "url": "https://caringforacauseindy.netlify.app/",
+        "name": "home"
+      }
+    ],
+    "browsers": [
+      "chromium",
+      "webkit"
+    ],
+    "devices": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "tablet",
+        "userAgent": "Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "deviceScaleFactor": 2,
+        "isMobile": true,
+        "hasTouch": true,
+        "defaultBrowserType": "webkit"
+      },
+      {
+        "name": "mobile",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+        "viewport": {
+          "width": 393,
+          "height": 659
+        },
+        "screen": {
+          "width": 393,
+          "height": 852
+        },
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true,
+        "defaultBrowserType": "webkit"
+      }
+    ],
+    "capture": {
+      "screenshot": "full",
+      "tiles": true,
+      "tileHeight": null,
+      "maxTiles": 25,
+      "format": "jpeg",
+      "quality": 80,
+      "detail": 2,
+      "animations": "disabled",
+      "waitMs": 800,
+      "timeoutMs": 45000,
+      "revealLazyContent": true,
+      "hide": [],
+      "blockWrites": true,
+      "text": true,
+      "meta": true,
+      "html": true,
+      "links": true,
+      "checkLinks": true,
+      "images": true,
+      "styles": true,
+      "forms": true,
+      "a11y": true,
+      "aria": true,
+      "lighthouse": true
+    },
+    "steps": [
+      {
+        "action": "scroll",
+        "to": "top"
+      },
+      {
+        "action": "click",
+        "selector": ".w-nav-button",
+        "optional": true,
+        "waitMs": 700
+      },
+      {
+        "action": "screenshot",
+        "name": "menu-open"
+      },
+      {
+        "action": "goto",
+        "url": "https://caringforacauseindy.netlify.app/"
+      },
+      {
+        "action": "tabWalk",
+        "count": 20
+      }
+    ],
+    "notes": "Ship-readiness front-end review",
+    "brief": "(saved as brief.md)"
+  },
+  "finishedAt": "2026-10-29T19:38:47.970Z"
+}

@@ -1,0 +1,20 @@
+## home - webkit / tablet
+- URL: https://caringforacauseindy.netlify.app/
+- Status: ok, HTTP 200, ready in 8.7s
+- Viewport: 768x1024 at 2x detail
+- Title: Caring For A Cause- Together We Can
+- Meta description: Giving back through life-changing experiences.
+- H1 count: 7; headings total: 15; page height: 7193px
+- Structured data blocks: 0; lang: (none); og:image: yes
+- Images: 15 <img> + 6 large backgrounds; missing alt: 0, empty alt on large: 15, broken: 0, upscaled/blurry: 1, below retina: 5
+- Links: 22; go nowhere: 4, no accessible name: 0, generic text: 1, missing anchor targets: 0, HTTP errors: 1
+- Primary font families (by text volume): Cabin, Lato, Arial, Font awesome 5 free solid 900, Font awesome 5 brands 400
+- Text colors in use: 11; font sizes in use: 15; uppercase share of text: 8%
+- Forms: 1; fields: 12; without programmatic label: 2; labels pointing at missing ids: 4
+  - form 1: POST -> https://api.sheetmonkey.io/form/j7SVMrhS2BJvkLgi2YDHyW
+- Accessibility (axe): 5 rule violations {"serious":3,"moderate":2}; 2 need manual review
+- Lighthouse: Lighthouse runs only in chromium variants.
+- Steps: 5 run, 1 failed
+- Network: 0 HTTP errors, 0 failed requests, 1 JS errors from the site
+- Write requests blocked (nothing was sent): jnn-pa.googleapis.com x13, www.youtube.com x5. Analytics/embed calls here are normal; form destinations are listed under Forms when forms are captured.
+- Files: full.jpg, tiles/tile-01.jpg, tiles/tile-02.jpg, tiles/tile-03.jpg, tiles/tile-04.jpg, tiles/tile-05.jpg, tiles/tile-06.jpg, tiles/tile-07.jpg, tiles/tile-08.jpg, meta.json, text.md, page.html, links.json, images.json, styles.json, forms.json, a11y.json, aria.yaml, steps/01-menu-open.jpg, steps/02-tab-1.jpg, steps/03-tab-2.jpg, steps/04-tab-3.jpg, steps/05-tab-4.jpg, steps/06-tab-5.jpg, steps/07-tab-6.jpg, steps/08-tab-7.jpg, steps/09-tab-8.jpg, steps/10-tab-9.jpg, steps/11-tab-10.jpg, steps/12-tab-11.jpg, steps/13-tab-12.jpg, steps/14-tab-13.jpg, steps/15-tab-14.jpg, steps/16-tab-15.jpg, steps/17-tab-16.jpg, steps/18-tab-17.jpg, steps/19-tab-18.jpg, steps/20-tab-19.jpg, steps/21-tab-20.jpg, steps.json, lighthouse.json, network.json

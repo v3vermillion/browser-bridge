@@ -1,0 +1,304 @@
+{
+  "links": [
+    {
+      "text": "Skip to content",
+      "name": "Skip to content",
+      "href": "#main",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/donate/#main",
+      "kind": "anchor",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "",
+      "name": "",
+      "href": "/",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": [
+        "no-accessible-name"
+      ]
+    },
+    {
+      "text": "About",
+      "name": "About",
+      "href": "/#about",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#about",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Programs",
+      "name": "Programs",
+      "href": "/#programs",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#programs",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Get involved",
+      "name": "Get involved",
+      "href": "/#get-involved",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#get-involved",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Contact",
+      "name": "Contact",
+      "href": "/#contact",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#contact",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Donate",
+      "name": "Donate",
+      "href": "/donate/",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Help me",
+      "name": "Help me",
+      "href": "/apply/",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "About",
+      "name": "About",
+      "href": "/#about",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#about",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Programs",
+      "name": "Programs",
+      "href": "/#programs",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#programs",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Get involved",
+      "name": "Get involved",
+      "href": "/#get-involved",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#get-involved",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Contact",
+      "name": "Contact",
+      "href": "/#contact",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#contact",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Donate",
+      "name": "Donate",
+      "href": "/donate/",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Donate $50 by email",
+      "name": "Donate $50 by email",
+      "href": "mailto:caringforacause2015@gmail.com?subject=Donation%3A%20%2450&body=Hello%2C%0D%0A%0D%0AI'd%20like%20to%20make%20a%20one-time%20gift%20of%20%2450%20to%20Caring%20for%20a%20Cause.%20What's%20the%20best%20way%20to%20send%20it%3F%0D%0A%0D%0AThank%20you%2C%0D%0A",
+      "resolved": "mailto:caringforacause2015@gmail.com?subject=Donation%3A%20%2450&body=Hello%2C%0D%0A%0D%0AI'd%20like%20to%20make%20a%20one-time%20gift%20of%20%2450%20to%20Caring%20for%20a%20Cause.%20What's%20the%20best%20way%20to%20send%20it%3F%0D%0A%0D%0AThank%20you%2C%0D%0A",
+      "kind": "mailto",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Donate by email",
+      "name": "Donate by email",
+      "href": "mailto:caringforacause2015@gmail.com?subject=Donation&body=Hello%2C%0D%0A%0D%0AI'd%20like%20to%20give%20to%20Caring%20for%20a%20Cause.%20What's%20the%20best%20way%20to%20send%20a%20gift%3F%0D%0A%0D%0AThank%20you%2C%0D%0A",
+      "resolved": "mailto:caringforacause2015@gmail.com?subject=Donation&body=Hello%2C%0D%0A%0D%0AI'd%20like%20to%20give%20to%20Caring%20for%20a%20Cause.%20What's%20the%20best%20way%20to%20send%20a%20gift%3F%0D%0A%0D%0AThank%20you%2C%0D%0A",
+      "kind": "mailto",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Holiday Meals Food boxes for local families.",
+      "name": "Holiday Meals Food boxes for local families.",
+      "href": "/#holiday-assistance",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#holiday-assistance",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Gifts Toys and clothes from a child's wish list.",
+      "name": "Gifts Toys and clothes from a child's wish list.",
+      "href": "/#holiday-assistance",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#holiday-assistance",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Diapers A reliable supply, every month.",
+      "name": "Diapers A reliable supply, every month.",
+      "href": "/#diaper-drive",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#diaper-drive",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "School Supplies Care packages for the new school year.",
+      "name": "School Supplies Care packages for the new school year.",
+      "href": "/#back-to-school",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#back-to-school",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "",
+      "name": "Caring for a Cause Supportive Services, home",
+      "href": "/",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Donate",
+      "name": "Donate",
+      "href": "/donate/",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Help me",
+      "name": "Help me",
+      "href": "/apply/",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "About",
+      "name": "About",
+      "href": "/#about",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#about",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Programs",
+      "name": "Programs",
+      "href": "/#programs",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#programs",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Get involved",
+      "name": "Get involved",
+      "href": "/#get-involved",
+      "resolved": "https://caring-for-a-cause.forgetraining.workers.dev/#get-involved",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "(317) 886-0724",
+      "name": "(317) 886-0724",
+      "href": "tel:+13178860724",
+      "resolved": "tel:+13178860724",
+      "kind": "tel",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "caringforacause2015@gmail.com",
+      "name": "caringforacause2015@gmail.com",
+      "href": "mailto:caringforacause2015@gmail.com",
+      "resolved": "mailto:caringforacause2015@gmail.com",
+      "kind": "mailto",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Facebook (opens in a new tab)",
+      "name": "Facebook (opens in a new tab)",
+      "href": "https://www.facebook.com/caringforacausesupportiveservices",
+      "resolved": "https://www.facebook.com/caringforacausesupportiveservices",
+      "kind": "external",
+      "target": "_blank",
+      "visible": true,
+      "flags": []
+    }
+  ],
+  "statuses": {
+    "https://caring-for-a-cause.forgetraining.workers.dev/donate/": {
+      "status": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/"
+    },
+    "https://caring-for-a-cause.forgetraining.workers.dev/": {
+      "status": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/"
+    },
+    "https://caring-for-a-cause.forgetraining.workers.dev/apply/": {
+      "status": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/"
+    },
+    "https://www.facebook.com/caringforacausesupportiveservices": {
+      "status": 200,
+      "finalUrl": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fcaringforacausesupportiveservices"
+    }
+  }
+}

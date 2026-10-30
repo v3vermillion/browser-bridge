@@ -1,0 +1,83 @@
+[
+  {
+    "index": 0,
+    "action": "evaluate",
+    "ok": true,
+    "result": {
+      "vw": 1440,
+      "vh": 900,
+      "path": "/does-not-exist",
+      "headerH": 82,
+      "gaps": [
+        {
+          "from": "page-hero on-dark hero--404",
+          "to": "site-footer on-dark",
+          "gap": 187
+        }
+      ],
+      "biggestGaps": [
+        {
+          "gap": 27,
+          "after": "The link may be old or mistype",
+          "before": "Help me\nDonate\nBack to home"
+        }
+      ],
+      "hover": {
+        "hoverUnguarded": 21,
+        "hoverGuarded": 0,
+        "samples": [
+          ".donate[data-astro-cid-nns7i3if]:hover",
+          ".links[data-astro-cid-nns7i3if] a[data-astro-cid-nns7i3if]:hover span[data-astro",
+          ".links[data-astro-cid-nns7i3if] a[data-astro-cid-nns7i3if]:hover .chev[data-astr",
+          ".donate[data-astro-cid-fzpbxy5g]:hover",
+          ".donate[data-astro-cid-fzpbxy5g]:hover::after",
+          ".donate[data-astro-cid-fzpbxy5g][aria-current=\"page\"]:hover::after",
+          ":is(.nav-link[data-astro-cid-fzpbxy5g]:hover, .nav-link[data-astro-cid-fzpbxy5g]",
+          ".nav-link[data-astro-cid-fzpbxy5g]:hover::after, .nav-link[data-astro-cid-fzpbxy",
+          ".menu-button[data-astro-cid-fzpbxy5g]:hover",
+          ".menu-list[data-astro-cid-fzpbxy5g] > li[data-astro-cid-fzpbxy5g] > a[data-astro",
+          "a:hover",
+          ".on-dark a:hover"
+        ]
+      },
+      "tight": [],
+      "scrollers": [],
+      "gutter": {
+        "L": 72,
+        "R": 1368
+      },
+      "pastGutter": [
+        {
+          "t": "caringforacause2015@gmail.com",
+          "over": 28
+        }
+      ],
+      "dupes": [],
+      "images": [],
+      "anchors": [
+        {
+          "id": "main",
+          "firstText": "PAGE NOT FOUND",
+          "gapBelowHeader": 106
+        },
+        {
+          "id": "about",
+          "missing": true
+        },
+        {
+          "id": "programs",
+          "missing": true
+        },
+        {
+          "id": "get-involved",
+          "missing": true
+        },
+        {
+          "id": "contact",
+          "firstText": "Connect with us",
+          "gapBelowHeader": 370
+        }
+      ]
+    }
+  }
+]

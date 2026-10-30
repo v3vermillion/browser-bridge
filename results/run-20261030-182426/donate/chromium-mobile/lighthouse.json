@@ -1,0 +1,30 @@
+{
+  "formFactor": "mobile",
+  "scores": {
+    "performance": 98,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 66
+  },
+  "metrics": {
+    "LCP": "2.3 s",
+    "CLS": "0",
+    "TBT": "0 ms",
+    "FCP": "1.2 s",
+    "SpeedIndex": "1.2 s"
+  },
+  "failingAudits": [
+    {
+      "id": "is-crawlable",
+      "title": "Page is blocked from indexing",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree",
+      "score": 0,
+      "displayValue": null
+    }
+  ]
+}

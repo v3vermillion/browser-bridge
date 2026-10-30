@@ -1,0 +1,272 @@
+[
+  {
+    "index": 0,
+    "action": "evaluate",
+    "ok": true,
+    "result": {
+      "vw": 393,
+      "vh": 659,
+      "path": "/",
+      "headerH": 61,
+      "gaps": [
+        {
+          "from": "first-screen no-season",
+          "to": "hero on-dark",
+          "gap": -558
+        },
+        {
+          "from": "hero on-dark",
+          "to": "strip on-dark",
+          "gap": 75
+        },
+        {
+          "from": "strip on-dark",
+          "to": "programs",
+          "gap": 169
+        },
+        {
+          "from": "programs",
+          "to": "get-involved",
+          "gap": 113
+        },
+        {
+          "from": "get-involved",
+          "to": "about",
+          "gap": 211
+        },
+        {
+          "from": "about",
+          "to": "site-footer on-dark",
+          "gap": 177
+        }
+      ],
+      "biggestGaps": [
+        {
+          "gap": 211,
+          "after": "Email us to sponsor",
+          "before": "FIGURE"
+        },
+        {
+          "gap": 169,
+          "after": "Helping families since 2015\n50",
+          "before": "What we do, all year"
+        },
+        {
+          "gap": 133,
+          "after": "Children holding holiday gift ",
+          "before": "Holiday Assistance"
+        },
+        {
+          "gap": 133,
+          "after": "A volunteer hands a large pack",
+          "before": "Diaper Drive"
+        },
+        {
+          "gap": 133,
+          "after": "A woman carries a basket fille",
+          "before": "Back-to-School Care Packages"
+        },
+        {
+          "gap": 123,
+          "after": "WHO IT'S FOR\nStudents from fam",
+          "before": "Play video: Free haircuts and "
+        },
+        {
+          "gap": 112,
+          "after": "UL",
+          "before": "Four ways to help"
+        },
+        {
+          "gap": 87,
+          "after": "FIGURE",
+          "before": "Meet Tamara Long-Ajimati"
+        },
+        {
+          "gap": 76,
+          "after": "Email us",
+          "before": "Children holding holiday gift "
+        },
+        {
+          "gap": 40,
+          "after": "Sponsor a family",
+          "before": "A volunteer hands a large pack"
+        }
+      ],
+      "hover": {
+        "hoverUnguarded": 36,
+        "hoverGuarded": 0,
+        "samples": [
+          "[data-astro-cid-awkq4pfj][role=\"tab\"]:not([aria-selected=\"true\"]):hover",
+          "[data-astro-cid-awkq4pfj][role=\"tab\"]:hover",
+          ".door[data-astro-cid-ge2uvauf]:hover .door-pill[data-astro-cid-ge2uvauf]",
+          ".door[data-astro-cid-ge2uvauf]:hover .chev[data-astro-cid-ge2uvauf]",
+          ".door--help[data-astro-cid-ge2uvauf]:hover .door-pill[data-astro-cid-ge2uvauf]",
+          ".door--give[data-astro-cid-ge2uvauf]:hover .door-pill[data-astro-cid-ge2uvauf]",
+          ".door--help[data-astro-cid-ge2uvauf]:hover .door-pill[data-astro-cid-ge2uvauf]",
+          ".door--give[data-astro-cid-ge2uvauf]:hover .door-pill[data-astro-cid-ge2uvauf]",
+          ":is(.item[data-astro-cid-gq62u3e5]:hover .name[data-astro-cid-gq62u3e5], .item[d",
+          ":is(.item[data-astro-cid-gq62u3e5]:hover .icon[data-astro-cid-gq62u3e5], .item[d",
+          ".yt-link[data-astro-cid-j6f56hgn]:hover .yt-play[data-astro-cid-j6f56hgn]",
+          ".tile[data-astro-cid-wbcvwyly]:hover::before"
+        ]
+      },
+      "tight": [
+        {
+          "t": "Sponsor a family",
+          "padL": 12,
+          "padR": 12,
+          "w": 173
+        }
+      ],
+      "scrollers": [
+        {
+          "cls": "UL",
+          "items": 4,
+          "clippedOrOffscreen": 3
+        }
+      ],
+      "gutter": {
+        "L": 20,
+        "R": 373
+      },
+      "pastGutter": [],
+      "dupes": [],
+      "images": [
+        {
+          "src": "haircut-boy.Bkh-8wdm_Z1Ke5jn.avif",
+          "shown": "408x399",
+          "nat": "393x524",
+          "ratio": 0.48,
+          "pos": "85% 5%"
+        },
+        {
+          "src": "holiday-gift-bags.BW_V1vNm_ECcjk.avif",
+          "shown": "62x72",
+          "nat": "72x96",
+          "ratio": 0.58,
+          "pos": "50% 27%"
+        },
+        {
+          "src": "diaper-drive.DQOaEkt9_TsxoY.avif",
+          "shown": "72x72",
+          "nat": "72x96",
+          "ratio": 0.5,
+          "pos": "50% 34%"
+        },
+        {
+          "src": "care-basket.dUg-bsTE_2eHChh.avif",
+          "shown": "50x72",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 28%"
+        },
+        {
+          "src": "haircut-boy.Bkh-8wdm_1XPax5.avif",
+          "shown": "64x72",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 30%"
+        },
+        {
+          "src": "holiday-gift-bags.BW_V1vNm_4tVDD.avif",
+          "shown": "354x265",
+          "nat": "353x470",
+          "ratio": 0.5,
+          "pos": "50% 27%"
+        },
+        {
+          "src": "diaper-drive.DQOaEkt9_jcqwQ.avif",
+          "shown": "354x236",
+          "nat": "353x470",
+          "ratio": 0.5,
+          "pos": "50% 34%"
+        },
+        {
+          "src": "care-basket.dUg-bsTE_Z1pThxP.avif",
+          "shown": "354x236",
+          "nat": "353x470",
+          "ratio": 0.5,
+          "pos": "50% 28%"
+        },
+        {
+          "src": "stylist-haircut.DdAwisTG_Z1fcUnG.avif",
+          "shown": "354x199",
+          "nat": "353x470",
+          "ratio": 0.5,
+          "pos": "50% 27%"
+        },
+        {
+          "src": "holiday-shopping.DGi0cLBx_g3aso.avif",
+          "shown": "352x234",
+          "nat": "353x471",
+          "ratio": 0.5,
+          "pos": "50% 50%"
+        },
+        {
+          "src": "tamara-portrait.B5ksF5Q2_Z2ds21w.avif",
+          "shown": "354x442",
+          "nat": "352x402",
+          "ratio": 0.5,
+          "pos": "0% 25%"
+        }
+      ],
+      "anchors": [
+        {
+          "id": "main",
+          "firstText": "OUR PROGRAMS",
+          "gapBelowHeader": 722
+        },
+        {
+          "id": "about",
+          "firstText": "ABOUT",
+          "gapBelowHeader": 529
+        },
+        {
+          "id": "programs",
+          "firstText": "OUR PROGRAMS",
+          "gapBelowHeader": 36
+        },
+        {
+          "id": "get-involved",
+          "firstText": "GET INVOLVED",
+          "gapBelowHeader": 47
+        },
+        {
+          "id": "contact",
+          "firstText": "Connect with us",
+          "gapBelowHeader": 206
+        },
+        {
+          "id": "holiday-assistance",
+          "firstText": "THANKSGIVING, CHRISTMAS, ",
+          "gapBelowHeader": 371
+        },
+        {
+          "id": "diaper-drive",
+          "firstText": "DIAPERS EVERY MONTH",
+          "gapBelowHeader": 342
+        },
+        {
+          "id": "back-to-school",
+          "firstText": "HYGIENE AND SCHOOL SUPPLI",
+          "gapBelowHeader": 342
+        },
+        {
+          "id": "haircuts",
+          "firstText": "CUTS, STYLES, FACE PAINTI",
+          "gapBelowHeader": 305
+        },
+        {
+          "id": "sponsor",
+          "firstText": "Sponsor a family for the ",
+          "gapBelowHeader": 278
+        },
+        {
+          "id": "partner",
+          "firstText": "",
+          "gapBelowHeader": 278
+        }
+      ]
+    }
+  }
+]

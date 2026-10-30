@@ -1,0 +1,117 @@
+{
+  "forms": [
+    {
+      "index": 0,
+      "id": null,
+      "name": null,
+      "method": "GET",
+      "action": "(none - handled by script or same page)",
+      "fields": [
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "frequency",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Once"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "frequency",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "Monthly"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "amount",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "$25"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "amount",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "$50"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "amount",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "$100"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "amount",
+          "id": null,
+          "required": false,
+          "placeholder": null,
+          "label": {
+            "method": "wrapping label",
+            "text": "$250"
+          },
+          "flags": []
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "otherAmount",
+          "id": "other-amount",
+          "required": false,
+          "placeholder": "Other",
+          "label": {
+            "method": "wrapping label",
+            "text": "$\nOther amount in dollars"
+          },
+          "flags": []
+        }
+      ],
+      "radioGroups": [
+        {
+          "name": "frequency",
+          "count": 2,
+          "inFieldsetWithLegend": true
+        },
+        {
+          "name": "amount",
+          "count": 4,
+          "inFieldsetWithLegend": true
+        }
+      ]
+    }
+  ],
+  "orphanLabels": []
+}

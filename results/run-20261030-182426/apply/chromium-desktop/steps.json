@@ -1,0 +1,152 @@
+[
+  {
+    "index": 0,
+    "action": "evaluate",
+    "ok": true,
+    "result": {
+      "vw": 1440,
+      "vh": 900,
+      "path": "/apply/",
+      "headerH": 82,
+      "gaps": [
+        {
+          "from": "page-hero on-dark",
+          "to": "section ground",
+          "gap": 194
+        },
+        {
+          "from": "section ground",
+          "to": "site-footer on-dark",
+          "gap": 205
+        }
+      ],
+      "biggestGaps": [
+        {
+          "gap": 302,
+          "after": "This website stores nothing. Y",
+          "before": "Next: Your household"
+        },
+        {
+          "gap": 197,
+          "after": "Children holding holiday gift ",
+          "before": "1\nStep 1 of 4:\nAbout you"
+        },
+        {
+          "gap": 18,
+          "after": "Prefer to talk?",
+          "before": "Call or email us, and we'll se"
+        },
+        {
+          "gap": 18,
+          "after": "Call or email us, and we'll se",
+          "before": "Call (317) 886-0724"
+        },
+        {
+          "gap": 18,
+          "after": "Call (317) 886-0724",
+          "before": "Email us"
+        },
+        {
+          "gap": 18,
+          "after": "Email us",
+          "before": "This website stores nothing. Y"
+        }
+      ],
+      "hover": {
+        "hoverUnguarded": 25,
+        "hoverGuarded": 0,
+        "samples": [
+          ".donate[data-astro-cid-nns7i3if]:hover",
+          ".links[data-astro-cid-nns7i3if] a[data-astro-cid-nns7i3if]:hover span[data-astro",
+          ".links[data-astro-cid-nns7i3if] a[data-astro-cid-nns7i3if]:hover .chev[data-astr",
+          ".donate[data-astro-cid-fzpbxy5g]:hover",
+          ".donate[data-astro-cid-fzpbxy5g]:hover::after",
+          ".donate[data-astro-cid-fzpbxy5g][aria-current=\"page\"]:hover::after",
+          ":is(.nav-link[data-astro-cid-fzpbxy5g]:hover, .nav-link[data-astro-cid-fzpbxy5g]",
+          ".nav-link[data-astro-cid-fzpbxy5g]:hover::after, .nav-link[data-astro-cid-fzpbxy",
+          ".menu-button[data-astro-cid-fzpbxy5g]:hover",
+          ".menu-list[data-astro-cid-fzpbxy5g] > li[data-astro-cid-fzpbxy5g] > a[data-astro",
+          "a:hover",
+          ".on-dark a:hover"
+        ]
+      },
+      "tight": [
+        {
+          "t": "Call",
+          "padL": 0,
+          "padR": 0,
+          "w": 79
+        },
+        {
+          "t": "Text",
+          "padL": 0,
+          "padR": 0,
+          "w": 84
+        },
+        {
+          "t": "Email",
+          "padL": 0,
+          "padR": 0,
+          "w": 97
+        }
+      ],
+      "scrollers": [],
+      "gutter": {
+        "L": 72,
+        "R": 1368
+      },
+      "pastGutter": [
+        {
+          "t": "(317) 886-0724",
+          "over": 25
+        },
+        {
+          "t": "caringforacause2015@gmail.com",
+          "over": 25
+        },
+        {
+          "t": "caringforacause2015@gmail.com",
+          "over": 25
+        },
+        {
+          "t": "Facebook\n(opens in a new tab)",
+          "over": 25
+        }
+      ],
+      "dupes": [],
+      "images": [
+        {
+          "src": "holiday-gift-bags.BW_V1vNm_1sq1Gc.avif",
+          "shown": "396x317",
+          "nat": "352x469",
+          "ratio": 0.44,
+          "pos": "50% 27%"
+        }
+      ],
+      "anchors": [
+        {
+          "id": "main",
+          "firstText": "HELP ME",
+          "gapBelowHeader": 45
+        },
+        {
+          "id": "about",
+          "missing": true
+        },
+        {
+          "id": "programs",
+          "missing": true
+        },
+        {
+          "id": "get-involved",
+          "missing": true
+        },
+        {
+          "id": "contact",
+          "firstText": "Connect with us",
+          "gapBelowHeader": 370
+        }
+      ]
+    }
+  }
+]

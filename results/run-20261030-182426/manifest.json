@@ -1,0 +1,2006 @@
+{
+  "label": "run-20261030-182426",
+  "createdAt": "2026-10-30T18:25:20.066Z",
+  "engineVersion": "1.0.0",
+  "status": "ok",
+  "variants": [
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "home/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:25:20.892Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 3.4,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 8,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "desktop",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 69
+        },
+        "metrics": {
+          "LCP": "0.8 s",
+          "CLS": "0",
+          "TBT": "0 ms",
+          "FCP": "0.3 s",
+          "SpeedIndex": "0.4 s"
+        },
+        "failingAudits": [
+          {
+            "id": "is-crawlable",
+            "title": "Page is blocked from indexing",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "forced-reflow-insight",
+            "title": "Forced reflow",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "uses-responsive-images",
+            "title": "Properly size images",
+            "score": 0.5,
+            "displayValue": "Est savings of 51 KiB"
+          },
+          {
+            "id": "dom-size",
+            "title": "Avoid an excessive DOM size",
+            "score": 0.5,
+            "displayValue": "878 elements"
+          },
+          {
+            "id": "image-delivery-insight",
+            "title": "Improve image delivery",
+            "score": 0.5,
+            "displayValue": "Est savings of 33 KiB"
+          }
+        ]
+      },
+      "finishedAt": "2026-10-30T18:25:56.235Z",
+      "files": [
+        {
+          "path": "home/chromium-desktop/full.jpg",
+          "bytes": 2257661
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-01.jpg",
+          "bytes": 244981
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-02.jpg",
+          "bytes": 289536
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-03.jpg",
+          "bytes": 334056
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-04.jpg",
+          "bytes": 371192
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-05.jpg",
+          "bytes": 250384
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-06.jpg",
+          "bytes": 301358
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-07.jpg",
+          "bytes": 269313
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-08.jpg",
+          "bytes": 190795
+        },
+        {
+          "path": "home/chromium-desktop/meta.json",
+          "bytes": 4287
+        },
+        {
+          "path": "home/chromium-desktop/text.md",
+          "bytes": 3183
+        },
+        {
+          "path": "home/chromium-desktop/page.html",
+          "bytes": 382391
+        },
+        {
+          "path": "home/chromium-desktop/links.json",
+          "bytes": 13927
+        },
+        {
+          "path": "home/chromium-desktop/images.json",
+          "bytes": 7817
+        },
+        {
+          "path": "home/chromium-desktop/styles.json",
+          "bytes": 4596
+        },
+        {
+          "path": "home/chromium-desktop/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "home/chromium-desktop/a11y.json",
+          "bytes": 336
+        },
+        {
+          "path": "home/chromium-desktop/aria.yaml",
+          "bytes": 8252
+        },
+        {
+          "path": "home/chromium-desktop/steps.json",
+          "bytes": 7320
+        },
+        {
+          "path": "home/chromium-desktop/lighthouse.json",
+          "bytes": 1153
+        },
+        {
+          "path": "home/chromium-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/chromium-desktop/summary.md",
+          "bytes": 1570
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "home/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:25:56.238Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 3.9,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 13,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "mobile",
+        "scores": {
+          "performance": 93,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 69
+        },
+        "metrics": {
+          "LCP": "3.1 s",
+          "CLS": "0",
+          "TBT": "20 ms",
+          "FCP": "1.2 s",
+          "SpeedIndex": "1.2 s"
+        },
+        "failingAudits": [
+          {
+            "id": "largest-contentful-paint-element",
+            "title": "Largest Contentful Paint element",
+            "score": 0,
+            "displayValue": "3,140 ms"
+          },
+          {
+            "id": "uses-responsive-images",
+            "title": "Properly size images",
+            "score": 0,
+            "displayValue": "Est savings of 155 KiB"
+          },
+          {
+            "id": "is-crawlable",
+            "title": "Page is blocked from indexing",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "forced-reflow-insight",
+            "title": "Forced reflow",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "image-delivery-insight",
+            "title": "Improve image delivery",
+            "score": 0,
+            "displayValue": "Est savings of 219 KiB"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "dom-size",
+            "title": "Avoid an excessive DOM size",
+            "score": 0.5,
+            "displayValue": "878 elements"
+          },
+          {
+            "id": "largest-contentful-paint",
+            "title": "Largest Contentful Paint",
+            "score": 0.74,
+            "displayValue": "3.1 s"
+          }
+        ]
+      },
+      "finishedAt": "2026-10-30T18:26:18.811Z",
+      "files": [
+        {
+          "path": "home/chromium-mobile/full.jpg",
+          "bytes": 1239272
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-01.jpg",
+          "bytes": 120370
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-02.jpg",
+          "bytes": 101982
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-03.jpg",
+          "bytes": 119716
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-04.jpg",
+          "bytes": 101608
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-05.jpg",
+          "bytes": 95265
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-06.jpg",
+          "bytes": 121341
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-07.jpg",
+          "bytes": 107669
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-08.jpg",
+          "bytes": 96096
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-09.jpg",
+          "bytes": 93201
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-10.jpg",
+          "bytes": 100987
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-11.jpg",
+          "bytes": 108384
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-12.jpg",
+          "bytes": 62649
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-13.jpg",
+          "bytes": 8782
+        },
+        {
+          "path": "home/chromium-mobile/meta.json",
+          "bytes": 4287
+        },
+        {
+          "path": "home/chromium-mobile/text.md",
+          "bytes": 3150
+        },
+        {
+          "path": "home/chromium-mobile/page.html",
+          "bytes": 382391
+        },
+        {
+          "path": "home/chromium-mobile/links.json",
+          "bytes": 13931
+        },
+        {
+          "path": "home/chromium-mobile/images.json",
+          "bytes": 7804
+        },
+        {
+          "path": "home/chromium-mobile/styles.json",
+          "bytes": 4610
+        },
+        {
+          "path": "home/chromium-mobile/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "home/chromium-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "home/chromium-mobile/aria.yaml",
+          "bytes": 7944
+        },
+        {
+          "path": "home/chromium-mobile/steps.json",
+          "bytes": 7116
+        },
+        {
+          "path": "home/chromium-mobile/lighthouse.json",
+          "bytes": 1462
+        },
+        {
+          "path": "home/chromium-mobile/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/chromium-mobile/summary.md",
+          "bytes": 1667
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "apply/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:26:18.814Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 2.3,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "desktop",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 69
+        },
+        "metrics": {
+          "LCP": "0.6 s",
+          "CLS": "0",
+          "TBT": "0 ms",
+          "FCP": "0.5 s",
+          "SpeedIndex": "0.5 s"
+        },
+        "failingAudits": [
+          {
+            "id": "lcp-lazy-loaded",
+            "title": "Largest Contentful Paint image was lazily loaded",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "is-crawlable",
+            "title": "Page is blocked from indexing",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "lcp-discovery-insight",
+            "title": "LCP request discovery",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          }
+        ]
+      },
+      "finishedAt": "2026-10-30T18:26:35.266Z",
+      "files": [
+        {
+          "path": "apply/chromium-desktop/full.jpg",
+          "bytes": 621341
+        },
+        {
+          "path": "apply/chromium-desktop/tiles/tile-01.jpg",
+          "bytes": 311010
+        },
+        {
+          "path": "apply/chromium-desktop/tiles/tile-02.jpg",
+          "bytes": 212418
+        },
+        {
+          "path": "apply/chromium-desktop/tiles/tile-03.jpg",
+          "bytes": 98410
+        },
+        {
+          "path": "apply/chromium-desktop/meta.json",
+          "bytes": 3273
+        },
+        {
+          "path": "apply/chromium-desktop/text.md",
+          "bytes": 1121
+        },
+        {
+          "path": "apply/chromium-desktop/page.html",
+          "bytes": 263227
+        },
+        {
+          "path": "apply/chromium-desktop/links.json",
+          "bytes": 8396
+        },
+        {
+          "path": "apply/chromium-desktop/images.json",
+          "bytes": 520
+        },
+        {
+          "path": "apply/chromium-desktop/styles.json",
+          "bytes": 3734
+        },
+        {
+          "path": "apply/chromium-desktop/forms.json",
+          "bytes": 14756
+        },
+        {
+          "path": "apply/chromium-desktop/a11y.json",
+          "bytes": 336
+        },
+        {
+          "path": "apply/chromium-desktop/aria.yaml",
+          "bytes": 3456
+        },
+        {
+          "path": "apply/chromium-desktop/steps.json",
+          "bytes": 3708
+        },
+        {
+          "path": "apply/chromium-desktop/lighthouse.json",
+          "bytes": 861
+        },
+        {
+          "path": "apply/chromium-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/chromium-desktop/summary.md",
+          "bytes": 1543
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "apply/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:26:35.267Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 2.6,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "mobile",
+        "scores": {
+          "performance": 96,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 69
+        },
+        "metrics": {
+          "LCP": "2.6 s",
+          "CLS": "0",
+          "TBT": "0 ms",
+          "FCP": "1.6 s",
+          "SpeedIndex": "1.6 s"
+        },
+        "failingAudits": [
+          {
+            "id": "largest-contentful-paint-element",
+            "title": "Largest Contentful Paint element",
+            "score": 0,
+            "displayValue": "2,640 ms"
+          },
+          {
+            "id": "lcp-lazy-loaded",
+            "title": "Largest Contentful Paint image was lazily loaded",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "is-crawlable",
+            "title": "Page is blocked from indexing",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "image-delivery-insight",
+            "title": "Improve image delivery",
+            "score": 0,
+            "displayValue": "Est savings of 32 KiB"
+          },
+          {
+            "id": "lcp-discovery-insight",
+            "title": "LCP request discovery",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "largest-contentful-paint",
+            "title": "Largest Contentful Paint",
+            "score": 0.87,
+            "displayValue": "2.6 s"
+          }
+        ]
+      },
+      "finishedAt": "2026-10-30T18:26:51.173Z",
+      "files": [
+        {
+          "path": "apply/chromium-mobile/full.jpg",
+          "bytes": 353394
+        },
+        {
+          "path": "apply/chromium-mobile/tiles/tile-01.jpg",
+          "bytes": 116639
+        },
+        {
+          "path": "apply/chromium-mobile/tiles/tile-02.jpg",
+          "bytes": 53952
+        },
+        {
+          "path": "apply/chromium-mobile/tiles/tile-03.jpg",
+          "bytes": 80077
+        },
+        {
+          "path": "apply/chromium-mobile/tiles/tile-04.jpg",
+          "bytes": 77424
+        },
+        {
+          "path": "apply/chromium-mobile/tiles/tile-05.jpg",
+          "bytes": 24131
+        },
+        {
+          "path": "apply/chromium-mobile/meta.json",
+          "bytes": 3273
+        },
+        {
+          "path": "apply/chromium-mobile/text.md",
+          "bytes": 1170
+        },
+        {
+          "path": "apply/chromium-mobile/page.html",
+          "bytes": 263227
+        },
+        {
+          "path": "apply/chromium-mobile/links.json",
+          "bytes": 8398
+        },
+        {
+          "path": "apply/chromium-mobile/images.json",
+          "bytes": 524
+        },
+        {
+          "path": "apply/chromium-mobile/styles.json",
+          "bytes": 3700
+        },
+        {
+          "path": "apply/chromium-mobile/forms.json",
+          "bytes": 14756
+        },
+        {
+          "path": "apply/chromium-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "apply/chromium-mobile/aria.yaml",
+          "bytes": 3371
+        },
+        {
+          "path": "apply/chromium-mobile/steps.json",
+          "bytes": 3470
+        },
+        {
+          "path": "apply/chromium-mobile/lighthouse.json",
+          "bytes": 1328
+        },
+        {
+          "path": "apply/chromium-mobile/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/chromium-mobile/summary.md",
+          "bytes": 1584
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "donate/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:26:51.174Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 2.2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "desktop",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 66
+        },
+        "metrics": {
+          "LCP": "0.6 s",
+          "CLS": "0",
+          "TBT": "0 ms",
+          "FCP": "0.4 s",
+          "SpeedIndex": "0.4 s"
+        },
+        "failingAudits": [
+          {
+            "id": "is-crawlable",
+            "title": "Page is blocked from indexing",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          }
+        ]
+      },
+      "finishedAt": "2026-10-30T18:27:07.350Z",
+      "files": [
+        {
+          "path": "donate/chromium-desktop/full.jpg",
+          "bytes": 532934
+        },
+        {
+          "path": "donate/chromium-desktop/tiles/tile-01.jpg",
+          "bytes": 325752
+        },
+        {
+          "path": "donate/chromium-desktop/tiles/tile-02.jpg",
+          "bytes": 205551
+        },
+        {
+          "path": "donate/chromium-desktop/meta.json",
+          "bytes": 3242
+        },
+        {
+          "path": "donate/chromium-desktop/text.md",
+          "bytes": 1217
+        },
+        {
+          "path": "donate/chromium-desktop/page.html",
+          "bytes": 247697
+        },
+        {
+          "path": "donate/chromium-desktop/links.json",
+          "bytes": 9495
+        },
+        {
+          "path": "donate/chromium-desktop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/chromium-desktop/styles.json",
+          "bytes": 3365
+        },
+        {
+          "path": "donate/chromium-desktop/forms.json",
+          "bytes": 2668
+        },
+        {
+          "path": "donate/chromium-desktop/a11y.json",
+          "bytes": 336
+        },
+        {
+          "path": "donate/chromium-desktop/aria.yaml",
+          "bytes": 3663
+        },
+        {
+          "path": "donate/chromium-desktop/steps.json",
+          "bytes": 3829
+        },
+        {
+          "path": "donate/chromium-desktop/lighthouse.json",
+          "bytes": 570
+        },
+        {
+          "path": "donate/chromium-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/chromium-desktop/summary.md",
+          "bytes": 1531
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "donate/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:27:07.352Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 2.5,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 4,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "mobile",
+        "scores": {
+          "performance": 98,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 66
+        },
+        "metrics": {
+          "LCP": "2.3 s",
+          "CLS": "0",
+          "TBT": "0 ms",
+          "FCP": "1.2 s",
+          "SpeedIndex": "1.2 s"
+        },
+        "failingAudits": [
+          {
+            "id": "is-crawlable",
+            "title": "Page is blocked from indexing",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          }
+        ]
+      },
+      "finishedAt": "2026-10-30T18:27:22.934Z",
+      "files": [
+        {
+          "path": "donate/chromium-mobile/full.jpg",
+          "bytes": 343687
+        },
+        {
+          "path": "donate/chromium-mobile/tiles/tile-01.jpg",
+          "bytes": 90050
+        },
+        {
+          "path": "donate/chromium-mobile/tiles/tile-02.jpg",
+          "bytes": 106487
+        },
+        {
+          "path": "donate/chromium-mobile/tiles/tile-03.jpg",
+          "bytes": 86569
+        },
+        {
+          "path": "donate/chromium-mobile/tiles/tile-04.jpg",
+          "bytes": 62988
+        },
+        {
+          "path": "donate/chromium-mobile/meta.json",
+          "bytes": 3242
+        },
+        {
+          "path": "donate/chromium-mobile/text.md",
+          "bytes": 1190
+        },
+        {
+          "path": "donate/chromium-mobile/page.html",
+          "bytes": 247697
+        },
+        {
+          "path": "donate/chromium-mobile/links.json",
+          "bytes": 9499
+        },
+        {
+          "path": "donate/chromium-mobile/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/chromium-mobile/styles.json",
+          "bytes": 3331
+        },
+        {
+          "path": "donate/chromium-mobile/forms.json",
+          "bytes": 2668
+        },
+        {
+          "path": "donate/chromium-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "donate/chromium-mobile/aria.yaml",
+          "bytes": 3355
+        },
+        {
+          "path": "donate/chromium-mobile/steps.json",
+          "bytes": 3897
+        },
+        {
+          "path": "donate/chromium-mobile/lighthouse.json",
+          "bytes": 568
+        },
+        {
+          "path": "donate/chromium-mobile/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/chromium-mobile/summary.md",
+          "bytes": 1572
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/does-not-exist",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "notfound/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:27:22.936Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/does-not-exist",
+      "loadSeconds": 2.1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "error": "Command failed: npx --yes lighthouse@12 https://caring-for-a-cause.forgetraining.workers.dev/does-not-exist --output=json --output-path=/home/runner/work/browser-bridge/browser-bridge/out/notfound/chromium-desktop/lighthouse-full.json --quiet --chrome-flags=--headless=new --no-sandbox --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+      },
+      "finishedAt": "2026-10-30T18:27:32.811Z",
+      "files": [
+        {
+          "path": "notfound/chromium-desktop/full.jpg",
+          "bytes": 309321
+        },
+        {
+          "path": "notfound/chromium-desktop/tiles/tile-01.jpg",
+          "bytes": 240854
+        },
+        {
+          "path": "notfound/chromium-desktop/tiles/tile-02.jpg",
+          "bytes": 68995
+        },
+        {
+          "path": "notfound/chromium-desktop/meta.json",
+          "bytes": 2843
+        },
+        {
+          "path": "notfound/chromium-desktop/text.md",
+          "bytes": 563
+        },
+        {
+          "path": "notfound/chromium-desktop/page.html",
+          "bytes": 211110
+        },
+        {
+          "path": "notfound/chromium-desktop/links.json",
+          "bytes": 7688
+        },
+        {
+          "path": "notfound/chromium-desktop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/chromium-desktop/styles.json",
+          "bytes": 3019
+        },
+        {
+          "path": "notfound/chromium-desktop/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/chromium-desktop/a11y.json",
+          "bytes": 336
+        },
+        {
+          "path": "notfound/chromium-desktop/aria.yaml",
+          "bytes": 2011
+        },
+        {
+          "path": "notfound/chromium-desktop/steps.json",
+          "bytes": 2459
+        },
+        {
+          "path": "notfound/chromium-desktop/lighthouse.json",
+          "bytes": 382
+        },
+        {
+          "path": "notfound/chromium-desktop/network.json",
+          "bytes": 341
+        },
+        {
+          "path": "notfound/chromium-desktop/summary.md",
+          "bytes": 1742
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/does-not-exist",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "notfound/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:27:32.813Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/does-not-exist",
+      "loadSeconds": 2.2,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "error": "Command failed: npx --yes lighthouse@12 https://caring-for-a-cause.forgetraining.workers.dev/does-not-exist --output=json --output-path=/home/runner/work/browser-bridge/browser-bridge/out/notfound/chromium-mobile/lighthouse-full.json --quiet --chrome-flags=--headless=new --no-sandbox --only-categories=performance,accessibility,best-practices,seo"
+      },
+      "finishedAt": "2026-10-30T18:27:42.155Z",
+      "files": [
+        {
+          "path": "notfound/chromium-mobile/full.jpg",
+          "bytes": 179617
+        },
+        {
+          "path": "notfound/chromium-mobile/tiles/tile-01.jpg",
+          "bytes": 95654
+        },
+        {
+          "path": "notfound/chromium-mobile/tiles/tile-02.jpg",
+          "bytes": 67809
+        },
+        {
+          "path": "notfound/chromium-mobile/tiles/tile-03.jpg",
+          "bytes": 16715
+        },
+        {
+          "path": "notfound/chromium-mobile/meta.json",
+          "bytes": 2843
+        },
+        {
+          "path": "notfound/chromium-mobile/text.md",
+          "bytes": 536
+        },
+        {
+          "path": "notfound/chromium-mobile/page.html",
+          "bytes": 211110
+        },
+        {
+          "path": "notfound/chromium-mobile/links.json",
+          "bytes": 7692
+        },
+        {
+          "path": "notfound/chromium-mobile/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/chromium-mobile/styles.json",
+          "bytes": 3053
+        },
+        {
+          "path": "notfound/chromium-mobile/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/chromium-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "notfound/chromium-mobile/aria.yaml",
+          "bytes": 1703
+        },
+        {
+          "path": "notfound/chromium-mobile/steps.json",
+          "bytes": 2103
+        },
+        {
+          "path": "notfound/chromium-mobile/lighthouse.json",
+          "bytes": 364
+        },
+        {
+          "path": "notfound/chromium-mobile/network.json",
+          "bytes": 341
+        },
+        {
+          "path": "notfound/chromium-mobile/summary.md",
+          "bytes": 1748
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "home/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:27:42.591Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 5,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 8,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-30T18:28:03.255Z",
+      "files": [
+        {
+          "path": "home/webkit-desktop/full.jpg",
+          "bytes": 1622239
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-01.jpg",
+          "bytes": 248837
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-02.jpg",
+          "bytes": 293139
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-03.jpg",
+          "bytes": 180241
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-04.jpg",
+          "bytes": 181320
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-05.jpg",
+          "bytes": 158698
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-06.jpg",
+          "bytes": 178207
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-07.jpg",
+          "bytes": 191677
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-08.jpg",
+          "bytes": 190922
+        },
+        {
+          "path": "home/webkit-desktop/meta.json",
+          "bytes": 4287
+        },
+        {
+          "path": "home/webkit-desktop/text.md",
+          "bytes": 3181
+        },
+        {
+          "path": "home/webkit-desktop/page.html",
+          "bytes": 382391
+        },
+        {
+          "path": "home/webkit-desktop/links.json",
+          "bytes": 13927
+        },
+        {
+          "path": "home/webkit-desktop/images.json",
+          "bytes": 7495
+        },
+        {
+          "path": "home/webkit-desktop/styles.json",
+          "bytes": 4590
+        },
+        {
+          "path": "home/webkit-desktop/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "home/webkit-desktop/a11y.json",
+          "bytes": 336
+        },
+        {
+          "path": "home/webkit-desktop/aria.yaml",
+          "bytes": 8252
+        },
+        {
+          "path": "home/webkit-desktop/steps.json",
+          "bytes": 7022
+        },
+        {
+          "path": "home/webkit-desktop/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "home/webkit-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/webkit-desktop/summary.md",
+          "bytes": 1535
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "browser": "webkit",
+      "device": "mobile",
+      "dir": "home/webkit-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:28:03.257Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "loadSeconds": 4.5,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 13,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-30T18:28:15.529Z",
+      "files": [
+        {
+          "path": "home/webkit-mobile/full.jpg",
+          "bytes": 1231826
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-01.jpg",
+          "bytes": 117704
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-02.jpg",
+          "bytes": 107053
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-03.jpg",
+          "bytes": 117901
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-04.jpg",
+          "bytes": 103260
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-05.jpg",
+          "bytes": 91981
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-06.jpg",
+          "bytes": 125495
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-07.jpg",
+          "bytes": 110613
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-08.jpg",
+          "bytes": 101304
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-09.jpg",
+          "bytes": 97213
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-10.jpg",
+          "bytes": 103826
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-11.jpg",
+          "bytes": 96225
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-12.jpg",
+          "bytes": 63360
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-13.jpg",
+          "bytes": 4285
+        },
+        {
+          "path": "home/webkit-mobile/meta.json",
+          "bytes": 4287
+        },
+        {
+          "path": "home/webkit-mobile/text.md",
+          "bytes": 3148
+        },
+        {
+          "path": "home/webkit-mobile/page.html",
+          "bytes": 382391
+        },
+        {
+          "path": "home/webkit-mobile/links.json",
+          "bytes": 13931
+        },
+        {
+          "path": "home/webkit-mobile/images.json",
+          "bytes": 7806
+        },
+        {
+          "path": "home/webkit-mobile/styles.json",
+          "bytes": 4613
+        },
+        {
+          "path": "home/webkit-mobile/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "home/webkit-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "home/webkit-mobile/aria.yaml",
+          "bytes": 7944
+        },
+        {
+          "path": "home/webkit-mobile/steps.json",
+          "bytes": 7118
+        },
+        {
+          "path": "home/webkit-mobile/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "home/webkit-mobile/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "home/webkit-mobile/summary.md",
+          "bytes": 1648
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "apply/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:28:15.534Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 2.4,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-30T18:28:21.299Z",
+      "files": [
+        {
+          "path": "apply/webkit-desktop/full.jpg",
+          "bytes": 625514
+        },
+        {
+          "path": "apply/webkit-desktop/tiles/tile-01.jpg",
+          "bytes": 320812
+        },
+        {
+          "path": "apply/webkit-desktop/tiles/tile-02.jpg",
+          "bytes": 225765
+        },
+        {
+          "path": "apply/webkit-desktop/tiles/tile-03.jpg",
+          "bytes": 77864
+        },
+        {
+          "path": "apply/webkit-desktop/meta.json",
+          "bytes": 3273
+        },
+        {
+          "path": "apply/webkit-desktop/text.md",
+          "bytes": 1114
+        },
+        {
+          "path": "apply/webkit-desktop/page.html",
+          "bytes": 263227
+        },
+        {
+          "path": "apply/webkit-desktop/links.json",
+          "bytes": 8441
+        },
+        {
+          "path": "apply/webkit-desktop/images.json",
+          "bytes": 520
+        },
+        {
+          "path": "apply/webkit-desktop/styles.json",
+          "bytes": 3742
+        },
+        {
+          "path": "apply/webkit-desktop/forms.json",
+          "bytes": 14756
+        },
+        {
+          "path": "apply/webkit-desktop/a11y.json",
+          "bytes": 336
+        },
+        {
+          "path": "apply/webkit-desktop/aria.yaml",
+          "bytes": 3456
+        },
+        {
+          "path": "apply/webkit-desktop/steps.json",
+          "bytes": 3450
+        },
+        {
+          "path": "apply/webkit-desktop/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "apply/webkit-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/webkit-desktop/summary.md",
+          "bytes": 1511
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "browser": "webkit",
+      "device": "mobile",
+      "dir": "apply/webkit-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:28:21.300Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+      "loadSeconds": 2.7,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-30T18:28:26.470Z",
+      "files": [
+        {
+          "path": "apply/webkit-mobile/full.jpg",
+          "bytes": 354455
+        },
+        {
+          "path": "apply/webkit-mobile/tiles/tile-01.jpg",
+          "bytes": 118689
+        },
+        {
+          "path": "apply/webkit-mobile/tiles/tile-02.jpg",
+          "bytes": 60422
+        },
+        {
+          "path": "apply/webkit-mobile/tiles/tile-03.jpg",
+          "bytes": 80705
+        },
+        {
+          "path": "apply/webkit-mobile/tiles/tile-04.jpg",
+          "bytes": 73591
+        },
+        {
+          "path": "apply/webkit-mobile/tiles/tile-05.jpg",
+          "bytes": 21497
+        },
+        {
+          "path": "apply/webkit-mobile/meta.json",
+          "bytes": 3273
+        },
+        {
+          "path": "apply/webkit-mobile/text.md",
+          "bytes": 1164
+        },
+        {
+          "path": "apply/webkit-mobile/page.html",
+          "bytes": 263227
+        },
+        {
+          "path": "apply/webkit-mobile/links.json",
+          "bytes": 8443
+        },
+        {
+          "path": "apply/webkit-mobile/images.json",
+          "bytes": 524
+        },
+        {
+          "path": "apply/webkit-mobile/styles.json",
+          "bytes": 3703
+        },
+        {
+          "path": "apply/webkit-mobile/forms.json",
+          "bytes": 14756
+        },
+        {
+          "path": "apply/webkit-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "apply/webkit-mobile/aria.yaml",
+          "bytes": 3371
+        },
+        {
+          "path": "apply/webkit-mobile/steps.json",
+          "bytes": 3466
+        },
+        {
+          "path": "apply/webkit-mobile/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "apply/webkit-mobile/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "apply/webkit-mobile/summary.md",
+          "bytes": 1565
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "donate/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:28:26.472Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 2.5,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-30T18:28:32.237Z",
+      "files": [
+        {
+          "path": "donate/webkit-desktop/full.jpg",
+          "bytes": 537728
+        },
+        {
+          "path": "donate/webkit-desktop/tiles/tile-01.jpg",
+          "bytes": 326621
+        },
+        {
+          "path": "donate/webkit-desktop/tiles/tile-02.jpg",
+          "bytes": 211212
+        },
+        {
+          "path": "donate/webkit-desktop/meta.json",
+          "bytes": 3242
+        },
+        {
+          "path": "donate/webkit-desktop/text.md",
+          "bytes": 1215
+        },
+        {
+          "path": "donate/webkit-desktop/page.html",
+          "bytes": 247697
+        },
+        {
+          "path": "donate/webkit-desktop/links.json",
+          "bytes": 9532
+        },
+        {
+          "path": "donate/webkit-desktop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/webkit-desktop/styles.json",
+          "bytes": 3370
+        },
+        {
+          "path": "donate/webkit-desktop/forms.json",
+          "bytes": 2668
+        },
+        {
+          "path": "donate/webkit-desktop/a11y.json",
+          "bytes": 336
+        },
+        {
+          "path": "donate/webkit-desktop/aria.yaml",
+          "bytes": 3663
+        },
+        {
+          "path": "donate/webkit-desktop/steps.json",
+          "bytes": 3573
+        },
+        {
+          "path": "donate/webkit-desktop/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "donate/webkit-desktop/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/webkit-desktop/summary.md",
+          "bytes": 1499
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "browser": "webkit",
+      "device": "mobile",
+      "dir": "donate/webkit-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:28:32.238Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+      "loadSeconds": 2.6,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 4,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-30T18:28:37.012Z",
+      "files": [
+        {
+          "path": "donate/webkit-mobile/full.jpg",
+          "bytes": 346247
+        },
+        {
+          "path": "donate/webkit-mobile/tiles/tile-01.jpg",
+          "bytes": 92167
+        },
+        {
+          "path": "donate/webkit-mobile/tiles/tile-02.jpg",
+          "bytes": 108442
+        },
+        {
+          "path": "donate/webkit-mobile/tiles/tile-03.jpg",
+          "bytes": 86832
+        },
+        {
+          "path": "donate/webkit-mobile/tiles/tile-04.jpg",
+          "bytes": 62196
+        },
+        {
+          "path": "donate/webkit-mobile/meta.json",
+          "bytes": 3242
+        },
+        {
+          "path": "donate/webkit-mobile/text.md",
+          "bytes": 1188
+        },
+        {
+          "path": "donate/webkit-mobile/page.html",
+          "bytes": 247697
+        },
+        {
+          "path": "donate/webkit-mobile/links.json",
+          "bytes": 9536
+        },
+        {
+          "path": "donate/webkit-mobile/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/webkit-mobile/styles.json",
+          "bytes": 3330
+        },
+        {
+          "path": "donate/webkit-mobile/forms.json",
+          "bytes": 2668
+        },
+        {
+          "path": "donate/webkit-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "donate/webkit-mobile/aria.yaml",
+          "bytes": 3355
+        },
+        {
+          "path": "donate/webkit-mobile/steps.json",
+          "bytes": 3897
+        },
+        {
+          "path": "donate/webkit-mobile/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "donate/webkit-mobile/network.json",
+          "bytes": 143
+        },
+        {
+          "path": "donate/webkit-mobile/summary.md",
+          "bytes": 1553
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/does-not-exist",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "notfound/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:28:37.014Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/does-not-exist",
+      "loadSeconds": 2.3,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-30T18:28:41.107Z",
+      "files": [
+        {
+          "path": "notfound/webkit-desktop/full.jpg",
+          "bytes": 315902
+        },
+        {
+          "path": "notfound/webkit-desktop/tiles/tile-01.jpg",
+          "bytes": 245449
+        },
+        {
+          "path": "notfound/webkit-desktop/tiles/tile-02.jpg",
+          "bytes": 70755
+        },
+        {
+          "path": "notfound/webkit-desktop/meta.json",
+          "bytes": 2843
+        },
+        {
+          "path": "notfound/webkit-desktop/text.md",
+          "bytes": 561
+        },
+        {
+          "path": "notfound/webkit-desktop/page.html",
+          "bytes": 211110
+        },
+        {
+          "path": "notfound/webkit-desktop/links.json",
+          "bytes": 7733
+        },
+        {
+          "path": "notfound/webkit-desktop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/webkit-desktop/styles.json",
+          "bytes": 3014
+        },
+        {
+          "path": "notfound/webkit-desktop/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/webkit-desktop/a11y.json",
+          "bytes": 336
+        },
+        {
+          "path": "notfound/webkit-desktop/aria.yaml",
+          "bytes": 2011
+        },
+        {
+          "path": "notfound/webkit-desktop/steps.json",
+          "bytes": 2203
+        },
+        {
+          "path": "notfound/webkit-desktop/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "notfound/webkit-desktop/network.json",
+          "bytes": 350
+        },
+        {
+          "path": "notfound/webkit-desktop/summary.md",
+          "bytes": 1417
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/does-not-exist",
+      "browser": "webkit",
+      "device": "mobile",
+      "dir": "notfound/webkit-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-30T18:28:41.109Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caring-for-a-cause.forgetraining.workers.dev/does-not-exist",
+      "loadSeconds": 2.3,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-30T18:28:44.874Z",
+      "files": [
+        {
+          "path": "notfound/webkit-mobile/full.jpg",
+          "bytes": 176580
+        },
+        {
+          "path": "notfound/webkit-mobile/tiles/tile-01.jpg",
+          "bytes": 95896
+        },
+        {
+          "path": "notfound/webkit-mobile/tiles/tile-02.jpg",
+          "bytes": 65271
+        },
+        {
+          "path": "notfound/webkit-mobile/tiles/tile-03.jpg",
+          "bytes": 16887
+        },
+        {
+          "path": "notfound/webkit-mobile/meta.json",
+          "bytes": 2843
+        },
+        {
+          "path": "notfound/webkit-mobile/text.md",
+          "bytes": 534
+        },
+        {
+          "path": "notfound/webkit-mobile/page.html",
+          "bytes": 211110
+        },
+        {
+          "path": "notfound/webkit-mobile/links.json",
+          "bytes": 7737
+        },
+        {
+          "path": "notfound/webkit-mobile/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/webkit-mobile/styles.json",
+          "bytes": 3052
+        },
+        {
+          "path": "notfound/webkit-mobile/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/webkit-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "notfound/webkit-mobile/aria.yaml",
+          "bytes": 1703
+        },
+        {
+          "path": "notfound/webkit-mobile/steps.json",
+          "bytes": 2103
+        },
+        {
+          "path": "notfound/webkit-mobile/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "notfound/webkit-mobile/network.json",
+          "bytes": 350
+        },
+        {
+          "path": "notfound/webkit-mobile/summary.md",
+          "bytes": 1452
+        }
+      ]
+    }
+  ],
+  "job": {
+    "preset": "deep",
+    "targets": [
+      {
+        "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+        "name": "home"
+      },
+      {
+        "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+        "name": "apply"
+      },
+      {
+        "url": "https://caring-for-a-cause.forgetraining.workers.dev/donate/",
+        "name": "donate"
+      },
+      {
+        "url": "https://caring-for-a-cause.forgetraining.workers.dev/does-not-exist",
+        "name": "notfound"
+      }
+    ],
+    "browsers": [
+      "chromium",
+      "webkit"
+    ],
+    "devices": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "mobile",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+        "viewport": {
+          "width": 393,
+          "height": 659
+        },
+        "screen": {
+          "width": 393,
+          "height": 852
+        },
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true,
+        "defaultBrowserType": "webkit"
+      }
+    ],
+    "capture": {
+      "screenshot": "full",
+      "tiles": true,
+      "tileHeight": null,
+      "maxTiles": 25,
+      "format": "jpeg",
+      "quality": 80,
+      "detail": 2,
+      "animations": "disabled",
+      "waitMs": 800,
+      "timeoutMs": 45000,
+      "revealLazyContent": true,
+      "hide": [],
+      "blockWrites": true,
+      "text": true,
+      "meta": true,
+      "html": true,
+      "links": true,
+      "checkLinks": true,
+      "images": true,
+      "styles": true,
+      "forms": true,
+      "a11y": true,
+      "aria": true,
+      "lighthouse": true
+    },
+    "steps": [
+      {
+        "action": "evaluate",
+        "script": "(async () => {\n  const sleep = ms => new Promise(r => setTimeout(r, ms));\n  const vw = innerWidth, out = { vw, vh: innerHeight, path: location.pathname };\n  const header = document.querySelector('header');\n  const hb = header ? header.getBoundingClientRect().bottom : 0;\n  out.headerH = Math.round(hb);\n  const vis = el => { const s = getComputedStyle(el); const r = el.getBoundingClientRect();\n    return s.visibility !== 'hidden' && s.display !== 'none' && +s.opacity > 0.05 && r.width > 2 && r.height > 2; };\n  const content = 'h1,h2,h3,h4,p,li,a,button,img,picture,video,iframe,input,select,textarea,label,summary,figure,svg[role=img]';\n  // 1. gaps between consecutive top-level sections\n  const secs = [...document.querySelectorAll('main > section, main > div > section, main > *, footer')].filter(vis);\n  const uniq = [...new Set(secs)].sort((a,b)=>a.getBoundingClientRect().top-b.getBoundingClientRect().top);\n  const box = el => { let top=Infinity, bot=-Infinity;\n    el.querySelectorAll(content).forEach(c => { if (!vis(c) || c.closest('[aria-hidden=true]')) return; const r=c.getBoundingClientRect(); if (r.height>300 && c.tagName==='svg') return; top=Math.min(top,r.top+scrollY); bot=Math.max(bot,r.bottom+scrollY); });\n    return {top, bot}; };\n  out.gaps = [];\n  for (let i=0;i<uniq.length-1;i++) { const a=box(uniq[i]), b=box(uniq[i+1]);\n    if (isFinite(a.bot)&&isFinite(b.top)) out.gaps.push({from: (uniq[i].id||uniq[i].className||uniq[i].tagName).toString().slice(0,40), to:(uniq[i+1].id||uniq[i+1].className||uniq[i+1].tagName).toString().slice(0,40), gap: Math.round(b.top-a.bot)}); }\n  // within-section vertical gaps between consecutive content blocks (largest 8)\n  const blocks = [...document.querySelectorAll('main h2, main h3, main p, main ul, main img, main a, main button, main figure')].filter(vis)\n    .map(e=>{const r=e.getBoundingClientRect();return {e, top:r.top+scrollY, bot:r.bottom+scrollY, t:(e.innerText||e.alt||e.tagName).trim().slice(0,30)}}).sort((a,b)=>a.top-b.top);\n  const big=[]; let maxBot=-Infinity, last=null;\n  for (const b of blocks) { if (last && b.top-maxBot>0) big.push({gap:Math.round(b.top-maxBot), after:last.t, before:b.t}); if (b.bot>maxBot){maxBot=b.bot; last=b;} }\n  out.biggestGaps = big.sort((a,b)=>b.gap-a.gap).slice(0,10);\n  // 2. hover rules not guarded by (hover:hover)\n  let hoverUnguarded=0, hoverGuarded=0, samples=[];\n  const walk=(rules,guard)=>{ for (const r of rules) { if (r.cssRules && r.media) walk(r.cssRules, guard || /hover\\s*:\\s*hover|pointer\\s*:\\s*fine/.test(r.media.mediaText)); else if (r.cssRules) walk(r.cssRules, guard);\n      if (r.selectorText && r.selectorText.includes(':hover')) { if (guard) hoverGuarded++; else { hoverUnguarded++; if (samples.length<12) samples.push(r.selectorText.slice(0,80)); } } } };\n  for (const s of document.styleSheets) { try { walk(s.cssRules,false); } catch(e){} }\n  out.hover = {hoverUnguarded, hoverGuarded, samples};\n  // 3. tight horizontal padding in pills/buttons\n  out.tight = [];\n  document.querySelectorAll('button, a, [role=tab], label').forEach(el=>{ if(!vis(el)) return; const r=el.getBoundingClientRect(); if (r.height<28||r.height>90) return;\n    const rg=document.createRange(); rg.selectNodeContents(el); const tr=rg.getBoundingClientRect(); if (!tr.width) return;\n    const bg=getComputedStyle(el); const pill = bg.backgroundColor!=='rgba(0, 0, 0, 0)' || bg.boxShadow!=='none' || bg.borderStyle!=='none';\n    if (!pill) return; const l=tr.left-r.left, rt=r.right-tr.right;\n    if (Math.min(l,rt) < 14 && r.width>40) out.tight.push({t:el.innerText.trim().slice(0,30), padL:Math.round(l), padR:Math.round(rt), w:Math.round(r.width)}); });\n  // 4. horizontal scrollers and clipped children\n  out.scrollers=[]; document.querySelectorAll('*').forEach(el=>{ const s=getComputedStyle(el); if(/(auto|scroll)/.test(s.overflowX) && el.scrollWidth>el.clientWidth+4 && vis(el)) {\n    const kids=[...el.children].filter(vis); const clipped=kids.filter(k=>{const r=k.getBoundingClientRect(); return r.right>innerWidth+1||r.left<-1}).length;\n    out.scrollers.push({cls:(el.className||el.tagName).toString().slice(0,40), items:kids.length, clippedOrOffscreen:clipped}); } });\n  // 5. content past the gutter\n  const logo = header && header.querySelector('a'); const L = logo ? logo.getBoundingClientRect().left : 0; const R = vw - L;\n  out.gutter={L:Math.round(L), R:Math.round(R)}; out.pastGutter=[];\n  document.querySelectorAll('p, a, span, h1, h2, h3, li').forEach(el=>{ if(!vis(el)||el.closest('header')) return; if (el.children.length && el.tagName!=='A') return;\n    const r=el.getBoundingClientRect(); if (r.right>R+4 && r.right<=vw && el.innerText.trim()) out.pastGutter.push({t:el.innerText.trim().slice(0,40), over:Math.round(r.right-R)}); });\n  out.pastGutter=out.pastGutter.slice(0,10);\n  // 6. duplicate sentences\n  const seen={}; document.querySelectorAll('main p, main li, main h2, main h3').forEach(el=>{ if(!vis(el))return; el.innerText.split(/(?<=[.?!])\\s+/).forEach(s=>{s=s.trim(); if(s.length>25) (seen[s]=seen[s]||[]).push(1);});});\n  out.dupes=Object.entries(seen).filter(([k,v])=>v.length>1).map(([k,v])=>({s:k.slice(0,90),n:v.length}));\n  // 7. images: upscale + face-agnostic crop info\n  out.images=[...document.images].filter(vis).map(i=>{const r=i.getBoundingClientRect(); return {src:(i.currentSrc||i.src).split('/').pop().split('?')[0].slice(0,40), shown:Math.round(r.width)+'x'+Math.round(r.height), nat:i.naturalWidth+'x'+i.naturalHeight, ratio:+(i.naturalWidth/(r.width*devicePixelRatio)).toFixed(2), pos:getComputedStyle(i).objectPosition}}).filter(x=>x.ratio<1);\n  // 8. in-page anchor landings\n  out.anchors=[]; const ids=[...new Set([...document.querySelectorAll('a[href*=\"#\"]')].map(a=>a.getAttribute('href').split('#')[1]).filter(Boolean))];\n  for (const id of ids) { const t=document.getElementById(id); if(!t) {out.anchors.push({id, missing:true}); continue;}\n    t.scrollIntoView({behavior:'instant', block:'start'}); await sleep(250);\n    const h = t.querySelector('h2,h3,.eyebrow,[class*=eyebrow]') || t; const top=h.getBoundingClientRect().top;\n    const headBot = header ? header.getBoundingClientRect().bottom : 0;\n    out.anchors.push({id, firstText:(h.innerText||'').trim().slice(0,25), gapBelowHeader:Math.round(top-headBot)}); }\n  scrollTo(0,0);\n  return out;\n})()\n",
+        "name": "measure"
+      }
+    ],
+    "notes": "Round 3 live audit of PR 68 deploy with pattern measurements",
+    "brief": "(saved as brief.md)"
+  },
+  "finishedAt": "2026-10-30T18:28:44.931Z"
+}

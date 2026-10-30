@@ -1,0 +1,293 @@
+{
+  "images": [
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/haircut-boy.Bkh-8wdm_Z1Ke5jn.avif",
+      "alt": "",
+      "natural": {
+        "w": 1123,
+        "h": 1497
+      },
+      "displayed": {
+        "w": 1157,
+        "h": 685
+      },
+      "naturalToDisplayedRatio": 0.97,
+      "visible": true,
+      "loading": "eager",
+      "flags": [
+        "empty-alt-on-large-image",
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/families-banner.0DIkDNEB_2gdmUY.avif",
+      "alt": "",
+      "natural": {
+        "w": 1123,
+        "h": 1497
+      },
+      "displayed": {
+        "w": 1145,
+        "h": 678
+      },
+      "naturalToDisplayedRatio": 0.98,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/holiday-gift-bags.BW_V1vNm_6v1AM.avif",
+      "alt": "",
+      "natural": {
+        "w": 1123,
+        "h": 1497
+      },
+      "displayed": {
+        "w": 1145,
+        "h": 678
+      },
+      "naturalToDisplayedRatio": 0.98,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/holiday-shopping.DGi0cLBx_24brwf.avif",
+      "alt": "",
+      "natural": {
+        "w": 1123,
+        "h": 1497
+      },
+      "displayed": {
+        "w": 1145,
+        "h": 678
+      },
+      "naturalToDisplayedRatio": 0.98,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/holiday-gift-bags.BW_V1vNm_ECcjk.avif",
+      "alt": "Children holding holiday gift bags beside a volunteer in a Santa hat",
+      "natural": {
+        "w": 72,
+        "h": 96
+      },
+      "displayed": {
+        "w": 71,
+        "h": 81
+      },
+      "naturalToDisplayedRatio": 1.02,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/diaper-drive.DQOaEkt9_TsxoY.avif",
+      "alt": "A volunteer hands a large pack of diapers to a family with a young child",
+      "natural": {
+        "w": 72,
+        "h": 96
+      },
+      "displayed": {
+        "w": 81,
+        "h": 81
+      },
+      "naturalToDisplayedRatio": 0.89,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/care-basket.dUg-bsTE_2eHChh.avif",
+      "alt": "A woman carries a basket filled with care package items",
+      "natural": {
+        "w": 72,
+        "h": 96
+      },
+      "displayed": {
+        "w": 57,
+        "h": 81
+      },
+      "naturalToDisplayedRatio": 1.26,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/haircut-boy.Bkh-8wdm_1XPax5.avif",
+      "alt": "A boy gets a free haircut from a volunteer stylist",
+      "natural": {
+        "w": 72,
+        "h": 96
+      },
+      "displayed": {
+        "w": 73,
+        "h": 81
+      },
+      "naturalToDisplayedRatio": 0.98,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/holiday-gift-bags.BW_V1vNm_4tVDD.avif",
+      "alt": "Children holding holiday gift bags beside a volunteer in a Santa hat",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 495,
+        "h": 495
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/diaper-drive.DQOaEkt9_jcqwQ.avif",
+      "alt": "A volunteer hands a large pack of diapers to a family with a young child",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 495,
+        "h": 495
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/care-basket.dUg-bsTE_Z1pThxP.avif",
+      "alt": "A woman carries a basket filled with care package items",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 495,
+        "h": 495
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/stylist-haircut.DdAwisTG_Z1fcUnG.avif",
+      "alt": "",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 693,
+        "h": 390
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/holiday-shopping.DGi0cLBx_g3aso.avif",
+      "alt": "Children holding shopping bags during a holiday shopping trip",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 624,
+        "h": 394
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/face-paint-closeup.hH_HTKJs_Z1RKWOp.avif",
+      "alt": "A child with a colorful painted face at a community event",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 624,
+        "h": 394
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/volunteer-face-painting.Ds_sDRGR_Z1TQjly.avif",
+      "alt": "A volunteer styles a girl's hair at a community event",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 624,
+        "h": 394
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/stylist-haircut.DdAwisTG_Z1fcUnG.avif",
+      "alt": "A volunteer stylist cuts a man's hair at a free haircut event",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 624,
+        "h": 394
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/tamara-portrait.B5ksF5Q2_Z2ds21w.avif",
+      "alt": "Tamara Long-Ajimati, founder of Caring for a Cause, smiling outside in a red top",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 468,
+        "h": 585
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    }
+  ],
+  "backgrounds": []
+}

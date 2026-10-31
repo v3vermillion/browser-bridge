@@ -1,0 +1,91 @@
+{
+  "url": "https://caringforacauseindy.org/donate/",
+  "title": "Donate | Caring for a Cause",
+  "lang": "en",
+  "description": "Give once or monthly to Caring for a Cause, a 501(c)(3) nonprofit. Your donation helps put holiday meals, gifts, diapers, and school supplies into local homes.",
+  "viewport": "width=device-width, initial-scale=1",
+  "robots": "noindex, nofollow",
+  "generator": null,
+  "canonical": null,
+  "favicon": "https://caringforacauseindy.org/favicon-32.png",
+  "og": {
+    "title": "Donate | Caring for a Cause",
+    "description": "Give once or monthly to Caring for a Cause, a 501(c)(3) nonprofit. Your donation helps put holiday meals, gifts, diapers, and school supplies into local homes.",
+    "image": "/og-image.jpg",
+    "url": null,
+    "type": "website",
+    "site_name": "Caring for a Cause Supportive Services"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Donate | Caring for a Cause",
+    "description": "Give once or monthly to Caring for a Cause, a 501(c)(3) nonprofit. Your donation helps put holiday meals, gifts, diapers, and school supplies into local homes.",
+    "image": "/og-image.jpg"
+  },
+  "h1Count": 1,
+  "headings": [
+    {
+      "level": 1,
+      "text": "Give to families in Central Indiana",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Give once or monthly",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "What your gift provides",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Explore",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Connect with us",
+      "visible": true
+    }
+  ],
+  "structuredData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "Caring for a Cause Supportive Services Inc.",
+      "alternateName": "Caring for a Cause",
+      "logo": "/icon-512.png",
+      "description": "We create and manage programs that support the physical and emotional well-being of families in Central Indiana who are facing financial hardship.",
+      "foundingDate": "2015",
+      "founder": {
+        "@type": "Person",
+        "name": "Tamara Long-Ajimati"
+      },
+      "taxID": "47-4917287",
+      "nonprofitStatus": "Nonprofit501c3",
+      "areaServed": "Central Indiana",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Indianapolis",
+          "addressRegion": "IN",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Noblesville",
+          "addressRegion": "IN",
+          "addressCountry": "US"
+        }
+      ],
+      "telephone": "+13178860724",
+      "email": "caringforacause2015@gmail.com",
+      "sameAs": [
+        "https://www.facebook.com/caringforacausesupportiveservices"
+      ]
+    }
+  ],
+  "pageHeight": 1601
+}

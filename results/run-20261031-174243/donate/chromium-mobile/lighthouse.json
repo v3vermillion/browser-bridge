@@ -1,0 +1,54 @@
+{
+  "formFactor": "mobile",
+  "scores": {
+    "performance": 97,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 63
+  },
+  "metrics": {
+    "LCP": "2.4 s",
+    "CLS": "0",
+    "TBT": "0 ms",
+    "FCP": "1.9 s",
+    "SpeedIndex": "1.9 s"
+  },
+  "failingAudits": [
+    {
+      "id": "is-crawlable",
+      "title": "Page is blocked from indexing",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "uses-long-cache-ttl",
+      "title": "Serve static assets with an efficient cache policy",
+      "score": 0.5,
+      "displayValue": "1 resource found"
+    },
+    {
+      "id": "legacy-javascript",
+      "title": "Avoid serving legacy JavaScript to modern browsers",
+      "score": 0.5,
+      "displayValue": "Est savings of 10 KiB"
+    },
+    {
+      "id": "cache-insight",
+      "title": "Use efficient cache lifetimes",
+      "score": 0.5,
+      "displayValue": "Est savings of 4 KiB"
+    },
+    {
+      "id": "first-contentful-paint",
+      "title": "First Contentful Paint",
+      "score": 0.88,
+      "displayValue": "1.9 s"
+    }
+  ]
+}

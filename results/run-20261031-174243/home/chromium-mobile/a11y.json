@@ -1,0 +1,17 @@
+{
+  "note": "Automated scans catch only part of accessibility problems; absence of a violation is not proof of compliance.",
+  "violations": [],
+  "incompleteNeedsReview": [
+    {
+      "id": "aria-valid-attr-value",
+      "help": "ARIA attributes must conform to valid values",
+      "count": 1
+    },
+    {
+      "id": "color-contrast",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "count": 94
+    }
+  ],
+  "passesCount": 45
+}

@@ -1,0 +1,84 @@
+{
+  "formFactor": "mobile",
+  "scores": {
+    "performance": 93,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 66
+  },
+  "metrics": {
+    "LCP": "3.0 s",
+    "CLS": "0",
+    "TBT": "0 ms",
+    "FCP": "1.9 s",
+    "SpeedIndex": "1.9 s"
+  },
+  "failingAudits": [
+    {
+      "id": "largest-contentful-paint-element",
+      "title": "Largest Contentful Paint element",
+      "score": 0,
+      "displayValue": "3,010 ms"
+    },
+    {
+      "id": "lcp-lazy-loaded",
+      "title": "Largest Contentful Paint image was lazily loaded",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "is-crawlable",
+      "title": "Page is blocked from indexing",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "cache-insight",
+      "title": "Use efficient cache lifetimes",
+      "score": 0,
+      "displayValue": "Est savings of 4 KiB"
+    },
+    {
+      "id": "image-delivery-insight",
+      "title": "Improve image delivery",
+      "score": 0,
+      "displayValue": "Est savings of 32 KiB"
+    },
+    {
+      "id": "lcp-discovery-insight",
+      "title": "LCP request discovery",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "uses-long-cache-ttl",
+      "title": "Serve static assets with an efficient cache policy",
+      "score": 0.5,
+      "displayValue": "1 resource found"
+    },
+    {
+      "id": "legacy-javascript",
+      "title": "Avoid serving legacy JavaScript to modern browsers",
+      "score": 0.5,
+      "displayValue": "Est savings of 10 KiB"
+    },
+    {
+      "id": "largest-contentful-paint",
+      "title": "Largest Contentful Paint",
+      "score": 0.78,
+      "displayValue": "3.0 s"
+    },
+    {
+      "id": "first-contentful-paint",
+      "title": "First Contentful Paint",
+      "score": 0.87,
+      "displayValue": "1.9 s"
+    }
+  ]
+}

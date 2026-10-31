@@ -1,0 +1,215 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "Caring for a Cause Supportive Services":
+    - /url: /
+    - img "Caring for a Cause Supportive Services"
+  - navigation "Main":
+    - list:
+      - listitem:
+        - link "About":
+          - /url: /#about
+      - listitem:
+        - link "Programs":
+          - /url: /#programs
+      - listitem:
+        - link "Get involved":
+          - /url: /#get-involved
+      - listitem:
+        - link "Contact":
+          - /url: /#contact
+  - link "Donate":
+    - /url: /donate/
+- main:
+  - region "Holiday meals, gifts, and diapers for Central Indiana families.":
+    - paragraph: Together we can.
+    - heading "Holiday meals, gifts, and diapers for Central Indiana families." [level=1]
+    - paragraph: A nonprofit for households facing financial hardship.
+    - link "Help me":
+      - /url: /apply/
+    - link "Donate":
+      - /url: /donate/
+  - region "What we do":
+    - list:
+      - listitem:
+        - link "Holiday Meals":
+          - /url: /#holiday-assistance
+      - listitem:
+        - link "Gifts":
+          - /url: /#holiday-assistance
+      - listitem:
+        - link "Diapers":
+          - /url: /#diaper-drive
+      - listitem:
+        - link "School Supplies":
+          - /url: /#back-to-school
+    - paragraph: Helping families since 2015 501(c)(3) nonprofit, EIN 47-4917287 Partnered with Toys for Tots
+  - region "What we do, all year":
+    - text: Our programs
+    - heading "What we do, all year" [level=2]
+    - paragraph: We create and manage programs that support the physical and emotional well-being of families in Central Indiana who are facing financial hardship.
+    - navigation "Jump to a program":
+      - list:
+        - listitem:
+          - link "A mother with her arm around her young daughter, choosing a toy at a holiday giveaway Holiday Assistance Thanksgiving, Christmas, Easter":
+            - /url: "#holiday-assistance"
+            - img "A mother with her arm around her young daughter, choosing a toy at a holiday giveaway"
+            - text: Holiday Assistance Thanksgiving, Christmas, Easter
+        - listitem:
+          - link "The pantry's shelves stacked with packs of diapers, each labelled with the organization's heart Diaper Drive Diapers every month":
+            - /url: "#diaper-drive"
+            - img "The pantry's shelves stacked with packs of diapers, each labelled with the organization's heart"
+            - text: Diaper Drive Diapers every month
+        - listitem:
+          - link "A woman carries a wrapped basket of food and care items to a family Back-to-School Care Packages Hygiene and school supplies":
+            - /url: "#back-to-school"
+            - img "A woman carries a wrapped basket of food and care items to a family"
+            - text: Back-to-School Care Packages Hygiene and school supplies
+        - listitem:
+          - link "A boy gets a free haircut from a volunteer stylist Free Haircuts & Styles Cuts, styles, face painting":
+            - /url: "#haircuts"
+            - img "A boy gets a free haircut from a volunteer stylist"
+            - text: Free Haircuts & Styles Cuts, styles, face painting
+    - heading "Get help" [level=3]
+    - paragraph: Households with children and seniors are our focus, but anyone who is struggling right now can apply.
+    - paragraph: Prefer to talk to someone first? Call or email us, and we'll send you an application.
+    - link "Start an application":
+      - /url: /apply/
+    - link "Call (317) 886-0724":
+      - /url: tel:+13178860724
+    - link "Email us":
+      - /url: mailto:caringforacause2015@gmail.com?subject=Application%20request
+    - article:
+      - text: Thanksgiving, Christmas, Easter
+      - heading "Holiday Assistance" [level=3]
+      - paragraph: Food boxes and gifts, so every household has a holiday meal and something to open.
+      - paragraph: Who it's for Low-income families in Central Indiana, especially households with children.
+      - list:
+        - listitem: Families can receive toys, clothes, gift cards, meals, or gifts from their wish list.
+        - listitem: Sponsors choose a family and help fill their holiday needs.
+        - listitem: We partner with Toys for Tots.
+      - paragraph:
+        - link "Sponsor a family":
+          - /url: /#sponsor
+      - img "A mother with her arm around her young daughter, choosing a toy at a holiday giveaway"
+    - article:
+      - text: Diapers every month
+      - heading "Diaper Drive" [level=3]
+      - paragraph: A reliable supply, plus referrals to partner resources.
+      - paragraph: Who it's for Families with babies and toddlers who need help with diapers.
+      - paragraph:
+        - link "Partner on the Diaper Drive":
+          - /url: /#partner
+      - img "The pantry's shelves stacked with packs of diapers, each labelled with the organization's heart"
+    - article:
+      - text: Hygiene and school supplies
+      - heading "Back-to-School Care Packages" [level=3]
+      - paragraph: Hygiene items and school supplies for girls and boys in our community.
+      - paragraph: Who it's for Students from families who need help getting ready for school.
+      - group: See what we're collecting
+      - img "A woman carries a wrapped basket of food and care items to a family"
+    - article:
+      - text: Cuts, styles, face painting
+      - heading "Free Haircuts & Styles" [level=3]
+      - paragraph: Volunteer barbers and stylists cut and style hair at our outreach events; makeup artists and face painters join them.
+      - paragraph: Who it's for People experiencing homelessness and low-income families.
+      - paragraph:
+        - link "Volunteer at a haircut event":
+          - /url: /#partner
+      - 'link "Play video: Free haircuts and styles outreach program"':
+        - /url: https://www.youtube.com/watch?v=Z5USx1xFF58
+  - region "Four ways to help":
+    - text: Get involved
+    - heading "Four ways to help" [level=2]
+    - paragraph: Choose how you'd like to help.
+    - tablist "Four ways to help":
+      - tab "Sponsor a family" [selected]
+      - tab "Donate"
+      - tab "Volunteer"
+      - tab "Partner"
+    - tabpanel "Sponsor a family":
+      - heading "Sponsor a family for the holidays" [level=3]
+      - paragraph: Sponsors provide a family with gifts from their wish list, a holiday meal, or both.
+      - paragraph: You may sponsor one family or several, for a single holiday or for all three.
+      - paragraph:
+        - link "Email us to sponsor":
+          - /url: mailto:caringforacause2015@gmail.com?subject=Sponsor%20a%20family%20for%20the%20holidays
+      - img "A young boy grins as he holds up the superhero toy he chose at a holiday giveaway"
+  - region "Meet Tamara Long-Ajimati":
+    - figure:
+      - img "Tamara Long-Ajimati, founder of Caring for a Cause, smiling outside in a red top"
+    - text: About
+    - heading "Meet Tamara Long-Ajimati" [level=2]
+    - paragraph: Tamara founded Caring for a Cause in 2015 to support families in Central Indiana who are facing financial hardship. Year after year since then, she and her volunteers have helped more than 5,000 families.
+    - paragraph: Her part-time volunteers are committed to helping others, and the organization has grown thanks to the helping hands of this community.
+    - paragraph:
+      - link "Watch her story":
+        - /url: https://www.youtube.com/watch?v=7smWzJwY9kA
+  - region "Moments from our programs":
+    - text: Gallery
+    - heading "Moments from our programs" [level=2]
+    - button "Previous photos"
+    - button "Next photos"
+    - list "Moments from our programs":
+      - listitem:
+        - img "A volunteer in scrubs smiles in the street with two wrapped Easter baskets"
+      - listitem:
+        - img "Tables of new toys sorted by age for the holiday giveaway, with a Toys for Tots sign"
+      - listitem:
+        - img "The founder in a Diaper Drive shirt beside the pantry's shelves of diapers"
+      - listitem:
+        - img "A volunteer hands a large pack of diapers to a family with a young child"
+      - listitem:
+        - img "A car's open trunk filled with wrapped Easter baskets ready to deliver"
+      - listitem:
+        - img "A child with half his face painted as a tiger at a community event"
+      - listitem:
+        - img "A table of toys for babies and toddlers at the holiday giveaway"
+      - listitem:
+        - img "A volunteer in a doorway holding wrapped Easter baskets"
+      - listitem:
+        - img "Families eat a holiday dinner at long tables while others browse the toy tables behind them"
+      - listitem:
+        - img "Four volunteer cooks behind trays of hot food at the holiday dinner, the organization's banner beside them"
+      - listitem:
+        - img "A father hugs his five children, all holding bags of gifts, outside the winter distribution"
+      - listitem:
+        - img "A volunteer serves hot food while a child carries her plate to the table"
+      - listitem:
+        - img "Three volunteers in winter coats and Santa headbands smile outside the distribution"
+- contentinfo:
+  - link "Caring for a Cause Supportive Services, home":
+    - /url: /
+  - link "Donate":
+    - /url: /donate/
+  - paragraph: Never give up.
+  - navigation "Explore":
+    - heading "Explore" [level=2]
+    - list:
+      - listitem:
+        - link "Help me":
+          - /url: /apply/
+      - listitem:
+        - link "About":
+          - /url: /#about
+      - listitem:
+        - link "Programs":
+          - /url: /#programs
+      - listitem:
+        - link "Get involved":
+          - /url: /#get-involved
+  - region "Connect with us":
+    - heading "Connect with us" [level=2]
+    - list:
+      - listitem:
+        - link "(317) 886-0724":
+          - /url: tel:+13178860724
+      - listitem:
+        - link "caringforacause2015@gmail.com":
+          - /url: mailto:caringforacause2015@gmail.com
+      - listitem:
+        - link "Facebook (opens in a new tab)":
+          - /url: https://www.facebook.com/caringforacausesupportiveservices
+  - paragraph: Caring for a Cause Supportive Services Inc.
+  - paragraph: Serving Central Indiana
+  - paragraph: © 2026

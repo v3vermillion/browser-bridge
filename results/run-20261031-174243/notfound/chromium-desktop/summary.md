@@ -1,0 +1,19 @@
+## notfound - chromium / desktop
+- URL: https://caringforacauseindy.org/does-not-exist
+- Status: ok, HTTP 404, ready in 2.1s
+- Viewport: 1440x900 at 2x detail
+- Title: Page not found | Caring for a Cause
+- Meta description: Caring for a Cause helps families in Central Indiana with holiday meals and gifts, monthly diapers, and school supplies.
+- H1 count: 1; headings total: 3; page height: 1124px
+- Structured data blocks: 1; lang: en; og:image: yes
+- Images: 0 <img> + 0 large backgrounds; missing alt: 0, empty alt on large: 0, broken: 0, upscaled/blurry: 0, below retina: 0
+- Links: 26; go nowhere: 0, no accessible name: 1, generic text: 0, missing anchor targets: 0, HTTP errors: 0
+- Primary font families (by text volume): Site Serif, Footer Sans, Bricolage Grotesque Variable, Atkinson Hyperlegible Next
+- Text colors in use: 9; font sizes in use: 12; uppercase share of text: 3%
+- Forms: 0; fields: 0; without programmatic label: 0; labels pointing at missing ids: 0
+- Accessibility (axe): 0 rule violations {}; 1 need manual review
+- Lighthouse: Command failed: npx --yes lighthouse@12 https://caringforacauseindy.org/does-not-exist --output=json --output-path=/home/runner/work/browser-bridge/browser-bridge/out/notfound/chromium-desktop/lighthouse-full.json --quiet --chrome-flags=--headless=new --no-sandbox --only-categories=performance,accessibility,best-practices,seo --preset=desktop
+- Steps: 5 run, 0 failed
+- Network: 2 HTTP errors, 0 failed requests, 2 JS errors from the site (+2 caused by write-blocking, ignored)
+- Write requests blocked (nothing was sent): caringforacauseindy.org x2. Analytics/embed calls here are normal; form destinations are listed under Forms when forms are captured.
+- Files: full.jpg, tiles/tile-01.jpg, tiles/tile-02.jpg, meta.json, text.md, page.html, links.json, images.json, styles.json, forms.json, a11y.json, aria.yaml, steps/01-page.jpg, steps.json, lighthouse.json, network.json

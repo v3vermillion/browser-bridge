@@ -1,0 +1,138 @@
+[
+  {
+    "index": 0,
+    "action": "evaluate",
+    "ok": true
+  },
+  {
+    "index": 1,
+    "action": "goto",
+    "ok": true
+  },
+  {
+    "index": 2,
+    "action": "wait",
+    "ok": true
+  },
+  {
+    "index": 3,
+    "action": "screenshot",
+    "ok": true,
+    "file": "01-page.jpg"
+  },
+  {
+    "index": 4,
+    "action": "evaluate",
+    "ok": true,
+    "result": {
+      "vw": 1440,
+      "vh": 900,
+      "path": "/apply/",
+      "headerH": 82,
+      "gaps": [
+        {
+          "from": "page-hero on-dark",
+          "to": "section ground",
+          "gap": 194
+        },
+        {
+          "from": "section ground",
+          "to": "site-footer on-dark",
+          "gap": 205
+        }
+      ],
+      "biggestGaps": [
+        {
+          "gap": 350,
+          "after": "Nothing you enter is stored on",
+          "before": "Next: Your household"
+        },
+        {
+          "gap": 197,
+          "after": "Children holding holiday gift ",
+          "before": "1\nStep 1 of 4:About you"
+        },
+        {
+          "gap": 18,
+          "after": "Prefer to talk?",
+          "before": "Call (317) 886-0724"
+        },
+        {
+          "gap": 18,
+          "after": "Call (317) 886-0724",
+          "before": "Email us"
+        },
+        {
+          "gap": 18,
+          "after": "Email us",
+          "before": "Nothing you enter is stored on"
+        }
+      ],
+      "hover": {
+        "hoverUnguarded": 0,
+        "hoverGuarded": 25,
+        "samples": []
+      },
+      "tight": [
+        {
+          "t": "Call",
+          "padL": 0,
+          "padR": 0,
+          "w": 77
+        },
+        {
+          "t": "Text",
+          "padL": 0,
+          "padR": 0,
+          "w": 82
+        },
+        {
+          "t": "Email",
+          "padL": 0,
+          "padR": 0,
+          "w": 95
+        }
+      ],
+      "scrollers": [],
+      "gutter": {
+        "L": 72,
+        "R": 1368
+      },
+      "pastGutter": [],
+      "dupes": [],
+      "images": [
+        {
+          "src": "holiday-gift-bags.BW_V1vNm_1sq1Gc.avif",
+          "shown": "396x317",
+          "nat": "352x469",
+          "ratio": 0.44,
+          "pos": "50% 27%"
+        }
+      ],
+      "anchors": [
+        {
+          "id": "main",
+          "firstText": "HELP ME",
+          "gapBelowHeader": 43
+        },
+        {
+          "id": "about",
+          "missing": true
+        },
+        {
+          "id": "programs",
+          "missing": true
+        },
+        {
+          "id": "get-involved",
+          "missing": true
+        },
+        {
+          "id": "contact",
+          "firstText": "Connect with us",
+          "gapBelowHeader": 370
+        }
+      ]
+    }
+  }
+]

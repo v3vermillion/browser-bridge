@@ -1,0 +1,101 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "Caring for a Cause Supportive Services":
+    - /url: /
+    - img "Caring for a Cause Supportive Services"
+  - navigation "Main":
+    - list:
+      - listitem:
+        - link "About":
+          - /url: /#about
+      - listitem:
+        - link "Programs":
+          - /url: /#programs
+      - listitem:
+        - link "Get involved":
+          - /url: /#get-involved
+      - listitem:
+        - link "Contact":
+          - /url: /#contact
+  - link "Donate":
+    - /url: /donate/
+- main:
+  - text: Help me
+  - heading "Apply for help" [level=1]
+  - paragraph: Households with children and seniors are our focus, but anyone who is struggling right now can apply.
+  - paragraph: Four short steps. Your answers go straight to us by email, and we'll follow up from there.
+  - img "Children holding holiday gift bags beside a volunteer in a Santa hat"
+  - region "Application form":
+    - heading "Application form" [level=2]
+    - list "Steps":
+      - listitem:
+        - 'button "Step 1 of 4: About you" [disabled]'
+      - listitem:
+        - 'button "Step 2 of 4: Your household" [disabled]'
+      - listitem:
+        - 'button "Step 3 of 4: What you need" [disabled]'
+      - listitem:
+        - 'button "Step 4 of 4: Review and send" [disabled]'
+    - paragraph
+    - group "Step 1 of 4 About you How we can reach you":
+      - text: Step 1 of 4 About you How we can reach you First name
+      - textbox "First name"
+      - text: Last name
+      - textbox "Last name"
+      - text: Phone number
+      - textbox "Phone number"
+      - text: Email (optional)
+      - textbox "Email (optional)"
+      - group "Best way to reach you":
+        - text: Best way to reach you
+        - radio "Call" [checked]
+        - text: Call
+        - radio "Text"
+        - text: Text
+        - radio "Email"
+        - text: Email
+    - 'button "Next: Your household"'
+    - complementary "Prefer to talk?":
+      - heading "Prefer to talk?" [level=2]
+      - link "Call (317) 886-0724":
+        - /url: tel:+13178860724
+      - link "Email us":
+        - /url: mailto:caringforacause2015@gmail.com?subject=Application%20for%20help
+      - paragraph: Nothing you enter is stored on this website. Your application goes to us by email, and we use it only to arrange help for you.
+- contentinfo:
+  - link "Caring for a Cause Supportive Services, home":
+    - /url: /
+  - link "Donate":
+    - /url: /donate/
+  - paragraph: Never give up.
+  - navigation "Explore":
+    - heading "Explore" [level=2]
+    - list:
+      - listitem:
+        - link "Help me":
+          - /url: /apply/
+      - listitem:
+        - link "About":
+          - /url: /#about
+      - listitem:
+        - link "Programs":
+          - /url: /#programs
+      - listitem:
+        - link "Get involved":
+          - /url: /#get-involved
+  - region "Connect with us":
+    - heading "Connect with us" [level=2]
+    - list:
+      - listitem:
+        - link "(317) 886-0724":
+          - /url: tel:+13178860724
+      - listitem:
+        - link "caringforacause2015@gmail.com":
+          - /url: mailto:caringforacause2015@gmail.com
+      - listitem:
+        - link "Facebook (opens in a new tab)":
+          - /url: https://www.facebook.com/caringforacausesupportiveservices
+  - paragraph: Caring for a Cause Supportive Services Inc.
+  - paragraph: Serving Central Indiana
+  - paragraph: © 2026

@@ -1,0 +1,66 @@
+{
+  "formFactor": "desktop",
+  "scores": {
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 66
+  },
+  "metrics": {
+    "LCP": "0.8 s",
+    "CLS": "0",
+    "TBT": "0 ms",
+    "FCP": "0.6 s",
+    "SpeedIndex": "0.6 s"
+  },
+  "failingAudits": [
+    {
+      "id": "is-crawlable",
+      "title": "Page is blocked from indexing",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "uses-long-cache-ttl",
+      "title": "Serve static assets with an efficient cache policy",
+      "score": 0.5,
+      "displayValue": "1 resource found"
+    },
+    {
+      "id": "uses-responsive-images",
+      "title": "Properly size images",
+      "score": 0.5,
+      "displayValue": "Est savings of 78 KiB"
+    },
+    {
+      "id": "legacy-javascript",
+      "title": "Avoid serving legacy JavaScript to modern browsers",
+      "score": 0.5,
+      "displayValue": "Est savings of 10 KiB"
+    },
+    {
+      "id": "dom-size",
+      "title": "Avoid an excessive DOM size",
+      "score": 0.5,
+      "displayValue": "981 elements"
+    },
+    {
+      "id": "cache-insight",
+      "title": "Use efficient cache lifetimes",
+      "score": 0.5,
+      "displayValue": "Est savings of 4 KiB"
+    },
+    {
+      "id": "image-delivery-insight",
+      "title": "Improve image delivery",
+      "score": 0.5,
+      "displayValue": "Est savings of 33 KiB"
+    }
+  ]
+}

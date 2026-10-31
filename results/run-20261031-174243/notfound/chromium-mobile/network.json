@@ -1,0 +1,29 @@
+{
+  "failedRequests": [],
+  "httpErrors": [
+    {
+      "status": 404,
+      "url": "https://caringforacauseindy.org/does-not-exist"
+    },
+    {
+      "status": 404,
+      "url": "https://caringforacauseindy.org/does-not-exist"
+    }
+  ],
+  "blockedWrites": [
+    {
+      "method": "POST",
+      "url": "https://caringforacauseindy.org/cdn-cgi/rum?"
+    },
+    {
+      "method": "POST",
+      "url": "https://caringforacauseindy.org/cdn-cgi/rum?"
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 2
+}

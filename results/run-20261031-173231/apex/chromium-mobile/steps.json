@@ -1,0 +1,20 @@
+[
+  {
+    "index": 0,
+    "action": "wait",
+    "ok": true
+  },
+  {
+    "index": 1,
+    "action": "evaluate",
+    "ok": true,
+    "result": {
+      "canonical": null,
+      "og": null,
+      "robots": "noindex, nofollow",
+      "forge": false,
+      "workersdev": false,
+      "beacon": true
+    }
+  }
+]

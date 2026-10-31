@@ -1,0 +1,13 @@
+[
+  {
+    "index": 0,
+    "action": "evaluate",
+    "ok": true,
+    "result": {
+      "url": "https://www.caringforacauseindy.org/",
+      "canonical": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "robots": "noindex, nofollow",
+      "proto": "https:"
+    }
+  }
+]

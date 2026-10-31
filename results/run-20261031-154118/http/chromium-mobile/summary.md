@@ -1,0 +1,11 @@
+## http - chromium / mobile
+- URL: http://caringforacauseindy.org/donate/ -> https://caringforacauseindy.org/donate/
+- Status: ok, HTTP 200, ready in 2.6s
+- Viewport: 393x659 at 1x detail
+- Title: Donate | Caring for a Cause
+- Meta description: Give once or monthly to Caring for a Cause, a 501(c)(3) nonprofit. Your donation helps put holiday meals, gifts, diapers, and school supplies into local homes.
+- H1 count: 1; headings total: 5; page height: 2657px
+- Structured data blocks: 1; lang: en; og:image: yes
+- Steps: 1 run, 0 failed
+- Network: 0 HTTP errors, 1 failed requests, 1 JS errors from the site
+- Files: viewport.jpg, meta.json, text.md, steps.json, network.json

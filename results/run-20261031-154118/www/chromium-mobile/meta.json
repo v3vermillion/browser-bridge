@@ -1,0 +1,97 @@
+{
+  "url": "https://caringforacauseindy.org/apply/?x=1",
+  "title": "Apply for help | Caring for a Cause",
+  "lang": "en",
+  "description": "Apply for holiday meals and gifts, monthly diapers, school supplies, or a free haircut in Central Indiana. Anyone struggling right now can apply.",
+  "viewport": "width=device-width, initial-scale=1",
+  "robots": "noindex, nofollow",
+  "generator": null,
+  "canonical": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+  "favicon": "https://caringforacauseindy.org/favicon-32.png",
+  "og": {
+    "title": "Apply for help | Caring for a Cause",
+    "description": "Apply for holiday meals and gifts, monthly diapers, school supplies, or a free haircut in Central Indiana. Anyone struggling right now can apply.",
+    "image": "https://caring-for-a-cause.forgetraining.workers.dev/og-image.jpg",
+    "url": "https://caring-for-a-cause.forgetraining.workers.dev/apply/",
+    "type": "website",
+    "site_name": "Caring for a Cause Supportive Services"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Apply for help | Caring for a Cause",
+    "description": "Apply for holiday meals and gifts, monthly diapers, school supplies, or a free haircut in Central Indiana. Anyone struggling right now can apply.",
+    "image": "https://caring-for-a-cause.forgetraining.workers.dev/og-image.jpg"
+  },
+  "h1Count": 1,
+  "headings": [
+    {
+      "level": 1,
+      "text": "Apply for help",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Application form",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "One more step",
+      "visible": false
+    },
+    {
+      "level": 2,
+      "text": "Prefer to talk?",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Explore",
+      "visible": true
+    },
+    {
+      "level": 2,
+      "text": "Connect with us",
+      "visible": true
+    }
+  ],
+  "structuredData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "Caring for a Cause Supportive Services Inc.",
+      "alternateName": "Caring for a Cause",
+      "url": "https://caring-for-a-cause.forgetraining.workers.dev/",
+      "logo": "https://caring-for-a-cause.forgetraining.workers.dev/icon-512.png",
+      "description": "We create and manage programs that support the physical and emotional well-being of families in Central Indiana who are facing financial hardship.",
+      "foundingDate": "2015",
+      "founder": {
+        "@type": "Person",
+        "name": "Tamara Long-Ajimati"
+      },
+      "taxID": "47-4917287",
+      "nonprofitStatus": "Nonprofit501c3",
+      "areaServed": "Central Indiana",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Indianapolis",
+          "addressRegion": "IN",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Noblesville",
+          "addressRegion": "IN",
+          "addressCountry": "US"
+        }
+      ],
+      "telephone": "+13178860724",
+      "email": "caringforacause2015@gmail.com",
+      "sameAs": [
+        "https://www.facebook.com/caringforacausesupportiveservices"
+      ]
+    }
+  ],
+  "pageHeight": 2807
+}

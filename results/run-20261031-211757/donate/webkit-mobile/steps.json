@@ -1,0 +1,171 @@
+[
+  {
+    "index": 0,
+    "action": "evaluate",
+    "ok": true
+  },
+  {
+    "index": 1,
+    "action": "goto",
+    "ok": true
+  },
+  {
+    "index": 2,
+    "action": "wait",
+    "ok": true
+  },
+  {
+    "index": 3,
+    "action": "screenshot",
+    "ok": true,
+    "file": "01-page.jpg"
+  },
+  {
+    "index": 4,
+    "action": "evaluate",
+    "ok": true,
+    "result": {
+      "vw": 393,
+      "vh": 659,
+      "path": "/donate/",
+      "headerH": 61,
+      "gaps": [
+        {
+          "from": "page-hero on-dark",
+          "to": "section give ground",
+          "gap": 204
+        },
+        {
+          "from": "section give ground",
+          "to": "site-footer on-dark",
+          "gap": 117
+        }
+      ],
+      "biggestGaps": [
+        {
+          "gap": 298,
+          "after": "Give once or monthly",
+          "before": "Donate $50 by email"
+        },
+        {
+          "gap": 204,
+          "after": "Your donation helps put holida",
+          "before": "Give once or monthly"
+        },
+        {
+          "gap": 88,
+          "after": "Caring for a Cause Supportive ",
+          "before": "What your gift provides"
+        },
+        {
+          "gap": 24,
+          "after": "We don't accept card payments ",
+          "before": "Caring for a Cause Supportive "
+        },
+        {
+          "gap": 24,
+          "after": "What your gift provides",
+          "before": "Holiday Meals\nFood boxes for l"
+        },
+        {
+          "gap": 16,
+          "after": "Donate $50 by email",
+          "before": "We don't accept card payments "
+        }
+      ],
+      "hover": {
+        "hoverUnguarded": 0,
+        "hoverGuarded": 23,
+        "samples": []
+      },
+      "tight": [
+        {
+          "t": "Once",
+          "padL": 0,
+          "padR": 0,
+          "w": 81
+        },
+        {
+          "t": "Monthly",
+          "padL": 0,
+          "padR": 0,
+          "w": 109
+        },
+        {
+          "t": "$25",
+          "padL": 0,
+          "padR": 0,
+          "w": 97
+        },
+        {
+          "t": "$50",
+          "padL": 0,
+          "padR": 0,
+          "w": 97
+        },
+        {
+          "t": "$100",
+          "padL": 0,
+          "padR": 0,
+          "w": 97
+        },
+        {
+          "t": "$250",
+          "padL": 0,
+          "padR": 0,
+          "w": 97
+        },
+        {
+          "t": "$\nOther amount in dollars",
+          "padL": 60,
+          "padR": -106,
+          "w": 201
+        }
+      ],
+      "scrollers": [],
+      "gutter": {
+        "L": 20,
+        "R": 373
+      },
+      "pastGutter": [],
+      "dupes": [],
+      "images": [],
+      "anchors": [
+        {
+          "id": "main",
+          "firstText": "DONATE",
+          "gapBelowHeader": 40
+        },
+        {
+          "id": "about",
+          "missing": true
+        },
+        {
+          "id": "programs",
+          "missing": true
+        },
+        {
+          "id": "get-involved",
+          "missing": true
+        },
+        {
+          "id": "contact",
+          "firstText": "Connect with us",
+          "gapBelowHeader": 207
+        },
+        {
+          "id": "holiday-assistance",
+          "missing": true
+        },
+        {
+          "id": "diaper-drive",
+          "missing": true
+        },
+        {
+          "id": "back-to-school",
+          "missing": true
+        }
+      ]
+    }
+  }
+]

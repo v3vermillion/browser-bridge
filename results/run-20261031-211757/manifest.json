@@ -1,0 +1,2298 @@
+{
+  "label": "run-20261031-211757",
+  "createdAt": "2026-10-31T21:18:38.456Z",
+  "engineVersion": "1.0.0",
+  "status": "ok",
+  "variants": [
+    {
+      "target": "home",
+      "url": "https://caringforacauseindy.org/",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "home/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:18:38.683Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.org/",
+      "loadSeconds": 3.4,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 9,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "desktop",
+        "scores": {
+          "performance": 99,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 66
+        },
+        "metrics": {
+          "LCP": "0.9 s",
+          "CLS": "0",
+          "TBT": "0 ms",
+          "FCP": "0.6 s",
+          "SpeedIndex": "0.6 s"
+        },
+        "failingAudits": [
+          {
+            "id": "is-crawlable",
+            "title": "Page is blocked from indexing",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "title": "Serve static assets with an efficient cache policy",
+            "score": 0.5,
+            "displayValue": "1 resource found"
+          },
+          {
+            "id": "uses-responsive-images",
+            "title": "Properly size images",
+            "score": 0.5,
+            "displayValue": "Est savings of 61 KiB"
+          },
+          {
+            "id": "legacy-javascript",
+            "title": "Avoid serving legacy JavaScript to modern browsers",
+            "score": 0.5,
+            "displayValue": "Est savings of 10 KiB"
+          },
+          {
+            "id": "dom-size",
+            "title": "Avoid an excessive DOM size",
+            "score": 0.5,
+            "displayValue": "981 elements"
+          },
+          {
+            "id": "cache-insight",
+            "title": "Use efficient cache lifetimes",
+            "score": 0.5,
+            "displayValue": "Est savings of 4 KiB"
+          },
+          {
+            "id": "image-delivery-insight",
+            "title": "Improve image delivery",
+            "score": 0.5,
+            "displayValue": "Est savings of 33 KiB"
+          }
+        ]
+      },
+      "finishedAt": "2026-10-31T21:19:21.662Z",
+      "files": [
+        {
+          "path": "home/chromium-desktop/full.jpg",
+          "bytes": 2846034
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-01.jpg",
+          "bytes": 244981
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-02.jpg",
+          "bytes": 274859
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-03.jpg",
+          "bytes": 344716
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-04.jpg",
+          "bytes": 421737
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-05.jpg",
+          "bytes": 317775
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-06.jpg",
+          "bytes": 303621
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-07.jpg",
+          "bytes": 267360
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-08.jpg",
+          "bytes": 478716
+        },
+        {
+          "path": "home/chromium-desktop/tiles/tile-09.jpg",
+          "bytes": 177524
+        },
+        {
+          "path": "home/chromium-desktop/meta.json",
+          "bytes": 4007
+        },
+        {
+          "path": "home/chromium-desktop/text.md",
+          "bytes": 3256
+        },
+        {
+          "path": "home/chromium-desktop/page.html",
+          "bytes": 417932
+        },
+        {
+          "path": "home/chromium-desktop/links.json",
+          "bytes": 13113
+        },
+        {
+          "path": "home/chromium-desktop/images.json",
+          "bytes": 13386
+        },
+        {
+          "path": "home/chromium-desktop/styles.json",
+          "bytes": 4594
+        },
+        {
+          "path": "home/chromium-desktop/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "home/chromium-desktop/a11y.json",
+          "bytes": 337
+        },
+        {
+          "path": "home/chromium-desktop/aria.yaml",
+          "bytes": 10126
+        },
+        {
+          "path": "home/chromium-desktop/steps/01-page.jpg",
+          "bytes": 2846034
+        },
+        {
+          "path": "home/chromium-desktop/steps.json",
+          "bytes": 8955
+        },
+        {
+          "path": "home/chromium-desktop/lighthouse.json",
+          "bytes": 1541
+        },
+        {
+          "path": "home/chromium-desktop/network.json",
+          "bytes": 339
+        },
+        {
+          "path": "home/chromium-desktop/summary.md",
+          "bytes": 1803
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caringforacauseindy.org/",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "home/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:19:21.665Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.org/",
+      "loadSeconds": 4,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 14,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "mobile",
+        "scores": {
+          "performance": 92,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 66
+        },
+        "metrics": {
+          "LCP": "3.2 s",
+          "CLS": "0",
+          "TBT": "10 ms",
+          "FCP": "1.9 s",
+          "SpeedIndex": "1.9 s"
+        },
+        "failingAudits": [
+          {
+            "id": "largest-contentful-paint-element",
+            "title": "Largest Contentful Paint element",
+            "score": 0,
+            "displayValue": "3,200 ms"
+          },
+          {
+            "id": "uses-responsive-images",
+            "title": "Properly size images",
+            "score": 0,
+            "displayValue": "Est savings of 144 KiB"
+          },
+          {
+            "id": "is-crawlable",
+            "title": "Page is blocked from indexing",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "image-delivery-insight",
+            "title": "Improve image delivery",
+            "score": 0,
+            "displayValue": "Est savings of 238 KiB"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "title": "Serve static assets with an efficient cache policy",
+            "score": 0.5,
+            "displayValue": "1 resource found"
+          },
+          {
+            "id": "legacy-javascript",
+            "title": "Avoid serving legacy JavaScript to modern browsers",
+            "score": 0.5,
+            "displayValue": "Est savings of 10 KiB"
+          },
+          {
+            "id": "dom-size",
+            "title": "Avoid an excessive DOM size",
+            "score": 0.5,
+            "displayValue": "981 elements"
+          },
+          {
+            "id": "cache-insight",
+            "title": "Use efficient cache lifetimes",
+            "score": 0.5,
+            "displayValue": "Est savings of 4 KiB"
+          },
+          {
+            "id": "largest-contentful-paint",
+            "title": "Largest Contentful Paint",
+            "score": 0.72,
+            "displayValue": "3.2 s"
+          },
+          {
+            "id": "first-contentful-paint",
+            "title": "First Contentful Paint",
+            "score": 0.86,
+            "displayValue": "1.9 s"
+          }
+        ]
+      },
+      "finishedAt": "2026-10-31T21:19:51.671Z",
+      "files": [
+        {
+          "path": "home/chromium-mobile/full.jpg",
+          "bytes": 1412035
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-01.jpg",
+          "bytes": 120370
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-02.jpg",
+          "bytes": 100001
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-03.jpg",
+          "bytes": 118737
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-04.jpg",
+          "bytes": 105622
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-05.jpg",
+          "bytes": 112144
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-06.jpg",
+          "bytes": 128444
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-07.jpg",
+          "bytes": 108100
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-08.jpg",
+          "bytes": 80143
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-09.jpg",
+          "bytes": 131174
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-10.jpg",
+          "bytes": 84538
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-11.jpg",
+          "bytes": 90722
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-12.jpg",
+          "bytes": 147052
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-13.jpg",
+          "bytes": 75705
+        },
+        {
+          "path": "home/chromium-mobile/tiles/tile-14.jpg",
+          "bytes": 23343
+        },
+        {
+          "path": "home/chromium-mobile/meta.json",
+          "bytes": 4007
+        },
+        {
+          "path": "home/chromium-mobile/text.md",
+          "bytes": 3223
+        },
+        {
+          "path": "home/chromium-mobile/page.html",
+          "bytes": 418168
+        },
+        {
+          "path": "home/chromium-mobile/links.json",
+          "bytes": 13117
+        },
+        {
+          "path": "home/chromium-mobile/images.json",
+          "bytes": 13310
+        },
+        {
+          "path": "home/chromium-mobile/styles.json",
+          "bytes": 4667
+        },
+        {
+          "path": "home/chromium-mobile/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "home/chromium-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "home/chromium-mobile/aria.yaml",
+          "bytes": 9760
+        },
+        {
+          "path": "home/chromium-mobile/steps/01-page.jpg",
+          "bytes": 1411494
+        },
+        {
+          "path": "home/chromium-mobile/steps.json",
+          "bytes": 8708
+        },
+        {
+          "path": "home/chromium-mobile/lighthouse.json",
+          "bytes": 1995
+        },
+        {
+          "path": "home/chromium-mobile/network.json",
+          "bytes": 339
+        },
+        {
+          "path": "home/chromium-mobile/summary.md",
+          "bytes": 1900
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caringforacauseindy.org/apply/",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "apply/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:19:51.673Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.org/apply/",
+      "loadSeconds": 2.2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "desktop",
+        "scores": {
+          "performance": 99,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 66
+        },
+        "metrics": {
+          "LCP": "0.8 s",
+          "CLS": "0",
+          "TBT": "0 ms",
+          "FCP": "0.6 s",
+          "SpeedIndex": "0.6 s"
+        },
+        "failingAudits": [
+          {
+            "id": "lcp-lazy-loaded",
+            "title": "Largest Contentful Paint image was lazily loaded",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "is-crawlable",
+            "title": "Page is blocked from indexing",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "cache-insight",
+            "title": "Use efficient cache lifetimes",
+            "score": 0,
+            "displayValue": "Est savings of 4 KiB"
+          },
+          {
+            "id": "lcp-discovery-insight",
+            "title": "LCP request discovery",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "title": "Serve static assets with an efficient cache policy",
+            "score": 0.5,
+            "displayValue": "1 resource found"
+          },
+          {
+            "id": "legacy-javascript",
+            "title": "Avoid serving legacy JavaScript to modern browsers",
+            "score": 0.5,
+            "displayValue": "Est savings of 10 KiB"
+          }
+        ]
+      },
+      "finishedAt": "2026-10-31T21:20:13.354Z",
+      "files": [
+        {
+          "path": "apply/chromium-desktop/full.jpg",
+          "bytes": 612990
+        },
+        {
+          "path": "apply/chromium-desktop/tiles/tile-01.jpg",
+          "bytes": 303616
+        },
+        {
+          "path": "apply/chromium-desktop/tiles/tile-02.jpg",
+          "bytes": 196543
+        },
+        {
+          "path": "apply/chromium-desktop/tiles/tile-03.jpg",
+          "bytes": 113868
+        },
+        {
+          "path": "apply/chromium-desktop/meta.json",
+          "bytes": 2891
+        },
+        {
+          "path": "apply/chromium-desktop/text.md",
+          "bytes": 1061
+        },
+        {
+          "path": "apply/chromium-desktop/page.html",
+          "bytes": 265142
+        },
+        {
+          "path": "apply/chromium-desktop/links.json",
+          "bytes": 7871
+        },
+        {
+          "path": "apply/chromium-desktop/images.json",
+          "bytes": 499
+        },
+        {
+          "path": "apply/chromium-desktop/styles.json",
+          "bytes": 3734
+        },
+        {
+          "path": "apply/chromium-desktop/forms.json",
+          "bytes": 15081
+        },
+        {
+          "path": "apply/chromium-desktop/a11y.json",
+          "bytes": 336
+        },
+        {
+          "path": "apply/chromium-desktop/aria.yaml",
+          "bytes": 3400
+        },
+        {
+          "path": "apply/chromium-desktop/steps/01-page.jpg",
+          "bytes": 612990
+        },
+        {
+          "path": "apply/chromium-desktop/steps.json",
+          "bytes": 2662
+        },
+        {
+          "path": "apply/chromium-desktop/lighthouse.json",
+          "bytes": 1374
+        },
+        {
+          "path": "apply/chromium-desktop/network.json",
+          "bytes": 339
+        },
+        {
+          "path": "apply/chromium-desktop/summary.md",
+          "bytes": 1757
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caringforacauseindy.org/apply/",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "apply/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:20:13.356Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.org/apply/",
+      "loadSeconds": 2.6,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "mobile",
+        "scores": {
+          "performance": 94,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 66
+        },
+        "metrics": {
+          "LCP": "2.8 s",
+          "CLS": "0",
+          "TBT": "0 ms",
+          "FCP": "1.9 s",
+          "SpeedIndex": "1.9 s"
+        },
+        "failingAudits": [
+          {
+            "id": "largest-contentful-paint-element",
+            "title": "Largest Contentful Paint element",
+            "score": 0,
+            "displayValue": "2,850 ms"
+          },
+          {
+            "id": "lcp-lazy-loaded",
+            "title": "Largest Contentful Paint image was lazily loaded",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "is-crawlable",
+            "title": "Page is blocked from indexing",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "image-delivery-insight",
+            "title": "Improve image delivery",
+            "score": 0,
+            "displayValue": "Est savings of 32 KiB"
+          },
+          {
+            "id": "lcp-discovery-insight",
+            "title": "LCP request discovery",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "title": "Serve static assets with an efficient cache policy",
+            "score": 0.5,
+            "displayValue": "1 resource found"
+          },
+          {
+            "id": "legacy-javascript",
+            "title": "Avoid serving legacy JavaScript to modern browsers",
+            "score": 0.5,
+            "displayValue": "Est savings of 10 KiB"
+          },
+          {
+            "id": "cache-insight",
+            "title": "Use efficient cache lifetimes",
+            "score": 0.5,
+            "displayValue": "Est savings of 4 KiB"
+          },
+          {
+            "id": "largest-contentful-paint",
+            "title": "Largest Contentful Paint",
+            "score": 0.82,
+            "displayValue": "2.8 s"
+          },
+          {
+            "id": "first-contentful-paint",
+            "title": "First Contentful Paint",
+            "score": 0.87,
+            "displayValue": "1.9 s"
+          }
+        ]
+      },
+      "finishedAt": "2026-10-31T21:20:34.386Z",
+      "files": [
+        {
+          "path": "apply/chromium-mobile/full.jpg",
+          "bytes": 346012
+        },
+        {
+          "path": "apply/chromium-mobile/tiles/tile-01.jpg",
+          "bytes": 116639
+        },
+        {
+          "path": "apply/chromium-mobile/tiles/tile-02.jpg",
+          "bytes": 52189
+        },
+        {
+          "path": "apply/chromium-mobile/tiles/tile-03.jpg",
+          "bytes": 79448
+        },
+        {
+          "path": "apply/chromium-mobile/tiles/tile-04.jpg",
+          "bytes": 76618
+        },
+        {
+          "path": "apply/chromium-mobile/tiles/tile-05.jpg",
+          "bytes": 19624
+        },
+        {
+          "path": "apply/chromium-mobile/meta.json",
+          "bytes": 2891
+        },
+        {
+          "path": "apply/chromium-mobile/text.md",
+          "bytes": 1110
+        },
+        {
+          "path": "apply/chromium-mobile/page.html",
+          "bytes": 265142
+        },
+        {
+          "path": "apply/chromium-mobile/links.json",
+          "bytes": 7873
+        },
+        {
+          "path": "apply/chromium-mobile/images.json",
+          "bytes": 503
+        },
+        {
+          "path": "apply/chromium-mobile/styles.json",
+          "bytes": 3700
+        },
+        {
+          "path": "apply/chromium-mobile/forms.json",
+          "bytes": 15081
+        },
+        {
+          "path": "apply/chromium-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "apply/chromium-mobile/aria.yaml",
+          "bytes": 3315
+        },
+        {
+          "path": "apply/chromium-mobile/steps/01-page.jpg",
+          "bytes": 346012
+        },
+        {
+          "path": "apply/chromium-mobile/steps.json",
+          "bytes": 2776
+        },
+        {
+          "path": "apply/chromium-mobile/lighthouse.json",
+          "bytes": 1988
+        },
+        {
+          "path": "apply/chromium-mobile/network.json",
+          "bytes": 339
+        },
+        {
+          "path": "apply/chromium-mobile/summary.md",
+          "bytes": 1799
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caringforacauseindy.org/donate/",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "donate/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:20:34.390Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.org/donate/",
+      "loadSeconds": 2.2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "desktop",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 63
+        },
+        "metrics": {
+          "LCP": "0.7 s",
+          "CLS": "0",
+          "TBT": "0 ms",
+          "FCP": "0.5 s",
+          "SpeedIndex": "0.5 s"
+        },
+        "failingAudits": [
+          {
+            "id": "is-crawlable",
+            "title": "Page is blocked from indexing",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "title": "Serve static assets with an efficient cache policy",
+            "score": 0.5,
+            "displayValue": "1 resource found"
+          },
+          {
+            "id": "legacy-javascript",
+            "title": "Avoid serving legacy JavaScript to modern browsers",
+            "score": 0.5,
+            "displayValue": "Est savings of 10 KiB"
+          },
+          {
+            "id": "cache-insight",
+            "title": "Use efficient cache lifetimes",
+            "score": 0.5,
+            "displayValue": "Est savings of 4 KiB"
+          }
+        ]
+      },
+      "finishedAt": "2026-10-31T21:20:54.967Z",
+      "files": [
+        {
+          "path": "donate/chromium-desktop/full.jpg",
+          "bytes": 529769
+        },
+        {
+          "path": "donate/chromium-desktop/tiles/tile-01.jpg",
+          "bytes": 323071
+        },
+        {
+          "path": "donate/chromium-desktop/tiles/tile-02.jpg",
+          "bytes": 205227
+        },
+        {
+          "path": "donate/chromium-desktop/meta.json",
+          "bytes": 2858
+        },
+        {
+          "path": "donate/chromium-desktop/text.md",
+          "bytes": 1196
+        },
+        {
+          "path": "donate/chromium-desktop/page.html",
+          "bytes": 248917
+        },
+        {
+          "path": "donate/chromium-desktop/links.json",
+          "bytes": 8886
+        },
+        {
+          "path": "donate/chromium-desktop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/chromium-desktop/styles.json",
+          "bytes": 3365
+        },
+        {
+          "path": "donate/chromium-desktop/forms.json",
+          "bytes": 2668
+        },
+        {
+          "path": "donate/chromium-desktop/a11y.json",
+          "bytes": 336
+        },
+        {
+          "path": "donate/chromium-desktop/aria.yaml",
+          "bytes": 3663
+        },
+        {
+          "path": "donate/chromium-desktop/steps/01-page.jpg",
+          "bytes": 529769
+        },
+        {
+          "path": "donate/chromium-desktop/steps.json",
+          "bytes": 3071
+        },
+        {
+          "path": "donate/chromium-desktop/lighthouse.json",
+          "bytes": 1086
+        },
+        {
+          "path": "donate/chromium-desktop/network.json",
+          "bytes": 339
+        },
+        {
+          "path": "donate/chromium-desktop/summary.md",
+          "bytes": 1746
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caringforacauseindy.org/donate/",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "donate/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:20:54.968Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.org/donate/",
+      "loadSeconds": 2.6,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "formFactor": "mobile",
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 63
+        },
+        "metrics": {
+          "LCP": "2.3 s",
+          "CLS": "0",
+          "TBT": "0 ms",
+          "FCP": "1.9 s",
+          "SpeedIndex": "1.9 s"
+        },
+        "failingAudits": [
+          {
+            "id": "is-crawlable",
+            "title": "Page is blocked from indexing",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "score": 0,
+            "displayValue": null
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "title": "Serve static assets with an efficient cache policy",
+            "score": 0.5,
+            "displayValue": "1 resource found"
+          },
+          {
+            "id": "legacy-javascript",
+            "title": "Avoid serving legacy JavaScript to modern browsers",
+            "score": 0.5,
+            "displayValue": "Est savings of 10 KiB"
+          },
+          {
+            "id": "cache-insight",
+            "title": "Use efficient cache lifetimes",
+            "score": 0.5,
+            "displayValue": "Est savings of 4 KiB"
+          },
+          {
+            "id": "first-contentful-paint",
+            "title": "First Contentful Paint",
+            "score": 0.88,
+            "displayValue": "1.9 s"
+          }
+        ]
+      },
+      "finishedAt": "2026-10-31T21:21:15.778Z",
+      "files": [
+        {
+          "path": "donate/chromium-mobile/full.jpg",
+          "bytes": 342070
+        },
+        {
+          "path": "donate/chromium-mobile/tiles/tile-01.jpg",
+          "bytes": 89257
+        },
+        {
+          "path": "donate/chromium-mobile/tiles/tile-02.jpg",
+          "bytes": 102094
+        },
+        {
+          "path": "donate/chromium-mobile/tiles/tile-03.jpg",
+          "bytes": 89292
+        },
+        {
+          "path": "donate/chromium-mobile/tiles/tile-04.jpg",
+          "bytes": 64929
+        },
+        {
+          "path": "donate/chromium-mobile/tiles/tile-05.jpg",
+          "bytes": 1401
+        },
+        {
+          "path": "donate/chromium-mobile/meta.json",
+          "bytes": 2858
+        },
+        {
+          "path": "donate/chromium-mobile/text.md",
+          "bytes": 1169
+        },
+        {
+          "path": "donate/chromium-mobile/page.html",
+          "bytes": 248917
+        },
+        {
+          "path": "donate/chromium-mobile/links.json",
+          "bytes": 8890
+        },
+        {
+          "path": "donate/chromium-mobile/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/chromium-mobile/styles.json",
+          "bytes": 3331
+        },
+        {
+          "path": "donate/chromium-mobile/forms.json",
+          "bytes": 2668
+        },
+        {
+          "path": "donate/chromium-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "donate/chromium-mobile/aria.yaml",
+          "bytes": 3355
+        },
+        {
+          "path": "donate/chromium-mobile/steps/01-page.jpg",
+          "bytes": 342070
+        },
+        {
+          "path": "donate/chromium-mobile/steps.json",
+          "bytes": 3351
+        },
+        {
+          "path": "donate/chromium-mobile/lighthouse.json",
+          "bytes": 1228
+        },
+        {
+          "path": "donate/chromium-mobile/network.json",
+          "bytes": 339
+        },
+        {
+          "path": "donate/chromium-mobile/summary.md",
+          "bytes": 1806
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caringforacauseindy.org/does-not-exist",
+      "browser": "chromium",
+      "device": "desktop",
+      "dir": "notfound/chromium-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:21:15.780Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caringforacauseindy.org/does-not-exist",
+      "loadSeconds": 2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "error": "Command failed: npx --yes lighthouse@12 https://caringforacauseindy.org/does-not-exist --output=json --output-path=/home/runner/work/browser-bridge/browser-bridge/out/notfound/chromium-desktop/lighthouse-full.json --quiet --chrome-flags=--headless=new --no-sandbox --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+      },
+      "finishedAt": "2026-10-31T21:21:29.828Z",
+      "files": [
+        {
+          "path": "notfound/chromium-desktop/full.jpg",
+          "bytes": 309423
+        },
+        {
+          "path": "notfound/chromium-desktop/tiles/tile-01.jpg",
+          "bytes": 239098
+        },
+        {
+          "path": "notfound/chromium-desktop/tiles/tile-02.jpg",
+          "bytes": 70922
+        },
+        {
+          "path": "notfound/chromium-desktop/meta.json",
+          "bytes": 2575
+        },
+        {
+          "path": "notfound/chromium-desktop/text.md",
+          "bytes": 542
+        },
+        {
+          "path": "notfound/chromium-desktop/page.html",
+          "bytes": 212529
+        },
+        {
+          "path": "notfound/chromium-desktop/links.json",
+          "bytes": 7100
+        },
+        {
+          "path": "notfound/chromium-desktop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/chromium-desktop/styles.json",
+          "bytes": 3019
+        },
+        {
+          "path": "notfound/chromium-desktop/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/chromium-desktop/a11y.json",
+          "bytes": 336
+        },
+        {
+          "path": "notfound/chromium-desktop/aria.yaml",
+          "bytes": 2011
+        },
+        {
+          "path": "notfound/chromium-desktop/steps/01-page.jpg",
+          "bytes": 309423
+        },
+        {
+          "path": "notfound/chromium-desktop/steps.json",
+          "bytes": 1561
+        },
+        {
+          "path": "notfound/chromium-desktop/lighthouse.json",
+          "bytes": 361
+        },
+        {
+          "path": "notfound/chromium-desktop/network.json",
+          "bytes": 689
+        },
+        {
+          "path": "notfound/chromium-desktop/summary.md",
+          "bytes": 1934
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caringforacauseindy.org/does-not-exist",
+      "browser": "chromium",
+      "device": "mobile",
+      "dir": "notfound/chromium-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:21:29.830Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caringforacauseindy.org/does-not-exist",
+      "loadSeconds": 2.2,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "error": "Command failed: npx --yes lighthouse@12 https://caringforacauseindy.org/does-not-exist --output=json --output-path=/home/runner/work/browser-bridge/browser-bridge/out/notfound/chromium-mobile/lighthouse-full.json --quiet --chrome-flags=--headless=new --no-sandbox --only-categories=performance,accessibility,best-practices,seo"
+      },
+      "finishedAt": "2026-10-31T21:21:44.128Z",
+      "files": [
+        {
+          "path": "notfound/chromium-mobile/full.jpg",
+          "bytes": 178657
+        },
+        {
+          "path": "notfound/chromium-mobile/tiles/tile-01.jpg",
+          "bytes": 74350
+        },
+        {
+          "path": "notfound/chromium-mobile/tiles/tile-02.jpg",
+          "bytes": 66700
+        },
+        {
+          "path": "notfound/chromium-mobile/tiles/tile-03.jpg",
+          "bytes": 39788
+        },
+        {
+          "path": "notfound/chromium-mobile/meta.json",
+          "bytes": 2575
+        },
+        {
+          "path": "notfound/chromium-mobile/text.md",
+          "bytes": 515
+        },
+        {
+          "path": "notfound/chromium-mobile/page.html",
+          "bytes": 212529
+        },
+        {
+          "path": "notfound/chromium-mobile/links.json",
+          "bytes": 7149
+        },
+        {
+          "path": "notfound/chromium-mobile/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/chromium-mobile/styles.json",
+          "bytes": 3053
+        },
+        {
+          "path": "notfound/chromium-mobile/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/chromium-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "notfound/chromium-mobile/aria.yaml",
+          "bytes": 1703
+        },
+        {
+          "path": "notfound/chromium-mobile/steps/01-page.jpg",
+          "bytes": 178657
+        },
+        {
+          "path": "notfound/chromium-mobile/steps.json",
+          "bytes": 1558
+        },
+        {
+          "path": "notfound/chromium-mobile/lighthouse.json",
+          "bytes": 343
+        },
+        {
+          "path": "notfound/chromium-mobile/network.json",
+          "bytes": 689
+        },
+        {
+          "path": "notfound/chromium-mobile/summary.md",
+          "bytes": 1942
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caringforacauseindy.org/",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "home/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:21:44.501Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.org/",
+      "loadSeconds": 4.9,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 9,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-31T21:22:11.719Z",
+      "files": [
+        {
+          "path": "home/webkit-desktop/full.jpg",
+          "bytes": 1794573
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-01.jpg",
+          "bytes": 248837
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-02.jpg",
+          "bytes": 289975
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-03.jpg",
+          "bytes": 201361
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-04.jpg",
+          "bytes": 197911
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-05.jpg",
+          "bytes": 203782
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-06.jpg",
+          "bytes": 178789
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-07.jpg",
+          "bytes": 181066
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-08.jpg",
+          "bytes": 108056
+        },
+        {
+          "path": "home/webkit-desktop/tiles/tile-09.jpg",
+          "bytes": 177556
+        },
+        {
+          "path": "home/webkit-desktop/meta.json",
+          "bytes": 4007
+        },
+        {
+          "path": "home/webkit-desktop/text.md",
+          "bytes": 3230
+        },
+        {
+          "path": "home/webkit-desktop/page.html",
+          "bytes": 417911
+        },
+        {
+          "path": "home/webkit-desktop/links.json",
+          "bytes": 13158
+        },
+        {
+          "path": "home/webkit-desktop/images.json",
+          "bytes": 12907
+        },
+        {
+          "path": "home/webkit-desktop/styles.json",
+          "bytes": 4593
+        },
+        {
+          "path": "home/webkit-desktop/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "home/webkit-desktop/a11y.json",
+          "bytes": 337
+        },
+        {
+          "path": "home/webkit-desktop/aria.yaml",
+          "bytes": 10137
+        },
+        {
+          "path": "home/webkit-desktop/steps/01-page.jpg",
+          "bytes": 2579384
+        },
+        {
+          "path": "home/webkit-desktop/steps.json",
+          "bytes": 8967
+        },
+        {
+          "path": "home/webkit-desktop/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "home/webkit-desktop/network.json",
+          "bytes": 436
+        },
+        {
+          "path": "home/webkit-desktop/summary.md",
+          "bytes": 1732
+        }
+      ]
+    },
+    {
+      "target": "home",
+      "url": "https://caringforacauseindy.org/",
+      "browser": "webkit",
+      "device": "mobile",
+      "dir": "home/webkit-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:22:11.726Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.org/",
+      "loadSeconds": 4.5,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 14,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-31T21:22:31.562Z",
+      "files": [
+        {
+          "path": "home/webkit-mobile/full.jpg",
+          "bytes": 1366124
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-01.jpg",
+          "bytes": 117711
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-02.jpg",
+          "bytes": 103314
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-03.jpg",
+          "bytes": 117313
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-04.jpg",
+          "bytes": 105443
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-05.jpg",
+          "bytes": 62588
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-06.jpg",
+          "bytes": 131991
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-07.jpg",
+          "bytes": 112474
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-08.jpg",
+          "bytes": 80060
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-09.jpg",
+          "bytes": 125813
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-10.jpg",
+          "bytes": 84873
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-11.jpg",
+          "bytes": 98988
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-12.jpg",
+          "bytes": 149834
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-13.jpg",
+          "bytes": 70791
+        },
+        {
+          "path": "home/webkit-mobile/tiles/tile-14.jpg",
+          "bytes": 17582
+        },
+        {
+          "path": "home/webkit-mobile/meta.json",
+          "bytes": 4007
+        },
+        {
+          "path": "home/webkit-mobile/text.md",
+          "bytes": 3221
+        },
+        {
+          "path": "home/webkit-mobile/page.html",
+          "bytes": 418174
+        },
+        {
+          "path": "home/webkit-mobile/links.json",
+          "bytes": 13162
+        },
+        {
+          "path": "home/webkit-mobile/images.json",
+          "bytes": 13326
+        },
+        {
+          "path": "home/webkit-mobile/styles.json",
+          "bytes": 4616
+        },
+        {
+          "path": "home/webkit-mobile/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "home/webkit-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "home/webkit-mobile/aria.yaml",
+          "bytes": 9760
+        },
+        {
+          "path": "home/webkit-mobile/steps/01-page.jpg",
+          "bytes": 1418217
+        },
+        {
+          "path": "home/webkit-mobile/steps.json",
+          "bytes": 8728
+        },
+        {
+          "path": "home/webkit-mobile/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "home/webkit-mobile/network.json",
+          "bytes": 436
+        },
+        {
+          "path": "home/webkit-mobile/summary.md",
+          "bytes": 1844
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caringforacauseindy.org/apply/",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "apply/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:22:31.563Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.org/apply/",
+      "loadSeconds": 2.4,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-31T21:22:42.383Z",
+      "files": [
+        {
+          "path": "apply/webkit-desktop/full.jpg",
+          "bytes": 619262
+        },
+        {
+          "path": "apply/webkit-desktop/tiles/tile-01.jpg",
+          "bytes": 313040
+        },
+        {
+          "path": "apply/webkit-desktop/tiles/tile-02.jpg",
+          "bytes": 205219
+        },
+        {
+          "path": "apply/webkit-desktop/tiles/tile-03.jpg",
+          "bytes": 100306
+        },
+        {
+          "path": "apply/webkit-desktop/meta.json",
+          "bytes": 2891
+        },
+        {
+          "path": "apply/webkit-desktop/text.md",
+          "bytes": 1054
+        },
+        {
+          "path": "apply/webkit-desktop/page.html",
+          "bytes": 265142
+        },
+        {
+          "path": "apply/webkit-desktop/links.json",
+          "bytes": 7916
+        },
+        {
+          "path": "apply/webkit-desktop/images.json",
+          "bytes": 499
+        },
+        {
+          "path": "apply/webkit-desktop/styles.json",
+          "bytes": 3742
+        },
+        {
+          "path": "apply/webkit-desktop/forms.json",
+          "bytes": 15081
+        },
+        {
+          "path": "apply/webkit-desktop/a11y.json",
+          "bytes": 336
+        },
+        {
+          "path": "apply/webkit-desktop/aria.yaml",
+          "bytes": 3400
+        },
+        {
+          "path": "apply/webkit-desktop/steps/01-page.jpg",
+          "bytes": 619262
+        },
+        {
+          "path": "apply/webkit-desktop/steps.json",
+          "bytes": 2660
+        },
+        {
+          "path": "apply/webkit-desktop/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "apply/webkit-desktop/network.json",
+          "bytes": 436
+        },
+        {
+          "path": "apply/webkit-desktop/summary.md",
+          "bytes": 1687
+        }
+      ]
+    },
+    {
+      "target": "apply",
+      "url": "https://caringforacauseindy.org/apply/",
+      "browser": "webkit",
+      "device": "mobile",
+      "dir": "apply/webkit-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:22:42.384Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.org/apply/",
+      "loadSeconds": 2.7,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-31T21:22:52.514Z",
+      "files": [
+        {
+          "path": "apply/webkit-mobile/full.jpg",
+          "bytes": 347701
+        },
+        {
+          "path": "apply/webkit-mobile/tiles/tile-01.jpg",
+          "bytes": 118698
+        },
+        {
+          "path": "apply/webkit-mobile/tiles/tile-02.jpg",
+          "bytes": 57720
+        },
+        {
+          "path": "apply/webkit-mobile/tiles/tile-03.jpg",
+          "bytes": 81229
+        },
+        {
+          "path": "apply/webkit-mobile/tiles/tile-04.jpg",
+          "bytes": 71320
+        },
+        {
+          "path": "apply/webkit-mobile/tiles/tile-05.jpg",
+          "bytes": 17620
+        },
+        {
+          "path": "apply/webkit-mobile/meta.json",
+          "bytes": 2891
+        },
+        {
+          "path": "apply/webkit-mobile/text.md",
+          "bytes": 1104
+        },
+        {
+          "path": "apply/webkit-mobile/page.html",
+          "bytes": 265142
+        },
+        {
+          "path": "apply/webkit-mobile/links.json",
+          "bytes": 7918
+        },
+        {
+          "path": "apply/webkit-mobile/images.json",
+          "bytes": 503
+        },
+        {
+          "path": "apply/webkit-mobile/styles.json",
+          "bytes": 3703
+        },
+        {
+          "path": "apply/webkit-mobile/forms.json",
+          "bytes": 15081
+        },
+        {
+          "path": "apply/webkit-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "apply/webkit-mobile/aria.yaml",
+          "bytes": 3315
+        },
+        {
+          "path": "apply/webkit-mobile/steps/01-page.jpg",
+          "bytes": 347701
+        },
+        {
+          "path": "apply/webkit-mobile/steps.json",
+          "bytes": 2772
+        },
+        {
+          "path": "apply/webkit-mobile/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "apply/webkit-mobile/network.json",
+          "bytes": 436
+        },
+        {
+          "path": "apply/webkit-mobile/summary.md",
+          "bytes": 1741
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caringforacauseindy.org/donate/",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "donate/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:22:52.517Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.org/donate/",
+      "loadSeconds": 2.5,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-31T21:23:03.049Z",
+      "files": [
+        {
+          "path": "donate/webkit-desktop/full.jpg",
+          "bytes": 534991
+        },
+        {
+          "path": "donate/webkit-desktop/tiles/tile-01.jpg",
+          "bytes": 324191
+        },
+        {
+          "path": "donate/webkit-desktop/tiles/tile-02.jpg",
+          "bytes": 211184
+        },
+        {
+          "path": "donate/webkit-desktop/meta.json",
+          "bytes": 2858
+        },
+        {
+          "path": "donate/webkit-desktop/text.md",
+          "bytes": 1194
+        },
+        {
+          "path": "donate/webkit-desktop/page.html",
+          "bytes": 248917
+        },
+        {
+          "path": "donate/webkit-desktop/links.json",
+          "bytes": 8923
+        },
+        {
+          "path": "donate/webkit-desktop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/webkit-desktop/styles.json",
+          "bytes": 3370
+        },
+        {
+          "path": "donate/webkit-desktop/forms.json",
+          "bytes": 2668
+        },
+        {
+          "path": "donate/webkit-desktop/a11y.json",
+          "bytes": 336
+        },
+        {
+          "path": "donate/webkit-desktop/aria.yaml",
+          "bytes": 3663
+        },
+        {
+          "path": "donate/webkit-desktop/steps/01-page.jpg",
+          "bytes": 534991
+        },
+        {
+          "path": "donate/webkit-desktop/steps.json",
+          "bytes": 3071
+        },
+        {
+          "path": "donate/webkit-desktop/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "donate/webkit-desktop/network.json",
+          "bytes": 436
+        },
+        {
+          "path": "donate/webkit-desktop/summary.md",
+          "bytes": 1675
+        }
+      ]
+    },
+    {
+      "target": "donate",
+      "url": "https://caringforacauseindy.org/donate/",
+      "browser": "webkit",
+      "device": "mobile",
+      "dir": "donate/webkit-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:23:03.050Z",
+      "httpStatus": 200,
+      "finalUrl": "https://caringforacauseindy.org/donate/",
+      "loadSeconds": 2.7,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 5,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-31T21:23:13.233Z",
+      "files": [
+        {
+          "path": "donate/webkit-mobile/full.jpg",
+          "bytes": 346268
+        },
+        {
+          "path": "donate/webkit-mobile/tiles/tile-01.jpg",
+          "bytes": 91463
+        },
+        {
+          "path": "donate/webkit-mobile/tiles/tile-02.jpg",
+          "bytes": 104089
+        },
+        {
+          "path": "donate/webkit-mobile/tiles/tile-03.jpg",
+          "bytes": 89711
+        },
+        {
+          "path": "donate/webkit-mobile/tiles/tile-04.jpg",
+          "bytes": 62859
+        },
+        {
+          "path": "donate/webkit-mobile/tiles/tile-05.jpg",
+          "bytes": 1879
+        },
+        {
+          "path": "donate/webkit-mobile/meta.json",
+          "bytes": 2858
+        },
+        {
+          "path": "donate/webkit-mobile/text.md",
+          "bytes": 1167
+        },
+        {
+          "path": "donate/webkit-mobile/page.html",
+          "bytes": 248917
+        },
+        {
+          "path": "donate/webkit-mobile/links.json",
+          "bytes": 8927
+        },
+        {
+          "path": "donate/webkit-mobile/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "donate/webkit-mobile/styles.json",
+          "bytes": 3330
+        },
+        {
+          "path": "donate/webkit-mobile/forms.json",
+          "bytes": 2668
+        },
+        {
+          "path": "donate/webkit-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "donate/webkit-mobile/aria.yaml",
+          "bytes": 3355
+        },
+        {
+          "path": "donate/webkit-mobile/steps/01-page.jpg",
+          "bytes": 346268
+        },
+        {
+          "path": "donate/webkit-mobile/steps.json",
+          "bytes": 3351
+        },
+        {
+          "path": "donate/webkit-mobile/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "donate/webkit-mobile/network.json",
+          "bytes": 436
+        },
+        {
+          "path": "donate/webkit-mobile/summary.md",
+          "bytes": 1748
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caringforacauseindy.org/does-not-exist",
+      "browser": "webkit",
+      "device": "desktop",
+      "dir": "notfound/webkit-desktop",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:23:13.234Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caringforacauseindy.org/does-not-exist",
+      "loadSeconds": 2.1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "tiles": {
+        "count": 2,
+        "tileHeight": 900,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-31T21:23:21.974Z",
+      "files": [
+        {
+          "path": "notfound/webkit-desktop/full.jpg",
+          "bytes": 315882
+        },
+        {
+          "path": "notfound/webkit-desktop/tiles/tile-01.jpg",
+          "bytes": 243621
+        },
+        {
+          "path": "notfound/webkit-desktop/tiles/tile-02.jpg",
+          "bytes": 72819
+        },
+        {
+          "path": "notfound/webkit-desktop/meta.json",
+          "bytes": 2575
+        },
+        {
+          "path": "notfound/webkit-desktop/text.md",
+          "bytes": 540
+        },
+        {
+          "path": "notfound/webkit-desktop/page.html",
+          "bytes": 212529
+        },
+        {
+          "path": "notfound/webkit-desktop/links.json",
+          "bytes": 7145
+        },
+        {
+          "path": "notfound/webkit-desktop/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/webkit-desktop/styles.json",
+          "bytes": 3014
+        },
+        {
+          "path": "notfound/webkit-desktop/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/webkit-desktop/a11y.json",
+          "bytes": 336
+        },
+        {
+          "path": "notfound/webkit-desktop/aria.yaml",
+          "bytes": 2011
+        },
+        {
+          "path": "notfound/webkit-desktop/steps/01-page.jpg",
+          "bytes": 315914
+        },
+        {
+          "path": "notfound/webkit-desktop/steps.json",
+          "bytes": 1561
+        },
+        {
+          "path": "notfound/webkit-desktop/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "notfound/webkit-desktop/network.json",
+          "bytes": 804
+        },
+        {
+          "path": "notfound/webkit-desktop/summary.md",
+          "bytes": 1593
+        }
+      ]
+    },
+    {
+      "target": "notfound",
+      "url": "https://caringforacauseindy.org/does-not-exist",
+      "browser": "webkit",
+      "device": "mobile",
+      "dir": "notfound/webkit-mobile",
+      "status": "ok",
+      "startedAt": "2026-10-31T21:23:21.975Z",
+      "httpStatus": 404,
+      "finalUrl": "https://caringforacauseindy.org/does-not-exist",
+      "loadSeconds": 2.3,
+      "viewport": {
+        "width": 393,
+        "height": 659
+      },
+      "tiles": {
+        "count": 3,
+        "tileHeight": 659,
+        "truncated": false
+      },
+      "lighthouse": {
+        "skipped": "Lighthouse runs only in chromium variants."
+      },
+      "finishedAt": "2026-10-31T21:23:30.657Z",
+      "files": [
+        {
+          "path": "notfound/webkit-mobile/full.jpg",
+          "bytes": 180530
+        },
+        {
+          "path": "notfound/webkit-mobile/tiles/tile-01.jpg",
+          "bytes": 74718
+        },
+        {
+          "path": "notfound/webkit-mobile/tiles/tile-02.jpg",
+          "bytes": 67290
+        },
+        {
+          "path": "notfound/webkit-mobile/tiles/tile-03.jpg",
+          "bytes": 39404
+        },
+        {
+          "path": "notfound/webkit-mobile/meta.json",
+          "bytes": 2575
+        },
+        {
+          "path": "notfound/webkit-mobile/text.md",
+          "bytes": 513
+        },
+        {
+          "path": "notfound/webkit-mobile/page.html",
+          "bytes": 212529
+        },
+        {
+          "path": "notfound/webkit-mobile/links.json",
+          "bytes": 7149
+        },
+        {
+          "path": "notfound/webkit-mobile/images.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/webkit-mobile/styles.json",
+          "bytes": 3052
+        },
+        {
+          "path": "notfound/webkit-mobile/forms.json",
+          "bytes": 39
+        },
+        {
+          "path": "notfound/webkit-mobile/a11y.json",
+          "bytes": 465
+        },
+        {
+          "path": "notfound/webkit-mobile/aria.yaml",
+          "bytes": 1703
+        },
+        {
+          "path": "notfound/webkit-mobile/steps/01-page.jpg",
+          "bytes": 180524
+        },
+        {
+          "path": "notfound/webkit-mobile/steps.json",
+          "bytes": 1558
+        },
+        {
+          "path": "notfound/webkit-mobile/lighthouse.json",
+          "bytes": 61
+        },
+        {
+          "path": "notfound/webkit-mobile/network.json",
+          "bytes": 804
+        },
+        {
+          "path": "notfound/webkit-mobile/summary.md",
+          "bytes": 1628
+        }
+      ]
+    }
+  ],
+  "job": {
+    "preset": "deep",
+    "targets": [
+      {
+        "url": "https://caringforacauseindy.org/",
+        "name": "home",
+        "steps": [
+          {
+            "action": "evaluate",
+            "script": "localStorage.setItem('cfac-welcome-seen','1')"
+          },
+          {
+            "action": "goto",
+            "url": "https://caringforacauseindy.org/"
+          },
+          {
+            "action": "wait",
+            "ms": 2500
+          },
+          {
+            "action": "screenshot",
+            "name": "page",
+            "fullPage": true
+          },
+          {
+            "action": "evaluate",
+            "script": "(async () => {\n  const sleep = ms => new Promise(r => setTimeout(r, ms));\n  const vw = innerWidth, out = { vw, vh: innerHeight, path: location.pathname };\n  const header = document.querySelector('header');\n  const hb = header ? header.getBoundingClientRect().bottom : 0;\n  out.headerH = Math.round(hb);\n  const vis = el => { const s = getComputedStyle(el); const r = el.getBoundingClientRect();\n    return s.visibility !== 'hidden' && s.display !== 'none' && +s.opacity > 0.05 && r.width > 2 && r.height > 2; };\n  const content = 'h1,h2,h3,h4,p,li,a,button,img,picture,video,iframe,input,select,textarea,label,summary,figure,svg[role=img]';\n  // 1. gaps between consecutive top-level sections\n  const secs = [...document.querySelectorAll('main > section, main > div > section, main > *, footer')].filter(vis);\n  const uniq = [...new Set(secs)].sort((a,b)=>a.getBoundingClientRect().top-b.getBoundingClientRect().top);\n  const box = el => { let top=Infinity, bot=-Infinity;\n    el.querySelectorAll(content).forEach(c => { if (!vis(c) || c.closest('[aria-hidden=true]')) return; const r=c.getBoundingClientRect(); if (r.height>300 && c.tagName==='svg') return; top=Math.min(top,r.top+scrollY); bot=Math.max(bot,r.bottom+scrollY); });\n    return {top, bot}; };\n  out.gaps = [];\n  for (let i=0;i<uniq.length-1;i++) { const a=box(uniq[i]), b=box(uniq[i+1]);\n    if (isFinite(a.bot)&&isFinite(b.top)) out.gaps.push({from: (uniq[i].id||uniq[i].className||uniq[i].tagName).toString().slice(0,40), to:(uniq[i+1].id||uniq[i+1].className||uniq[i+1].tagName).toString().slice(0,40), gap: Math.round(b.top-a.bot)}); }\n  // within-section vertical gaps between consecutive content blocks (largest 8)\n  const blocks = [...document.querySelectorAll('main h2, main h3, main p, main ul, main img, main a, main button, main figure')].filter(vis)\n    .map(e=>{const r=e.getBoundingClientRect();return {e, top:r.top+scrollY, bot:r.bottom+scrollY, t:(e.innerText||e.alt||e.tagName).trim().slice(0,30)}}).sort((a,b)=>a.top-b.top);\n  const big=[]; let maxBot=-Infinity, last=null;\n  for (const b of blocks) { if (last && b.top-maxBot>0) big.push({gap:Math.round(b.top-maxBot), after:last.t, before:b.t}); if (b.bot>maxBot){maxBot=b.bot; last=b;} }\n  out.biggestGaps = big.sort((a,b)=>b.gap-a.gap).slice(0,10);\n  // 2. hover rules not guarded by (hover:hover)\n  let hoverUnguarded=0, hoverGuarded=0, samples=[];\n  const walk=(rules,guard)=>{ for (const r of rules) { if (r.cssRules && r.media) walk(r.cssRules, guard || /hover\\s*:\\s*hover|pointer\\s*:\\s*fine/.test(r.media.mediaText)); else if (r.cssRules) walk(r.cssRules, guard);\n      if (r.selectorText && r.selectorText.includes(':hover')) { if (guard) hoverGuarded++; else { hoverUnguarded++; if (samples.length<12) samples.push(r.selectorText.slice(0,80)); } } } };\n  for (const s of document.styleSheets) { try { walk(s.cssRules,false); } catch(e){} }\n  out.hover = {hoverUnguarded, hoverGuarded, samples};\n  // 3. tight horizontal padding in pills/buttons\n  out.tight = [];\n  document.querySelectorAll('button, a, [role=tab], label').forEach(el=>{ if(!vis(el)) return; const r=el.getBoundingClientRect(); if (r.height<28||r.height>90) return;\n    const rg=document.createRange(); rg.selectNodeContents(el); const tr=rg.getBoundingClientRect(); if (!tr.width) return;\n    const bg=getComputedStyle(el); const pill = bg.backgroundColor!=='rgba(0, 0, 0, 0)' || bg.boxShadow!=='none' || bg.borderStyle!=='none';\n    if (!pill) return; const l=tr.left-r.left, rt=r.right-tr.right;\n    if (Math.min(l,rt) < 14 && r.width>40) out.tight.push({t:el.innerText.trim().slice(0,30), padL:Math.round(l), padR:Math.round(rt), w:Math.round(r.width)}); });\n  // 4. horizontal scrollers and clipped children\n  out.scrollers=[]; document.querySelectorAll('*').forEach(el=>{ const s=getComputedStyle(el); if(/(auto|scroll)/.test(s.overflowX) && el.scrollWidth>el.clientWidth+4 && vis(el)) {\n    const kids=[...el.children].filter(vis); const clipped=kids.filter(k=>{const r=k.getBoundingClientRect(); return r.right>innerWidth+1||r.left<-1}).length;\n    out.scrollers.push({cls:(el.className||el.tagName).toString().slice(0,40), items:kids.length, clippedOrOffscreen:clipped}); } });\n  // 5. content past the gutter\n  const logo = header && header.querySelector('a'); const L = logo ? logo.getBoundingClientRect().left : 0; const R = vw - L;\n  out.gutter={L:Math.round(L), R:Math.round(R)}; out.pastGutter=[];\n  document.querySelectorAll('p, a, span, h1, h2, h3, li').forEach(el=>{ if(!vis(el)||el.closest('header')) return; if (el.children.length && el.tagName!=='A') return;\n    const r=el.getBoundingClientRect(); if (r.right>R+4 && r.right<=vw && el.innerText.trim()) out.pastGutter.push({t:el.innerText.trim().slice(0,40), over:Math.round(r.right-R)}); });\n  out.pastGutter=out.pastGutter.slice(0,10);\n  // 6. duplicate sentences\n  const seen={}; document.querySelectorAll('main p, main li, main h2, main h3').forEach(el=>{ if(!vis(el))return; el.innerText.split(/(?<=[.?!])\\s+/).forEach(s=>{s=s.trim(); if(s.length>25) (seen[s]=seen[s]||[]).push(1);});});\n  out.dupes=Object.entries(seen).filter(([k,v])=>v.length>1).map(([k,v])=>({s:k.slice(0,90),n:v.length}));\n  // 7. images: upscale + face-agnostic crop info\n  out.images=[...document.images].filter(vis).map(i=>{const r=i.getBoundingClientRect(); return {src:(i.currentSrc||i.src).split('/').pop().split('?')[0].slice(0,40), shown:Math.round(r.width)+'x'+Math.round(r.height), nat:i.naturalWidth+'x'+i.naturalHeight, ratio:+(i.naturalWidth/(r.width*devicePixelRatio)).toFixed(2), pos:getComputedStyle(i).objectPosition}}).filter(x=>x.ratio<1);\n  // 8. in-page anchor landings\n  out.anchors=[]; const ids=[...new Set([...document.querySelectorAll('a[href*=\"#\"]')].map(a=>a.getAttribute('href').split('#')[1]).filter(Boolean))];\n  for (const id of ids) { const t=document.getElementById(id); if(!t) {out.anchors.push({id, missing:true}); continue;}\n    t.scrollIntoView({behavior:'instant', block:'start'}); await sleep(250);\n    const h = t.querySelector('h2,h3,.eyebrow,[class*=eyebrow]') || t; const top=h.getBoundingClientRect().top;\n    const headBot = header ? header.getBoundingClientRect().bottom : 0;\n    out.anchors.push({id, firstText:(h.innerText||'').trim().slice(0,25), gapBelowHeader:Math.round(top-headBot)}); }\n  scrollTo(0,0);\n  return out;\n})()\n",
+            "name": "measure"
+          }
+        ]
+      },
+      {
+        "url": "https://caringforacauseindy.org/apply/",
+        "name": "apply",
+        "steps": [
+          {
+            "action": "evaluate",
+            "script": "localStorage.setItem('cfac-welcome-seen','1')"
+          },
+          {
+            "action": "goto",
+            "url": "https://caringforacauseindy.org/apply/"
+          },
+          {
+            "action": "wait",
+            "ms": 2500
+          },
+          {
+            "action": "screenshot",
+            "name": "page",
+            "fullPage": true
+          },
+          {
+            "action": "evaluate",
+            "script": "(async () => {\n  const sleep = ms => new Promise(r => setTimeout(r, ms));\n  const vw = innerWidth, out = { vw, vh: innerHeight, path: location.pathname };\n  const header = document.querySelector('header');\n  const hb = header ? header.getBoundingClientRect().bottom : 0;\n  out.headerH = Math.round(hb);\n  const vis = el => { const s = getComputedStyle(el); const r = el.getBoundingClientRect();\n    return s.visibility !== 'hidden' && s.display !== 'none' && +s.opacity > 0.05 && r.width > 2 && r.height > 2; };\n  const content = 'h1,h2,h3,h4,p,li,a,button,img,picture,video,iframe,input,select,textarea,label,summary,figure,svg[role=img]';\n  // 1. gaps between consecutive top-level sections\n  const secs = [...document.querySelectorAll('main > section, main > div > section, main > *, footer')].filter(vis);\n  const uniq = [...new Set(secs)].sort((a,b)=>a.getBoundingClientRect().top-b.getBoundingClientRect().top);\n  const box = el => { let top=Infinity, bot=-Infinity;\n    el.querySelectorAll(content).forEach(c => { if (!vis(c) || c.closest('[aria-hidden=true]')) return; const r=c.getBoundingClientRect(); if (r.height>300 && c.tagName==='svg') return; top=Math.min(top,r.top+scrollY); bot=Math.max(bot,r.bottom+scrollY); });\n    return {top, bot}; };\n  out.gaps = [];\n  for (let i=0;i<uniq.length-1;i++) { const a=box(uniq[i]), b=box(uniq[i+1]);\n    if (isFinite(a.bot)&&isFinite(b.top)) out.gaps.push({from: (uniq[i].id||uniq[i].className||uniq[i].tagName).toString().slice(0,40), to:(uniq[i+1].id||uniq[i+1].className||uniq[i+1].tagName).toString().slice(0,40), gap: Math.round(b.top-a.bot)}); }\n  // within-section vertical gaps between consecutive content blocks (largest 8)\n  const blocks = [...document.querySelectorAll('main h2, main h3, main p, main ul, main img, main a, main button, main figure')].filter(vis)\n    .map(e=>{const r=e.getBoundingClientRect();return {e, top:r.top+scrollY, bot:r.bottom+scrollY, t:(e.innerText||e.alt||e.tagName).trim().slice(0,30)}}).sort((a,b)=>a.top-b.top);\n  const big=[]; let maxBot=-Infinity, last=null;\n  for (const b of blocks) { if (last && b.top-maxBot>0) big.push({gap:Math.round(b.top-maxBot), after:last.t, before:b.t}); if (b.bot>maxBot){maxBot=b.bot; last=b;} }\n  out.biggestGaps = big.sort((a,b)=>b.gap-a.gap).slice(0,10);\n  // 2. hover rules not guarded by (hover:hover)\n  let hoverUnguarded=0, hoverGuarded=0, samples=[];\n  const walk=(rules,guard)=>{ for (const r of rules) { if (r.cssRules && r.media) walk(r.cssRules, guard || /hover\\s*:\\s*hover|pointer\\s*:\\s*fine/.test(r.media.mediaText)); else if (r.cssRules) walk(r.cssRules, guard);\n      if (r.selectorText && r.selectorText.includes(':hover')) { if (guard) hoverGuarded++; else { hoverUnguarded++; if (samples.length<12) samples.push(r.selectorText.slice(0,80)); } } } };\n  for (const s of document.styleSheets) { try { walk(s.cssRules,false); } catch(e){} }\n  out.hover = {hoverUnguarded, hoverGuarded, samples};\n  // 3. tight horizontal padding in pills/buttons\n  out.tight = [];\n  document.querySelectorAll('button, a, [role=tab], label').forEach(el=>{ if(!vis(el)) return; const r=el.getBoundingClientRect(); if (r.height<28||r.height>90) return;\n    const rg=document.createRange(); rg.selectNodeContents(el); const tr=rg.getBoundingClientRect(); if (!tr.width) return;\n    const bg=getComputedStyle(el); const pill = bg.backgroundColor!=='rgba(0, 0, 0, 0)' || bg.boxShadow!=='none' || bg.borderStyle!=='none';\n    if (!pill) return; const l=tr.left-r.left, rt=r.right-tr.right;\n    if (Math.min(l,rt) < 14 && r.width>40) out.tight.push({t:el.innerText.trim().slice(0,30), padL:Math.round(l), padR:Math.round(rt), w:Math.round(r.width)}); });\n  // 4. horizontal scrollers and clipped children\n  out.scrollers=[]; document.querySelectorAll('*').forEach(el=>{ const s=getComputedStyle(el); if(/(auto|scroll)/.test(s.overflowX) && el.scrollWidth>el.clientWidth+4 && vis(el)) {\n    const kids=[...el.children].filter(vis); const clipped=kids.filter(k=>{const r=k.getBoundingClientRect(); return r.right>innerWidth+1||r.left<-1}).length;\n    out.scrollers.push({cls:(el.className||el.tagName).toString().slice(0,40), items:kids.length, clippedOrOffscreen:clipped}); } });\n  // 5. content past the gutter\n  const logo = header && header.querySelector('a'); const L = logo ? logo.getBoundingClientRect().left : 0; const R = vw - L;\n  out.gutter={L:Math.round(L), R:Math.round(R)}; out.pastGutter=[];\n  document.querySelectorAll('p, a, span, h1, h2, h3, li').forEach(el=>{ if(!vis(el)||el.closest('header')) return; if (el.children.length && el.tagName!=='A') return;\n    const r=el.getBoundingClientRect(); if (r.right>R+4 && r.right<=vw && el.innerText.trim()) out.pastGutter.push({t:el.innerText.trim().slice(0,40), over:Math.round(r.right-R)}); });\n  out.pastGutter=out.pastGutter.slice(0,10);\n  // 6. duplicate sentences\n  const seen={}; document.querySelectorAll('main p, main li, main h2, main h3').forEach(el=>{ if(!vis(el))return; el.innerText.split(/(?<=[.?!])\\s+/).forEach(s=>{s=s.trim(); if(s.length>25) (seen[s]=seen[s]||[]).push(1);});});\n  out.dupes=Object.entries(seen).filter(([k,v])=>v.length>1).map(([k,v])=>({s:k.slice(0,90),n:v.length}));\n  // 7. images: upscale + face-agnostic crop info\n  out.images=[...document.images].filter(vis).map(i=>{const r=i.getBoundingClientRect(); return {src:(i.currentSrc||i.src).split('/').pop().split('?')[0].slice(0,40), shown:Math.round(r.width)+'x'+Math.round(r.height), nat:i.naturalWidth+'x'+i.naturalHeight, ratio:+(i.naturalWidth/(r.width*devicePixelRatio)).toFixed(2), pos:getComputedStyle(i).objectPosition}}).filter(x=>x.ratio<1);\n  // 8. in-page anchor landings\n  out.anchors=[]; const ids=[...new Set([...document.querySelectorAll('a[href*=\"#\"]')].map(a=>a.getAttribute('href').split('#')[1]).filter(Boolean))];\n  for (const id of ids) { const t=document.getElementById(id); if(!t) {out.anchors.push({id, missing:true}); continue;}\n    t.scrollIntoView({behavior:'instant', block:'start'}); await sleep(250);\n    const h = t.querySelector('h2,h3,.eyebrow,[class*=eyebrow]') || t; const top=h.getBoundingClientRect().top;\n    const headBot = header ? header.getBoundingClientRect().bottom : 0;\n    out.anchors.push({id, firstText:(h.innerText||'').trim().slice(0,25), gapBelowHeader:Math.round(top-headBot)}); }\n  scrollTo(0,0);\n  return out;\n})()\n",
+            "name": "measure"
+          }
+        ]
+      },
+      {
+        "url": "https://caringforacauseindy.org/donate/",
+        "name": "donate",
+        "steps": [
+          {
+            "action": "evaluate",
+            "script": "localStorage.setItem('cfac-welcome-seen','1')"
+          },
+          {
+            "action": "goto",
+            "url": "https://caringforacauseindy.org/donate/"
+          },
+          {
+            "action": "wait",
+            "ms": 2500
+          },
+          {
+            "action": "screenshot",
+            "name": "page",
+            "fullPage": true
+          },
+          {
+            "action": "evaluate",
+            "script": "(async () => {\n  const sleep = ms => new Promise(r => setTimeout(r, ms));\n  const vw = innerWidth, out = { vw, vh: innerHeight, path: location.pathname };\n  const header = document.querySelector('header');\n  const hb = header ? header.getBoundingClientRect().bottom : 0;\n  out.headerH = Math.round(hb);\n  const vis = el => { const s = getComputedStyle(el); const r = el.getBoundingClientRect();\n    return s.visibility !== 'hidden' && s.display !== 'none' && +s.opacity > 0.05 && r.width > 2 && r.height > 2; };\n  const content = 'h1,h2,h3,h4,p,li,a,button,img,picture,video,iframe,input,select,textarea,label,summary,figure,svg[role=img]';\n  // 1. gaps between consecutive top-level sections\n  const secs = [...document.querySelectorAll('main > section, main > div > section, main > *, footer')].filter(vis);\n  const uniq = [...new Set(secs)].sort((a,b)=>a.getBoundingClientRect().top-b.getBoundingClientRect().top);\n  const box = el => { let top=Infinity, bot=-Infinity;\n    el.querySelectorAll(content).forEach(c => { if (!vis(c) || c.closest('[aria-hidden=true]')) return; const r=c.getBoundingClientRect(); if (r.height>300 && c.tagName==='svg') return; top=Math.min(top,r.top+scrollY); bot=Math.max(bot,r.bottom+scrollY); });\n    return {top, bot}; };\n  out.gaps = [];\n  for (let i=0;i<uniq.length-1;i++) { const a=box(uniq[i]), b=box(uniq[i+1]);\n    if (isFinite(a.bot)&&isFinite(b.top)) out.gaps.push({from: (uniq[i].id||uniq[i].className||uniq[i].tagName).toString().slice(0,40), to:(uniq[i+1].id||uniq[i+1].className||uniq[i+1].tagName).toString().slice(0,40), gap: Math.round(b.top-a.bot)}); }\n  // within-section vertical gaps between consecutive content blocks (largest 8)\n  const blocks = [...document.querySelectorAll('main h2, main h3, main p, main ul, main img, main a, main button, main figure')].filter(vis)\n    .map(e=>{const r=e.getBoundingClientRect();return {e, top:r.top+scrollY, bot:r.bottom+scrollY, t:(e.innerText||e.alt||e.tagName).trim().slice(0,30)}}).sort((a,b)=>a.top-b.top);\n  const big=[]; let maxBot=-Infinity, last=null;\n  for (const b of blocks) { if (last && b.top-maxBot>0) big.push({gap:Math.round(b.top-maxBot), after:last.t, before:b.t}); if (b.bot>maxBot){maxBot=b.bot; last=b;} }\n  out.biggestGaps = big.sort((a,b)=>b.gap-a.gap).slice(0,10);\n  // 2. hover rules not guarded by (hover:hover)\n  let hoverUnguarded=0, hoverGuarded=0, samples=[];\n  const walk=(rules,guard)=>{ for (const r of rules) { if (r.cssRules && r.media) walk(r.cssRules, guard || /hover\\s*:\\s*hover|pointer\\s*:\\s*fine/.test(r.media.mediaText)); else if (r.cssRules) walk(r.cssRules, guard);\n      if (r.selectorText && r.selectorText.includes(':hover')) { if (guard) hoverGuarded++; else { hoverUnguarded++; if (samples.length<12) samples.push(r.selectorText.slice(0,80)); } } } };\n  for (const s of document.styleSheets) { try { walk(s.cssRules,false); } catch(e){} }\n  out.hover = {hoverUnguarded, hoverGuarded, samples};\n  // 3. tight horizontal padding in pills/buttons\n  out.tight = [];\n  document.querySelectorAll('button, a, [role=tab], label').forEach(el=>{ if(!vis(el)) return; const r=el.getBoundingClientRect(); if (r.height<28||r.height>90) return;\n    const rg=document.createRange(); rg.selectNodeContents(el); const tr=rg.getBoundingClientRect(); if (!tr.width) return;\n    const bg=getComputedStyle(el); const pill = bg.backgroundColor!=='rgba(0, 0, 0, 0)' || bg.boxShadow!=='none' || bg.borderStyle!=='none';\n    if (!pill) return; const l=tr.left-r.left, rt=r.right-tr.right;\n    if (Math.min(l,rt) < 14 && r.width>40) out.tight.push({t:el.innerText.trim().slice(0,30), padL:Math.round(l), padR:Math.round(rt), w:Math.round(r.width)}); });\n  // 4. horizontal scrollers and clipped children\n  out.scrollers=[]; document.querySelectorAll('*').forEach(el=>{ const s=getComputedStyle(el); if(/(auto|scroll)/.test(s.overflowX) && el.scrollWidth>el.clientWidth+4 && vis(el)) {\n    const kids=[...el.children].filter(vis); const clipped=kids.filter(k=>{const r=k.getBoundingClientRect(); return r.right>innerWidth+1||r.left<-1}).length;\n    out.scrollers.push({cls:(el.className||el.tagName).toString().slice(0,40), items:kids.length, clippedOrOffscreen:clipped}); } });\n  // 5. content past the gutter\n  const logo = header && header.querySelector('a'); const L = logo ? logo.getBoundingClientRect().left : 0; const R = vw - L;\n  out.gutter={L:Math.round(L), R:Math.round(R)}; out.pastGutter=[];\n  document.querySelectorAll('p, a, span, h1, h2, h3, li').forEach(el=>{ if(!vis(el)||el.closest('header')) return; if (el.children.length && el.tagName!=='A') return;\n    const r=el.getBoundingClientRect(); if (r.right>R+4 && r.right<=vw && el.innerText.trim()) out.pastGutter.push({t:el.innerText.trim().slice(0,40), over:Math.round(r.right-R)}); });\n  out.pastGutter=out.pastGutter.slice(0,10);\n  // 6. duplicate sentences\n  const seen={}; document.querySelectorAll('main p, main li, main h2, main h3').forEach(el=>{ if(!vis(el))return; el.innerText.split(/(?<=[.?!])\\s+/).forEach(s=>{s=s.trim(); if(s.length>25) (seen[s]=seen[s]||[]).push(1);});});\n  out.dupes=Object.entries(seen).filter(([k,v])=>v.length>1).map(([k,v])=>({s:k.slice(0,90),n:v.length}));\n  // 7. images: upscale + face-agnostic crop info\n  out.images=[...document.images].filter(vis).map(i=>{const r=i.getBoundingClientRect(); return {src:(i.currentSrc||i.src).split('/').pop().split('?')[0].slice(0,40), shown:Math.round(r.width)+'x'+Math.round(r.height), nat:i.naturalWidth+'x'+i.naturalHeight, ratio:+(i.naturalWidth/(r.width*devicePixelRatio)).toFixed(2), pos:getComputedStyle(i).objectPosition}}).filter(x=>x.ratio<1);\n  // 8. in-page anchor landings\n  out.anchors=[]; const ids=[...new Set([...document.querySelectorAll('a[href*=\"#\"]')].map(a=>a.getAttribute('href').split('#')[1]).filter(Boolean))];\n  for (const id of ids) { const t=document.getElementById(id); if(!t) {out.anchors.push({id, missing:true}); continue;}\n    t.scrollIntoView({behavior:'instant', block:'start'}); await sleep(250);\n    const h = t.querySelector('h2,h3,.eyebrow,[class*=eyebrow]') || t; const top=h.getBoundingClientRect().top;\n    const headBot = header ? header.getBoundingClientRect().bottom : 0;\n    out.anchors.push({id, firstText:(h.innerText||'').trim().slice(0,25), gapBelowHeader:Math.round(top-headBot)}); }\n  scrollTo(0,0);\n  return out;\n})()\n",
+            "name": "measure"
+          }
+        ]
+      },
+      {
+        "url": "https://caringforacauseindy.org/does-not-exist",
+        "name": "notfound",
+        "steps": [
+          {
+            "action": "evaluate",
+            "script": "localStorage.setItem('cfac-welcome-seen','1')"
+          },
+          {
+            "action": "goto",
+            "url": "https://caringforacauseindy.org/does-not-exist"
+          },
+          {
+            "action": "wait",
+            "ms": 2500
+          },
+          {
+            "action": "screenshot",
+            "name": "page",
+            "fullPage": true
+          },
+          {
+            "action": "evaluate",
+            "script": "(async () => {\n  const sleep = ms => new Promise(r => setTimeout(r, ms));\n  const vw = innerWidth, out = { vw, vh: innerHeight, path: location.pathname };\n  const header = document.querySelector('header');\n  const hb = header ? header.getBoundingClientRect().bottom : 0;\n  out.headerH = Math.round(hb);\n  const vis = el => { const s = getComputedStyle(el); const r = el.getBoundingClientRect();\n    return s.visibility !== 'hidden' && s.display !== 'none' && +s.opacity > 0.05 && r.width > 2 && r.height > 2; };\n  const content = 'h1,h2,h3,h4,p,li,a,button,img,picture,video,iframe,input,select,textarea,label,summary,figure,svg[role=img]';\n  // 1. gaps between consecutive top-level sections\n  const secs = [...document.querySelectorAll('main > section, main > div > section, main > *, footer')].filter(vis);\n  const uniq = [...new Set(secs)].sort((a,b)=>a.getBoundingClientRect().top-b.getBoundingClientRect().top);\n  const box = el => { let top=Infinity, bot=-Infinity;\n    el.querySelectorAll(content).forEach(c => { if (!vis(c) || c.closest('[aria-hidden=true]')) return; const r=c.getBoundingClientRect(); if (r.height>300 && c.tagName==='svg') return; top=Math.min(top,r.top+scrollY); bot=Math.max(bot,r.bottom+scrollY); });\n    return {top, bot}; };\n  out.gaps = [];\n  for (let i=0;i<uniq.length-1;i++) { const a=box(uniq[i]), b=box(uniq[i+1]);\n    if (isFinite(a.bot)&&isFinite(b.top)) out.gaps.push({from: (uniq[i].id||uniq[i].className||uniq[i].tagName).toString().slice(0,40), to:(uniq[i+1].id||uniq[i+1].className||uniq[i+1].tagName).toString().slice(0,40), gap: Math.round(b.top-a.bot)}); }\n  // within-section vertical gaps between consecutive content blocks (largest 8)\n  const blocks = [...document.querySelectorAll('main h2, main h3, main p, main ul, main img, main a, main button, main figure')].filter(vis)\n    .map(e=>{const r=e.getBoundingClientRect();return {e, top:r.top+scrollY, bot:r.bottom+scrollY, t:(e.innerText||e.alt||e.tagName).trim().slice(0,30)}}).sort((a,b)=>a.top-b.top);\n  const big=[]; let maxBot=-Infinity, last=null;\n  for (const b of blocks) { if (last && b.top-maxBot>0) big.push({gap:Math.round(b.top-maxBot), after:last.t, before:b.t}); if (b.bot>maxBot){maxBot=b.bot; last=b;} }\n  out.biggestGaps = big.sort((a,b)=>b.gap-a.gap).slice(0,10);\n  // 2. hover rules not guarded by (hover:hover)\n  let hoverUnguarded=0, hoverGuarded=0, samples=[];\n  const walk=(rules,guard)=>{ for (const r of rules) { if (r.cssRules && r.media) walk(r.cssRules, guard || /hover\\s*:\\s*hover|pointer\\s*:\\s*fine/.test(r.media.mediaText)); else if (r.cssRules) walk(r.cssRules, guard);\n      if (r.selectorText && r.selectorText.includes(':hover')) { if (guard) hoverGuarded++; else { hoverUnguarded++; if (samples.length<12) samples.push(r.selectorText.slice(0,80)); } } } };\n  for (const s of document.styleSheets) { try { walk(s.cssRules,false); } catch(e){} }\n  out.hover = {hoverUnguarded, hoverGuarded, samples};\n  // 3. tight horizontal padding in pills/buttons\n  out.tight = [];\n  document.querySelectorAll('button, a, [role=tab], label').forEach(el=>{ if(!vis(el)) return; const r=el.getBoundingClientRect(); if (r.height<28||r.height>90) return;\n    const rg=document.createRange(); rg.selectNodeContents(el); const tr=rg.getBoundingClientRect(); if (!tr.width) return;\n    const bg=getComputedStyle(el); const pill = bg.backgroundColor!=='rgba(0, 0, 0, 0)' || bg.boxShadow!=='none' || bg.borderStyle!=='none';\n    if (!pill) return; const l=tr.left-r.left, rt=r.right-tr.right;\n    if (Math.min(l,rt) < 14 && r.width>40) out.tight.push({t:el.innerText.trim().slice(0,30), padL:Math.round(l), padR:Math.round(rt), w:Math.round(r.width)}); });\n  // 4. horizontal scrollers and clipped children\n  out.scrollers=[]; document.querySelectorAll('*').forEach(el=>{ const s=getComputedStyle(el); if(/(auto|scroll)/.test(s.overflowX) && el.scrollWidth>el.clientWidth+4 && vis(el)) {\n    const kids=[...el.children].filter(vis); const clipped=kids.filter(k=>{const r=k.getBoundingClientRect(); return r.right>innerWidth+1||r.left<-1}).length;\n    out.scrollers.push({cls:(el.className||el.tagName).toString().slice(0,40), items:kids.length, clippedOrOffscreen:clipped}); } });\n  // 5. content past the gutter\n  const logo = header && header.querySelector('a'); const L = logo ? logo.getBoundingClientRect().left : 0; const R = vw - L;\n  out.gutter={L:Math.round(L), R:Math.round(R)}; out.pastGutter=[];\n  document.querySelectorAll('p, a, span, h1, h2, h3, li').forEach(el=>{ if(!vis(el)||el.closest('header')) return; if (el.children.length && el.tagName!=='A') return;\n    const r=el.getBoundingClientRect(); if (r.right>R+4 && r.right<=vw && el.innerText.trim()) out.pastGutter.push({t:el.innerText.trim().slice(0,40), over:Math.round(r.right-R)}); });\n  out.pastGutter=out.pastGutter.slice(0,10);\n  // 6. duplicate sentences\n  const seen={}; document.querySelectorAll('main p, main li, main h2, main h3').forEach(el=>{ if(!vis(el))return; el.innerText.split(/(?<=[.?!])\\s+/).forEach(s=>{s=s.trim(); if(s.length>25) (seen[s]=seen[s]||[]).push(1);});});\n  out.dupes=Object.entries(seen).filter(([k,v])=>v.length>1).map(([k,v])=>({s:k.slice(0,90),n:v.length}));\n  // 7. images: upscale + face-agnostic crop info\n  out.images=[...document.images].filter(vis).map(i=>{const r=i.getBoundingClientRect(); return {src:(i.currentSrc||i.src).split('/').pop().split('?')[0].slice(0,40), shown:Math.round(r.width)+'x'+Math.round(r.height), nat:i.naturalWidth+'x'+i.naturalHeight, ratio:+(i.naturalWidth/(r.width*devicePixelRatio)).toFixed(2), pos:getComputedStyle(i).objectPosition}}).filter(x=>x.ratio<1);\n  // 8. in-page anchor landings\n  out.anchors=[]; const ids=[...new Set([...document.querySelectorAll('a[href*=\"#\"]')].map(a=>a.getAttribute('href').split('#')[1]).filter(Boolean))];\n  for (const id of ids) { const t=document.getElementById(id); if(!t) {out.anchors.push({id, missing:true}); continue;}\n    t.scrollIntoView({behavior:'instant', block:'start'}); await sleep(250);\n    const h = t.querySelector('h2,h3,.eyebrow,[class*=eyebrow]') || t; const top=h.getBoundingClientRect().top;\n    const headBot = header ? header.getBoundingClientRect().bottom : 0;\n    out.anchors.push({id, firstText:(h.innerText||'').trim().slice(0,25), gapBelowHeader:Math.round(top-headBot)}); }\n  scrollTo(0,0);\n  return out;\n})()\n",
+            "name": "measure"
+          }
+        ]
+      }
+    ],
+    "browsers": [
+      "chromium",
+      "webkit"
+    ],
+    "devices": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "mobile",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1",
+        "viewport": {
+          "width": 393,
+          "height": 659
+        },
+        "screen": {
+          "width": 393,
+          "height": 852
+        },
+        "deviceScaleFactor": 3,
+        "isMobile": true,
+        "hasTouch": true,
+        "defaultBrowserType": "webkit"
+      }
+    ],
+    "capture": {
+      "screenshot": "full",
+      "tiles": true,
+      "tileHeight": null,
+      "maxTiles": 25,
+      "format": "jpeg",
+      "quality": 80,
+      "detail": 2,
+      "animations": "disabled",
+      "waitMs": 800,
+      "timeoutMs": 45000,
+      "revealLazyContent": true,
+      "hide": [],
+      "blockWrites": true,
+      "text": true,
+      "meta": true,
+      "html": true,
+      "links": true,
+      "checkLinks": true,
+      "images": true,
+      "styles": true,
+      "forms": true,
+      "a11y": true,
+      "aria": true,
+      "lighthouse": true
+    },
+    "steps": [],
+    "notes": "Ship-readiness live check on caringforacauseindy.org",
+    "brief": "(saved as brief.md)"
+  },
+  "finishedAt": "2026-10-31T21:23:30.727Z"
+}

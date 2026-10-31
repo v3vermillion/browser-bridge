@@ -1,0 +1,482 @@
+{
+  "links": [
+    {
+      "text": "Skip to content",
+      "name": "Skip to content",
+      "href": "#main",
+      "resolved": "https://caringforacauseindy.org/#main",
+      "kind": "anchor",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "",
+      "name": "",
+      "href": "/",
+      "resolved": "https://caringforacauseindy.org/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": [
+        "no-accessible-name"
+      ]
+    },
+    {
+      "text": "About",
+      "name": "About",
+      "href": "/#about",
+      "resolved": "https://caringforacauseindy.org/#about",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Programs",
+      "name": "Programs",
+      "href": "/#programs",
+      "resolved": "https://caringforacauseindy.org/#programs",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Get involved",
+      "name": "Get involved",
+      "href": "/#get-involved",
+      "resolved": "https://caringforacauseindy.org/#get-involved",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Contact",
+      "name": "Contact",
+      "href": "/#contact",
+      "resolved": "https://caringforacauseindy.org/#contact",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Donate",
+      "name": "Donate",
+      "href": "/donate/",
+      "resolved": "https://caringforacauseindy.org/donate/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Help me",
+      "name": "Help me",
+      "href": "/apply/",
+      "resolved": "https://caringforacauseindy.org/apply/",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "About",
+      "name": "About",
+      "href": "/#about",
+      "resolved": "https://caringforacauseindy.org/#about",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Programs",
+      "name": "Programs",
+      "href": "/#programs",
+      "resolved": "https://caringforacauseindy.org/#programs",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Get involved",
+      "name": "Get involved",
+      "href": "/#get-involved",
+      "resolved": "https://caringforacauseindy.org/#get-involved",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Contact",
+      "name": "Contact",
+      "href": "/#contact",
+      "resolved": "https://caringforacauseindy.org/#contact",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Donate",
+      "name": "Donate",
+      "href": "/donate/",
+      "resolved": "https://caringforacauseindy.org/donate/",
+      "kind": "internal",
+      "target": null,
+      "visible": false,
+      "flags": []
+    },
+    {
+      "text": "Help me",
+      "name": "Help me",
+      "href": "/apply/",
+      "resolved": "https://caringforacauseindy.org/apply/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Donate",
+      "name": "Donate",
+      "href": "/donate/",
+      "resolved": "https://caringforacauseindy.org/donate/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Holiday Meals",
+      "name": "Holiday Meals",
+      "href": "/#holiday-assistance",
+      "resolved": "https://caringforacauseindy.org/#holiday-assistance",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Gifts",
+      "name": "Gifts",
+      "href": "/#holiday-assistance",
+      "resolved": "https://caringforacauseindy.org/#holiday-assistance",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Diapers",
+      "name": "Diapers",
+      "href": "/#diaper-drive",
+      "resolved": "https://caringforacauseindy.org/#diaper-drive",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "School Supplies",
+      "name": "School Supplies",
+      "href": "/#back-to-school",
+      "resolved": "https://caringforacauseindy.org/#back-to-school",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Holiday Assistance Thanksgiving, Christmas, Easter",
+      "name": "Holiday Assistance Thanksgiving, Christmas, Easter",
+      "href": "#holiday-assistance",
+      "resolved": "https://caringforacauseindy.org/#holiday-assistance",
+      "kind": "anchor",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Diaper Drive Diapers every month",
+      "name": "Diaper Drive Diapers every month",
+      "href": "#diaper-drive",
+      "resolved": "https://caringforacauseindy.org/#diaper-drive",
+      "kind": "anchor",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Back-to-School Care Packages Hygiene and school supplies",
+      "name": "Back-to-School Care Packages Hygiene and school supplies",
+      "href": "#back-to-school",
+      "resolved": "https://caringforacauseindy.org/#back-to-school",
+      "kind": "anchor",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Free Haircuts & Styles Cuts, styles, face painting",
+      "name": "Free Haircuts & Styles Cuts, styles, face painting",
+      "href": "#haircuts",
+      "resolved": "https://caringforacauseindy.org/#haircuts",
+      "kind": "anchor",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Start an application",
+      "name": "Start an application",
+      "href": "/apply/",
+      "resolved": "https://caringforacauseindy.org/apply/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Call (317) 886-0724",
+      "name": "Call (317) 886-0724",
+      "href": "tel:+13178860724",
+      "resolved": "tel:+13178860724",
+      "kind": "tel",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Email us",
+      "name": "Email us",
+      "href": "mailto:caringforacause2015@gmail.com?subject=Application%20request",
+      "resolved": "mailto:caringforacause2015@gmail.com?subject=Application%20request",
+      "kind": "mailto",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Sponsor a family",
+      "name": "Sponsor a family",
+      "href": "/#sponsor",
+      "resolved": "https://caringforacauseindy.org/#sponsor",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Partner on the Diaper Drive",
+      "name": "Partner on the Diaper Drive",
+      "href": "/#partner",
+      "resolved": "https://caringforacauseindy.org/#partner",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Offer your skills at a haircut event",
+      "name": "Offer your skills at a haircut event",
+      "href": "/#partner",
+      "resolved": "https://caringforacauseindy.org/#partner",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Play video: Free haircuts and styles outreach program",
+      "name": "Play video: Free haircuts and styles outreach program",
+      "href": "https://www.youtube.com/watch?v=Z5USx1xFF58",
+      "resolved": "https://www.youtube.com/watch?v=Z5USx1xFF58",
+      "kind": "external",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Email us to sponsor",
+      "name": "Email us to sponsor",
+      "href": "mailto:caringforacause2015@gmail.com?subject=Sponsoring%20a%20family%20for%20the%20holidays",
+      "resolved": "mailto:caringforacause2015@gmail.com?subject=Sponsoring%20a%20family%20for%20the%20holidays",
+      "kind": "mailto",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "",
+      "name": "",
+      "href": "/donate/",
+      "resolved": "https://caringforacauseindy.org/donate/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": [
+        "no-accessible-name"
+      ]
+    },
+    {
+      "text": "",
+      "name": "",
+      "href": "https://forms.gle/HPL8HgMWvVsk9oAt5",
+      "resolved": "https://forms.gle/HPL8HgMWvVsk9oAt5",
+      "kind": "external",
+      "target": "_blank",
+      "visible": true,
+      "flags": [
+        "no-accessible-name"
+      ]
+    },
+    {
+      "text": "",
+      "name": "",
+      "href": "mailto:caringforacause2015@gmail.com?subject=Partnership%20inquiry",
+      "resolved": "mailto:caringforacause2015@gmail.com?subject=Partnership%20inquiry",
+      "kind": "mailto",
+      "target": null,
+      "visible": true,
+      "flags": [
+        "no-accessible-name"
+      ]
+    },
+    {
+      "text": "Watch her story",
+      "name": "Watch her story",
+      "href": "https://www.youtube.com/watch?v=7smWzJwY9kA",
+      "resolved": "https://www.youtube.com/watch?v=7smWzJwY9kA",
+      "kind": "external",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "",
+      "name": "Caring for a Cause Supportive Services, home",
+      "href": "/",
+      "resolved": "https://caringforacauseindy.org/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Donate",
+      "name": "Donate",
+      "href": "/donate/",
+      "resolved": "https://caringforacauseindy.org/donate/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Help me",
+      "name": "Help me",
+      "href": "/apply/",
+      "resolved": "https://caringforacauseindy.org/apply/",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "About",
+      "name": "About",
+      "href": "/#about",
+      "resolved": "https://caringforacauseindy.org/#about",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Programs",
+      "name": "Programs",
+      "href": "/#programs",
+      "resolved": "https://caringforacauseindy.org/#programs",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Get involved",
+      "name": "Get involved",
+      "href": "/#get-involved",
+      "resolved": "https://caringforacauseindy.org/#get-involved",
+      "kind": "internal",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "(317) 886-0724",
+      "name": "(317) 886-0724",
+      "href": "tel:+13178860724",
+      "resolved": "tel:+13178860724",
+      "kind": "tel",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "caringforacause2015@gmail.com",
+      "name": "caringforacause2015@gmail.com",
+      "href": "mailto:caringforacause2015@gmail.com",
+      "resolved": "mailto:caringforacause2015@gmail.com",
+      "kind": "mailto",
+      "target": null,
+      "visible": true,
+      "flags": []
+    },
+    {
+      "text": "Facebook (opens in a new tab)",
+      "name": "Facebook (opens in a new tab)",
+      "href": "https://www.facebook.com/caringforacausesupportiveservices",
+      "resolved": "https://www.facebook.com/caringforacausesupportiveservices",
+      "kind": "external",
+      "target": "_blank",
+      "visible": true,
+      "flags": []
+    }
+  ],
+  "statuses": {
+    "https://caringforacauseindy.org/apply/": {
+      "status": 200,
+      "finalUrl": "https://caringforacauseindy.org/apply/"
+    },
+    "https://caringforacauseindy.org/donate/": {
+      "status": 200,
+      "finalUrl": "https://caringforacauseindy.org/donate/"
+    },
+    "https://caringforacauseindy.org/": {
+      "status": 200,
+      "finalUrl": "https://caringforacauseindy.org/"
+    },
+    "https://www.facebook.com/caringforacausesupportiveservices": {
+      "status": 200,
+      "finalUrl": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fcaringforacausesupportiveservices"
+    },
+    "https://forms.gle/HPL8HgMWvVsk9oAt5": {
+      "status": 200,
+      "finalUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfF7GYgGbnBbjnMmLqGP_t8FXugNGTromFg3C19lT8ImMxFDw/viewform?usp=send_form"
+    },
+    "https://www.youtube.com/watch?v=Z5USx1xFF58": {
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=Z5USx1xFF58"
+    },
+    "https://www.youtube.com/watch?v=7smWzJwY9kA": {
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=7smWzJwY9kA"
+    }
+  }
+}

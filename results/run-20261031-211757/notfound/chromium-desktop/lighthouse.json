@@ -1,0 +1,3 @@
+{
+  "error": "Command failed: npx --yes lighthouse@12 https://caringforacauseindy.org/does-not-exist --output=json --output-path=/home/runner/work/browser-bridge/browser-bridge/out/notfound/chromium-desktop/lighthouse-full.json --quiet --chrome-flags=--headless=new --no-sandbox --only-categories=performance,accessibility,best-practices,seo --preset=desktop"
+}

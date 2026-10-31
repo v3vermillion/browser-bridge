@@ -1,0 +1,526 @@
+{
+  "images": [
+    {
+      "src": "https://caringforacauseindy.org/_astro/haircut-boy.CabqOKqd_Z1CPUl7.avif",
+      "alt": "",
+      "natural": {
+        "w": 1123,
+        "h": 1497
+      },
+      "displayed": {
+        "w": 1156,
+        "h": 685
+      },
+      "naturalToDisplayedRatio": 0.97,
+      "visible": true,
+      "loading": "eager",
+      "flags": [
+        "empty-alt-on-large-image",
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/families-banner.0DIkDNEB_2gdmUY.avif",
+      "alt": "",
+      "natural": {
+        "w": 1123,
+        "h": 1497
+      },
+      "displayed": {
+        "w": 1145,
+        "h": 678
+      },
+      "naturalToDisplayedRatio": 0.98,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/holiday-gift-bags.BW_V1vNm_6v1AM.avif",
+      "alt": "",
+      "natural": {
+        "w": 1123,
+        "h": 1497
+      },
+      "displayed": {
+        "w": 1145,
+        "h": 678
+      },
+      "naturalToDisplayedRatio": 0.98,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/holiday-shopping.DGi0cLBx_24brwf.avif",
+      "alt": "",
+      "natural": {
+        "w": 1123,
+        "h": 1497
+      },
+      "displayed": {
+        "w": 1145,
+        "h": 678
+      },
+      "naturalToDisplayedRatio": 0.98,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/holiday-mother-child.lDMX0q6x_1pSLtu.avif",
+      "alt": "A mother with her arm around her young daughter, choosing a toy at a holiday giveaway",
+      "natural": {
+        "w": 72,
+        "h": 96
+      },
+      "displayed": {
+        "w": 70,
+        "h": 81
+      },
+      "naturalToDisplayedRatio": 1.03,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/diaper-shelves.Kc_Ho2ED_1KVaPY.avif",
+      "alt": "The pantry's shelves stacked with packs of diapers, each labelled with the organization's heart",
+      "natural": {
+        "w": 72,
+        "h": 96
+      },
+      "displayed": {
+        "w": 81,
+        "h": 81
+      },
+      "naturalToDisplayedRatio": 0.89,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/school-supplies.DxRmpJcW_ZXnHgu.avif",
+      "alt": "Buckets of colored pencils, school scissors, pencils and highlighters on a shelf",
+      "natural": {
+        "w": 72,
+        "h": 48
+      },
+      "displayed": {
+        "w": 57,
+        "h": 81
+      },
+      "naturalToDisplayedRatio": 1.26,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/haircut-boy.CabqOKqd_26dkvl.avif",
+      "alt": "A boy gets a free haircut from a volunteer stylist",
+      "natural": {
+        "w": 72,
+        "h": 96
+      },
+      "displayed": {
+        "w": 73,
+        "h": 81
+      },
+      "naturalToDisplayedRatio": 0.99,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/holiday-mother-child.lDMX0q6x_Z2cHog0.avif",
+      "alt": "A mother with her arm around her young daughter, choosing a toy at a holiday giveaway",
+      "natural": {
+        "w": 480,
+        "h": 640
+      },
+      "displayed": {
+        "w": 458,
+        "h": 458
+      },
+      "naturalToDisplayedRatio": 1.05,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/diaper-shelves.Kc_Ho2ED_1XXLPR.avif",
+      "alt": "The pantry's shelves stacked with packs of diapers, each labelled with the organization's heart",
+      "natural": {
+        "w": 480,
+        "h": 640
+      },
+      "displayed": {
+        "w": 458,
+        "h": 458
+      },
+      "naturalToDisplayedRatio": 1.05,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/school-supplies.DxRmpJcW_ZVTnem.avif",
+      "alt": "Buckets of colored pencils, school scissors, pencils and highlighters on a shelf",
+      "natural": {
+        "w": 480,
+        "h": 320
+      },
+      "displayed": {
+        "w": 458,
+        "h": 458
+      },
+      "naturalToDisplayedRatio": 1.05,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/stylist-haircut.C5pfdBor_2tT3OC.avif",
+      "alt": "",
+      "natural": {
+        "w": 620,
+        "h": 826
+      },
+      "displayed": {
+        "w": 641,
+        "h": 360
+      },
+      "naturalToDisplayedRatio": 0.97,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/gift-boy.4nTmh7jv_6oqxS.avif",
+      "alt": "A young boy grins as he holds up the superhero toy he chose at a holiday giveaway",
+      "natural": {
+        "w": 560,
+        "h": 746
+      },
+      "displayed": {
+        "w": 624,
+        "h": 416
+      },
+      "naturalToDisplayedRatio": 0.9,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/holiday-basket-cart.D30rFwlX_Z1K9g3R.avif",
+      "alt": "A shopping cart filled with a Thanksgiving meal for one family: a turkey, vegetables, potatoes and sides",
+      "natural": {
+        "w": 560,
+        "h": 552
+      },
+      "displayed": {
+        "w": 624,
+        "h": 394
+      },
+      "naturalToDisplayedRatio": 0.9,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/volunteer-face-painting.DxFQcoWK_Z28w01a.avif",
+      "alt": "A volunteer styles a girl's hair at a community event",
+      "natural": {
+        "w": 560,
+        "h": 746
+      },
+      "displayed": {
+        "w": 624,
+        "h": 394
+      },
+      "naturalToDisplayedRatio": 0.9,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/stylist-haircut.C5pfdBor_2tT3OC.avif",
+      "alt": "A volunteer stylist cuts a man's hair at a free haircut event",
+      "natural": {
+        "w": 560,
+        "h": 746
+      },
+      "displayed": {
+        "w": 624,
+        "h": 394
+      },
+      "naturalToDisplayedRatio": 0.9,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/tamara-portrait.B5ksF5Q2_Z2ds21w.avif",
+      "alt": "Tamara Long-Ajimati, founder of Caring for a Cause, smiling outside in a red top",
+      "natural": {
+        "w": 419,
+        "h": 478
+      },
+      "displayed": {
+        "w": 468,
+        "h": 585
+      },
+      "naturalToDisplayedRatio": 0.9,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/easter-volunteer.B0LqpPAD_tiTtr.avif",
+      "alt": "A volunteer in scrubs smiles in the street with two wrapped Easter baskets",
+      "natural": {
+        "w": 320,
+        "h": 426
+      },
+      "displayed": {
+        "w": 360,
+        "h": 450
+      },
+      "naturalToDisplayedRatio": 0.89,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/toy-tables.DxZOwvIo_Z2vo73L.avif",
+      "alt": "Tables of new toys sorted by age for the holiday giveaway, with a Toys for Tots sign",
+      "natural": {
+        "w": 320,
+        "h": 426
+      },
+      "displayed": {
+        "w": 360,
+        "h": 450
+      },
+      "naturalToDisplayedRatio": 0.89,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/diaper-pantry.P8xIgSbv_Z1OneIz.avif",
+      "alt": "The founder in a Diaper Drive shirt beside the pantry's shelves of diapers",
+      "natural": {
+        "w": 320,
+        "h": 326
+      },
+      "displayed": {
+        "w": 360,
+        "h": 450
+      },
+      "naturalToDisplayedRatio": 0.89,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/diaper-drive.DI46BTcU_Z8i7Ve.avif",
+      "alt": "A volunteer hands a large pack of diapers to a family with a young child",
+      "natural": {
+        "w": 320,
+        "h": 426
+      },
+      "displayed": {
+        "w": 360,
+        "h": 450
+      },
+      "naturalToDisplayedRatio": 0.89,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/easter-trunk.BaMzl87n_ZK7fT7.jpg",
+      "alt": "A car's open trunk filled with wrapped Easter baskets ready to deliver",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 360,
+        "h": 450
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/face-paint-tiger.R4EsCa85_Z1YmlRO.jpg",
+      "alt": "A child with half his face painted as a tiger at a community event",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 360,
+        "h": 450
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/toy-tables-little-ones.BvV2mloB_fpi5s.jpg",
+      "alt": "A table of toys for babies and toddlers at the holiday giveaway",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 360,
+        "h": 450
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/easter-doorway.BaSuS6gK_ED8XU.jpg",
+      "alt": "A volunteer in a doorway holding wrapped Easter baskets",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 360,
+        "h": 450
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/holiday-dinner.CPcx454y_1BgDX3.jpg",
+      "alt": "Families eat a holiday dinner at long tables while others browse the toy tables behind them",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 360,
+        "h": 450
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/holiday-cooks.DC3bJbYf_ZhMECQ.jpg",
+      "alt": "Four volunteer cooks behind trays of hot food at the holiday dinner, the organization's banner beside them",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 360,
+        "h": 450
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/family-embrace.BikZwXKM_Z1VNUIk.jpg",
+      "alt": "A father hugs his five children, all holding bags of gifts, outside the winter distribution",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 360,
+        "h": 450
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/serving-line.BDaetHSS_ZOHiak.jpg",
+      "alt": "A volunteer serves hot food while a child carries her plate to the table",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 360,
+        "h": 450
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caringforacauseindy.org/_astro/volunteers-winter.DKNDm2Gp_Z1cbrev.jpg",
+      "alt": "Three volunteers in winter coats and Santa headbands smile outside the distribution",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 360,
+        "h": 450
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    }
+  ],
+  "backgrounds": []
+}

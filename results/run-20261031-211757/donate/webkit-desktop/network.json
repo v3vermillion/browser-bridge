@@ -1,0 +1,21 @@
+{
+  "failedRequests": [],
+  "httpErrors": [],
+  "blockedWrites": [
+    {
+      "method": "POST",
+      "url": "https://caringforacauseindy.org/cdn-cgi/rum?"
+    },
+    {
+      "method": "POST",
+      "url": "https://caringforacauseindy.org/cdn-cgi/rum?"
+    },
+    {
+      "method": "POST",
+      "url": "https://caringforacauseindy.org/cdn-cgi/rum?"
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "errorsCausedByBlocking": 0
+}

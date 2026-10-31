@@ -1,0 +1,19 @@
+## home - webkit / desktop
+- URL: https://caringforacauseindy.org/
+- Status: ok, HTTP 200, ready in 4.9s
+- Viewport: 1440x900 at 2x detail
+- Title: Caring for a Cause Supportive Services | Central Indiana
+- Meta description: Caring for a Cause helps families in Central Indiana with holiday meals and gifts, monthly diapers, and school supplies.
+- H1 count: 1; headings total: 18; page height: 7746px
+- Structured data blocks: 1; lang: en; og:image: yes
+- Images: 30 <img> + 0 large backgrounds; missing alt: 0, empty alt on large: 5, broken: 0, upscaled/blurry: 5, below retina: 0
+- Links: 44; go nowhere: 0, no accessible name: 4, generic text: 0, missing anchor targets: 0, HTTP errors: 0
+- Primary font families (by text volume): Atkinson Hyperlegible Next, Bricolage Grotesque Variable, Site Serif, Footer Sans
+- Text colors in use: 15; font sizes in use: 20; uppercase share of text: 7%
+- Forms: 0; fields: 0; without programmatic label: 0; labels pointing at missing ids: 0
+- Accessibility (axe): 0 rule violations {}; 1 need manual review
+- Lighthouse: Lighthouse runs only in chromium variants.
+- Steps: 5 run, 0 failed
+- Network: 0 HTTP errors, 0 failed requests, 0 JS errors from the site
+- Write requests blocked (nothing was sent): caringforacauseindy.org x3. Analytics/embed calls here are normal; form destinations are listed under Forms when forms are captured.
+- Files: full.jpg, tiles/tile-01.jpg, tiles/tile-02.jpg, tiles/tile-03.jpg, tiles/tile-04.jpg, tiles/tile-05.jpg, tiles/tile-06.jpg, tiles/tile-07.jpg, tiles/tile-08.jpg, tiles/tile-09.jpg, meta.json, text.md, page.html, links.json, images.json, styles.json, forms.json, a11y.json, aria.yaml, steps/01-page.jpg, steps.json, lighthouse.json, network.json

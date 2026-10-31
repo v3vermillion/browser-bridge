@@ -1,0 +1,38 @@
+[
+  {
+    "index": 0,
+    "action": "evaluate",
+    "ok": true
+  },
+  {
+    "index": 1,
+    "action": "goto",
+    "ok": true
+  },
+  {
+    "index": 2,
+    "action": "wait",
+    "ok": true
+  },
+  {
+    "index": 3,
+    "action": "evaluate",
+    "ok": true,
+    "result": {
+      "items": 4,
+      "hidden": 0,
+      "links": 4,
+      "visibleTiles": [
+        "Holiday Assistance",
+        "Diaper Drive",
+        "Free Haircuts & Styles"
+      ]
+    }
+  },
+  {
+    "index": 4,
+    "action": "screenshot",
+    "ok": true,
+    "file": "01-tiles.jpg"
+  }
+]

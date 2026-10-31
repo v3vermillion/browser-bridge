@@ -1,0 +1,19 @@
+## apply - webkit / desktop
+- URL: https://caring-for-a-cause.forgetraining.workers.dev/apply/
+- Status: ok, HTTP 200, ready in 2.7s
+- Viewport: 1440x900 at 2x detail
+- Title: Apply for help | Caring for a Cause
+- Meta description: Apply for holiday meals and gifts, monthly diapers, school supplies, or a free haircut in Central Indiana. Anyone struggling right now can apply.
+- H1 count: 1; headings total: 6; page height: 2083px
+- Structured data blocks: 1; lang: en; og:image: yes
+- Images: 1 <img> + 0 large backgrounds; missing alt: 0, empty alt on large: 0, broken: 0, upscaled/blurry: 1, below retina: 0
+- Links: 28; go nowhere: 0, no accessible name: 1, generic text: 0, missing anchor targets: 0, HTTP errors: 0
+- Primary font families (by text volume): Atkinson Hyperlegible Next, Bricolage Grotesque Variable, Site Serif, Footer Sans
+- Text colors in use: 12; font sizes in use: 16; uppercase share of text: 2%
+- Forms: 1; fields: 45; without programmatic label: 0; labels pointing at missing ids: 0
+  - form 1: GET -> (none - handled by script or same page)
+- Accessibility (axe): 0 rule violations {}; 1 need manual review
+- Lighthouse: Lighthouse runs only in chromium variants.
+- Steps: 5 run, 0 failed
+- Network: 0 HTTP errors, 0 failed requests, 0 JS errors from the site
+- Files: full.jpg, tiles/tile-01.jpg, tiles/tile-02.jpg, tiles/tile-03.jpg, meta.json, text.md, page.html, links.json, images.json, styles.json, forms.json, a11y.json, aria.yaml, steps/01-page.jpg, steps.json, lighthouse.json, network.json

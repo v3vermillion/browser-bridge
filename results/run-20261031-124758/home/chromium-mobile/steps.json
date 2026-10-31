@@ -1,0 +1,374 @@
+[
+  {
+    "index": 0,
+    "action": "evaluate",
+    "ok": true
+  },
+  {
+    "index": 1,
+    "action": "goto",
+    "ok": true
+  },
+  {
+    "index": 2,
+    "action": "wait",
+    "ok": true
+  },
+  {
+    "index": 3,
+    "action": "screenshot",
+    "ok": true,
+    "file": "01-page.jpg"
+  },
+  {
+    "index": 4,
+    "action": "evaluate",
+    "ok": true,
+    "result": {
+      "vw": 393,
+      "vh": 659,
+      "path": "/",
+      "headerH": 61,
+      "gaps": [
+        {
+          "from": "first-screen no-season",
+          "to": "hero on-dark",
+          "gap": -558
+        },
+        {
+          "from": "hero on-dark",
+          "to": "strip on-dark",
+          "gap": 75
+        },
+        {
+          "from": "strip on-dark",
+          "to": "programs",
+          "gap": 169
+        },
+        {
+          "from": "programs",
+          "to": "get-involved",
+          "gap": 156
+        },
+        {
+          "from": "get-involved",
+          "to": "about",
+          "gap": 211
+        },
+        {
+          "from": "about",
+          "to": "section section--lilac ground ground--li",
+          "gap": 187
+        },
+        {
+          "from": "section section--lilac ground ground--li",
+          "to": "site-footer on-dark",
+          "gap": 101
+        }
+      ],
+      "biggestGaps": [
+        {
+          "gap": 211,
+          "after": "Email us to sponsor",
+          "before": "FIGURE"
+        },
+        {
+          "gap": 187,
+          "after": "Watch her story",
+          "before": "Moments from our programs"
+        },
+        {
+          "gap": 169,
+          "after": "Helping families since 2015\n50",
+          "before": "What we do, all year"
+        },
+        {
+          "gap": 156,
+          "after": "UL",
+          "before": "Four ways to help"
+        },
+        {
+          "gap": 145,
+          "after": "WHO IT'S FOR\nStudents from fam",
+          "before": "UL"
+        },
+        {
+          "gap": 133,
+          "after": "A mother with her arm around h",
+          "before": "Holiday Assistance"
+        },
+        {
+          "gap": 133,
+          "after": "The pantry's shelves stacked w",
+          "before": "Diaper Drive"
+        },
+        {
+          "gap": 133,
+          "after": "A woman carries a wrapped bask",
+          "before": "Back-to-School Care Packages"
+        },
+        {
+          "gap": 100,
+          "after": "Email us",
+          "before": "A mother with her arm around h"
+        },
+        {
+          "gap": 87,
+          "after": "FIGURE",
+          "before": "Meet Tamara Long-Ajimati"
+        }
+      ],
+      "hover": {
+        "hoverUnguarded": 0,
+        "hoverGuarded": 38,
+        "samples": []
+      },
+      "tight": [],
+      "scrollers": [
+        {
+          "cls": "UL",
+          "items": 4,
+          "clippedOrOffscreen": 3
+        },
+        {
+          "cls": "moments",
+          "items": 13,
+          "clippedOrOffscreen": 12
+        }
+      ],
+      "gutter": {
+        "L": 20,
+        "R": 373
+      },
+      "pastGutter": [],
+      "dupes": [],
+      "images": [
+        {
+          "src": "haircut-boy.CabqOKqd_Z1CPUl7.avif",
+          "shown": "401x392",
+          "nat": "393x524",
+          "ratio": 0.49,
+          "pos": "85% 5%"
+        },
+        {
+          "src": "holiday-mother-child.lDMX0q6x_1pSLtu.avi",
+          "shown": "61x72",
+          "nat": "72x96",
+          "ratio": 0.59,
+          "pos": "50% 30%"
+        },
+        {
+          "src": "diaper-shelves.Kc_Ho2ED_1KVaPY.avif",
+          "shown": "72x72",
+          "nat": "72x96",
+          "ratio": 0.5,
+          "pos": "50% 50%"
+        },
+        {
+          "src": "care-basket.dUg-bsTE_2m30MA.jpg",
+          "shown": "50x72",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 28%"
+        },
+        {
+          "src": "haircut-boy.CabqOKqd_2dxI1E.jpg",
+          "shown": "63x72",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 30%"
+        },
+        {
+          "src": "holiday-mother-child.lDMX0q6x_Z8W6vu.avi",
+          "shown": "306x229",
+          "nat": "353x470",
+          "ratio": 0.58,
+          "pos": "50% 30%"
+        },
+        {
+          "src": "diaper-shelves.Kc_Ho2ED_1XXLPR.avif",
+          "shown": "306x204",
+          "nat": "353x470",
+          "ratio": 0.58,
+          "pos": "50% 50%"
+        },
+        {
+          "src": "care-basket.dUg-bsTE_Z1pThxP.avif",
+          "shown": "306x204",
+          "nat": "353x470",
+          "ratio": 0.58,
+          "pos": "50% 28%"
+        },
+        {
+          "src": "stylist-haircut.C5pfdBor_2tT3OC.avif",
+          "shown": "306x172",
+          "nat": "353x470",
+          "ratio": 0.58,
+          "pos": "50% 27%"
+        },
+        {
+          "src": "gift-boy.4nTmh7jv_xEs4m.avif",
+          "shown": "352x234",
+          "nat": "353x471",
+          "ratio": 0.5,
+          "pos": "50% 32%"
+        },
+        {
+          "src": "tamara-portrait.B5ksF5Q2_Z2ds21w.avif",
+          "shown": "354x442",
+          "nat": "352x402",
+          "ratio": 0.5,
+          "pos": "0% 25%"
+        },
+        {
+          "src": "easter-volunteer.B0LqpPAD_tiTtr.avif",
+          "shown": "283x354",
+          "nat": "314x419",
+          "ratio": 0.55,
+          "pos": "50% 30%"
+        },
+        {
+          "src": "toy-tables.DxZOwvIo_Z2vo73L.avif",
+          "shown": "283x354",
+          "nat": "314x419",
+          "ratio": 0.55,
+          "pos": "50% 45%"
+        },
+        {
+          "src": "diaper-pantry.P8xIgSbv_1KcTq5.jpg",
+          "shown": "283x354",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 40%"
+        },
+        {
+          "src": "diaper-drive.DI46BTcU_gJR7u.jpg",
+          "shown": "283x354",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 20%"
+        },
+        {
+          "src": "easter-trunk.BaMzl87n_ZK7fT7.jpg",
+          "shown": "283x354",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 50%"
+        },
+        {
+          "src": "face-paint-tiger.R4EsCa85_Z1YmlRO.jpg",
+          "shown": "283x354",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 30%"
+        },
+        {
+          "src": "toy-tables-little-ones.BvV2mloB_fpi5s.jp",
+          "shown": "283x354",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 45%"
+        },
+        {
+          "src": "easter-doorway.BaSuS6gK_ED8XU.jpg",
+          "shown": "283x354",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 35%"
+        },
+        {
+          "src": "holiday-dinner.CPcx454y_1BgDX3.jpg",
+          "shown": "283x354",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 55%"
+        },
+        {
+          "src": "holiday-cooks.DC3bJbYf_ZhMECQ.jpg",
+          "shown": "283x354",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 40%"
+        },
+        {
+          "src": "family-embrace.BikZwXKM_Z1VNUIk.jpg",
+          "shown": "283x354",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 45%"
+        },
+        {
+          "src": "serving-line.BDaetHSS_ZOHiak.jpg",
+          "shown": "283x354",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 45%"
+        },
+        {
+          "src": "volunteers-winter.DKNDm2Gp_Z1cbrev.jpg",
+          "shown": "283x354",
+          "nat": "0x0",
+          "ratio": 0,
+          "pos": "50% 35%"
+        }
+      ],
+      "anchors": [
+        {
+          "id": "main",
+          "firstText": "OUR PROGRAMS",
+          "gapBelowHeader": 722
+        },
+        {
+          "id": "about",
+          "firstText": "ABOUT",
+          "gapBelowHeader": 518
+        },
+        {
+          "id": "programs",
+          "firstText": "OUR PROGRAMS",
+          "gapBelowHeader": 36
+        },
+        {
+          "id": "get-involved",
+          "firstText": "GET INVOLVED",
+          "gapBelowHeader": 36
+        },
+        {
+          "id": "contact",
+          "firstText": "Connect with us",
+          "gapBelowHeader": 207
+        },
+        {
+          "id": "holiday-assistance",
+          "firstText": "THANKSGIVING, CHRISTMAS, ",
+          "gapBelowHeader": 359
+        },
+        {
+          "id": "diaper-drive",
+          "firstText": "DIAPERS EVERY MONTH",
+          "gapBelowHeader": 334
+        },
+        {
+          "id": "back-to-school",
+          "firstText": "HYGIENE AND SCHOOL SUPPLI",
+          "gapBelowHeader": 334
+        },
+        {
+          "id": "haircuts",
+          "firstText": "CUTS, STYLES, FACE PAINTI",
+          "gapBelowHeader": 303
+        },
+        {
+          "id": "sponsor",
+          "firstText": "Sponsor a family for the ",
+          "gapBelowHeader": 278
+        },
+        {
+          "id": "partner",
+          "firstText": "",
+          "gapBelowHeader": 278
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,520 @@
+{
+  "images": [
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/haircut-boy.CabqOKqd_Z1CPUl7.avif",
+      "alt": "",
+      "natural": {
+        "w": 393,
+        "h": 524
+      },
+      "displayed": {
+        "w": 404,
+        "h": 395
+      },
+      "naturalToDisplayedRatio": 0.97,
+      "visible": true,
+      "loading": "eager",
+      "flags": [
+        "empty-alt-on-large-image",
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/families-banner.0DIkDNEB_2gdmUY.avif",
+      "alt": "",
+      "natural": {
+        "w": 393,
+        "h": 524
+      },
+      "displayed": {
+        "w": 401,
+        "h": 392
+      },
+      "naturalToDisplayedRatio": 0.98,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/holiday-gift-bags.BW_V1vNm_6v1AM.avif",
+      "alt": "",
+      "natural": {
+        "w": 393,
+        "h": 524
+      },
+      "displayed": {
+        "w": 401,
+        "h": 392
+      },
+      "naturalToDisplayedRatio": 0.98,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/holiday-shopping.DGi0cLBx_24brwf.avif",
+      "alt": "",
+      "natural": {
+        "w": 393,
+        "h": 524
+      },
+      "displayed": {
+        "w": 401,
+        "h": 392
+      },
+      "naturalToDisplayedRatio": 0.98,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "upscaled-blurry"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/holiday-mother-child.lDMX0q6x_1pSLtu.avif",
+      "alt": "A mother with her arm around her young daughter, choosing a toy at a holiday giveaway",
+      "natural": {
+        "w": 72,
+        "h": 96
+      },
+      "displayed": {
+        "w": 61,
+        "h": 72
+      },
+      "naturalToDisplayedRatio": 1.18,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/diaper-shelves.Kc_Ho2ED_1KVaPY.avif",
+      "alt": "The pantry's shelves stacked with packs of diapers, each labelled with the organization's heart",
+      "natural": {
+        "w": 72,
+        "h": 96
+      },
+      "displayed": {
+        "w": 72,
+        "h": 72
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/care-basket.dUg-bsTE_2m30MA.jpg",
+      "alt": "A woman carries a wrapped basket of food and care items to a family",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 50,
+        "h": 72
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/haircut-boy.CabqOKqd_2dxI1E.jpg",
+      "alt": "A boy gets a free haircut from a volunteer stylist",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 63,
+        "h": 72
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/holiday-mother-child.lDMX0q6x_Z8W6vu.avif",
+      "alt": "A mother with her arm around her young daughter, choosing a toy at a holiday giveaway",
+      "natural": {
+        "w": 353,
+        "h": 470
+      },
+      "displayed": {
+        "w": 306,
+        "h": 229
+      },
+      "naturalToDisplayedRatio": 1.15,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/diaper-shelves.Kc_Ho2ED_1XXLPR.avif",
+      "alt": "The pantry's shelves stacked with packs of diapers, each labelled with the organization's heart",
+      "natural": {
+        "w": 353,
+        "h": 470
+      },
+      "displayed": {
+        "w": 306,
+        "h": 204
+      },
+      "naturalToDisplayedRatio": 1.15,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/care-basket.dUg-bsTE_Z1pThxP.avif",
+      "alt": "A woman carries a wrapped basket of food and care items to a family",
+      "natural": {
+        "w": 353,
+        "h": 470
+      },
+      "displayed": {
+        "w": 306,
+        "h": 204
+      },
+      "naturalToDisplayedRatio": 1.15,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/stylist-haircut.C5pfdBor_2tT3OC.avif",
+      "alt": "",
+      "natural": {
+        "w": 353,
+        "h": 470
+      },
+      "displayed": {
+        "w": 306,
+        "h": 172
+      },
+      "naturalToDisplayedRatio": 1.15,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "empty-alt-on-large-image",
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/gift-boy.4nTmh7jv_xEs4m.avif",
+      "alt": "A young boy grins as he holds up the superhero toy he chose at a holiday giveaway",
+      "natural": {
+        "w": 353,
+        "h": 471
+      },
+      "displayed": {
+        "w": 352,
+        "h": 234
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/holiday-basket-cart.D30rFwlX_Z1K9g3R.avif",
+      "alt": "A shopping cart filled with a Thanksgiving meal for one family: a turkey, vegetables, potatoes and sides",
+      "natural": {
+        "w": 353,
+        "h": 348
+      },
+      "displayed": {
+        "w": 352,
+        "h": 234
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/volunteer-face-painting.DxFQcoWK_Z28w01a.avif",
+      "alt": "A volunteer styles a girl's hair at a community event",
+      "natural": {
+        "w": 353,
+        "h": 471
+      },
+      "displayed": {
+        "w": 352,
+        "h": 234
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/stylist-haircut.C5pfdBor_2tT3OC.avif",
+      "alt": "A volunteer stylist cuts a man's hair at a free haircut event",
+      "natural": {
+        "w": 353,
+        "h": 471
+      },
+      "displayed": {
+        "w": 352,
+        "h": 234
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/tamara-portrait.B5ksF5Q2_Z2ds21w.avif",
+      "alt": "Tamara Long-Ajimati, founder of Caring for a Cause, smiling outside in a red top",
+      "natural": {
+        "w": 352,
+        "h": 402
+      },
+      "displayed": {
+        "w": 354,
+        "h": 442
+      },
+      "naturalToDisplayedRatio": 1,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/easter-volunteer.B0LqpPAD_tiTtr.avif",
+      "alt": "A volunteer in scrubs smiles in the street with two wrapped Easter baskets",
+      "natural": {
+        "w": 314,
+        "h": 419
+      },
+      "displayed": {
+        "w": 283,
+        "h": 354
+      },
+      "naturalToDisplayedRatio": 1.11,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/toy-tables.DxZOwvIo_Z2vo73L.avif",
+      "alt": "Tables of new toys sorted by age for the holiday giveaway, with a Toys for Tots sign",
+      "natural": {
+        "w": 314,
+        "h": 419
+      },
+      "displayed": {
+        "w": 283,
+        "h": 354
+      },
+      "naturalToDisplayedRatio": 1.11,
+      "visible": true,
+      "loading": "lazy",
+      "flags": [
+        "below-retina-sharpness"
+      ]
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/diaper-pantry.P8xIgSbv_1KcTq5.jpg",
+      "alt": "The founder in a Diaper Drive shirt beside the pantry's shelves of diapers",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 283,
+        "h": 354
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/diaper-drive.DI46BTcU_gJR7u.jpg",
+      "alt": "A volunteer hands a large pack of diapers to a family with a young child",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 283,
+        "h": 354
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/easter-trunk.BaMzl87n_ZK7fT7.jpg",
+      "alt": "A car's open trunk filled with wrapped Easter baskets ready to deliver",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 283,
+        "h": 354
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/face-paint-tiger.R4EsCa85_Z1YmlRO.jpg",
+      "alt": "A child with half his face painted as a tiger at a community event",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 283,
+        "h": 354
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/toy-tables-little-ones.BvV2mloB_fpi5s.jpg",
+      "alt": "A table of toys for babies and toddlers at the holiday giveaway",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 283,
+        "h": 354
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/easter-doorway.BaSuS6gK_ED8XU.jpg",
+      "alt": "A volunteer in a doorway holding wrapped Easter baskets",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 283,
+        "h": 354
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/holiday-dinner.CPcx454y_1BgDX3.jpg",
+      "alt": "Families eat a holiday dinner at long tables while others browse the toy tables behind them",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 283,
+        "h": 354
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/holiday-cooks.DC3bJbYf_ZhMECQ.jpg",
+      "alt": "Four volunteer cooks behind trays of hot food at the holiday dinner, the organization's banner beside them",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 283,
+        "h": 354
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/family-embrace.BikZwXKM_Z1VNUIk.jpg",
+      "alt": "A father hugs his five children, all holding bags of gifts, outside the winter distribution",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 283,
+        "h": 354
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/serving-line.BDaetHSS_ZOHiak.jpg",
+      "alt": "A volunteer serves hot food while a child carries her plate to the table",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 283,
+        "h": 354
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    },
+    {
+      "src": "https://caring-for-a-cause.forgetraining.workers.dev/_astro/volunteers-winter.DKNDm2Gp_Z1cbrev.jpg",
+      "alt": "Three volunteers in winter coats and Santa headbands smile outside the distribution",
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "displayed": {
+        "w": 283,
+        "h": 354
+      },
+      "naturalToDisplayedRatio": null,
+      "visible": true,
+      "loading": "lazy",
+      "flags": []
+    }
+  ],
+  "backgrounds": []
+}

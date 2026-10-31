@@ -1,0 +1,60 @@
+{
+  "formFactor": "mobile",
+  "scores": {
+    "performance": 97,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 69
+  },
+  "metrics": {
+    "LCP": "2.5 s",
+    "CLS": "0",
+    "TBT": "0 ms",
+    "FCP": "1.3 s",
+    "SpeedIndex": "1.3 s"
+  },
+  "failingAudits": [
+    {
+      "id": "lcp-lazy-loaded",
+      "title": "Largest Contentful Paint image was lazily loaded",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "is-crawlable",
+      "title": "Page is blocked from indexing",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "lcp-discovery-insight",
+      "title": "LCP request discovery",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree",
+      "score": 0,
+      "displayValue": null
+    },
+    {
+      "id": "largest-contentful-paint-element",
+      "title": "Largest Contentful Paint element",
+      "score": 0.5,
+      "displayValue": "2,510 ms"
+    },
+    {
+      "id": "image-delivery-insight",
+      "title": "Improve image delivery",
+      "score": 0.5,
+      "displayValue": "Est savings of 32 KiB"
+    },
+    {
+      "id": "largest-contentful-paint",
+      "title": "Largest Contentful Paint",
+      "score": 0.89,
+      "displayValue": "2.5 s"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "index": 0,
+    "action": "evaluate",
+    "ok": true
+  },
+  {
+    "index": 1,
+    "action": "goto",
+    "ok": true
+  },
+  {
+    "index": 2,
+    "action": "wait",
+    "ok": true
+  },
+  {
+    "index": 3,
+    "action": "screenshot",
+    "ok": true,
+    "file": "01-page.jpg"
+  },
+  {
+    "index": 4,
+    "action": "evaluate",
+    "ok": true,
+    "result": {
+      "vw": 1440,
+      "vh": 900,
+      "path": "/does-not-exist",
+      "headerH": 82,
+      "gaps": [
+        {
+          "from": "page-hero on-dark hero--404",
+          "to": "site-footer on-dark",
+          "gap": 187
+        }
+      ],
+      "biggestGaps": [
+        {
+          "gap": 27,
+          "after": "The link may be old or mistype",
+          "before": "Help me\nDonate\nBack to home"
+        }
+      ],
+      "hover": {
+        "hoverUnguarded": 0,
+        "hoverGuarded": 21,
+        "samples": []
+      },
+      "tight": [],
+      "scrollers": [],
+      "gutter": {
+        "L": 72,
+        "R": 1368
+      },
+      "pastGutter": [],
+      "dupes": [],
+      "images": [],
+      "anchors": [
+        {
+          "id": "main",
+          "firstText": "PAGE NOT FOUND",
+          "gapBelowHeader": 106
+        },
+        {
+          "id": "about",
+          "missing": true
+        },
+        {
+          "id": "programs",
+          "missing": true
+        },
+        {
+          "id": "get-involved",
+          "missing": true
+        },
+        {
+          "id": "contact",
+          "firstText": "Connect with us",
+          "gapBelowHeader": 370
+        }
+      ]
+    }
+  }
+]
